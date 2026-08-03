@@ -1,0 +1,47 @@
+{
+  "id": "dark-sun-essentials",
+  "title": "Dark Sun Essentials",
+  "description": "Turns a stock D&D 5e world Athasian: ceramic coinage, the Psionic spell school, and material properties for weapons and armour. Every change is a toggle.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.3.0",
+          "verified": "5.3.3"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Christopher Allbritton",
+      "github": "ctbritt"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/dark-sun-essentials.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/ctbritt/foundry-dark-sun-essentials",
+  "manifest": "https://raw.githubusercontent.com/ctbritt/foundry-dark-sun-essentials/main/module.json",
+  "download": "https://github.com/ctbritt/foundry-dark-sun-essentials/releases/latest/download/module.zip",
+  "readme": "https://github.com/ctbritt/foundry-dark-sun-essentials/blob/main/README.md",
+  "bugs": "https://github.com/ctbritt/foundry-dark-sun-essentials/issues",
+  "license": "LICENSE"
+}

@@ -1,0 +1,46 @@
+/* Dark Sun Essentials
+   Deliberately minimal: inherit Foundry's form styling so the window looks
+   native in both v13 and v14 rather than fighting whichever theme is active. */
+
+.dark-sun-settings fieldset {
+  margin-block-end: 0.75rem;
+}
+
+.dark-sun-settings .form-group > .form-fields {
+  flex: 0 0 auto;
+}
+
+/* The removal warning is hidden until both coinage boxes are ticked, so it
+   reads as a consequence of a choice rather than ambient alarm. */
+.dark-sun-settings [data-warning="removal"] {
+  display: none;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.dark-sun-settings [data-warning="removal"].active {
+  display: block;
+}
+
+.dark-sun-settings .dark-sun-footnote {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-block-start: 0.5rem;
+}
+
+.dark-sun-settings .dark-sun-version {
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.dark-sun-migration-summary {
+  margin: 0.5rem 0;
+  padding-inline-start: 1.25rem;
+  line-height: 1.6;
+}
+
+.dark-sun-migration-summary li {
+  list-style: disc;
+}

@@ -1,0 +1,65 @@
+<div class="dark-sun-settings">
+
+  <p class="notes">{{localize "dark-sun-essentials.menu.hint"}}</p>
+
+  <fieldset>
+    <legend>{{localize "dark-sun-essentials.menu.coinage"}}</legend>
+
+    <div class="form-group">
+      <label for="ds-ceramic">{{localize "dark-sun-essentials.settings.ceramicCurrency.name"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" id="ds-ceramic" name="{{keys.ceramicCurrency}}" {{checked fields.ceramicCurrency}}>
+      </div>
+      <p class="hint">{{localize "dark-sun-essentials.settings.ceramicCurrency.hint"}}</p>
+    </div>
+
+    <div class="form-group">
+      <label for="ds-remove">{{localize "dark-sun-essentials.settings.removeLegacyCurrency.name"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" id="ds-remove" name="{{keys.removeLegacyCurrency}}" {{checked fields.removeLegacyCurrency}}>
+      </div>
+      <p class="hint">{{localize "dark-sun-essentials.settings.removeLegacyCurrency.hint"}}</p>
+    </div>
+
+    <p class="notification warning" data-warning="removal">
+      {{localize "dark-sun-essentials.menu.removalWarning"}}
+    </p>
+
+    <div class="form-group">
+      <label>{{localize "dark-sun-essentials.menu.migrateLabel"}}</label>
+      <div class="form-fields">
+        <button type="button" data-action="migrate">
+          <i class="fa-solid fa-right-left"></i>
+          {{localize "dark-sun-essentials.menu.migrateButton"}}
+        </button>
+      </div>
+      <p class="hint">{{localize "dark-sun-essentials.menu.migrateHint"}}</p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>{{localize "dark-sun-essentials.menu.rules"}}</legend>
+
+    <div class="form-group">
+      <label for="ds-psionic">{{localize "dark-sun-essentials.settings.psionicSchool.name"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" id="ds-psionic" name="{{keys.psionicSchool}}" {{checked fields.psionicSchool}}>
+      </div>
+      <p class="hint">{{localize "dark-sun-essentials.settings.psionicSchool.hint"}}</p>
+    </div>
+
+    <div class="form-group">
+      <label for="ds-materials">{{localize "dark-sun-essentials.settings.materialProperties.name"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" id="ds-materials" name="{{keys.materialProperties}}" {{checked fields.materialProperties}}>
+      </div>
+      <p class="hint">{{localize "dark-sun-essentials.settings.materialProperties.hint"}}</p>
+    </div>
+  </fieldset>
+
+  <p class="notes dark-sun-footnote">
+    {{localize "dark-sun-essentials.menu.reloadNote"}}
+    <span class="dark-sun-version">dnd5e {{systemVersion}}</span>
+  </p>
+
+</div>
