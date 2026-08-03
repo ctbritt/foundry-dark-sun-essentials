@@ -73,7 +73,7 @@ export function verifyExtensionPoints() {
   if ( ("defaultCurrency" in dnd5e) && (typeof dnd5e.defaultCurrency !== "string") ) {
     malformed.push("CONFIG.DND5E.defaultCurrency is not a string");
   }
-  for ( const path of ["currencies", "spellSchools", "itemProperties", "validProperties"] ) {
+  for ( const path of ["currencies", "spellSchools", "itemProperties", "validProperties", "vehicleTypes"] ) {
     if ( (path in dnd5e) && (typeof dnd5e[path] !== "object") ) {
       malformed.push(`CONFIG.DND5E.${path} is not an object`);
     }

@@ -1,0 +1,107 @@
+name: Release
+
+# Publishing a GitHub Release is the trigger. Draft the release in the GitHub
+# UI with a tag matching the version in module.json — `v1.1.0` or `1.1.0`, both
+# work — and this rewrites the manifest, packages the zip, attaches both to the
+# release, and tells Foundry about it.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Never ship a release that does not pass. This is the same suite CI runs;
+      # it is repeated here because a release can be cut from any commit.
+      - name: Test
+        run: npm test
+
+      - name: Read the version from the tag
+        id: version
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "version=${TAG#v}" >> "$GITHUB_OUTPUT"
+
+      # Refuse to publish a release whose tag disagrees with the manifest.
+      # Foundry keys updates off module.json's `version`, so a mismatch ships a
+      # package that silently never updates.
+      - name: Check the tag matches module.json
+        run: |
+          MANIFEST_VERSION="$(jq -r .version module.json)"
+          if [ "${MANIFEST_VERSION}" != "${{ steps.version.outputs.version }}" ]; then
+            echo "::error::Tag ${{ steps.version.outputs.tag }} does not match module.json version ${MANIFEST_VERSION}."
+            exit 1
+          fi
+
+      # Point the manifest at this specific release.
+      #
+      # `manifest` stays on releases/latest so Foundry's update check always
+      # resolves to the newest release; `download` is pinned to this tag so the
+      # zip a user installs is the one this manifest describes.
+      #
+      # Done with jq rather than microsoft/variable-substitution, which every
+      # other Foundry project uses but which has been archived since Jan 2023.
+      # Three keys is not worth an unmaintained dependency. Swap it back if you
+      # would rather match the herd — the values are identical.
+      - name: Pin the manifest and download URLs
+        run: |
+          jq --arg m "https://github.com/${{ github.repository }}/releases/latest/download/module.json" \
+             --arg d "https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.tag }}/module.zip" \
+             '.manifest = $m | .download = $d' module.json > module.tmp.json
+          mv module.tmp.json module.json
+          jq '{id, version, manifest, download}' module.json
+
+      # Everything Foundry needs at runtime, and nothing else: no tests, no
+      # design docs, no package.json, no world script (that one is a repo
+      # download, not part of the installed module).
+      - name: Package
+        run: |
+          zip -r module.zip \
+            module.json \
+            scripts/ \
+            styles/ \
+            templates/ \
+            lang/ \
+            icons/ \
+            README.md \
+            CHANGELOG.md \
+            LICENSE
+          unzip -l module.zip
+
+      - name: Attach the manifest and package to the release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          omitNameDuringUpdate: true
+          omitBodyDuringUpdate: true
+          artifacts: module.json,module.zip
+          tag: ${{ steps.version.outputs.tag }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Only runs once the package is registered on foundryvtt.com and its
+      # Package Release Token is stored as the PACKAGE_TOKEN repository secret.
+      # Until then this step is skipped, and the manifest URL install still
+      # works — Foundry registration is for discoverability, not function.
+      # `secrets` is readable in a step's `run` but not in a step's `if`, so the
+      # presence check has to be laundered through an output like this.
+      - name: Check for a Foundry package token
+        id: foundry
+        run: echo "enabled=${{ secrets.PACKAGE_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Publish to the Foundry package registry
+        if: steps.foundry.outputs.enabled == 'true'
+        uses: cs96and/FoundryVTT-release-package@v1
+        with:
+          package-token: ${{ secrets.PACKAGE_TOKEN }}
+          manifest-url: https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.tag }}/module.json

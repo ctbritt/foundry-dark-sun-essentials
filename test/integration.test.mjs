@@ -39,6 +39,12 @@ function dnd5eConfig() {
       equipment: new Set(["ada", "mgc"]),
       spell: new Set(["vocal", "somatic"]),
       tool: new Set(["mgc"])
+    },
+    vehicleTypes: {
+      air: "DND5E.VEHICLE.Type.Air.label",
+      land: "DND5E.VEHICLE.Type.Land.label",
+      space: "DND5E.VEHICLE.Type.Space.label",
+      water: "DND5E.VEHICLE.Type.Water.label"
     }
   };
 }
@@ -206,17 +212,18 @@ test("materials register on weapons and armour but nowhere else", async () => {
 test("every feature at once composes cleanly", async () => {
   stubFoundry({
     ceramicCurrency: true, removeLegacyCurrency: true,
-    psionicSchool: true, materialProperties: true
+    psionicSchool: true, materialProperties: true, siltVehicles: true
   });
   const { applyConfig } = await importConfigApply();
 
   const { applied, skipped } = applyConfig();
 
   assert.equal(skipped.length, 0);
-  assert.equal(applied.length, 3);
+  assert.equal(applied.length, 4);
   assert.deepEqual(Object.keys(CONFIG.DND5E.currencies).sort(), ["cb", "ct", "lb"]);
   assert.ok("psi" in CONFIG.DND5E.spellSchools);
   assert.ok(CONFIG.DND5E.validProperties.weapon.has("obsidian"));
+  assert.ok("silt" in CONFIG.DND5E.vehicleTypes);
 });
 
 /* -------------------------------------------- */

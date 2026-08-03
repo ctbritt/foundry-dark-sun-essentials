@@ -8,6 +8,12 @@ import {
   buildValidProperties
 } from "../scripts/core/materials.mjs";
 import { PSIONIC_KEY, PSIONIC_SCHOOL, buildSpellSchools } from "../scripts/core/schools.mjs";
+import {
+  SILT_KEY,
+  SILT_UNDERLAY_SOURCE,
+  SILT_VEHICLE,
+  buildVehicleTypes
+} from "../scripts/core/vehicles.mjs";
 import { MATERIAL_ITEM_TYPES } from "../scripts/core/constants.mjs";
 
 /* -------------------------------------------- */
@@ -117,4 +123,43 @@ test("buildSpellSchools does not mutate its input", () => {
 test("the Psionic key does not collide with a standard school", () => {
   const standard = ["abj", "con", "div", "enc", "evo", "ill", "nec", "trs"];
   assert.ok(!standard.includes(PSIONIC_KEY));
+});
+
+/* -------------------------------------------- */
+/*  Silt vehicles                                */
+/* -------------------------------------------- */
+
+test("silt merges beside the four standard vehicle types", () => {
+  const existing = {
+    air: "DND5E.VEHICLE.Type.Air.label",
+    land: "DND5E.VEHICLE.Type.Land.label",
+    space: "DND5E.VEHICLE.Type.Space.label",
+    water: "DND5E.VEHICLE.Type.Water.label"
+  };
+  const merged = buildVehicleTypes(existing);
+  assert.equal(Object.keys(merged).length, 5);
+  assert.equal(merged[SILT_KEY], SILT_VEHICLE);
+  for ( const key of Object.keys(existing) ) assert.ok(key in merged, `${key} survives`);
+});
+
+test("buildVehicleTypes does not mutate its input", () => {
+  const existing = { land: "DND5E.VEHICLE.Type.Land.label" };
+  buildVehicleTypes(existing);
+  assert.deepEqual(Object.keys(existing), ["land"]);
+});
+
+test("the vehicle type value is a bare string, as dnd5e pre-localizes it", () => {
+  // preLocalize("vehicleTypes", { sort: true }) is registered with no `keys`,
+  // so an object here logs a console error at i18nInit instead of localizing.
+  assert.equal(typeof SILT_VEHICLE, "string");
+});
+
+test("the silt key does not collide with a standard vehicle type", () => {
+  assert.ok(!["air", "land", "space", "water"].includes(SILT_KEY));
+});
+
+test("the sheet underlay borrows a type dnd5e actually defines", () => {
+  // dnd5e's stylesheet only declares --underlay-vehicle-{land,water,air,space}.
+  // Aliasing silt to anything else would resolve to nothing.
+  assert.ok(["land", "water", "air", "space"].includes(SILT_UNDERLAY_SOURCE));
 });

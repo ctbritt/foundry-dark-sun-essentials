@@ -1,8 +1,8 @@
 # Dark Sun Essentials
 
-A Foundry VTT module that makes three Athasian changes to a D&D 5e world:
-ceramic coinage, the Psionic spell school, and material properties for weapons
-and armour.
+A Foundry VTT module that makes four Athasian changes to a D&D 5e world:
+ceramic coinage, the Psionic spell school, material properties for weapons and
+armour, and silt vehicles.
 
 Every change is a toggle. Turn them all off and the world behaves exactly like
 stock dnd5e.
@@ -71,15 +71,36 @@ automation can.
 Materials are not mutually exclusive. A bone-hafted obsidian blade is a real
 Athasian object.
 
+### Silt vehicles
+
+Adds Silt to the vehicle type list, for skimmers on the Sea of Silt.
+
+dnd5e's `vehicleTypes` table does double duty, so one key gets both: **Silt**
+appears in the vehicle sheet's type dropdown, and **Vehicles (Silt)** becomes a
+proficiency a character can hold, referenced as `tool:vehicle:silt`.
+
+The vehicle sheet paints its background from `--underlay-vehicle-<type>`, and
+dnd5e only ships artwork for land, water, air and space. The module supplies the
+missing variable, aliased to the water artwork — a skimmer is a ship, whatever
+it sails on.
+
 ## Installation
 
 Paste this manifest URL into Foundry's *Install Module* dialog:
 
 ```
-https://raw.githubusercontent.com/ctbritt/foundry-dark-sun-essentials/main/module.json
+https://github.com/ctbritt/foundry-dark-sun-essentials/releases/latest/download/module.json
 ```
 
 Then enable the module and open **Configure Athas** from Module Settings.
+
+### Or: the world-script edition
+
+If this is only ever going into one world, `world-script/dark-sun-essentials.js`
+is the same four features in a single file with flags at the top — no manifest,
+no installed package, no assets. Drop it in `worlds/<your-world>/scripts/` and
+list it under `"scripts"` in `world.json`. See
+[`world-script/README.md`](world-script/README.md) for what you give up.
 
 ## Notes
 
@@ -115,6 +136,32 @@ the part that can lose a player's money is testable, and so a future system
 change is confined to the adapter.
 
 The design document is in `docs/superpowers/specs/`.
+
+### Releasing
+
+Two workflows, both in `.github/workflows/`:
+
+- **CI** runs the suite on every push and pull request.
+- **Release** fires when a GitHub Release is *published*.
+
+To cut a release: bump `version` in both `module.json` and `package.json`, add a
+`## <version>` heading to `CHANGELOG.md`, commit, then publish a GitHub Release
+tagged `v<version>`. The workflow re-runs the tests, refuses to continue if the
+tag and manifest disagree, rewrites `manifest`/`download` to point at that
+release, zips only the runtime files, and attaches `module.json` and
+`module.zip` to the release.
+
+Version drift, a missing changelog entry, a manifest pointing at a file that no
+longer exists, and a `v` prefix leaking into `version` are all caught by
+`test/manifest.test.mjs`, so they fail locally rather than after publication.
+
+The final step publishes to the Foundry package registry via
+[`cs96and/FoundryVTT-release-package`](https://github.com/cs96and/FoundryVTT-release-package).
+It is **skipped** unless a `PACKAGE_TOKEN` repository secret exists — that token
+comes from the package's own page on foundryvtt.com, which requires registering
+the package there first. Until then, releases still work and the manifest URL
+above still installs; registration buys discoverability in Foundry's browser,
+not function.
 
 ## Licence
 

@@ -9,6 +9,7 @@ import { SETTINGS } from "./core/constants.mjs";
 import { buildCurrencyConfig } from "./core/coinage.mjs";
 import { buildItemProperties, buildValidProperties } from "./core/materials.mjs";
 import { buildSpellSchools } from "./core/schools.mjs";
+import { buildVehicleTypes } from "./core/vehicles.mjs";
 import { log, reportIncompatibility, verifyExtensionPoints } from "./compat.mjs";
 import { setting } from "./settings.mjs";
 
@@ -55,6 +56,11 @@ export function applyConfig() {
     CONFIG.DND5E.validProperties = buildValidProperties(CONFIG.DND5E.validProperties);
     applied.push("material properties");
   } else skipped.push("material properties");
+
+  if ( setting(SETTINGS.siltVehicles) ) {
+    CONFIG.DND5E.vehicleTypes = buildVehicleTypes(CONFIG.DND5E.vehicleTypes);
+    applied.push("silt vehicles");
+  } else skipped.push("silt vehicles");
 
   log("info", applied.length ? `Applied: ${applied.join(", ")}.` : "No features enabled.");
   return { applied, skipped };

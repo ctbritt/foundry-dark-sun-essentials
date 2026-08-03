@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No dependencies and no build step: the module is plain ESM and the tests
+      # run on node's built-in runner. `npm ci` would fail without a lockfile,
+      # and there is nothing to lock.
+      #
+      # Manifest integrity, asset paths and the world script are covered by
+      # test/manifest.test.mjs rather than by steps here, so the same checks run
+      # locally before anything reaches CI.
+      - name: Test
+        run: npm test

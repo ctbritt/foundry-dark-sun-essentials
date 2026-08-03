@@ -59,7 +59,8 @@ export default class DarkSunSettingsMenu extends HandlebarsApplicationMixin(Appl
       ceramicCurrency: value(SETTINGS.ceramicCurrency),
       removeLegacyCurrency: value(SETTINGS.removeLegacyCurrency),
       psionicSchool: value(SETTINGS.psionicSchool),
-      materialProperties: value(SETTINGS.materialProperties)
+      materialProperties: value(SETTINGS.materialProperties),
+      siltVehicles: value(SETTINGS.siltVehicles)
     };
     context.keys = SETTINGS;
     context.moduleId = MODULE_ID;

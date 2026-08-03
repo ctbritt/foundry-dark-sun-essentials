@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.1.0 — 2026-08-03
+
+- **Silt vehicles.** Adds Silt to `CONFIG.DND5E.vehicleTypes`, which puts it in
+  the vehicle sheet's type list and registers `tool:vehicle:silt` as a vehicle
+  proficiency. Ships the `--underlay-vehicle-silt` sheet background dnd5e does
+  not define, aliased to the water artwork.
+- **World-script edition.** `world-script/dark-sun-essentials.js` is the whole
+  module in one file, for GMs who only want this in a single world. Feature
+  flags at the top instead of a settings window; the currency migration runs
+  from a macro via `game.darkSun.convertCurrency()`, dry-run by default.
+  It mutates the config tables in place rather than replacing them, which is
+  correct regardless of when dnd5e builds its data model schemas.
+- `vehicleTypes` joins the startup verification, so a system that moves it
+  disables features rather than writing to a table that is not there.
+- CI and release workflows. Publishing a GitHub Release now runs the suite,
+  checks the tag against the manifest, pins the manifest and download URLs to
+  that release, packages the runtime files, and attaches both to the release.
+  Foundry package-registry publication runs too, once a `PACKAGE_TOKEN` secret
+  exists.
+- The manifest URL now tracks `releases/latest` rather than the `main` branch,
+  so Foundry never offers a version whose release assets do not exist yet.
+
 ## 1.0.0 — 2026-08-03
 
 First release.

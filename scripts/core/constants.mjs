@@ -9,7 +9,8 @@ export const SETTINGS = {
   ceramicCurrency: "ceramicCurrency",
   removeLegacyCurrency: "removeLegacyCurrency",
   psionicSchool: "psionicSchool",
-  materialProperties: "materialProperties"
+  materialProperties: "materialProperties",
+  siltVehicles: "siltVehicles"
 };
 
 /** Currency keys this module adds. */
@@ -30,5 +31,6 @@ export const REQUIRED_CONFIG_PATHS = {
   defaultCurrency: "defaultCurrency",
   spellSchools: "spellSchools",
   itemProperties: "itemProperties",
-  validProperties: "validProperties"
+  validProperties: "validProperties",
+  vehicleTypes: "vehicleTypes"
 };

@@ -76,6 +76,16 @@ export function registerSettings() {
     default: false
   });
 
+  game.settings.register(MODULE_ID, SETTINGS.siltVehicles, {
+    name: `${MODULE_ID}.settings.siltVehicles.name`,
+    hint: `${MODULE_ID}.settings.siltVehicles.hint`,
+    scope: "world",
+    config: true,
+    requiresReload: true,
+    type: Boolean,
+    default: false
+  });
+
   log("debug", "Settings registered.");
 }
 
