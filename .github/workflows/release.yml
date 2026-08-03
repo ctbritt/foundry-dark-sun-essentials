@@ -33,9 +33,24 @@ jobs:
           echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
           echo "version=${TAG#v}" >> "$GITHUB_OUTPUT"
 
-      # Refuse to publish a release whose tag disagrees with the manifest.
-      # Foundry keys updates off module.json's `version`, so a mismatch ships a
-      # package that silently never updates.
+      # Two separate traps, so the error message names the actual problem.
+      #
+      # The first is tag shape. `v1.10` looks like a typo for `v1.1.0` and is
+      # not: as a version it is one-point-ten, which sorts above 1.9 and below
+      # 1.1.0 nowhere. Foundry compares these numerically, and GitHub uses them
+      # to decide which release is "Latest", so a malformed tag misbehaves in
+      # two systems at once.
+      #
+      # The second is agreement with the manifest. Foundry keys updates off
+      # module.json's `version`, so a mismatch ships a package that installs
+      # once and then silently never updates again.
+      - name: Check the tag is strict semver
+        run: |
+          if ! printf '%s' "${{ steps.version.outputs.version }}" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::Tag ${{ steps.version.outputs.tag }} is not strict semver. Expected three numeric parts, e.g. v1.1.0 — note that v1.10 is not v1.1.0."
+            exit 1
+          fi
+
       - name: Check the tag matches module.json
         run: |
           MANIFEST_VERSION="$(jq -r .version module.json)"
@@ -80,6 +95,7 @@ jobs:
           unzip -l module.zip
 
       - name: Attach the manifest and package to the release
+        id: attach
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
@@ -105,3 +121,25 @@ jobs:
         with:
           package-token: ${{ secrets.PACKAGE_TOKEN }}
           manifest-url: https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.tag }}/module.json
+
+      # This workflow is triggered by `release: published`, which means the
+      # release is already public before a single check has run. A failure
+      # before the assets are attached therefore leaves an empty release sitting
+      # as "Latest", and `releases/latest/download/module.json` — the URL the
+      # README tells people to install from — starts returning 404.
+      #
+      # That is not hypothetical; it is what happened on 2026-08-03 when a
+      # release was tagged v1.10. So put the release back in the drawer.
+      # Draft, not deleted: the notes are preserved, it stops being "Latest",
+      # and re-publishing after a fix is one click.
+      #
+      # Scoped to failures *before* the assets land. Once the release is
+      # complete, a failure in the optional registry step is not a reason to
+      # withdraw a perfectly good release.
+      - name: Withdraw the release if it never got its assets
+        if: failure() && steps.attach.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release edit "${{ github.event.release.tag_name }}" --draft --repo "${{ github.repository }}"
+          echo "::warning::Release ${{ github.event.release.tag_name }} was converted back to a draft because the run failed before its assets were attached. Fix the problem, then re-publish it."

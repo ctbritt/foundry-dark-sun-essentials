@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.1 — 2026-08-03
+
+No change to how the module behaves in a world. This hardens the release
+workflow against the way 1.1.0 was nearly published broken.
+
+- **A failed release no longer leaves a broken one published.** The workflow is
+  triggered by `release: published`, so the release is already public before any
+  check has run. If a check now fails before the assets are attached, the
+  release is converted back to a draft — it stops being "Latest", and the
+  install URL in the README stops returning 404. Failures after the assets land,
+  such as the optional package-registry step, leave the good release alone.
+- **Malformed tags are caught by shape, not just by mismatch.** `v1.10` is not a
+  typo for `v1.1.0`; it is one-point-ten, and both Foundry and GitHub compare
+  versions numerically. The workflow now rejects any tag that is not three
+  numeric parts, and says so in those words.
+
 ## 1.1.0 — 2026-08-03
 
 - **Silt vehicles.** Adds Silt to `CONFIG.DND5E.vehicleTypes`, which puts it in
