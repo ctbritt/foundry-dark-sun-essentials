@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.2.0 — 2026-08-04
+
+Adds a Psionic item property, and removes the configuration window in favour of
+the toggles Foundry already shows.
+
+- **Psionic is now an item property as well as a spell school.** The school
+  answers what kind of magic a power is, which only spells have. The property
+  answers whether a thing is psionic at all — a question a wild talent, a
+  mind-forged blade, a psionic focus and a brewed draught all raise. It is
+  valid on `spell`, `weapon`, `equipment`, `consumable` and `feat`, and it is a
+  descriptive tag: no automation, and no `isPhysical`, so it does not claim to
+  bypass damage resistance. Toggled separately from the school.
+- **The "Configure Athas" window is gone.** The toggles live directly in the
+  module's section of Foundry's settings list, where they already appeared.
+  Five checkboxes did not need a second home, and two places holding the same
+  state is two places for it to drift.
+- **Converting balances without removing the old coins is now an API call.**
+  That button lived in the window. Run
+  `game.modules.get("dark-sun-essentials").api.openMigrationDialog()` from a
+  macro. The path that actually matters is unchanged: enabling *Remove Standard
+  Coinage* still scans the world and offers the migration before anything is
+  written.
+- **Fixed: arming removal without ceramic coinage no longer leaves it armed.**
+  Ticking *Remove Standard Coinage* without *Athasian Coinage* warned and then
+  did nothing, but the setting stayed on. Enabling ceramic coinage later would
+  have stripped the standard coins on the next reload without ever offering the
+  migration. The setting is now switched back off.
+
 ## 1.1.1 — 2026-08-03
 
 No change to how the module behaves in a world. This hardens the release

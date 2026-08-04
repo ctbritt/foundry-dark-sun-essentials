@@ -1,5 +1,5 @@
 /**
- * Version detection and the handful of API shims v13 and v14 need.
+ * Version detection and extension-point verification.
  *
  * The philosophy here is that a missing extension point should be reported by
  * name and then skipped, never written to on faith. dnd5e 6.0 is unreleased at
@@ -24,27 +24,6 @@ export function systemVersion() {
 export function systemMajorVersion() {
   const parsed = Number.parseInt(systemVersion(), 10);
   return Number.isFinite(parsed) ? parsed : 0;
-}
-
-/* -------------------------------------------- */
-/*  Namespace shims                              */
-/* -------------------------------------------- */
-
-/**
- * Handlebars helpers moved to `foundry.applications.handlebars` in v13 and the
- * bare globals were removed in v14. Prefer the namespaced form, fall back for
- * safety, and no-op rather than throw if neither exists.
- * @param {string[]} paths  Template paths to preload.
- * @returns {Promise<void>}
- */
-export async function loadTemplatesCompat(paths) {
-  const loader = foundry?.applications?.handlebars?.loadTemplates
-    ?? globalThis.loadTemplates;
-  if ( typeof loader !== "function" ) {
-    log("warn", "No template loader available; templates will load on demand.");
-    return;
-  }
-  await loader(paths);
 }
 
 /* -------------------------------------------- */

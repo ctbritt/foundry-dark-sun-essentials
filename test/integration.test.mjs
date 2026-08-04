@@ -63,13 +63,10 @@ function stubFoundry(settings = {}) {
   globalThis.foundry = {
     applications: {
       api: {
-        // Enough of the surface for the app modules to evaluate. They are
-        // never rendered here; only their imports must resolve.
-        ApplicationV2: class ApplicationV2 {},
-        HandlebarsApplicationMixin: Base => class extends Base {},
+        // Enough of the surface for the migration dialog to evaluate. It is
+        // never rendered here; only its imports must resolve.
         DialogV2: class DialogV2 {}
-      },
-      handlebars: { loadTemplates: async () => {} }
+      }
     },
     utils: {
       expandObject: o => ({ ...o }),
@@ -86,7 +83,6 @@ function stubFoundry(settings = {}) {
     i18n: { localize: k => k, format: k => k },
     settings: {
       register: () => {},
-      registerMenu: () => {},
       get: (_scope, key) => settings[key] ?? false,
       set: async () => {}
     }
@@ -118,9 +114,9 @@ async function importConfigApply() {
 
 test("the whole module graph evaluates without throwing", async () => {
   stubFoundry();
-  // main.mjs pulls in every other file, including both ApplicationV2 windows.
-  // If any of them touch a global that does not exist yet, this is where a
-  // silent load failure in Foundry becomes a visible test failure.
+  // main.mjs pulls in every other file, including the migration dialog. If any
+  // of them touch a global that does not exist yet, this is where a silent
+  // load failure in Foundry becomes a visible test failure.
   const url = new URL("../scripts/main.mjs", import.meta.url);
   url.searchParams.set("t", String(Math.random()));
   await assert.doesNotReject(() => import(url.href));
@@ -142,6 +138,7 @@ test("all features off leaves dnd5e exactly as it shipped", async () => {
   assert.equal(CONFIG.DND5E.defaultCurrency, "gp");
   assert.equal(Object.keys(CONFIG.DND5E.spellSchools).length, 8);
   assert.ok(!("wood" in CONFIG.DND5E.itemProperties));
+  assert.ok(!("psi" in CONFIG.DND5E.itemProperties));
 });
 
 test("ceramic coinage adds three coins and repoints the default", async () => {
@@ -209,19 +206,51 @@ test("materials register on weapons and armour but nowhere else", async () => {
   assert.ok(CONFIG.DND5E.itemProperties.ada.isPhysical, "adamantine is untouched");
 });
 
+test("the psionic property registers on powers and things, but not tools", async () => {
+  stubFoundry({ psionicProperty: true });
+  const { applyConfig } = await importConfigApply();
+
+  applyConfig();
+
+  assert.ok("psi" in CONFIG.DND5E.itemProperties, "psi defined");
+  for ( const type of ["spell", "weapon", "equipment", "consumable", "feat"] ) {
+    assert.ok(CONFIG.DND5E.validProperties[type].has("psi"), `psi on ${type}`);
+  }
+  assert.ok(!CONFIG.DND5E.validProperties.tool.has("psi"), "psi not on tools");
+  assert.ok(CONFIG.DND5E.validProperties.spell.has("vocal"), "system properties survive");
+  assert.ok(!("wood" in CONFIG.DND5E.itemProperties), "materials are a separate toggle");
+});
+
+test("the psionic property and the materials share the tables without collision", async () => {
+  stubFoundry({ psionicProperty: true, materialProperties: true });
+  const { applyConfig } = await importConfigApply();
+
+  applyConfig();
+
+  // Both write to itemProperties and validProperties. The second must not
+  // overwrite the first — this is the failure only visible with both on.
+  assert.ok(CONFIG.DND5E.validProperties.weapon.has("psi"));
+  assert.ok(CONFIG.DND5E.validProperties.weapon.has("obsidian"));
+  assert.ok(CONFIG.DND5E.validProperties.weapon.has("fin"), "and the system's own");
+  assert.ok(CONFIG.DND5E.validProperties.spell.has("psi"));
+  assert.ok(!CONFIG.DND5E.validProperties.spell.has("obsidian"), "materials stay off spells");
+  for ( const key of ["psi", "wood", "ada"] ) assert.ok(key in CONFIG.DND5E.itemProperties, key);
+});
+
 test("every feature at once composes cleanly", async () => {
   stubFoundry({
-    ceramicCurrency: true, removeLegacyCurrency: true,
-    psionicSchool: true, materialProperties: true, siltVehicles: true
+    ceramicCurrency: true, removeLegacyCurrency: true, psionicSchool: true,
+    psionicProperty: true, materialProperties: true, siltVehicles: true
   });
   const { applyConfig } = await importConfigApply();
 
   const { applied, skipped } = applyConfig();
 
   assert.equal(skipped.length, 0);
-  assert.equal(applied.length, 4);
+  assert.equal(applied.length, 5);
   assert.deepEqual(Object.keys(CONFIG.DND5E.currencies).sort(), ["cb", "ct", "lb"]);
   assert.ok("psi" in CONFIG.DND5E.spellSchools);
+  assert.ok("psi" in CONFIG.DND5E.itemProperties);
   assert.ok(CONFIG.DND5E.validProperties.weapon.has("obsidian"));
   assert.ok("silt" in CONFIG.DND5E.vehicleTypes);
 });

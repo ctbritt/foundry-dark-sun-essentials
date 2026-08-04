@@ -8,6 +8,7 @@
  */
 
 import { MATERIAL_ITEM_TYPES, MODULE_ID } from "./constants.mjs";
+import { mergeItemProperties, mergeValidProperties } from "./properties.mjs";
 
 /**
  * Shape matches dnd5e's ItemPropertyConfiguration typedef.
@@ -33,24 +34,18 @@ export const MATERIAL_KEYS = Object.freeze(Object.keys(MATERIAL_PROPERTIES));
  * @returns {object}         A new table. The input is not mutated.
  */
 export function buildItemProperties(existing) {
-  return { ...existing, ...MATERIAL_PROPERTIES };
+  return mergeItemProperties(existing, MATERIAL_PROPERTIES);
 }
 
 /**
  * Register the materials as valid on weapons and armour.
  *
- * dnd5e models armour as the `equipment` item type. `validProperties` values
- * are Sets, and the system reads them through a runtime getter, so returning
- * fresh Sets rather than mutating in place keeps this re-runnable.
+ * dnd5e models armour as the `equipment` item type.
  *
  * @param {Record<string, Set<string>>} existing  The current `CONFIG.DND5E.validProperties`.
  * @param {string[]} [types]                      Item types to extend.
  * @returns {Record<string, Set<string>>}         A new table. The input is not mutated.
  */
 export function buildValidProperties(existing, types = MATERIAL_ITEM_TYPES) {
-  const next = { ...existing };
-  for ( const type of types ) {
-    next[type] = new Set([ ...(existing?.[type] ?? []), ...MATERIAL_KEYS ]);
-  }
-  return next;
+  return mergeValidProperties(existing, MATERIAL_KEYS, types);
 }

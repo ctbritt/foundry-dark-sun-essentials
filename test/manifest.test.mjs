@@ -56,11 +56,11 @@ test("every language file is valid JSON", () => {
 });
 
 test("every module-relative asset path resolves to a real file", () => {
-  // Icons and templates are referenced as `modules/<id>/...` at runtime, which
-  // only resolves once installed. Strip the prefix and check the repo copy.
-  // Most are built from a template literal, so the id appears as ${MODULE_ID}.
+  // Icons are referenced as `modules/<id>/...` at runtime, which only resolves
+  // once installed. Strip the prefix and check the repo copy. Most are built
+  // from a template literal, so the id appears as ${MODULE_ID}.
   const PATTERN = /modules\/(?:dark-sun-essentials|\$\{MODULE_ID\})\/([\w./-]+\.(?:svg|hbs|css|webp|png))/g;
-  const sources = ["scripts", "templates", "styles"];
+  const sources = ["scripts", "styles"];
   const referenced = new Set();
   const walk = dir => {
     for ( const entry of execFileSync("find", [join(ROOT, dir), "-type", "f"], { encoding: "utf8" }).trim().split("\n") ) {

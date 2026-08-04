@@ -8,7 +8,11 @@
 import { SETTINGS } from "./core/constants.mjs";
 import { buildCurrencyConfig } from "./core/coinage.mjs";
 import { buildItemProperties, buildValidProperties } from "./core/materials.mjs";
-import { buildSpellSchools } from "./core/schools.mjs";
+import {
+  buildPsionicProperty,
+  buildPsionicValidProperties,
+  buildSpellSchools
+} from "./core/psionics.mjs";
 import { buildVehicleTypes } from "./core/vehicles.mjs";
 import { log, reportIncompatibility, verifyExtensionPoints } from "./compat.mjs";
 import { setting } from "./settings.mjs";
@@ -56,6 +60,14 @@ export function applyConfig() {
     CONFIG.DND5E.validProperties = buildValidProperties(CONFIG.DND5E.validProperties);
     applied.push("material properties");
   } else skipped.push("material properties");
+
+  // After the materials, and reading CONFIG rather than a local, so the two
+  // property features compose instead of the second overwriting the first.
+  if ( setting(SETTINGS.psionicProperty) ) {
+    CONFIG.DND5E.itemProperties = buildPsionicProperty(CONFIG.DND5E.itemProperties);
+    CONFIG.DND5E.validProperties = buildPsionicValidProperties(CONFIG.DND5E.validProperties);
+    applied.push("psionic property");
+  } else skipped.push("psionic property");
 
   if ( setting(SETTINGS.siltVehicles) ) {
     CONFIG.DND5E.vehicleTypes = buildVehicleTypes(CONFIG.DND5E.vehicleTypes);

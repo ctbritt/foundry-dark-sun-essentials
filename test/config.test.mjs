@@ -7,14 +7,21 @@ import {
   buildItemProperties,
   buildValidProperties
 } from "../scripts/core/materials.mjs";
-import { PSIONIC_KEY, PSIONIC_SCHOOL, buildSpellSchools } from "../scripts/core/schools.mjs";
+import {
+  PSIONIC_KEY,
+  PSIONIC_PROPERTY,
+  PSIONIC_SCHOOL,
+  buildPsionicProperty,
+  buildPsionicValidProperties,
+  buildSpellSchools
+} from "../scripts/core/psionics.mjs";
 import {
   SILT_KEY,
   SILT_UNDERLAY_SOURCE,
   SILT_VEHICLE,
   buildVehicleTypes
 } from "../scripts/core/vehicles.mjs";
-import { MATERIAL_ITEM_TYPES } from "../scripts/core/constants.mjs";
+import { MATERIAL_ITEM_TYPES, PSIONIC_ITEM_TYPES } from "../scripts/core/constants.mjs";
 
 /* -------------------------------------------- */
 /*  Materials                                    */
@@ -123,6 +130,95 @@ test("buildSpellSchools does not mutate its input", () => {
 test("the Psionic key does not collide with a standard school", () => {
   const standard = ["abj", "con", "div", "enc", "evo", "ill", "nec", "trs"];
   assert.ok(!standard.includes(PSIONIC_KEY));
+});
+
+test("the Psionic property carries the fields dnd5e's typedef requires", () => {
+  assert.equal(typeof PSIONIC_PROPERTY.label, "string");
+  assert.equal(typeof PSIONIC_PROPERTY.icon, "string");
+});
+
+test("the Psionic property is not flagged resistance-piercing", () => {
+  // isPhysical means "bypasses damage resistance", which is how dnd5e groups
+  // adamantine and silvered. Psionic origin is descriptive, like the materials.
+  assert.equal(PSIONIC_PROPERTY.isPhysical, undefined);
+});
+
+test("the Psionic property does not collide with a dnd5e property key", () => {
+  // The keys dnd5e 5.3.3 ships. `psi` must not shadow one of them.
+  const stock = ["ada", "amm", "fin", "fir", "foc", "hvy", "lgt", "lod", "mgc",
+    "rch", "rel", "ret", "sil", "spc", "thr", "two", "ver", "vocal", "somatic",
+    "material", "concentration", "ritual", "stealthDisadvantage", "weightlessContents"];
+  assert.ok(!stock.includes(PSIONIC_KEY));
+});
+
+test("the Psionic property merges without displacing system properties", () => {
+  const existing = { ada: { label: "Adamantine" }, mgc: { label: "Magical" } };
+  const merged = buildPsionicProperty(existing);
+  assert.ok("ada" in merged, "system properties survive");
+  assert.ok("mgc" in merged);
+  assert.equal(merged[PSIONIC_KEY], PSIONIC_PROPERTY);
+});
+
+test("buildPsionicProperty does not mutate its input", () => {
+  const existing = { ada: {} };
+  buildPsionicProperty(existing);
+  assert.deepEqual(Object.keys(existing), ["ada"]);
+});
+
+test("the Psionic property is valid on powers, arms, gear, consumables and features", () => {
+  assert.deepEqual(PSIONIC_ITEM_TYPES, ["spell", "weapon", "equipment", "consumable", "feat"]);
+
+  const existing = {
+    weapon: new Set(["ada", "fin"]),
+    equipment: new Set(["ada"]),
+    spell: new Set(["vocal"]),
+    consumable: new Set(),
+    feat: new Set()
+  };
+  const merged = buildPsionicValidProperties(existing);
+
+  for ( const type of PSIONIC_ITEM_TYPES ) {
+    assert.ok(merged[type].has(PSIONIC_KEY), `psi valid on ${type}`);
+  }
+  assert.ok(merged.weapon.has("fin"), "existing weapon properties survive");
+  assert.ok(merged.spell.has("vocal"), "existing spell properties survive");
+});
+
+test("the Psionic property is not added to item types that should not have them", () => {
+  const existing = { spell: new Set(), weapon: new Set(), tool: new Set(["foc"]) };
+  const merged = buildPsionicValidProperties(existing);
+  assert.ok(!merged.tool.has(PSIONIC_KEY), "psi must not appear on tools");
+});
+
+test("buildPsionicValidProperties creates item types the system has not defined", () => {
+  const merged = buildPsionicValidProperties({});
+  for ( const type of PSIONIC_ITEM_TYPES ) {
+    assert.ok(merged[type] instanceof Set, `${type} created`);
+    assert.deepEqual([...merged[type]], [PSIONIC_KEY]);
+  }
+});
+
+test("buildPsionicValidProperties does not mutate the Sets it is given", () => {
+  const weapon = new Set(["ada"]);
+  buildPsionicValidProperties({ weapon });
+  assert.deepEqual([...weapon], ["ada"], "the system's own Set is untouched");
+});
+
+test("materials and psionics compose rather than overwriting each other", () => {
+  // Both features write to the same two tables. Enabling both must leave a
+  // weapon able to carry `obsidian` and `psi` at once — this is the ordering
+  // bug that would only show up with both toggles on.
+  const properties = buildPsionicProperty(buildItemProperties({ ada: {} }));
+  for ( const key of MATERIAL_KEYS ) assert.ok(key in properties, `${key} survives`);
+  assert.ok(PSIONIC_KEY in properties, "psi survives");
+  assert.ok("ada" in properties, "system properties survive");
+
+  const valid = buildPsionicValidProperties(buildValidProperties({ weapon: new Set(["fin"]) }));
+  assert.ok(valid.weapon.has("obsidian"), "material survives on weapons");
+  assert.ok(valid.weapon.has(PSIONIC_KEY), "psi survives on weapons");
+  assert.ok(valid.weapon.has("fin"), "system property survives on weapons");
+  assert.ok(valid.spell.has(PSIONIC_KEY), "psi reaches spells");
+  assert.ok(!valid.spell.has("obsidian"), "materials must not reach spells");
 });
 
 /* -------------------------------------------- */

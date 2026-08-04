@@ -204,6 +204,38 @@ test("adds material properties to weapons and armour only", () => {
   assert.ok(dnd5e.validProperties.weapon.has("fin"), "existing weapon properties survive");
 });
 
+test("adds the psionic property to powers, arms, gear, consumables and features", () => {
+  const { dnd5e } = boot();
+
+  assert.ok("psi" in dnd5e.itemProperties, "psi missing from itemProperties");
+  assert.ok(!dnd5e.itemProperties.psi.isPhysical, "psi must not pierce resistance");
+
+  for ( const type of ["spell", "weapon", "equipment", "consumable", "feat"] ) {
+    assert.ok(dnd5e.validProperties[type]?.has("psi"), `psi not valid on ${type}`);
+  }
+  assert.ok(dnd5e.validProperties.spell.has("vocal"), "existing spell properties survive");
+});
+
+test("the psionic property and the materials both survive on a weapon", () => {
+  // Both features write to the same tables; the second must not clobber the first.
+  const { dnd5e } = boot();
+  assert.ok(dnd5e.validProperties.weapon.has("obsidian"));
+  assert.ok(dnd5e.validProperties.weapon.has("psi"));
+  assert.ok(dnd5e.validProperties.weapon.has("fin"), "and the system's own");
+});
+
+test("the psionic property can be turned off independently of the school", () => {
+  const { dnd5e } = boot({ flags: { psionicProperty: false } });
+  assert.ok(!("psi" in dnd5e.itemProperties), "property was added with the flag off");
+  assert.ok(dnd5e.spellSchools.psi, "the school is a separate toggle and stays on");
+});
+
+test("the psionic school can be turned off independently of the property", () => {
+  const { dnd5e } = boot({ flags: { psionicSchool: false } });
+  assert.ok(!dnd5e.spellSchools.psi, "school was added with the flag off");
+  assert.ok("psi" in dnd5e.itemProperties, "the property is a separate toggle and stays on");
+});
+
 /* -------------------------------------------- */
 /*  Silt vehicles                                */
 /* -------------------------------------------- */

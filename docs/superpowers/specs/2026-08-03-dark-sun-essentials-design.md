@@ -44,15 +44,16 @@ A pure core with a thin Foundry adapter around it.
 scripts/
   core/           no Foundry globals; unit-tested with node:test
     coinage.mjs     currency definitions + exact conversion math
+    properties.mjs  shared itemProperties/validProperties merge semantics
     materials.mjs   material property definitions
-    schools.mjs     psionic school definition
-    constants.mjs   module id, setting keys
-  compat.mjs      version detection, namespace shims for v13/v14
+    psionics.mjs    psionic school + psionic item property
+    vehicles.mjs    silt vehicle type
+    constants.mjs   module id, setting keys, item type lists
+  compat.mjs      version detection, extension point verification
   settings.mjs    game.settings registration
   config-apply.mjs  mutates CONFIG.DND5E from settings
   migration.mjs   world data conversion
   apps/
-    settings-menu.mjs     ApplicationV2 + HandlebarsApplicationMixin
     migration-dialog.mjs  DialogV2 confirmation and report
   main.mjs        hook wiring
 ```
@@ -117,10 +118,29 @@ time, because legacy balances are zeroed as they are folded in.
 
 ## Psionics
 
-Adds a `psi` school to `CONFIG.DND5E.spellSchools` with `fullKey: "psionic"`,
-matching the `SpellSchoolConfiguration` shape (label, icon, fullKey, optional
-reference). The `fullKey` makes `@Spell[psionic]`-style enrichers resolve. Ships
-its own SVG icon rather than borrowing a system path that may move.
+Two independent features, in `core/psionics.mjs`.
+
+**The school.** Adds a `psi` school to `CONFIG.DND5E.spellSchools` with
+`fullKey: "psionic"`, matching the `SpellSchoolConfiguration` shape (label,
+icon, fullKey, optional reference). The `fullKey` makes `@Spell[psionic]`-style
+enrichers resolve. Ships its own SVG icon rather than borrowing a system path
+that may move.
+
+**The property.** Adds a `psi` entry to `CONFIG.DND5E.itemProperties`,
+registered in `validProperties` for `spell`, `weapon`, `equipment`, `consumable`
+and `feat`.
+
+The two are not redundant. The school answers *what kind of magic is this
+power*, a question only spells have. The property answers *is this thing psionic
+at all*, which a wild talent, a mind-forged blade, a psionic focus and a brewed
+draught all raise, and only the first of those is a spell. Restricting the
+property to spells would have made it a second spelling of the school.
+
+The key is shared between the two tables deliberately. They are separate tables,
+so there is no collision, and one spelling of "psionic" in stored data is worth
+more than the marginal clarity of two keys. `isPhysical` is unset for the same
+reason as the materials: it means "bypasses damage resistance", and this module
+tags things rather than adjudicating them.
 
 ## Materials
 
@@ -146,14 +166,24 @@ Athasian object.
 | `ceramicCurrency` | boolean | Add CT/CB/LB, set `defaultCurrency` to `ct` |
 | `removeLegacyCurrency` | boolean | Remove PP/GP/EP/SP/CP (gated on migration) |
 | `psionicSchool` | boolean | Add the Psionic spell school |
+| `psionicProperty` | boolean | Add the Psionic item property |
 | `materialProperties` | boolean | Add the five material properties |
+| `siltVehicles` | boolean | Add Silt as a vehicle type |
 
 All are world-scoped, GM-only, and `requiresReload: true` — CONFIG is read when
 data model schemas are first built, so changes cannot take effect mid-session.
 
-A settings **menu** (ApplicationV2) groups these with inline explanations of
-what each does to existing data, plus a manual "Run currency migration" action
-for GMs who want to convert without removing the old coins.
+They register with `config: true` and appear directly in Foundry's module
+settings list. There is no separate configuration window: six checkboxes do not
+need one, and a second surface holding the same state is a second place for it
+to drift.
+
+Converting balances *without* removing the standard coins is therefore an API
+call — `game.modules.get("dark-sun-essentials").api.openMigrationDialog()` — not
+a button. The path that actually risks data is unchanged: enabling
+`removeLegacyCurrency` still scans the world and offers the migration first, and
+if ceramic coinage is not enabled it now switches the setting back off rather
+than leaving it armed to fire on a later reload.
 
 ## Timing
 
@@ -165,11 +195,9 @@ the same hook.
 ## Compatibility
 
 **v13 / v14.** The relevant APIs — `game.settings.register`,
-`foundry.applications.api.ApplicationV2`, `HandlebarsApplicationMixin`,
-`DialogV2`, `foundry.utils.*` — are present and stable in both. The one real
-hazard is that the deprecated globals `loadTemplates` and `renderTemplate` were
-removed in v14 in favour of `foundry.applications.handlebars.*`. `compat.mjs`
-feature-detects and uses the namespaced form when available.
+`foundry.applications.api.DialogV2`, `foundry.utils.*` — are present and stable
+in both. The module ships no Handlebars templates, so the v14 removal of the
+deprecated `loadTemplates` / `renderTemplate` globals does not touch it.
 
 **dnd5e 6.0.** It does not exist yet. dnd5e `master` is 5.3.3, and the 5.3
 release notes describe it as the V14-compatibility release "laying solid
@@ -195,6 +223,10 @@ foundations for the ambitious changes planned for version 6.0". Claiming tested
 - Malformed input (negatives, floats, strings, null) is coerced safely.
 - The generic conversion agrees with the hand-written table for standard coins.
 - Config builders produce the shapes dnd5e's typedefs document.
+- Materials and the psionic property compose: both write to `itemProperties`
+  and `validProperties`, and enabling both must leave a weapon able to carry
+  `obsidian` and `psi` at once. This is the only failure mode invisible with a
+  single feature enabled, so it is asserted at both the core and adapter level.
 
 The Foundry-coupled layer is verified by installing into the live v13 and v14
 data directories and loading a world.

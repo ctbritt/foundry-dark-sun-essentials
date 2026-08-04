@@ -44,6 +44,9 @@
     /** Psionic as a ninth spell school, so powers filter and list like spells. */
     psionicSchool: true,
 
+    /** A Psionic tag for anything of psionic origin — power, blade, gear, talent. */
+    psionicProperty: true,
+
     /** Wood/Bone/Stone/Obsidian/Metal tags on weapons and armour. */
     materialProperties: true,
 
@@ -137,8 +140,23 @@
   /** dnd5e models armour as the `equipment` item type. */
   const MATERIAL_ITEM_TYPES = ["weapon", "equipment"];
 
+  /**
+   * One key for both tables. They are separate — a spell school and an item
+   * property cannot collide — and sharing it keeps one spelling in stored data.
+   */
+  const PSIONIC_KEY = "psi";
+
   /** `fullKey` is the alternate spelling enrichers accept, so `psionic` resolves too. */
   const PSIONIC_SCHOOL = { label: "Psionic", icon: ICONS.psionic, fullKey: "psionic" };
+
+  /**
+   * The school says what kind of magic a power is. The property says a thing is
+   * psionic at all — which a wild talent, a mind-forged blade and a brewed
+   * draught all need, and only the first of those is a spell.
+   */
+  const PSIONIC_PROPERTY = { label: "Psionic", icon: ICONS.psionic };
+
+  const PSIONIC_ITEM_TYPES = ["spell", "weapon", "equipment", "consumable", "feat"];
 
   /**
    * Fed to `CONFIG.DND5E.vehicleTypes`, which does double duty: it fills the
@@ -444,20 +462,33 @@
 
     /* --- Psionic school --- */
     if ( FEATURES.psionicSchool && dnd5e.spellSchools ) {
-      dnd5e.spellSchools.psi = PSIONIC_SCHOOL;
+      dnd5e.spellSchools[PSIONIC_KEY] = PSIONIC_SCHOOL;
       applied.push("psionic school");
     }
+
+    /**
+     * Add property keys to the live Sets the system reads at render time.
+     * An item type the system has not defined is created rather than skipped.
+     */
+    const addValidProperties = (keys, types) => {
+      for ( const type of types ) {
+        if ( !(dnd5e.validProperties[type] instanceof Set) ) dnd5e.validProperties[type] = new Set();
+        for ( const key of keys ) dnd5e.validProperties[type].add(key);
+      }
+    };
 
     /* --- Material properties --- */
     if ( FEATURES.materialProperties && dnd5e.itemProperties && dnd5e.validProperties ) {
       Object.assign(dnd5e.itemProperties, MATERIALS);
-      for ( const type of MATERIAL_ITEM_TYPES ) {
-        // These are live Sets the system reads at render time; add in place.
-        if ( dnd5e.validProperties[type] instanceof Set ) {
-          for ( const key of Object.keys(MATERIALS) ) dnd5e.validProperties[type].add(key);
-        }
-      }
+      addValidProperties(Object.keys(MATERIALS), MATERIAL_ITEM_TYPES);
       applied.push("material properties");
+    }
+
+    /* --- Psionic property --- */
+    if ( FEATURES.psionicProperty && dnd5e.itemProperties && dnd5e.validProperties ) {
+      dnd5e.itemProperties[PSIONIC_KEY] = PSIONIC_PROPERTY;
+      addValidProperties([PSIONIC_KEY], PSIONIC_ITEM_TYPES);
+      applied.push("psionic property");
     }
 
     /* --- Silt vehicles --- */

@@ -1,6 +1,7 @@
 /* Dark Sun Essentials
-   Deliberately minimal: inherit Foundry's form styling so the window looks
-   native in both v13 and v14 rather than fighting whichever theme is active. */
+   Deliberately minimal. The toggles live in Foundry's own settings list and
+   inherit its styling; the only things styled here are the silt vehicle
+   underlay and the migration dialog's summary list. */
 
 /* The vehicle sheet paints its background from --underlay-vehicle-<type>, and
    dnd5e defines only land/water/air/space. Without this alias a silt vehicle
@@ -8,39 +9,6 @@
    type. Keep in step with SILT_UNDERLAY_SOURCE in scripts/core/vehicles.mjs. */
 :root {
   --underlay-vehicle-silt: var(--underlay-vehicle-water);
-}
-
-.dark-sun-settings fieldset {
-  margin-block-end: 0.75rem;
-}
-
-.dark-sun-settings .form-group > .form-fields {
-  flex: 0 0 auto;
-}
-
-/* The removal warning is hidden until both coinage boxes are ticked, so it
-   reads as a consequence of a choice rather than ambient alarm. */
-.dark-sun-settings [data-warning="removal"] {
-  display: none;
-  margin: 0.25rem 0 0.75rem;
-}
-
-.dark-sun-settings [data-warning="removal"].active {
-  display: block;
-}
-
-.dark-sun-settings .dark-sun-footnote {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  margin-block-start: 0.5rem;
-}
-
-.dark-sun-settings .dark-sun-version {
-  opacity: 0.6;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 
 .dark-sun-migration-summary {

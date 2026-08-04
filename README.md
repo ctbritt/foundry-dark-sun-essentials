@@ -1,8 +1,8 @@
 # Dark Sun Essentials
 
-A Foundry VTT module that makes four Athasian changes to a D&D 5e world:
-ceramic coinage, the Psionic spell school, material properties for weapons and
-armour, and silt vehicles.
+A Foundry VTT module that makes five Athasian changes to a D&D 5e world:
+ceramic coinage, the Psionic spell school, a Psionic item property, material
+properties for weapons and armour, and silt vehicles.
 
 Every change is a toggle. Turn them all off and the world behaves exactly like
 stock dnd5e.
@@ -57,6 +57,19 @@ Adds Psionic as a ninth school. Psionic powers can then be filtered in the
 compendium browser, sorted on spell lists, and referenced by enrichers — the
 long form `psionic` works as well as the key `psi`.
 
+### Psionic item property
+
+Adds Psionic as a property on powers, weapons, gear, consumables and features.
+
+The school and the property answer different questions. The school says what
+kind of magic a power is, which only spells have. The property says a thing is
+psionic at all — and that gets asked about a wild talent, a mind-forged blade, a
+psionic focus and a brewed draught as readily as about a power.
+
+Like the materials, it is a descriptive tag with no automation, and it is not
+marked resistance-piercing: tagging a blade psionic does not change what its
+damage does. Toggled separately from the school, so you can take either alone.
+
 ### Material properties
 
 Adds Wood, Bone, Stone, Obsidian and Metal as properties on weapons and armour.
@@ -92,12 +105,13 @@ Paste this manifest URL into Foundry's *Install Module* dialog:
 https://github.com/ctbritt/foundry-dark-sun-essentials/releases/latest/download/module.json
 ```
 
-Then enable the module and open **Configure Athas** from Module Settings.
+Then enable the module. The toggles are in **Configure Settings → Module
+Settings**, under Dark Sun Essentials.
 
 ### Or: the world-script edition
 
 If this is only ever going into one world, `world-script/dark-sun-essentials.js`
-is the same four features in a single file with flags at the top — no manifest,
+is the same five features in a single file with flags at the top — no manifest,
 no installed package, no assets. Drop it in `worlds/<your-world>/scripts/` and
 list it under `"scripts"` in `world.json`. See
 [`world-script/README.md`](world-script/README.md) for what you give up.
@@ -111,6 +125,15 @@ Foundry will prompt for the reload.
 
 **Back up before removing the standard coins.** The conversion is exact and
 tested, but it rewrites actor data, and no in-Foundry undo exists.
+
+**To convert balances without removing the old coins**, run this from a macro:
+
+```js
+game.modules.get("dark-sun-essentials").api.openMigrationDialog();
+```
+
+It scans first and shows you the counts before writing anything. You do not need
+this to remove the standard coins — that toggle offers the migration itself.
 
 **Compatibility with dnd5e 6.0 is untested.** At the time of writing, 6.0 has
 not been released — dnd5e `master` is 5.3.3, and the 5.3 release notes describe
@@ -131,9 +154,9 @@ npm test
 ```
 
 `scripts/` outside `core/` is the Foundry adapter — settings, config
-application, the migration, and the ApplicationV2 windows. The split exists so
-the part that can lose a player's money is testable, and so a future system
-change is confined to the adapter.
+application, the migration, and the migration dialog. The split exists so the
+part that can lose a player's money is testable, and so a future system change
+is confined to the adapter.
 
 The design document is in `docs/superpowers/specs/`.
 

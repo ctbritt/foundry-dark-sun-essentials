@@ -61,9 +61,9 @@ so it is the same everywhere the module is on.
 
 Only three things, and two of them are cosmetic:
 
-- **The settings window.** Flags are edited in the file rather than ticked in a
-  dialog — which means a shutdown-free browser refresh, but also that you are
-  editing code rather than clicking a checkbox.
+- **The settings toggles.** Flags are edited in the file rather than ticked in
+  Foundry's module settings — which means a shutdown-free browser refresh, but
+  also that you are editing code rather than clicking a checkbox.
 - **Portability.** A world script belongs to one world. The module travels. (See
   *Alternative: a personal module* below for the middle road.)
 - **The migration dialog.** The arithmetic is here in full and equally tested,

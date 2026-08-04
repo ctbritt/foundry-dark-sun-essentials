@@ -9,7 +9,6 @@
 
 import { MODULE_ID, SETTINGS } from "./core/constants.mjs";
 import { log } from "./compat.mjs";
-import DarkSunSettingsMenu from "./apps/settings-menu.mjs";
 import { confirmLegacyRemoval } from "./apps/migration-dialog.mjs";
 
 /** Read a module setting, falling back to `false` before registration completes. */
@@ -22,19 +21,15 @@ export function setting(key) {
 }
 
 /**
- * Register the settings menu and every toggle.
+ * Register every toggle.
+ *
+ * They appear directly in the module's section of Foundry's settings list.
+ * There is no separate configuration window: five checkboxes do not need one,
+ * and the window was a second place for the same state to drift.
+ *
  * Called from `init`, before config is applied.
  */
 export function registerSettings() {
-  game.settings.registerMenu(MODULE_ID, "config", {
-    name: `${MODULE_ID}.menu.name`,
-    label: `${MODULE_ID}.menu.label`,
-    hint: `${MODULE_ID}.menu.hint`,
-    icon: "fa-solid fa-sun-dust",
-    type: DarkSunSettingsMenu,
-    restricted: true
-  });
-
   game.settings.register(MODULE_ID, SETTINGS.ceramicCurrency, {
     name: `${MODULE_ID}.settings.ceramicCurrency.name`,
     hint: `${MODULE_ID}.settings.ceramicCurrency.hint`,
@@ -59,6 +54,16 @@ export function registerSettings() {
   game.settings.register(MODULE_ID, SETTINGS.psionicSchool, {
     name: `${MODULE_ID}.settings.psionicSchool.name`,
     hint: `${MODULE_ID}.settings.psionicSchool.hint`,
+    scope: "world",
+    config: true,
+    requiresReload: true,
+    type: Boolean,
+    default: false
+  });
+
+  game.settings.register(MODULE_ID, SETTINGS.psionicProperty, {
+    name: `${MODULE_ID}.settings.psionicProperty.name`,
+    hint: `${MODULE_ID}.settings.psionicProperty.hint`,
     scope: "world",
     config: true,
     requiresReload: true,
@@ -104,9 +109,13 @@ async function onRemoveLegacyChanged(enabled) {
   if ( !enabled || !game.user?.isGM ) return;
 
   // Removal is meaningless without a replacement, and `buildCurrencyConfig`
-  // refuses it anyway. Say so rather than letting the toggle look effective.
+  // refuses it anyway. Turn the setting back off rather than leaving it armed:
+  // otherwise it sits there looking inert until the GM enables ceramic coinage
+  // months later, at which point removal fires on the next reload without ever
+  // having offered the migration.
   if ( !setting(SETTINGS.ceramicCurrency) ) {
     ui.notifications?.warn(game.i18n.localize(`${MODULE_ID}.notify.removalNeedsCeramic`));
+    await game.settings.set(MODULE_ID, SETTINGS.removeLegacyCurrency, false);
     return;
   }
 

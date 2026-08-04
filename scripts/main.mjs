@@ -8,12 +8,11 @@
  */
 
 import { MODULE_ID } from "./core/constants.mjs";
-import { foundryGeneration, loadTemplatesCompat, log, systemVersion } from "./compat.mjs";
+import { foundryGeneration, log, systemVersion } from "./compat.mjs";
 import { registerSettings } from "./settings.mjs";
 import { applyConfig } from "./config-apply.mjs";
 import { applyMigration, runMigration, scanWorld, summarise } from "./migration.mjs";
 import { openMigrationDialog } from "./apps/migration-dialog.mjs";
-import DarkSunSettingsMenu from "./apps/settings-menu.mjs";
 
 Hooks.once("init", () => {
   log("info", `Initialising for Foundry v${foundryGeneration()}, dnd5e ${systemVersion()}.`);
@@ -21,11 +20,10 @@ Hooks.once("init", () => {
   registerSettings();
   applyConfig();
 
-  loadTemplatesCompat([`modules/${MODULE_ID}/templates/settings-menu.hbs`])
-    .catch(error => log("warn", "Template preload failed; falling back to on-demand.", error));
-
   // A small public surface, so macros and other modules can drive the
-  // migration without reaching into internals.
+  // migration without reaching into internals. `openMigrationDialog()` is how
+  // a GM converts balances without removing the standard coins:
+  //   game.modules.get("dark-sun-essentials").api.openMigrationDialog()
   const module = game.modules.get(MODULE_ID);
   if ( module ) module.api = { scanWorld, summarise, applyMigration, runMigration, openMigrationDialog };
 });
@@ -43,5 +41,3 @@ Hooks.once("ready", () => {
     }));
   }
 });
-
-export { DarkSunSettingsMenu };
