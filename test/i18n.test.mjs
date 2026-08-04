@@ -9,6 +9,16 @@ const MODULE_ID = "dark-sun-essentials";
 
 const lang = JSON.parse(readFileSync(join(ROOT, "lang", "en.json"), "utf8"));
 
+/**
+ * Every abbreviation dnd5e 5.3.3 prints, from its own config tables
+ * (`dnd5e.mjs`: currencies, weightUnits, volumeUnits, movementUnits).
+ */
+const DND5E_ABBREVIATIONS = [
+  "pp", "gp", "ep", "sp", "cp",     // currencies
+  "lb", "tn", "kg", "Mg",           // weightUnits
+  "ft", "mi", "m", "km"             // movementUnits
+];
+
 /** Every source file that could reference a localization key. */
 function sourceFiles(dir = ROOT, found = []) {
   for ( const entry of readdirSync(dir) ) {
@@ -85,6 +95,31 @@ test("no localization key is defined but unused", () => {
   const dynamic = /^dark-sun-essentials\.(migration|notify)\./;
   const orphans = Object.keys(lang).filter(key => !used.has(key) && !dynamic.test(key));
   assert.deepEqual(orphans, [], `Unused keys:\n  ${orphans.join("\n  ")}`);
+});
+
+test("no coin abbreviation collides with one dnd5e already prints", () => {
+  // A sheet renders coin and carried weight inches apart, so a Lead Bead
+  // abbreviated `lb` reads as pounds. It is keyed `lb` — that is what balances
+  // are stored under and it never faces the user — but shown as `bd`.
+  const abbreviations = Object.entries(lang)
+    .filter(([key]) => /^dark-sun-essentials\.currency\.\w+\.abbr$/.test(key))
+    .map(([key, value]) => [key, String(value)]);
+
+  assert.equal(abbreviations.length, 3, "expected three ceramic denominations");
+
+  const collisions = abbreviations
+    .filter(([, abbr]) => DND5E_ABBREVIATIONS.includes(abbr))
+    .map(([key, abbr]) => `${key} = "${abbr}"`);
+
+  assert.deepEqual(collisions, [],
+    `These read as a dnd5e unit or coin:\n  ${collisions.join("\n  ")}`);
+});
+
+test("coin abbreviations are distinct from each other", () => {
+  const abbreviations = Object.entries(lang)
+    .filter(([key]) => /^dark-sun-essentials\.currency\.\w+\.abbr$/.test(key))
+    .map(([, value]) => String(value));
+  assert.equal(new Set(abbreviations).size, abbreviations.length);
 });
 
 test("no localization value is left empty", () => {

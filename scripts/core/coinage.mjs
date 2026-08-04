@@ -22,6 +22,12 @@ const BASE_PER_GP = 100;
 /**
  * The three Athasian denominations, mirroring gp/sp/cp exactly.
  * Shape matches dnd5e's CurrencyConfiguration typedef.
+ *
+ * The Lead Bead is keyed `lb` but abbreviated `bd`. `lb` is also dnd5e's
+ * abbreviation for the pound, and a character sheet prints coin and carried
+ * weight within an inch of each other — `0 lb` beside `10 lb` reads as one
+ * quantity twice. The key is what actor balances and item prices are stored
+ * under and never reaches the user, so only the display form changes.
  * @type {Record<string, {label: string, abbreviation: string, conversion: number, icon: string}>}
  */
 export const CERAMIC_CURRENCIES = Object.freeze({

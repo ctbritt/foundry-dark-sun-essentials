@@ -22,6 +22,13 @@ the toggles Foundry already shows.
   macro. The path that actually matters is unchanged: enabling *Remove Standard
   Coinage* still scans the world and offers the migration before anything is
   written.
+- **The Lead Bead is now abbreviated `bd`, not `lb`.** `lb` is also dnd5e's
+  abbreviation for the pound, and a character sheet prints coin and carried
+  weight inches apart, so `0 lb` sat beside `10 lb` meaning two unrelated
+  things. Only the display form changed — the currency is still keyed `lb`,
+  which is what actor balances and item prices are stored under, so no existing
+  data moves and no migration is needed.
+
 - **Fixed: coin and property names showed as raw i18n keys.** Present since
   1.0.0, and visible as `DARK-SUN-ESSENTIALS.CURRENCY.CT.ABBR` where `ct` should
   be. dnd5e translates its configuration by writing the translated text back

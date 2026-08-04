@@ -19,7 +19,12 @@ Adds three currencies alongside the standard five:
 |---|---|
 | Ceramic Token (ct) | 1 gp |
 | Ceramic Bit (cb) | 1 sp |
-| Lead Bead (lb) | 1 cp |
+| Lead Bead (bd) | 1 cp |
+
+The Lead Bead shows as **bd** rather than `lb`, which is dnd5e's abbreviation
+for the pound — a sheet prints coin and carried weight inches apart, and `0 lb`
+beside `10 lb` reads as one quantity written twice. Under the hood the coin is
+still keyed `lb`, which is what balances and prices are stored as.
 
 These are real currency fields, not relabelled gold — they persist on actors,
 work as item price denominations, and appear on character sheets. Once enabled,

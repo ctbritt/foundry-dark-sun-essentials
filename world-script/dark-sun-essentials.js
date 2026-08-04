@@ -116,12 +116,19 @@
    *
    * Labels are plain English rather than i18n keys. dnd5e pre-localizes these
    * tables at `i18nInit`, and `game.i18n.localize()` returns any string it
-   * cannot find unchanged — so a literal passes through intact.
+   * cannot find unchanged — so a literal passes through intact. These objects
+   * must also stay unfrozen: that pre-localization pass writes back into them
+   * in place, and a frozen entry throws and takes the rest of the pass with it.
+   *
+   * The Lead Bead is keyed `lb` but abbreviated `bd`. `lb` is also dnd5e's
+   * abbreviation for the pound, and a sheet prints coin and carried weight
+   * within an inch of each other. The key is what balances are stored under
+   * and never reaches the user, so only the display form differs.
    */
   const CERAMIC = {
     ct: { label: "Ceramic Token", abbreviation: "ct", conversion: 1, icon: ICONS.ceramicToken },
     cb: { label: "Ceramic Bit", abbreviation: "cb", conversion: 10, icon: ICONS.ceramicBit },
-    lb: { label: "Lead Bead", abbreviation: "lb", conversion: 100, icon: ICONS.leadBead }
+    lb: { label: "Lead Bead", abbreviation: "bd", conversion: 100, icon: ICONS.leadBead }
   };
 
   const CERAMIC_KEYS = Object.keys(CERAMIC);
