@@ -45,8 +45,50 @@ function dnd5eConfig() {
       land: "DND5E.VEHICLE.Type.Land.label",
       space: "DND5E.VEHICLE.Type.Space.label",
       water: "DND5E.VEHICLE.Type.Water.label"
+    },
+    // Registered for pre-localization *after* currencies, and nothing to do
+    // with this module. Its job here is to prove the system's own tables still
+    // get localized after ours have been through the same loop.
+    weightUnits: {
+      pound: { label: "DND5E.UNITS.WEIGHT.Pound.Label",
+        abbreviation: "DND5E.UNITS.WEIGHT.Pound.Abbreviation" }
     }
   };
+}
+
+/**
+ * dnd5e's pre-localization pass, reproduced from dnd5e 5.3.3
+ * (`_localizeObject` / `performPreLocalization`), in registration order.
+ *
+ * The detail that matters, and the one this module got wrong: dnd5e writes the
+ * translated string *back into the config object in place*. A frozen definition
+ * throws here, and because every table is done in one loop, the throw takes the
+ * rest of the pass with it.
+ */
+const PRE_LOCALIZE = [
+  ["vehicleTypes", { keys: [], sort: true }],
+  ["itemProperties", { keys: ["label", "abbreviation"], sort: true }],
+  ["currencies", { keys: ["label", "abbreviation"] }],
+  ["weightUnits", { keys: ["label", "abbreviation"] }],
+  ["spellSchools", { keys: ["label"], sort: true }]
+];
+
+/** @param {(key: string) => string} localize */
+function performPreLocalization(config, localize) {
+  for ( const [keyPath, settings] of PRE_LOCALIZE ) {
+    const target = config[keyPath];
+    if ( !target ) continue;
+    for ( const [k, v] of Object.entries(target) ) {
+      if ( typeof v === "string" ) {
+        target[k] = localize(v);
+        continue;
+      }
+      for ( const key of settings.keys ) {
+        if ( !v[key] ) continue;
+        v[key] = localize(v[key]);
+      }
+    }
+  }
 }
 
 /**
@@ -253,6 +295,63 @@ test("every feature at once composes cleanly", async () => {
   assert.ok("psi" in CONFIG.DND5E.itemProperties);
   assert.ok(CONFIG.DND5E.validProperties.weapon.has("obsidian"));
   assert.ok("silt" in CONFIG.DND5E.vehicleTypes);
+});
+
+/* -------------------------------------------- */
+/*  Pre-localization                             */
+/* -------------------------------------------- */
+
+test("the config this module writes survives dnd5e's pre-localization pass", async () => {
+  // The regression: definitions were handed to CONFIG still frozen. dnd5e
+  // localizes in place, so the assignment threw, and every table registered
+  // after ours — the system's own included — was left showing raw i18n keys.
+  stubFoundry({
+    ceramicCurrency: true, psionicSchool: true, psionicProperty: true,
+    materialProperties: true, siltVehicles: true
+  });
+  const { applyConfig } = await importConfigApply();
+  applyConfig();
+
+  const localize = key => `«${key}»`;
+  assert.doesNotThrow(() => performPreLocalization(CONFIG.DND5E, localize),
+    "dnd5e could not localize this module's config");
+
+  // Ours localized...
+  for ( const key of ["ct", "cb", "lb"] ) {
+    assert.equal(CONFIG.DND5E.currencies[key].abbreviation,
+      localize(`dark-sun-essentials.currency.${key}.abbr`), `${key} abbreviation`);
+  }
+  assert.equal(CONFIG.DND5E.itemProperties.psi.label,
+    localize("dark-sun-essentials.property.psionic"));
+  assert.equal(CONFIG.DND5E.itemProperties.obsidian.label,
+    localize("dark-sun-essentials.material.obsidian"));
+  assert.equal(CONFIG.DND5E.spellSchools.psi.label,
+    localize("dark-sun-essentials.school.psionic"));
+  assert.equal(CONFIG.DND5E.vehicleTypes.silt, localize("dark-sun-essentials.vehicle.silt"));
+
+  // ...and so did the system's, which is the half that broke in the world.
+  assert.equal(CONFIG.DND5E.weightUnits.pound.abbreviation,
+    localize("DND5E.UNITS.WEIGHT.Pound.Abbreviation"),
+    "a system table registered after ours was left unlocalized");
+  assert.equal(CONFIG.DND5E.currencies.gp.abbreviation, localize("DND5E.CurrencyAbbrGP"));
+});
+
+test("pre-localization does not write back into the module's own definitions", async () => {
+  // The copies handed to Foundry are mutable; the definitions they came from
+  // must not be, or a second world in the same session gets pre-localized
+  // strings where it expects i18n keys.
+  stubFoundry({ ceramicCurrency: true, psionicProperty: true, materialProperties: true });
+  const { applyConfig } = await importConfigApply();
+  applyConfig();
+  performPreLocalization(CONFIG.DND5E, key => `«${key}»`);
+
+  const { CERAMIC_CURRENCIES } = await import("../scripts/core/coinage.mjs");
+  const { MATERIAL_PROPERTIES } = await import("../scripts/core/materials.mjs");
+  const { PSIONIC_PROPERTY } = await import("../scripts/core/psionics.mjs");
+
+  assert.equal(CERAMIC_CURRENCIES.ct.label, "dark-sun-essentials.currency.ct.label");
+  assert.equal(MATERIAL_PROPERTIES.obsidian.label, "dark-sun-essentials.material.obsidian");
+  assert.equal(PSIONIC_PROPERTY.label, "dark-sun-essentials.property.psionic");
 });
 
 /* -------------------------------------------- */

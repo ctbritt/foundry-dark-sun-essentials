@@ -22,6 +22,15 @@ the toggles Foundry already shows.
   macro. The path that actually matters is unchanged: enabling *Remove Standard
   Coinage* still scans the world and offers the migration before anything is
   written.
+- **Fixed: coin and property names showed as raw i18n keys.** Present since
+  1.0.0, and visible as `DARK-SUN-ESSENTIALS.CURRENCY.CT.ABBR` where `ct` should
+  be. dnd5e translates its configuration by writing the translated text back
+  into the config objects in place; this module handed it frozen objects, so
+  the write threw. Because dnd5e does every table in one pass, the failure also
+  took out tables belonging to the system itself — `DND5E.UNITS.WEIGHT.Pound.
+  Abbreviation` appearing literally in a Tidy 5e weight column was this bug, not
+  a Tidy bug. Definitions are now copied on their way into the config.
+
 - **Fixed: arming removal without ceramic coinage no longer leaves it armed.**
   Ticking *Remove Standard Coinage* without *Athasian Coinage* warned and then
   did nothing, but the setting stayed on. Enabling ceramic coinage later would

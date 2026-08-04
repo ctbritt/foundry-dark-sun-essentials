@@ -44,7 +44,7 @@ A pure core with a thin Foundry adapter around it.
 scripts/
   core/           no Foundry globals; unit-tested with node:test
     coinage.mjs     currency definitions + exact conversion math
-    properties.mjs  shared itemProperties/validProperties merge semantics
+    config-tables.mjs  merge semantics + thaw() for CONFIG.DND5E tables
     materials.mjs   material property definitions
     psionics.mjs    psionic school + psionic item property
     vehicles.mjs    silt vehicle type
@@ -184,6 +184,29 @@ a button. The path that actually risks data is unchanged: enabling
 `removeLegacyCurrency` still scans the world and offers the migration first, and
 if ceramic coinage is not enabled it now switches the setting back off rather
 than leaving it armed to fire on a later reload.
+
+## Pre-localization: never hand dnd5e a frozen object
+
+dnd5e registers its config tables for pre-localization and, at `i18nInit`,
+walks each one writing the translated string **back into the entry in place**
+(`_localizeObject` → `foundry.utils.setProperty(v, key, …)`). Four of the tables
+this module writes to are registered that way: `vehicleTypes`, `itemProperties`,
+`currencies` and `spellSchools`.
+
+The core declares its definitions with `Object.freeze`, which is right — the
+pure core should not be mutable. But handing a frozen object to that pass throws
+a `TypeError` in strict mode, and `performPreLocalization` does every registered
+table in a single loop with no try/catch per entry. One throw and the rest of
+the pass never runs, including tables belonging to the *system*. The symptom is
+raw i18n keys in the interface in places with no connection to this module —
+observed in the wild as `DND5E.UNITS.WEIGHT.Pound.Abbreviation` rendering
+literally in a Tidy 5e weight column.
+
+So every definition is deep-copied on its way into CONFIG, by `thaw()` in
+`core/config-tables.mjs`. The frozen originals stay frozen; only the copy
+Foundry receives is writable. This is asserted by an integration test that
+reproduces dnd5e's pass verbatim, in registration order, over a fixture that
+includes a system table registered after ours.
 
 ## Timing
 

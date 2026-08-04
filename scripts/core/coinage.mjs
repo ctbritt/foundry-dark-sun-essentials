@@ -10,6 +10,7 @@
  */
 
 import { CERAMIC_KEYS, LEGACY_KEYS, MODULE_ID } from "./constants.mjs";
+import { thaw } from "./config-tables.mjs";
 
 /**
  * Lead beads per gold piece. The common base all conversion runs through:
@@ -208,7 +209,7 @@ export function convertPrice(price) {
 export function buildCurrencyConfig(existing, { ceramic, removeLegacy }) {
   const currencies = { ...existing };
 
-  if ( ceramic ) Object.assign(currencies, CERAMIC_CURRENCIES);
+  if ( ceramic ) Object.assign(currencies, thaw(CERAMIC_CURRENCIES));
 
   // Never strip the legacy coins unless something replaces them; a world with
   // no currency at all is worse than a world with the wrong currency.

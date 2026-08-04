@@ -156,7 +156,28 @@ test("the Psionic property merges without displacing system properties", () => {
   const merged = buildPsionicProperty(existing);
   assert.ok("ada" in merged, "system properties survive");
   assert.ok("mgc" in merged);
-  assert.equal(merged[PSIONIC_KEY], PSIONIC_PROPERTY);
+  assert.deepEqual(merged[PSIONIC_KEY], PSIONIC_PROPERTY);
+});
+
+test("the definitions handed to CONFIG are writable copies, not the frozen originals", () => {
+  // dnd5e localizes config tables by writing back into them in place. Handing
+  // it a frozen definition throws and takes the rest of its localization pass
+  // down with it. See thaw() in core/config-tables.mjs.
+  const built = {
+    ...buildPsionicProperty({}),
+    ...buildItemProperties({}),
+    ...buildSpellSchools({})
+  };
+
+  for ( const [key, definition] of Object.entries(built) ) {
+    assert.ok(!Object.isFrozen(definition), `${key} was handed over frozen`);
+    assert.doesNotThrow(() => { definition.label = "localized"; }, `${key} is not writable`);
+  }
+
+  // And the originals are still frozen, so the core cannot be edited by accident.
+  assert.ok(Object.isFrozen(PSIONIC_PROPERTY));
+  assert.ok(Object.isFrozen(PSIONIC_SCHOOL));
+  assert.ok(Object.isFrozen(MATERIAL_PROPERTIES.obsidian));
 });
 
 test("buildPsionicProperty does not mutate its input", () => {

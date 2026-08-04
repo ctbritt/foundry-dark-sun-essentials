@@ -13,7 +13,7 @@
  */
 
 import { MODULE_ID, PSIONIC_ITEM_TYPES } from "./constants.mjs";
-import { mergeItemProperties, mergeValidProperties } from "./properties.mjs";
+import { mergeItemProperties, mergeValidProperties, thaw } from "./config-tables.mjs";
 
 /**
  * The key used in both `CONFIG.DND5E.spellSchools` and
@@ -59,7 +59,7 @@ export const PSIONIC_PROPERTY = Object.freeze({
  * @returns {object}         A new table. The input is not mutated.
  */
 export function buildSpellSchools(existing) {
-  return { ...existing, [PSIONIC_KEY]: PSIONIC_SCHOOL };
+  return { ...existing, [PSIONIC_KEY]: thaw(PSIONIC_SCHOOL) };
 }
 
 /**

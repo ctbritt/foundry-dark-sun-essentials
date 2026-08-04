@@ -8,7 +8,7 @@
  */
 
 import { MATERIAL_ITEM_TYPES, MODULE_ID } from "./constants.mjs";
-import { mergeItemProperties, mergeValidProperties } from "./properties.mjs";
+import { mergeItemProperties, mergeValidProperties } from "./config-tables.mjs";
 
 /**
  * Shape matches dnd5e's ItemPropertyConfiguration typedef.
