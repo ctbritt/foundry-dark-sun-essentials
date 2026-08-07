@@ -59,6 +59,15 @@ jobs:
             exit 1
           fi
 
+      # The compendium packs are LevelDB directories built from the YAML under
+      # packs/src. They are gitignored, so the checkout does not contain them
+      # and the zip below would ship a manifest declaring a pack that is not
+      # there — which Foundry reports as a load failure, not a missing macro.
+      - name: Build compendium packs
+        run: |
+          npm ci
+          npm run build:packs
+
       # Point the manifest at this specific release.
       #
       # `manifest` stays on releases/latest so Foundry's update check always
@@ -89,6 +98,7 @@ jobs:
             templates/ \
             lang/ \
             icons/ \
+            packs/ \
             README.md \
             CHANGELOG.md \
             LICENSE

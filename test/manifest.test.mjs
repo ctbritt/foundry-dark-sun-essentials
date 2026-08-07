@@ -112,6 +112,46 @@ test("no maximum is declared, so a system update cannot hard-block the module", 
 });
 
 /* -------------------------------------------- */
+/*  Compendium packs                             */
+/* -------------------------------------------- */
+
+test("the macro pack is declared", () => {
+  const pack = manifest.packs?.find(p => p.name === "dark-sun-macros");
+  assert.ok(pack, "module.json declares no dark-sun-macros pack");
+  assert.equal(pack.type, "Macro");
+  assert.equal(pack.path, "packs/dark-sun-macros");
+});
+
+test("the macro pack is GM-only", () => {
+  // The macro rewrites every price and purse in the world. A player who can
+  // see it in the sidebar is a player who can run it.
+  const pack = manifest.packs.find(p => p.name === "dark-sun-macros");
+  assert.equal(pack.ownership.PLAYER, "NONE");
+  assert.equal(pack.ownership.ASSISTANT, "NONE");
+});
+
+test("every declared pack has compilable source", () => {
+  // The built LevelDB directory is gitignored — it only exists after
+  // `npm run build:packs`. The source is what must be present in a clone.
+  for ( const pack of manifest.packs ?? [] ) {
+    const source = join(ROOT, "packs", "src", pack.name);
+    assert.ok(existsSync(source), `${pack.name} has no source at packs/src/${pack.name}`);
+  }
+});
+
+test("the macro calls an API the module actually exposes", () => {
+  // The macro is a shim over module.api. If the API is renamed and the macro
+  // is not, a GM gets "openMigrationDialog is not a function" and no clue why.
+  const source = read("packs/src/dark-sun-macros/convert-to-athasian-coinage.yml");
+  const called = [...source.matchAll(/api\.(\w+)\(/g)].map(m => m[1]);
+  assert.ok(called.length, "the macro calls nothing");
+  const exposed = read("scripts/main.mjs");
+  for ( const fn of called ) {
+    assert.ok(new RegExp(`\\b${fn}\\b`).test(exposed), `main.mjs does not expose ${fn}`);
+  }
+});
+
+/* -------------------------------------------- */
 /*  World script                                 */
 /* -------------------------------------------- */
 

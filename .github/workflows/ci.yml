@@ -16,12 +16,10 @@ jobs:
         with:
           node-version: 22
 
-      # No dependencies and no build step: the module is plain ESM and the tests
-      # run on node's built-in runner. `npm ci` would fail without a lockfile,
-      # and there is nothing to lock.
-      #
-      # Manifest integrity, asset paths and the world script are covered by
-      # test/manifest.test.mjs rather than by steps here, so the same checks run
-      # locally before anything reaches CI.
+      # The tests need no dependencies: they run on node's built-in runner and
+      # stub Foundry themselves. The compendium packs are deliberately NOT built
+      # here — test/manifest.test.mjs asserts the pack *source* exists, not the
+      # built artifact, so CI catches a missing source without paying for a
+      # build on every push.
       - name: Test
         run: npm test

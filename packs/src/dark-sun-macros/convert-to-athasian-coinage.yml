@@ -1,0 +1,24 @@
+_id: dseConvertCoin01
+name: Convert to Athasian Coinage
+type: script
+scope: global
+author: null
+img: modules/dark-sun-essentials/icons/ceramic-token.svg
+command: |
+  // Dark Sun Essentials — open the currency conversion dialog.
+  //
+  // Scans the world (and any unlocked compendium packs you tick) for coin and
+  // prices held in standard denominations, shows you the totals, and converts
+  // only after you confirm. Nothing is written until you press Convert.
+  const module = game.modules.get("dark-sun-essentials");
+  if ( !module?.active ) {
+    ui.notifications.error("Dark Sun Essentials is not active in this world.");
+  } else {
+    await module.api.openMigrationDialog();
+  }
+folder: null
+sort: 0
+ownership:
+  default: 0
+flags: {}
+_key: '!macros!dseConvertCoin01'
