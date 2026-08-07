@@ -6,9 +6,13 @@
  * removing the standard currencies drops them from the actor schema — any
  * balance still sitting in them afterwards is unreadable.
  *
- * Compendium packs are deliberately untouched. System packs are locked, and
- * rewriting them would be undone by the next system update. The scan reports
- * how many it skipped rather than pretending they are not there.
+ * This file is world data only: actors, their carried items, sidebar items,
+ * and unlinked tokens. Compendium packs are handled separately, by
+ * `pack-migration.mjs` — they load asynchronously, can be locked underneath
+ * us between the scan and the write, and are opt-in per pack rather than
+ * swept in bulk. Locked packs are still never written, here or there: system
+ * packs are locked for good reason, and rewriting one would be undone by the
+ * next system update.
  */
 
 import { LEGACY_KEYS, MODULE_ID } from "./core/constants.mjs";
@@ -23,7 +27,8 @@ import { log } from "./compat.mjs";
  * @property {Map<string, object[]>} synthetic Scene id -> unlinked token updates.
  * @property {number} remainder       Fractional value that would not divide into a lead bead.
  * @property {string[]} skippedCoins  Coins whose conversion rate was unusable.
- * @property {number} compendiums     Packs left alone.
+ * @property {number} compendiums     Count of Actor/Item packs in the world;
+ *   not read or written by this file. See `pack-migration.mjs`.
  */
 
 /**

@@ -119,8 +119,15 @@ that.
 - `npm run build:packs` compiles it to the LevelDB pack at `packs/dark-sun-macros`.
 - Source is committed; the built pack is gitignored and built by the release
   workflow.
-- `module.json` gains the `packs` entry, with ownership `{"PLAYER": "NONE",
-  "ASSISTANT": "NONE"}` — the macro rewrites world data and belongs to the GM.
+- `module.json` gains the `packs` entry, with ownership `{"GAMEMASTER": "OWNER",
+  "PLAYER": "NONE", "ASSISTANT": "NONE"}` — the macro rewrites world data and
+  belongs to the GM. The `GAMEMASTER` key is not optional: `get ownership()`
+  returns the manifest's block wholesale rather than merging it with the
+  schema's default of `GAMEMASTER: OWNER`, and `CompendiumCollection#visible`
+  computes from `getUserLevel() >= OBSERVER` with no `isGM` short-circuit. A
+  block that omits `GAMEMASTER` resolves to `NONE` for everyone, GM included —
+  which is exactly what shipped in 1.3.0, verified on a live v14 install: the
+  pack loaded, migrated, and appeared to nobody.
 - The rsync deploy to the Pi now needs a build first. `CLAUDE.md` gets that step.
 
 ## Testing

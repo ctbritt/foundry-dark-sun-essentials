@@ -59,8 +59,10 @@ world programmatically; nobody has tried using it for module testing yet.
 ## What counts as tested
 
 - `npm test` (`node --test test/*.test.mjs`) runs locally and covers the pure
-  logic: coinage, config shape, i18n keys, manifest, migration, world script.
-  It is a pre-flight check, not proof.
+  logic: coinage, config shape, i18n keys, manifest, world data migration,
+  compendium pack migration (scan and apply, against stubbed packs), the
+  migration dialog's GM gate and reporting, and the world script. It is a
+  pre-flight check, not proof.
 - Anything touching Foundry hooks, dnd5e config mutation, the settings UI, item
   properties, or vehicles needs a real load on the Pi before it's called done.
 - Report local test results and remote verification separately. If a change was
