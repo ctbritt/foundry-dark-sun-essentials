@@ -92,3 +92,81 @@ export async function scanPacks() {
 
   return { candidates, locked };
 }
+
+/* -------------------------------------------- */
+/*  Applying                                     */
+/* -------------------------------------------- */
+
+/**
+ * Turn loaded documents into update payloads.
+ *
+ * @param {object[]} documents
+ * @param {string} documentName  "Actor" or "Item".
+ * @param {object} rates         `CONFIG.DND5E.currencies`, or a stand-in.
+ * @returns {object[]}           `updateDocuments` payloads. Empty when there is
+ *                               nothing to do.
+ */
+export function buildPackUpdates(documents, documentName, rates = STANDARD_RATES) {
+  const updates = [];
+
+  for ( const doc of documents ) {
+    if ( documentName === "Item" ) {
+      const price = convertPrice(doc.system?.price);
+      if ( price ) updates.push({ _id: doc.id ?? doc._id, system: { price } });
+      continue;
+    }
+
+    if ( !doc.system?.currency ) continue;
+    const result = convertLegacyToCeramic(doc.system.currency, { rates });
+    if ( result.converted ) {
+      updates.push({ _id: doc.id ?? doc._id, system: { currency: result.currency } });
+    }
+  }
+
+  return updates;
+}
+
+/**
+ * Convert the packs the GM ticked.
+ *
+ * Every pack is handled in its own try/catch: one unwritable pack must not
+ * abort the rest and leave a half-converted set. Lock state is re-read here
+ * rather than trusted from the scan, because the sidebar's padlock is one
+ * click away and the dialog may have been open for a while.
+ *
+ * @param {string[]} collections  Pack collection ids, as ticked in the dialog.
+ * @returns {Promise<{packs: number, documents: number, errors: string[]}>}
+ */
+export async function applyPackMigration(collections) {
+  const result = { packs: 0, documents: 0, errors: [] };
+  const rates = CONFIG.DND5E?.currencies ?? STANDARD_RATES;
+
+  for ( const collection of collections ) {
+    const pack = game.packs.get(collection);
+
+    if ( !pack ) {
+      result.errors.push(`${collection}: no longer present`);
+      continue;
+    }
+    if ( pack.locked ) {
+      result.errors.push(`${collection}: locked before the conversion ran`);
+      continue;
+    }
+
+    try {
+      const documents = await pack.getDocuments();
+      const updates = buildPackUpdates(documents, pack.documentName, rates);
+      if ( !updates.length ) continue;
+
+      await pack.documentClass.updateDocuments(updates, { pack: collection, render: false });
+      result.packs += 1;
+      result.documents += updates.length;
+    } catch ( error ) {
+      log("error", `Converting ${collection} failed:`, error);
+      result.errors.push(`${collection}: ${error.message}`);
+    }
+  }
+
+  log("info", `Pack conversion complete: ${result.documents} documents in ${result.packs} packs.`);
+  return result;
+}

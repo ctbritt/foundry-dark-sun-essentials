@@ -173,3 +173,116 @@ test("each candidate carries the label the GM will read", async () => {
   assert.equal(candidates[0].label, "athasian-npcs");
   assert.equal(candidates[0].documentName, "Actor");
 });
+
+/* -------------------------------------------- */
+/*  Applying                                     */
+/* -------------------------------------------- */
+
+test("only the ticked packs are written to", async () => {
+  const packs = standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  await applyPackMigration(["world.athasian-gear"]);
+
+  assert.ok(packs.get("world.athasian-gear").written, "the ticked pack was written");
+  assert.equal(packs.get("world.athasian-npcs").written, undefined,
+    "an unticked pack must never be touched");
+});
+
+test("the write is routed to the pack, not the world", async () => {
+  const packs = standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  await applyPackMigration(["world.athasian-gear"]);
+
+  const { context } = packs.get("world.athasian-gear").written;
+  assert.equal(context.pack, "world.athasian-gear");
+});
+
+test("item prices convert exactly", async () => {
+  const packs = standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  await applyPackMigration(["world.athasian-gear"]);
+
+  const { updates } = packs.get("world.athasian-gear").written;
+  assert.equal(updates.length, 1, "only the gp item needed work");
+  assert.deepEqual(updates[0], {
+    _id: "i1", system: { price: { value: 15, denomination: "ct" } }
+  });
+});
+
+test("actor currency converts exactly", async () => {
+  const packs = standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  await applyPackMigration(["world.athasian-npcs"]);
+
+  const { updates } = packs.get("world.athasian-npcs").written;
+  assert.equal(updates.length, 1);
+  assert.equal(updates[0]._id, "npc1");
+  // 5 gp + 2 sp = 5.2 gp = 5 ct 2 cb.
+  assert.equal(updates[0].system.currency.ct, 5);
+  assert.equal(updates[0].system.currency.cb, 2);
+  assert.equal(updates[0].system.currency.gp, 0, "the legacy coin is emptied");
+});
+
+test("a pack locked after the scan is refused, not written", async () => {
+  const packs = standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  packs.get("world.athasian-gear").locked = true;
+  const result = await applyPackMigration(["world.athasian-gear"]);
+
+  assert.equal(packs.get("world.athasian-gear").written, undefined);
+  assert.equal(result.packs, 0);
+  assert.equal(result.errors.length, 1);
+  assert.match(result.errors[0], /world\.athasian-gear/);
+});
+
+test("a pack that no longer exists is reported, not thrown", async () => {
+  standardPacks();
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.deleted"]);
+
+  assert.equal(result.packs, 0);
+  assert.equal(result.errors.length, 1);
+});
+
+test("one failing pack does not abort the rest of the run", async () => {
+  const packs = stubPacks([
+    makePack({
+      collection: "world.bad", documentName: "Item", failOnWrite: true,
+      docs: [{ _id: "b1", system: { price: { value: 3, denomination: "gp" } } }]
+    }),
+    makePack({
+      collection: "world.good", documentName: "Item",
+      docs: [{ _id: "g1", system: { price: { value: 7, denomination: "sp" } } }]
+    })
+  ]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.bad", "world.good"]);
+
+  assert.ok(packs.get("world.good").written, "the good pack still converted");
+  assert.equal(result.packs, 1);
+  assert.equal(result.documents, 1);
+  assert.equal(result.errors.length, 1);
+});
+
+test("a second run finds nothing left to write", async () => {
+  const packs = stubPacks([
+    makePack({
+      collection: "world.gear", documentName: "Item",
+      docs: [{ _id: "i1", system: { price: { value: 15, denomination: "ct" } } }]
+    })
+  ]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.gear"]);
+
+  assert.equal(packs.get("world.gear").written, undefined, "no update proposed");
+  assert.equal(result.documents, 0);
+  assert.equal(result.errors.length, 0);
+});
