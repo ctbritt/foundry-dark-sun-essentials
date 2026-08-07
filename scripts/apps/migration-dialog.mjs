@@ -14,7 +14,7 @@ import { log } from "../compat.mjs";
 const { DialogV2 } = foundry.applications.api;
 
 /** v13 namespaced it; the bare global is deprecated but still present. */
-const FormData = foundry.applications.ux?.FormDataExtended ?? globalThis.FormDataExtended;
+const FormDataExtended = foundry.applications.ux?.FormDataExtended ?? globalThis.FormDataExtended;
 
 /**
  * Scan the world, show the GM what will change, and migrate if they agree.
@@ -90,7 +90,7 @@ export async function openMigrationDialog({ removalPending = false } = {}) {
  * @returns {string[]}  Collection ids, in candidate order.
  */
 function readSelection(form, candidates) {
-  const data = new FormData(form).object;
+  const data = new FormDataExtended(form).object;
   return candidates
     .filter((_candidate, index) => data[packCheckboxName(index)] === true)
     .map(candidate => candidate.collection);

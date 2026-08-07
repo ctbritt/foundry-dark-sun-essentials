@@ -8,7 +8,7 @@
  * Usage: npm run build:packs
  */
 
-import { readdirSync, statSync } from "node:fs";
+import { readdirSync, statSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { compilePack } from "@foundryvtt/foundryvtt-cli";
@@ -24,7 +24,12 @@ if ( !names.length ) {
 }
 
 for ( const name of names ) {
-  await compilePack(join(SOURCE, name), join(ROOT, "packs", name), { yaml: true, log: true });
+  const dest = join(ROOT, "packs", name);
+  // compilePack merges into whatever LevelDB directory is already there. Clear
+  // it first, or a macro renamed or deleted in the source survives every
+  // rebuild — local and on the Pi alike.
+  rmSync(dest, { recursive: true, force: true });
+  await compilePack(join(SOURCE, name), dest, { yaml: true, log: true });
 }
 
 console.log(`Built ${names.length} pack(s).`);
