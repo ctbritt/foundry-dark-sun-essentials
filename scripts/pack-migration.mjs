@@ -127,12 +127,60 @@ export function buildPackUpdates(documents, documentName, rates = STANDARD_RATES
 }
 
 /**
+ * Convert carried item prices on Actor documents already loaded from a pack.
+ *
+ * `getDocuments()` already returned full Actor documents for the currency
+ * write above, so their embedded items are in hand at no extra cost — unlike
+ * the scan, which only ever sees an index and must never load them. Skipping
+ * this would leave gp-priced gear on an NPC whose purse just went ceramic,
+ * which is exactly the orphaning the feature exists to prevent.
+ *
+ * Each actor is isolated in its own try/catch: one NPC that refuses the
+ * write must not stop the rest of the pack from converting, the same
+ * isolation `applyMigration` gives world actors.
+ *
+ * @param {object[]} documents   Actor documents, as returned by `getDocuments()`.
+ * @param {string} collection    The pack's collection id, for error messages.
+ * @param {string[]} errors      Collected error messages, appended in place.
+ * @returns {Promise<number>}    Embedded items actually confirmed written.
+ */
+async function convertCarriedItems(documents, collection, errors) {
+  let converted = 0;
+
+  for ( const actor of documents ) {
+    if ( !actor.items ) continue;
+
+    const updates = [];
+    for ( const item of actor.items ) {
+      const price = convertPrice(item.system?.price);
+      if ( price ) updates.push({ _id: item.id ?? item._id, system: { price } });
+    }
+    if ( !updates.length ) continue;
+
+    try {
+      const written = await actor.updateEmbeddedDocuments("Item", updates, { render: false });
+      converted += written?.length ?? 0;
+    } catch ( error ) {
+      log("error", `Carried item prices on ${actor.name ?? actor.id} in ${collection} failed:`, error);
+      errors.push(`${collection}/${actor.name ?? actor.id}: ${error.message}`);
+    }
+  }
+
+  return converted;
+}
+
+/**
  * Convert the packs the GM ticked.
  *
  * Every pack is handled in its own try/catch: one unwritable pack must not
  * abort the rest and leave a half-converted set. Lock state is re-read here
  * rather than trusted from the scan, because the sidebar's padlock is one
- * click away and the dialog may have been open for a while.
+ * click away and the dialog may have been open for a while. Document type is
+ * re-checked too — `scanPacks` only ever offers `CONVERTIBLE` packs, but this
+ * can be called directly with whatever collection id a caller hands it.
+ *
+ * `documents` counts confirmed writes — the length of what each write call
+ * actually resolved with, not the length of the payload submitted to it.
  *
  * @param {string[]} collections  Pack collection ids, as ticked in the dialog.
  * @returns {Promise<{packs: number, documents: number, errors: string[]}>}
@@ -148,6 +196,10 @@ export async function applyPackMigration(collections) {
       result.errors.push(`${collection}: no longer present`);
       continue;
     }
+    if ( !CONVERTIBLE.includes(pack.documentName) ) {
+      result.errors.push(`${collection}: not a convertible document type`);
+      continue;
+    }
     if ( pack.locked ) {
       result.errors.push(`${collection}: locked before the conversion ran`);
       continue;
@@ -156,11 +208,20 @@ export async function applyPackMigration(collections) {
     try {
       const documents = await pack.getDocuments();
       const updates = buildPackUpdates(documents, pack.documentName, rates);
-      if ( !updates.length ) continue;
+      let converted = 0;
 
-      await pack.documentClass.updateDocuments(updates, { pack: collection, render: false });
+      if ( updates.length ) {
+        const written = await pack.documentClass.updateDocuments(updates, { pack: collection, render: false });
+        converted += written?.length ?? 0;
+      }
+
+      if ( pack.documentName === "Actor" ) {
+        converted += await convertCarriedItems(documents, collection, result.errors);
+      }
+
+      if ( !converted ) continue;
       result.packs += 1;
-      result.documents += updates.length;
+      result.documents += converted;
     } catch ( error ) {
       log("error", `Converting ${collection} failed:`, error);
       result.errors.push(`${collection}: ${error.message}`);

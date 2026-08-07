@@ -26,6 +26,14 @@ const FormData = foundry.applications.ux?.FormDataExtended ?? globalThis.FormDat
  * @returns {Promise<boolean>}  Whether the migration ran.
  */
 export async function openMigrationDialog({ removalPending = false } = {}) {
+  // The macro is gated by pack ownership, but this is also the module's
+  // public API — a player calling it from the console otherwise gets a
+  // dialog enumerating pack contents and then a wall of permission errors.
+  if ( !game.user?.isGM ) {
+    ui.notifications?.error(game.i18n.localize(`${MODULE_ID}.notify.gmOnly`));
+    return false;
+  }
+
   const plan = scanWorld();
   const summary = summarise(plan);
   const { candidates, locked } = await scanPacks();
@@ -173,17 +181,21 @@ function buildContent(summary, candidates, locked, removalPending) {
 /* -------------------------------------------- */
 
 /**
+ * Report what happened, always — an irreversible operation must never leave
+ * the GM knowing only that something failed, with no idea what did convert.
+ * The success notifications are shown unconditionally, then the error dialog
+ * on top of them if there is one.
+ *
  * @param {{actors: number, items: number, tokens: number, errors: string[]}} result
  * @param {{packs: number, documents: number}} packResult
  */
 async function reportResult(result, packResult) {
-  if ( !result.errors.length ) {
-    ui.notifications?.info(game.i18n.format(`${MODULE_ID}.notify.migrationDone`, result));
-    if ( packResult.packs ) {
-      ui.notifications?.info(game.i18n.format(`${MODULE_ID}.notify.packsDone`, packResult));
-    }
-    return;
+  ui.notifications?.info(game.i18n.format(`${MODULE_ID}.notify.migrationDone`, result));
+  if ( packResult.packs ) {
+    ui.notifications?.info(game.i18n.format(`${MODULE_ID}.notify.packsDone`, packResult));
   }
+
+  if ( !result.errors.length ) return;
 
   ui.notifications?.error(game.i18n.format(`${MODULE_ID}.notify.migrationPartial`, {
     count: result.errors.length

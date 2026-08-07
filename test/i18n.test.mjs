@@ -78,7 +78,7 @@ test("the dynamically-built migration and notify keys all exist", () => {
     "errorsTitle", "errorsIntro", "close"
   ];
   const notify = [
-    "incompatible", "removalNeedsCeramic", "nothingToConvert", "migrationDone",
+    "incompatible", "gmOnly", "removalNeedsCeramic", "nothingToConvert", "migrationDone",
     "migrationPartial", "packsDone", "removalReverted", "untestedSystem"
   ];
 

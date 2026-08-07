@@ -287,6 +287,173 @@ test("a second run finds nothing left to write", async () => {
   assert.equal(result.errors.length, 0);
 });
 
+test("the document count reflects what the pack confirms, not what was submitted", async () => {
+  // Foundry's updateDocuments resolves with the documents it actually wrote,
+  // which is not guaranteed to match the payload one-for-one. Counting the
+  // payload instead would overstate the result.
+  const packs = stubPacks([
+    makePack({
+      collection: "world.partial", documentName: "Item",
+      docs: [
+        { _id: "p1", system: { price: { value: 1, denomination: "gp" } } },
+        { _id: "p2", system: { price: { value: 2, denomination: "gp" } } }
+      ]
+    })
+  ]);
+  const pack = packs.get("world.partial");
+  pack.documentClass.updateDocuments = async (updates, context) => {
+    pack.written = { updates, context };
+    return updates.slice(0, 1);
+  };
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.partial"]);
+
+  assert.equal(result.documents, 1, "only the confirmed write should be counted");
+});
+
+/* -------------------------------------------- */
+/*  Carried gear on Actor packs                  */
+/* -------------------------------------------- */
+
+/**
+ * An Actor pack fixture whose documents carry `.items` and their own
+ * `updateEmbeddedDocuments`, the way a real loaded Actor document does —
+ * `getDocuments()` on a stub pack does not fabricate that surface on its own.
+ */
+function makeActorPack({ collection, actors, locked = false }) {
+  const pack = {
+    collection,
+    documentName: "Actor",
+    locked,
+    metadata: { label: collection.split(".")[1] },
+    async getIndex({ fields } = {}) {
+      return actors.map(a => ({ _id: a.id, system: a.system }));
+    },
+    async getDocuments() {
+      return actors;
+    },
+    documentClass: {
+      updateDocuments: async (updates, context) => {
+        pack.written = { updates, context };
+        return updates;
+      }
+    }
+  };
+  return pack;
+}
+
+test("carried item prices on an Actor pack's documents convert alongside the purse", async () => {
+  const npc = {
+    id: "npc1", name: "Guard",
+    system: { currency: { gp: 5 } },
+    items: [{ id: "gear1", system: { price: { value: 15, denomination: "gp" } } }],
+    async updateEmbeddedDocuments(_type, updates) {
+      this.written = updates;
+      return updates;
+    }
+  };
+  stubPacks([makeActorPack({ collection: "world.npcs", actors: [npc] })]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.npcs"]);
+
+  assert.deepEqual(npc.written, [
+    { _id: "gear1", system: { price: { value: 15, denomination: "ct" } } }
+  ]);
+  assert.equal(result.documents, 2, "the purse and the carried item both count");
+});
+
+test("carried gear converts even when the actor's own purse needs no work", async () => {
+  const npc = {
+    id: "npc1", name: "Templar",
+    system: { currency: { ct: 12 } }, // already ceramic — nothing for the top-level write
+    items: [{ id: "gear1", system: { price: { value: 4, denomination: "sp" } } }],
+    async updateEmbeddedDocuments(_type, updates) {
+      this.written = updates;
+      return updates;
+    }
+  };
+  const packs = stubPacks([makeActorPack({ collection: "world.npcs", actors: [npc] })]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.npcs"]);
+
+  assert.equal(packs.get("world.npcs").written, undefined, "no currency needed writing");
+  assert.deepEqual(npc.written, [{ _id: "gear1", system: { price: { value: 4, denomination: "cb" } } }]);
+  assert.equal(result.documents, 1);
+  assert.equal(result.packs, 1, "the pack still counts as converted");
+});
+
+test("a failure converting one actor's carried items does not stop the rest of the pack", async () => {
+  const bad = {
+    id: "bad", name: "Bad",
+    system: {},
+    items: [{ id: "bad1", system: { price: { value: 1, denomination: "gp" } } }],
+    async updateEmbeddedDocuments() {
+      throw new Error("locked mid-conversion");
+    }
+  };
+  const good = {
+    id: "good", name: "Good",
+    system: {},
+    items: [{ id: "good1", system: { price: { value: 2, denomination: "gp" } } }],
+    async updateEmbeddedDocuments(_type, updates) {
+      this.written = updates;
+      return updates;
+    }
+  };
+  stubPacks([makeActorPack({ collection: "world.npcs", actors: [bad, good] })]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const outcome = await applyPackMigration(["world.npcs"]);
+
+  assert.deepEqual(good.written, [{ _id: "good1", system: { price: { value: 2, denomination: "ct" } } }]);
+  assert.equal(outcome.errors.length, 1);
+  assert.match(outcome.errors[0], /world\.npcs/);
+});
+
+test("scanPacks stays index-only: Actor pack scans do not request or load items", async () => {
+  // The performance contract this feature depends on: the scan must never see
+  // carried gear, only the currency-relevant index fields.
+  const packs = stubPacks([
+    makePack({
+      collection: "world.npcs", documentName: "Actor",
+      docs: [{ _id: "npc1", system: { currency: { gp: 5 } } }]
+    })
+  ]);
+  const { scanPacks } = await importPackMigration();
+
+  await scanPacks();
+
+  assert.deepEqual(packs.get("world.npcs").indexFields, ["system.price", "system.currency"]);
+});
+
+/* -------------------------------------------- */
+/*  Document type guard                          */
+/* -------------------------------------------- */
+
+test("applyPackMigration refuses a non-convertible document type, without throwing", async () => {
+  // Unlike scanPacks, applyPackMigration can be called directly with whatever
+  // collection id a caller hands it. A JournalEntry pack with a coincidental
+  // `system.currency`-shaped field must not be treated as an Actor.
+  const packs = stubPacks([
+    makePack({
+      collection: "world.notes", documentName: "JournalEntry",
+      docs: [{ _id: "j1", system: { currency: { gp: 5 } } }]
+    })
+  ]);
+  const { applyPackMigration } = await importPackMigration();
+
+  const result = await applyPackMigration(["world.notes"]);
+
+  assert.equal(packs.get("world.notes").written, undefined,
+    "a JournalEntry pack must never be written to");
+  assert.equal(result.packs, 0);
+  assert.equal(result.errors.length, 1);
+  assert.match(result.errors[0], /world\.notes/);
+});
+
 /* -------------------------------------------- */
 /*  Dialog wiring                                */
 /* -------------------------------------------- */
