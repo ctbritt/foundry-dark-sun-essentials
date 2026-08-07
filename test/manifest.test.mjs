@@ -130,6 +130,23 @@ test("the macro pack is GM-only", () => {
   assert.equal(pack.ownership.ASSISTANT, "NONE");
 });
 
+test("the macro pack grants the gamemaster ownership explicitly", () => {
+  // Not redundant with "GM-only", and not a formality — this is the line that
+  // decides whether the compendium appears at all.
+  //
+  // CompendiumCollection#visible is `getUserLevel() >= OBSERVER`, and unlike
+  // testUserPermission it does NOT short-circuit on `user.isGM`. getUserLevel
+  // walks only the roles this manifest declares, taking the highest one the
+  // user holds. A GM holds every role, so a block of PLAYER: NONE and
+  // ASSISTANT: NONE resolves to NONE for them too, and the pack is invisible
+  // to everyone. Foundry's world-config schema defaults GAMEMASTER to OWNER,
+  // but `get ownership()` returns the manifest's block before it ever reaches
+  // those defaults. Shipped exactly that way in 1.3.0 and verified on a live
+  // v14 install: the pack loaded, migrated, and appeared to nobody.
+  const pack = manifest.packs.find(p => p.name === "dark-sun-macros");
+  assert.equal(pack.ownership.GAMEMASTER, "OWNER");
+});
+
 test("every declared pack has compilable source", () => {
   // The built LevelDB directory is gitignored — it only exists after
   // `npm run build:packs`. The source is what must be present in a clone.
