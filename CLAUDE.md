@@ -31,7 +31,7 @@ pushing files over and restarting:
 
 ```
 rsync -av --delete \
-  --exclude '.git*' --exclude test --exclude docs --exclude node_modules \
+  --exclude '.git*' --exclude .claude --exclude test --exclude docs --exclude node_modules \
   --exclude package.json --exclude CLAUDE.md --exclude .DS_Store \
   ./ chris@raspberrypi.minskin-chinstrap.ts.net:foundryuserdata/Data/modules/dark-sun-essentials/
 ```
