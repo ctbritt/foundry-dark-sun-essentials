@@ -286,3 +286,25 @@ test("a second run finds nothing left to write", async () => {
   assert.equal(result.documents, 0);
   assert.equal(result.errors.length, 0);
 });
+
+/* -------------------------------------------- */
+/*  Dialog wiring                                */
+/* -------------------------------------------- */
+
+test("checkbox names carry no dots, so form data stays flat", async () => {
+  // FormDataExtended expands `a.b` into {a: {b: ...}}. A pack id like
+  // `world.athasian-gear` used as a field name would arrive nested and the
+  // selection would read as empty.
+  const { packCheckboxName } = await importPackMigration();
+
+  const name = packCheckboxName(3);
+
+  assert.ok(!name.includes("."), `${name} would be expanded by FormDataExtended`);
+  assert.equal(name, "pack-3");
+});
+
+test("checkbox names are unique per index", async () => {
+  const { packCheckboxName } = await importPackMigration();
+  const names = [0, 1, 2].map(packCheckboxName);
+  assert.equal(new Set(names).size, 3);
+});

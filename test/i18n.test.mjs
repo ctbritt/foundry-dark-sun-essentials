@@ -73,12 +73,13 @@ test("the dynamically-built migration and notify keys all exist", () => {
   // deciding whether to rewrite their world's money; a missing one is loud.
   const migration = [
     "title", "intro", "introRemoval", "countActors", "countItems", "countTokens",
-    "rates", "compendiums", "skippedCoins", "remainder", "warning", "confirm",
-    "cancel", "keepAnyway", "removeAnyway", "revert", "errorsTitle", "errorsIntro", "close"
+    "rates", "packsIntro", "packRow", "packsLocked", "skippedCoins", "remainder",
+    "warning", "confirm", "cancel", "keepAnyway", "removeAnyway", "revert",
+    "errorsTitle", "errorsIntro", "close"
   ];
   const notify = [
     "incompatible", "removalNeedsCeramic", "nothingToConvert", "migrationDone",
-    "migrationPartial", "removalReverted", "untestedSystem"
+    "migrationPartial", "packsDone", "removalReverted", "untestedSystem"
   ];
 
   const missing = [

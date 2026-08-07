@@ -170,3 +170,20 @@ export async function applyPackMigration(collections) {
   log("info", `Pack conversion complete: ${result.documents} documents in ${result.packs} packs.`);
   return result;
 }
+
+/* -------------------------------------------- */
+/*  Dialog wiring                                */
+/* -------------------------------------------- */
+
+/**
+ * The form field name for a pack's checkbox.
+ *
+ * Indexed rather than named after the pack: `FormDataExtended` expands dotted
+ * field names into nested objects, and every pack id contains a dot.
+ *
+ * @param {number} index  Position in the candidate list.
+ * @returns {string}
+ */
+export function packCheckboxName(index) {
+  return `pack-${index}`;
+}

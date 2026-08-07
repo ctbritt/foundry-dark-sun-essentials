@@ -20,3 +20,20 @@
 .dark-sun-migration-summary li {
   list-style: disc;
 }
+
+.dark-sun-pack-list {
+  max-height: 12rem;
+  overflow-y: auto;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 3px;
+}
+
+.dark-sun-pack-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  cursor: pointer;
+}
