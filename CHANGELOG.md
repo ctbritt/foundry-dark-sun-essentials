@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.3.0 — 2026-08-06
+
+### Added
+- A **Convert to Athasian Coinage** macro, shipped in the module's compendium.
+  v1.2.0 removed the settings window that held this button, leaving the
+  conversion reachable only by arming the removal toggle.
+- The conversion now offers unlocked compendium packs. Actor packs get their
+  currency converted, item packs get their prices. Every pack is a separate
+  checkbox and none are ticked by default.
+
+### Changed
+- The migration dialog warns about backups whenever packs are on offer, not
+  only when the standard coins are being removed.
+
 ## 1.2.0 — 2026-08-04
 
 Adds a Psionic item property, and removes the configuration window in favour of

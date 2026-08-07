@@ -34,27 +34,29 @@ A second toggle removes platinum, gold, electrum, silver and copper entirely.
 Because that drops them from every actor's stored data, it will not proceed
 without offering to convert existing balances first.
 
-### Conversion is exact
+### Converting existing money
 
-| From | To |
-|---|---|
-| 1 pp | 10 ct |
-| 1 gp | 1 ct |
-| 1 ep | 5 cb |
-| 1 sp | 1 cb |
-| 1 cp | 1 lb |
+Open **Compendiums → Dark Sun Essentials: Macros** and run **Convert to
+Athasian Coinage**. The dialog shows what it found before it writes anything:
+actors holding standard coin, items priced in it, unlinked tokens on scenes,
+and any unlocked compendium packs it could also convert.
 
-Nothing rounds and nothing is lost. Electrum is the only standard coin without
-a 1:1 ceramic partner, and it lands cleanly: half a gold piece is five ceramic
-bits.
+Compendium packs are opt-in, one checkbox each, and nothing is ticked by
+default. Locked packs are counted and skipped — including every system pack,
+which the next dnd5e update would overwrite anyway.
 
-The migration covers world actors, the items they carry, sidebar items, and
-unlinked tokens on scenes. It is safe to run more than once — the second run
-finds nothing to do.
+The conversion is exact and idempotent: 1 pp → 10 ct, 1 gp → 1 ct, 1 ep → 5 cb,
+1 sp → 1 cb, 1 cp → 1 lb. Running it twice finds nothing to do the second time.
+It cannot be undone from inside Foundry, so back the world up first.
 
-Compendium packs are **not** converted. System packs are locked, and rewriting
-them would be undone by the next system update. The migration tells you how
-many packs it skipped rather than pretending they aren't there.
+From a script, the same dialog is:
+
+```js
+game.modules.get("dark-sun-essentials").api.openMigrationDialog();
+```
+
+You do not need this before enabling *Remove Standard Coinage* — that toggle
+opens the same dialog itself.
 
 ### Psionic spell school
 
@@ -129,16 +131,9 @@ mid-session would exist in the config table but not in any actor's schema.
 Foundry will prompt for the reload.
 
 **Back up before removing the standard coins.** The conversion is exact and
-tested, but it rewrites actor data, and no in-Foundry undo exists.
-
-**To convert balances without removing the old coins**, run this from a macro:
-
-```js
-game.modules.get("dark-sun-essentials").api.openMigrationDialog();
-```
-
-It scans first and shows you the counts before writing anything. You do not need
-this to remove the standard coins — that toggle offers the migration itself.
+tested, but it rewrites actor data, and no in-Foundry undo exists. See
+[*Converting existing money*](#converting-existing-money) above for how to run
+it.
 
 **Compatibility with dnd5e 6.0 is untested.** At the time of writing, 6.0 has
 not been released — dnd5e `master` is 5.3.3, and the 5.3 release notes describe

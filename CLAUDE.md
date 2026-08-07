@@ -27,11 +27,22 @@ Those versions match `module.json`'s `verified` fields (Foundry 14, dnd5e 5.3.3)
 so the Pi is the exact target we claim compatibility with.
 
 The installed module is a **copy**, not a symlink to a checkout — deploying means
-pushing files over and restarting:
+pushing files over and restarting.
+
+Build the compendium packs first — they are gitignored, so a fresh clone has no
+`packs/dark-sun-macros` and the module will fail to load with a missing-pack
+error:
+
+```
+npm run build:packs
+```
+
+Then push:
 
 ```
 rsync -av --delete \
-  --exclude '.git*' --exclude .claude --exclude test --exclude docs --exclude node_modules \
+  --exclude '.git*' --exclude .claude --exclude test --exclude docs --exclude tools \
+  --exclude 'packs/src' --exclude node_modules \
   --exclude package.json --exclude CLAUDE.md --exclude .DS_Store \
   ./ chris@raspberrypi.minskin-chinstrap.ts.net:foundryuserdata/Data/modules/dark-sun-essentials/
 ```

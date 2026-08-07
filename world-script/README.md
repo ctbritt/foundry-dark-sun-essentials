@@ -59,7 +59,7 @@ so it is the same everywhere the module is on.
 
 ## What you give up
 
-Only three things, and two of them are cosmetic:
+Four things, and two of them are cosmetic:
 
 - **The settings toggles.** Flags are edited in the file rather than ticked in
   Foundry's module settings — which means a shutdown-free browser refresh, but
@@ -68,6 +68,9 @@ Only three things, and two of them are cosmetic:
   *Alternative: a personal module* below for the middle road.)
 - **The migration dialog.** The arithmetic is here in full and equally tested,
   but it runs from a macro rather than a window with a confirmation screen.
+- **Compendium conversion.** A world script cannot ship a compendium, so
+  `convertCurrency()` here covers world data only. The module's macro also
+  offers to convert unlocked compendium packs.
 
 Feature-for-feature the two are otherwise identical, and the script is the
 *safer* of the two on one point — see below.
