@@ -1,0 +1,94 @@
+/**
+ * Compendium migration: the same conversion, applied to packs.
+ *
+ * Separate from `migration.mjs` because packs behave differently in three ways
+ * that matter. They load asynchronously, they can be locked underneath us
+ * between the scan and the write, and they are opt-in: unlocked means the GM
+ * is free to edit a pack, not that they asked us to rewrite it.
+ *
+ * The scan reads pack indexes rather than documents. A GM with a large
+ * homebrew pack should not wait for every document to load just to see a
+ * dialog.
+ */
+
+import { convertLegacyToCeramic, convertPrice, STANDARD_RATES } from "./core/coinage.mjs";
+import { log } from "./compat.mjs";
+
+/** Document types the conversion knows how to handle. */
+const CONVERTIBLE = ["Actor", "Item"];
+
+/** Index paths the scan needs. Requesting both for both types is harmless. */
+const INDEX_FIELDS = ["system.price", "system.currency"];
+
+/**
+ * @typedef {object} PackCandidate
+ * @property {string} collection    The pack's stable id, e.g. `world.athasian-gear`.
+ * @property {string} label         What the GM sees in the sidebar.
+ * @property {string} documentName  "Actor" or "Item".
+ * @property {number} count         Documents in the pack with something to convert.
+ */
+
+/**
+ * Does this document need rewriting?
+ *
+ * Both branches are idempotent by construction: `convertPrice` returns null for
+ * any denomination outside the legacy five, and `convertLegacyToCeramic`
+ * reports `converted: false` when there is no standard coin to fold in.
+ *
+ * @param {object} entry           An index entry or a full document.
+ * @param {string} documentName    "Actor" or "Item".
+ * @param {object} rates           `CONFIG.DND5E.currencies`, or a stand-in.
+ * @returns {boolean}
+ */
+export function entryNeedsConversion(entry, documentName, rates = STANDARD_RATES) {
+  if ( documentName === "Item" ) return convertPrice(entry?.system?.price) !== null;
+  if ( documentName === "Actor" ) {
+    if ( !entry?.system?.currency ) return false;
+    return convertLegacyToCeramic(entry.system.currency, { rates }).converted;
+  }
+  return false;
+}
+
+/**
+ * Read every unlocked Actor and Item pack and report what could be converted.
+ * Writes nothing, and loads no documents.
+ *
+ * @returns {Promise<{candidates: PackCandidate[], locked: number}>}
+ */
+export async function scanPacks() {
+  const candidates = [];
+  let locked = 0;
+  const rates = CONFIG.DND5E?.currencies ?? STANDARD_RATES;
+
+  for ( const pack of game.packs ) {
+    if ( !CONVERTIBLE.includes(pack.documentName) ) continue;
+    if ( pack.locked ) {
+      locked += 1;
+      continue;
+    }
+
+    let count = 0;
+    try {
+      const index = await pack.getIndex({ fields: INDEX_FIELDS });
+      for ( const entry of index ) {
+        if ( entryNeedsConversion(entry, pack.documentName, rates) ) count += 1;
+      }
+    } catch ( error ) {
+      // A pack that will not index is a pack we cannot safely offer. Say so in
+      // the console and leave it out rather than showing a count of zero that
+      // looks like "nothing to do".
+      log("error", `Could not index ${pack.collection}:`, error);
+      continue;
+    }
+
+    if ( !count ) continue;
+    candidates.push({
+      collection: pack.collection,
+      label: pack.metadata?.label ?? pack.collection,
+      documentName: pack.documentName,
+      count
+    });
+  }
+
+  return { candidates, locked };
+}
