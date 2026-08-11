@@ -1,0 +1,5316 @@
+folder: npD5ZZQ4lQPDzuVH
+name: Grik's Weaponry
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: 67ba6c41d3a1cbc408c2aaffa6791c81223eeab2
+_id: YOu0PrTHzN9ahBJ6
+pages:
+  - type: text
+    name: Grik's Weaponry
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        _lasttab: items
+        lastrolltable: RollTable.7nNtEvx0wKz9WJtv
+        items:
+          - name: Carrikal, Bone
+            type: weapon
+            img: icons/weapons/polearms/halberd-crescent-engraved-steel.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: f175727812080193b2e655074cce67654994e7f2
+                sourceId: Compendium.world.dark-sun-weapons.Item.6V6hUGl8l6iYEeeX
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: qS1iY0Aw8RgMSBGM
+                price: 10 ct
+                cost: 20 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: >-
+                  <p>The sharpened jawbone of a large creature lashed to a haft,
+                  forming a sharp club with two forward facing heads.</p>
+
+                  <p>Breakage: 50%</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 2
+                  denomination: 4
+                  bonus: ''
+                  types:
+                    - slashing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - bone
+                - ver
+                - bne
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: martialM
+                baseItem: battleaxe
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: carrikal-bone
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.qS1iY0Aw8RgMSBGM
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: yLICocLeSTgRD5mO
+            _id: zJwRyfQNTACGjumZ
+            sort: 0
+          - name: Glaive, Wood
+            type: weapon
+            img: icons/weapons/polearms/halberd-crescent-glowing.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: ac0624a50e499e9597f57d142bc47534a83acdc6
+                sourceId: Compendium.world.dark-sun-weapons.Item.Bm2zqx0D5JF3pKaw
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: Pii0R7bxXHUgytsH
+                price: 20 ct
+                cost: 40 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: "<p>A crescent blade is mounted on the end of a tall metal shaft. This polearm provies the ability to attack with deadly efficiency from greater range than typical melee weapons.</p>\n<p>\_</p>\n<p>Breakage: 50%</p>"
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 20
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 10
+                  bonus: ''
+                  types:
+                    - slashing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - hvy
+                - two
+                - rch
+                - jLJV1Pv1tTF44wrv
+                - wod
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: martialM
+                baseItem: glaive
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-2'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-3'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: glaive-wood
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.Pii0R7bxXHUgytsH
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: yLICocLeSTgRD5mO
+            _id: N3iolfsc0J8oMG7E
+            sort: 0
+          - name: Javelin, Bone
+            type: weapon
+            img: icons/weapons/ammunition/arrows-bodkin-yellow-red.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: bbf7ae59a06f9dcbd21f4bc688c4f12abda9527f
+                sourceId: Compendium.world.dark-sun-weapons.Item.TmZbh2c5Nl26dMXu
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: qP6jPkx2y9ZTvOGe
+                price: 3 ct
+                cost: 6 ct
+                quantity: 0
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: "<p>This light and flexible spear is designed for throwing, but is versatile enough to be used in melee combat as well.</p>\n<p>\_</p>\n<p>Breakage: 50%</p>"
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 3
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: 30
+                long: 120
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 6
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - yOVAoSquHZY4cHEJ
+                - thr
+                - bne
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: simpleM
+                baseItem: javelin
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '0'
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-1'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '0'
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-1'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: javelin-bone
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.qP6jPkx2y9ZTvOGe
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: qU9jrrxQx9ESbsP5
+            _id: qoOMbjqV4dhJqws8
+            sort: 0
+          - name: Cahulak, Bone
+            type: weapon
+            img: icons/weapons/misc/whip-red-yellow.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: f44370035be670c259932a99a28305b1a87f96e1
+                sourceId: Item.WPmyQGCvrlunQx0O
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: PLxJXrTcdCQKWNhf
+                price: 20 ct
+                cost: 40 ct
+                quantity: 8
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: >-
+                  <p>A pair of alhulak heads tied to either end of a 10-12-foot
+                  rope. As a melee weapon, the wielder holds one blade cluster
+                  in each hand and swings them in unison or succession at the
+                  foe.</p>
+
+                  <p>Breakage: 50%</p>
+
+                  <p><strong>Special. </strong>This type of weapon allows you
+                  many different ways to wield it: Holding each end of the
+                  Cahulak counts as having two one-handed melee weapons in each
+                  hand and counts as having two light weapons for two weapon
+                  fighting; Holding only one end allows you to make a one handed
+                  weapon attack with reach like an Alhulak; It can also been
+                  thrown, tangling around the target like a Net (no effect on
+                  Huge or larger, DC10 Strength check to free self or another)
+                  and causes 1d6 damage when the blades strike.</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 15
+                units: lb
+              price:
+                value: 20
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: 10
+                long: 40
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: true
+                    formula: 2d6 + @mod -1
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - rch
+                - spc
+                - thr
+                - bne
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: martialM
+                baseItem: whip
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '10'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-1'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: cahulak-bone
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.PLxJXrTcdCQKWNhf
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: PWLIUztF7HNnWjwt
+            _id: ar60FhEoD2WZeF03
+            sort: 0
+          - name: Alhulak, Bone
+            type: weapon
+            img: icons/weapons/misc/whip-red-yellow.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: 4ea34aece10a394dd9bf011780a0b2aeed6a14a9
+                sourceId: Compendium.world.dark-sun-weapons.Item.K0uqe1dHGs3s8SEE
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: djSZUV1jsSCJ4BL0
+                price: 10 ct
+                cost: 20 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: >-
+                  <p>A blunt grappling hook attached to 5-7 feet of rope with a
+                  2 foot-long handle. The bladed head is commonly carved from
+                  mekillot bone while the handle is wood or bone.</p>
+
+                  <p>Breakage: 50%</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 5
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 6
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - rch
+                - yOVAoSquHZY4cHEJ
+                - bne
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: martialM
+                baseItem: whip
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-1'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-1'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: alhulak-bone
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.djSZUV1jsSCJ4BL0
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: yLICocLeSTgRD5mO
+            _id: wLF5RM5G1xcRMsyN
+            sort: 0
+          - name: Dagger, Obsidian
+            type: weapon
+            img: icons/weapons/daggers/dagger-jeweled-purple.webp
+            effects: []
+            flags:
+              core: {}
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              scene-packer:
+                hash: c182218ba103121a167957b338a37528122ef629
+                sourceId: Compendium.world.dark-sun-weapons.Item.CzerFmnkNiM76r8h
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: LQXRwiBy4yoD7bib
+                price: 10 ct
+                cost: 20 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: "<p>A short metal blade mounted to a small hilt and crossguard. The dagger makes an effective side armament for hardened warriors or a hidden blade for assassins and thieves.</p>\n<p>\_</p>\n<p>breakage: 75%</p>"
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0.5
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: uncommon
+              identified: true
+              range:
+                value: 20
+                long: 60
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 4
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - fin
+                - lgt
+                - thr
+                - ZNdI9nczTmuNOraS
+                - obs
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: simpleM
+                baseItem: dagger
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '20'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '0'
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: dagger-obsidian
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.LQXRwiBy4yoD7bib
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: qU9jrrxQx9ESbsP5
+            _id: GGymdsEZHcnKmSoW
+            sort: 0
+          - folder: yLICocLeSTgRD5mO
+            name: Khopesh, Obsidian
+            type: weapon
+            img: icons/weapons/sickles/sickle-simple-grey.webp
+            system:
+              description:
+                value: >-
+                  <p>A sickle-like blade featuring both sharp and blunt edges,
+                  with an axe-like curve and a hooked tip.</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 10
+                units: lb
+              price:
+                value: 70
+                denomination: ct
+              rarity: uncommon
+              attunement: ''
+              attuned: false
+              equipped: false
+              cover: null
+              crewed: false
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: true
+                    formula: 1d10[piercing]
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 8
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              type:
+                value: martialM
+                baseItem: ''
+              magicalBonus: null
+              properties:
+                - ZNdI9nczTmuNOraS
+                - ver
+                - obs
+              proficient: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '1'
+                      type: creature
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: khopesh-obsidian
+              ammunition: {}
+            effects: []
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              scene-packer:
+                hash: 1e26387f7cf94a9efdee50afc42c91ec87e333c1
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: cYyJveJPL4owmLgB
+                price: 70 ct
+                cost: 140 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.cYyJveJPL4owmLgB
+              duplicateSource: Item.xZkBFU3PZNNTWW1o
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: PpaeXBKu5H04MrcV
+            sort: 0
+          - name: Gouge, Stone
+            type: weapon
+            img: icons/weapons/polearms/halberd-crescent-glowing.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: b7d9508ed5b6c8ac727692e8045f89b090aba56e
+                sourceId: Compendium.world.dark-sun-weapons.Item.yJHJMKl2mzrZrtOd
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: DJqg8lAoeNy3uVct
+                price: 25 ct
+                cost: 50 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: >-
+                  <p>Worn in an over-the-shoulder harness, this is commonly
+                  found in the Nibenese infantry. A wide blade is mounted to a
+                  3-foot-long wooden shaft that requires two hands to wield. One
+                  hand goes on a small bar and another on a grip at the rear of
+                  the shaft to increase thrust. The weapon is wielded much like
+                  a shovel.</p>
+
+                  <p>Breakage: 25%</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 3.75
+                units: lb
+              price:
+                value: 25
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 12
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - hvy
+                - two
+                - HPb2LFDrMC7YtCrh
+                - stn
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: martialM
+                baseItem: ''
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-1'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-2'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: gouge-stone
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.DJqg8lAoeNy3uVct
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: yLICocLeSTgRD5mO
+            _id: BW4A8VbUbyXtXFOu
+            sort: 0
+          - name: Javelin, Wood
+            type: weapon
+            img: icons/weapons/ammunition/arrows-bodkin-yellow-red.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: 3b7c5cac074d8bdd37ff5c8a4d916342b3226dcf
+                sourceId: Compendium.world.dark-sun-weapons.Item.UwQGgGdtQosNxVab
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: nmF3F91nUHWKkcdv
+                price: 3 ct
+                cost: 6 ct
+                quantity: 0
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: "<p>This light and flexible spear is designed for throwing, but is versatile enough to be used in melee combat as well.</p>\n<p>\_</p>\n<p>Breakage: 50%</p>"
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 3
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: 30
+                long: 120
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 6
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - thr
+                - jLJV1Pv1tTF44wrv
+                - wod
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: simpleM
+                baseItem: javelin
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '0'
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-2'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '0'
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-3'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: javelin-wood
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.nmF3F91nUHWKkcdv
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: qU9jrrxQx9ESbsP5
+            _id: 74CY7hligUfDsK1O
+            sort: 0
+          - name: Sickle, Wood
+            type: weapon
+            img: icons/weapons/sickles/sickle-curved.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: f0d478a6f7c42f96c2e39664034c5fb272e06c5f
+                sourceId: Compendium.world.dark-sun-weapons.Item.PUBTN7w01CEUT8XS
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: W6z8xANHS75j06Gu
+                price: 1 ct
+                cost: 2 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: "<p>A crescent hooked blade mounted atop a short haft, light enough to be wielded in one hand for treshing crops or foes.</p>\n<p>\_</p>\n<p>Breakage: 50%</p>"
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: null
+                long: null
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 4
+                  bonus: ''
+                  types:
+                    - slashing
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - lgt
+                - jLJV1Pv1tTF44wrv
+                - wod
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: simpleM
+                baseItem: sickle
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: '-2'
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: melee
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                dnd5eactivity300:
+                  _id: dnd5eactivity300
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: '-3'
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+                  otherActivityId: none
+              identifier: sickle-wood
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.W6z8xANHS75j06Gu
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: qU9jrrxQx9ESbsP5
+            _id: SoBLmyYP5mPy9LyB
+            sort: 0
+          - name: Dejada
+            type: weapon
+            img: icons/weapons/slings/slingshot-wood.webp
+            effects: []
+            flags:
+              core: {}
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              betterRolls5e:
+                quickDamage:
+                  context:
+                    '0': ''
+                  value:
+                    '0': true
+                  altValue:
+                    '0': true
+                quickOther:
+                  context: ''
+                  value: true
+                  altValue: true
+                quickDesc:
+                  value: false
+                  altValue: false
+                quickAttack:
+                  value: true
+                  altValue: true
+                quickProperties:
+                  value: true
+                  altValue: true
+                quickVersatile:
+                  value: false
+                  altValue: false
+                quickFlavor:
+                  value: true
+                  altValue: true
+                quickCharges:
+                  value:
+                    quantity: false
+                  altValue:
+                    quantity: false
+              scene-packer:
+                hash: 0109ce4d143d5d733da7929618e11f11b1ce23ea
+                sourceId: Compendium.world.dark-sun-weapons.Item.evo54xTFJcj9eqV0
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: J8FvPkDHpHZVaNG3
+                price: 10 ct
+                cost: 20 ct
+                quantity: 6
+                consumable: false
+                lock: false
+                hide: false
+            system:
+              description:
+                value: >-
+                  <p>A long, scooped basket is worn on the arm and used to
+                  propel 2-inch ceramic or stone projectiles called “pelota” at
+                  high rates of speed.</p>
+                chat: ''
+              source:
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 8
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              range:
+                value: 20
+                long: 60
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: 1
+                  denomination: 6
+                  bonus: ''
+                  types:
+                    - bludgeoning
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: 10
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - amm
+              proficient: 0
+              unidentified:
+                description: ''
+              type:
+                value: simpleR
+                baseItem: sling
+              container: null
+              cover: null
+              crewed: false
+              magicalBonus: null
+              attuned: false
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '20'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: dejada
+              ammunition: {}
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.J8FvPkDHpHZVaNG3
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            folder: lOAba83kmUvcrxYa
+            _id: WN81nmUGJQ1DIhky
+            sort: 0
+          - name: Crossbow, hand
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>Proficiency with a hand crossbow allows you to add your
+                  proficiency bonus to the attack roll for any attack you make
+                  with it.</p>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 75
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 30
+                long: 120
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: true
+                    formula: 1d6[piercing] + @mod
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - amm
+                - lgt
+                - lod
+              proficient: null
+              unidentified:
+                description: Crossbow, hand
+              type:
+                value: martialR
+                baseItem: handcrossbow
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: crossbow-hand
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Crossbow, hand
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  ability: dex
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 1
+                originalName: Crossbow, hand
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Crossbow, hand
+              scene-packer:
+                sourceId: Item.
+                hash: 51ee47159dfc53b73941a6515cbbd23b9c45c56d
+              midi-qol:
+                onUseMacroName: ''
+              midiProperties:
+                confirmTargets: default
+              magicitems:
+                enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: 9EEpjFDTMsI6aO2F
+                price: 75 ct
+                cost: 150 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            effects: []
+            img: icons/weapons/crossbows/handcrossbow-green.webp
+            folder: TK7PV1swdL9nLLJx
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.9EEpjFDTMsI6aO2F
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: NOeBSpaM7rOYiIr9
+            sort: 0
+          - name: Crossbow, heavy
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>Proficiency with a heavy crossbow allows you to add your
+                  proficiency bonus to the attack roll for any attack you make
+                  with it.</p>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 18
+                units: lb
+              price:
+                value: 50
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 100
+                long: 400
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: true
+                    formula: 1d10[piercing] + @mod
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - amm
+                - hvy
+                - lod
+                - two
+              proficient: null
+              unidentified:
+                description: Crossbow, heavy
+              type:
+                value: martialR
+                baseItem: heavycrossbow
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '100'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: crossbow-heavy
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Crossbow, heavy
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  ability: dex
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 36
+                originalName: Crossbow, heavy
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Crossbow, heavy
+              scene-packer:
+                sourceId: Item.
+                hash: 63a356a52db6e28999b879b587fe20baa48d7745
+              midi-qol:
+                onUseMacroName: ''
+              midiProperties:
+                confirmTargets: default
+              magicitems:
+                enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: XzkKnG3QOlyTBg27
+                price: 50 ct
+                cost: 100 ct
+                quantity: 7
+                consumable: false
+                lock: false
+                hide: false
+            effects: []
+            img: icons/weapons/crossbows/crossbow-blue.webp
+            folder: TK7PV1swdL9nLLJx
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.XzkKnG3QOlyTBg27
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: 5ZR1OUPSztsKJo7P
+            sort: 0
+          - name: Boomerang
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>The boomerang is a ranged weapon, and any creature
+                  proficient with the javelin is also proficient with this
+                  weapon.</p>
+
+                  <p>On a miss, a boomerang returns to the thrower's hand.</p>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 4
+                units: lb
+              price:
+                value: 2
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 20
+                long: 60
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - bludgeoning
+                  custom:
+                    enabled: true
+                    formula: 1d4[bludgeoning] + @mod
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - thr
+                - spc
+              proficient: null
+              unidentified:
+                description: Boomerang
+              type:
+                value: simpleR
+                baseItem: boomerang
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '20'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: boomerang
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Boomerang
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  ability: dex
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 40
+                originalName: Boomerang
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Boomerang
+              scene-packer:
+                sourceId: Item.
+                hash: 67b568db924c07402f2e4622c095c0798d987b1e
+              midi-qol:
+                onUseMacroName: ''
+              midiProperties:
+                confirmTargets: default
+              magicitems:
+                enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: EkfAVOskwIXZ0jYH
+                price: 2 ct
+                cost: 4 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            effects: []
+            img: icons/weapons/thrown/shuriken-double-red.webp
+            folder: lOAba83kmUvcrxYa
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.EkfAVOskwIXZ0jYH
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: 3Z7U7y0kfeyzFxNz
+            sort: 0
+          - name: Net
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>Proficiency with a net allows you to add your proficiency
+                  bonus to the attack roll for any attack you make with it.</p>
+
+                  <p>A Large or smaller creature hit by a net is restrained
+                  until it is freed. A net has no effect on creatures that are
+                  formless, or creatures that are Huge or larger. A creature can
+                  use its action to make a DC 10 Strength check, freeing itself
+                  or another creature within its reach on a success. Dealing 5
+                  slashing damage to the net (AC 10) also frees the creature
+                  without harming it, ending the effect and destroying the
+                  net.</p>
+
+                  <p>When you use an action, bonus action, or reaction to attack
+                  with a net, you can make only one attack regardless of the
+                  number of attacks you can normally make.</p>
+
+                  <br />
+
+                  <section class="secret">
+
+                  <hr />
+
+                  <h5>Automation notes - Chris's Premades (CPR):</h5>
+
+                  <h2><span style="font-family:Signika, sans-serif">Made by Moto
+                  Moto</span></h2><h3
+                  style="box-sizing:border-box;user-select:text;margin:0px 0px
+                  0.5rem;padding:0px;font-weight:normal;font-size:1.25em;border-bottom:none;color:rgb(25,
+                  24, 19);font-family:Signika,
+                  sans-serif;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial"><span
+                  style="font-family:Signika,
+                  sans-serif">Requires:</span></h3><ul
+                  style="box-sizing:border-box;user-select:text;margin:0.5em
+                  0px;padding:0px 0px 0px 1.5em;color:rgb(25, 24,
+                  19);font-family:Signika,
+                  sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial"><li
+                  style="box-sizing:border-box;user-select:text"><p
+                  style="box-sizing:border-box;user-select:text;margin:0.5em
+                  0px;margin-block-end:0px"><span style="font-family:Signika,
+                  sans-serif">DFreds Convenient Effects</span></p></li></ul>
+
+                  </section>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 5
+                long: 15
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - spc
+                - thr
+              proficient: null
+              unidentified:
+                description: Net
+              type:
+                value: martialR
+                baseItem: net
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: perm
+                    special: ''
+                    override: false
+                  effects:
+                    - _id: VjHPFsXRd8zoutRN
+                  range:
+                    value: '5'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: str
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: net
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Net
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Control
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  ability: str
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 38
+                originalName: Net
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Net
+              scene-packer:
+                sourceId: Item.tBC6qtUbPcB3DraL
+                hash: d65b3917b14853b5a36350b635e0a3795b1b2439
+              midi-qol:
+                onUseMacroName: ''
+                fumbleThreshold: null
+                effectActivation: false
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                confirmTargets: never
+                nodam: false
+                fulldam: false
+                halfdam: false
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                rollOther: false
+                critOther: false
+                offHandWeapon: false
+                magicdam: false
+                magiceffect: false
+                concentration: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              magicitems:
+                enabled: false
+                equipped: false
+                attuned: false
+                charges: '0'
+                chargeType: c1
+                destroy: false
+                destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+                rechargeable: false
+                recharge: '0'
+                rechargeType: t1
+                rechargeUnit: r1
+                sorting: l
+              custom-character-sheet-sections:
+                sectionName: ''
+              rest-recovery:
+                data:
+                  recovery:
+                    enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: GC512oF0td0FT8I7
+                price: 1 ct
+                cost: 2 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            effects:
+              - name: Net
+                changes:
+                  - key: macro.StatusEffect
+                    mode: 0
+                    value: restrained
+                    priority: 20
+                  - key: flags.midi-qol.OverTime
+                    mode: 0
+                    value: >-
+                      turn=start,
+
+                      name=You can take an action to break free of this net by
+                      rolling a strength check.
+                    priority: 20
+                  - key: flags.midi-qol.OverTime
+                    mode: 0
+                    value: |-
+                      turn=end,
+                      rollType=check,
+                      saveAbility=str,
+                      saveDC=10,
+                      actionSave=true,
+                      name=Restrained by Net
+                    priority: 20
+                transfer: false
+                _id: VjHPFsXRd8zoutRN
+                disabled: false
+                duration:
+                  startTime: null
+                  seconds: null
+                  combat: null
+                  rounds: null
+                  turns: null
+                  startRound: null
+                  startTurn: null
+                description: ''
+                origin: null
+                statuses: []
+                flags:
+                  times-up:
+                    isPassive: false
+                  dae:
+                    disableIncapacitated: false
+                    selfTarget: false
+                    selfTargetAlways: false
+                    dontApply: false
+                    stackable: noneName
+                    showIcon: true
+                    durationExpression: ''
+                    macroRepeat: none
+                    specialDuration:
+                      - combatEnd
+                    enableCondition: ''
+                    disableCondition: ''
+                  ActiveAuras:
+                    isAura: false
+                    aura: None
+                    nameOverride: ''
+                    radius: ''
+                    alignment: ''
+                    type: ''
+                    customCheck: ''
+                    ignoreSelf: false
+                    height: false
+                    hidden: false
+                    displayTemp: false
+                    hostile: false
+                    onlyOnce: false
+                    wallsBlock: system
+                  core:
+                    overlay: false
+                tint: '#ffffff'
+                _stats:
+                  compendiumSource: null
+                  duplicateSource: null
+                  coreVersion: '13.345'
+                  systemId: dnd5e
+                  systemVersion: 4.4.3
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+                img: icons/tools/fishing/net-simple-brown.webp
+                type: base
+                system: {}
+                sort: 0
+            img: icons/tools/fishing/net-simple-brown.webp
+            folder: TK7PV1swdL9nLLJx
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.GC512oF0td0FT8I7
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: cMuhZocgCvMiT2UK
+            sort: 0
+          - name: Sling
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>Proficiency with a sling allows you to add your proficiency
+                  bonus to the attack roll for any attack you make with it.</p>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 30
+                long: 120
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - bludgeoning
+                  custom:
+                    enabled: true
+                    formula: 1d4[bludgeoning] + @mod
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - amm
+              proficient: null
+              unidentified:
+                description: Sling
+              type:
+                value: simpleR
+                baseItem: sling
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '30'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: sling
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Sling
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  ability: dex
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 18
+                originalName: Sling
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Sling
+              scene-packer:
+                sourceId: Item.
+                hash: bb7bb4b7395168feb080e3e6038a2270d142c91f
+              midi-qol:
+                onUseMacroName: ''
+              midiProperties:
+                confirmTargets: default
+              magicitems:
+                enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: wvQfsaa02N68yvmt
+                price: 1 ct
+                cost: 2 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            effects: []
+            img: icons/weapons/slings/slingshot-wood.webp
+            folder: lOAba83kmUvcrxYa
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.wvQfsaa02N68yvmt
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: rpA5Lv9S3clCqjFD
+            sort: 0
+          - name: Dart
+            type: weapon
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>Proficiency with a dart allows you to add your proficiency
+                  bonus to the attack roll for any attack you make with it.</p>
+
+                  </div>
+                chat: ''
+              source:
+                book: Dark Sun
+                page: ''
+                license: ''
+                custom: Dark Sun
+                revision: 1
+                rules: '2024'
+              quantity: 1
+              weight:
+                value: 0.25
+                units: lb
+              price:
+                value: 5
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              cover: null
+              crewed: false
+              range:
+                value: 20
+                long: 60
+                units: ft
+                reach: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              damage:
+                versatile:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types: []
+                  custom:
+                    enabled: false
+                    formula: ''
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: true
+                    formula: 1d4[piercing] + @mod
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+              armor:
+                value: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              properties:
+                - fin
+                - thr
+              proficient: null
+              unidentified:
+                description: Dart
+              type:
+                value: simpleR
+                baseItem: dart
+              container: null
+              attuned: false
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '20'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  attack:
+                    ability: ''
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    otherActivityCompatible: true
+                    autoTargetType: any
+                    autoTargetAction: default
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: ''
+                  otherActivityUuid: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  useConditionReason: ''
+              identifier: dart
+              ammunition: {}
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Dart
+                  damage:
+                    parts: []
+                  classFeatures: []
+                  restrictions: []
+                  filterType: Weapon
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  stackable: true
+                  ability: dex
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 1782728300
+                definitionId: 16
+                originalName: Dart
+                version: 5.2.29
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Dart
+              scene-packer:
+                sourceId: Item.
+                hash: dd00f913b663a26e26801cd3a1bc5d71f14b8072
+              midi-qol:
+                onUseMacroName: ''
+              midiProperties:
+                confirmTargets: default
+              magicitems:
+                enabled: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: c7XwDeDfEz7AiQBg
+                price: 5 ct
+                cost: 10 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            effects: []
+            img: icons/weapons/ammunition/arrows-bodkin-yellow-red.webp
+            folder: lOAba83kmUvcrxYa
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.c7XwDeDfEz7AiQBg
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013924818
+              modifiedTime: 1749013924818
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: EqBdygVR9jQTjCDm
+            sort: 0
+        shoptype: Outfitter
+        location: Caravan District, Tyr
+        state: closed
+        autoopen: true
+        purchasing: free
+        selling: confirm
+        appendix: false
+        twentyfour: true
+        opening: 540
+        closing: 1080
+        scrollPos: '{".tab.description .tab-inner":0}'
+        adjustment:
+          default:
+            sell: 2
+        log:
+          - actor: Itilda the Mutilator of Manhood
+            item: Javelin, Wood
+            quantity: 3
+            price: 6 ct
+            type: purchase
+            time: 1753042982316
+          - actor: Itilda the Mutilator of Manhood
+            item: Javelin, Bone
+            quantity: 1
+            price: 6 ct
+            type: purchase
+            time: 1753042970633
+          - actor: Cadice Bèrnier (Copy)
+            item: Diamond (300 gp)
+            quantity: 1
+            price: 100 gp
+            type: sell
+            time: 1750121055066
+        relationships:
+          - id: U4G3e61M04QNE0Gm
+            uuid: JournalEntry.U4G3e61M04QNE0Gm
+            hidden: false
+            name: Caravan District
+            img: modules/monks-enhanced-journal/assets/place.png
+            type: place
+            relationship: ''
+    _id: 0e0qt6LeSqQgSvbd
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: dnd5e
+      systemVersion: 5.1.8
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!YOu0PrTHzN9ahBJ6.0e0qt6LeSqQgSvbd'
+sort: 0
+ownership:
+  default: 2
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: dnd5e
+  systemVersion: 5.1.8
+  createdTime: 1757616774306
+  modifiedTime: 1757616774306
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!YOu0PrTHzN9ahBJ6'

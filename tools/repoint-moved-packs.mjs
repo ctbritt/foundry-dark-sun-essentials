@@ -1,6 +1,7 @@
 /**
  * Repoint anything that still refers to the compendium packs that moved from
- * `shareddata` to `dark-sun-essentials` in 1.4.0.
+ * `shareddata` to `dark-sun-essentials`: ten in 1.4.0, `dark-sun-journals`
+ * joining them in 1.5.0.
  *
  * A compendium address carries the module that owns the pack, so moving a pack
  * changes every reference to it: `Compendium.shareddata.dark-sun-spells.Item.x`
@@ -15,8 +16,8 @@
  * and at least one world has a hand-written `foundry-rest-api.wsRelayUrl`
  * setting stored without Foundry's `!collection!id` convention.
  *
- * Packs that stayed in `shareddata` — `dark-sun-journals` and every `ddb-*` —
- * are deliberately left alone.
+ * Packs that stayed in `shareddata` — every `ddb-*` — are deliberately left
+ * alone.
  *
  * The argument is a world directory, a directory of packs, or a single pack.
  * Stop the Foundry server first. Dry run by default; nothing is written
@@ -43,7 +44,8 @@ const MOVED = [
   "dark-sun-items",
   "dark-sun-rolltables",
   "dark-sun-scenes",
-  "dark-sun-spells"
+  "dark-sun-spells",
+  "dark-sun-journals"
 ];
 
 // Only the packs that moved, and only where the pack name ends there, so

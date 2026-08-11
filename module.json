@@ -2,7 +2,7 @@
   "id": "dark-sun-essentials",
   "title": "Dark Sun Essentials",
   "description": "Turns a stock D&D 5e world Athasian: ceramic coinage, the Psionic spell school, material properties for weapons and armour, and silt vehicles. Every change is a toggle.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -154,6 +154,17 @@
       "label": "Dark Sun Spells",
       "path": "packs/dark-sun-spells",
       "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dark-sun-journals",
+      "label": "Dark Sun Journals",
+      "path": "packs/dark-sun-journals",
+      "type": "JournalEntry",
       "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",

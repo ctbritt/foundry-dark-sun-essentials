@@ -1,0 +1,4048 @@
+folder: npD5ZZQ4lQPDzuVH
+name: Tarnished Cup
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: c932d7576cc5e35f332d7877a5d4538f46233b39
+_id: V9EaPREADhicQlne
+pages:
+  - type: text
+    name: Tarnished Cup
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        scrollPos: '{".tab.description .tab-inner":0}'
+        shoptype: Merchant of Collectibles and Oddities
+        location: Smith's District
+        state: closed
+        autoopen: true
+        purchasing: free
+        selling: locked
+        appendix: false
+        _lasttab: entry-details
+        twentyfour: true
+        opening: 540
+        closing: 1080
+        relationships:
+          - type: person
+            uuid: JournalEntry.6w9v7qC28T1ezy8D
+            id: 6w9v7qC28T1ezy8D
+            name: Gavan Sul
+            img: modules/monks-enhanced-journal/assets/person.png
+            role: Merchant, Criminal Fence
+            relationship: Owner
+            hidden: false
+          - id: 7ncRNCK62KUwyj0x
+            uuid: JournalEntry.7ncRNCK62KUwyj0x
+            hidden: false
+            relationship: ''
+            name: Smith's Distrct
+            img: modules/monks-enhanced-journal/assets/place.png
+            type: place
+        wgCeShTrqHJFBbDr:
+          notes: >-
+            <p>The Tarnished Cup serves as a hub for Tyr's underground economy.
+            Characters can fence stolen goods, purchase hard-to-find items, or
+            gather information about criminal activities. Sul's connections to
+            both the Iron Rats and illegal slave trading make him a valuable but
+            dangerous contact. The devil grass trade adds a poisonous
+            element—literally—to any dealings with the shop. His tendency to
+            abduct customers for the slave trade makes every visit a potential
+            threat.</p>
+        lastrolltable: RollTable.FsW3RjVlJd4wi4NY
+        items:
+          - name: String
+            system:
+              description:
+                value: >-
+                  <p>String is 10 feet long. You can tie a knot in it as a
+                  Utilize action.</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: cb
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              rarity: ''
+              properties: []
+              type:
+                value: gear
+                subtype: ''
+              identifier: string
+            _id: 6ZLrchj0eWSLBLI1
+            type: loot
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/tools/hand/needle-grey.webp
+            effects: []
+            sort: 5800000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              monks-enhanced-journal:
+                parentId: phbagString00000
+                price: 1 cb
+                cost: 2 cb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Antitoxin
+            system:
+              description:
+                value: >-
+                  <p>As a Bonus Action, you can drink a vial of Antitoxin to
+                  gain Advantage on saving throws to avoid or end the Poisoned
+                  condition for 1 hour.</p>
+                chat: ''
+              price:
+                value: 50
+                denomination: ct
+              source:
+                rules: '2024'
+                license: CC-BY-4.0
+                book: SRD 5.2
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: '1'
+                autoDestroy: true
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              type:
+                value: potion
+                subtype: ''
+              magicalBonus: null
+              properties: []
+              activities:
+                2TNbDh0n59svuGIx:
+                  type: utility
+                  activation:
+                    type: bonus
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        value: '1'
+                        target: ''
+                        scaling: {}
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: '1'
+                    units: hour
+                    special: ''
+                    override: false
+                  effects:
+                    - _id: DzWVacNiq6ggXbU9
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: self
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  roll:
+                    formula: ''
+                    name: ''
+                    prompt: false
+                    visible: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  _id: 2TNbDh0n59svuGIx
+                  name: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              identifier: antitoxin
+            type: consumable
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/consumables/potions/bottle-round-corked-pink.webp
+            effects:
+              - name: Antitoxin
+                img: icons/consumables/potions/bottle-round-corked-pink.webp
+                origin: Compendium.dnd5e.equipment24.Item.phbagAntitoxin00
+                transfer: false
+                _id: DzWVacNiq6ggXbU9
+                type: base
+                system: {}
+                changes: []
+                disabled: false
+                duration:
+                  startTime: null
+                  seconds: 3600
+                  combat: null
+                  rounds: null
+                  turns: null
+                  startRound: null
+                  startTurn: null
+                description: ''
+                tint: '#ffffff'
+                statuses: []
+                sort: 0
+                flags: {}
+                _stats:
+                  compendiumSource: null
+                  duplicateSource: null
+                  coreVersion: '13.345'
+                  systemId: dnd5e
+                  systemVersion: 4.4.3
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: aGmoagGQIyjWPYmc
+                price: 50 ct
+                cost: 100 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.aGmoagGQIyjWPYmc
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: rOHKywdmH0IVyvAm
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            sort: 200000
+          - name: Hunting Trap
+            system:
+              description:
+                value: >-
+                  <p>As a Utilize action, you can set a Hunting Trap, which is a
+                  sawtooth steel ring that snaps shut when a creature steps on a
+                  pressure plate in the center. The trap is affixed by a heavy
+                  chain to an immobile object, such as a tree or a spike driven
+                  into the ground. A creature that steps on the plate must
+                  succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing
+                  damage and have its Speed reduced to 0 until the start of its
+                  next turn. Thereafter, until the creature breaks free of the
+                  trap, its movement is limited by the length of the chain
+                  (typically 3 feet). A creature can use its action to make a DC
+                  13 Strength (Athletics) check, freeing itself or another
+                  creature within its reach on a success. Each failed check
+                  deals [[/damage 1 type=piercing]] damage to the trapped
+                  creature.</p>
+                chat: ''
+              price:
+                value: 5
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 25
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: '1'
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              magicalBonus: null
+              properties: []
+              activities:
+                tIsE5Y5S9TjOTs9C:
+                  type: save
+                  _id: tIsE5Y5S9TjOTs9C
+                  sort: 0
+                  activation:
+                    type: ''
+                    value: null
+                    override: false
+                    condition: Steps on the plate
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets: []
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects:
+                    - _id: 9jl46RZ5GOjs9QlJ
+                      onSave: false
+                  range:
+                    override: false
+                    units: spec
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: '1'
+                      type: creature
+                      special: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  damage:
+                    parts:
+                      - custom:
+                          enabled: false
+                          formula: ''
+                        number: 1
+                        denomination: 4
+                        bonus: ''
+                        types:
+                          - piercing
+                        scaling:
+                          number: 1
+                    onSave: none
+                    critical:
+                      allow: false
+                  save:
+                    ability:
+                      - dex
+                    dc:
+                      calculation: ''
+                      formula: '13'
+                  name: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: ''
+                JjJCLmn9qZmCzlxX:
+                  type: check
+                  name: Escape
+                  _id: JjJCLmn9qZmCzlxX
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets: []
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  check:
+                    associated:
+                      - ath
+                    dc:
+                      calculation: ''
+                      formula: '13'
+                    ability: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: hunting-trap
+            _id: CupE5p7qAHKqfGFY
+            type: consumable
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/environment/traps/trap-jaw-steel.webp
+            effects:
+              - name: Trapped
+                img: icons/environment/traps/trap-jaw-steel.webp
+                origin: >-
+                  Compendium.dnd-players-handbook.equipment.Item.phbagHuntingTrap
+                transfer: false
+                _id: 9jl46RZ5GOjs9QlJ
+                type: base
+                system: {}
+                changes: []
+                disabled: false
+                duration:
+                  startTime: null
+                  seconds: null
+                  combat: null
+                  rounds: null
+                  turns: null
+                  startRound: null
+                  startTurn: null
+                description: ''
+                tint: '#ffffff'
+                statuses: []
+                sort: 0
+                flags: {}
+                _stats:
+                  compendiumSource: null
+                  duplicateSource: null
+                  coreVersion: '13.345'
+                  systemId: dnd5e
+                  systemVersion: 4.4.3
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+            sort: 2500000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: phbagHuntingTrap
+                price: 5 ct
+                cost: 10 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Rope, Hempen (50')
+            system:
+              description:
+                value: >-
+                  <p>As a Utilize action, you can tie a knot with Rope if you
+                  succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope
+                  can be burst with a successful DC 20 Strength (Athletics)
+                  check.</p><p>You can bind an unwilling creature with the Rope
+                  only if the creature has the &amp;Reference[Grappled],
+                  &amp;Reference[Incapacitated], or &amp;Reference[Restrained]
+                  condition. If the creature’s legs are bound, the creature has
+                  the Restrained condition until it escapes. Escaping the Rope
+                  requires the creature to make a successful DC 15 Dexterity
+                  (Acrobatics) check as an action.</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 10
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: '1'
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              magicalBonus: null
+              properties: []
+              activities:
+                Y0LvyxjfVHNbp4CG:
+                  type: check
+                  name: Tie Knot
+                  _id: Y0LvyxjfVHNbp4CG
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets:
+                      - type: itemUses
+                        value: '1'
+                        target: ''
+                        scaling: {}
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  check:
+                    associated:
+                      - slt
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    ability: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                rYGOWDRcT5jBKvzq:
+                  type: check
+                  name: Burst Rope
+                  _id: rYGOWDRcT5jBKvzq
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets: []
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  check:
+                    associated:
+                      - ath
+                    dc:
+                      calculation: ''
+                      formula: '20'
+                    ability: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                5q6tX1T7ONDvgJiA:
+                  type: check
+                  name: Escape Check
+                  _id: 5q6tX1T7ONDvgJiA
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets: []
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  check:
+                    associated:
+                      - acr
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    ability: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: rope
+            type: consumable
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/sundries/survival/rope-wrapped-brown.webp
+            effects: []
+            sort: 5300000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: xSlpwUWExRBaDAFo
+                price: 1 ct
+                cost: 2 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: Item.phbagRope0000000
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: G04heskPlfbKJQhn
+          - name: Tent, Pavilian
+            system:
+              description:
+                value: <p>A Tent sleeps up to two Small or Medium creatures.</p>
+                chat: ''
+              price:
+                value: 50
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 50
+                units: lb
+              rarity: ''
+              properties: []
+              type:
+                value: gear
+                subtype: ''
+              identifier: tent
+            type: loot
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/environment/settlement/tent.webp
+            effects: []
+            sort: 6000000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              LocknKey:
+                PickPocketDCFlag: '0'
+                IDKeysFlag: ''
+                RemoveKeyonUseFlag: false
+                LPFormulaFlag: ''
+                LPFormulaOverrideFlag: false
+                LBFormulaFlag: ''
+                LBFormulaOverrideFlag: false
+                ReplacementItemFlag: ''
+              monks-enhanced-journal:
+                parentId: 3yrE5Mmk8RBCcNsV
+                price: 50 ct
+                cost: 100 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: Item.phbagTent0000000
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: vCWfefh6teSBjOKZ
+          - name: Bedroll
+            system:
+              description:
+                value: >-
+                  <p>A Bedroll sleeps one Small or Medium creature. While in a
+                  Bedroll, you automatically succeed on saving throws against
+                  extreme cold (see the <em>Dungeon Master</em> <em>’s
+                  Guide</em>).</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 7
+                units: lb
+              rarity: ''
+              properties: []
+              type:
+                value: gear
+                subtype: ''
+              identifier: bedroll
+            _id: AvNGQTbpJwan43Hm
+            type: loot
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/sundries/survival/bedroll-grey.webp
+            effects: []
+            sort: 7100000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              monks-enhanced-journal:
+                parentId: phbagBedroll0000
+                price: 1 ct
+                cost: 2 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Clothes, Slave
+            system:
+              description:
+                value: >-
+                  <p>Traveler’s Clothes are resilient garments designed for
+                  travel in various environments.</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: lb
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 4
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              cover: null
+              crewed: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              armor:
+                value: null
+                magicalBonus: null
+                dex: null
+              hp:
+                value: null
+                max: null
+                dt: null
+                conditions: ''
+              type:
+                value: clothing
+                baseItem: ''
+              properties: []
+              speed:
+                value: null
+                conditions: ''
+              strength: null
+              proficient: null
+              activities: {}
+              identifier: clothes-travelers
+            type: equipment
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/equipment/chest/shirt-collared-yellow.webp
+            effects: []
+            sort: 1900000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: S1bABrAAcI3o4NFb
+                price: 1 lb
+                cost: 2 lb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: Item.RFKFowGIvrlYVf0o
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: 5TUSD5mnqb3yKLPP
+          - name: Quiver
+            system:
+              description:
+                value: <p>A Quiver holds up to 20 Arrows.</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: ct
+              quantity: 1
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              weight:
+                value: 1
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              currency:
+                pp: 0
+                gp: 0
+                ep: 0
+                sp: 0
+                cp: 0
+              properties: []
+              capacity:
+                count: null
+                volume:
+                  value: null
+                  units: cubicFoot
+                weight:
+                  value: null
+                  units: lb
+              identifier: quiver
+            _id: QsQIOaVjLRsPauNr
+            type: container
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/containers/ammunition/arrows-quiver-black.webp
+            effects: []
+            sort: 4600000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              monks-enhanced-journal:
+                parentId: phbagQuiver00000
+                price: 1 ct
+                cost: 2 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Mirror, Steel
+            system:
+              description:
+                value: >-
+                  <p>A handheld steel Mirror is useful for personal cosmetics
+                  but also for peeking around corners and reflecting light as a
+                  signal.</p>
+                chat: ''
+              price:
+                value: 1000
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0.5
+                units: lb
+              rarity: ''
+              properties: []
+              type:
+                value: gear
+                subtype: ''
+              identifier: mirror
+            _id: qnLUkvkA0BMD3jni
+            type: loot
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/sundries/survival/mirror-plain.webp
+            effects: []
+            sort: 3600000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              LocknKey:
+                PickPocketDCFlag: '0'
+                IDKeysFlag: ''
+                RemoveKeyonUseFlag: false
+                LPFormulaFlag: ''
+                LPFormulaOverrideFlag: false
+                LBFormulaFlag: ''
+                LBFormulaOverrideFlag: false
+                ReplacementItemFlag: ''
+              monks-enhanced-journal:
+                parentId: phbagMirror00000
+                price: 1000 ct
+                cost: 2000 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Acid (vial)
+            type: consumable
+            effects: []
+            system:
+              activities:
+                attackAcidVialII:
+                  type: attack
+                  _id: attackAcidVialII
+                  sort: 0
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: true
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        target: ''
+                        value: '1'
+                        scaling:
+                          mode: ''
+                          formula: ''
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description: {}
+                  duration:
+                    units: inst
+                    special: ''
+                    override: true
+                    concentration: false
+                  effects: []
+                  range:
+                    value: '20'
+                    units: self
+                    special: ''
+                    override: true
+                  target:
+                    prompt: true
+                    affects:
+                      count: '1'
+                      type: creature
+                      choice: false
+                      special: ''
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: radius
+                      size: '5'
+                      width: ''
+                      height: ''
+                      units: ft
+                    override: true
+                  uses:
+                    spent: null
+                    recovery: []
+                  attack:
+                    ability: dex
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    parts:
+                      - number: 2
+                        denomination: 6
+                        bonus: ''
+                        types:
+                          - acid
+                        custom:
+                          enabled: false
+                          formula: ''
+                        scaling:
+                          mode: ''
+                          number: null
+                          formula: ''
+                    includeBase: false
+                    critical:
+                      bonus: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    autoTargetType: any
+                    autoTargetAction: default
+                    otherActivityCompatible: true
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityId: none
+                  otherActivityUuid: ''
+              uses:
+                spent: null
+                max: '1'
+                recovery: []
+                autoDestroy: true
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>As an action, you can splash the contents of this vial onto
+                  a creature within 5 feet of you or throw the vial up to 20
+                  feet, shattering it on impact. In either case, make a ranged
+                  attack against a creature or object, treating the acid as an
+                  improvised weapon. On a hit, the target takes  [[/damage 2d6
+                  type=acid average=true]] damage.</p>
+
+                  </div>
+                chat: ''
+              identifier: acid-vial-legacy
+              source:
+                book: SRD 5.1
+                page: ''
+                license: ''
+                custom: ''
+                rules: '2014'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 25
+                denomination: ct
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              type:
+                value: potion
+                subtype: ''
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+            flags:
+              ddbimporter:
+                originalName: Acid (vial)
+                version: 6.1.0
+                dndbeyond:
+                  type: Adventuring Gear
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  homebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Utility
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  stackable: true
+                is2014: true
+                is2024: false
+                legacy: true
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 2103445194
+                definitionId: 18
+              infusions:
+                maps: []
+                applied: []
+                infused: false
+              dnd5e:
+                riders:
+                  activity: []
+              midi-qol:
+                fumbleThreshold: null
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              midiProperties:
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              monks-enhanced-journal:
+                parentId: s6tDTAoFPkAtGWEQ
+                price: 25 ct
+                cost: 50 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            img: icons/consumables/potions/bottle-bulb-corked-green.webp
+            folder: uDk4FBYfcP2JnX6t
+            _stats:
+              compendiumSource: Compendium.dark-sun-essentials.dark-sun-equipment.Item.s6tDTAoFPkAtGWEQ
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+            _id: 8lnCDQ0ANJxObNux
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            sort: 100000
+          - name: Glassblower's Tools
+            system:
+              description:
+                value: >-
+                  <p class="phb-meta"><strong>Ability:</strong>
+                  Intelligence</p><p class="phb-meta"><strong>Utilize:</strong>
+                  Discern what a glass object held in the past 24 hours (DC
+                  15)</p><p class="phb-meta"><strong>Craft:</strong>
+                  @UUID[Compendium.dnd5e.items.Item.HZp69hhyNZUUCipF]{Glass
+                  Bottle},
+                  @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMagnifyingG]{Magnifying
+                  Glass},
+                  @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpyglass100]{Spyglass},
+                  @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagVial0000000]{Vial}</p>
+                chat: ''
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 5
+                units: lb
+              price:
+                value: 30
+                denomination: ct
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: art
+                baseItem: glassblower
+              ability: int
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                Ah1G0WFrQCrH8Ct4:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: int
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  _id: Ah1G0WFrQCrH8Ct4
+                  name: Discern Previous Contents
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: glassblowers-tools
+            _id: KPsx8yZzCZLFAFXB
+            type: tool
+            folder: V8KHbNkEWoXQP3Pj
+            img: icons/commodities/tech/metal-insert.webp
+            effects: []
+            sort: 400000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbtulGlassblowe
+                price: 30 ct
+                cost: 60 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Mason's Tools
+            system:
+              description:
+                value: >-
+                  <p class="phb-meta"><strong>Ability:</strong> Strength</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Chisel a symbol or
+                  hole in stone (DC 10)</p><p
+                  class="phb-meta"><strong>Craft:</strong>
+                  @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]{Block
+                  and Tackle}</p>
+                chat: ''
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 8
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: art
+                baseItem: mason
+              ability: str
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                fEjYUIHLH9OahqE8:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: str
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  _id: fEjYUIHLH9OahqE8
+                  name: Chisel a Symbol or Hole
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: masons-tools
+            _id: DsaV5d7NkwJdsUEM
+            type: tool
+            folder: V8KHbNkEWoXQP3Pj
+            img: icons/tools/hand/hammer-and-nail.webp
+            effects: []
+            sort: 700000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbtulMasonsTool
+                price: 10 ct
+                cost: 20 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - _id: 37hLD8Zy5q8j8cBi
+            name: Crystal
+            type: equipment
+            img: icons/commodities/gems/gem-faceted-large-green.webp
+            system:
+              description:
+                value: >-
+                  <p>This crystaline talisman serves as a spellcasting focus,
+                  helping the practitioner to channel arcane, primal, or divine
+                  energies.</p>
+
+                  <p><strong>Spellcasting Focus. </strong>An arcane focus is a
+                  special item designed to channel the power of arcane spells. A
+                  sorcerer, warlock, or wizard can use such an item as a
+                  spellcasting focus, using it in place of any material
+                  component which does not list a cost.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 10
+                denomination: gp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              cover: null
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              armor:
+                value: 10
+                magicalBonus: null
+                dex: null
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              properties:
+                - foc
+              proficient: null
+              type:
+                value: trinket
+                baseItem: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              activities: {}
+              attuned: false
+              identifier: crystal
+              strength: null
+            effects: []
+            folder: xedn1r43VWuEBcli
+            sort: 200000
+            ownership:
+              default: 0
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: uXOT4fYbgPY8DGdd
+                price: 10 ct
+                cost: 20 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.1.0
+              createdTime: 1725037313094
+              modifiedTime: 1730324874928
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - _id: mjXDh0qE8IMhf3BX
+            name: Signet Ring
+            type: loot
+            img: icons/equipment/finger/ring-cabochon-gold-orange.webp
+            system:
+              description:
+                value: >-
+                  <p>A ring with specific design to denote membership and rank
+                  within a house or organization.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: gp
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              identifier: signet-ring
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: kdkpSZMUHGXGM15H
+                price: 5 gp
+                cost: 10 gp
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037269201
+              modifiedTime: 1725992540306
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - name: Thieves' Tools
+            system:
+              description:
+                value: >-
+                  <p class="phb-meta"><strong>Ability:</strong> Dexterity</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Pick a lock (DC
+                  15), or disarm a trap (DC 15)</p>
+                chat: ''
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 25
+                denomination: ct
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: ''
+                baseItem: thief
+              ability: dex
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                4pIHxWxCdaF3Ieok:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: dex
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  _id: 4pIHxWxCdaF3Ieok
+                  name: Pick a Lock/Disarm a Trap
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: thieves-tools
+            _id: Bn8IpXNyNc2z4285
+            type: tool
+            folder: GdxYMawvxybALCny
+            img: icons/tools/hand/lockpicks-steel-grey.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbtulThievesToo
+                price: 25 ct
+                cost: 50 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Forgery Kit
+            system:
+              description:
+                value: >-
+                  <p class="phb-meta"><strong>Ability:</strong> Dexterity</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Mimic 10 or fewer
+                  words of someone else’s handwriting (DC 15), or duplicate a
+                  wax seal (DC 20)</p>
+                chat: ''
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 5
+                units: lb
+              price:
+                value: 15
+                denomination: ct
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: ''
+                baseItem: forg
+              ability: dex
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                rIanv5IgN2QhpKSK:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: dex
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  _id: rIanv5IgN2QhpKSK
+                  name: Mimic Handwriting
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                HcOxYMy4gmRHLJiF:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: dex
+                    dc:
+                      calculation: ''
+                      formula: '20'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Duplicate Wax Seal
+                  _id: HcOxYMy4gmRHLJiF
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: forgery-kit
+            _id: tomxMVkPUc2hADtD
+            type: tool
+            folder: GdxYMawvxybALCny
+            img: icons/sundries/documents/envelope-sealed-red-tan.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbtulForgeryKit
+                price: 15 ct
+                cost: 30 ct
+                quantity: 0
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - _id: YYFdazQhsZgaUndJ
+            name: Oil Flask
+            type: consumable
+            img: icons/consumables/potions/bottle-bulb-empty-glass.webp
+            system:
+              description:
+                value: >-
+                  <p>Oil usually comes in a clay flask that holds 1 pint. As an
+                  action, you can splash the oil in this flask onto a creature
+                  within 5 feet of you or throw it up to 20 feet, shattering it
+                  on impact. Make a ranged attack against a target creature or
+                  object, treating the oil as an improvised weapon.</p>
+
+                  <p>On a hit, the target is covered in oil. If the target takes
+                  any fire damage before the oil dries (after 1 minute), the
+                  target takes an additional 5 fire damage from the burning oil.
+                  You can also pour a flask of oil on the ground to cover a
+                  5-foot-square area, provided that the surface is level.</p>
+
+                  <p>If lit, the oil burns for 2 rounds and deals 5 fire damage
+                  to any creature that enters the area or ends its turn in the
+                  area. A creature can take this damage only once per turn.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 1
+                denomination: sp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              uses:
+                max: '1'
+                recovery: []
+                autoDestroy: true
+                spent: 0
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - fire
+                  custom:
+                    enabled: true
+                    formula: '5'
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: attack
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        target: ''
+                        value: '1'
+                        scaling:
+                          mode: ''
+                          formula: ''
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: '1'
+                    units: minute
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    value: '5'
+                    units: ft
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: '1'
+                      type: creature
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  attack:
+                    ability: dex
+                    bonus: ''
+                    critical:
+                      threshold: null
+                    flat: false
+                    type:
+                      value: ranged
+                      classification: weapon
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts:
+                      - number: null
+                        denomination: null
+                        bonus: ''
+                        types:
+                          - fire
+                        custom:
+                          enabled: true
+                          formula: '5'
+                        scaling:
+                          mode: whole
+                          number: null
+                          formula: ''
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: ''
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityUuid: ''
+              attuned: false
+              identifier: oil-flask
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 8800000
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: psoZaItkOScMVaHL
+                price: 1 sp
+                cost: 2 sp
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037291158
+              modifiedTime: 1725992547959
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - _id: hie5uedxnbwT3uJ9
+            name: Dice Set
+            type: tool
+            img: icons/sundries/gaming/dice-runed-brown.webp
+            system:
+              description:
+                value: >-
+                  <p>This item encompasses a wide range of dice, both straight
+                  and weighted.</p>
+
+                  <p>If you are proficient with a gaming set, you can add your
+                  proficiency bonus to ability checks you make to play a game
+                  with that set. Each type of gaming set requires a separate
+                  proficiency.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: sp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              ability: dex
+              chatFlavor: ''
+              proficient: null
+              bonus: ''
+              type:
+                value: game
+                baseItem: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: check
+                  activation:
+                    type: ''
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  check:
+                    ability: dex
+                    dc: {}
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              attuned: false
+              identifier: dice-set
+            effects: []
+            folder: uvZXbqK3cHirDzeT
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: iBuTM09KD9IoM5L8
+                price: 1 sp
+                cost: 2 sp
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037260161
+              modifiedTime: 1725992537217
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - _id: 2xrP3WQJ3KEyd1jG
+            name: Disguise Kit
+            type: tool
+            img: icons/equipment/back/cloak-hooded-blue.webp
+            system:
+              description:
+                value: >-
+                  <p>This pouch of cosmetics, hair dye, and small props lets you
+                  create disguises that change your physical appearance.
+                  Proficiency with this kit lets you add your proficiency bonus
+                  to any ability checks you make to create a visual
+                  disguise.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 25
+                denomination: gp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              ability: int
+              chatFlavor: ''
+              proficient: null
+              bonus: ''
+              type:
+                value: ''
+                baseItem: disg
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: check
+                  activation:
+                    type: ''
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  check:
+                    ability: int
+                    dc: {}
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              attuned: false
+              identifier: disguise-kit
+            effects: []
+            folder: uvZXbqK3cHirDzeT
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: IBhDAr7WkhWPYLVn
+                price: 25 ct
+                cost: 50 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037154887
+              modifiedTime: 1725992502178
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - _id: NF5U16nU1RxzxAAz
+            name: Iron Spike
+            type: consumable
+            img: icons/tools/fasteners/nails-steel-brown.webp
+            system:
+              description:
+                value: >-
+                  <p>A spike of 10 inches long made of iron. Can be improvised
+                  to block doors. Usually sold in bundles of 10.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 0.5
+                units: lb
+              price:
+                value: 1
+                denomination: sp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              uses:
+                max: '1'
+                recovery: []
+                autoDestroy: false
+                spent: 0
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        target: ''
+                        value: '1'
+                        scaling:
+                          mode: ''
+                          formula: ''
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: touch
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  roll:
+                    formula: ''
+                    name: ''
+                    prompt: false
+                    visible: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              attuned: false
+              identifier: iron-spike
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 5000000
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: RiOeHR2qaYktz5Ys
+                price: 1 sp
+                cost: 2 sp
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037187242
+              modifiedTime: 1725992513128
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - _id: cQfqWQo5I2ZoGY0G
+            name: Caltrops
+            type: consumable
+            img: icons/weapons/thrown/bomb-spiked-purple.webp
+            system:
+              description:
+                value: >-
+                  <p>As an action, you can spread a single bag of caltrops to
+                  cover a 5-foot-square area. Any creature that enters the area
+                  must succeed on a DC 15 Dexterity saving throw or stop moving
+                  and take 1 piercing damage. Until the creature regains at
+                  least 1 hit point, its walking speed is reduced by 10 feet. A
+                  creature moving through the area at half speed doesn't need to
+                  make the saving throw.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 0.1
+                units: lb
+              price:
+                value: 5
+                denomination: cp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              uses:
+                max: '1'
+                recovery: []
+                autoDestroy: true
+                spent: 0
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  bonus: ''
+                  types:
+                    - piercing
+                  custom:
+                    enabled: true
+                    formula: '1'
+                  scaling:
+                    mode: ''
+                    number: null
+                    formula: ''
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              magicalBonus: null
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: save
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        target: ''
+                        value: '1'
+                        scaling:
+                          mode: ''
+                          formula: ''
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: square
+                      size: '5'
+                      width: ''
+                      height: ''
+                      units: ft
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  damage:
+                    onSave: half
+                    parts:
+                      - number: null
+                        denomination: null
+                        bonus: ''
+                        types:
+                          - piercing
+                        custom:
+                          enabled: true
+                          formula: '1'
+                        scaling:
+                          mode: whole
+                          number: null
+                          formula: ''
+                    critical:
+                      allow: false
+                  save:
+                    ability:
+                      - dex
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: ''
+              attuned: false
+              identifier: caltrops
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 1700000
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 8tvhh5wqG5FRh3Sf
+                price: 5 cp
+                cost: 10 cp
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037115906
+              modifiedTime: 1725992489117
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - name: Horn
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 3
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: horn
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                8k3LD7TVIH6vvzi7:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: 8k3LD7TVIH6vvzi7
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                ijMZxlEipxTbukhT:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: ijMZxlEipxTbukhT
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: horn
+            _id: w9aNWgbucTvAIOnq
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/horn-flared-wood.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: phbmusHorn000000
+                price: 3 ct
+                cost: 6 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Lyre
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 30
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: lyre
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                d6eRHAV6fceuC5FN:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: d6eRHAV6fceuC5FN
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                cSIpON2kKXcoCe1T:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: cSIpON2kKXcoCe1T
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: lyre
+            _id: Tgs4TueMtiNJzG8G
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/lute-gold-brown.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbmusLyre000000
+                price: 30 ct
+                cost: 60 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+        adjustment:
+          default:
+            sell: 2
+        log:
+          - actor: '"Captain" Kaine Strongjaw'
+            item: Forgery Kit
+            quantity: 1
+            price: 30 ct
+            type: purchase
+            time: 1753040160543
+    _id: UwrDHonojSn6emBT
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>his shop offers previously owned goods, including jewelry, musical
+        instruments and more exotic items that were likely fenced. The
+        proprietor, @UUID[JournalEntry.6w9v7qC28T1ezy8D]{Gavan Sul}, is rumored
+        to deal in devil grass, a pernicious scrub weed that is the basis for a
+        potent poison.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: dnd5e
+      systemVersion: 5.1.8
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!V9EaPREADhicQlne.UwrDHonojSn6emBT'
+sort: 0
+ownership:
+  default: 2
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: dnd5e
+  systemVersion: 5.1.8
+  createdTime: 1757616774306
+  modifiedTime: 1757616774306
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!V9EaPREADhicQlne'

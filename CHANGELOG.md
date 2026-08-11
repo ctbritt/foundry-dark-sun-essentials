@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.5.0 — 2026-08-11
+
+### Added
+- **The eleventh pack: Dark Sun Journals, moved here from `shareddata`.** It
+  stayed behind in 1.4.0 because 78% of it was base64 image data and doubling
+  the module's git history for that felt premature. It's here now anyway — the
+  module was the point of the move, and a Dark Sun module without its lore
+  journals was the odd one out.
+
+  Same rules as 1.4.0: pack name and every document ID unchanged, only the
+  module segment of a compendium address moves. The 44 references inside the
+  journals themselves — to equipment, the creature catalog, spells, and to
+  other journal pages — were rewritten to match.
+  `tools/repoint-moved-packs.mjs` now includes `dark-sun-journals` in what it
+  repoints; existing worlds need re-running it.
+
+  Left alone: two references to `shareddata.ddb-races`, inside the journals.
+  That pack doesn't exist anymore — it was renamed to `ddb-species` when the
+  installation moved to 2024 terminology — so those two links were already
+  broken before this move, and fixing them isn't a packaging change.
+
 ## 1.4.0 — 2026-08-11
 
 ### Added

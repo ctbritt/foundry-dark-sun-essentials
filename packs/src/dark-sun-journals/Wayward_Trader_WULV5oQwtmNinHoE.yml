@@ -1,0 +1,505 @@
+folder: 84TAycI2n1358pZn
+name: Wayward Trader
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: c5921eb380b08bdcf777e3ef6c1bd85f1201037a
+_id: WULV5oQwtmNinHoE
+pages:
+  - type: text
+    name: Wayward Trader
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        shoptype: Tavern
+        location: Artisan District
+        state: open
+        autoopen: true
+        purchasing: free
+        selling: locked
+        appendix: false
+        _lasttab: description
+        lastrolltable: RollTable.FAhYlPOzN1VSfFH7
+        items:
+          - name: Yucca
+            type: consumable
+            img: icons/consumables/plants/succulent-bundle-green.webp
+            system:
+              description:
+                value: >-
+                  A tree or shrub grown for its edible seeds, flowers, flowering
+                  stems, roots, and fruits.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: yucca
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 5d30ea676506acf3db05c2a2a836fce012502f33
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: 06o7QQshcURVIeGw
+                price: 1 cb
+                cost: 1 cb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _id: bBjUM63ZBI9KxR3b
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.06o7QQshcURVIeGw
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114879906
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Wine, cup
+            type: consumable
+            img: icons/consumables/drinks/wine-amphora-clay-gray.webp
+            system:
+              description:
+                value: A cup of wine.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: wine-cup
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 86a31fa8d3b09f8f44979da5e5e620a386b6c103
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: eUCckUnbTb8n7cUi
+                price: 5 cb
+                cost: 4 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _id: ERe7rWL0kcUejhWq
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.eUCckUnbTb8n7cUi
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114882984
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Betel Nuts
+            type: consumable
+            img: icons/consumables/nuts/nut-spiked-shell.webp
+            system:
+              description:
+                value: >-
+                  A soft-shelled nut with a soft blue interior kernel. Betel
+                  nuts release a sweet juice when chewed that stains the teeth
+                  blue, but upset the stomach when eaten.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: ct
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: betel-nuts
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 4073b0c4ce2d7c3c1a488db04008e7eaeea30417
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: YWmtk2vruu79fmgW
+                price: 3 ct
+                cost: 3 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _id: EKQyh6VanR2ApyZx
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.YWmtk2vruu79fmgW
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114882616
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Meat
+            type: consumable
+            img: icons/consumables/meat/frog-leg-raw-green.webp
+            system:
+              description:
+                value: >-
+                  Various types of meat including aprig, baazrag, carru,
+                  erdland, erdlu, inix, jankx, kip, mekillot, sygra, and z'tal.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 6
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: meat
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 68ebcbfd75b3210c8ef5d3f003436e4115a36cf2
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: 7FfIHiJo8VcOHDWg
+                price: 6 cb
+                cost: 5 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _id: 3bImMVCmAHYiguuY
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.7FfIHiJo8VcOHDWg
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114880863
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Cactus Juice
+            type: consumable
+            img: icons/consumables/drinks/wine-amphora-clay-blue.webp
+            system:
+              description:
+                value: Juice extracted from a cactus.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: cactus-juice
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 9667ce7e24e382ee99e515b7e31eb0ded4cada3f
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: CXSiuQsUaKYDngj7
+                price: 2 cb
+                cost: 2 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _id: GVpwzdlRwmgSpYRp
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.CXSiuQsUaKYDngj7
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114881334
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+        adjustment:
+          default:
+            sell: 0.75
+        scrollPos: '{".tab.description .tab-inner":0}'
+        twentyfour: true
+        opening: 720
+        closing: 180
+        relationships:
+          - id: a6jGA7qoAUJmxzQA
+            uuid: JournalEntry.a6jGA7qoAUJmxzQA
+            hidden: false
+            name: Artisan District
+            img: modules/monks-enhanced-journal/assets/place.png
+            type: place
+            relationship: ''
+    _id: Uvf9xBV7jVdxuWNR
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: <p>A quiet tavern for locals.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: dnd5e
+      systemVersion: 5.1.8
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!WULV5oQwtmNinHoE.Uvf9xBV7jVdxuWNR'
+sort: 0
+ownership:
+  default: 2
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: dnd5e
+  systemVersion: 5.1.8
+  createdTime: 1757616774306
+  modifiedTime: 1757616774306
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!WULV5oQwtmNinHoE'

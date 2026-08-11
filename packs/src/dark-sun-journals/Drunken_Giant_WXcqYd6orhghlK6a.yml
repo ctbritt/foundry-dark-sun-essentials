@@ -1,0 +1,1294 @@
+folder: 84TAycI2n1358pZn
+name: Drunken Giant
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: bdf73878f04ad61f242a42b6b476a6de3f2bf993
+_id: WXcqYd6orhghlK6a
+pages:
+  - type: text
+    name: Drunken Giant
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        shoptype: Tavern
+        location: Elven Market
+        state: open
+        autoopen: true
+        purchasing: free
+        selling: locked
+        appendix: false
+        _lasttab: items
+        lastrolltable: RollTable.FAhYlPOzN1VSfFH7
+        items:
+          - name: Pulque
+            type: consumable
+            img: icons/consumables/drinks/coconut-fruit-milk.webp
+            system:
+              description:
+                value: >-
+                  A thick fermented beverage made from cactus juice. Milky white
+                  and sour tasting.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: pulque
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 702397f908343f6f76f64f271323884bcf10db97
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: iQM3XFBc4giP0yru
+                price: 3 cb
+                cost: 6 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: LdT1D0vqwX10PVaa
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.iQM3XFBc4giP0yru
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883268
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Cactus Juice
+            type: consumable
+            img: icons/consumables/drinks/wine-amphora-clay-blue.webp
+            system:
+              description:
+                value: Juice extracted from a cactus.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: cactus-juice
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 9667ce7e24e382ee99e515b7e31eb0ded4cada3f
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: CXSiuQsUaKYDngj7
+                price: 2 cb
+                cost: 4 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: TeOdrsdLZTWtmTLq
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.CXSiuQsUaKYDngj7
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114881334
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Broy
+            type: consumable
+            img: icons/consumables/drinks/coconut-fruit-milk.webp
+            system:
+              description:
+                value: >-
+                  Made from fermented kank nectar. Potent and foul tasting when
+                  plain, can be served warm and spiced.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: broy
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 5f00e8ff61ad79a459d7b8689190580c6bbc845e
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: j0vgpF2gIAfm1aJc
+                price: 5 cb
+                cost: 10 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: aB07HrPdNdJcnusr
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.j0vgpF2gIAfm1aJc
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883334
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Kumis
+            type: consumable
+            img: icons/consumables/drinks/coconut-fruit-milk.webp
+            system:
+              description:
+                value: >-
+                  A foamy fermented beverage made from sygra milk. White and
+                  slightly sour.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 6
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: kumis
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 7dba5e3987feb22712f5b6d15e97709fdd634281
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: gbrcAS3GvXevefHT
+                price: 6 cb
+                cost: 12 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: RyaDUyoza7wbFAy3
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.gbrcAS3GvXevefHT
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883115
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Kank Mead
+            type: consumable
+            img: >-
+              icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp
+            system:
+              description:
+                value: >-
+                  A green fermented alcoholic beverage made from kank honey. Can
+                  be spiced for exotic flavors.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: kank-mead
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 435dc6b6ef503921d9ce5421dbb8464bd231c683
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: s79SkRLE5sOv3CVr
+                price: 2 cb
+                cost: 4 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: YfeiCFlY6bznAAmw
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.s79SkRLE5sOv3CVr
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883770
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Farro
+            type: consumable
+            img: icons/consumables/vegetable/root-ginger-brown.webp
+            system:
+              description:
+                value: >-
+                  Farro is a cactus, both the needles and cortex are edible. The
+                  cortex is tart and juicy. The needles are bland and tasteless,
+                  but nutritious.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: farro
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 5bbbf76d0bc44a1bc0e50492b7857299a2b4c398
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: nY6aMoH8kgdTHssh
+                price: 5 cb
+                cost: 10 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: pBiNhP0LlOHKN1BQ
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.nY6aMoH8kgdTHssh
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883472
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Bread
+            type: consumable
+            img: icons/consumables/grains/bread-loaf-glowing-tan.webp
+            system:
+              description:
+                value: A loaf of bread.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: bread
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: da3965ac2050ab5fc9dfd0a5121b923e70cd2b6c
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: hjqbcoKhS2Pk3jp9
+                price: 1 cb
+                cost: 2 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: tSGnTrSBW7dcMaHZ
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.hjqbcoKhS2Pk3jp9
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883234
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Yucca
+            type: consumable
+            img: icons/consumables/plants/succulent-bundle-green.webp
+            system:
+              description:
+                value: >-
+                  A tree or shrub grown for its edible seeds, flowers, flowering
+                  stems, roots, and fruits.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: yucca
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 5d30ea676506acf3db05c2a2a836fce012502f33
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: 06o7QQshcURVIeGw
+                price: 1 cb
+                cost: 2 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: XuymdRcK3GRxjRnv
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.06o7QQshcURVIeGw
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114879906
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Rations (15 days)
+            type: consumable
+            img: icons/consumables/food/preserves-jam-jelly-jar-brown-red.webp
+            system:
+              description:
+                value: >-
+                  All the dried food an adult Medium sized creature needs for 15
+                  days. Contains dried meat, vegetable, and bread.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 6
+                denomination: ct
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: rations-15-days
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 98d5af524c82ca27cb992899ef6248dd84bced90
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: bSUC6nH0v9AFbl0Y
+                price: 6 ct
+                cost: 12 ct
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: pNEx1dlioyisXOaD
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.bSUC6nH0v9AFbl0Y
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114882784
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Teff grain
+            type: consumable
+            img: icons/consumables/grains/sack-rice-open-brown.webp
+            system:
+              description:
+                value: A cereal grass cultivated for its small grain.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: teff-grain
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 8251e14f5c2d83a7d9a9a64ac122f3cbb2f8b8af
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: DCtifjwt6Wy8qUaA
+                price: 2 cb
+                cost: 4 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: 6o2qJEAjzWQN1iID
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.DCtifjwt6Wy8qUaA
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114881549
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Insects
+            type: consumable
+            img: icons/creatures/invertebrates/centipede-brown.webp
+            system:
+              description:
+                value: Edible insects.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: insects
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 180bd96e4974014660d9e08e35eecd897beb5a38
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: Zeq7sLiGhTrvsavc
+                price: 2 cb
+                cost: 4 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: l7eBEhWq1vQsR55n
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.Zeq7sLiGhTrvsavc
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114882715
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Water, tun (250 gallons)
+            type: consumable
+            img: icons/containers/barrels/barrel-reinforced-chestnut-brown.webp
+            system:
+              description:
+                value: A tun (250 gallons) of water.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 2000
+                units: lb
+              price:
+                value: 40
+                denomination: ct
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: water-tun-250-gallons
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 7812a9ea8c1871c7f57fb241b22900061b6b0ab2
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: rT0rQjApfLQVNUeo
+                price: 40 ct
+                cost: 80 ct
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: lMssqfPhiOhdK0cs
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.rT0rQjApfLQVNUeo
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114883649
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Rock Cactus
+            type: consumable
+            img: icons/consumables/plants/herb-bunch-dried-leaf-green.webp
+            system:
+              description:
+                value: >-
+                  A spherical plant that is edible if peeled, having a taste and
+                  texture similar to apples. Yields up to a pound of edible
+                  flesh and 4 pints of fluid.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: rock-cactus
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 3c507b6eeb5d2378f2fb3245a7f3d87cf34b487d
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: C2ZB1zpwpFD6UVWc
+                price: 3 cb
+                cost: 6 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: HUh3HmCKoRqcxt6i
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.C2ZB1zpwpFD6UVWc
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114881286
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+          - name: Berril Moss
+            type: consumable
+            img: icons/consumables/plants/fern-sprig-stem-leaf-herb-green.webp
+            system:
+              description:
+                value: >-
+                  A blue-green moss that often covers the floor of forests. When
+                  dried it is edible and tastes like dried tea leaves.
+                chat: ''
+              source:
+                custom: Dark Sun
+                rules: '2024'
+                revision: 1
+                book: Dark Sun
+                page: ''
+                license: ''
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                autoDestroy: false
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+              properties: []
+              identifier: berril-moss
+              activities: {}
+            effects: []
+            flags:
+              scene-packer:
+                hash: 54884328ed1ed77829373d2d7847d8a7be6cd5ef
+              dnd5e:
+                riders:
+                  activity: []
+              crux:
+                trayVisibility: default
+              monks-enhanced-journal:
+                parentId: 6aPLSYuxJ5uO1SnJ
+                price: 2 cb
+                cost: 4 cb
+                quantity: null
+                consumable: false
+                lock: false
+                hide: false
+            _id: XNYuC6dEZQo9btvt
+            folder: TjnDASryJkkk2hRB
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Compendium.world.dark-sun-items.Item.6aPLSYuxJ5uO1SnJ
+              duplicateSource: null
+              coreVersion: '13.342'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1744078956217
+              modifiedTime: 1746114880672
+              lastModifiedBy: jM4h8qpyxwTpfNli
+            sort: 0
+        scrollPos: '{".tab.description .tab-inner":0}'
+        twentyfour: true
+        opening: 720
+        closing: 180
+        adjustment:
+          default:
+            sell: 2
+        log:
+          - actor: Party Of Five
+            item: Rock Cactus
+            quantity: 1
+            price: 6 cb
+            type: purchase
+            time: 1750116991574
+          - actor: Party Of Five
+            item: Cactus Juice
+            quantity: 1
+            price: 4 cb
+            type: purchase
+            time: 1750116982584
+          - actor: Party Of Five
+            item: Insects
+            quantity: 1
+            price: 4 cb
+            type: purchase
+            time: 1750116932903
+          - actor: Party Of Five
+            item: Farro
+            quantity: 1
+            price: 10 cb
+            type: purchase
+            time: 1750116921953
+          - actor: Party Of Five
+            item: Rations (15 days)
+            quantity: 1
+            price: 12 ct
+            type: purchase
+            time: 1750116892382
+          - actor: Party Of Five
+            item: Berril Moss
+            quantity: 1
+            price: 4 cb
+            type: purchase
+            time: 1750116864470
+    _id: vnaQKqPfDuW7PeZB
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: dnd5e
+      systemVersion: 5.1.8
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!WXcqYd6orhghlK6a.vnaQKqPfDuW7PeZB'
+sort: 0
+ownership:
+  default: 2
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: dnd5e
+  systemVersion: 5.1.8
+  createdTime: 1757616774306
+  modifiedTime: 1757616774306
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!WXcqYd6orhghlK6a'

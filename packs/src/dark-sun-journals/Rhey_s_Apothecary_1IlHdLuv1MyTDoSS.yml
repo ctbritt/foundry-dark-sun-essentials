@@ -1,0 +1,1948 @@
+folder: npD5ZZQ4lQPDzuVH
+name: Rhey's Apothecary
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: d9243fa55ce549b2442e43fcf1b21be895121f3d
+_id: 1IlHdLuv1MyTDoSS
+pages:
+  - type: text
+    name: Rhey's Apothecary
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        shoptype: Medicinal Goods & Discreet Enchantments
+        location: Noble District
+        state: closed
+        autoopen: true
+        purchasing: locked
+        selling: locked
+        appendix: false
+        _lasttab: entry-details
+        twentyfour: true
+        opening: 600
+        closing: 1020
+        wgCeShTrqHJFBbDr:
+          notes: "<div class=\"font-claude-message  relative  leading-[1.65rem]  [&_pre>div]:bg-bg-000/50  [&_pre>div]:border-0.5  [&_pre>div]:border-border-400  [&_.ignore-pre-bg>div]:bg-transparent  [&>div>div>:is(p,blockquote,h1,h2,h3,h4,h5,h6)]:pl-2  [&>div>div>:is(p,blockquote,ul,ol,h1,h2,h3,h4,h5,h6)]:pr-8\" style=\"caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none;\"><div><div class=\"grid-cols-1 grid gap-2.5 [&_>_*]:min-w-0\"><p class=\"whitespace-normal break-words\"><strong>Proprietor Details:</strong></p><ul class=\"[&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7\"><li class=\"whitespace-normal break-words\"><strong>Rhey Khal</strong><span class=\"Apple-converted-space\">\_</span>(Middle-aged Human Male): Friendly but cautious about magical dealings</li><li class=\"whitespace-normal break-words\"><strong>Magical Knowledge</strong>: Rumored to practice minor enchantments and potion-making</li><li class=\"whitespace-normal break-words\"><strong>Deflection Tactics</strong>: Uses self-deprecating humor to avoid direct questions about magic</li><li class=\"whitespace-normal break-words\"><strong>Discrete Service</strong>: Will discuss enchanted items only with established customers</li></ul><p class=\"whitespace-normal break-words\"><strong>Shop Atmosphere:</strong></p><ul class=\"[&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7\"><li class=\"whitespace-normal break-words\"><strong>Aromatic Interior</strong>: Pleasant mix of herbs, oils, and incense</li><li class=\"whitespace-normal break-words\"><strong>Organized Shelves</strong>: Well-maintained inventory with clear labeling</li><li class=\"whitespace-normal break-words\"><strong>Relaxed Ambiance</strong>: Comfortable environment encouraging browsing</li></ul><p class=\"whitespace-normal break-words\"><strong>Role in Adventures</strong>: Rhey's Apothecary serves as a legitimate front for minor magical services in Tyr. Characters seeking healing supplies, alchemical components, or discreet enchanted items can find what they need here. Rhey's cautious approach to magic makes him a safer contact than more obvious spellcasters, though his humor-based deflection means earning his trust takes time. The shop's respectable facade makes it an ideal meeting place for those who prefer to avoid shadier establishments.</p></div></div></div>"
+        lastrolltable: RollTable.FsW3RjVlJd4wi4NY
+        items:
+          - _id: IFKS1Ob350uT1M2e
+            name: Alchemist's Supplies
+            type: tool
+            img: icons/tools/cooking/mortar-herbs-yellow.webp
+            system:
+              description:
+                value: >-
+                  <p>These special tools include the items needed to pursue a
+                  craft or trade in alchemy.</p>
+
+                  <p>Proficiency with a set of artisan's tools lets you add your
+                  proficiency bonus to any ability checks you make using the
+                  tools in your craft. Each type of artisan's tools requires a
+                  separate proficiency.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+                rules: '2014'
+                revision: 1
+              quantity: 1
+              weight:
+                value: 8
+                units: lb
+              price:
+                value: 50
+                denomination: gp
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              ability: int
+              chatFlavor: ''
+              proficient: null
+              bonus: ''
+              type:
+                value: art
+                baseItem: alchemist
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              uses:
+                max: ''
+                recovery: []
+                spent: 0
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: check
+                  activation:
+                    type: ''
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  check:
+                    ability: int
+                    dc: {}
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                  sort: 0
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              attuned: false
+              identifier: alchemists-supplies
+            effects: []
+            folder: uvZXbqK3cHirDzeT
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: SztwZhbhZeCqyAes
+                price: 50 ct
+                cost: 50 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.0.0
+              createdTime: 1725037192417
+              modifiedTime: 1725992514876
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - name: Reed Pipe
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 30
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: panflute
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                geguSdrqAMj6NlWb:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: geguSdrqAMj6NlWb
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                7p2XS89osRnThY69:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: 7p2XS89osRnThY69
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: pan-flute
+            _id: q1EloIBkeJf9JjKd
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/flute-simple-wood.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              midi-qol:
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: phbmusPanflute00
+                price: 30 ct
+                cost: 30 ct
+                quantity: 5
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Drum
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 6
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: drum
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                LqgwTSdc7UQxSuRf:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: LqgwTSdc7UQxSuRf
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                Gp0oZApy9ygRjom3:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: Gp0oZApy9ygRjom3
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: drum
+            _id: loosLLPzENPLcNSJ
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/drum-brown-red.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: phbmusDrum000000
+                price: 6 ct
+                cost: 6 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Flute
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 2
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: flute
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                uOwGcYrrpv2U4tNt:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: uOwGcYrrpv2U4tNt
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                BJ2uJJ9CHUFOLnei:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: BJ2uJJ9CHUFOLnei
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: flute
+            _id: cwnkjz1lYF5Xaa6O
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/flute-simple-wood.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: phbmusFlute00000
+                price: 2 ct
+                cost: 2 ct
+                quantity: 4
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Horn
+            system:
+              description:
+                value: >-
+                  <p><strong>Ability:</strong> Charisma</p><p
+                  class="phb-meta"><strong>Utilize:</strong> Play a known tune
+                  (DC 10), or improvise a song (DC 15)</p>
+                chat: ''
+              price:
+                value: 3
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: ''
+                spent: 0
+                recovery: []
+              type:
+                value: music
+                baseItem: horn
+              ability: cha
+              chatFlavor: ''
+              proficient: null
+              properties: []
+              bonus: ''
+              activities:
+                8k3LD7TVIH6vvzi7:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '10'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Play a Known Tune
+                  _id: 8k3LD7TVIH6vvzi7
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+                ijMZxlEipxTbukhT:
+                  type: check
+                  activation:
+                    type: action
+                    value: null
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets: []
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: ''
+                    units: inst
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: false
+                    override: false
+                  check:
+                    ability: cha
+                    dc:
+                      calculation: ''
+                      formula: '15'
+                    associated: []
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  sort: 0
+                  name: Improvise a Song
+                  _id: ijMZxlEipxTbukhT
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                  damage:
+                    onSave: half
+                    parts: []
+              identifier: horn
+            _id: xQaJcqULfc7Lpwrf
+            type: tool
+            folder: gVOErz4AkTIsal84
+            img: icons/tools/instruments/horn-flared-wood.webp
+            effects: []
+            sort: 0
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: phbmusHorn000000
+                price: 3 ct
+                cost: 3 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013942588
+              modifiedTime: 1749013942588
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Candle
+            system:
+              description:
+                value: >-
+                  <p>For 1 hour, a lit Candle sheds Bright Light in a 5-foot
+                  radius and Dim Light for an additional 5 feet.</p>
+                chat: ''
+              price:
+                value: 1
+                denomination: cp
+              source:
+                custom: ''
+                rules: '2024'
+                license: CC-BY-4.0
+                book: SRD 5.2
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              uses:
+                max: '1'
+                autoDestroy: true
+                spent: 0
+                recovery: []
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              type:
+                value: trinket
+                subtype: ''
+              magicalBonus: null
+              properties: []
+              activities:
+                8kldn9CuzuAz7dVb:
+                  type: utility
+                  _id: 8kldn9CuzuAz7dVb
+                  sort: 0
+                  activation:
+                    type: ''
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets:
+                      - type: itemUses
+                        value: '1'
+                        target: ''
+                        scaling: {}
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: false
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  roll:
+                    prompt: false
+                    visible: false
+                    name: ''
+                    formula: ''
+                  name: Light
+                  img: systems/dnd5e/icons/svg/trait-damage-immunities.svg
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              identifier: candle
+            _id: bgGAnFlNlIiBC4WC
+            type: consumable
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/sundries/lights/candle-unlit-tan.webp
+            effects: []
+            sort: 6550000
+            ownership:
+              default: 0
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                quantity: 24
+                price: 1 cp
+                hide: false
+                lock: false
+                parentId: phbagCandle00000
+                cost: 1 cp
+                consumable: false
+            _stats:
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.4.0
+              createdTime: 1724425907147
+              modifiedTime: 1740680133416
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+          - name: Perfume
+            system:
+              description:
+                value: >-
+                  <p>Perfume comes in a 4-ounce vial. For 1 hour after applying
+                  Perfume to yourself, you have Advantage on Charisma
+                  (Persuasion) checks made to influence an Indifferent Humanoid
+                  within 5 feet of yourself.</p>
+                chat: ''
+              price:
+                value: 5
+                denomination: ct
+              source:
+                custom: ''
+                rules: '2024'
+                revision: 1
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              rarity: ''
+              properties: []
+              type:
+                value: gear
+                subtype: ''
+              identifier: perfume
+              equipped: false
+            _id: sE7fiIuqwSZINi6p
+            type: loot
+            folder: uDk4FBYfcP2JnX6t
+            img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+            effects: []
+            sort: 4100000
+            ownership:
+              default: 0
+              wgCeShTrqHJFBbDr: 3
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+              monks-enhanced-journal:
+                quantity: 13
+                price: 5 ct
+                hide: false
+                lock: false
+                parentId: phbagPerfume0000
+                cost: 5 ct
+                consumable: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '13.345'
+              systemId: dnd5e
+              systemVersion: 4.4.3
+              createdTime: 1749013846709
+              modifiedTime: 1749013846709
+              lastModifiedBy: wgCeShTrqHJFBbDr
+          - name: Sandalwood Oil
+            type: consumable
+            img: modules/kctg-5e/images/Sandalwood%20Oil.webp
+            system:
+              description:
+                value: >-
+                  <p>Harvested from the Sandalwood tree it is mainly used by
+                  herbalists to create poultices, mainly for skin irritation and
+                  diseases, however, the oil can be also used in cooking to add
+                  a mild sandalwood flavor to most recipes. </p>
+                chat: ''
+              source:
+                book: Kris's Compendium of Trade Goods
+                page: ''
+                custom: ''
+                license: ''
+                revision: 1
+                rules: '2024'
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 5
+                denomination: gp
+              rarity: common
+              properties: []
+              type:
+                value: food
+                subtype: food
+              identifier: sandalwood-oil
+              activities:
+                o8GU9HFJIUSh98I2:
+                  type: utility
+                  name: Consume
+                  _id: o8GU9HFJIUSh98I2
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets:
+                      - type: material
+                        value: '1'
+                        scaling: {}
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                    special: ''
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      type: ''
+                    override: false
+                    prompt: true
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  roll:
+                    prompt: false
+                    visible: false
+                    formula: ''
+                    name: ''
+                  img: modules/kctg-5e/images/Activities/Consume.png
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              uses:
+                spent: 0
+                recovery: []
+                autoDestroy: false
+                max: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              magicalBonus: null
+            effects: []
+            folder: yOWGA89yzYNJ180M
+            ownership:
+              default: 0
+              oXZDb3KKqgQDQkgQ: 3
+              C3FNsGlq2Lf7wevT: 3
+            flags:
+              core:
+                sheetClass: dnd5e.ItemSheet5e
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                quantity: 16
+                price: 5 gp
+                hide: false
+                lock: false
+                parentId: p5BRt4KpSpXihqK3
+                cost: 5 gp
+                consumable: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.3.3
+              createdTime: 1740115268213
+              modifiedTime: 1740115268213
+              lastModifiedBy: C3FNsGlq2Lf7wevT
+            _id: SiO0r82Th2KRaGbY
+            sort: 800000
+          - name: Willowshade Oil
+            type: consumable
+            img: icons/consumables/potions/potion-bottle-corked-labeled-green.webp
+            effects: []
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Potion
+                  isConsumable: true
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags: []
+                  sources:
+                    - sourceId: 59
+                      pageNumber: null
+                      sourceType: 1
+                  stackable: true
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 2103445194
+                definitionId: 305
+                originalName: Willowshade Oil
+                version: 3.1.15
+              magicitems:
+                enabled: false
+                equipped: false
+                attuned: false
+                charges: '0'
+                chargeType: c1
+                destroy: false
+                destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+                rechargeable: false
+                recharge: '0'
+                rechargeType: t1
+                rechargeUnit: r1
+                sorting: l
+              midi-qol:
+                onUseMacroName: ''
+                effectActivation: false
+                rollAttackPerTarget: default
+                removeAttackDamageButtons: default
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+              cf:
+                id: temp_zo17f6frwt9
+              rest-recovery:
+                data:
+                  consumable:
+                    enabled: false
+                    dayWorth: false
+                  recovery:
+                    enabled: false
+              midiProperties:
+                nodam: false
+                fulldam: false
+                halfdam: false
+                rollOther: false
+                critOther: false
+                magicdam: false
+                magiceffect: false
+                concentration: false
+                toggleEffect: false
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                offHandWeapon: false
+                ignoreTotalCover: false
+                noConcentrationCheck: false
+              core: {}
+              hide-item-value:
+                appraised: ''
+                showPrice: false
+              custom-character-sheet-sections:
+                sectionName: ''
+              dicerecharge:
+                special:
+                  active: false
+                destroy:
+                  check: false
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+                migratedUses: 1
+              monks-enhanced-journal:
+                quantity: 2
+                price: 30 ct
+                hide: false
+                lock: false
+                parentId: tGBr4XDqmm18ApHY
+                cost: 30 ct
+                consumable: false
+            system:
+              description:
+                value: >-
+                  <p>A dark blue oil can be extracted from the rare fruit of the
+                  willowshade plant. A creature can use its action to apply the
+                  oil to another creature that has been
+                  @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{petrified} for less
+                  than 1 minute, causing the
+                  @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{petrified} condition
+                  on that creature to end at the start of what would be that
+                  creature’s next turn.</p>
+                chat: ''
+              source:
+                custom: Explorer's Guide to Wildemount
+                revision: 1
+                rules: '2014'
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 30
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              uses:
+                max: '1'
+                recovery: []
+                autoDestroy: true
+                spent: 0
+              damage:
+                base:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                replace: false
+              unidentified:
+                description: Gear
+              type:
+                value: potion
+                subtype: ''
+              activities:
+                dnd5eactivity000:
+                  _id: dnd5eactivity000
+                  type: utility
+                  activation:
+                    type: action
+                    value: 1
+                    condition: ''
+                    override: false
+                  consumption:
+                    targets:
+                      - type: itemUses
+                        target: ''
+                        value: '1'
+                        scaling:
+                          mode: ''
+                          formula: ''
+                    scaling:
+                      allowed: false
+                      max: ''
+                    spellSlot: true
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    concentration: false
+                    value: '1'
+                    units: minute
+                    special: ''
+                    override: false
+                  effects: []
+                  range:
+                    units: self
+                    special: ''
+                    override: false
+                  target:
+                    template:
+                      count: ''
+                      contiguous: false
+                      type: ''
+                      size: ''
+                      width: ''
+                      height: ''
+                      units: ''
+                    affects:
+                      count: ''
+                      type: ''
+                      choice: false
+                      special: ''
+                    prompt: true
+                    override: false
+                  uses:
+                    spent: 0
+                    max: ''
+                    recovery: []
+                  roll:
+                    formula: ''
+                    name: ''
+                    prompt: false
+                    visible: false
+                  sort: 0
+                  useConditionText: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    forceDialog: false
+                    confirmTargets: default
+                    automationOnly: false
+                    identifier: ''
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    autoTargetType: any
+                    autoTargetAction: default
+                    otherActivityCompatible: true
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  useConditionReason: ''
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              identifier: willowshade-oil
+              container: null
+              attuned: false
+              magicalBonus: null
+              properties: []
+            _stats:
+              systemId: dnd5e
+              systemVersion: 4.4.4
+              coreVersion: '12.343'
+              createdTime: 1665860963476
+              modifiedTime: 1750539540194
+              lastModifiedBy: wgCeShTrqHJFBbDr
+              compendiumSource: null
+              duplicateSource: null
+            folder: null
+            _id: iMDCaJRmaCpffO4V
+            sort: 0
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+        scrollPos: '{".tab.description .tab-inner":0}'
+        relationships:
+          - id: 4LBQsqs5aMCcaXYy
+            uuid: JournalEntry.4LBQsqs5aMCcaXYy
+            hidden: false
+            relationship: ''
+    _id: vX5SxIlBpix06lBK
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Rhey Khal, Proprietor</p><p>Items for sale include medicinal herbs,
+        water pipes, scented candles and oils, incense, and musical instruments.
+        Rhey Khal, a middle-aged male human, is rumored to dabble in magic and
+        deal with enchanted items. He responds to most inquiries about such
+        interests with self-deprecating humor.</p><p><strong>Services &amp;
+        Inventory:</strong></p><ul><li><p>Medicinal Herbs: Healing plants and
+        therapeutic remedies</p></li><li><p>Smoking Supplies: Water pipes and
+        exotic tobacco blends</p></li><li><p>Aromatherapy Items: Scented
+        candles, essential oils, and incense</p></li><li><p>Musical Instruments:
+        Small percussion and wind instruments</p></li></ul>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: dnd5e
+      systemVersion: 5.1.8
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!1IlHdLuv1MyTDoSS.vX5SxIlBpix06lBK'
+sort: 0
+ownership:
+  default: 2
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: dnd5e
+  systemVersion: 5.1.8
+  createdTime: 1757616774306
+  modifiedTime: 1757616774306
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!1IlHdLuv1MyTDoSS'

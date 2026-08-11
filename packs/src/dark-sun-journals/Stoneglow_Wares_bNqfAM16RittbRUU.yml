@@ -1,0 +1,2367 @@
+folder: uIHR1MRFs7M6MyPL
+name: Stoneglow Wares
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: 506255f0716b8e330105a706765d59460b66c6a7
+_id: bNqfAM16RittbRUU
+pages:
+  - type: text
+    name: Stoneglow Wares
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        _lasttab: notes
+        shoptype: General Store
+        location: Kled
+        state: closed
+        autoopen: true
+        purchasing: free
+        selling: locked
+        jM4h8qpyxwTpfNli:
+          notes: >-
+            <h3><strong>Stoneglow Wares (General Store)</strong></h3>
+
+            <ul>
+
+            <li><strong>Proprietor</strong>: <strong>Fara</strong>, a meticulous
+            and no-nonsense dwarf woman who deals in <strong>trade
+            goods</strong> and <strong>rare finds</strong>.</li>
+
+            <li><strong>Services/Items</strong>:
+
+            <ul>
+
+            <li><strong>Basic Adventuring Supplies</strong>, such as
+            <strong>torches</strong>, <strong>rope</strong>,
+            <strong>pitons</strong>, and <strong>simple climbing
+            gear</strong>.</li>
+
+            <li><strong>Desert Camouflage Cloaks</strong> made from <strong>kank
+            hides</strong>, offering <strong>advantage</strong> on
+            <strong>Stealth checks</strong> in sandy terrain.</li>
+
+            <li><strong>Old Maps</strong> of the <strong>surrounding
+            desert</strong> and <strong>Kemalok&rsquo;s ruins</strong> (though
+            they may be <strong>incomplete</strong> or
+            <strong>unreliable</strong>).</li>
+
+            </ul>
+
+            </li>
+
+            <li><strong>Special Interaction</strong>: Fara has a <strong>keen
+            eye for treasure</strong> and is interested in <strong>rare
+            objects</strong>. If the party finds <strong>strange relics</strong>
+            or <strong>unusual artifacts</strong> in the desert, she may offer a
+            <strong>reward</strong> or <strong>trade</strong>. She is also a
+            good source of <strong>local rumors</strong> about <strong>strange
+            occurrences</strong> in the desert.</li>
+
+            </ul>
+
+            <h3>&nbsp;</h3>
+        appendix: false
+        relationships:
+          - type: place
+            uuid: JournalEntry.2CI6wjES5EsUVC75
+            id: 2CI6wjES5EsUVC75
+            name: Kled
+            img: >-
+              https://rime-of-the-frostmaiden.s3.amazonaws.com/maps/Dark%20Sun/kled.webp
+            relationship: ''
+            hidden: false
+        scrollPos: '{".tab.description .tab-inner":0}'
+        lastrolltable: RollTable.40RwWaANAMLiXT2U
+        items:
+          - _id: 0WB86fgltFKI40Mb
+            name: Traveler's Clothes
+            type: equipment
+            img: icons/equipment/chest/shirt-collared-brown.webp
+            system:
+              description:
+                value: <p>A set of clothes worn by travellers.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 4
+                units: lb
+              price:
+                value: 2
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: none
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: ''
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              armor:
+                value: null
+                dex: null
+                magicalBonus: null
+              hp:
+                value: 0
+                max: 0
+                dt: null
+                conditions: ''
+              speed:
+                value: null
+                conditions: ''
+              strength: null
+              proficient: null
+              type:
+                value: clothing
+                baseItem: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              attuned: false
+            effects: []
+            folder: aJgMxnZED9XdoN2W
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: SsAmWV6YBqeOFihT
+                price: 2 ct
+                cost: 2 ct
+                quantity: 6
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233666
+              modifiedTime: 1715374609573
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: cHaDmFd2h2FxnGev
+            name: Hammer
+            type: loot
+            img: icons/tools/hand/hammer-cobbler-steel.webp
+            system:
+              description:
+                value: >-
+                  <p>A tool with a heavy metal head mounted at the end of its
+                  handle, used for jobs such as breaking things and driving in
+                  nails. </p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 14pNRT4sZy9rgvhb
+                price: 1 ct
+                cost: 1 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233437
+              modifiedTime: 1715374570442
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: JSvwA0tWTCFzxNWj
+            name: Iron Spike
+            type: consumable
+            img: icons/tools/fasteners/nails-steel-brown.webp
+            system:
+              description:
+                value: >-
+                  <p>A spike of 10 inches long made of iron. Can be improvised
+                  to block doors. Usually sold in bundles of 10.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 0.5
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: touch
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: RiOeHR2qaYktz5Ys
+                price: 1 cb
+                cost: 1 cb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233657
+              modifiedTime: 1715374608073
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: Hwe4udwAhLMutWwc
+            name: Candle
+            type: consumable
+            img: icons/sundries/lights/candle-unlit-tan.webp
+            system:
+              description:
+                value: >-
+                  <p>For 1 hour, a candle sheds bright light in a 5-foot radius
+                  and dim light for an additional 5 feet.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: lb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: '1'
+                units: hour
+              cover: null
+              target:
+                value: '10'
+                width: null
+                units: ft
+                type: radius
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 0NoBBP3MMkvJlwZY
+                price: 1 lb
+                cost: 1 lb
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233435
+              modifiedTime: 1715374569923
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: JyVlkY9agBseRQI1
+            name: Piton
+            type: consumable
+            img: icons/tools/fasteners/nail-steel.webp
+            system:
+              description:
+                value: >-
+                  <p>A metal spike that is drive into a seam in a climbing
+                  surface with a climbing hammer. It can also be used like iron
+                  spikes to block doors in a pinch.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 0.25
+                units: lb
+              price:
+                value: 5
+                denomination: lb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: 5
+                long: null
+                units: ft
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: TqyvIglHDj5kfohR
+                price: 5 lb
+                cost: 5 lb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233674
+              modifiedTime: 1715374610993
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: I73iCcCjw8DUzIVS
+            name: Lamp
+            type: consumable
+            img: icons/sundries/lights/lantern-iron-yellow.webp
+            system:
+              description:
+                value: >-
+                  <p>A lamp casts bright light in a 15-foot radius and dim light
+                  for an additional 30 feet. Once lit, it burns for 6 hours on a
+                  flask (1 pint) of oil</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: '6'
+                units: hour
+              cover: null
+              target:
+                value: '45'
+                width: null
+                units: ft
+                type: radius
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: qMzHmlmha8qMDnEF
+                price: 5 cb
+                cost: 5 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233881
+              modifiedTime: 1715374647328
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: cPePeJniolIHzSPH
+            name: Hooded Lantern
+            type: consumable
+            img: icons/sundries/lights/lantern-iron-yellow.webp
+            system:
+              description:
+                value: >-
+                  <p>A hooded lantern casts bright light in a 30-foot radius and
+                  dim light for an additional 30 feet. Once lit, it burns for 6
+                  hours on a flask (1 pint) of oil. As an action, you can lower
+                  the hood, reducing the light to dim light in a 5-foot
+                  radius.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: '6'
+                units: hour
+              cover: null
+              target:
+                value: '60'
+                width: null
+                units: ft
+                type: radius
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: trmWAdUoR6Y2B7rA
+                price: 10 ct
+                cost: 10 ct
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233914
+              modifiedTime: 1715374653103
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: uBjUS3Ys7sQWtkPu
+            name: Bullseye Lantern
+            type: consumable
+            img: icons/sundries/lights/lantern-iron-yellow.webp
+            system:
+              description:
+                value: >-
+                  <p>A bullseye lantern casts bright light in a 60-foot cone and
+                  dim light for an additional 60 feet. Once lit, it burns for 6
+                  hours on a flask (1 pint) of oil.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              price:
+                value: 10
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: '6'
+                units: hour
+              cover: null
+              target:
+                value: '120'
+                width: null
+                units: ft
+                type: cone
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: trinket
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: UnUwTG4YIgd0kaUJ
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: UkWdyJYQTfVX2cJW
+                price: 10 ct
+                cost: 10 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233679
+              modifiedTime: 1715374612402
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: pdn8fwHacSD2P9Qq
+            name: Quiver
+            type: container
+            img: icons/containers/ammunition/arrows-quiver-black.webp
+            system:
+              description:
+                value: <p>A quiver can hold up to 20 arrows.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              capacity:
+                type: weight
+                value: 1
+              currency:
+                cp: 0
+                sp: 0
+                ep: 0
+                gp: 0
+                pp: 0
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              attuned: false
+            effects: []
+            folder: PgtyWdfkDTDbc0ov
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 4MtQKPn9qMWCFjDA
+                price: 1 ct
+                cost: 1 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233465
+              modifiedTime: 1715374575893
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: 0O15DRIZ1ee6W7zP
+            name: Blanket
+            type: loot
+            img: icons/sundries/survival/bedroll-pink.webp
+            system:
+              description:
+                value: <p>A blanket to keep you warm at night.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 3
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 419eNv7xp2p7Xlo5
+                price: 5 cb
+                cost: 5 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233461
+              modifiedTime: 1715374575167
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: OjmU4gtDZZf6rsPs
+            name: Waterskin
+            type: consumable
+            img: icons/sundries/survival/wetskin-leather-purple.webp
+            system:
+              description:
+                value: >-
+                  <p>A leather hide sewn into an enclosed skin which can contain
+                  up to 4 pints of liquid. It weighs 5 pounds when full; a pint
+                  of water is approximately 1 pound.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 5
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: touch
+              uses:
+                value: 4
+                max: '4'
+                per: charges
+                recovery: ''
+                autoDestroy: false
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: util
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: food
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              crewed: false
+              properties: []
+              attack:
+                bonus: ''
+                flat: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              attuned: false
+            effects: []
+            folder: eEzlhT4dJAXmc3nz
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: Uv0ilmzbWvqmlCVH
+                price: 2 cb
+                cost: 2 cb
+                quantity: 1
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233681
+              modifiedTime: 1715374612732
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: S6k4wq3aSn4k4g29
+            name: Shovel
+            type: loot
+            img: icons/tools/hand/shovel-spade-steel-grey.webp
+            system:
+              description:
+                value: >-
+                  <p>A tool resembling a spade with a broad blade and typically
+                  upturned sides, used for moving coals, earth, snow or other
+                  material.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 5
+                units: lb
+              price:
+                value: 2
+                denomination: ct
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: qWlXDEgqdmdZWoab
+                price: 2 ct
+                cost: 2 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233884
+              modifiedTime: 1715374647719
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: PqrL0lyOi0PLCnz5
+            name: Glass Bottle
+            type: container
+            img: icons/consumables/potions/bottle-bulb-empty-glass.webp
+            system:
+              description:
+                value: <p>A bottle holds 1½ pints of liquid.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 2
+                units: lb
+              price:
+                value: 2
+                denomination: ct
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              capacity:
+                type: weight
+                value: 6
+              currency:
+                cp: 0
+                sp: 0
+                ep: 0
+                gp: 0
+                pp: 0
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              attuned: false
+            effects: []
+            folder: PgtyWdfkDTDbc0ov
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: HZp69hhyNZUUCipF
+                price: 2 ct
+                cost: 2 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233563
+              modifiedTime: 1715374594355
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: lg2GrD4UG0ej61e2
+            name: Tinderbox
+            type: loot
+            img: icons/sundries/lights/torch-black.webp
+            system:
+              description:
+                value: >-
+                  <p>This small container holds flint, fire steel, and tinder
+                  (usually dry cloth soaked in light oil) used to kindle a fire.
+                  Using it to light a torch - or anything else with abundant,
+                  exposed fuel - takes an action. Lighting any other fire takes
+                  1 minute.</p>
+
+                  <p> </p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: DNOSEAvF4Oh1DlWy
+                price: 5 ct
+                cost: 5 ct
+                quantity: 3
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233523
+              modifiedTime: 1715374587034
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: BP9B5l09J2pnaWXJ
+            name: Bedroll
+            type: loot
+            img: icons/sundries/survival/bedroll-grey.webp
+            system:
+              description:
+                value: <p>Roll of cloth used by traveller to sleep in.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 7
+                units: lb
+              price:
+                value: 1
+                denomination: ct
+              rarity: ''
+              identified: true
+              type:
+                value: ''
+                subtype: ''
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+            effects: []
+            folder: dlru9Hy74nSMv6fr
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: DVXmyetZuvxbzAwW
+                price: 1 ct
+                cost: 1 ct
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233526
+              modifiedTime: 1715374587427
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - _id: hWWsC7J4s7MYCWOA
+            name: Pouch
+            type: container
+            img: icons/containers/bags/coinpouch-simple-tan.webp
+            system:
+              description:
+                value: >-
+                  <p>A cloth or leather pouch can hold up to 20 sling bullets or
+                  50 blowgun needles, among other things. A compartmentalized
+                  pouch for holding spell components is called a component
+                  pouch. A pouch can hold up to ⅕ cubic foot or 6 pounds of
+                  gear.</p>
+                chat: ''
+              source:
+                custom: ''
+                book: SRD 5.1
+                page: ''
+                license: CC-BY-4.0
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              capacity:
+                type: weight
+                value: 6
+              currency:
+                cp: 0
+                sp: 0
+                ep: 0
+                gp: 0
+                pp: 0
+              unidentified:
+                description: ''
+              container: null
+              properties: []
+              attuned: false
+            effects: []
+            folder: PgtyWdfkDTDbc0ov
+            sort: 0
+            ownership:
+              default: 0
+            flags:
+              monks-enhanced-journal:
+                parentId: 9bWTRRDym06PzSAf
+                price: 5 cb
+                cost: 5 cb
+                quantity: 2
+                consumable: false
+                lock: false
+                hide: false
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.2.0
+              coreVersion: '12.330'
+              createdTime: 1661787233499
+              modifiedTime: 1715374582594
+              lastModifiedBy: dnd5ebuilder0000
+              compendiumSource: null
+              duplicateSource: null
+          - name: Torch
+            type: consumable
+            system:
+              description:
+                value: >-
+                  <div class="ddb">
+
+                  <p>A torch burns for 1 hour, providing bright light in a
+                  20-foot radius and dim light for an additional 20 feet. If you
+                  make a melee attack with a burning torch and hit, it deals 1
+                  fire damage.</p>
+
+                  <br />
+
+                  <section class="secret">
+
+                  <hr />
+
+                  <h5>Automation notes - Chris's Premades (CPR):</h5>
+
+                  <p><em>Requires </em><span style="font-family:'gg sans', 'Noto
+                  Sans', 'Helvetica Neue', Helvetica, Arial,
+                  sans-serif"><em>Midi QOL, DAE, Sequencer</em></span></p>
+
+                  </section>
+
+                  </div>
+                chat: ''
+              source:
+                book: Basic Rules (2014)
+                page: ''
+                license: ''
+                custom: ''
+              quantity: 1
+              weight:
+                value: 1
+                units: lb
+              price:
+                value: 0.1
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: ''
+              identified: true
+              activation:
+                type: action
+                cost: 1
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: '5'
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: 5
+                long: null
+                units: ft
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                autoDestroy: true
+                prompt: true
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: ''
+              actionType: other
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              properties: []
+              unidentified:
+                description: Gear
+              type:
+                value: trinket
+                subtype: ''
+              attack:
+                bonus: ''
+                flat: false
+              container: null
+              attuned: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+            flags:
+              ddbimporter:
+                dndbeyond:
+                  type: Adventuring Gear
+                  isConsumable: false
+                  isContainer: false
+                  isCustomItem: false
+                  isHomebrew: false
+                  isMonkWeapon: false
+                  isPack: false
+                  levelInfusionGranted: null
+                  tags:
+                    - Damage
+                    - Utility
+                    - Exploration
+                    - Combat
+                  sources:
+                    - sourceId: 1
+                      pageNumber: null
+                      sourceType: 2
+                    - sourceId: 2
+                      pageNumber: null
+                      sourceType: 1
+                  stackable: true
+                  isLegacy: true
+                id: 0
+                entityTypeId: 0
+                definitionEntityTypeId: 2103445194
+                definitionId: 91
+                originalName: Torch
+                version: 5.2.36
+                effectsApplied: true
+                chrisEffectsApplied: true
+                chrisPreEffectName: Torch
+                isLegacy: true
+              scene-packer:
+                sourceId: Item.k1Xsuy6O9DL6VXhs
+                hash: 5059d02a4bb80ff81a038c57df5581471214dd94
+              midi-qol:
+                onUseMacroName: '[preApplyDynamicEffects]ItemMacro'
+                effectActivation: false
+                forceCEOff: true
+                forceCEOn: false
+                fumbleThreshold: null
+                itemCondition: ''
+                reactionCondition: ''
+                otherCondition: ''
+                effectCondition: ''
+                rollAttackPerTarget: default
+              midiProperties:
+                confirmTargets: never
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                rollOther: false
+                critOther: false
+                offHandWeapon: false
+                magicdam: false
+                magiceffect: false
+                concentration: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+              magicitems:
+                enabled: false
+              infusions:
+                maps: []
+                applied: []
+                infused: false
+              dae:
+                macro:
+                  name: Torch
+                  img: icons/sundries/lights/torch-white.webp
+                  type: script
+                  scope: global
+                  command: >-
+                    let lightSource = "torch";
+
+                    let file =
+                    "modules/gambits-premades/assets/images/torch.webp";
+
+                    let torchStatus = Sequencer.EffectManager.getEffects({ name:
+                    `${token.document.id} ${lightSource}` });
+
+
+                    async function updateTorch() {
+                        if (args[0].macroPass === "preApplyDynamicEffects") {
+                            if (torchStatus.length === 0 && (macroItem.system.uses.value !== 0 || macroItem.system.quantity !== 1)) {
+                                await showTorchLightDialog();
+                            } else if (torchStatus.length !== 0) {
+                                await showTorchOptionsDialog();
+                            }
+                            else {
+                                ui.notifications.warn("You do not have any torches remaining.")
+                                workflow.aborted = true;
+                            }
+                        }
+
+                        if (args[0] === "off" && args[1]["expiry-reason"] && (args[1]["expiry-reason"].includes("times-up") || args[1]["expiry-reason"].includes("effect-deleted")) && args[1]?.existing !== "effect-stacking") {
+                            const light = { dim: 0, bright: 0 };
+                            await token.document.update({ light });
+                            await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                        }
+                    }
+
+
+                    async function showTorchLightDialog() {
+                        await foundry.applications.api.DialogV2.wait({
+                        window: { title: 'Torch' },
+                        content: `
+                            <div class="gps-dialog-container">
+                                <div class="gps-dialog-section">
+                                    <div class="gps-dialog-content">
+                                        <div>
+                                            <div class="gps-dialog-flex">
+                                                <p class="gps-dialog-paragraph">Would you like to light a torch?</p>
+                                                <div id="image-container" class="gps-dialog-image-container">
+                                                    <img src="${macroItem.img}" class="gps-dialog-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `,
+                        buttons: [{
+                            action: "Light",
+                            label: "Light",
+                            callback: async (event, button, dialog) => {
+                                await lightNewTorch();
+                            }
+                        }],
+                        close: async (event, dialog) => {
+                            return;
+                        }, rejectClose:false
+                        });
+                    }
+
+
+                    async function showTorchOptionsDialog() {
+                        await foundry.applications.api.DialogV2.wait({
+                        window: { title: 'Torch' },
+                        content: `
+                            <div class="gps-dialog-container">
+                                <div class="gps-dialog-section">
+                                    <div class="gps-dialog-content">
+                                        <div>
+                                            <div class="gps-dialog-flex">
+                                                <p class="gps-dialog-paragraph">What would you like to do with your torch?</p>
+                                                <div id="image-container" class="gps-dialog-image-container">
+                                                    <img src="${macroItem.img}" class="gps-dialog-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `,
+                        buttons: [{
+                            action: "Light New",
+                            label: "Light New",
+                            callback: async (event, button, dialog) => {
+                                await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                                if((macroItem.system.uses.value === 0 && macroItem.system.quantity === 1)) {
+                                    const light = {dim: 0, bright: 0};
+                                    await token.document.update({light});
+                                    await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                                    const effectName = await actor.effects.find(i => i.name === "Torch");
+                                    if(effectName) await actor.deleteEmbeddedDocuments("ActiveEffect", [effectName.id]);
+                                    ui.notifications.warn("You do not have any torches remaining.")
+                                    return;
+                                }
+                                else {
+                                    await lightNewTorch();
+                                }
+                            }
+                        },
+                        {
+                            action: "Extinguish",
+                            label: "Extinguish",
+                            callback: async (event, button, dialog) => {
+                                const light = {dim: 0, bright: 0};
+                                await token.document.update({light});
+                                await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                                const effectName = await actor.effects.find(i => i.name === "Torch");
+                                if(effectName) await actor.deleteEmbeddedDocuments("ActiveEffect", [effectName.id]);
+                            }
+                        }],
+                        close: async (event, dialog) => {
+                            return;
+                        }, rejectClose:false
+                        });
+                    }
+
+
+                    async function lightNewTorch() {
+                     new Sequence()
+
+                            .effect()
+                            .delay(150)
+                            .name(`${token.document.id} ${lightSource}`)
+                            .file(game.modules.get("jb2a_patreon")?.active ? "jb2a.impact.002.orange" : "") //Add fallback effect path here in the empty quotes if there's another you'd like to use due to no patreon jb2a
+                            .atLocation(token)
+                            .attachTo(token, {bindRotation: true, local: true})
+                            .scaleToObject(0.9, {considerTokenScale: true})
+                            .spriteOffset({x:0.525*token.document.width, y:-0.05*token.document.width}, {gridUnits:true})
+                            .spriteRotation(45)
+                            .zIndex(0.1)
+
+                            .effect()
+                            .name(`${token.document.id} ${lightSource}`)
+                            .file(file)
+                            .atLocation(token)
+                            .attachTo(token, {bindRotation: true, local: true})
+                            .scaleToObject(1.2, {considerTokenScale: true})
+                            .scaleIn(0, 500, {ease: "easeOutElastic"})
+                            .scaleOut(0, 250, {ease: "easeOutCubic"})
+                            .spriteOffset({x:0.35*token.document.width, y:0.1*token.document.width}, {gridUnits:true})
+                            .animateProperty("sprite", "rotation", { from: 60, to: -60, duration: 300, ease: "easeInOutBack"})
+                            .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                            .persist()
+                            .zeroSpriteRotation()
+
+                            .effect()
+                            .delay(250)
+                            .name(`${token.document.id} ${lightSource}`)
+                            .file("jb2a.flames.01.orange")
+                            .atLocation(token)
+                            .attachTo(token, {bindRotation: true, local: true})
+                            .scaleToObject(1, {considerTokenScale: true})
+                            .spriteOffset({x:0.5*token.document.width, y:-0.05*token.document.width}, {gridUnits:true})
+                            .persist()
+                            .spriteRotation(45)
+                            .zIndex(0.1)
+                            .waitUntilFinished(-500)
+
+                            .play()
+                        const light = { dim: game.gps.convertFromFeet({ range: 40 }), bright: game.gps.convertFromFeet({ range: 20 }), alpha: 0.25, angle:360, luminosity: 0.5, color: "#ffb433", animation: { type: "lantern", speed: 4, intensity: 4 }, attenuation: 0.75, contrast: 0.15, shadows: 0.2 };
+                        await token.document.update({ light });
+                        if (macroItem.system.quantity > 1) {
+                            await macroItem.update({ "system.quantity": macroItem.system.quantity - 1 });
+                        } else {
+                            //await actor.deleteEmbeddedDocuments("Item", [macroItem.id]);
+                            await macroItem.update({ "system.uses.value": 0 });
+                        }
+                    }
+
+
+                    updateTorch();
+                  author: roRDywD19pu2VxlC
+                  ownership:
+                    default: 3
+                  _id: null
+                  folder: null
+                  sort: 0
+                  flags: {}
+                  _stats:
+                    systemId: dnd5e
+                    systemVersion: 3.3.1
+                    coreVersion: '12.331'
+                    createdTime: null
+                    modifiedTime: null
+                    lastModifiedBy: null
+                    compendiumSource: null
+                    duplicateSource: null
+              itemacro:
+                macro:
+                  name: Torch
+                  type: script
+                  scope: global
+                  command: >-
+                    //Last Updated: 9/14/2023
+
+                    //Author: EskieMoh#2969
+
+
+                    //Set torch or lantern
+
+                    let lightSource = "torch"
+
+
+                    if (lightSource == "torch"){
+
+                    file = "https://i.imgur.com/1U1eb9t.png"
+
+                    }  
+
+                    else if (lightSource == "lantern"){
+
+                    file = "https://i.imgur.com/3wFQD02.png"
+
+                    }
+
+
+                    let lightDim = token.document.light.dim;
+
+                    let lightBright = token.document.light.bright;
+
+
+                    if (lightDim == 0 && lightBright == 0){
+
+                    new Sequence()
+
+
+                    .effect()
+
+                    .delay(150)
+
+                    .name(`${token.document.name} ${lightSource}`)
+
+                    .file("jb2a.impact.002.orange")
+
+                    .atLocation(token)
+
+                    .attachTo(token, {followRotation: true, local: true})
+
+                    .scaleToObject(0.9, {considerTokenScale: true})
+
+                    .spriteOffset({x:0.525*token.document.width,
+                    y:-0.05*token.document.width}, {gridUnits:true})
+
+                    .spriteRotation(45)
+
+                    .zIndex(0.1)
+
+                    .playIf(() => {
+
+                    return lightSource == "torch";
+
+                    })
+
+
+                    .effect()
+
+                    .name(`${token.document.name} ${lightSource}`)
+
+                    .file(file)
+
+                    .atLocation(token)
+
+                    .attachTo(token, {followRotation: true, local: true})
+
+                    .scaleToObject(1.2, {considerTokenScale: true})
+
+                    .scaleIn(0, 500, {ease: "easeOutElastic"})
+
+                    .scaleOut(0, 250, {ease: "easeOutCubic"})
+
+                    .spriteOffset({x:0.35*token.document.width,
+                    y:0.1*token.document.width}, {gridUnits:true})
+
+                    .animateProperty("sprite", "rotation", { from: 15, to: -15,
+                    duration: 300, ease: "easeInOutBack"})
+
+                    .animateProperty("sprite", "rotation", { from: 0, to: 30,
+                    duration: 250, delay: 200, ease: "easeOutBack"})
+
+                    .persist()
+
+                    .zeroSpriteRotation()
+
+                    .playIf(() => {
+
+                    return lightSource == "torch";
+
+                    })
+
+
+                    .effect()
+
+                    .delay(250)
+
+                    .name(`${token.document.name} ${lightSource}`)
+
+                    .file("jb2a.flames.01.orange")
+
+                    .atLocation(token)
+
+                    .attachTo(token, {followRotation: true, local: true})
+
+                    .scaleToObject(1, {considerTokenScale: true})
+
+                    .spriteOffset({x:0.5*token.document.width,
+                    y:-0.05*token.document.width}, {gridUnits:true})
+
+                    .persist()
+
+                    .spriteRotation(45)
+
+                    .zIndex(0.1)
+
+                    .waitUntilFinished(-500)
+
+                    .playIf(() => {
+
+                    return lightSource == "torch";
+
+                    })
+
+
+                    .effect()
+
+                    .name(`${token.document.name} ${lightSource}`)
+
+                    .file(file)
+
+                    .atLocation(token)
+
+                    .attachTo(token, {followRotation: true, local: true})
+
+                    .scaleToObject(1, {considerTokenScale: true})
+
+                    .scaleIn(0, 500, {ease: "easeOutElastic"})
+
+                    .scaleOut(0, 250, {ease: "easeOutCubic"})
+
+                    .spriteOffset({x:0.35*token.document.width,
+                    y:0.1*token.document.width}, {gridUnits:true})
+
+                    .animateProperty("sprite", "rotation", { from: 15, to: -15,
+                    duration: 300, ease: "easeInOutBack"})
+
+                    .animateProperty("sprite", "rotation", { from: 0, to: 30,
+                    duration: 250, delay: 200, ease: "easeOutBack"})
+
+                    .loopProperty("sprite", "rotation", { from: 3, to: -3,
+                    duration: 1500, ease: "easeOutQuad", pingPong: true })
+
+                    .persist()
+
+                    .zeroSpriteRotation()
+
+                    .waitUntilFinished(-500)
+
+                    .playIf(() => {
+
+                    return lightSource == "lantern";
+
+                    })
+
+
+                    .thenDo(function(){
+
+                    var light = {dim: 0, bright: 0};
+
+                    token.document.update({light});
+
+
+                    Sequencer.EffectManager.endEffects({ name:
+                    `${token.document.name} ${lightSource}`, object: token });
+
+                    })
+
+
+                    .play()
+
+
+                    //Define token light options
+
+                    var light = {dim: 30, bright: 15, alpha:0.25, luminosity:
+                    0.5, color: "#ffb433", animation: {type: "torch", speed: 4,
+                    intensity: 4},attenuation: 0.75, contrast:0.15,
+                    shadows:0.2,};
+
+
+                    await token.document.update({light});
+
+
+                    } else {
+
+
+                    await Sequencer.EffectManager.endEffects({ name:
+                    `${token.document.name} ${lightSource}`, object: token });
+                        
+                    var light = {dim: 0, bright: 0};
+
+                    await token.document.update({light});
+
+                    }
+                  author: roRDywD19pu2VxlC
+                  _id: null
+                  img: icons/svg/dice-target.svg
+                  folder: null
+                  sort: 0
+                  ownership:
+                    default: 0
+                  flags: {}
+                  _stats:
+                    systemId: null
+                    systemVersion: null
+                    coreVersion: null
+                    createdTime: null
+                    modifiedTime: null
+                    lastModifiedBy: null
+              LocknKey:
+                IDKeysFlag: ''
+                RemoveKeyonUseFlag: false
+                LPFormulaFlag: ''
+                LPFormulaOverrideFlag: false
+                LBFormulaFlag: ''
+                LBFormulaOverrideFlag: false
+                ReplacementItemFlag: ''
+              autoanimations:
+                id: 2a658493-9f45-45d6-b2fb-b01e64ea70e2
+                label: Torch
+                levels3d:
+                  type: explosion
+                  data:
+                    color01: '#FFFFFF'
+                    color02: '#FFFFFF'
+                    spritePath: modules/levels-3d-preview/assets/particles/dust.png
+                  sound:
+                    enable: false
+                  secondary:
+                    enable: false
+                    data:
+                      color01: '#FFFFFF'
+                      color02: '#FFFFFF'
+                      spritePath: modules/levels-3d-preview/assets/particles/dust.png
+                macro:
+                  enable: false
+                meleeSwitch:
+                  video:
+                    dbSection: range
+                    menuType: weapon
+                    animation: arrow
+                    variant: regular
+                    color: regular
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                  options:
+                    detect: automatic
+                    range: 2
+                    returning: false
+                    switchType: 'on'
+                menu: melee
+                primary:
+                  video:
+                    dbSection: melee
+                    menuType: weapon
+                    animation: club
+                    variant: '01'
+                    color: white
+                    enableCustom: false
+                    customPath: ''
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                  options:
+                    contrast: 0
+                    delay: 0
+                    elevation: 1000
+                    isWait: false
+                    opacity: 1
+                    playbackRate: 1
+                    repeat: 1
+                    repeatDelay: 250
+                    saturate: 0
+                    size: 1
+                    tint: false
+                    tintColor: '#FFFFFF'
+                    zIndex: 1
+                secondary:
+                  enable: false
+                  video:
+                    dbSection: static
+                    menuType: spell
+                    animation: curewounds
+                    variant: '01'
+                    color: blue
+                    enableCustom: false
+                    customPath: ''
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                  options:
+                    addTokenWidth: false
+                    anchor: '0.5'
+                    contrast: 0
+                    delay: 0
+                    elevation: 1000
+                    fadeIn: 250
+                    fadeOut: 500
+                    isMasked: false
+                    isRadius: true
+                    isWait: false
+                    opacity: 1
+                    repeat: 1
+                    repeatDelay: 250
+                    saturate: 0
+                    size: 1.5
+                    tint: false
+                    tintColor: '#FFFFFF'
+                    zIndex: 1
+                soundOnly:
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                source:
+                  enable: false
+                  video:
+                    dbSection: static
+                    menuType: spell
+                    animation: curewounds
+                    variant: '01'
+                    color: blue
+                    enableCustom: false
+                    customPath: ''
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                  options:
+                    addTokenWidth: false
+                    anchor: '0.5'
+                    contrast: 0
+                    delay: 0
+                    elevation: 1000
+                    fadeIn: 250
+                    fadeOut: 500
+                    isMasked: false
+                    isRadius: false
+                    isWait: true
+                    opacity: 1
+                    repeat: 1
+                    repeatDelay: 250
+                    saturate: 0
+                    size: 1
+                    tint: false
+                    tintColor: '#FFFFFF'
+                    zIndex: 1
+                target:
+                  enable: false
+                  video:
+                    dbSection: static
+                    menuType: spell
+                    animation: curewounds
+                    variant: '01'
+                    color: blue
+                    enableCustom: false
+                    customPath: ''
+                  sound:
+                    enable: false
+                    delay: 0
+                    repeat: 1
+                    repeatDelay: 250
+                    startTime: 0
+                    volume: 0.75
+                  options:
+                    addTokenWidth: false
+                    anchor: '0.5'
+                    contrast: 0
+                    delay: 0
+                    elevation: 1000
+                    fadeIn: 250
+                    fadeOut: 500
+                    isMasked: false
+                    isRadius: false
+                    opacity: 1
+                    persistent: false
+                    repeat: 1
+                    repeatDelay: 250
+                    saturate: 0
+                    size: 1
+                    tint: false
+                    tintColor: '#FFFFFF'
+                    unbindAlpha: false
+                    unbindVisibility: false
+                    zIndex: 1
+                isEnabled: false
+                isCustomized: false
+                fromAmmo: false
+                version: 5
+              universalAnimations:
+                override: neverPlay
+              dnd5e:
+                dependents:
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.U8jylmBCxyff1JBb
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.Zg3modgEubOxQL0a
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.7JJFjRKufqGRUtdF
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.iMygsZC6aJV9mkIy
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.FVrEysKFv3gY20TH
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.9cpxRdIyl2Ac6Xl7
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.kTZA9LbmFuGaDK9A
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.1WhDoIjES4ZQG1Cz
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.w6KANmOtfIvo91ae
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.GpVRI5gDZM2Mpu8R
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.oYZVtkxjWXQqOSBa
+                  - uuid: Actor.1xFtQVMnMyuFm2w2.ActiveEffect.gji1f2q2zLmn37Wm
+              monks-enhanced-journal:
+                quantity: 15
+                price: 1 cb
+                hide: false
+                lock: false
+                parentId: xibB0uIlIOlW08kn
+                cost: 1 cb
+                consumable: false
+            effects:
+              - origin: Compendium.world.gps-items.Item.J1QdH4gUd2indqDM
+                duration:
+                  rounds: null
+                  startTime: null
+                  seconds: 3600
+                  combat: null
+                  turns: null
+                  startRound: null
+                  startTurn: null
+                disabled: false
+                name: Torch
+                img: icons/sundries/lights/torch-white.webp
+                _id: 5VAFY9cQ24smiUa5
+                type: base
+                system: {}
+                changes:
+                  - key: macro.itemMacro
+                    mode: 0
+                    value: ''
+                    priority: 20
+                description: ''
+                tint: '#ffffff'
+                transfer: false
+                statuses: []
+                sort: 0
+                flags:
+                  dae:
+                    disableIncapacitated: false
+                    selfTarget: false
+                    selfTargetAlways: true
+                    dontApply: false
+                    stackable: noneName
+                    showIcon: false
+                    durationExpression: ''
+                    macroRepeat: none
+                    specialDuration: []
+                  ActiveAuras:
+                    isAura: false
+                    aura: None
+                    nameOverride: ''
+                    radius: ''
+                    alignment: ''
+                    type: ''
+                    customCheck: ''
+                    ignoreSelf: false
+                    height: false
+                    hidden: false
+                    displayTemp: false
+                    hostile: false
+                    onlyOnce: false
+                    wallsBlock: system
+                _stats:
+                  compendiumSource: null
+                  duplicateSource: null
+                  coreVersion: '12.331'
+                  systemId: dnd5e
+                  systemVersion: 3.3.1
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+            img: icons/sundries/lights/torch-white.webp
+            folder: Odle0eG1kGbV13zL
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              coreVersion: '12.331'
+              createdTime: 1695068367576
+              modifiedTime: 1726373069904
+              lastModifiedBy: jM4h8qpyxwTpfNli
+              compendiumSource: null
+              duplicateSource: null
+            _id: UKCU2Rs17Nqqujar
+            sort: 0
+        twentyfour: true
+        opening: 480
+        closing: 1140
+        pagetype: shop
+        img: modules/monks-enhanced-journal/assets/shop.png
+    _id: iIT0h3n3uVPvDKYB
+    system:
+      price:
+        denomination: ct
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      jM4h8qpyxwTpfNli: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.346'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!bNqfAM16RittbRUU.iIT0h3n3uVPvDKYB'
+sort: 1600000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744078993923
+  modifiedTime: 1744078993923
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+categories: []
+_key: '!journal!bNqfAM16RittbRUU'

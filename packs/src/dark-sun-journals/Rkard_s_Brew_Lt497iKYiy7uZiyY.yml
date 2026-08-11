@@ -1,0 +1,1779 @@
+folder: uIHR1MRFs7M6MyPL
+name: Rkard's Brew
+flags:
+  monks-enhanced-journal:
+    pagetype: shop
+    img: modules/monks-enhanced-journal/assets/shop.png
+  scene-packer:
+    hash: 8d73636b2d7e7595428739a7c87238ac9a4f4006
+_id: Lt497iKYiy7uZiyY
+pages:
+  - type: text
+    name: Rkard's Brew
+    flags:
+      monks-enhanced-journal:
+        type: shop
+        _lasttab: entry-details
+        shoptype: Tavern
+        location: Kled
+        state: closed
+        autoopen: true
+        purchasing: free
+        selling: locked
+        jM4h8qpyxwTpfNli:
+          notes: >-
+            <h3><strong>Rkard&rsquo;s Brew (Tavern)</strong></h3>
+
+            <ul>
+
+            <li><strong>Proprietor</strong>:&nbsp;<strong>Brunn</strong>, a
+            stout, jolly dwarf with a booming laugh, who prides himself on
+            making the best&nbsp;<strong>cactus
+            ale</strong>&nbsp;and&nbsp;<strong>kank mead</strong>&nbsp;in
+            Kled.</li>
+
+            <li><strong>Services/Items</strong>:
+
+            <ul>
+
+            <li><strong>Cactus Ale</strong>&nbsp;and&nbsp;<strong>Kank
+            Mead</strong>, a strong drink that has been known
+            to&nbsp;<strong>ward off the chill of desert
+            nights</strong>&nbsp;and&nbsp;<strong>boost
+            morale</strong>&nbsp;(grants&nbsp;<strong>advantage</strong>&nbsp;on&nbsp;<strong>Charisma
+            checks</strong>&nbsp;for an hour, but
+            imposes&nbsp;<strong>disadvantage</strong>&nbsp;on&nbsp;<strong>Dexterity
+            checks</strong>&nbsp;due to intoxication).</li>
+
+            <li><strong>Common Room</strong>&nbsp;where travelers can rest for a
+            few hours, though the accommodations
+            are&nbsp;<strong>sparse</strong>.</li>
+
+            <li><strong>Information Exchange</strong>: Brunn hears all
+            the&nbsp;<strong>gossip</strong>&nbsp;and&nbsp;<strong>rumors</strong>&nbsp;that
+            pass through Kled. He might share&nbsp;<strong>stories of ancient
+            dwarven spirits</strong>&nbsp;or&nbsp;<strong>legends of
+            Kemalok</strong>&nbsp;over a drink.</li>
+
+            </ul>
+
+            </li>
+
+            <li><strong>Special Interaction</strong>: Brunn is eager to
+            hear&nbsp;<strong>songs</strong>&nbsp;and&nbsp;<strong>stories</strong>&nbsp;from
+            travelers. He may offer a&nbsp;<strong>free
+            drink</strong>&nbsp;or&nbsp;<strong>room</strong>&nbsp;if the party
+            entertains the locals with a tale, song, or&nbsp;<strong>display of
+            skill</strong>.</li>
+
+            </ul>
+        appendix: false
+        scrollPos: '{".tab.description .tab-inner":0}'
+        relationships:
+          - id: 2CI6wjES5EsUVC75
+            uuid: JournalEntry.2CI6wjES5EsUVC75
+            hidden: false
+            name: Kled
+            img: >-
+              https://rime-of-the-frostmaiden.s3.amazonaws.com/maps/Dark%20Sun/kled.webp
+            type: place
+            relationship: ''
+        lastrolltable: RollTable.NRH6jz2C0yaI8sJi
+        items:
+          - name: Kumis
+            type: consumable
+            img: icons/consumables/drinks/coconut-fruit-milk.webp
+            system:
+              description:
+                value: >-
+                  A foamy fermented beverage made from sygra milk. White and
+                  slightly sour.
+                chat: ''
+              source:
+                custom: Custom D&D Drink List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 6
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 649a18eb33ca9d2821a6e05f34e031793e85d330
+              monks-enhanced-journal:
+                parentId: gbrcAS3GvXevefHT
+                price: 6 cb
+                cost: 6 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: XKoxajhqdiPnzhBL
+            folder: TjnDASryJkkk2hRB
+            sort: 1400000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.gbrcAS3GvXevefHT
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Bread
+            type: consumable
+            img: icons/consumables/grains/bread-loaf-glowing-tan.webp
+            system:
+              description:
+                value: A loaf of bread.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: e6279e97312418b8a05a537714d2899b61415bec
+              monks-enhanced-journal:
+                parentId: hjqbcoKhS2Pk3jp9
+                price: 1 cb
+                cost: 1 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: 1aN2rBSq8FsHP4Vz
+            folder: TjnDASryJkkk2hRB
+            sort: 700000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.hjqbcoKhS2Pk3jp9
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Wine, cup
+            type: consumable
+            img: icons/consumables/drinks/wine-amphora-clay-gray.webp
+            system:
+              description:
+                value: A cup of wine.
+                chat: ''
+              source:
+                custom: Custom D&D Drink List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 5
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 2cc6200c9ae96b53bc1d3af0cb2b6955237c8720
+              monks-enhanced-journal:
+                parentId: eUCckUnbTb8n7cUi
+                price: 5 cb
+                cost: 5 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: hVh0h7jiUMvlNhdZ
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.eUCckUnbTb8n7cUi
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Berril Moss
+            type: consumable
+            img: icons/consumables/plants/fern-sprig-stem-leaf-herb-green.webp
+            system:
+              description:
+                value: >-
+                  A blue-green moss that often covers the floor of forests. When
+                  dried it is edible and tastes like dried tea leaves.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 92eca50e535c057ad8e19a8e6db0249501e542d9
+              monks-enhanced-journal:
+                parentId: 6aPLSYuxJ5uO1SnJ
+                price: 2 cb
+                cost: 2 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: UiSb7budYxhaMJeK
+            folder: TjnDASryJkkk2hRB
+            sort: 100000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.6aPLSYuxJ5uO1SnJ
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Figs
+            type: consumable
+            img: icons/consumables/plants/fern-stem-curved-green.webp
+            system:
+              description:
+                value: Sweet, dried figs.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: bf1556a5f66301ec0366fe862176eb05d9585c07
+              monks-enhanced-journal:
+                parentId: h69uxvRSH31dI67P
+                price: 3 cb
+                cost: 3 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: 7KxotGldYBOF7WJl
+            folder: TjnDASryJkkk2hRB
+            sort: 800000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.h69uxvRSH31dI67P
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Teff grain
+            type: consumable
+            img: icons/consumables/grains/sack-rice-open-brown.webp
+            system:
+              description:
+                value: A cereal grass cultivated for its small grain.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: d44f8b2982e2a26e5ee75a3ed43a2b3d6b29171a
+              monks-enhanced-journal:
+                parentId: DCtifjwt6Wy8qUaA
+                price: 2 cb
+                cost: 2 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: UBebpl32EjWhlUej
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.DCtifjwt6Wy8qUaA
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Rations (15 days)
+            type: consumable
+            img: icons/consumables/food/preserves-jam-jelly-jar-brown-red.webp
+            system:
+              description:
+                value: >-
+                  All the dried food an adult Medium sized creature needs for 15
+                  days. Contains dried meat, vegetable, and bread.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 6
+                denomination: ct
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 13fbbc966352e38d50c7fdae93635de62e43e663
+              monks-enhanced-journal:
+                parentId: bSUC6nH0v9AFbl0Y
+                price: 6 ct
+                cost: 6 ct
+                quantity: 2
+                consumable: true
+                lock: false
+                hide: false
+            _id: kjNSxWUpKTy51AnU
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.bSUC6nH0v9AFbl0Y
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Kank Mead
+            type: consumable
+            img: >-
+              icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp
+            system:
+              description:
+                value: >-
+                  A green fermented alcoholic beverage made from kank honey. Can
+                  be spiced for exotic flavors.
+                chat: ''
+              source:
+                custom: Custom D&D Drink List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: e00c20142af8afcd7804f8f0a4aca54bb06a3426
+              monks-enhanced-journal:
+                parentId: s79SkRLE5sOv3CVr
+                price: 2 cb
+                cost: 2 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: QpMxEwprIH567Uks
+            folder: TjnDASryJkkk2hRB
+            sort: 1100000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.s79SkRLE5sOv3CVr
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Agave Syrup
+            type: consumable
+            img: icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp
+            system:
+              description:
+                value: A sweet syrup derived from agave plants.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 4
+                denomination: cb
+              attunement: ''
+              equipped: false
+              rarity: common
+              identified: true
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: 1
+                max: '1'
+                per: charges
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              type:
+                value: food
+                subtype: ''
+              attack:
+                bonus: ''
+                flat: false
+              unidentified:
+                description: ''
+              container: null
+              attuned: false
+              cover: null
+              crewed: false
+              enchantment: null
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: f7847f84cc4d1d652851cad06a3668d6a1078150
+              LocknKey:
+                PickPocketDCFlag: '0'
+              rest-recovery:
+                data:
+                  consumable:
+                    enabled: true
+                    dayWorth: true
+                    type: food
+              magicitems:
+                enabled: false
+                default: ''
+                equipped: false
+                attuned: false
+                charges: '0'
+                chargeType: c1
+                destroy: false
+                destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+                rechargeable: false
+                recharge: '0'
+                rechargeType: t1
+                rechargeUnit: r1
+                sorting: l
+              midiProperties:
+                confirmTargets: default
+                autoFailFriendly: false
+                autoSaveFriendly: false
+                critOther: false
+                offHandWeapon: false
+                magicdam: false
+                magiceffect: false
+                noConcentrationCheck: false
+                toggleEffect: false
+                ignoreTotalCover: false
+                idr: false
+                idi: false
+                idv: false
+                ida: false
+              midi-qol:
+                rollAttackPerTarget: default
+                itemCondition: ''
+                effectCondition: ''
+              monks-enhanced-journal:
+                parentId: MDPaXKzpStZcYccp
+                price: 4 cb
+                cost: 4 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: i2x76wh2anerCLDE
+            folder: TjnDASryJkkk2hRB
+            sort: 400000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.MDPaXKzpStZcYccp
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Pulque
+            type: consumable
+            img: icons/consumables/drinks/coconut-fruit-milk.webp
+            system:
+              description:
+                value: >-
+                  A thick fermented beverage made from cactus juice. Milky white
+                  and sour tasting.
+                chat: ''
+              source:
+                custom: Custom D&D Drink List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 110bf45865cdd6f10f0318e79cba82a0778000a9
+              monks-enhanced-journal:
+                parentId: iQM3XFBc4giP0yru
+                price: 3 cb
+                cost: 3 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: 11jDVtcTHRDrUDvy
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.iQM3XFBc4giP0yru
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Betel Nuts
+            type: consumable
+            img: icons/consumables/nuts/nut-spiked-shell.webp
+            system:
+              description:
+                value: >-
+                  A soft-shelled nut with a soft blue interior kernel. Betel
+                  nuts release a sweet juice when chewed that stains the teeth
+                  blue, but upset the stomach when eaten.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: ct
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 7d538e6004a443d98304dbb084e7b25b7d3a1f38
+              monks-enhanced-journal:
+                parentId: YWmtk2vruu79fmgW
+                price: 3 ct
+                cost: 3 ct
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: Jwrg4IaSYrEHETQy
+            folder: TjnDASryJkkk2hRB
+            sort: 300000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.YWmtk2vruu79fmgW
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Rock Cactus
+            type: consumable
+            img: icons/consumables/plants/herb-bunch-dried-leaf-green.webp
+            system:
+              description:
+                value: >-
+                  A spherical plant that is edible if peeled, having a taste and
+                  texture similar to apples. Yields up to a pound of edible
+                  flesh and 4 pints of fluid.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 3
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 1cd3b7be77a37f4707259f08cb697a6ece09e652
+              monks-enhanced-journal:
+                parentId: C2ZB1zpwpFD6UVWc
+                price: 3 cb
+                cost: 3 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: vdy6F9mVKRsxONYb
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.C2ZB1zpwpFD6UVWc
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Maize
+            type: consumable
+            img: icons/consumables/vegetable/corn-cob-green-yellow.webp
+            system:
+              description:
+                value: Corn or maize kernels.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: ecffd44fed9a06aebd1009d858e43456cdf1c43f
+              monks-enhanced-journal:
+                parentId: NmiQRk7BQvAMMHHg
+                price: 1 cb
+                cost: 1 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: asBcjLzgV6Zf4Gfp
+            folder: TjnDASryJkkk2hRB
+            sort: 150000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.NmiQRk7BQvAMMHHg
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Water, mug
+            type: consumable
+            img: icons/consumables/drinks/alcohol-beer-mug-yellow.webp
+            system:
+              description:
+                value: A mug of water.
+                chat: ''
+              source:
+                custom: Custom D&D Drink List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 1
+                denomination: cb
+              type:
+                value: drink
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 4cd7344216a9e59ad34359388bd6f1677487adb1
+              monks-enhanced-journal:
+                parentId: GZN8qoyUWwflT8v0
+                price: 1 cb
+                cost: 1 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: ZZCyae9dz3mstceM
+            folder: TjnDASryJkkk2hRB
+            sort: 125000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.GZN8qoyUWwflT8v0
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+          - name: Insects
+            type: consumable
+            img: icons/creatures/invertebrates/centipede-brown.webp
+            system:
+              description:
+                value: Edible insects.
+                chat: ''
+              source:
+                custom: Custom D&D Food List
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 2
+                denomination: cb
+              type:
+                value: food
+                subtype: ''
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              activation:
+                type: ''
+                cost: null
+                condition: ''
+              duration:
+                value: ''
+                units: ''
+              cover: null
+              crewed: false
+              target:
+                value: ''
+                width: null
+                units: ''
+                type: ''
+                prompt: true
+              range:
+                value: null
+                long: null
+                units: ''
+              uses:
+                value: null
+                max: ''
+                per: null
+                recovery: ''
+                prompt: true
+                autoDestroy: false
+              consume:
+                type: ''
+                target: null
+                amount: null
+                scale: false
+              ability: null
+              actionType: null
+              attack:
+                bonus: ''
+                flat: false
+              chatFlavor: ''
+              critical:
+                threshold: null
+                damage: ''
+              damage:
+                parts: []
+                versatile: ''
+              enchantment: null
+              formula: ''
+              save:
+                ability: ''
+                dc: null
+                scaling: spell
+              summons: null
+              magicalBonus: null
+              properties: []
+            effects: []
+            flags:
+              scene-packer:
+                hash: 0eed40eedf5749ea2500c9b7eaa8c15e71f11282
+              monks-enhanced-journal:
+                parentId: Zeq7sLiGhTrvsavc
+                price: 2 cb
+                cost: 2 cb
+                quantity: null
+                consumable: true
+                lock: false
+                hide: false
+            _id: 9e8zLQuhK1D1ACE8
+            folder: TjnDASryJkkk2hRB
+            sort: 1300000
+            ownership:
+              default: 0
+              jM4h8qpyxwTpfNli: 3
+            _stats:
+              compendiumSource: Item.Zeq7sLiGhTrvsavc
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 3.3.1
+              createdTime: 1725400869393
+              modifiedTime: 1725400869393
+              lastModifiedBy: jM4h8qpyxwTpfNli
+        twentyfour: true
+        opening: 600
+        closing: 1440
+        pagetype: shop
+        img: modules/monks-enhanced-journal/assets/shop.png
+    _id: NI1CUv68B5baSAzQ
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: 2
+      jM4h8qpyxwTpfNli: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.346'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!Lt497iKYiy7uZiyY.NI1CUv68B5baSAzQ'
+sort: 1200000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744078993923
+  modifiedTime: 1744078993923
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+categories: []
+_key: '!journal!Lt497iKYiy7uZiyY'

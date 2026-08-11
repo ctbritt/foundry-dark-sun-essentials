@@ -1,0 +1,598 @@
+folder: UdjCxAxHR7Ue8rtp
+name: The Plantation Patrol
+flags:
+  monks-enhanced-journal:
+    pagetype: encounter
+    img: modules/monks-enhanced-journal/assets/encounter.png
+_id: tdQwOdI8jVQ5Emqj
+pages:
+  - type: text
+    name: The Plantation Patrol
+    flags:
+      monks-enhanced-journal:
+        type: encounter
+        _lasttab: description
+        actors:
+          5yrv29VjpXdvaRCS:
+            id: 5yrv29VjpXdvaRCS
+            uuid: Actor.5yrv29VjpXdvaRCS
+            img: >-
+              https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/tokens/FA_tokens/FA_Tokens_Webp/Adversaries/Desert_Guards/Desert_Guard_Archer_At-Ease_01.webp
+            name: Beryl House Elite Guard
+            quantity: '6'
+            location: ''
+            hidden: false
+          YW6frHjGAwVXWfMf:
+            id: YW6frHjGAwVXWfMf
+            uuid: Actor.YW6frHjGAwVXWfMf
+            img: >-
+              https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/tokens/sion.token-shareddata.ddb-monsters.webp
+            name: House Beryl Battle-Psion
+            quantity: '1'
+            location: ''
+            hidden: false
+          3E8HtY1OzFkkDaID:
+            id: 3E8HtY1OzFkkDaID
+            uuid: Actor.3E8HtY1OzFkkDaID
+            img: tokens/war_captain_kyra_beryl.avatar.webp?1750569462656
+            name: War-Captain Kyra Beryl
+            quantity: '1'
+            location: ''
+            hidden: false
+          OD63akZcZVTYHLWH:
+            id: OD63akZcZVTYHLWH
+            uuid: Actor.OD63akZcZVTYHLWH
+            img: tokens/war_trained_half_giant.avatar.webp?1750569415996
+            name: War-Trained Half-Giant
+            quantity: '2'
+            location: ''
+            hidden: false
+        currency:
+          ct: 0
+          cb: 0
+          lb: 0
+        appendix: false
+        scrollPos: >-
+          {".tab.description
+          .tab-inner":582.5,".encounter-items":0,".encounter-dcs":0}
+        items:
+          ze7RzuNakkdOdfrH:
+            _id: ze7RzuNakkdOdfrH
+            name: Ballista
+            type: weapon
+            img: icons/weapons/artillery/ballista-wood-green.webp
+            system:
+              activities:
+                qvl05ah9zjj0FRDC:
+                  _id: qvl05ah9zjj0FRDC
+                  type: attack
+                  sort: 0
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets:
+                      - type: itemUses
+                        value: '1'
+                        target: ''
+                        scaling: {}
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: any
+                      special: ''
+                    override: false
+                    prompt: true
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  attack:
+                    critical:
+                      threshold: null
+                    flat: true
+                    type:
+                      value: ''
+                      classification: ''
+                    ability: none
+                    bonus: '6'
+                  damage:
+                    critical:
+                      bonus: ''
+                    includeBase: true
+                    parts: []
+                  name: Ballista Bolt
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: ''
+                  attackMode: oneHanded
+                  ammunition: ''
+                  otherActivityUuid: ''
+                L6x7nfUDCplYJ1Np:
+                  type: utility
+                  name: Load
+                  _id: L6x7nfUDCplYJ1Np
+                  sort: -200000
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                    condition: ''
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets:
+                      - type: itemUses
+                        value: '-1'
+                        target: ''
+                        scaling: {}
+                  description:
+                    chatFlavor: ''
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                      type: ''
+                    affects:
+                      choice: false
+                      count: ''
+                      type: ''
+                    override: false
+                    prompt: true
+                  uses:
+                    spent: 0
+                    recovery: []
+                    max: ''
+                  roll:
+                    prompt: false
+                    visible: false
+                    name: ''
+                    formula: ''
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+                ljGomGOD9zEc3QP7:
+                  type: utility
+                  name: Aim
+                  _id: ljGomGOD9zEc3QP7
+                  sort: -100000
+                  activation:
+                    type: action
+                    value: null
+                    override: false
+                  consumption:
+                    scaling:
+                      allowed: false
+                    spellSlot: true
+                    targets: []
+                  description: {}
+                  duration:
+                    units: inst
+                    concentration: false
+                    override: false
+                  effects: []
+                  range:
+                    override: false
+                    units: self
+                  target:
+                    template:
+                      contiguous: false
+                      units: ft
+                    affects:
+                      choice: false
+                    override: false
+                    prompt: true
+                  uses:
+                    spent: 0
+                    recovery: []
+                  roll:
+                    prompt: false
+                    visible: false
+                  useConditionText: ''
+                  useConditionReason: ''
+                  effectConditionText: ''
+                  macroData:
+                    name: ''
+                    command: ''
+                  ignoreTraits:
+                    idi: false
+                    idr: false
+                    idv: false
+                    ida: false
+                  midiProperties:
+                    ignoreTraits: []
+                    triggeredActivityId: none
+                    triggeredActivityConditionText: ''
+                    triggeredActivityTargets: targets
+                    triggeredActivityRollAs: self
+                    forceDialog: false
+                    confirmTargets: default
+                    autoTargetType: any
+                    autoTargetAction: default
+                    automationOnly: false
+                    otherActivityCompatible: true
+                    identifier: ''
+                    displayActivityName: false
+                    rollMode: default
+                    chooseEffects: false
+                    toggleEffect: false
+                    ignoreFullCover: false
+                  isOverTimeFlag: false
+                  overTimeProperties:
+                    saveRemoves: true
+                    preRemoveConditionText: ''
+                    postRemoveConditionText: ''
+                  otherActivityId: none
+              uses:
+                spent: 1
+                recovery: []
+                max: '1'
+              description:
+                value: >-
+                  <p><em>Large Object</em></p><p><strong>Armor Class:</strong>
+                  15 <strong>Hit Points:</strong> 50</p><p><em><strong>Ballista
+                  Bolt (Requires Load and Aim).</strong></em> <em>Ranged Attack
+                  Roll:</em> +6, range 120/480 ft. <em>Hit:</em> 16 (3d10)
+                  Piercing damage.</p><p>A Ballista is a massive crossbow that
+                  fires heavy bolts. Loading a Ballista requires the Utilize
+                  action, and aiming it requires another Utilize action. Then a
+                  crew member can take the Ballista Bolt action.</p>
+                chat: ''
+              identifier: ballista
+              source:
+                revision: 1
+                rules: '2024'
+              identified: true
+              unidentified:
+                description: ''
+              container: null
+              quantity: 1
+              weight:
+                value: 0
+                units: lb
+              price:
+                value: 0
+                denomination: gp
+              rarity: ''
+              attunement: ''
+              attuned: false
+              equipped: false
+              armor:
+                value: 15
+              cover: null
+              crewed: false
+              hp:
+                value: 50
+                max: 50
+                dt: null
+                conditions: ''
+              type:
+                value: siege
+                baseItem: ''
+              ammunition: {}
+              damage:
+                base:
+                  number: 3
+                  denomination: 10
+                  types:
+                    - piercing
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+                  bonus: ''
+                versatile:
+                  number: null
+                  denomination: null
+                  types: []
+                  custom:
+                    enabled: false
+                  scaling:
+                    number: 1
+              magicalBonus: null
+              properties:
+                - lod
+              proficient: null
+              range:
+                value: 120
+                long: 480
+                reach: null
+                units: ft
+              mastery: ''
+            effects: []
+            folder: 0O0R2DaHzUoslB7X
+            flags:
+              dnd5e:
+                riders:
+                  activity: []
+                  effect: []
+              monks-enhanced-journal:
+                parentId: >-
+                  Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgBallista00000
+                quantity: 1
+                remaining: 1
+                price: 0 ct
+                assigned: false
+            _stats:
+              compendiumSource: null
+              duplicateSource: null
+              coreVersion: '12.331'
+              systemId: dnd5e
+              systemVersion: 4.1.1
+              createdTime: 1730821573434
+              modifiedTime: 1732644040469
+              lastModifiedBy: dnd5ebuilder0000
+            sort: 0
+            ownership:
+              default: 0
+        dcs:
+          - dc: 18
+            name: Diplomatic Resolution Skill Challenge
+            img: ''
+            attribute: skill:per
+            id: KLPLCpxKjitved61
+          - dc: 16
+            name: ''
+            img: ''
+            attribute: skill:itm
+            id: mCQwGrEMBTy4i6SL
+          - dc: 20
+            name: ''
+            img: ''
+            attribute: skill:dec
+            id: 0RdbEF5UhZEos3cc
+          - dc: 15
+            name: ''
+            img: ''
+            attribute: skill:ins
+            id: pZkoyvQyElYdISH4
+        tokens:
+          - ZXU6RLwGT3dGKaul
+          - YpRXGFJR26wOSfI8
+          - CD2wikdPccDHs3Q0
+          - rrCDBZXHfxIvZS4u
+          - C816GtwDKrXWr3ja
+          - 98Ny7tsN05kmyTqY
+          - makcBs5zPJ6C2CBw
+          - lq8djOc7KhXYa02C
+          - JnoaWPv74MS7UPBl
+          - 8KdW66Jn1h02JPss
+    _id: N0aYcJ1dQ5ntlvoA
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h1>Encounter Level: 16 (15,000 XP)</h1><p>As the party passes one of
+        the active plantation estates, they encounter not mere guards, but a
+        significant military force—evidence of just how dangerous the Tablelands
+        have become.</p><h1>Setup</h1><h1>Read aloud:</h1><div class="fvtt
+        narrative"><p>Ahead, the road passes between two massive stone pylons
+        topped with iron spikes and  warning glyphs. This isn't just an estate
+        boundary—it's a fortress. Fields of erdlu grain stretch away on both
+        sides, where work gangs labor under the watch of mounted overseers and
+        half-giant sentries. The sign reads "House Beryl War-Estate—Trespassers
+        Will Be Enslaved or Executed."</p><p>As you approach, a horn blast
+        echoes from watchtowers flanking the road. Armed figures emerge from
+        concealed positions—this is clearly a well-prepared military checkpoint,
+        not a simple guard post.</p></div><p>Read when the party comes within 60
+        feet:</p><div class="fvtt narrative"><p>A woman in ornate battle armor
+        rides forward on a heavily armored crodlu, flanked by elite soldiers
+        whose gear bears the marks of veteran campaigners. Behind them, you hear
+        the creaking of loaded ballistas.</p><p>"I am War-Captain Kyra Beryl!"
+        she calls out, her voice carrying absolute authority. "You will state
+        your business, submit to inspection, and pay the transit tax—or you will
+        not pass at all. The Free City's chaos ends at our
+        borders!"</p></div><h2><strong>Environmental
+        Factors</strong></h2><h4>@UUID[Compendium.dnd-dungeon-masters-guide.equipment.dmgBallista00000]{Ballista}
+        Emplacements (2)</h4><p><em>Large objects</em></p><p><strong>Armor
+        Class</strong> 15<br /><strong>Hit Points</strong> 50 each<br
+        /><strong>Damage Threshold</strong> 10</p><p>Each ballista is crewed by
+        2 guards and can fire once per round: <strong>Ballista Bolt.</strong>
+        <em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target.
+        <em>Hit:</em> 22 (3d10 + 6) piercing damage.</p><h4><strong>Fortified
+        Positions</strong></h4><ul><li>Guards begin behind 3/4 cover (+5
+        AC)</li><li>Half-giants positioned to flank any retreat</li><li>Psion
+        starts on elevated platform (20 feet
+        up)</li></ul><h1><strong>Tactics</strong></h1><p><strong>Round
+        1:</strong></p><ul><li>Psion casts <em>hypnotic pattern</em> to disable
+        multiple party members</li><li>Ballistas target obvious
+        spellcasters</li><li>Kyra uses Command to position guards for formation
+        fighting</li></ul><p><strong>Round 2-3:</strong></p><ul><li>Guards
+        advance in formation using pikes</li><li>Half-giants attempt to grapple
+        and isolate party members</li><li>Psion focuses on <em>counterspell</em>
+        and battlefield control</li></ul><p><strong>Round
+        4+:</strong></p><ul><li>Kyra uses legendary actions to Rally wounded
+        allies</li><li>Psion switches to <em>dominate person</em> on dangerous
+        targets</li><li>Tactical retreat if Kyra drops below 50 hit
+        points</li></ul><h1><strong>Resolution
+        Options</strong></h1><h4><strong>Diplomatic Resolution</strong>
+        <em>(Recommended)</em></h4><p><strong>Skill Challenge:</strong> 4
+        successes before 3 failures, varying DCs</p><p><strong>Possible
+        Approaches:</strong></p><p><strong>Persuasion (DC
+        18):</strong></p><ul><li>Present the letter from Kled (+2 to
+        roll)</li><li>Offer substantial payment (1,000+ gp)</li><li>Demonstrate
+        legitimate business</li><li>Success: Kyra grants passage and shares
+        strategic intelligence</li></ul><p><strong>Intimidation (DC
+        16):</strong></p><ul><li>Display epic-level magical
+        power</li><li>Reference cosmic threats you've faced</li><li>Success:
+        Kyra recognizes you as too dangerous to
+        oppose</li></ul><p><strong>Deception (DC 20):</strong></p><ul><li>Claim
+        to be envoys from another sorcerer-king</li><li>Pretend to be
+        investigating threats to all nobles</li><li>Success: Kyra provides
+        escort and detailed briefing</li></ul><p><strong>Insight (DC
+        15):</strong></p><ul><li>Recognize Kyra's fear of losing noble
+        privilege</li><li>Understand House Beryl's desperation</li><li>Success:
+        Gain advantage on subsequent social checks</li></ul><h4><strong>Combat
+        Consequences</strong></h4><p><strong>If Combat
+        Erupts:</strong></p><ul><li>This becomes a major incident affecting
+        faction relationships</li><li>Tyr's authorities will
+        investigate</li><li>Sets tone for how party handles political
+        opposition</li></ul><h3><strong>Information
+        Gained</strong></h3><p>Successful resolution reveals critical
+        intelligence:</p><p><strong>About Tyr's Military
+        Situation:</strong></p><ul><li>"The city's defenses are a joke—too many
+        factions pulling different directions"</li><li>"Rikus trains his freed
+        slaves well, but they lack discipline and proper
+        equipment"</li><li>"King Tithian has been requesting 'military
+        assessments' from all the noble houses"</li></ul><p><strong>About
+        Economic Warfare:</strong></p><ul><li>"House Vordon grows
+        desperate—they're making deals with slavers from other
+        cities"</li><li>"The iron shortage affects more than tribute—we can't
+        properly arm our forces"</li><li>"Someone's been buying up weapons and
+        supplies in bulk, but quietly"</li></ul><p><strong>About Political
+        Intelligence:</strong></p><ul><li>"Councilor Agis hasn't been seen in a
+        week—the nobles are getting nervous"</li><li>"Templars have been asking
+        about strangers with 'unusual capabilities'"</li><li>"There are rumors
+        about secret meetings in the old ziggurat"</li></ul><p><strong>About
+        External Threats:</strong></p><ul><li>"Urik's spies are
+        everywhere—Hamanu hasn't forgotten about our iron"</li><li>"Strange
+        weather omens—unseasonably cold winds from the
+        southeast"</li><li>"Merchants report seeing unusual creatures in the
+        deep
+        desert"</li></ul><h3><strong>Aftermath</strong></h3><h4><strong>Friendly
+        Resolution</strong></h4><ul><li>Kyra provides military escort to Tyr's
+        gates</li><li>Letter of introduction to Matriarch Shoshana
+        Beryl</li><li>Warning about specific threats in the city</li><li>+2
+        reputation with Noble faction</li></ul><h4><strong>Hostile
+        Resolution</strong></h4><ul><li>Immediate message sent to Tyr via
+        magical means</li><li>Enhanced security measures at all gates</li><li>-2
+        reputation with Noble faction</li><li>+1 reputation with Revolutionary
+        faction (if news spreads)</li></ul>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+      wgCeShTrqHJFBbDr: 3
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!tdQwOdI8jVQ5Emqj.N0aYcJ1dQ5ntlvoA'
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+  b3UbQ5fyLoMNX5US: 0
+  wz4bd1oICakAnQeT: 0
+  SRImIDHE8VlRntgG: 0
+  PwDzeQ16TzYvUjZW: 0
+  EJ18hUCuQWTOqQBu: 0
+  5AIrRvV57o8VMrlN: 0
+  gsSl9KKHeCVs6fF2: 0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765362674
+  modifiedTime: 1768765362674
+  lastModifiedBy: wgCeShTrqHJFBbDr
+categories: []
+_key: '!journal!tdQwOdI8jVQ5Emqj'
