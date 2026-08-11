@@ -1,0 +1,3653 @@
+name: Drake Fire (version 2)
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: DarkSunCreatureCatalog
+    hash: drake%20fire%20(version%202)_darksuncreaturecatalog
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754288106499
+  modifiedTime: 1755395748811
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: 13GFy981L6woBslb
+img: https://i.imgur.com/IqITM4X.png?1754943201655
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  abilities:
+    str:
+      value: 28
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 14
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 28
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 6
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 18
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 16
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 2
+      bonuses:
+        check: '1'
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 2
+      bonuses:
+        check: '1'
+        passive: '-15'
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: natural
+      flat: 22
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      burrow: null
+      climb: null
+      fly: null
+      swim: null
+      walk: 40
+      units: ft
+      hover: false
+    attunement:
+      max: 3
+    senses:
+      darkvision: 0
+      blindsight: 0
+      tremorsense: 0
+      truesight: 120
+      units: ft
+      special: ''
+    spellcasting: cha
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      value: 390
+      max: 390
+      temp: 0
+      tempmax: 0
+      formula: 20d20 + 180
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+  details:
+    biography:
+      value: >-
+        <p><a
+        href="https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view"
+        target="_blank" rel="noopener noreferrer">Monster Manual - Dark Sun 5th
+        Edition by Stanislav Zabielin</a> by <a
+        href="https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/"
+        target="_blank" rel="noopener noreferrer">auquid</a> and <a
+        href="https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0"
+        target="_blank" rel="noopener noreferrer">Athas Arena Forum by Nathan
+        Hasle</a></p><p>Fire drakes are the most evil and malicious of the
+        drakes. They enjoy inflicting pain for the pleasure of watching their
+        victims writhe in agony. A fire drake's greatest delight comes from
+        torturing a potential meal.</p><p>Fire drakes are large, spiny,
+        reptilian creatures with pebble like skin. Each pebble is actually a
+        scale. They are red-and-black mottled, similar in color to the dying
+        embers of a fire, and their skin is very glossy. Fire drakes have four
+        legs. The front two are smaller with very sharp claws, while the back
+        legs are longer and thicker.</p><div class="rd__b  rd__b--1"><div
+        data-roll-name-ancestor="Lair Actions" class="rd__b  rd__b--2"><h3
+        class="rd__h rd__h--2" data-title-index="1"> <span
+        class="entry-title-inner">Lair Actions</span></h3> <p>On initiative
+        count 20 (losing initiative ties), the drake takes a lair action to
+        cause one of the following effects; the drake can't use the same effect
+        two rounds in a row:</p><ul class="rd__list"><li class="rd__li
+        ">Volcanic gases form a cloud in a 20-foot-radius sphere centered on a
+        point the drake can see within 120 feet of it. The sphere spreads around
+        corners, and its area is lightly obscured. It lasts until initiative
+        count 20 on the next round. Each creature that starts its turn in the
+        cloud must succeed on a DC 13 Constitution saving throw or be poisoned
+        until the end of its turn. While poisoned in this way, a creature is
+        incapacitated.</li><li class="rd__li ">Magma erupts from a point on the
+        ground the drake can see within 120 feet of it, creating a 20-foot-high,
+        5-foot-radius geyser. Each creature in the geyser's area must make a DC
+        15 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save,
+        or half as much damage on a successful one.</li><li class="rd__li ">The
+        drake creates a wall of fire on a solid surface within 120 feet of it.
+        The wall can be up to 60 feet long, 20 feet high, and 1 foot thick, or a
+        ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick.
+        The wall is opaque and lasts until initiative count 20 on the next
+        round. When the wall appears, each creature within its area must make a
+        DC 15 Dexterity saving throw. On a failed save, a creature takes 10
+        (3d6) fire damage, or half as much damage on a successful save. Wall
+        deals 10 (3d6) fire damage to each creature that ends its turn within 5
+        feet of wall or inside the wall. A creature takes the same damage when
+        it enters the wall for the first time on a turn or ends its turn
+        there.</li></ul></div></div><div class="rd__b  rd__b--1"><div
+        data-roll-name-ancestor="Regional Effects" class="rd__b  rd__b--2"><h3
+        class="rd__h rd__h--2" data-title-index="2"> <span
+        class="entry-title-inner">Regional Effects</span></h3> <p>The region
+        containing a fire drake's lair is warped by the drake's power, which
+        creates one or more of the following effects:</p><ul
+        class="rd__list"><li class="rd__li ">Water sources within 1 mile of the
+        lair are supernaturally warm and tainted by sulfur.</li><li
+        class="rd__li ">Rocky fissures within 1 mile of the drake's lair form
+        portals to the Elemental Plane of Fire, allowing creatures of elemental
+        fire into the world to dwell nearby.</li></ul><p>If the drake dies,
+        these effects fade over the course of 1d10 days.</p></div></div>
+      public: ''
+    alignment: Unaligned
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      value: dragon
+      subtype: ''
+    habitat:
+      value:
+        - type: hill
+        - type: mountain
+        - type: underdark
+      custom: ''
+    cr: 22
+    treasure:
+      value: []
+  resources:
+    legact:
+      value: 3
+      max: 3
+    legres:
+      value: 3
+      max: 3
+    lair:
+      value: true
+      initiative: 20
+      inside: false
+  source:
+    revision: 1
+    rules: '2014'
+    custom: ''
+    book: DarkSunCreatureCatalog
+    page: ''
+    license: ''
+  traits:
+    size: grg
+    di:
+      value:
+        - fire
+        - poison
+      custom: ''
+      bypasses: []
+    dr:
+      value:
+        - psychic
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value: []
+      custom: ''
+    languages:
+      value:
+        - draconic
+      custom: ''
+      communication: {}
+    important: false
+prototypeToken:
+  name: Drake Fire (version 2)
+  displayName: 20
+  actorLink: false
+  width: 4
+  height: 4
+  texture:
+    src: >-
+      tokens/drake_fire_version_2_.token.dark-sun-creature-catalog.webp?1754943201655
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 120
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes:
+    seeAll:
+      range: 120
+      enabled: true
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 4
+items:
+  - _id: i8m6B4knsVwQFXf9
+    name: Claws
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 5 ft., one target. <i>Hit:</i> 15 (2d6 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        mhJJipBZcAJg12P5:
+          _id: mhJJipBZcAJg12P5
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: '8'
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - slashing
+                number: 2
+                denomination: 6
+                bonus: '8'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: claws
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/strike-slashes-red.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          claws_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512187
+      modifiedTime: 1754942512187
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.i8m6B4knsVwQFXf9'
+  - _id: jAxg4pM1gUZmNzxZ
+    name: Bite
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 5 ft., one target. <i>Hit:</i> 19 (2d10 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        2xSvSZtWBIB0jLhm:
+          _id: 2xSvSZtWBIB0jLhm
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: '8'
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - piercing
+                number: 2
+                denomination: 10
+                bonus: '8'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: bite
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/creatures/abilities/mouth-teeth-long-red.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          bite_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512214
+      modifiedTime: 1754942512214
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.jAxg4pM1gUZmNzxZ'
+  - _id: jfu6x96kRsPdKrYq
+    name: Tail
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 5 ft., one target. <i>Hit:</i> 17 (2d8 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        EHi7SDwazgBu8uU6:
+          _id: EHi7SDwazgBu8uU6
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: '8'
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - slashing
+                number: 2
+                denomination: 8
+                bonus: '8'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: tail
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/wounds/injury-pain-impaled-hand-blood.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          tail_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512239
+      modifiedTime: 1754942512239
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.jfu6x96kRsPdKrYq'
+  - _id: g8GfIzJDt9OdVR6s
+    name: Psychic Blast
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Drake unleashes devastating psychic
+          energy in a 60-foot cone. Each creature in that area must make an
+          [[/save ability=int dc=22]] saving throw, taking 66 (10d12) damage on
+          a failed save, or half as much damage on a successful one.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: '1'
+        recovery:
+          - formula: '5'
+            period: recharge
+            type: recoverAll
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        H5r4Ihz3UQQLA9jr:
+          _id: H5r4Ihz3UQQLA9jr
+          type: save
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: cone
+              size: '60'
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - int
+            dc:
+              calculation: ''
+              formula: '22'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - psychic
+                number: 10
+                denomination: 12
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: psychic-blast
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: modules/plutonium/media/icon/mailed-fist.svg
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          psychic%20blast%20(recharge%205%e2%80%936)_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512265
+      modifiedTime: 1754942512265
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.g8GfIzJDt9OdVR6s'
+  - _id: YZA5Ybr2Omy2mwGP
+    name: Legendary Resistance
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>If the drake fails a saving throw, it
+          can choose to succeed instead. </p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        wxMOslEpLucnCjtb:
+          _id: wxMOslEpLucnCjtb
+          type: utility
+          activation:
+            type: special
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legres.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: legendary-resistance
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/equipment/shield/kite-wooden-oak-glow.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          legendary%20resistance%20(3%2fday)_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512293
+      modifiedTime: 1754942512293
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.YZA5Ybr2Omy2mwGP'
+  - _id: LMqa7yC6gXszmM1r
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The earth drake makes three attacks:
+          one with its bite and two with its claws.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          multiattack_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512318
+      modifiedTime: 1754942512318
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.LMqa7yC6gXszmM1r'
+  - _id: B1ssmz7gRdYZnV2J
+    name: Tail
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: <div class="rd__b  rd__b--3"><p>Drake makes tail attack</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        0I3MdIoWXZFmlhjH:
+          _id: 0I3MdIoWXZFmlhjH
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: tail
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/wounds/injury-pain-impaled-hand-blood.webp
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: >-
+          tail_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512342
+      modifiedTime: 1754942512342
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.B1ssmz7gRdYZnV2J'
+  - _id: O804xgrUxa5BzCoJ
+    name: Combustion
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Drake chooses one creature or object
+          it can see within 120 feet of it. The target must make a [[/save
+          ability=con dc=22]] save. On a failed save, the target takes 1d10
+          damage and it catches on fire, taking 1d6 damage at the end of each of
+          its turns until a creature adjacent to it extinguishes the flames with
+          an action. On a successful save, the target takes half as much damage
+          and doesn't catch on fire.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        HLjnp3M51lij3IWS:
+          _id: HLjnp3M51lij3IWS
+          type: save
+          name: 'Save: 1d10 Fire Damage'
+          activation:
+            type: legendary
+            value: 2
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '2'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: '1'
+              type: creatureOrObject
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '22'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - fire
+                number: 1
+                denomination: 10
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        Wy0PPHvVMqQVHGcR:
+          _id: Wy0PPHvVMqQVHGcR
+          type: save
+          name: 'Save: 1d6 Fire Damage'
+          activation:
+            type: legendary
+            value: 2
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '2'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: '1'
+              type: creatureOrObject
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '22'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - fire
+                number: 1
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: combustion
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/fire/explosion-mushroom-nuke-orange.webp
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: >-
+          combustion_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512371
+      modifiedTime: 1754942512371
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.O804xgrUxa5BzCoJ'
+  - _id: cuNhFHCqPIer51Nl
+    name: Fire Bolt
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: <div class="rd__b  rd__b--3"><p>Drake casts fire bolt.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        FyYP1V8NTxct4aht:
+          _id: FyYP1V8NTxct4aht
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: fire-bolt
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/fire/projectile-fireball-smoke-orange.webp
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: >-
+          fire%20bolt_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512407
+      modifiedTime: 1754942512407
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.cuNhFHCqPIer51Nl'
+  - _id: plycpcKGFwPVGcun
+    name: Legendary Actions
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p></p><div class="rd__b 
+          rd__b--3"><p>The fire drake can take 3 legendary actions, choosing
+          from the options below. Only one legendary action can be used at a
+          time and only at the end of another creature's turn. The fire drake
+          regains spent legendary actions at the start of its turn.</p></div><ul
+          class="rd__list"><li class="rd__li
+          ">@UUID[.B1ssmz7gRdYZnV2J]{Tail}</li><li class="rd__li
+          ">@UUID[.O804xgrUxa5BzCoJ]{Combustion}</li><li class="rd__li
+          ">@UUID[.cuNhFHCqPIer51Nl]{Fire Bolt}</li></ul></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: legendary-actions
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/hand-sparks-glow-yellow.webp
+    flags:
+      plutonium:
+        dedupeId: legendaryActions
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512438
+      modifiedTime: 1754942512438
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.plycpcKGFwPVGcun'
+  - _id: lrSmTq0hDukq3o3D
+    name: Volcanic gases form a cloud in a 20-foot-radius ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Volcanic gases form a cloud in a
+          20-foot-radius sphere centered on a point the drake can see within 120
+          feet of it. The sphere spreads around corners, and its area is lightly
+          obscured. It lasts until initiative count 20 on the next round. Each
+          creature that starts its turn in the cloud must succeed on a DC 13
+          Constitution saving throw or be poisoned until the end of its turn.
+          While poisoned in this way, a creature is incapacitated.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        Y3T8tw8shK2dN56N:
+          _id: Y3T8tw8shK2dN56N
+          type: save
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: sphere
+              size: '20'
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '13'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: volcanic-gases-form-a-cloud-in-a-20-foot-radius-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          volcanic%20gases%20form%20a%20cloud%20in%20a%2020-foot-radius%20..._drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512476
+      modifiedTime: 1754942512476
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.lrSmTq0hDukq3o3D'
+  - _id: k9gkF1fOBQZ0edCg
+    name: Magma erupts from a point on the ground the drake ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Magma erupts from a point on the
+          ground the drake can see within 120 feet of it, creating a
+          20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area
+          must make a DC 15 Dexterity saving throw, taking 10 (3d6) fire damage
+          on a failed save, or half as much damage on a successful
+          one.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        EZivnli5lLtIMeHi:
+          _id: EZivnli5lLtIMeHi
+          type: save
+          name: ''
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '15'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - fire
+                number: 3
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: magma-erupts-from-a-point-on-the-ground-the-drake-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          magma%20erupts%20from%20a%20point%20on%20the%20ground%20the%20drake%20..._drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512512
+      modifiedTime: 1754942512512
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.k9gkF1fOBQZ0edCg'
+  - _id: lENQOHREL8UnBx1c
+    name: The drake creates a wall of fire on a solid ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake creates a wall of fire on a
+          solid surface within 120 feet of it. The wall can be up to 60 feet
+          long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet
+          in diameter, 20 feet high, and 1 foot thick. The wall is opaque and
+          lasts until initiative count 20 on the next round. When the wall
+          appears, each creature within its area must make a DC 15 Dexterity
+          saving throw. On a failed save, a creature takes 10 (3d6) fire damage,
+          or half as much damage on a successful save. Wall deals 10 (3d6) fire
+          damage to each creature that ends its turn within 5 feet of wall or
+          inside the wall. A creature takes the same damage when it enters the
+          wall for the first time on a turn or ends its turn there.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        iX2wVt3isdEAbdlS:
+          _id: iX2wVt3isdEAbdlS
+          type: save
+          name: 'Save: 3d6 Fire Damage'
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '15'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - fire
+                number: 3
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        zTGR3zMqz8gFBL2o:
+          _id: zTGR3zMqz8gFBL2o
+          type: damage
+          name: 'Damage: 3d6 Fire Damage'
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          damage:
+            critical:
+              allow: false
+            parts:
+              - types:
+                  - fire
+                number: 3
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+      identifier: the-drake-creates-a-wall-of-fire-on-a-solid-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          the%20drake%20creates%20a%20wall%20of%20fire%20on%20a%20solid%20..._drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512547
+      modifiedTime: 1754942512547
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.lENQOHREL8UnBx1c'
+  - _id: m7VZRr7yso36JPFR
+    name: Regional Effects
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The region containing a fire drake's
+          lair is warped by the drake's power, which creates one or more of the
+          following effects:</p><ul class="rd__list"><li class="rd__li ">Water
+          sources within 1 mile of the lair are supernaturally warm and tainted
+          by sulfur.</li><li class="rd__li ">Rocky fissures within 1 mile of the
+          drake's lair form portals to the Elemental Plane of Fire, allowing
+          creatures of elemental fire into the world to dwell
+          nearby.</li></ul><p>If the drake dies, these effects fade over the
+          course of 1d10 days.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: regional-effects
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/environment/wilderness/cave-entrance-mountain-blue.webp
+    flags:
+      plutonium:
+        page: monsterRegionalEffects
+        source: DarkSunCreatureCatalog
+        hash: >-
+          regional%20effects_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512581
+      modifiedTime: 1754942512581
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.m7VZRr7yso36JPFR'
+  - _id: 4yL17K1Mq07CEWh3
+    name: Flame Strike
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '275'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>A vertical column of brilliant fire
+          roars down from above. Each creature in a 10-foot-radius, 40-foot-high
+          @variantrule[Cylinder [Area of Effect]|XPHB|Cylinder] centered on a
+          point within range makes a Dexterity saving throw, taking 5d6 damage
+          and 5d6 damage on a failed save or half as much damage on a successful
+          one.</p></div><div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Using a Higher-Level Spell Slot"
+          class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+          data-title-index="1"> <span class="entry-title-inner">Using a
+          Higher-Level Spell Slot.</span></span> The Fire damage and the Radiant
+          damage increase by 1d6 for each spell slot level above
+          5.</p></div></div>
+        chat: ''
+      level: 5
+      school: evo
+      properties:
+        - vocal
+        - somatic
+        - material
+      ability: cha
+      materials:
+        value: a pinch of sulfur
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cylinder
+          size: '10'
+          width: ''
+          height: '40'
+          units: ft
+        affects:
+          count: ''
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '60'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          type: save
+          activation:
+            type: action
+            override: false
+          damage:
+            onSave: half
+            parts:
+              - custom:
+                  formula: (@item.level)d6
+                  enabled: false
+                number: 5
+                denomination: 6
+                types:
+                  - fire
+                scaling:
+                  mode: whole
+                  number: 1
+              - custom:
+                  formula: (@item.level)d6
+                  enabled: false
+                number: 5
+                denomination: 6
+                types:
+                  - radiant
+                scaling:
+                  mode: whole
+                  number: 1
+            critical:
+              allow: false
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: spellcasting
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: flame-strike
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/beam-rays-red-large.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: flame%20strike_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Cleric
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512616
+      modifiedTime: 1754942512616
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.4yL17K1Mq07CEWh3'
+  - _id: iqW7wCaunZW7EGgO
+    name: Fire Bolt
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '274'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>You hurl a mote of fire at a creature
+          or an object within range. Make a ranged spell attack against the
+          target. On a hit, the target takes 1d10 damage. A flammable object hit
+          by this spell starts @hazard[burning|XPHB] if it isn't being worn or
+          carried.</p></div><div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Cantrip Upgrade" class="rd__b 
+          rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+          class="entry-title-inner">Cantrip Upgrade.</span></span> The damage
+          increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17
+          (4d10).</p></div></div>
+        chat: ''
+      level: 0
+      school: evo
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creatureOrObject
+          choice: false
+          special: ''
+      range:
+        value: '120'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      preparation:
+        mode: always
+        prepared: true
+      activities:
+        PnMxhDvmVBZf69FK:
+          _id: PnMxhDvmVBZf69FK
+          type: attack
+          name: ''
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          attack:
+            critical: {}
+            flat: false
+            type:
+              value: ranged
+          damage:
+            critical: {}
+            includeBase: true
+            parts:
+              - types:
+                  - fire
+                number: 1
+                denomination: 10
+                bonus: ''
+                scaling:
+                  mode: whole
+                  number: 1
+                custom:
+                  enabled: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: fire-bolt
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/fire/projectile-fireball-smoke-orange.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: fire%20bolt_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Sorcerer
+          - Wizard
+          - Artificer
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512656
+      modifiedTime: 1754942512656
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.iqW7wCaunZW7EGgO'
+  - _id: pzDK4ip3LSkglezG
+    name: Wall of Fire
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '338'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>You create a wall of fire on a solid
+          surface within range. You can make the wall up to 60 feet long, 20
+          feet high, and 1 foot thick, or a ringed wall up to 20 feet in
+          diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts
+          for the duration.</p><p>When the wall appears, each creature in its
+          area makes a Dexterity saving throw, taking 5d8 damage on a failed
+          save or half as much damage on a successful one.</p><p>One side of the
+          wall, selected by you when you cast this spell, deals 5d8 damage to
+          each creature that ends its turn within 10 feet of that side or inside
+          the wall. A creature takes the same damage when it enters the wall for
+          the first time on a turn or ends its turn there. The other side of the
+          wall deals no damage.</p></div><div class="rd__b 
+          rd__b--3"><p></p><div data-roll-name-ancestor="Using a Higher-Level
+          Spell Slot" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+          data-title-index="1"> <span class="entry-title-inner">Using a
+          Higher-Level Spell Slot.</span></span> The damage increases by 1d8 for
+          each spell slot level above 4.</p></div></div>
+        chat: ''
+      level: 4
+      school: evo
+      properties:
+        - vocal
+        - somatic
+        - material
+        - concentration
+      ability: cha
+      materials:
+        value: a piece of charcoal
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '120'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: minute
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          name: Create Wall
+          type: save
+          img: icons/magic/fire/flame-burning-fence.webp
+          activation:
+            type: action
+            override: false
+          target:
+            template:
+              units: ft
+              type: wall
+              size: '60'
+              width: '1'
+              height: '20'
+              contiguous: false
+            affects:
+              type: creature
+              choice: false
+            prompt: true
+            override: false
+          damage:
+            onSave: half
+            parts:
+              - number: 5
+                denomination: 8
+                types:
+                  - fire
+                scaling:
+                  mode: whole
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: spellcasting
+          _id: dnd5eactivity000
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        dnd5eactivity001:
+          name: Create Ring
+          type: save
+          img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+          activation:
+            type: action
+            override: false
+          target:
+            template:
+              units: ft
+              type: cylinder
+              size: '10'
+              width: '1'
+              height: '20'
+              contiguous: false
+            affects:
+              type: creature
+              choice: false
+            prompt: true
+            override: false
+          damage:
+            onSave: half
+            parts:
+              - number: 5
+                denomination: 8
+                types:
+                  - fire
+                scaling:
+                  mode: whole
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: spellcasting
+          _id: dnd5eactivity001
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        dnd5eactivity002:
+          type: damage
+          img: icons/magic/fire/flame-burning-skeleton-explosion.webp
+          activation:
+            type: ''
+            override: false
+          target:
+            affects:
+              count: '1'
+              type: creature
+              choice: false
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            override: false
+          range:
+            units: ft
+            value: '10'
+            override: false
+          damage:
+            parts:
+              - number: 5
+                denomination: 8
+                types:
+                  - fire
+                scaling:
+                  mode: whole
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          _id: dnd5eactivity002
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+      identifier: wall-of-fire
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/air/fog-gas-smoke-swirling-orange.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: wall%20of%20fire_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Druid
+          - Sorcerer
+          - Wizard
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512698
+      modifiedTime: 1754942512698
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.pzDK4ip3LSkglezG'
+  - _id: IfQfkcWk96pZzBFN
+    name: Innate Spellcasting
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Innate Spellcasting" class="rd__b 
+          rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+          class="entry-title-inner">Innate Spellcasting.</span></span> The fire
+          drake's spellcasting ability is Charisma (spell save DC <span
+          class="rd__dc">18</span>). The fire drake can innately cast the
+          following spells, requiring no material components:</p><ul
+          class="rd__list rd__list-hang-notitle"><li class="rd__li 
+          rd__li-spell"><p>At will: @UUID[.iqW7wCaunZW7EGgO] (4d10),
+          @UUID[.pzDK4ip3LSkglezG]</p></li><li class="rd__li 
+          rd__li-spell"><p>1/day: @UUID[.4yL17K1Mq07CEWh3] (9th
+          level)</p></li></ul></div></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: innate-spellcasting
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/projectiles-star-purple.webp
+    flags:
+      plutonium:
+        page: monsterSpellcasting
+        source: DarkSunCreatureCatalog
+        hash: >-
+          innate%20spellcasting_drake%20fire%20(version%202)_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942512738
+      modifiedTime: 1754942512738
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!13GFy981L6woBslb.IfQfkcWk96pZzBFN'
+effects: []
+folder: u7CNFCDF4S6ZiHX7
+sort: 100000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!actors!13GFy981L6woBslb'

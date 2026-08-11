@@ -1,0 +1,121 @@
+folder: Ob8eTVGB5n6ERlyk
+name: Willowshade Oil
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Common Remedies
+      instruction: >-
+        <p>A dark blue oil can be extracted from the fruit of the Willowshade
+        plant. A creature can use its action to apply the oil to another
+        creature that has been petrified for less than 1 minute, causing the
+        petrified condition on that creature to end at the start of what would
+        be that creature’s next turn.</p><p>Ingredients: Willowshade Fruit</p>
+      currency:
+        name: gp
+        value: 25
+      required:
+        '1':
+          key:
+            id: ZZqVDTOWssrEhOEP
+            uuid: Compendium.shareddata.ddb-items.ZZqVDTOWssrEhOEP
+            img: icons/containers/bags/pouch-leather-green.webp
+            type: Item
+            name: Herbalism Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: SMab7kAjsYtxGJKJ
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.SMab7kAjsYtxGJKJ
+            img: icons/consumables/fruit/date-ripe-red-green.webp
+            type: Item
+            name: Willowshade Fruit
+            quantity: 1
+            itemType: consumable
+      output:
+        '1':
+          key:
+            id: tGBr4XDqmm18ApHY
+            uuid: Item.tGBr4XDqmm18ApHY
+            img: icons/consumables/potions/potion-bottle-corked-labeled-green.webp
+            type: Item
+            name: Willowshade Oil
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: med
+              '2':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: nat
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: d89745ca7b7f65dcf4f85d650ee412e9e2606bfa
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: willowshade-oil
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.0oq9refI0Txf6jJm
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114879986
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: 0oq9refI0Txf6jJm
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!0oq9refI0Txf6jJm'

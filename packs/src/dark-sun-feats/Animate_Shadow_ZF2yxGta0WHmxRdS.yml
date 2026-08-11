@@ -1,0 +1,340 @@
+folder: UuDTmuVueOVkEr8h
+name: Animate Shadow
+type: feat
+img: modules/talent-psionics/assets/icons/power.svg
+system:
+  activities:
+    tqwF3jJjqb2YPNBe:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '@details.level'
+      effects:
+        - _id: wuSad4m0Vo0fvTG9
+      range:
+        override: false
+        units: ft
+        special: ''
+        value: '120'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery:
+          - period: lr
+            type: recoverAll
+        max: '1'
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      _id: tqwF3jJjqb2YPNBe
+      name: Animate Shadow
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+    KLaPp1yfUbeFDJtq:
+      type: utility
+      _id: KLaPp1yfUbeFDJtq
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: Dance, Shadow, Dance! (Bonus Action)
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 1
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>As an action, make a target creature's shadow move and animate as you
+      desire in an area you can see up to 120' away. It cannot actually affect
+      anything in a material way and must remain on a surface large enough to
+      display the shadow. You may maintain this for 1 round per level and must
+      use a bonus action to make it move and animate.</p>
+    chat: ''
+  identifier: animate-shadow
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  enchant: {}
+  type:
+    value: supernaturalGift
+    subtype: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: Animate Shadow
+    img: modules/talent-psionics/assets/icons/power.svg
+    origin: Item.u8anLyqu4bpMagJH
+    transfer: false
+    _id: wuSad4m0Vo0fvTG9
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>As an action, make a target creature's shadow move and animate as you
+      desire in an area you can see up to 120' away. It cannot actually affect
+      anything in a material way and must remain on a surface large enough to
+      display the shadow. You may maintain this for 1 round per level and must
+      use a bonus action to make it move and animate.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: true
+        selfTargetAlways: true
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ZF2yxGta0WHmxRdS.wuSad4m0Vo0fvTG9'
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: a6550f546d62c8cae68c99a76c88a965ba293dc7
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    dependents:
+      - uuid: Actor.dbichHMeraDfxJUE.ActiveEffect.E4QYGeLaGKaVEv00
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  tidy5e-sheet:
+    section: Wild Talent
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1324789528
+_stats:
+  compendiumSource: Compendium.world.dark-sun-feats.Item.ZF2yxGta0WHmxRdS
+  duplicateSource: Item.4Gpp4owzgiSCU6NK
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078851905
+  modifiedTime: 1784910748585
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: ZF2yxGta0WHmxRdS
+sort: 0
+_key: '!items!ZF2yxGta0WHmxRdS'

@@ -1,0 +1,321 @@
+_id: mLdAt2hBrjV2Y7iz
+name: Shadowy Reflection
+type: feat
+effects: []
+system:
+  activities:
+    utilityShReclNe0:
+      name: Shadowy Reflection
+      type: utility
+      _id: utilityShReclNe0
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+    utilityCoShclNe1:
+      name: Control Shadow
+      type: utility
+      _id: utilityCoShclNe1
+      sort: 0
+      activation:
+        type: special
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>As a Magic action, you expel your shadow from your side and command its
+      actions. It appears in an unoccupied space within 5 feet of you and is
+      your size. The Shadowy Reflection can manipulate an object, open an
+      unlocked door or container, stow or retrieve an unattended item, or pour
+      out a vial. As a Magic action on your later turns or as part of the Bonus
+      Action when you use your Cunning Action feature, you can control your
+      shadow again. You can move your shadow up to your Speed. The shadow can’t
+      attack, active magic items, or carry more than 10 pounds. Your shadow
+      disappears when it takes any damage, is the target of any effect, or if
+      you have the Incapacitated condition.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      As a Magic action, you expel your shadow from your side and it appears in
+      an unoccupied space within 5 ft of you and is your size. The Shadowy
+      Reflection can manipulate an object, open an unlocked door or container,
+      stow or retrieve an unattended item, or pour out a vial. As a Magic action
+      on your later turns or as part of the Bonus Action when you use your
+      Cunning Action feature, you can control your shadow again and you can move
+      it up to your Speed. The shadow can’t attack, active magic items, or carry
+      more than 10 pounds. Your shadow disappears when it takes any damage, is
+      the target of any effect, or if you have the Incapacitated condition.
+
+      </div>
+  identifier: shadowy-reflection
+  source:
+    book: CtbT
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2024'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 11940264
+    type: class
+    entityTypeId: 12168134
+    is2014: false
+    is2024: true
+    legacy: false
+    originalName: Shadowy Reflection
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 100
+      featureType: 1
+      class: Rogue
+      classId: 2538037
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 2190883
+    subClass: Shadow Stalker
+    subClassId: 2538037
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Control Shadow
+        activityCount: 1
+        activityKeys:
+          - utilityCoShclNe1
+        nameMap:
+          utilityCoShclNe1:
+            - Control Shadow
+  crux:
+    trayVisibility: default
+folder: AWhxac01iXq3gHzs
+img: systems/dnd5e/icons/svg/items/feature.svg
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999576
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!mLdAt2hBrjV2Y7iz'

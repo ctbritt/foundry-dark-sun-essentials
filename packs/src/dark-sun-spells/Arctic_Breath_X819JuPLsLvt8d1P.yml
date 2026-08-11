@@ -1,0 +1,301 @@
+name: Arctic Breath
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>A line of freezing arctic wind 30 feet long and 5 feet wide blasts out
+      from you in a direction you choose. Each creature in the line must make a
+      Dexterity saving throw. On a failed save, a creature takes [[/damage 2d8
+      type=cold average=true]] damage and their movement speed is reduced by 10
+      feet until the end of their next turn. On a successful save, a creature
+      takes half as much damage and isn't slowed.</p><p><em><strong>At Higher
+      Levels.</strong></em> When you cast this spell using a spell slot of 2nd
+      level or higher, the damage increases by 1d8 for each slot level above
+      1st.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+  level: 1
+  school: con
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: self
+    special: ''
+  target:
+    affects:
+      choice: false
+      type: creature
+      special: self
+      count: ''
+    template:
+      units: ft
+      type: line
+      size: '30'
+      contiguous: false
+      width: '5'
+      count: ''
+  activities:
+    L0EqQXw7OGArlOPx:
+      type: save
+      _id: L0EqQXw7OGArlOPx
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: xSh3SYBfBvhWcR6l
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 8
+            bonus: ''
+            types:
+              - cold
+            scaling:
+              mode: whole
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: arctic-breath
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+folder: null
+_id: X819JuPLsLvt8d1P
+effects:
+  - name: Slowed
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.X819JuPLsLvt8d1P
+    transfer: false
+    _id: xSh3SYBfBvhWcR6l
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: -10
+          priority: 20
+          type: custom
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>A line of freezing arctic wind 30 feet long and 5 feet wide blasts out
+      from you in a direction you choose. Each creature in the line must make a
+      Dexterity saving throw. On a failed save, a creature takes [[/damage 2d8
+      type=cold average=true]] damage and their movement speed is reduced by 10
+      feet until the end of their next turn. On a successful save, a creature
+      takes half as much damage and isn't slowed.</p><p><em><strong>At Higher
+      Levels.</strong></em> When you cast this spell using a spell slot of 2nd
+      level or higher, the damage increases by 1d8 for each slot level above
+      1st.<br></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!X819JuPLsLvt8d1P.xSh3SYBfBvhWcR6l'
+flags:
+  scene-packer:
+    hash: c8ca3cfc19b7bd57aeee9e4e5eeea1023d7e7faf
+    sourceId: Item.X819JuPLsLvt8d1P
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1518968279
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.X819JuPLsLvt8d1P
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749609
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3800000
+_key: '!items!X819JuPLsLvt8d1P'

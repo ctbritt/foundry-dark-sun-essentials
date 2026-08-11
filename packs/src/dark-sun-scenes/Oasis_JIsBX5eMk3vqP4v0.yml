@@ -1,0 +1,942 @@
+_id: JIsBX5eMk3vqP4v0
+name: Oasis
+active: false
+navigation: true
+navOrder: 100001
+navName: ''
+thumb: worlds/dsr/assets/scenes/JIsBX5eMk3vqP4v0-thumb.webp
+width: 2100
+height: 1500
+padding: 0.25
+initial:
+  x: 1641
+  'y': 996
+  scale: 0.6
+grid:
+  size: 50
+  type: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens:
+  - _id: YTH9PbT1n1U2nMIn
+    flags:
+      LightsHUD:
+        lightspellstate: false
+        lanternconsumablestate: false
+        torchconsumablestate: false
+      token-z:
+        zIndex: 0
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e-helpers:
+        coverLevel: 1
+      monks-little-details:
+        token-combat-animation: ''
+        token-highlight: ''
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core:
+        priority: null
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+    name: child
+    displayName: 0
+    width: 1
+    height: 1
+    x: 1800
+    'y': 1350
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    hidden: false
+    actorId: null
+    actorLink: false
+    disposition: -1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    alpha: 1
+    light:
+      dim: 0
+      bright: 0
+      angle: 360
+      alpha: 1
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Adventure_1611001174287/scene/tokenimage/YTH9PbT1n1U2nMIn/child.Token.84iXhZ4wD3k2opus.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: YTH9PbT1n1U2nMIn
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!JIsBX5eMk3vqP4v0.YTH9PbT1n1U2nMIn.YTH9PbT1n1U2nMIn'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!JIsBX5eMk3vqP4v0.YTH9PbT1n1U2nMIn'
+  - _id: mGFOrf7G8zgHJKXx
+    name: Weak Giant Bat(1)
+    displayName: 20
+    actorId: null
+    actorLink: false
+    width: 2
+    height: 2
+    x: 1800
+    'y': 1450
+    elevation: 25
+    lockRotation: false
+    rotation: 180
+    alpha: 1
+    hidden: true
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    disposition: -1
+    displayBars: 40
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+      LightsHUD:
+        lightspellstate: false
+        lanternconsumablestate: false
+        torchconsumablestate: false
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/bazaar/systems/dnd5e/assets/tokens/beast/GiantBat.webp
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: false
+      range: 60
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: mGFOrf7G8zgHJKXx
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!JIsBX5eMk3vqP4v0.mGFOrf7G8zgHJKXx.mGFOrf7G8zgHJKXx'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 2
+    level: defaultLevel0000
+    _key: '!scenes.tokens!JIsBX5eMk3vqP4v0.mGFOrf7G8zgHJKXx'
+  - _id: ozSllTGd3YhmgGUl
+    name: Garmur
+    displayName: 0
+    actorId: null
+    actorLink: true
+    width: 1
+    height: 1
+    x: 1600
+    'y': 1000
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    disposition: 1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/upload/garmur.TokenjdCYSvVlzakREOIb.webp?1664137096293
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: ozSllTGd3YhmgGUl
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!JIsBX5eMk3vqP4v0.ozSllTGd3YhmgGUl.ozSllTGd3YhmgGUl'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!JIsBX5eMk3vqP4v0.ozSllTGd3YhmgGUl'
+lights:
+  - _id: rcvBEnJQscVHxbcK
+    flags: {}
+    x: 1475
+    'y': 1450
+    hidden: false
+    rotation: 0
+    config:
+      dim: 15.27
+      bright: 7.63
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.rcvBEnJQscVHxbcK'
+  - _id: XqEfCGDJyFoG3M6W
+    flags: {}
+    x: 1950
+    'y': 1775
+    hidden: false
+    rotation: 0
+    config:
+      dim: 19.78
+      bright: 9.89
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.XqEfCGDJyFoG3M6W'
+  - _id: iO5Vp0PuBsQqMmgk
+    flags: {}
+    x: 2100
+    'y': 800
+    hidden: false
+    rotation: 0
+    config:
+      dim: 14.75
+      bright: 7.37
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.iO5Vp0PuBsQqMmgk'
+  - _id: clVxrFSjqJhzLHb2
+    flags: {}
+    x: 1450
+    'y': 900
+    hidden: false
+    rotation: 0
+    config:
+      dim: 18.86
+      bright: 9.43
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.clVxrFSjqJhzLHb2'
+  - _id: HqF7h9BxTXtF7Pth
+    flags: {}
+    x: 825
+    'y': 875
+    hidden: false
+    rotation: 0
+    config:
+      dim: 16.72
+      bright: 8.36
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.HqF7h9BxTXtF7Pth'
+  - _id: H8hhfjJB4djtYXyf
+    flags: {}
+    x: 2375
+    'y': 1175
+    hidden: false
+    rotation: 0
+    config:
+      dim: 4.56
+      bright: 2.28
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.H8hhfjJB4djtYXyf'
+  - _id: kaZss5KoaIcNUq9w
+    flags: {}
+    x: 2325
+    'y': 1025
+    hidden: false
+    rotation: 0
+    config:
+      dim: 7.58
+      bright: 3.79
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.kaZss5KoaIcNUq9w'
+  - _id: Y3BvQ7k8sEX4HBz8
+    flags: {}
+    x: 2175
+    'y': 1050
+    hidden: false
+    rotation: 0
+    config:
+      dim: 12.35
+      bright: 6.17
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.Y3BvQ7k8sEX4HBz8'
+  - _id: 6grlOXgCUv3lKOLh
+    flags: {}
+    x: 1900
+    'y': 650
+    hidden: false
+    rotation: 0
+    config:
+      dim: 9.22
+      bright: 4.61
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.6grlOXgCUv3lKOLh'
+  - _id: jSlPz69P9LgyliBV
+    flags: {}
+    x: 1625
+    'y': 575
+    hidden: false
+    rotation: 0
+    config:
+      dim: 4.48
+      bright: 2.24
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.jSlPz69P9LgyliBV'
+  - _id: icBMkmGVXhgWdX0n
+    flags: {}
+    x: 950
+    'y': 1500
+    hidden: false
+    rotation: 0
+    config:
+      dim: 17.49
+      bright: 8.74
+      angle: 360
+      alpha: 0.5
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    walls: true
+    vision: false
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!JIsBX5eMk3vqP4v0.icBMkmGVXhgWdX0n'
+notes: []
+sounds: []
+tiles: []
+walls:
+  - _id: p6TpvbiJDqAk0L5X
+    c:
+      - 555
+      - 405
+      - 2640
+      - 405
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!JIsBX5eMk3vqP4v0.p6TpvbiJDqAk0L5X'
+  - _id: LG4cGEKvpousYUjk
+    c:
+      - 2640
+      - 1890
+      - 555
+      - 1890
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!JIsBX5eMk3vqP4v0.LG4cGEKvpousYUjk'
+  - _id: mEHDGwVclLtwuLOA
+    c:
+      - 2640
+      - 405
+      - 2640
+      - 1890
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!JIsBX5eMk3vqP4v0.mEHDGwVclLtwuLOA'
+  - _id: EB5pi3AWEk9Il0sX
+    c:
+      - 555
+      - 1890
+      - 555
+      - 405
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!JIsBX5eMk3vqP4v0.EB5pi3AWEk9Il0sX'
+playlist: null
+playlistSound: null
+journal: null
+weather: ''
+folder: oPwABM7H5thRZ4yj
+sort: 900000
+flags:
+  fxmaster: {}
+  token-attacher: {}
+  perfect-vision:
+    sightLimit: null
+    globalLight: default
+    _version: 1
+    revealed: false
+    daylightColor: ''
+    darknessColor: ''
+    saturation: null
+  importid: {}
+  weatherfx:
+    auto-apply: true
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+journalEntryPage: null
+_stats:
+  exportSource:
+    worldId: dsr
+    uuid: null
+    coreVersion: '10.291'
+    systemId: dnd5e
+    systemVersion: 2.1.4
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221481317
+  modifiedTime: 1755221481317
+  lastModifiedBy: Gyn3hbFo8wof84M9
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1630023738969
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!JIsBX5eMk3vqP4v0'
+templates: []

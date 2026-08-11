@@ -1,0 +1,388 @@
+name: On the Road
+_id: OvOyiqwa4FYn58ve
+active: false
+navigation: false
+navOrder: 0
+thumb: worlds/emerald-dreams/assets/scenes/OvOyiqwa4FYn58ve-thumb.webp
+width: 1540
+height: 8400
+padding: 0.25
+initial:
+  x: null
+  'y': null
+  scale: 0.5
+grid:
+  type: 1
+  size: 140
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 0
+environment:
+  darknessLevel: 0.6
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 0.9
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens: []
+lights: []
+notes: []
+sounds:
+  - path: >-
+      https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/moulinette-v2/cloud/themadcartographer/mad-picknmix8-12.1.1/audio/07theRoad/MichaelGhelfi-Day-of-Mourning-Cliff(Drones)-LOOP.ogg
+    x: 1120
+    'y': 6650
+    radius: 177.08
+    flags: {}
+    elevation: 0
+    volume: 0.18
+    easing: false
+    hidden: false
+    walls: false
+    darkness:
+      min: 0
+      max: 1
+    effects:
+      base:
+        type: ''
+        intensity: 5
+      muffled:
+        type: ''
+        intensity: 5
+    repeat: false
+    _id: ZhFrHI42DzrifbDl
+    levels: []
+    locked: false
+    _key: '!scenes.sounds!OvOyiqwa4FYn58ve.ZhFrHI42DzrifbDl'
+regions: []
+tiles:
+  - texture:
+      src: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/moulinette-v2/cloud/themadcartographer/mad-picknmix8-12.1.1/images/maps/07TheRoad/MAD_PicknMix8_07_Print_NoGrid_11x60_Moving_Roads_Desert_SCROLL.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    x: 420
+    'y': 2100
+    width: 1540
+    height: 8400
+    elevation: 0
+    sort: 0
+    occlusion:
+      alpha: 1
+      modes: []
+    _id: curVsdL3ocX5HtVe
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: 0
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tile-scroll:
+        enableScroll: true
+        scrollDirection: 270
+        enableRotate: false
+        scrollSpeed: 1.2
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+    levels: []
+    _key: '!scenes.tiles!OvOyiqwa4FYn58ve.curVsdL3ocX5HtVe'
+  - texture:
+      src: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/moulinette-v2/cloud/themadcartographer/mad-picknmix8-12.1.1/images/journal/reader.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    x: 0
+    'y': 2100
+    width: 560
+    height: 140
+    elevation: 0
+    sort: 4
+    occlusion:
+      alpha: 0
+      modes: []
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: gm
+        controlled: gm
+        trigger:
+          - ''
+          - click
+        allowpaused: true
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: 0
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions:
+          - action: openjournal
+            data:
+              entity:
+                id: JournalEntry.YXmTCeQBxACG9oCz
+                name: A Note from The MAD Cartographer
+              page: 5wix1EyswgCPSelL
+              subsection: ''
+              showto: gm
+              asimage: false
+              permission: false
+              enhanced: false
+            id: QGYy1jpZVa79ihg2
+        files: []
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+    _id: ccAaAyXEcHvfpLst
+    levels: []
+    _key: '!scenes.tiles!OvOyiqwa4FYn58ve.ccAaAyXEcHvfpLst'
+walls:
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 420
+      - 2100
+      - 1960
+      - 2100
+    _id: X1unl5qsiE2xtS7z
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    levels: []
+    _key: '!scenes.walls!OvOyiqwa4FYn58ve.X1unl5qsiE2xtS7z'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1960
+      - 2100
+      - 1960
+      - 10500
+    _id: qE6oRpzCSwKQ8tus
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    levels: []
+    _key: '!scenes.walls!OvOyiqwa4FYn58ve.qE6oRpzCSwKQ8tus'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 420
+      - 10500
+      - 420
+      - 2100
+    _id: h8pdrhBsCV5tgIHd
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    levels: []
+    _key: '!scenes.walls!OvOyiqwa4FYn58ve.h8pdrhBsCV5tgIHd'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1960
+      - 10500
+      - 420
+      - 10500
+    _id: vsU23notXrEo1UxO
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    levels: []
+    _key: '!scenes.walls!OvOyiqwa4FYn58ve.vsU23notXrEo1UxO'
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: venom_spores
+folder: pTxWUbaqgutcg2e7
+sort: 300000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+flags:
+  scene-packer:
+    hash: 1596394d19035ccacb1b7d6a2897f6297176f271
+    sourceId: Scene.qp5jcDTkbV1WQohl
+  wall-height:
+    advancedVision: true
+  about-face:
+    sceneEnabled: true
+    lockRotation: false
+    lockArrowRotation: false
+  token-attacher: {}
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+    moonlight: false
+  multi-token-edit:
+    blackBars: false
+  hexplorer:
+    enabled: false
+  perceptive:
+    SceneBrightEndFlag: 0.25
+    SceneDimEndFlag: 0.75
+  walledtemplates:
+    version: 0.9.1
+  archivist-sync:
+    archivistId: 5d5c6eab149741f28eddcf569df1d3dd
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765137260
+  modifiedTime: 1782140173400
+  lastModifiedBy: wgCeShTrqHJFBbDr
+navName: ''
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!OvOyiqwa4FYn58ve'
+templates: []

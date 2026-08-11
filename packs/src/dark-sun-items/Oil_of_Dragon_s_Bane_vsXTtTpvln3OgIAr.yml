@@ -1,0 +1,157 @@
+folder: QYufUtCWt2VF1PrB
+name: Oil of Dragon's Bane
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      instruction: >-
+        <p>This oil can coat a single weapon for 3 uses, or up to 3 pieces of
+        ammunition can be dipped in the oil for 1 use each. A dragon that takes
+        damage from a weapon or piece of ammunition covered in the oil takes an
+        additional 6d6 damage from the attack. The oil dries after 1 hour and
+        becomes inert.</p><p><em><strong>Ingredients.</strong> Dragon's Blood,
+        Wyvern Poison</em></p>
+      required:
+        '3':
+          Actor-1qGBld8MTWJJm2yX-Item-pIW9duK6zh1v8WuB:
+            id: pIW9duK6zh1v8WuB
+            uuid: Actor.1qGBld8MTWJJm2yX.Item.pIW9duK6zh1v8WuB
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      input:
+        '1':
+          Compendium-shareddata-ddb-items-Item-8hOlaBQBOMtTy76O:
+            id: 8hOlaBQBOMtTy76O
+            uuid: Compendium.shareddata.ddb-items.Item.8hOlaBQBOMtTy76O
+            img: icons/consumables/potions/bottle-round-corked-red.webp
+            type: Item
+            name: Dragon's Blood
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-iTn1mG9TdTKboCRd:
+            id: iTn1mG9TdTKboCRd
+            uuid: Compendium.shareddata.ddb-items.Item.iTn1mG9TdTKboCRd
+            img: icons/consumables/potions/potion-vial-corked-labeled-purple.webp
+            type: Item
+            name: Wyvern Poison (Injury)
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Item-y7gMe3vqKV2nR1hO:
+            id: y7gMe3vqKV2nR1hO
+            uuid: Item.y7gMe3vqKV2nR1hO
+            img: systems/dnd5e/icons/svg/items/consumable.svg
+            type: Item
+            name: Oil of Dragon's Bane
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: gp
+        value: 100
+      folder: Very Rare Poisons
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 18
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 18
+            hits: 1
+      macro: ''
+  custom-character-sheet-sections:
+    sectionName: ''
+  LocknKey:
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: 9a897cebc6326cde0af35a8e7d319eab640e86b8
+  crux:
+    trayVisibility: default
+_id: vsXTtTpvln3OgIAr
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>This oil can coat a single weapon for 3 uses, or up to 3 pieces of
+      ammunition can be dipped in the oil for 1 use each. A dragon that takes
+      damage from a weapon or piece of ammunition covered in the oil takes an
+      additional 6d6 damage from the attack. The oil dries after 1 hour and
+      becomes inert.</p><p><em><strong>Ingredients. Dragon's Blood, Wyvern
+      Poison</strong></em></p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: veryRare
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: oil-of-dragons-bane
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.vsXTtTpvln3OgIAr
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883967
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!vsXTtTpvln3OgIAr'

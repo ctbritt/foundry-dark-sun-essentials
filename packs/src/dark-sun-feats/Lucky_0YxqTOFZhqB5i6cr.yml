@@ -1,0 +1,363 @@
+name: Lucky
+system:
+  description:
+    value: >-
+      <p>You gain the following benefits.</p><p><strong>Luck Points.</strong>
+      You have a number of Luck Points equal to your Proficiency Bonus and can
+      spend the points on the benefits below. You regain your expended Luck
+      Points when you finish a Long Rest.</p><p><strong>Advantage.</strong> When
+      you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself
+      Advantage on the roll.</p><p><strong>Disadvantage.</strong> When a
+      creature rolls a d20 for an attack roll against you, you can spend 1 Luck
+      Point to impose Disadvantage on that roll.</p><section
+      id="secret-6TFD3CUAlQhYUp4d" class="secret"><p><strong>Foundry
+      Note</strong></p><p>This feature includes the appropriate number of uses
+      and scales as you level up.</p><p>The <strong>Advantage</strong> and
+      <strong>Disadvantage</strong> activities expend a use but do not enforce
+      the Advantage/Disadvantage.</p></section>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  uses:
+    max: '@prof'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+  type:
+    value: feat
+    subtype: origin
+  requirements: ''
+  prerequisites:
+    level: 1
+    repeatable: false
+  properties: []
+  activities:
+    WQz0NZF29nSpL9RC:
+      type: utility
+      _id: WQz0NZF29nSpL9RC
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      useConditionReason: ''
+      otherActivityId: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+  identifier: lucky-uses-per-day-11438
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+type: feat
+img: icons/magic/control/buff-luck-fortune-green.webp
+effects:
+  - _id: GrZ2AlujZEWCppJt
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Actor.DNO1UrgtFOtnRg52.Item.CoW4eB1z7ZLPyOLz
+    transfer: true
+    flags:
+      dae:
+        stackable: none
+        macroRepeat: none
+        specialDuration: []
+        transfer: false
+        durationExpression: ''
+        selfTarget: false
+        selfTargetAlways: false
+        disableIncapacitated: false
+        showIcon: false
+      ActiveAuras:
+        isAura: false
+        radius: ''
+        aura: None
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        hostile: false
+        onlyOnce: false
+        displayTemp: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+      core: {}
+      dnd5e-helpers:
+        rest-effect: Ignore
+    tint: '#ffffff'
+    name: Luck Point
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    img: icons/magic/control/buff-luck-fortune-green.webp
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.optional.lucky.attack.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.label
+          value: Lucky
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.save.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.check.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.count
+          value: ItemUses.Lucky
+          priority: 20
+          type: override
+    sort: 0
+    start:
+      combat: null
+      round: 260
+      time: 47180419488
+      turn: 1
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!0YxqTOFZhqB5i6cr.GrZ2AlujZEWCppJt'
+folder: ReXRK6J3hp5hQbzD
+flags:
+  core: {}
+  midi-qol:
+    onUseMacroName: ''
+    effectActivation: false
+    rollAttackPerTarget: default
+    itemCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    reactionCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    '-=onUseMacroName': null
+  betterRolls5e:
+    critRange:
+      type: String
+      value: null
+    critDamage:
+      type: String
+      value: ''
+    quickDesc:
+      type: Boolean
+      value: true
+      altValue: true
+    quickAttack:
+      type: Boolean
+      value: true
+      altValue: true
+    quickSave:
+      type: Boolean
+      value: true
+      altValue: true
+    quickDamage:
+      type: Array
+      value: []
+      altValue: []
+      context: []
+    quickProperties:
+      type: Boolean
+      value: true
+      altValue: true
+    quickCharges:
+      type: Boolean
+      value:
+        use: true
+        resource: true
+        charge: true
+      altValue:
+        use: true
+        resource: true
+        charge: true
+    quickTemplate:
+      type: Boolean
+      value: true
+      altValue: true
+    quickOther:
+      type: Boolean
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      type: Boolean
+      value: true
+      altValue: true
+    quickPrompt:
+      type: Boolean
+      value: false
+      altValue: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  cf:
+    id: temp_1xw0kahfmt1
+    color: '#000000'
+  siftoolkit:
+    SIFData:
+      ignoreDuration: false
+      texture: ''
+      useTexture: false
+      alpha: 50
+      coneOrigin: 1
+      loopAnimations: true
+      playTemplateAudio: false
+      playDamageAudio: false
+      playSaveAudio: false
+      clip: ''
+      volume: 100
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    rollOther: false
+    critOther: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    offHandWeapon: false
+    ignoreTotalCover: false
+    confirmTargets: default
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1043365738
+_stats:
+  compendiumSource: Compendium.dark-sun-essentials.dark-sun-feats.Item.0YxqTOFZhqB5i6cr
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1745339526314
+  modifiedTime: 1784910748555
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: 0YxqTOFZhqB5i6cr
+sort: 100000
+ownership:
+  default: 0
+  Zl1BOUaPLwDEujaL: 3
+_key: '!items!0YxqTOFZhqB5i6cr'

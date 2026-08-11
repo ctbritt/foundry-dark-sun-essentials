@@ -1,0 +1,125 @@
+_id: rmTLRk0yzklwQvxs
+name: Fire Resistance
+type: feat
+system:
+  description:
+    value: <p>You have resistance to fire damage.</p>
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  identifier: fire-resistance
+  activities: {}
+  advancement: []
+  enchant: {}
+  prerequisites:
+    repeatable: false
+flags:
+  ddbimporter:
+    id: 10224691
+    type: race
+    entityTypeId: 1960452172
+    dndbeyond:
+      requiredLevel: null
+      displayOrder: 8
+      featureType: 1
+      entityRaceId: 1265136
+      entityType: racial-trait
+    importId: 8cteF7yya4yvvoDi
+  obsidian:
+    source:
+      type: race
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects:
+  - name: Fire Resistance
+    transfer: true
+    img: icons/magic/fire/barrier-shield-explosion-yellow.webp
+    _id: D8hPD1bSR0LSuNuq
+    type: base
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: fire
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: <p>You have resistance to fire damage.</p>
+    origin: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.rmTLRk0yzklwQvxs
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      createdTime: 1766708463144
+      modifiedTime: 1766708520635
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!rmTLRk0yzklwQvxs.D8hPD1bSR0LSuNuq'
+img: icons/magic/fire/barrier-shield-explosion-yellow.webp
+folder: Sf7SoiqVBLhiBUf7
+sort: 500000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.A7Mbo2aVx52aCxfN
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134997467
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!rmTLRk0yzklwQvxs'

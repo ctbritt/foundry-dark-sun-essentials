@@ -1,0 +1,316 @@
+name: Psychic Daze
+type: spell
+system:
+  source:
+    custom: ''
+    book: PsPr
+    page: '84'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="Psi
+      Cost" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">Psi
+      Cost.</span></span> 3 psi points</p></div><div
+      data-roll-name-ancestor="Psychic Components" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Psychic Components.</span></span>
+      Audible</p></div><p>You briefly pause the higher brain functions of one
+      creature you can see within range. The target must make a Charisma saving
+      throw. On a failed save, the target takes 2d12 damage and is
+      &amp;Reference[condition=incapacitated] until the end of your next turn,
+      or until it takes any further damage. While
+      &amp;Reference[condition=incapacitated], its speed is halved.</p></div>
+    chat: ''
+  level: 2
+  school: ''
+  properties:
+    - psionic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+      stationary: false
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: ft
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: '3'
+    recovery: []
+    spent: 0
+  method: innate
+  activities:
+    cKI0sMzA3qxcXq9A:
+      _id: cKI0sMzA3qxcXq9A
+      type: save
+      name: ''
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: CGAeOdDGRlOGjXyA
+          level: {}
+          onSave: false
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - psychic
+            number: 2
+            denomination: 12
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+        critical:
+          allow: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      sort: 0
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  identifier: psychic-daze
+  prepared: 1
+img: icons/1vGMADBFXTa5VBqE_1769120915241.png
+flags:
+  plutonium:
+    page: spells.html
+    source: Psions Primer
+    hash: psychic%20daze_psions%20primer
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+      - Icon
+  dnd5e:
+    last:
+      cKI0sMzA3qxcXq9A:
+        damageType:
+          '0': psychic
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  crux:
+    trayVisibility: default
+  scene-packer:
+    sourceId: >-
+      Scene.X4fRmBbRU8feLLUK.Token.2xn5KUyAJT0m6O4P.Actor.tUXrNjeJLWOeIVFV.Item.vnld3YCmPfcr5tEQ
+    hash: 5739b5ea105cd328a7e9eb555203ec1602035655
+  cat:
+    automation:
+      hash: -1086142374
+effects:
+  - name: Psychic Daze
+    img: icons/1vGMADBFXTa5VBqE_1769120915241.png
+    origin: >-
+      Scene.X4fRmBbRU8feLLUK.Token.2xn5KUyAJT0m6O4P.Actor.tUXrNjeJLWOeIVFV.Item.vnld3YCmPfcr5tEQ
+    transfer: false
+    _id: CGAeOdDGRlOGjXyA
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: '*0.5'
+          phase: final
+          priority: null
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: rounds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - incapacitated
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration:
+          - None
+      core:
+        overlay: false
+      rave5e:
+        changeRows: {}
+    _stats:
+      coreVersion: '14.365'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1784911450211
+      modifiedTime: 1784911450211
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!51ZkXBRkrTkuyLQ6.CGAeOdDGRlOGjXyA'
+folder: null
+_stats:
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1784911450211
+  modifiedTime: 1784911450452
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 1950000
+_id: 51ZkXBRkrTkuyLQ6
+_key: '!items!51ZkXBRkrTkuyLQ6'

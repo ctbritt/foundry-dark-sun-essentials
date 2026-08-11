@@ -1,0 +1,560 @@
+name: Orbital Stones
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You lift three inanimate Small or Medium sized rocks or similar objects
+      from within 10 feet of you, causing them to defy gravity and slowly circle
+      you. With all three stones orbiting, you have three quarters cover. With
+      at least one stone remaining, you have half cover. </p><p>As a bonus
+      action while at least one stone remains in orbit, you can magically fling
+      a stone at target within 60 feet.<br />Make a ranged spell attack roll. On
+      hit, the target takes 3d10 bludgeoning damage and is knocked backward 5
+      feet.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  level: 4
+  school: trs
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: minute
+    value: '1'
+  range:
+    units: self
+    special: ''
+  activities:
+    R0KtRsueEGnNn6An:
+      type: utility
+      _id: R0KtRsueEGnNn6An
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: XJ78MJnK0MrUOSUx
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+    SCI8JNjSgt2Xn9qw:
+      type: attack
+      _id: SCI8JNjSgt2Xn9qw
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: true
+        value: '60'
+        units: ft
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: ''
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 10
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: ''
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      name: Fling Stone
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: orbital-stones
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: self
+      special: ''
+folder: null
+_id: N94AsEfsQx1Nlfry
+effects:
+  - name: Orbital Stones Cover
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.N94AsEfsQx1Nlfry
+    transfer: false
+    _id: XJ78MJnK0MrUOSUx
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You lift three inanimate Small or Medium sized rocks or similar objects
+      from within 10 feet of you, causing them to defy gravity and slowly circle
+      you. With all three stones orbiting, you have three quarters cover. With
+      at least one stone remaining, you have half cover.</p><p>As a bonus action
+      while at least one stone remains in orbit, you can magically fling a stone
+      at target within 60 feet.<br>Make a ranged spell attack roll. On hit, the
+      target takes 3d10 bludgeoning damage and is knocked backward 5
+      feet.<br></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: countDeleteDecrement
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!N94AsEfsQx1Nlfry.XJ78MJnK0MrUOSUx'
+flags:
+  scene-packer:
+    hash: 825054cdc2faed824a3b5ff18f8be67d04449d88
+    sourceId: Item.N94AsEfsQx1Nlfry
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    fumbleThreshold: null
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  autoanimations:
+    id: e8be115d-82c0-478d-b3f2-bdb11c5b3f7f
+    label: Orbital Stones
+    levels3d:
+      type: explosion
+      data:
+        color01: '#FFFFFF'
+        color02: '#FFFFFF'
+        spritePath: modules/levels-3d-preview/assets/particles/dust.png
+      sound:
+        enable: false
+      secondary:
+        enable: false
+        data:
+          color01: '#FFFFFF'
+          color02: '#FFFFFF'
+          spritePath: modules/levels-3d-preview/assets/particles/dust.png
+    macro:
+      enable: false
+      playWhen: '0'
+    menu: ontoken
+    primary:
+      video:
+        dbSection: static
+        menuType: shieldfx
+        animation: earth
+        variant: '01'
+        color: darkorange
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: false
+        isWait: false
+        opacity: 1
+        persistent: false
+        playbackRate: 1
+        playOn: default
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        unbindAlpha: false
+        unbindVisibility: false
+        zIndex: 1
+    secondary:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: true
+        isWait: false
+        opacity: 1
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1.5
+        tint: false
+        tintColor: '#FFFFFF'
+        zIndex: 1
+    soundOnly:
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+    source:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: false
+        isWait: true
+        opacity: 1
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        zIndex: 1
+    target:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: false
+        opacity: 1
+        persistent: false
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        unbindAlpha: false
+        unbindVisibility: false
+        zIndex: 1
+    isEnabled: true
+    isCustomized: true
+    fromAmmo: false
+    version: 5
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1159129264
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.N94AsEfsQx1Nlfry
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749587
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3400000
+_key: '!items!N94AsEfsQx1Nlfry'

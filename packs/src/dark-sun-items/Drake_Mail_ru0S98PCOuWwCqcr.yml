@@ -1,0 +1,161 @@
+name: Drake Mail
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      required:
+        '1':
+          Compendium-shareddata-ddb-items-Item-cEUxiLP0fB9f01a6:
+            id: cEUxiLP0fB9f01a6
+            uuid: Compendium.shareddata.ddb-items.Item.cEUxiLP0fB9f01a6
+            img: icons/commodities/leather/leather-patch-brown.webp
+            type: Item
+            name: Leatherworker's Tools
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      input:
+        '1':
+          Compendium-world-creature-loot-items-Item-C0MUXhE7a44HuqIa:
+            id: C0MUXhE7a44HuqIa
+            uuid: Compendium.world.creature-loot-items.Item.C0MUXhE7a44HuqIa
+            img: icons/commodities/leather/fur-pink.webp
+            type: Item
+            name: Strip of Drake Hide
+            quantity: 1
+            itemType: loot
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Compendium-world-crafted-items-Item-UzF9t8Wm5UieZRLv:
+            id: UzF9t8Wm5UieZRLv
+            uuid: Compendium.world.crafted-items.Item.UzF9t8Wm5UieZRLv
+            img: icons/equipment/chest/breastplate-scale-grey.webp
+            type: Item
+            name: Drake Scale Mail, +1
+            quantity: 1
+            itemType: equipment
+            flags:
+              beavers-crafting: {}
+          Compendium-world-crafted-items-Item-2GhbLYHhu68CVrOU:
+            id: 2GhbLYHhu68CVrOU
+            uuid: Compendium.world.crafted-items.Item.2GhbLYHhu68CVrOU
+            img: icons/equipment/chest/breastplate-metal-scaled-grey.webp
+            type: Item
+            name: Drake Splint Mail, +1
+            quantity: 1
+            itemType: equipment
+            flags:
+              beavers-crafting: {}
+          Compendium-world-crafted-items-Item-IAgdizUwfOXYrbQo:
+            id: IAgdizUwfOXYrbQo
+            uuid: Compendium.world.crafted-items.Item.IAgdizUwfOXYrbQo
+            img: icons/equipment/chest/breastplate-layered-leather-studded.webp
+            type: Item
+            name: Drake Studded Leather, +1
+            quantity: 1
+            itemType: equipment
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: ct
+        value: 7000
+      instruction: <p><br class="ProseMirror-trailingBreak"></p>
+      folder: Crafted Items
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 18
+                  uuid: Compendium.dnd5e.items.Item.PUMfwyVUbtyxgYbD
+                  tool: Compendium.dnd5e.items.PUMfwyVUbtyxgYbD
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  LocknKey:
+    PickPocketDCFlag: '0'
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  scene-packer:
+    hash: 1cac268480a93fd4dd9c7380c80eb92c2d0ce697
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p><em>Wondrous Item</em></p><p>This wondrous kite is normally kept folded
+      up into a single neat pole. You may spend 1 minute unfolding the kite into
+      its flight mode which possesses two great wings, a handle, and a leather
+      harness for the user to strap themselves into. While in flight mode, a
+      creature strapped into the harness can speak the command word to cause the
+      kite to emit a magical burst of wind behind itself that propels it, and
+      the creature strapped into it, up to 80 feet in the direction that it is
+      facing. This ability may be used up to 3 times before the kite runs out of
+      magical energy. The kite regains 1 use of this ability every 12 hours that
+      it is not used.</p><p>While this kite is airborne and horizontal, it
+      travels forward at a rate of 30 feet per round and descends at a rate of
+      10 feet per round. The user may change the direction they are flying by
+      pulling on the handle.</p><p>If the harness is strapped to something that
+      is heavier than 400 pounds, the harness will instead break when the
+      command word is spoken, and the kite will fly away.</p>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+    rules: '2024'
+    revision: 1
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 4000
+    denomination: ct
+  rarity: rare
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  identifier: drake-mail
+effects: []
+folder: w4dRxTuDeoP2P4KD
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.ru0S98PCOuWwCqcr
+  duplicateSource: Item.8yTdbfcsYvmyJhmP
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883684
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: ru0S98PCOuWwCqcr
+sort: 0
+_key: '!items!ru0S98PCOuWwCqcr'

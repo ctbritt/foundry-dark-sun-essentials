@@ -1,0 +1,196 @@
+_id: p23jBzNSfHPniUkO
+name: Veroc
+type: consumable
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2024'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--2"><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Location.</span></span> <p>Rocky
+      badlands</p><div class="rd__spc-inline-post"></div></div><div
+      class="rd__b  rd__b--3"><span class="rd__h rd__h--3" data-title-index="2">
+      <span class="entry-title-inner">Preparation.</span></span> <p>Leaves
+      brewed as tea or powdered</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="3"> <span
+      class="entry-title-inner">Description:</span></span> <p>A short, bushy
+      green plant; found mainly in the rocky badlands. Its leaves are broken off
+      and brewed as a tea then the vapour inhaled.</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Effect:</span></span> <p>Ingestion produces
+      light-headedness and enhances initiative (+1) and general good feeling.
+      Many duar tribes drink this tea socially when meeting men of other tribes,
+      because the good feeling usually overcomes some of the mistrust that may
+      occur in the wastes. Some bards of Balic use powdered <i>veroc</i> in
+      hosts' drinks, as it means that the hosts are more friendly and hopefully
+      more generous.</p><div class="rd__spc-inline-post"></div></div></div>
+    chat: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 35
+    denomination: ct
+  identified: true
+  rarity: uncommon
+  type:
+    value: ''
+    subtype: ''
+  properties:
+    - mgc
+  attunement: ''
+  uses:
+    max: ''
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  unidentified:
+    description: ''
+  container: null
+  magicalBonus: null
+  attuned: false
+  equipped: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: veroc
+img: assets/homebrew/img/veroc.webp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  plutonium:
+    page: items.html
+    source: AthasHerbs
+    hash: veroc_athasherbs
+    propDroppable: item
+    isStandardDragDrop: true
+  scene-packer:
+    hash: 69e9d3b188afbed198a46f9ec3203985e5e64cea
+  tidy5e-sheet:
+    section: Harvested Items
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: qMFp8C51hRSu6j7x
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.p23jBzNSfHPniUkO
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883551
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!p23jBzNSfHPniUkO'

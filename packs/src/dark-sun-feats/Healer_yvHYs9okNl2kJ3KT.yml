@@ -1,0 +1,439 @@
+name: Healer
+system:
+  description:
+    value: >-
+      <p>You gain the following benefits.</p><p><strong>Battle Medic.</strong>
+      If you have a
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0]{Healer’s
+      Kit}, you can expend one use of it and tend to a creature within 5 feet of
+      yourself as a Utilize action. That creature can expend one of its Hit
+      Point Dice, and you then roll that die. The creature regains a number of
+      Hit Points equal to the roll plus your Proficiency
+      Bonus.</p><p><strong>Healing Rerolls.</strong> Whenever you roll a die to
+      determine the number of Hit Points you restore with a spell or with this
+      feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and
+      you must use the new roll.</p><section class="secret"
+      id="secret-srSK4HzKeG6v6Fzn"><p><strong>Foundry Note</strong></p><p>The
+      character expending their Hit Die can reduce it on their sheet and inform
+      you of the hit die size. You can then use the <strong>Heal d6, d8, d10, or
+      d12</strong> activity to heal them. The activities automatically reroll
+      1's.</p></section>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: feat
+    subtype: origin
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities:
+    Ve0sZaru8292b8DT:
+      type: heal
+      name: Heal d6
+      _id: Ve0sZaru8292b8DT
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: 0
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: 1d6r1 + @prof
+        scaling:
+          number: 1
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+    biooHB5KK88KeR8B:
+      type: heal
+      name: Heal d8
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: 1
+        denomination: 8
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: 1d8r1 + @prof
+        scaling:
+          number: 1
+        bonus: '@prof'
+      _id: biooHB5KK88KeR8B
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+    BOkJ0gihwprbqH7R:
+      type: heal
+      name: Heal d10
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: 1
+        denomination: 10
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: 1d10r1 + @prof
+        scaling:
+          number: 1
+        bonus: '@prof'
+      _id: BOkJ0gihwprbqH7R
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+    Nf50AqSuPdNQyto9:
+      type: heal
+      name: Heal d12
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: 1
+        denomination: 12
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: 1d12r1 + @prof
+        scaling:
+          number: 1
+        bonus: '@prof'
+      _id: Nf50AqSuPdNQyto9
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+  enchant: {}
+  identifier: athas-healer
+  advancement: []
+  cover: null
+  crewed: false
+type: feat
+img: icons/magic/life/cross-worn-green.webp
+effects: []
+folder: ReXRK6J3hp5hQbzD
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  cat:
+    automation:
+      hash: -1103996415
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1745339434887
+  modifiedTime: 1784910748622
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: yvHYs9okNl2kJ3KT
+sort: 150000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+_key: '!items!yvHYs9okNl2kJ3KT'

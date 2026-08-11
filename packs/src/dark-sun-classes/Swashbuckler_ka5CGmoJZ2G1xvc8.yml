@@ -1,0 +1,102 @@
+_id: ka5CGmoJZ2G1xvc8
+name: Swashbuckler
+type: subclass
+system:
+  advancement:
+    - _id: pBnd45PWluVwQBlk
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.7yxppkRqCUNzYh5H
+            optional: false
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.1UUxz5881hd9xIbE
+            optional: false
+        optional: false
+        spell: null
+      level: 3
+      title: Features
+      value: {}
+    - _id: OGt4pRAmE7d0DI3i
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.BugI2gOHa4JLlTIt
+            optional: false
+        optional: false
+        spell: null
+      level: 9
+      title: Features
+      value: {}
+    - _id: SiTRBL2R4rKFTTGc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.VUmiTJR0YqJR2UGg
+            optional: false
+        optional: false
+        spell: null
+      level: 13
+      title: Features
+      value: {}
+    - _id: 7SZ8i4NNR43JsEpu
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.E8fn9IANvZPwe0QQ
+            optional: false
+        optional: false
+        spell: null
+      level: 17
+      title: Features
+      value: {}
+  description:
+    value: "<div class=\"ddb\"><h1>Description</h1><p>A scoundrel who uses stealth and trickery to overcome obstacles and enemies</p><p><span class=\"characters-statblock\" style=\"font-family:'Roboto Condensed';font-size:14px\"><strong>Hit Die:</strong> d8<br /><strong>Primary Ability:</strong> Dexterity<br /><strong>Saves:</strong>\_Dexterity &amp; Intelligence</span></p><h1>Class Features</h1><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.7yxppkRqCUNzYh5H]{Level 3: Fancy Footwork}</strong></p><p>When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can’t make opportunity attacks against you for the rest of your turn.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.1UUxz5881hd9xIbE]{Level 3: Rakish Audacity}</strong></p><p class=\"Core-Styles_Core-Body\">Starting at 3rd level, your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.</p><p class=\"Core-Styles_Core-Body\">You also gain an additional way to use your Sneak Attack; you don’t need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don’t have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.BugI2gOHa4JLlTIt]{Level 9: Panache}</strong></p><p class=\"Core-Styles_Core-Body\">At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature’s Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.</p><p class=\"Core-Styles_Core-Body\">If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can’t make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.</p><p class=\"Core-Styles_Core-Body\">If you succeed on the check and the creature isn’t hostile to you, it is charmed\_by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.VUmiTJR0YqJR2UGg]{Level 13: Elegant Maneuver}</strong></p><p>Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check you make during the same turn.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.E8fn9IANvZPwe0QQ]{Level 17: Master Duelist}</strong></p><p>Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can’t use this feature again until you finish a short or long rest.</p></div>"
+    chat: ''
+  identifier: athas-swashbuckler
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  classIdentifier: athas-rogue
+  spellcasting:
+    progression: none
+    preparation: {}
+flags:
+  ddbimporter:
+    class: Rogue
+    subclass: Swashbuckler
+    id: 218944516
+    classDefinitionId: 12
+    definitionId: 80
+    subclassDefinitionId: 80
+    type: class
+    ddbImg: >-
+      https://www.dndbeyond.com/avatars/10/8/636336417681318097.jpeg?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+    is2014: true
+    is2024: false
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/creatures/abilities/dragon-breath-purple.webp
+folder: f0kFZlL2QItlpDSs
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999569
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 800000
+_key: '!items!ka5CGmoJZ2G1xvc8'

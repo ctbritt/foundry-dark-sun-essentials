@@ -1,0 +1,144 @@
+folder: 3ceHqueQSXMSDgbA
+name: Urban Bounty Hunter
+type: background
+img: modules/dnd-players-handbook/assets/icons/classes/hunter.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[dex], &amp;Reference[wis],
+      &amp;Reference[cha]</p><p><strong>Skill Proficiencies:</strong> Two from
+      among &amp;Reference[dec], &amp;Reference[ins], &amp;Reference[per],
+      &amp;Reference[ste]</p><p><strong>Tool Proficiencies:</strong> Two from
+      among gaming sets, musical instruments, or thieves'
+      tools</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftAlert000000]{Alert} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled}</p><p><strong>Equipment:</strong>
+      Any set of clothes and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 20 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> A hunter of men who routinely interacts with
+      both criminal subculture and templars, maintaining contacts in both
+      areas.</p>
+    chat: ''
+  identifier: athas-urban-bounty-hunter
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '287'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: 4wJxmp7MQ4ugFNKI
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: iVw8LtJDSRnyyqXj
+      group: ''
+      sort: 200000
+    - _id: HOeTxlaoMj0GvY0S
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: QkFU6NuCps6IATAg
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - con
+          - int
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          dex: 2
+          wis: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: rAAP0DdjlbiVcCIj
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:ins
+              - skills:per
+              - skills:ste
+          - count: 2
+            pool:
+              - tool:game:*
+              - tool:music:*
+              - tool:thief
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: YtWvRNqaydXgmscZ
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftAlert000000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '20'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.BVfN7SQ3EKUP4ek6
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: BVfN7SQ3EKUP4ek6
+sort: 274805
+_key: '!items!BVfN7SQ3EKUP4ek6'

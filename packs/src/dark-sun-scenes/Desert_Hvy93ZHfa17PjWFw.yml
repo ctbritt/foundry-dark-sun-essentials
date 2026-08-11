@@ -1,0 +1,3856 @@
+name: Desert
+_id: Hvy93ZHfa17PjWFw
+navigation: false
+navName: Crash Site
+width: 4000
+height: 3000
+padding: 0.25
+initial:
+  x: 3415
+  'y': 2136
+  scale: 0.37
+grid:
+  type: 0
+  size: 100
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens:
+  - name: Kaine
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/_captain_kaine_strongjaw.token.webp?1721772058363
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+        LightLevelFlag: 2
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 32.44044543467306
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#ff3700'
+        background: '#f4a460'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 3457
+    'y': 1127
+    hidden: false
+    elevation: 0
+    _id: QP5fIRPyPwOaZj3G
+    delta:
+      _id: 1qwyufovm57mYrZ9
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.QP5fIRPyPwOaZj3G.1qwyufovm57mYrZ9'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.QP5fIRPyPwOaZj3G'
+  - name: Cadice
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/cadice_b_rnier.token.webp?1721772389744
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 5.960075502877459
+          combatMoveData: {}
+      ATL:
+        originals: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#6330b0'
+        background: '#f4a460'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 3071
+    'y': 1538
+    hidden: false
+    elevation: 0
+    _id: GNJcoBZKoWQvTIpD
+    delta:
+      _id: k2PomMsBTpjZA6VY
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.GNJcoBZKoWQvTIpD.k2PomMsBTpjZA6VY'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.GNJcoBZKoWQvTIpD'
+  - name: Itilda
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/itilda_the_mutilator_of_manhood.token.webp?1721773665329
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      dnd5e:
+        tokenRing:
+          effects: 1
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 10.439947317874742
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#04f6f2'
+        background: '#f4a460'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 3341
+    'y': 1854
+    hidden: false
+    elevation: 0
+    _id: ULg3512YmFdYyoe2
+    delta:
+      _id: vqF0DotcJEbatEC7
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.ULg3512YmFdYyoe2.vqF0DotcJEbatEC7'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.ULg3512YmFdYyoe2'
+  - name: Rickvon
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        LightLevelFlag: 2
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      tokencover:
+        maximumCoverGrant: 1
+      elevatedvision:
+        tokenHeight: 6
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 0
+          combatMoveData: {}
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/_captain_kaine_strongjaw.token.webp?1721772058363
+    ring:
+      enabled: true
+      colors:
+        ring: '#cc8028'
+        background: '#f4a460'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: null
+    x: 3483
+    'y': 1585
+    hidden: false
+    elevation: 0
+    _id: oeXJDKhZMuZpChwq
+    delta:
+      _id: 0OrRTxVmBvUztfyy
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.oeXJDKhZMuZpChwq.0OrRTxVmBvUztfyy'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.oeXJDKhZMuZpChwq'
+  - name: Tiuk
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/tiuk.token.webp?1721777054491
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 8.667467911679857
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#b128cc'
+        background: '#f4a460'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 3285
+    'y': 1427
+    hidden: false
+    elevation: 0
+    _id: fDai5nq02JISSaBY
+    delta:
+      _id: ctAPUC83uT6aV4y1
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.fDai5nq02JISSaBY.ctAPUC83uT6aV4y1'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.fDai5nq02JISSaBY'
+  - name: Salvaged Supplies
+    displayName: 50
+    actorLink: false
+    width: 1
+    height: 1
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/default_item_pile.Token.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 0
+      subject:
+        scale: 1
+        texture: null
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LockableFlag: false
+        LockedFlag: false
+        IDKeysFlag: ''
+        PasskeysFlag: ''
+        PasskeyChangeableFlag: false
+        IdentityKeyFlag: ''
+        LockjammedFlag: false
+        LockDCFlag: -1
+        SpecialLPFlag: ''
+        LockBreakDCFlag: -1
+        currentLPsuccessFlag: 0
+        requiredLPsuccessFlag: 1
+        LPAttemptsFlag: -1
+        canbeCircumventedFreeFlag: true
+        SoundVariantFlag: wood
+        LPAttemptsMaxFlag: -1
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        LightLevelFlag: 2
+        SpottedbyFlag: []
+        MATTTriggerTileFlag: ''
+      monks-enhanced-journal:
+        chatbubble: ''
+      item-piles:
+        data:
+          enabled: true
+          type: pile
+          displayItemTypes: true
+        version: 3.1.5
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: s3/tokens/player_characters/default_item_pile.Token.webp
+        disableHUDButton: false
+        name: null
+      core: {}
+      dnd5e:
+        tokenRing:
+          effects: 1
+      splatter:
+        bloodColor: ''
+      elevatedvision:
+        tokenHeight: 6
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 0
+          combatMoveData: {}
+      custom-dnd5e:
+        rotation: 0
+      ATL:
+        originals: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+    actorId: null
+    hidden: false
+    sort: 1
+    _id: praVZMZAmv2cn5Uv
+    delta:
+      _id: Ib9D1UihLgvla53B
+      system:
+        abilities:
+          str:
+            value: 30
+        traits:
+          di:
+            value:
+              - acid
+              - bludgeoning
+              - cold
+              - fire
+              - force
+              - lightning
+              - necrotic
+              - none
+              - piercing
+              - poison
+              - psychic
+              - radiant
+              - slashing
+              - thunder
+          ci:
+            value:
+              - bleeding
+              - blinded
+              - charmed
+              - cursed
+              - deafened
+              - diseased
+              - exhaustion
+              - frightened
+              - grappled
+              - incapacitated
+              - invisible
+              - paralyzed
+              - petrified
+              - poisoned
+              - prone
+              - restrained
+              - silenced
+              - stunned
+              - surprised
+              - transformed
+              - unconscious
+        attributes:
+          ac:
+            flat: 999
+            calc: flat
+          hp:
+            max: 999
+            bonuses:
+              level: ''
+              overall: ''
+            value: 999
+        currency:
+          ct: 0
+          cb: 0
+          lb: 0
+      items:
+        - name: Never Target
+          type: feat
+          system:
+            description:
+              value: '<p>midi-qol: 11.0.7 Cause the actor to be untargetable</p>'
+              chat: ''
+            source:
+              custom: ''
+              revision: 1
+              rules: '2024'
+            uses:
+              max: ''
+              spent: 0
+              recovery: []
+            type:
+              value: ''
+              subtype: ''
+            requirements: ''
+            prerequisites:
+              level: null
+              repeatable: false
+            properties: []
+            activities: {}
+            identifier: ''
+            enchant: {}
+            advancement: []
+            cover: null
+            crewed: false
+          img: icons/magic/perception/shadow-stealth-eyes-purple.webp
+          effects:
+            - name: Never Target
+              origin: >-
+                Scene.Hvy93ZHfa17PjWFw.Token.praVZMZAmv2cn5Uv.Actor.l9ZaoXExRMy6B5Gr.Item.vGv4iNFeaKAx44Bb
+              duration:
+                value: null
+                units: seconds
+                expiry: null
+                expired: false
+              transfer: true
+              disabled: false
+              _id: jFKhp34XZd32ryYT
+              description: ''
+              statuses: []
+              flags:
+                times-up:
+                  isPassive: true
+                dae:
+                  selfTarget: false
+                  selfTargetAlways: false
+                  stackable: noneName
+                  durationExpression: ''
+                  macroRepeat: none
+                  specialDuration: []
+              tint: '#ffffff'
+              _stats:
+                compendiumSource: null
+                duplicateSource: null
+                coreVersion: '14.362'
+                systemId: dnd5e
+                systemVersion: 4.3.8
+                createdTime: null
+                modifiedTime: null
+                lastModifiedBy: null
+                exportSource: null
+              img: icons/magic/perception/shadow-stealth-eyes-purple.webp
+              type: base
+              system:
+                changes:
+                  - key: flags.midi-qol.neverTarget
+                    value: true
+                    priority: 20
+                    type: custom
+              sort: 0
+              start:
+                combat: null
+                round: null
+                time: 47932194
+                turn: null
+                combatant: null
+                initiative: null
+              showIcon: 1
+              folder: null
+              _key: >-
+                !scenes.tokens.delta.items.effects!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.vGv4iNFeaKAx44Bb.jFKhp34XZd32ryYT
+          folder: eANcf0wdWW30zqCS
+          ownership:
+            default: 0
+            ffUVCzLexh57kZfU: 3
+            jM4h8qpyxwTpfNli: 3
+          flags:
+            core: {}
+            midiProperties:
+              confirmTargets: default
+              autoFailFriendly: false
+              autoSaveFriendly: false
+              critOther: false
+              offHandWeapon: false
+              magicdam: false
+              magiceffect: false
+              noConcentrationCheck: false
+              toggleEffect: false
+              ignoreTotalCover: false
+            midi-qol:
+              rollAttackPerTarget: default
+              itemCondition: ''
+              effectCondition: ''
+            scene-packer:
+              hash: 8fec809dcf5374fe9dc7dbe4b67dfeae210080f7
+          _stats:
+            compendiumSource: Compendium.midi-qol.midiqol-sample-items.Item.mT0aJmviVtVlss4s
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: vGv4iNFeaKAx44Bb
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.vGv4iNFeaKAx44Bb
+        - _id: ZCP9MOx60V7h9Ldy
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.ZCP9MOx60V7h9Ldy
+        - _id: To6Ih0UVO2mN6GaA
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.To6Ih0UVO2mN6GaA
+        - _id: QMx1hqBcQyeLVf3E
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.QMx1hqBcQyeLVf3E
+        - _id: o2HQeC5xQ8NYyx4l
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.o2HQeC5xQ8NYyx4l
+        - name: Lantern, Bullseye
+          type: consumable
+          system:
+            description:
+              value: >-
+                <div class="ddb">
+
+                <p>A bullseye lantern casts bright light in a 60-foot cone and
+                dim light for an additional 60 feet. Once lit, it burns for 6
+                hours on a flask (1 pint) of oil.</p>
+
+                </div>
+              chat: ''
+            source:
+              book: Basic Rules
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 1
+            weight:
+              value: 2
+              units: lb
+            price:
+              value: 10
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            uses:
+              max: '1'
+              autoDestroy: true
+              spent: 0
+              recovery: []
+            damage:
+              base:
+                number: null
+                denomination: null
+                types: []
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+              replace: false
+            properties: []
+            unidentified:
+              description: Gear
+            type:
+              value: trinket
+              subtype: ''
+            container: null
+            magicalBonus: null
+            attuned: false
+            equipped: false
+            activities:
+              dnd5eactivity000:
+                _id: dnd5eactivity000
+                type: utility
+                activation:
+                  type: ''
+                  value: null
+                  condition: ''
+                  override: false
+                consumption:
+                  targets:
+                    - type: itemUses
+                      target: ''
+                      value: '1'
+                      scaling:
+                        mode: ''
+                        formula: ''
+                  scaling:
+                    allowed: false
+                    max: ''
+                  spellSlot: true
+                description:
+                  chatFlavor: ''
+                duration:
+                  concentration: false
+                  value: ''
+                  units: ''
+                  special: ''
+                  override: false
+                effects: []
+                range:
+                  units: ''
+                  special: ''
+                  override: false
+                target:
+                  template:
+                    count: ''
+                    contiguous: false
+                    type: ''
+                    size: ''
+                    width: ''
+                    height: ''
+                    units: ''
+                  affects:
+                    count: ''
+                    type: ''
+                    choice: false
+                    special: ''
+                  prompt: true
+                  override: false
+                uses:
+                  spent: 0
+                  max: ''
+                  recovery: []
+                roll:
+                  formula: ''
+                  name: ''
+                  prompt: false
+                  visible: false
+                sort: 0
+                useConditionText: ''
+                effectConditionText: ''
+                macroData:
+                  name: ''
+                  command: ''
+                ignoreTraits:
+                  idi: false
+                  idr: false
+                  idv: false
+                  ida: false
+                midiProperties:
+                  ignoreTraits: []
+                  triggeredActivityId: none
+                  triggeredActivityConditionText: ''
+                  triggeredActivityTargets: targets
+                  triggeredActivityRollAs: self
+                  forceDialog: false
+                  confirmTargets: default
+                  automationOnly: false
+                  identifier: ''
+                  autoTargetType: any
+                  autoTargetAction: default
+                  otherActivityCompatible: true
+                  displayActivityName: false
+                  rollMode: default
+                  chooseEffects: false
+                  toggleEffect: false
+                  ignoreFullCover: false
+                useConditionReason: ''
+                isOverTimeFlag: false
+                overTimeProperties:
+                  saveRemoves: true
+                  preRemoveConditionText: ''
+                  postRemoveConditionText: ''
+                otherActivityId: none
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Adventuring Gear
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags:
+                  - Utility
+                  - Exploration
+                sources:
+                  - sourceId: 1
+                    pageNumber: null
+                    sourceType: 2
+                  - sourceId: 2
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 56
+              originalName: Lantern, Bullseye
+              version: 5.2.26
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Lantern, Bullseye
+            scene-packer:
+              sourceId: Item.hjahTGg3IYIgRxdy
+              hash: 8265453727b542948dca1b39f0e99ac273309a03
+            midi-qol:
+              onUseMacroName: '[preApplyDynamicEffects]ItemMacro'
+              effectActivation: false
+              itemCondition: ''
+              reactionCondition: ''
+              otherCondition: ''
+              effectCondition: ''
+              rollAttackPerTarget: default
+            midiProperties:
+              confirmTargets: never
+              autoFailFriendly: false
+              autoSaveFriendly: false
+              rollOther: false
+              critOther: false
+              offHandWeapon: false
+              magicdam: false
+              magiceffect: false
+              concentration: false
+              noConcentrationCheck: false
+              toggleEffect: false
+              ignoreTotalCover: false
+            magicitems:
+              enabled: false
+            dae:
+              macro:
+                name: Lantern, Bullseye
+                img: icons/sundries/lights/lantern-bullseye-signal-copper.webp
+                type: script
+                scope: global
+                command: >-
+                  let lightSource = "lantern";
+
+                  let file =
+                  "modules/gambits-premades/assets/images/bullseyeLantern.webp"
+
+                  let lanternStatus = Sequencer.EffectManager.getEffects({ name:
+                  `${token.document.id} ${lightSource}` });
+
+                  console.log(args[1])
+
+                  if (args[0] === "off" && args[1]["expiry-reason"] &&
+                  (args[1]["expiry-reason"].includes("times-up") ||
+                  args[1]["expiry-reason"].includes("effect-deleted"))) {
+                      const light = { dim: 0, bright: 0 };
+                      await token.document.update({ light });
+                      await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                  }
+
+
+                  async function updateLantern() {
+                      if (args[0].macroPass === "preApplyDynamicEffects") {
+                          if (lanternStatus.length === 0) {
+                              await showLanternLightDialog();
+                          } else if (lanternStatus.length !== 0) {
+                              await showLanternOptionsDialog();
+                          }
+                      }
+
+                      if (args[0] === "off" && args[1]["expiry-reason"] && (args[1]["expiry-reason"].includes("times-up") || args[1]["expiry-reason"].includes("effect-deleted"))) {
+                          const light = { dim: 0, bright: 0 };
+                          await token.document.update({ light });
+                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                      }
+                  }
+
+
+                  async function showLanternLightDialog() {
+                      return new Promise((resolve) => {
+                          new Dialog({
+                              title: "Lantern",
+                              content: "<p>Would you like to light a lantern?</p>",
+                              buttons: {
+                                  turnon: {
+                                      label: "Light",
+                                      callback: async (html) => {
+                                          await lightNewLantern();
+                                          resolve();
+                                      }
+                                  }
+                              },
+                              default: "turnon"
+                          }).render(true);
+                      });
+                  }
+
+
+                  async function showLanternOptionsDialog() {
+                      return new Promise((resolve) => {
+                          let buttons = {
+                              turnoff: {
+                                  label: "Extinguish",
+                                  callback: async (html) => {
+                                      const light = {dim: 0, bright: 0};
+                                      await token.document.update({light});
+                                      await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                                      const effectName = await actor.effects.find(i => i.name === "Lantern, Bullseye");
+                                      if(effectName) await actor.deleteEmbeddedDocuments("ActiveEffect", [effectName.id]);
+                                      resolve();
+                                  }
+                              }
+                          };
+
+                          new Dialog({
+                              title: "Lantern",
+                              content: "<p>What would you like to do with your lantern?</p>",
+                              buttons: buttons,
+                              default: "turnoff"
+                          }).render(true);
+                      });
+                  }
+
+
+                  async function lightNewLantern() {
+                      new Sequence()
+
+                      .effect()
+                      .name(`${token.document.id} ${lightSource}`)
+                      .file(file)
+                      .atLocation(token)
+                      .attachTo(token, {followRotation: true, local: true})
+                      .scaleToObject(.7, {considerTokenScale: true})
+                      .scaleIn(0, 500, {ease: "easeOutElastic"})
+                      .scaleOut(0, 250, {ease: "easeOutCubic"})
+                      .spriteOffset({x:0.0*token.document.width, y:0.45*token.document.width}, {gridUnits:true})
+                      .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                      .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                      .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                      .persist()
+                      .zeroSpriteRotation()
+                      .waitUntilFinished(-500)
+                      .play()
+
+                      //Define token light options
+                      var light = {dim: 120, bright: 60, alpha:0.25, angle:30, luminosity: 0.5, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+
+                      await token.document.update({light});
+                  }
+
+
+                  updateLantern();
+                author: roRDywD19pu2VxlC
+                ownership:
+                  default: 3
+                _id: null
+                folder: null
+                sort: 0
+                flags: {}
+                _stats:
+                  systemId: null
+                  systemVersion: null
+                  coreVersion: null
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+            LocknKey:
+              IDKeysFlag: ''
+              RemoveKeyonUseFlag: false
+              LPFormulaFlag: ''
+              LPFormulaOverrideFlag: false
+              LBFormulaFlag: ''
+              LBFormulaOverrideFlag: false
+              ReplacementItemFlag: ''
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Adventuring Gear
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags:
+                      - Utility
+                      - Exploration
+                    sources:
+                      - sourceId: 1
+                        pageNumber: null
+                        sourceType: 2
+                      - sourceId: 2
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 56
+                  originalName: Lantern, Bullseye
+                  version: 5.2.26
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Lantern, Bullseye
+                scene-packer:
+                  sourceId: Item.hjahTGg3IYIgRxdy
+                  hash: 9a660e48de93b0c5d6b037c08e0046417866787d
+                midi-qol:
+                  onUseMacroName: '[preApplyDynamicEffects]ItemMacro'
+                  effectActivation: false
+                  itemCondition: ''
+                  reactionCondition: ''
+                  otherCondition: ''
+                  effectCondition: ''
+                  rollAttackPerTarget: default
+                midiProperties:
+                  confirmTargets: never
+                  autoFailFriendly: false
+                  autoSaveFriendly: false
+                  rollOther: false
+                  critOther: false
+                  offHandWeapon: false
+                  magicdam: false
+                  magiceffect: false
+                  concentration: false
+                  noConcentrationCheck: false
+                  toggleEffect: false
+                  ignoreTotalCover: false
+                magicitems:
+                  enabled: false
+                dae:
+                  macro:
+                    name: Lantern, Bullseye
+                    img: icons/sundries/lights/lantern-bullseye-signal-copper.webp
+                    type: script
+                    scope: global
+                    command: >-
+                      let lightSource = "lantern";
+
+                      let file =
+                      "modules/gambits-premades/assets/images/bullseyeLantern.webp"
+
+                      let lanternStatus = Sequencer.EffectManager.getEffects({
+                      name: `${token.document.id} ${lightSource}` });
+
+                      console.log(args[1])
+
+                      if (args[0] === "off" && args[1]["expiry-reason"] &&
+                      (args[1]["expiry-reason"].includes("times-up") ||
+                      args[1]["expiry-reason"].includes("effect-deleted"))) {
+                          const light = { dim: 0, bright: 0 };
+                          await token.document.update({ light });
+                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                      }
+
+
+                      async function updateLantern() {
+                          if (args[0].macroPass === "preApplyDynamicEffects") {
+                              if (lanternStatus.length === 0) {
+                                  await showLanternLightDialog();
+                              } else if (lanternStatus.length !== 0) {
+                                  await showLanternOptionsDialog();
+                              }
+                          }
+
+                          if (args[0] === "off" && args[1]["expiry-reason"] && (args[1]["expiry-reason"].includes("times-up") || args[1]["expiry-reason"].includes("effect-deleted"))) {
+                              const light = { dim: 0, bright: 0 };
+                              await token.document.update({ light });
+                              await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                          }
+                      }
+
+
+                      async function showLanternLightDialog() {
+                          return new Promise((resolve) => {
+                              new Dialog({
+                                  title: "Lantern",
+                                  content: "<p>Would you like to light a lantern?</p>",
+                                  buttons: {
+                                      turnon: {
+                                          label: "Light",
+                                          callback: async (html) => {
+                                              await lightNewLantern();
+                                              resolve();
+                                          }
+                                      }
+                                  },
+                                  default: "turnon"
+                              }).render(true);
+                          });
+                      }
+
+
+                      async function showLanternOptionsDialog() {
+                          return new Promise((resolve) => {
+                              let buttons = {
+                                  turnoff: {
+                                      label: "Extinguish",
+                                      callback: async (html) => {
+                                          const light = {dim: 0, bright: 0};
+                                          await token.document.update({light});
+                                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                                          const effectName = await actor.effects.find(i => i.name === "Lantern, Bullseye");
+                                          if(effectName) await actor.deleteEmbeddedDocuments("ActiveEffect", [effectName.id]);
+                                          resolve();
+                                      }
+                                  }
+                              };
+
+                              new Dialog({
+                                  title: "Lantern",
+                                  content: "<p>What would you like to do with your lantern?</p>",
+                                  buttons: buttons,
+                                  default: "turnoff"
+                              }).render(true);
+                          });
+                      }
+
+
+                      async function lightNewLantern() {
+                          new Sequence()
+
+                          .effect()
+                          .name(`${token.document.id} ${lightSource}`)
+                          .file(file)
+                          .atLocation(token)
+                          .attachTo(token, {followRotation: true, local: true})
+                          .scaleToObject(.7, {considerTokenScale: true})
+                          .scaleIn(0, 500, {ease: "easeOutElastic"})
+                          .scaleOut(0, 250, {ease: "easeOutCubic"})
+                          .spriteOffset({x:0.0*token.document.width, y:0.45*token.document.width}, {gridUnits:true})
+                          .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                          .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                          .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                          .persist()
+                          .zeroSpriteRotation()
+                          .waitUntilFinished(-500)
+                          .play()
+
+                          //Define token light options
+                          var light = {dim: 120, bright: 60, alpha:0.25, angle:30, luminosity: 0.5, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+
+                          await token.document.update({light});
+                      }
+
+
+                      updateLantern();
+                    author: roRDywD19pu2VxlC
+                    ownership:
+                      default: 3
+                    _id: null
+                    folder: null
+                    sort: 0
+                    flags: {}
+                    _stats:
+                      systemId: null
+                      systemVersion: null
+                      coreVersion: null
+                      createdTime: null
+                      modifiedTime: null
+                      lastModifiedBy: null
+                LocknKey:
+                  IDKeysFlag: ''
+                  RemoveKeyonUseFlag: false
+                  LPFormulaFlag: ''
+                  LPFormulaOverrideFlag: false
+                  LBFormulaFlag: ''
+                  LBFormulaOverrideFlag: false
+                  ReplacementItemFlag: ''
+            dnd5e:
+              persistSourceMigration: true
+              migratedUses: 1
+          effects: []
+          img: icons/sundries/lights/lantern-bullseye-signal-copper.webp
+          folder: Odle0eG1kGbV13zL
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.1V7jya0nmPjUK0QK
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: A3zp1RSqQtCYiqWf
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.A3zp1RSqQtCYiqWf
+        - name: Lantern, Hooded
+          type: consumable
+          system:
+            description:
+              value: >-
+                <div class="ddb">
+
+                <p>A hooded lantern casts bright light in a 30-foot radius and
+                dim light for an additional 30 feet. Once lit, it burns for 6
+                hours on a flask (1 pint) of oil. As an action, you can lower
+                the hood, reducing the light to dim light in a 5-foot
+                radius.</p>
+
+                </div>
+              chat: ''
+            source:
+              book: Basic Rules
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 1
+            weight:
+              value: 2
+              units: lb
+            price:
+              value: 5
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            uses:
+              max: '1'
+              autoDestroy: true
+              spent: 0
+              recovery: []
+            damage:
+              base:
+                number: null
+                denomination: null
+                types: []
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+              replace: false
+            properties: []
+            unidentified:
+              description: Gear
+            type:
+              value: trinket
+              subtype: ''
+            container: null
+            magicalBonus: null
+            attuned: false
+            equipped: false
+            activities:
+              dnd5eactivity000:
+                _id: dnd5eactivity000
+                type: utility
+                activation:
+                  type: ''
+                  value: null
+                  condition: ''
+                  override: false
+                consumption:
+                  targets:
+                    - type: itemUses
+                      target: ''
+                      value: '1'
+                      scaling:
+                        mode: ''
+                        formula: ''
+                  scaling:
+                    allowed: false
+                    max: ''
+                  spellSlot: true
+                description:
+                  chatFlavor: ''
+                duration:
+                  concentration: false
+                  value: ''
+                  units: ''
+                  special: ''
+                  override: false
+                effects: []
+                range:
+                  units: ''
+                  special: ''
+                  override: false
+                target:
+                  template:
+                    count: ''
+                    contiguous: false
+                    type: ''
+                    size: ''
+                    width: ''
+                    height: ''
+                    units: ''
+                  affects:
+                    count: ''
+                    type: ''
+                    choice: false
+                    special: ''
+                  prompt: true
+                  override: false
+                uses:
+                  spent: 0
+                  max: ''
+                  recovery: []
+                roll:
+                  formula: ''
+                  name: ''
+                  prompt: false
+                  visible: false
+                sort: 0
+                useConditionText: ''
+                effectConditionText: ''
+                macroData:
+                  name: ''
+                  command: ''
+                ignoreTraits:
+                  idi: false
+                  idr: false
+                  idv: false
+                  ida: false
+                midiProperties:
+                  ignoreTraits: []
+                  triggeredActivityId: none
+                  triggeredActivityConditionText: ''
+                  triggeredActivityTargets: targets
+                  triggeredActivityRollAs: self
+                  forceDialog: false
+                  confirmTargets: default
+                  automationOnly: false
+                  identifier: ''
+                  autoTargetType: any
+                  autoTargetAction: default
+                  otherActivityCompatible: true
+                  displayActivityName: false
+                  rollMode: default
+                  chooseEffects: false
+                  toggleEffect: false
+                  ignoreFullCover: false
+                useConditionReason: ''
+                isOverTimeFlag: false
+                overTimeProperties:
+                  saveRemoves: true
+                  preRemoveConditionText: ''
+                  postRemoveConditionText: ''
+                otherActivityId: none
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Adventuring Gear
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags:
+                  - Utility
+                  - Exploration
+                sources:
+                  - sourceId: 1
+                    pageNumber: null
+                    sourceType: 2
+                  - sourceId: 2
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 57
+              originalName: Lantern, Hooded
+              version: 5.2.26
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Lantern, Hooded
+            scene-packer:
+              sourceId: Item.asiKPjd6htu1ANLJ
+              hash: 3b7229e2520667fb92efc57019f2f46356c47535
+            midi-qol:
+              onUseMacroName: '[preApplyDynamicEffects]ItemMacro'
+              effectActivation: false
+              itemCondition: ''
+              reactionCondition: ''
+              otherCondition: ''
+              effectCondition: ''
+              rollAttackPerTarget: default
+            midiProperties:
+              confirmTargets: never
+              autoFailFriendly: false
+              autoSaveFriendly: false
+              rollOther: false
+              critOther: false
+              offHandWeapon: false
+              magicdam: false
+              magiceffect: false
+              concentration: false
+              noConcentrationCheck: false
+              toggleEffect: false
+              ignoreTotalCover: false
+            magicitems:
+              enabled: false
+            dae:
+              macro:
+                name: Lantern, Hooded
+                img: icons/sundries/lights/lantern-steel.webp
+                type: script
+                scope: global
+                command: >-
+                  let lightSource = "lantern";
+
+                  let fileHoodUp =
+                  "modules/gambits-premades/assets/images/hoodUpLantern.webp"
+
+                  let fileHoodDown =
+                  "modules/gambits-premades/assets/images/hoodDownLantern.webp"
+
+
+                  if (args[0] === "off" && args[1]["expiry-reason"] &&
+                  (args[1]["expiry-reason"].includes("times-up") ||
+                  args[1]["expiry-reason"].includes("effect-deleted"))) {
+                      const light = { dim: 0, bright: 0 };
+                      await token.document.update({ light });
+                      await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                  }
+
+
+                  if (args[0].macroPass === "preApplyDynamicEffects") {
+
+                  await new Dialog({
+                    title: "Lantern",
+                    content: "<p>What would you like to do with your lantern?</p>",
+                    buttons: {
+                      turnon: {
+                        label: "Lantern: Light",
+                        callback: async (html) => {
+                          new Sequence()
+
+                          .effect()
+                          .name(`${token.document.id} ${lightSource}`)
+                          .file(fileHoodUp)
+                          .atLocation(token)
+                          .attachTo(token, {followRotation: true, local: true})
+                          .scaleToObject(1, {considerTokenScale: true})
+                          .scaleIn(0, 500, {ease: "easeOutElastic"})
+                          .scaleOut(0, 250, {ease: "easeOutCubic"})
+                          .spriteOffset({x:0.35*token.document.width, y:0.1*token.document.width}, {gridUnits:true})
+                          .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                          .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                          .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                          .persist()
+                          .zeroSpriteRotation()
+                          .waitUntilFinished(-500)
+                          .play()
+
+                          //Define token light options
+                          var light = {dim: 60, bright: 30, alpha:0.25, angle:360, luminosity: 0.5, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+
+                          await token.document.update({light});
+                        }
+                      },
+                      dim: {
+                        label: "Lantern: Dim",
+                        callback: async (html) => {
+                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                          new Sequence()
+
+                          .effect()
+                          .name(`${token.document.id} ${lightSource}`)
+                          .file(fileHoodDown)
+                          .atLocation(token)
+                          .attachTo(token, {followRotation: true, local: true})
+                          .scaleToObject(1, {considerTokenScale: true})
+                          .scaleIn(0, 500, {ease: "easeOutElastic"})
+                          .scaleOut(0, 250, {ease: "easeOutCubic"})
+                          .spriteOffset({x:0.35*token.document.width, y:0.1*token.document.width}, {gridUnits:true})
+                          .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                          .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                          .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                          .persist()
+                          .zeroSpriteRotation()
+                          .waitUntilFinished(-500)
+                          .play()
+                          var light = {dim: 5, bright: 0, alpha:0.25, luminosity: 0.5, angle:360, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+                          await token.document.update({light});
+                        },
+                      },
+                      turnoff: {
+                        label: "Lantern: Extinguish",
+                        callback: async (html) => {
+                          var light = {dim: 0, bright: 0};
+                          await token.document.update({light});
+                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                          const effectName = await actor.effects.find(i => i.name === "Lantern, Hooded");
+                          if(effectName) await MidiQOL.socket().executeAsGM("removeEffects", { actorUuid: actor.uuid, effects: [effectName.id] });
+                        },
+                      }
+                    },
+                    default: "Lantern: Extinguish"
+                  }).render(true);
+
+                  }
+                author: roRDywD19pu2VxlC
+                ownership:
+                  default: 3
+                _id: null
+                folder: null
+                sort: 0
+                flags: {}
+                _stats:
+                  systemId: null
+                  systemVersion: null
+                  coreVersion: null
+                  createdTime: null
+                  modifiedTime: null
+                  lastModifiedBy: null
+            LocknKey:
+              IDKeysFlag: ''
+              RemoveKeyonUseFlag: false
+              LPFormulaFlag: ''
+              LPFormulaOverrideFlag: false
+              LBFormulaFlag: ''
+              LBFormulaOverrideFlag: false
+              ReplacementItemFlag: ''
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Adventuring Gear
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags:
+                      - Utility
+                      - Exploration
+                    sources:
+                      - sourceId: 1
+                        pageNumber: null
+                        sourceType: 2
+                      - sourceId: 2
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 57
+                  originalName: Lantern, Hooded
+                  version: 5.2.26
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Lantern, Hooded
+                scene-packer:
+                  sourceId: Item.asiKPjd6htu1ANLJ
+                  hash: 073a3f1e7922a9697f173c0f38066a0cffe7e727
+                midi-qol:
+                  onUseMacroName: '[preApplyDynamicEffects]ItemMacro'
+                  effectActivation: false
+                  itemCondition: ''
+                  reactionCondition: ''
+                  otherCondition: ''
+                  effectCondition: ''
+                  rollAttackPerTarget: default
+                midiProperties:
+                  confirmTargets: never
+                  autoFailFriendly: false
+                  autoSaveFriendly: false
+                  rollOther: false
+                  critOther: false
+                  offHandWeapon: false
+                  magicdam: false
+                  magiceffect: false
+                  concentration: false
+                  noConcentrationCheck: false
+                  toggleEffect: false
+                  ignoreTotalCover: false
+                magicitems:
+                  enabled: false
+                dae:
+                  macro:
+                    name: Lantern, Hooded
+                    img: icons/sundries/lights/lantern-steel.webp
+                    type: script
+                    scope: global
+                    command: >-
+                      let lightSource = "lantern";
+
+                      let fileHoodUp =
+                      "modules/gambits-premades/assets/images/hoodUpLantern.webp"
+
+                      let fileHoodDown =
+                      "modules/gambits-premades/assets/images/hoodDownLantern.webp"
+
+
+                      if (args[0] === "off" && args[1]["expiry-reason"] &&
+                      (args[1]["expiry-reason"].includes("times-up") ||
+                      args[1]["expiry-reason"].includes("effect-deleted"))) {
+                          const light = { dim: 0, bright: 0 };
+                          await token.document.update({ light });
+                          await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                      }
+
+
+                      if (args[0].macroPass === "preApplyDynamicEffects") {
+
+                      await new Dialog({
+                        title: "Lantern",
+                        content: "<p>What would you like to do with your lantern?</p>",
+                        buttons: {
+                          turnon: {
+                            label: "Lantern: Light",
+                            callback: async (html) => {
+                              new Sequence()
+
+                              .effect()
+                              .name(`${token.document.id} ${lightSource}`)
+                              .file(fileHoodUp)
+                              .atLocation(token)
+                              .attachTo(token, {followRotation: true, local: true})
+                              .scaleToObject(1, {considerTokenScale: true})
+                              .scaleIn(0, 500, {ease: "easeOutElastic"})
+                              .scaleOut(0, 250, {ease: "easeOutCubic"})
+                              .spriteOffset({x:0.35*token.document.width, y:0.1*token.document.width}, {gridUnits:true})
+                              .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                              .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                              .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                              .persist()
+                              .zeroSpriteRotation()
+                              .waitUntilFinished(-500)
+                              .play()
+
+                              //Define token light options
+                              var light = {dim: 60, bright: 30, alpha:0.25, angle:360, luminosity: 0.5, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+
+                              await token.document.update({light});
+                            }
+                          },
+                          dim: {
+                            label: "Lantern: Dim",
+                            callback: async (html) => {
+                              await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                              new Sequence()
+
+                              .effect()
+                              .name(`${token.document.id} ${lightSource}`)
+                              .file(fileHoodDown)
+                              .atLocation(token)
+                              .attachTo(token, {followRotation: true, local: true})
+                              .scaleToObject(1, {considerTokenScale: true})
+                              .scaleIn(0, 500, {ease: "easeOutElastic"})
+                              .scaleOut(0, 250, {ease: "easeOutCubic"})
+                              .spriteOffset({x:0.35*token.document.width, y:0.1*token.document.width}, {gridUnits:true})
+                              .animateProperty("sprite", "rotation", { from: 15, to: -15, duration: 300, ease: "easeInOutBack"})
+                              .animateProperty("sprite", "rotation", { from: 0, to: 30, duration: 250, delay: 200, ease: "easeOutBack"})
+                              .loopProperty("sprite", "rotation", { from: 3, to: -3, duration: 1500, ease: "easeOutQuad", pingPong: true })
+                              .persist()
+                              .zeroSpriteRotation()
+                              .waitUntilFinished(-500)
+                              .play()
+                              var light = {dim: 5, bright: 0, alpha:0.25, luminosity: 0.5, angle:360, color: "#ffb433", animation: {type: "torch", speed: 4, intensity: 4},attenuation: 0.75, contrast:0.15, shadows:0.2};
+                              await token.document.update({light});
+                            },
+                          },
+                          turnoff: {
+                            label: "Lantern: Extinguish",
+                            callback: async (html) => {
+                              var light = {dim: 0, bright: 0};
+                              await token.document.update({light});
+                              await Sequencer.EffectManager.endEffects({ name: `${token.document.id} ${lightSource}`, object: token });
+                              const effectName = await actor.effects.find(i => i.name === "Lantern, Hooded");
+                              if(effectName) await MidiQOL.socket().executeAsGM("removeEffects", { actorUuid: actor.uuid, effects: [effectName.id] });
+                            },
+                          }
+                        },
+                        default: "Lantern: Extinguish"
+                      }).render(true);
+
+                      }
+                    author: roRDywD19pu2VxlC
+                    ownership:
+                      default: 3
+                    _id: null
+                    folder: null
+                    sort: 0
+                    flags: {}
+                    _stats:
+                      systemId: null
+                      systemVersion: null
+                      coreVersion: null
+                      createdTime: null
+                      modifiedTime: null
+                      lastModifiedBy: null
+                LocknKey:
+                  IDKeysFlag: ''
+                  RemoveKeyonUseFlag: false
+                  LPFormulaFlag: ''
+                  LPFormulaOverrideFlag: false
+                  LBFormulaFlag: ''
+                  LBFormulaOverrideFlag: false
+                  ReplacementItemFlag: ''
+            dnd5e:
+              persistSourceMigration: true
+              migratedUses: 1
+          effects: []
+          img: icons/sundries/lights/lantern-steel.webp
+          folder: Odle0eG1kGbV13zL
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.GuJ6sRR91ghJpJwv
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: EGN2zl3zg9DA9VtL
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.EGN2zl3zg9DA9VtL
+        - name: Clothes, Traveler's
+          type: equipment
+          system:
+            description:
+              value: >-
+                <div class="ddb">
+
+                <p>This set of clothes could consist of boots, a wool skirt or
+                breeches, a sturdy belt, a shirt (perhaps with a vest or
+                jacket), and an ample cloak with a hood.</p>
+
+                </div>
+              chat: ''
+            source:
+              book: Basic Rules
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 5
+            weight:
+              value: 4
+              units: lb
+            price:
+              value: 2
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            cover: null
+            crewed: false
+            uses:
+              max: ''
+              spent: 0
+              recovery: []
+            armor:
+              value: null
+              dex: null
+              magicalBonus: null
+            hp:
+              value: null
+              max: null
+              dt: null
+              conditions: ''
+            speed:
+              value: null
+              conditions: ''
+            strength: 0
+            unidentified:
+              description: Gear
+            type:
+              value: clothing
+              baseItem: ''
+            container: null
+            properties: []
+            attuned: false
+            equipped: false
+            proficient: null
+            activities: {}
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Clothing
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags:
+                  - Social
+                  - Outerwear
+                sources:
+                  - sourceId: 1
+                    pageNumber: null
+                    sourceType: 2
+                  - sourceId: 2
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 41
+              originalName: Clothes, Traveler's
+              version: 5.2.26
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Clothes, Traveler's
+            scene-packer:
+              sourceId: Item.
+              hash: 26113d992cc610bf7b4895d6a95804cb610dd890
+            midi-qol:
+              onUseMacroName: ''
+            midiProperties:
+              confirmTargets: default
+            magicitems:
+              enabled: false
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Clothing
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags:
+                      - Social
+                      - Outerwear
+                    sources:
+                      - sourceId: 1
+                        pageNumber: null
+                        sourceType: 2
+                      - sourceId: 2
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 41
+                  originalName: Clothes, Traveler's
+                  version: 5.2.26
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Clothes, Traveler's
+                scene-packer:
+                  sourceId: Item.
+                  hash: 17ed004d65942a44bf3137082d100ffdbfeb167d
+                midi-qol:
+                  onUseMacroName: ''
+                midiProperties:
+                  confirmTargets: default
+                magicitems:
+                  enabled: false
+          effects: []
+          img: icons/equipment/head/hood-cloth-brown.webp
+          folder: VbyfyPeotVdE5gq1
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.eJs8IvheEDq9MrIw
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: 7Pe54m5ZjS2AKARu
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.7Pe54m5ZjS2AKARu
+        - _id: sUqgRE8MzBmf2hhV
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.sUqgRE8MzBmf2hhV
+        - _id: XEVoBEPEoDxjL3pJ
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.XEVoBEPEoDxjL3pJ
+        - name: Boots
+          type: equipment
+          system:
+            description:
+              value: >-
+                <p>A pair of boots - included as part of most sets of
+                clothing.</p>
+              chat: ''
+            source:
+              book: Player's Handbook
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 3
+            weight:
+              value: 0
+              units: lb
+            price:
+              value: 0
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            cover: null
+            crewed: false
+            uses:
+              max: ''
+              spent: 0
+              recovery: []
+            armor:
+              value: null
+              dex: null
+              magicalBonus: null
+            hp:
+              value: null
+              max: null
+              dt: null
+              conditions: ''
+            speed:
+              value: null
+              conditions: ''
+            strength: 0
+            unidentified:
+              description: Gear
+            type:
+              value: clothing
+              baseItem: ''
+            container: null
+            properties: []
+            attuned: false
+            equipped: false
+            proficient: null
+            activities: {}
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Clothing
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags: []
+                sources:
+                  - sourceId: 1
+                    pageNumber: null
+                    sourceType: 2
+                  - sourceId: 2
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 295
+              originalName: Boots
+              version: 5.1.24
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Boots
+            scene-packer:
+              sourceId: Item.
+              hash: 4bb7a4f207500afebd30b9233fa5195ff2f6e164
+            midi-qol:
+              onUseMacroName: ''
+            midiProperties:
+              confirmTargets: default
+            magicitems:
+              enabled: false
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Clothing
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags: []
+                    sources:
+                      - sourceId: 1
+                        pageNumber: null
+                        sourceType: 2
+                      - sourceId: 2
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 295
+                  originalName: Boots
+                  version: 5.1.24
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Boots
+                scene-packer:
+                  sourceId: Item.
+                  hash: 17820916ad7aee51743c041d1b0010a6e12efd9b
+                midi-qol:
+                  onUseMacroName: ''
+                midiProperties:
+                  confirmTargets: default
+                magicitems:
+                  enabled: false
+          effects: []
+          img: icons/equipment/feet/boots-collared-simple-brown.webp
+          folder: VbyfyPeotVdE5gq1
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.VINe58CbQnR0EwPC
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: PcHBEiAdlOTgTgF8
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.PcHBEiAdlOTgTgF8
+        - _id: an59dx1QD8yB8ZVy
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.an59dx1QD8yB8ZVy
+        - name: Cook's Utensils
+          type: tool
+          system:
+            description:
+              value: >-
+                <div class="ddb">
+
+                <p>These special tools include the items needed to pursue a
+                craft or trade. Proficiency with a set of artisan's tools lets
+                you add your proficiency bonus to any ability checks you make
+                using the tools in your craft. Each type of artisan's tools
+                requires a separate proficiency.</p>
+
+                </div>
+              chat: ''
+            source:
+              book: Basic Rules
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 1
+            weight:
+              value: 8
+              units: lb
+            price:
+              value: 1
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            ability: wis
+            chatFlavor: ''
+            bonus: ''
+            unidentified:
+              description: Gear
+            uses:
+              max: ''
+              spent: 0
+              recovery: []
+            type:
+              value: art
+              baseItem: cook
+            container: null
+            properties: []
+            attuned: false
+            equipped: false
+            proficient: null
+            activities:
+              dnd5eactivity000:
+                _id: dnd5eactivity000
+                type: check
+                activation:
+                  type: ''
+                  value: null
+                  condition: ''
+                  override: false
+                consumption:
+                  targets: []
+                  scaling:
+                    allowed: false
+                    max: ''
+                  spellSlot: true
+                description:
+                  chatFlavor: ''
+                duration:
+                  concentration: false
+                  value: ''
+                  units: ''
+                  special: ''
+                  override: false
+                effects: []
+                range:
+                  units: ''
+                  special: ''
+                  override: false
+                target:
+                  template:
+                    count: ''
+                    contiguous: false
+                    type: ''
+                    size: ''
+                    width: ''
+                    height: ''
+                    units: ''
+                  affects:
+                    count: ''
+                    type: ''
+                    choice: false
+                    special: ''
+                  prompt: true
+                  override: false
+                uses:
+                  spent: 0
+                  max: ''
+                  recovery: []
+                check:
+                  ability: wis
+                  associated: []
+                  dc: {}
+                sort: 0
+                useConditionText: ''
+                effectConditionText: ''
+                macroData:
+                  name: ''
+                  command: ''
+                ignoreTraits:
+                  idi: false
+                  idr: false
+                  idv: false
+                  ida: false
+                midiProperties:
+                  ignoreTraits: []
+                  triggeredActivityId: none
+                  triggeredActivityConditionText: ''
+                  triggeredActivityTargets: targets
+                  triggeredActivityRollAs: self
+                  forceDialog: false
+                  confirmTargets: default
+                  automationOnly: false
+                  identifier: ''
+                  autoTargetType: any
+                  autoTargetAction: default
+                  otherActivityCompatible: true
+                  displayActivityName: false
+                  rollMode: default
+                  chooseEffects: false
+                  toggleEffect: false
+                  ignoreFullCover: false
+                damage:
+                  onSave: half
+                  parts: []
+                useConditionReason: ''
+                isOverTimeFlag: false
+                overTimeProperties:
+                  saveRemoves: true
+                  preRemoveConditionText: ''
+                  postRemoveConditionText: ''
+                otherActivityId: none
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Tool
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags:
+                  - Utility
+                sources:
+                  - sourceId: 1
+                    pageNumber: null
+                    sourceType: 2
+                  - sourceId: 2
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 108
+              originalName: Cook's Utensils
+              version: 5.2.26
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Cook's Utensils
+            scene-packer:
+              sourceId: Item.
+              hash: 16ac69e29c5ef71a3dadaeb49a1ab2193d4cb35e
+            midi-qol:
+              onUseMacroName: ''
+            midiProperties:
+              confirmTargets: default
+            magicitems:
+              enabled: false
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Tool
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags:
+                      - Utility
+                    sources:
+                      - sourceId: 1
+                        pageNumber: null
+                        sourceType: 2
+                      - sourceId: 2
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 108
+                  originalName: Cook's Utensils
+                  version: 5.2.26
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Cook's Utensils
+                scene-packer:
+                  sourceId: Item.
+                  hash: 2e0b2bad6f6a104b4137ed695028395d5b694bfb
+                midi-qol:
+                  onUseMacroName: ''
+                midiProperties:
+                  confirmTargets: default
+                magicitems:
+                  enabled: false
+            dnd5e:
+              persistSourceMigration: true
+          effects: []
+          img: icons/tools/cooking/pot-camping-iron-black.webp
+          folder: ETTjmxJoY5Xdm3dL
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.lOdbnR9p2TDAokPG
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: MTdhpgyrHchlQAY3
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.MTdhpgyrHchlQAY3
+        - _id: EuD95dYX1olpJRmH
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.EuD95dYX1olpJRmH
+        - name: Snowshoes
+          type: equipment
+          system:
+            description:
+              value: >-
+                <p>Snowshoes reduce the likelihood of their wearer getting stuck
+                in the deep snow.</p>
+              chat: ''
+            source:
+              book: 'Icewind Dale: Rime of the Frostmaiden'
+              page: ''
+              license: ''
+              custom: ''
+              revision: 1
+              rules: '2024'
+            quantity: 1
+            weight:
+              value: 4
+              units: lb
+            price:
+              value: 2
+              denomination: gp
+            attunement: NaN
+            rarity: ''
+            identified: true
+            cover: null
+            crewed: false
+            uses:
+              max: ''
+              spent: 0
+              recovery: []
+            armor:
+              value: null
+              dex: null
+              magicalBonus: null
+            hp:
+              value: null
+              max: null
+              dt: null
+              conditions: ''
+            speed:
+              value: null
+              conditions: ''
+            strength: 0
+            unidentified:
+              description: Gear
+            type:
+              value: clothing
+              baseItem: ''
+            container: null
+            properties: []
+            attuned: false
+            equipped: false
+            proficient: null
+            activities: {}
+            identifier: ''
+          flags:
+            ddbimporter:
+              dndbeyond:
+                type: Clothing
+                isConsumable: false
+                isContainer: false
+                isCustomItem: false
+                isHomebrew: false
+                isMonkWeapon: false
+                isPack: false
+                levelInfusionGranted: null
+                tags:
+                  - Utility
+                  - Exploration
+                sources:
+                  - sourceId: 66
+                    pageNumber: null
+                    sourceType: 1
+                stackable: true
+              id: 0
+              entityTypeId: 0
+              definitionEntityTypeId: 2103445194
+              definitionId: 318
+              originalName: Snowshoes
+              version: 5.1.24
+              effectsApplied: true
+              chrisEffectsApplied: true
+              chrisPreEffectName: Snowshoes
+            scene-packer:
+              sourceId: Item.
+              hash: 64f6682598c7c37df606214c304be641acb3216a
+            midi-qol:
+              onUseMacroName: ''
+            midiProperties:
+              confirmTargets: default
+            magicitems:
+              enabled: false
+            item-piles:
+              item:
+                '-=hidden': null
+                '-=notForSale': null
+                '-=infiniteQuantity': null
+                '-=displayQuantity': null
+                '-=free': null
+                '-=keepZeroQuantity': null
+                '-=disableNormalCost': null
+                '-=cantBeSoldToMerchants': null
+                '-=isService': null
+                '-=keepOnMerchant': null
+                '-=macro': null
+                '-=customCategory': null
+                '-=prices': null
+                '-=buyPriceModifier': null
+                '-=sellPriceModifier': null
+                '-=vaultExpander': null
+                '-=vaultSlot': null
+                '-=addsCols': null
+                '-=addsRows': null
+                '-=x': null
+                '-=y': null
+                '-=width': null
+                '-=height': null
+                '-=flipped': null
+                '-=vaultImage': null
+                '-=vaultImageFlipped': null
+                '-=canStack': null
+                ddbimporter:
+                  dndbeyond:
+                    type: Clothing
+                    isConsumable: false
+                    isContainer: false
+                    isCustomItem: false
+                    isHomebrew: false
+                    isMonkWeapon: false
+                    isPack: false
+                    levelInfusionGranted: null
+                    tags:
+                      - Utility
+                      - Exploration
+                    sources:
+                      - sourceId: 66
+                        pageNumber: null
+                        sourceType: 1
+                    stackable: true
+                  id: 0
+                  entityTypeId: 0
+                  definitionEntityTypeId: 2103445194
+                  definitionId: 318
+                  originalName: Snowshoes
+                  version: 5.1.24
+                  effectsApplied: true
+                  chrisEffectsApplied: true
+                  chrisPreEffectName: Snowshoes
+                scene-packer:
+                  sourceId: Item.
+                  hash: 5434bac869e246d6776c33c40466d0fe08333077
+                midi-qol:
+                  onUseMacroName: ''
+                midiProperties:
+                  confirmTargets: default
+                magicitems:
+                  enabled: false
+          effects: []
+          img: icons/equipment/feet/boots-armored-steel-blue.webp
+          folder: VbyfyPeotVdE5gq1
+          ownership:
+            default: 0
+            jM4h8qpyxwTpfNli: 3
+          _stats:
+            compendiumSource: Compendium.shareddata.ddb-items.Item.plClOyhhF0xJshDY
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          _id: TFZpgmakc6c8Mk4u
+          sort: 0
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.TFZpgmakc6c8Mk4u
+        - _id: BELKOuz9eRESeWkf
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.BELKOuz9eRESeWkf
+        - _id: HyonogWoUCj20fkA
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.HyonogWoUCj20fkA
+      effects:
+        - _id: dnd5eencumbered0
+          _tombstone: true
+          _key: >-
+            !scenes.tokens.delta.effects!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.dnd5eencumbered0
+        - name: Prone
+          _id: dnd5eprone000000
+          img: modules/chris-premades/images/prone.svg
+          statuses:
+            - prone
+          description: >-
+            @Embed[Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.y0TkcdyoZlOTmAFT
+            inline]
+          type: base
+          system:
+            changes:
+              - key: flags.midi-qol.grants.advantage.attack.all
+                value: >-
+                  getDistance(fromUuidSync(tokenUuid),workflow.targets.first())
+                  <= 5
+                priority: 20
+                type: custom
+              - key: flags.midi-qol.grants.disadvantage.attack.all
+                value: >-
+                  getDistance(fromUuidSync(tokenUuid),workflow.targets.first())
+                  > 5
+                priority: 20
+                type: custom
+              - key: flags.midi-qol.disadvantage.attack.all
+                value: 1
+                priority: 20
+                type: custom
+              - key: system.attributes.movement.walk
+                value: '*0.5'
+                priority: 20
+                type: custom
+          disabled: false
+          duration:
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
+          tint: '#ffffff'
+          transfer: false
+          sort: 0
+          flags:
+            chris-premades:
+              effectInterface:
+                status: prone
+              conditions: []
+            dae:
+              stackable: countDeleteDecrement
+              specialDuration: []
+          origin: null
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          showIcon: 2
+          start:
+            combat: null
+            round: null
+            time: 47932194
+            turn: null
+            combatant: null
+            initiative: null
+          folder: null
+          _key: >-
+            !scenes.tokens.delta.effects!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B.dnd5eprone000000
+      flags:
+        item-piles:
+          data:
+            enabled: true
+            type: pile
+            displayItemTypes: true
+          version: 3.1.5
+          sharing:
+            items:
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: op2toh9OhrmyruDh
+                name: Wolf-Jaw Tongs
+                type: loot
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: VZXrFmUId5B8EtPe
+                name: Chisel
+                type: loot
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 7
+                _id: v3sCJClQuGMWYHL8
+                name: Healer's Kit
+                type: consumable
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.cvSV7O7m6C6ZBf2b
+                    quantity: 6
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 8
+                  - uuid: Actor.wPMYAsGtqTdh2Htt
+                    quantity: 1
+                _id: UdE6p3G4gHUtTu85
+                name: Rations (1 day)
+                type: consumable
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: MZgTnhW4hLxPbw4A
+                name: Lantern, Bullseye
+                type: consumable
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: 729F2l26WTlMUj6p
+                name: Lantern, Hooded
+                type: consumable
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.cvSV7O7m6C6ZBf2b
+                    quantity: 1
+                _id: Q5gZ4nZarB0IJWA1
+                name: Clothes, Traveler's
+                type: equipment
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: BQrOBGRWgZ9C00Zi
+                name: Mallet
+                type: loot
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: l9dpJA7jUJzLLOlf
+                name: Hand Drill
+                type: loot
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.dB03Q2ESegVyfp3l
+                    quantity: 1
+                _id: bp2sFNomyou1E8HS
+                name: Boots
+                type: equipment
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.cvSV7O7m6C6ZBf2b
+                    quantity: 12
+                _id: ES4zqedObGelnxTK
+                name: Waterskin
+                type: consumable
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.cvSV7O7m6C6ZBf2b
+                    quantity: 1
+                  - uuid: Actor.gsMFEUAa8zWdgbm4
+                    quantity: 1
+                _id: YTBOwn6mcL1T3RPO
+                name: Cook's Utensils
+                type: tool
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.9Sbd2o9ODs9ZstqJ
+                    quantity: 1
+                _id: TM4NMQEXCNo05VS5
+                name: Snowshoes
+                type: equipment
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.gsMFEUAa8zWdgbm4
+                    quantity: 1
+                _id: bCxoCIvICbkFcE7j
+                name: Cartographer's Tools
+                type: tool
+                system:
+                  container: null
+              - actors:
+                  - uuid: Actor.gsMFEUAa8zWdgbm4
+                    quantity: 1
+                _id: LJP8UOOuem8eor5C
+                name: Carpenter's Tools
+                type: tool
+                system:
+                  container: null
+        tidy5e-sheet:
+          traitsExpanded: true
+        core:
+          sheetClass: dnd5e.Tidy5eCharacterSheet
+        custom-dnd5e:
+          06YuhXVqxp4N2hyF: 0
+          5lB0C8OgaildbwJq: 0
+          exhaustion: 0
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv.Ib9D1UihLgvla53B'
+    x: 3300
+    'y': 1700
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!Hvy93ZHfa17PjWFw.praVZMZAmv2cn5Uv'
+lights:
+  - _id: xkUdRaLy3VyLTn9N
+    x: 3392
+    'y': 1594
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 48.94
+      color: null
+      coloration: 1
+      dim: 97.88
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    hidden: false
+    flags: {}
+    levels: []
+    locked: false
+    _key: '!scenes.lights!Hvy93ZHfa17PjWFw.xkUdRaLy3VyLTn9N'
+notes: []
+sounds: []
+tiles: []
+walls:
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 5000
+      - 800
+      - 5000
+      - 3800
+    _id: c8QV6bZ6j8ntOqmB
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    doorSound: woodBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!Hvy93ZHfa17PjWFw.c8QV6bZ6j8ntOqmB'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1000
+      - 800
+      - 5000
+      - 800
+    _id: ItQYdP2NBtwJ6Of7
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    doorSound: woodBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!Hvy93ZHfa17PjWFw.ItQYdP2NBtwJ6Of7'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 5000
+      - 3800
+      - 1000
+      - 3800
+    _id: RwuteP9UEjk9zSoV
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    doorSound: woodBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!Hvy93ZHfa17PjWFw.RwuteP9UEjk9zSoV'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1000
+      - 3800
+      - 1000
+      - 800
+    _id: B27SFDZLze05nauE
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    doorSound: woodBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!Hvy93ZHfa17PjWFw.B27SFDZLze05nauE'
+playlist: CRWm7V1YkgcLEy8I
+playlistSound: null
+journal: null
+journalEntryPage: null
+folder: beNZN68lHIM2Vtxg
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: e23383b086027d560d0ca133a9df434f86d95774
+  smalltime:
+    darkness-link: true
+    player-vis: '1'
+    moonlight: true
+  zoom-pan-options:
+    minZoom: null
+    maxZoom: null
+  aedifs-tactical-grid:
+    gridLineWidth: 1
+  perceptive:
+    SceneBrightEndFlag: 0.25
+    SceneDimEndFlag: 0.75
+  wall-height:
+    advancedVision: true
+  token-attacher: {}
+  walledtemplates:
+    version: 0.7.11
+  terrainmapper:
+    backgroundElevation: null
+  fxmaster: {}
+  sequencer:
+    effects: []
+  tokencover:
+    version: 0.9.4
+  monks-common-display:
+    focus: gm
+    screen: scene
+_stats:
+  compendiumSource: Compendium.world.dark-sun-scenes.Scene.Hvy93ZHfa17PjWFw
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744079048933
+  modifiedTime: 1782140173285
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+weather: ''
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 0.5
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0.4
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0.09166666666666666
+    intensity: 0.5
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1723405789461
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+thumb: worlds/Rime-of-the-Frost-Maiden/assets/scenes/Hvy93ZHfa17PjWFw-thumb.webp
+active: false
+navOrder: 0
+sort: 0
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!Hvy93ZHfa17PjWFw'
+templates: []

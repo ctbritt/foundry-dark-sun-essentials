@@ -1,0 +1,3071 @@
+name: Drake Fire
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: DarkSunCreatureCatalog
+    hash: drake%20fire_darksuncreaturecatalog
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754288106499
+  modifiedTime: 1755395825009
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: qTEu1sb09RViWlmj
+img: https://i.imgur.com/5JkXrje.png?1754943552927
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  abilities:
+    str:
+      value: 27
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 12
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 25
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 3
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 15
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 2
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: natural
+      flat: 20
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      burrow: 40
+      climb: 40
+      fly: null
+      swim: null
+      walk: 40
+      units: ft
+      hover: false
+    attunement:
+      max: 3
+    senses:
+      darkvision: 120
+      blindsight: 60
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spellcasting: ''
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      value: 385
+      max: 385
+      temp: 0
+      tempmax: 0
+      formula: 22d20 + 154
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+  details:
+    biography:
+      value: >-
+        <p><a
+        href="https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view"
+        target="_blank" rel="noopener noreferrer">Monster Manual - Dark Sun 5th
+        Edition by Stanislav Zabielin</a> by <a
+        href="https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/"
+        target="_blank" rel="noopener noreferrer">auquid</a> and <a
+        href="https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0"
+        target="_blank" rel="noopener noreferrer">Athas Arena Forum by Nathan
+        Hasle</a></p><p>Drakes loom large in the myths of athas</p><p>Though
+        tales of them might scare children, few people believe these giant
+        monsters exist. Those who find out the truth rarely survive the
+        experience-the soft flesh of humanoids is drakes' favorite
+        food.</p><p>Lore</p><p>Athasian drakes are enormous, fearsome predators
+        having only animal intelligence and strong instincts. Each variety of
+        drake is attuned to a specific element and has psionic control over that
+        element, making its home in areas dominated by its associated
+        element.</p><p>Athasian drakes collect objects in their lairs or expand
+        their territory, depending on the individual drake's nature. Although
+        some hoards are valuable, drakes also amass trinkets or souvenirs that
+        have no worth to anyone else. Air drakes maintain multiple lairs atop
+        rocky spires or mesas and divide their few precious belongings among
+        these lairs.</p><p>Encounters</p><p>Drakes use terrain to their
+        advantage, and the setting for a battle with a drake can be as important
+        as the monster. Precarious cliffs are a great setup for air drakes,
+        volcanic fissures favor fire drakes, and unstable underground burrows
+        make tricky settings for encounters with earth drakes. Water drakes
+        might appear anywhere precious reserves of water exist. Any location
+        might also have been booby-trapped or fortified before the drake claimed
+        it.</p><p>Info</p><p>The prisoner pleads for the halfling shamans to
+        release him, yet they insist he is a sacrifice to the god of fire. As if
+        answering their call, a creature arises from the crater, magma dripping
+        from its thick, rocky scales. With a bestial rumble like a laugh, it
+        suddenly slashes, felling and devouring the halflings. Before the victim
+        can give thanks, the beast turns its scorching breath and razor-sharp
+        claws on him. A fire drake opens with breath of elemental fire to scorch
+        as many enemies as possible, moving the fiery zone about the battlefield
+        to herd them. It grabs an enemy and uses it to deflect blows, for fun as
+        well as defense. Fire drakes thrive on tormenting their victims, using
+        blazing pain to amplify suffering.</p><div class="rd__b  rd__b--1"><div
+        data-roll-name-ancestor="Lair Actions" class="rd__b  rd__b--2"><h3
+        class="rd__h rd__h--2" data-title-index="1"> <span
+        class="entry-title-inner">Lair Actions</span></h3> <p>On initiative
+        count 20 (losing initiative ties), the dragon takes a lair action to
+        cause one of the following effects; the dragon can't use the same effect
+        two rounds in a row:</p><ul class="rd__list"><li class="rd__li ">Magma
+        erupts from a point on the ground the dragon can see within 120 feet of
+        it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the
+        geyser's area must make a DC 15 Dexterity saving throw, taking 21 (6d6)
+        fire damage on a failed save, or half as much damage on a successful
+        one.</li><li class="rd__li ">A tremor shakes the lair in a 60-foot
+        radius around the dragon. Each creature other than the dragon on the
+        ground in that area must succeed on a DC 15 Dexterity saving throw or be
+        knocked prone.</li><li class="rd__li ">Volcanic gases form a cloud in a
+        20-foot-radius sphere centered on a point the dragon can see within 120
+        feet of it. The sphere spreads a round corners, and its area is lightly
+        obscured. It lasts until initiative count 20 on the next round. Each
+        creature that starts its turn in the cloud must succeed on a DC 13
+        Constitution saving throw or be poisoned until the end of its turn.
+        While poisoned in this way, a creature is
+        incapacitated.</li></ul></div></div><div class="rd__b  rd__b--1"><div
+        data-roll-name-ancestor="Regional Effects" class="rd__b  rd__b--2"><h3
+        class="rd__h rd__h--2" data-title-index="2"> <span
+        class="entry-title-inner">Regional Effects</span></h3> <p>The region
+        containing a fire drake's lair is warped by the dragon's elemental
+        magic, which creates one or more of the following effects:</p><ul
+        class="rd__list"><li class="rd__li ">Water sources within 1 mile of the
+        lair are supernaturally warm and tainted by sulfur.</li><li
+        class="rd__li ">Lava fountains erupt from the ground within 1 mile of
+        the drake's lair. Every hour, there is a ten percent chance that
+        characters in this area are close enough to an erupting lava fountain to
+        be in danger. A lava fountain create a vent 20 feet in diameter, and
+        hurls globs of lava up to 200 feet away. Each character within this area
+        must succeed on a DC 21 Dexterity saving throw or take 11 (2d10)
+        bludgeoning damage plus 17 (5d6) fire damage. A fountains lasts for 2d10
+        rounds before subsiding.</li><li class="rd__li ">Rocky fissures within 1
+        mile of the drake's lair form portals to the Elemental Plane of Fire,
+        allowing creatures of elemental fire into the world to dwell
+        nearby.</li><li class="rd__li ">Given days or longer to work, the dragon
+        can make cooled magma within its lair as solid as stone, forming
+        structures and other basaltic maze were he likes to hunt.</li></ul><p>If
+        the drake dies, these effects fade over the course of 1d10
+        days.</p></div></div>
+      public: ''
+    alignment: Chaotic Evil
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      value: dragon
+      subtype: ''
+    habitat:
+      value:
+        - type: hill
+        - type: mountain
+        - type: underdark
+      custom: ''
+    cr: 22
+    treasure:
+      value: []
+  resources:
+    legact:
+      value: 3
+      max: 3
+    legres:
+      value: 3
+      max: 3
+    lair:
+      value: true
+      initiative: 20
+      inside: false
+  source:
+    revision: 1
+    rules: '2014'
+    custom: ''
+    book: DarkSunCreatureCatalog
+    page: ''
+    license: ''
+  traits:
+    size: grg
+    di:
+      value:
+        - fire
+      custom: ''
+      bypasses: []
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value: []
+      custom: ''
+    languages:
+      value:
+        - draconic
+      custom: ''
+      communication: {}
+    important: false
+prototypeToken:
+  name: Drake Fire
+  displayName: 20
+  actorLink: false
+  width: 4
+  height: 4
+  texture:
+    src: tokens/drake_fire.token.dark-sun-creature-catalog.webp?1754943552927
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 120
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes:
+    blindsight:
+      range: 60
+      enabled: true
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 4
+items:
+  - _id: dNr6wrBZh4Y8GDrz
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake uses his Frightful Presence
+          and makes three melee attacks, two claw attacks, and one
+          bite.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        IPUYmJORRnPfnwy4:
+          _id: IPUYmJORRnPfnwy4
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: multiattack_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511399
+      modifiedTime: 1754942511399
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.dNr6wrBZh4Y8GDrz'
+  - _id: POkgS941XxsqsJLJ
+    name: Bite
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 15 ft., one target. <i>Hit:</i> 19 (2d10 + 8) damage, plus
+          10 (3d6) damage.</p></div>
+        chat: ''
+      range:
+        value: 15
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        N5JUjfZpO3m66NDV:
+          _id: N5JUjfZpO3m66NDV
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: str
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - piercing
+                number: 2
+                denomination: 10
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+              - types:
+                  - fire
+                number: 3
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: bite
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/creatures/abilities/mouth-teeth-long-red.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: bite_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511419
+      modifiedTime: 1754942511419
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.POkgS941XxsqsJLJ'
+  - _id: X1KsSzoogFksAOqv
+    name: Claws
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 10 ft., one target. <i>Hit:</i> 15 (2d6 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 10
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        RdiY5DivzaM7jNTF:
+          _id: RdiY5DivzaM7jNTF
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: str
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - slashing
+                number: 2
+                denomination: 6
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: claws
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/strike-slashes-red.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: claws_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511438
+      modifiedTime: 1754942511438
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.X1KsSzoogFksAOqv'
+  - _id: FEOXrVkHdZHBE5of
+    name: Tail
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +15 to
+          hit, reach 20 ft., one target. <i>Hit:</i> 17 (2d8 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 20
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        wMFkUwXDuOTv3Jd8:
+          _id: wMFkUwXDuOTv3Jd8
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: str
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - bludgeoning
+                number: 2
+                denomination: 8
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      identifier: tail
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/wounds/injury-pain-impaled-hand-blood.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: tail_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511459
+      modifiedTime: 1754942511459
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.FEOXrVkHdZHBE5of'
+  - _id: QxmZei0EU9f1dk8X
+    name: Frightful Presence
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Each creature of the dragon's choice
+          that is within 120 feet of the drake and aware of it must succeed on a
+          [[/save ability=wis dc=19]] saving throw or become
+          &amp;Reference[condition=frightened] for 1 minute. A creature can
+          repeat the saving throw at the end of each of its turns, ending the
+          effect on itself on a success. If a creature's saving throw is
+          successful or the effect ends for it, the creature is immune to the
+          drake's Frightful Presence for the next 24 hours.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        kIuelssaqN1YKfjq:
+          _id: kIuelssaqN1YKfjq
+          type: save
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: ''
+              formula: '19'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: frightful-presence
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/creatures/unholy/demons-horned-glowing-pink.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          frightful%20presence_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511480
+      modifiedTime: 1754942511480
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.QxmZei0EU9f1dk8X'
+  - _id: 5JZeTRdRfTO50lzx
+    name: Breath of Elemental Fire
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake exhales scorching fire in a
+          90ft cone. Each creature in that area must make a [[/save ability=dex
+          dc=22]] saving throw, taking 77 (22d6) damage on a failed save, or
+          half as much damage on a successful one.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: '1'
+        recovery:
+          - formula: '5'
+            period: recharge
+            type: recoverAll
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        JwnaU8lJxBiJBv0t:
+          _id: JwnaU8lJxBiJBv0t
+          type: save
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '22'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - fire
+                number: 22
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: breath-of-elemental-fire
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: modules/plutonium/media/icon/mailed-fist.svg
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          breath%20of%20elemental%20fire%20(recharge%205%e2%80%936)_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511502
+      modifiedTime: 1754942511502
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.5JZeTRdRfTO50lzx'
+  - _id: V3tsZzvUIZhW4aNM
+    name: Blazing Pain
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>While it has 200 hit points or lower,
+          the drake has advantage on attack rolls. In addition I deals and extra
+          10 (2d10) damage plus 10 (2d10) damage to any target it hits with a
+          melee attack.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        m7fnmKgT1vvFcZMn:
+          _id: m7fnmKgT1vvFcZMn
+          type: damage
+          name: ''
+          activation:
+            type: ''
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          damage:
+            critical:
+              allow: false
+            parts:
+              - types:
+                  - fire
+                number: 2
+                denomination: 10
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+              - types:
+                  - psychic
+                number: 2
+                denomination: 10
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+      identifier: blazing-pain
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          blazing%20pain_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511526
+      modifiedTime: 1754942511526
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.V3tsZzvUIZhW4aNM'
+  - _id: CusOvPX4VJG6vc9q
+    name: Legendary Resistance .
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>If the dragon fails a saving throw, it
+          can choose to succeed instead.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        Quo4K8GWKbakZiGz:
+          _id: Quo4K8GWKbakZiGz
+          type: utility
+          activation:
+            type: special
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legres.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: legendary-resistance-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          legendary%20resistance%20(3%2fday)._drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511550
+      modifiedTime: 1754942511550
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.CusOvPX4VJG6vc9q'
+  - _id: bPP6MlzHQAciaDTn
+    name: Detect
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake makes a Wisdom (Perception)
+          check.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        86oPpdpsd3CglFX9:
+          _id: 86oPpdpsd3CglFX9
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: detect
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/creatures/eyes/lizard-single-slit-blue.webp
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: detect_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511574
+      modifiedTime: 1754942511574
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.bPP6MlzHQAciaDTn'
+  - _id: 6VvabGEniKgBcohZ
+    name: Tail Attack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake makes a tail
+          attack.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        bJEWKF9LON6kTkLM:
+          _id: bJEWKF9LON6kTkLM
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: tail-attack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/wounds/injury-pain-impaled-hand-blood.webp
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: >-
+          tail%20attack_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511599
+      modifiedTime: 1754942511599
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.6VvabGEniKgBcohZ'
+  - _id: XXzbG1YiEh9TOdsV
+    name: Living Shield
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The drake makes a claws attack, if the
+          target is Medium or smaller, it is &amp;Reference[condition=grappled]
+          (escape DC <span class="rd__dc">20</span>). Until this grapple ends,
+          the target is &amp;Reference[condition=restrained]. The next attack
+          that hits the drake will deal half damage to the drake and half damage
+          to the grabbed creature.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        Dz6HRPTm0SUwJ7eg:
+          _id: Dz6HRPTm0SUwJ7eg
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - type: attribute
+                target: resources.legact.value
+                value: '1'
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: living-shield
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterLegendary
+        source: DarkSunCreatureCatalog
+        hash: >-
+          living%20shield_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511628
+      modifiedTime: 1754942511628
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.XXzbG1YiEh9TOdsV'
+  - _id: bOulBbak7o2IOuMb
+    name: Legendary Actions
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p></p><div class="rd__b 
+          rd__b--3"><p>The drake can take 3 legendary actions, choosing from the
+          options below. Only one legendary action option can be used at a time
+          and only at the end of another creature's turn. The dragon regains
+          spent legendary actions at the start of its turn.</p></div><ul
+          class="rd__list"><li class="rd__li
+          ">@UUID[.bPP6MlzHQAciaDTn]{Detect}</li><li class="rd__li
+          ">@UUID[.6VvabGEniKgBcohZ]{Tail Attack}</li><li class="rd__li
+          ">@UUID[.XXzbG1YiEh9TOdsV]{Living Shield}</li></ul></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: legendary-actions
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/hand-sparks-glow-yellow.webp
+    flags:
+      plutonium:
+        dedupeId: legendaryActions
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511656
+      modifiedTime: 1754942511656
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.bOulBbak7o2IOuMb'
+  - _id: 5u6FPkYiEVPJG6QZ
+    name: Magma erupts from a point on the ground the dragon ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Magma erupts from a point on the
+          ground the dragon can see within 120 feet of it, creating a
+          20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area
+          must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage
+          on a failed save, or half as much damage on a successful
+          one.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        TJa4QqpwHYnXQxCF:
+          _id: TJa4QqpwHYnXQxCF
+          type: save
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '15'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: magma-erupts-from-a-point-on-the-ground-the-dragon-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          magma%20erupts%20from%20a%20point%20on%20the%20ground%20the%20dragon%20..._drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511684
+      modifiedTime: 1754942511684
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.5u6FPkYiEVPJG6QZ'
+  - _id: Ewj3AcbLVzccVkCv
+    name: A tremor shakes the lair in a 60-foot radius ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>A tremor shakes the lair in a 60-foot
+          radius around the dragon. Each creature other than the dragon on the
+          ground in that area must succeed on a DC 15 Dexterity saving throw or
+          be knocked prone.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        lTWCWURg2jveMUCb:
+          _id: lTWCWURg2jveMUCb
+          type: save
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: radius
+              size: '60'
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '15'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: a-tremor-shakes-the-lair-in-a-60-foot-radius-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          a%20tremor%20shakes%20the%20lair%20in%20a%2060-foot%20radius%20..._drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511711
+      modifiedTime: 1754942511711
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.Ewj3AcbLVzccVkCv'
+  - _id: WzVjzddUC15icKfl
+    name: Volcanic gases form a cloud in a 20-foot-radius ...
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Volcanic gases form a cloud in a
+          20-foot-radius sphere centered on a point the dragon can see within
+          120 feet of it. The sphere spreads a round corners, and its area is
+          lightly obscured. It lasts until initiative count 20 on the next
+          round. Each creature that starts its turn in the cloud must succeed on
+          a DC 13 Constitution saving throw or be poisoned until the end of its
+          turn. While poisoned in this way, a creature is
+          incapacitated.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        1cbykYRQm9H2m0La:
+          _id: 1cbykYRQm9H2m0La
+          type: save
+          activation:
+            type: lair
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: sphere
+              size: '20'
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '13'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: volcanic-gases-form-a-cloud-in-a-20-foot-radius-
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    flags:
+      plutonium:
+        page: monsterLairActions
+        source: DarkSunCreatureCatalog
+        hash: >-
+          volcanic%20gases%20form%20a%20cloud%20in%20a%2020-foot-radius%20..._drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511740
+      modifiedTime: 1754942511740
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.WzVjzddUC15icKfl'
+  - _id: 9Zq2rXFlGwhnYCtc
+    name: Regional Effects
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The region containing a fire drake's
+          lair is warped by the dragon's elemental magic, which creates one or
+          more of the following effects:</p><ul class="rd__list"><li
+          class="rd__li ">Water sources within 1 mile of the lair are
+          supernaturally warm and tainted by sulfur.</li><li class="rd__li
+          ">Lava fountains erupt from the ground within 1 mile of the drake's
+          lair. Every hour, there is a ten percent chance that characters in
+          this area are close enough to an erupting lava fountain to be in
+          danger. A lava fountain create a vent 20 feet in diameter, and hurls
+          globs of lava up to 200 feet away. Each character within this area
+          must succeed on a DC 21 Dexterity saving throw or take 11 (2d10)
+          bludgeoning damage plus 17 (5d6) fire damage. A fountains lasts for
+          2d10 rounds before subsiding.</li><li class="rd__li ">Rocky fissures
+          within 1 mile of the drake's lair form portals to the Elemental Plane
+          of Fire, allowing creatures of elemental fire into the world to dwell
+          nearby.</li><li class="rd__li ">Given days or longer to work, the
+          dragon can make cooled magma within its lair as solid as stone,
+          forming structures and other basaltic maze were he likes to
+          hunt.</li></ul><p>If the drake dies, these effects fade over the
+          course of 1d10 days.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        pEqYlcFgu9DcfeBj:
+          _id: pEqYlcFgu9DcfeBj
+          type: save
+          activation:
+            type: ''
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ''
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: ''
+              formula: '21'
+          damage:
+            onSave: none
+            parts: []
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: regional-effects
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/environment/wilderness/cave-entrance-mountain-blue.webp
+    flags:
+      plutonium:
+        page: monsterRegionalEffects
+        source: DarkSunCreatureCatalog
+        hash: >-
+          regional%20effects_drake%20fire_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942511773
+      modifiedTime: 1754942511773
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!qTEu1sb09RViWlmj.9Zq2rXFlGwhnYCtc'
+effects: []
+folder: u7CNFCDF4S6ZiHX7
+sort: 2500000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!actors!qTEu1sb09RViWlmj'

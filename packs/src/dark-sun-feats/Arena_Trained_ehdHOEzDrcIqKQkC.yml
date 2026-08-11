@@ -1,0 +1,550 @@
+folder: ReXRK6J3hp5hQbzD
+name: Arena Trained
+type: feat
+_id: ehdHOEzDrcIqKQkC
+img: icons/weapons/axes/axe-battle-heavy-black.webp
+system:
+  activities:
+    PTlpsHRjA5VeyLnm:
+      type: damage
+      _id: PTlpsHRjA5VeyLnm
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+      description:
+        chatFlavor: >-
+          When you deal damage with a slashing or piercing weapon, you can add
+          your proficiency bonus to the damage once per turn.
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: rUmIHKLFvdFgvSmw
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: null
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      name: Ravaging Strike
+      img: ''
+      flags:
+        dnd5e:
+          riders:
+            activity: false
+      appliedEffects:
+        - rUmIHKLFvdFgvSmw
+    7BIugkisDzsL7oN2:
+      type: save
+      _id: 7BIugkisDzsL7oN2
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+      description:
+        chatFlavor: >-
+          Once per round you, as a Bonus Action, you may throw sand or loose
+          dirt into a creature's eyes whose size is equal to or smaller than
+          you. The creature attacked must make a Dexterity saving throw or be
+          blinded during the next melee attack against it within the same round.
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 6iGkqiLlvTW7JVYh
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        critical:
+          allow: false
+        onSave: none
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      name: Blinding Trick
+      img: ''
+      flags:
+        dnd5e:
+          riders:
+            activity: false
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+  description:
+    value: >-
+      <p>Repeatable: No</p><p>You have been trained in the brutal arenas of
+      Athas, where only the strongest survive. You may apply one of the
+      following benefits per turn:</p><p><strong>Ravaging Strike</strong>. When
+      you deal damage with a slashing or piercing weapon, you can add your
+      proficiency bonus to the damage once per turn.</p><p><strong>Net
+      Master</strong>. You gain proficiency with the use of the Net martial
+      weapon to restrain your opponents. In addition, you add your proficiency
+      bonus to the DC when a creature attempts to escape from
+      it.</p><p><strong>Blinding Trick</strong>. Once per round you, as a Bonus
+      Action, you may throw sand or loose dirt into a creature's eyes whose size
+      is equal to or smaller than you. The creature atacked must make a [[/save
+      dex format=long]] or be &amp;Reference[blinded] during the next melee
+      attack against it within the same round.</p><p>You can use this feat a
+      number of times equal to your proficiency bonus, and you regain all
+      expended uses when you finish a long rest.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: 1st level Feat, Dark Sun Campaign
+  type:
+    value: feat
+    subtype: origin
+effects:
+  - name: Ravaging Strike
+    img: icons/weapons/axes/axe-battle-heavy-black.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-feats.Item.ehdHOEzDrcIqKQkC
+    transfer: false
+    _id: rUmIHKLFvdFgvSmw
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.rollModifiers.damage.mwak.slashing
+          value: '@prof'
+          priority: 20
+          type: add
+        - key: flags.midi-qol.rollModifiers.damage.mwak.piercing
+          value: '@prof'
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p><em>Prerequisite: 1st level Feat, Dark Sun
+      Campaign</em></p><p>Repeatable: No</p><p>You have been trained in the
+      brutal arenas of Athas, where only the strongest survive. You may apply
+      one of the following benefits per turn:</p><p><strong>Ravaging
+      Strike</strong>. When you deal damage with a slashing or piercing weapon,
+      you can add your proficiency bonus to the damage once per
+      turn.</p><p><strong>Net Master</strong>. You gain proficiency with the use
+      of the Net martial weapon to restrain your opponents. In addition, you add
+      your proficiency bonus to the DC when a creature attempts to escape from
+      it.</p><p><strong>Blinding Trick</strong>. Once per round you, as a Bonus
+      Action, you may throw sand or loose dirt into a creature's eyes whose size
+      is equal to or smaller than you. The creature atacked must make a
+      Dexterity saving throw or be blinded during the next melee attack against
+      it within the same round. The saving throw DC = 8 + your proficiency bonus
+      + your dexterity bonus.</p><p>You can use this feat a number of times
+      equal to your proficiency bonus, and you regain all expended uses when you
+      finish a long rest.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1745158670767
+      modifiedTime: 1745158839361
+      lastModifiedBy: 6QG9R6JQRfToF3Mf
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ehdHOEzDrcIqKQkC.rUmIHKLFvdFgvSmw'
+  - name: Net Master
+    img: icons/weapons/axes/axe-battle-heavy-black.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-feats.Item.ehdHOEzDrcIqKQkC
+    _id: x6mTxZAnxzzocNDC
+    type: base
+    system:
+      changes:
+        - key: system.traits.weaponProf.value
+          value: net
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p><em>Prerequisite: 1st level Feat, Dark Sun
+      Campaign</em></p><p>Repeatable: No</p><p>You have been trained in the
+      brutal arenas of Athas, where only the strongest survive. You may apply
+      one of the following benefits per turn:</p><p><strong>Ravaging
+      Strike</strong>. When you deal damage with a slashing or piercing weapon,
+      you can add your proficiency bonus to the damage once per
+      turn.</p><p><strong>Net Master</strong>. You gain proficiency with the use
+      of the Net martial weapon to restrain your opponents. In addition, you add
+      your proficiency bonus to the DC when a creature attempts to escape from
+      it.</p><p><strong>Blinding Trick</strong>. Once per round you, as a Bonus
+      Action, you may throw sand or loose dirt into a creature's eyes whose size
+      is equal to or smaller than you. The creature atacked must make a
+      Dexterity saving throw or be blinded during the next melee attack against
+      it within the same round. The saving throw DC = 8 + your proficiency bonus
+      + your dexterity bonus.</p><p>You can use this feat a number of times
+      equal to your proficiency bonus, and you regain all expended uses when you
+      finish a long rest.</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1745158913984
+      modifiedTime: 1745158948456
+      lastModifiedBy: 6QG9R6JQRfToF3Mf
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ehdHOEzDrcIqKQkC.x6mTxZAnxzzocNDC'
+  - name: Blinding Trick
+    img: icons/weapons/axes/axe-battle-heavy-black.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-feats.Item.ehdHOEzDrcIqKQkC
+    transfer: false
+    _id: 6iGkqiLlvTW7JVYh
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>Repeatable: No</p><p>You have been trained in the brutal arenas of
+      Athas, where only the strongest survive. You may apply one of the
+      following benefits per turn:</p><p><strong>Ravaging Strike</strong>. When
+      you deal damage with a slashing or piercing weapon, you can add your
+      proficiency bonus to the damage once per turn.</p><p><strong>Net
+      Master</strong>. You gain proficiency with the use of the Net martial
+      weapon to restrain your opponents. In addition, you add your proficiency
+      bonus to the DC when a creature attempts to escape from
+      it.</p><p><strong>Blinding Trick</strong>. Once per round you, as a Bonus
+      Action, you may throw sand or loose dirt into a creature's eyes whose size
+      is equal to or smaller than you. The creature atacked must make a
+      Dexterity saving throw or be blinded during the next melee attack against
+      it within the same round. The saving throw DC = 8 + your proficiency bonus
+      + your dexterity bonus.</p><p>You can use this feat a number of times
+      equal to your proficiency bonus, and you regain all expended uses when you
+      finish a long rest.</p>
+    tint: '#ffffff'
+    statuses:
+      - blinded
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - 1Attack:mwak
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1745159236918
+      modifiedTime: 1745159301931
+      lastModifiedBy: 6QG9R6JQRfToF3Mf
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!ehdHOEzDrcIqKQkC.6iGkqiLlvTW7JVYh'
+sort: 400000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  core:
+    sheetClass: dnd5e.ItemSheet5e2
+  cat:
+    automation:
+      hash: -1467625910
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1745158492888
+  modifiedTime: 1784910748599
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!ehdHOEzDrcIqKQkC'

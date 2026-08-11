@@ -1,0 +1,280 @@
+_id: gEQF5Nl3jtOB76dm
+name: Cahulaks
+type: weapon
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/dsr/upload/cahulaks.png
+effects: []
+folder: rIxLkbsyNPx3rVKl
+sort: 0
+flags:
+  scene-packer:
+    hash: 64f2eee3f7ad9666ae3d7437d967b9e379b5aca7
+  betterRolls5e:
+    quickDesc:
+      value: false
+      altValue: false
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickOther:
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      value: true
+      altValue: true
+    quickCharges:
+      value:
+        quantity: false
+      altValue:
+        quantity: false
+    quickAttack:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  betterCurses:
+    isCurse: false
+    curseName: ''
+    formula: ''
+    mwak: false
+    rwak: false
+    msak: false
+    rsak: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: >-
+      <p id="h.p_l4WP_kADHh4E" class="CDt4Ke zfr3Q"
+      style="box-sizing:border-box;font-variant-ligatures:none;margin-top:14px;margin-bottom:0px;outline:none;position:relative;text-decoration-line:inherit;color:#212121;font-size:13pt;font-family:Roboto;line-height:1.55;white-space:pre-wrap">Two,
+      four pronged hooks connected by 12 feet of rope. A hook can be thrown and
+      be pulled back as an attack. If it hits a grapple attempt can be made.</p>
+
+      <p id="h.p_wS4XtKYzNF7s" class="CDt4Ke zfr3Q"
+      style="box-sizing:border-box;font-variant-ligatures:none;margin-top:14px;margin-bottom:0px;outline:none;position:relative;text-decoration-line:inherit;color:#212121;font-size:13pt;font-family:Roboto;line-height:1.55;padding-bottom:0px;white-space:pre-wrap">If
+      only one hook with a rope is used, it is called an Alhulak</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - fin
+    - ret
+    - spc
+    - thr
+  proficient: 1
+  unidentified:
+    description: ''
+    name: Unidentified War Pick
+  type:
+    value: martialM
+    baseItem: warpick
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: ''
+        value: 0
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: dex
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  identifier: cahulaks
+  container: null
+  attuned: false
+  ammunition: {}
+  mastery: ''
+  crew:
+    value: []
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766719656465
+  modifiedTime: 1781135019926
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!gEQF5Nl3jtOB76dm'

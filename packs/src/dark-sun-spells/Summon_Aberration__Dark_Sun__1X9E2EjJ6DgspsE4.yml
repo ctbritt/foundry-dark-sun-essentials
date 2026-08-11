@@ -1,0 +1,289 @@
+type: spell
+system:
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      name: 'Summon Aberration: Beholderkin'
+    2xATI9pMQv2oVnE7:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      name: 'Summon Aberration: Slaad'
+      _id: 2xATI9pMQv2oVnE7
+    Ykxed0BXKRXWlwiA:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      name: 'Summon Aberration: Star Spawn'
+      _id: Ykxed0BXKRXWlwiA
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb"><p>This spell is only available to those. with access to
+      the sorcerer spell list. Beholders, Slaadi and Star Spawns don’t exist on
+      Athas, thus the aberration you summon is a physical manifestation of a
+      being you imagine in your mind. Its appearance can be anything within
+      reason.</p><p>The creature is an ally to you and your companions. In
+      combat, the creature shares your initiative count, but it takes its turn
+      immediately after yours. It obeys your verbal commands (no action required
+      by you). If you don’t issue any, it takes the Dodge action and uses its
+      move to avoid danger.</p><p><em><strong>At Higher Levels.</strong></em>
+      When you cast this spell using a spell slot of 5th level or higher, use
+      the higher level wherever the spell’s level appears in the stat
+      block.</p><div class="Basic-Text-Frame stat-block-finder"><p
+      class="Stat-Block-Styles_Stat-Block-Title">@Embed[Compendium.shareddata.ddb-summons.2blmjas3VLj5KGRP
+      statblock]{Aberrant Spirit (Slaad)}</p></div></div>
+    chat: ''
+  identifier: summon-aberration
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2014'
+    revision: 1
+  ability: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: hour
+  level: 4
+  materials:
+    value: >-
+      a pickled tentacle and an eyeball in a platinum-inlaid vial worth at least
+      400 gp
+    consumed: false
+    cost: 400
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  school: con
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+effects: []
+name: Summon Aberration (Dark Sun)
+flags:
+  ddbimporter:
+    id: 5833900
+    definitionId: 718613
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: false
+    originalName: Summon Aberration
+    sources:
+      - sourceId: 67
+        pageNumber: 109
+        sourceType: 1
+    tags:
+      - Summoning
+    version: 6.4.20
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: true
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Summon Aberration
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  midi-qol:
+    effectActivation: false
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    confirmTargets: never
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    persistSourceMigration: true
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 226575770
+img: icons/creatures/unholy/demon-fanged-horned-yellow.webp
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1755101674892
+  modifiedTime: 1784910749536
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: 1X9E2EjJ6DgspsE4
+sort: 4325000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!1X9E2EjJ6DgspsE4'

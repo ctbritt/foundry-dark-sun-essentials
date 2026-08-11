@@ -1,0 +1,154 @@
+folder: 3ceHqueQSXMSDgbA
+name: Outlaw
+type: background
+img: icons/magic/earth/projectile-spiked-stone-boulder-orange.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[dex], &amp;Reference[cha],
+      &amp;Reference[int]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[dec], plus one from among &amp;Reference[itm],
+      &amp;Reference[slt], and &amp;Reference[ste]</p><p><strong>Tool
+      Proficiencies:</strong> One gaming set or musical instrument, plus one
+      from among disguise kit, forgery kit, poisoner's kit, and thieves'
+      tools</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftAlert000000]{Alert} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled}</p><p><strong>Equipment:</strong>
+      A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesComm]{Common
+      Clothes}, thieves' tools, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 40 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> You are a career criminal - a specialist in
+      theft, assassination, extortion, smuggling, banditry or some other
+      underhanded craft. You have spent a lot of time with other criminals and
+      likely have contacts within the criminal underworld of the city-states or
+      among the raiding tribes that plague the wastes.</p>
+    chat: ''
+  identifier: athas-outlaw
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '286'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: OCwhzmA5eFwE60TL
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: oWH6bryMvup6fAnA
+      group: ''
+      sort: 200000
+    - _id: 6s3w67NX0f5PsawH
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: zdCpqh0X5cIqKGpy
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - int
+          - wis
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          dex: 2
+          cha: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: wKzb65YDIm0vD3Co
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:itm
+              - skills:slt
+              - skills:ste
+          - count: 1
+            pool:
+              - tool:game:*
+              - tool:music:*
+          - count: 1
+            pool:
+              - tool:disg
+              - tool:forg
+              - tool:pois
+              - tool:thief
+        grants:
+          - skills:dec
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: 1OJDMScNCrrHPZWf
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftAlert000000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '40'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.D6L95OuiwptjGqpe
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: D6L95OuiwptjGqpe
+sort: 292188
+_key: '!items!D6L95OuiwptjGqpe'

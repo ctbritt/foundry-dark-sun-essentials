@@ -1,0 +1,250 @@
+name: Mind Thrust
+type: spell
+system:
+  source:
+    custom: ''
+    book: PsPr
+    page: '51'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="Psychic
+      Components" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">Psychic
+      Components.</span></span> Observable</p></div><div
+      data-roll-name-ancestor="Talent Duration" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Talent Duration.</span></span>
+      Focus</p></div><p>While you focus on this power, you can use your action
+      to target one creature you can see within range, making your eyes flare
+      noticeably for an instant. The target must succeed on a Charisma saving
+      throw or take 1d10 points of psychic damage. This cantrip's damage
+      increases by 1d10 when you reach 5th level 2d10, 11th level 3d10, and 17th
+      level 4d10.</p></div>
+    chat: ''
+  level: 0
+  school: ''
+  properties:
+    - psionic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+      stationary: false
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: perm
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  method: atwill
+  activities:
+    sDzokX8GK5iGQVCR:
+      _id: sDzokX8GK5iGQVCR
+      type: save
+      name: ''
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts:
+          - types:
+              - psychic
+            number: 1
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+        critical:
+          allow: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      sort: 0
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  identifier: mind-thrust
+  prepared: 1
+img: icons/FHTSDcEePsrJAyqG_1769120684867.png
+flags:
+  plutonium:
+    page: spells.html
+    source: Psions Primer
+    hash: mind%20thrust_psions%20primer
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+      - Icon
+  dnd5e:
+    riders:
+      activity: []
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  crux:
+    trayVisibility: default
+  scene-packer:
+    sourceId: Actor.tUXrNjeJLWOeIVFV.Item.z15Xjy1DwRVvVTe2
+    hash: 206349fccaf8bcdf88a9734bf99357c6228b2c39
+  cat:
+    automation:
+      hash: -1336017056
+effects: []
+folder: null
+_stats:
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1784910459683
+  modifiedTime: 1784910749528
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 550000
+_id: 2fcKLMq3oPRn0nNz
+_key: '!items!2fcKLMq3oPRn0nNz'

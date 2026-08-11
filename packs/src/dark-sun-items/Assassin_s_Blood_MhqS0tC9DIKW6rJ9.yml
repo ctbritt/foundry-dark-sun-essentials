@@ -1,0 +1,145 @@
+name: Assassin's Blood
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      currency:
+        name: gp
+        value: 100
+      instruction: >-
+        <p>A creature subjected to this poison must make a DC 10 Constitution
+        saving throw. On a failed save, it takes 1d12 poison damage and is
+        Poisoned for 24 hours. On a successful save, the creature takes half
+        damage and isn’t Poisoned.</p><p>Type: Ingested</p><p>Ingredients: Basic
+        Poison, Moonshade</p>
+      folder: Uncommon Poisons
+      required:
+        '1':
+          key:
+            id: k5CAeSs515lTeOw9
+            uuid: Compendium.shareddata.ddb-items.k5CAeSs515lTeOw9
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: 0eOun2PLpch5iXMT
+            uuid: Item.0eOun2PLpch5iXMT
+            img: icons/consumables/mushrooms/helm-purple-shiny.webp
+            type: Item
+            name: Nightshade
+            quantity: 1
+            itemType: consumable
+        '2':
+          key:
+            id: XsePsNGNXztjGhqt
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.XsePsNGNXztjGhqt
+            img: icons/commodities/flowers/dandelion-pod-blue.webp
+            type: Item
+            name: Moonstalker
+            quantity: 1
+            itemType: loot
+        '3':
+          key:
+            id: v4AeMM9MmplrULaL
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-poisons.v4AeMM9MmplrULaL
+            img: icons/consumables/potions/potion-tube-corked-bubbling-green.webp
+            type: Item
+            name: Poison, Basic (vial)
+            quantity: 1
+            itemType: consumable
+        '4':
+          key:
+            id: KvTE3mcif3xyes2V
+            uuid: Compendium.shareddata.ddb-items.KvTE3mcif3xyes2V
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: backpack
+      output:
+        '1':
+          key:
+            id: x3YRPGeFd7OKSUi3
+            uuid: Compendium.shareddata.ddb-items.x3YRPGeFd7OKSUi3
+            img: icons/consumables/potions/potion-tube-corked-red.webp
+            type: Item
+            name: Assassin's Blood (Ingested)
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 12
+                  uuid: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: b4b4a563ac20d824f475eef31777a100216c9dcc
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: uncommon
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: assassins-blood
+effects: []
+folder: QYufUtCWt2VF1PrB
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.MhqS0tC9DIKW6rJ9
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882083
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: MhqS0tC9DIKW6rJ9
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!MhqS0tC9DIKW6rJ9'

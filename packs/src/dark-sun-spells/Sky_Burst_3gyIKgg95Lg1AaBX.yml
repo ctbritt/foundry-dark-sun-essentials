@@ -1,0 +1,221 @@
+name: Sky Burst
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>Five bolts of lightning strike five points of your choice that you can
+      see within range. Each creature within 5 feet of the chosen points must
+      make a Dexterity saving throw. A creature takes 4d12 lightning damage on a
+      failed save, or half as much on a successful one. A creature in the area
+      of more than one lightning burst is affected only once.
+      </p><p><em><strong>At Higher Levels:</strong></em> When you cast this
+      spell using a spell slot of 6th level or higher, you can call down an
+      additional bolt of lightning targeting another point within range for each
+      slot level above 5th.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+  level: 5
+  school: evo
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: ft
+    value: '120'
+    special: ''
+  activities:
+    kCU8fXKxoQPX9u7W:
+      type: save
+      _id: kCU8fXKxoQPX9u7W
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 12
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: ''
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: sky-burst
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: '5'
+      type: space
+      special: ''
+folder: null
+_id: 3gyIKgg95Lg1AaBX
+effects: []
+flags:
+  scene-packer:
+    hash: 345a85fe252b5e3b00c5b5ce5fb7fb2997a2617c
+    sourceId: Item.3gyIKgg95Lg1AaBX
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 602267580
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.3gyIKgg95Lg1AaBX
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749541
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 2400000
+_key: '!items!3gyIKgg95Lg1AaBX'

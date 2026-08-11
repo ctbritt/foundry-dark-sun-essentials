@@ -1,0 +1,219 @@
+name: Athasian Half-Elf
+type: race
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="fvtt narrative"><p>She kept scouting ahead with the crocodile
+      riders, at times sniffing the air or examining the hard, baked ground. It
+      seemed like she lived in the deserts her whole life, for there wasn't a
+      single day where we took a wrong turn or faced any nasty raiders. Such a
+      lonely and tight-lipped person, I couldn't figure out her whereabouts;
+      even when I tried to approach her, she reluctantly welcomed my effort.
+      Only during the end of our trip did I manage to glean the truth about her.
+      And it was at this moment, when the morning wind brushed her hair, and I
+      suddenly glimpsed a pair of pointed ears.</p></div><p>Humans and elves
+      must deal with each other from time to time, and in some cases, children
+      are born of mixed parentage. These beings who combine features of both
+      species create something different in the process.</p><h1>OF TWO
+      WORLDS</h1><p>Born from two worlds but welcome in neither, half-elves
+      struggle to find their place in a hostile land. While being the offspring
+      of two species, they face prejudice and unwillingness from both sides.
+      That, in conjunction with the lack of culture, has turned the half-elves
+      into lonesome, self-sufficient folk.</p><p>Half-elves generally grow
+      taller than their human parents but rarely approach the height of their
+      elf side. They average well above 6 feet tall, though they tend to inherit
+      some of the bulk of their human half, averaging at 140 pounds. In most
+      cases, a half-elf can pass itself off as a human, though telltale features
+      can be spotted that hint at its elven heritage.</p><p>Half-elven
+      coloration and features tend to lie somewhere between their human and
+      elven parents, and thus show a variety even more pronounced than that
+      found among either species.</p><h1>NATURAL SURVIVALISTS</h1><p>Intolerance
+      and social rejection have given the half-elf its greatest attribute —
+      self-reliance. As a loner, usually without permanent residence, a half-elf
+      survives the rigors of life in the wilderness completely on its own. The
+      skills involved in survival are only half of the challenge they face —
+      half-elves must also learn to deal with the absence of companionship, the
+      complete lack of conversation, and basic friendship.</p><p>Consequently,
+      these lonesome folk turn to the animal world, training beasts of the air
+      and sands as servants and friends.</p><h1>NO HOMELAND</h1><p>A half-elf's
+      life is typically hardened by the intolerance of others. Neither fully
+      human nor fully elven, half-elves rarely find acceptance within either
+      group. Elves are especially intolerant, going so far as to cast out the
+      mother of a half-elf child, while humans are more apt to welcome them as
+      allies or partners, although they seldom accept them into their homes.
+      More otien than not, half-elves remain outsiders, forced to endure on
+      society's fringes.</p><h1>HALF-ELF NAMES</h1><p>Half-elves usually pick
+      human or elven naming conventions. As a result of social rejection from
+      both peoples, they otien come up with twisted forms of human and elven
+      names or invent their own.</p><p><strong>Male Names</strong>: Boaz,
+      Brazin, Ero, Fyrian, Gathalimay, Laban, Lafus, Luris, Melestan, Mirch,
+      Navarch, PoortooL Regg, Ruach, Solzak, Vok, Wek, Wheetan,
+      Xutan.</p><p><strong>Female Names</strong>: Alie, Arya, Aso, Drewet,
+      Feera, Feykaar, Krysta, Lorelei, Mila, Ranis, Sareka, Thania,
+      Vaerhirmana.</p><h1>HALF-ELF TRAITS</h1><p>Your half-elf character has
+      developed some qualities that set it apart from both humans and
+      elves.</p><p><strong>Age</strong>. Half-elves mature at the same rate
+      humans do and reach adulthood around the age of 20. They can live to
+      exceed a hundred years.</p><p><strong>Size</strong>. Half-elves are taller
+      than humans, standing well over 6 feet tall. They are on the lean side,
+      however, averaging almost 160 pounds. Your size is
+      Medium.</p><p><strong>Creature Type</strong>:
+      Humanoid</p><p><strong>Speed</strong>. Your base walking speed is 35
+      feet.</p><p><strong>Nomadic Life.</strong> You have proficiency in the
+      Animal Handling and Survival skills.</p><p><strong>Animal Friend.</strong>
+      Once you reach 3rd level, you can cast the animal friendship spell once
+      per day. If you use this ability on the same beast more than 1 day in a
+      row, that beast has disadvantage on its saving
+      throw.</p><p><strong>Languages</strong>. You can speak Common and an extra
+      language of your choice.</p>
+    chat: ''
+  advancement:
+    - _id: 71KfAhg2e2i17du3
+      type: Size
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - _id: fSyBCk8tfZIhcx1f
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA
+        optional: false
+        spell:
+          ability: []
+          preparation: atwill
+          uses:
+            max: '1'
+            per: day
+            requireSlot: false
+      value: {}
+      level: 0
+      title: ''
+      hint: >-
+        Once you reach 3rd level, you can cast the animal friendship spell once
+        per day. If you use this ability on the same beast more than 1 day in a
+        row, that beast has disadvantage on its saving throw.
+    - _id: 3mdR1DGzpopVJCsJ
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:ani
+          - skills:sur
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: iVXD9M2CCDjebBXH
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants:
+          - languages:standard:common
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+  movement:
+    burrow: ''
+    climb: ''
+    fly: ''
+    swim: ''
+    walk: 35
+    units: ft
+    hover: false
+  senses:
+    darkvision: 60
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: ft
+    special: ''
+  type:
+    value: humanoid
+    custom: ''
+    subtype: Athasian Half-Elf
+  identifier: athas-half-elf
+flags:
+  ddbimporter:
+    type: race
+    entityRaceId: 20
+    version: 6.0.79
+    baseName: Half-Elf
+    baseRaceId: 20
+    baseRaceName: Half-Elf
+    fullName: Half-Elf
+    subRaceShortName: null
+    isHomebrew: false
+    isLegacy: true
+    isSubRace: false
+    moreDetailsUrl: /species/20-half-elf
+    featIds: []
+    portraitAvatarUrl: >-
+      https://www.dndbeyond.com/avatars/9/381/636327459940259125.jpeg?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+    avatarUrl: >-
+      https://www.dndbeyond.com/avatars/6/480/636274618102482054.png?width=350&height=350&fit=bounds&quality=95&auto=webp
+    largeAvatarUrl: >-
+      https://www.dndbeyond.com/avatars/6/481/636274618102950794.png?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+    fullRaceName: Half-Elf
+    groupIds:
+      - 10
+    groupName: Half-Elf
+    legacy: true
+    is2014: true
+    is2024: false
+    isLineage: false
+    lineageName: null
+  obsidian:
+    source:
+      type: race
+  midi-qol:
+    onUseMacroName: ''
+    onUseMacroParts:
+      items: []
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  core:
+    sheetClass: dnd5e.ItemSheet5e2
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/artwork/dark-sun/athas-half-elf.webp
+effects: []
+folder: LjDB0kWIR31eVBt4
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1744078786403
+  modifiedTime: 1766706375319
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: Xl6cfB8lLJiRFawv
+sort: 100000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!Xl6cfB8lLJiRFawv'

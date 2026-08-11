@@ -1,0 +1,174 @@
+_id: CaPzY4JKz6h2nukZ
+name: Blessed Strikes
+type: feat
+system:
+  source:
+    custom: ''
+    book: TCE
+    page: '30'
+    license: ''
+    revision: 1
+    rules: '2014'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--1"><p><i>8th-level cleric @variantrule[optional
+      class features|tce|optional feature], which replaces the Divine Strike
+      feature</i></p><p>You are blessed with divine might in battle. When a
+      creature takes damage from one of your cantrips or weapon attacks, you can
+      also deal [[/r 1d8]] radiant damage to that creature. Once you deal this
+      damage, you can't use this feature again until the start of your next
+      turn.</p></div>
+    chat: ''
+  requirements: Cleric 8 (Tempest)
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  cover: null
+  crewed: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - radiant
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+  identifier: blessed-strikes
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/holy/projectiles-blades-salvo-yellow.webp
+flags:
+  plutonium:
+    page: subclassFeature
+    source: TCE
+    hash: blessed%20strikes_cleric_phb_tempest_phb_8_tce
+    propDroppable: subclassFeature
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: k0waAkenBUjTU20q
+sort: 400000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134998490
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!CaPzY4JKz6h2nukZ'

@@ -1,0 +1,93 @@
+folder: ReXRK6J3hp5hQbzD
+name: Minor Ability Improvement
+type: feat
+_id: ZhK9ivupyskcWwS2
+img: icons/vtt-512.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  description:
+    value: >-
+      <p>Choose one ability score. Increase the chosen ability score by 1, to a
+      maximum of 16.</p>
+    chat: ''
+  identifier: minor-ability-improvement
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement:
+    - _id: RjxsqGDXG2pUrhgj
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 1
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 1
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 1
+    repeatable: true
+  properties: []
+  requirements: Dark Sun Campaign
+  type:
+    value: feat
+    subtype: general
+effects: []
+sort: 0
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  cat:
+    automation:
+      hash: -776208966
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745339706342
+  modifiedTime: 1784910748587
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!ZhK9ivupyskcWwS2'

@@ -1,0 +1,143 @@
+folder: 3ceHqueQSXMSDgbA
+name: Slave Hero
+type: background
+img: icons/sundries/survival/cuffs-shackles-steel.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[str], &amp;Reference[con],
+      &amp;Reference[dex]</p><p><strong>Skill Proficiencies:</strong> Any two of
+      your choice</p><p><strong>Tool Proficiencies:</strong> Any two from among
+      artisan's tools, gaming sets, or musical
+      instruments</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX]{Survivor} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftTough000000]{Tough}</p><p><strong>Equipment:</strong>
+      A set of tattered
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesComm]{Common
+      Clothes}, and a belt
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 5 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> Whether through birth, punishment, or capture
+      you were enslaved to serve another. You are one of the fortunate ones who
+      managed to gain their freedom through force, cunning, or pure blind
+      luck.</p>
+    chat: ''
+  identifier: athas-slave-hero
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '287'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: TkQ1xfMvvgy6ws45
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: KHFydXKZBt1PccRr
+      group: ''
+      sort: 200000
+    - _id: 3uon9IPbJ1mU0fO9
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: GE9zBZ7B3VSrDO6W
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - int
+          - wis
+          - cha
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          str: 2
+          con: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: YU0Pji8jk8KtFye4
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - skills:*
+          - count: 2
+            pool:
+              - tool:*
+              - tool:game:*
+              - tool:music:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: YZ8ZHckFpNcPbyk1
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftTough000000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '5'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.uaRzr2rKfGDuxYQ4
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766718207551
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: uaRzr2rKfGDuxYQ4
+sort: 274610
+_key: '!items!uaRzr2rKfGDuxYQ4'

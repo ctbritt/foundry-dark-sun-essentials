@@ -1,0 +1,124 @@
+name: Raging Charge
+type: feat
+system:
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Beginning at 10th level, you can take the Dash action as a bonus action
+      while you are raging.</p>
+
+
+
+      </div>
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  requirements: Path of the Pitfighter
+  identifier: battlerager-charge
+  activities: {}
+  enchant: {}
+  prerequisites:
+    level: 10
+    repeatable: false
+  properties: []
+  advancement: []
+  cover: null
+  crewed: false
+flags:
+  ddbimporter:
+    id: 476
+    data:
+      id: 476
+      name: Battlerager Charge
+      prerequisite: null
+      description: >-
+        <p>Beginning at 10th level, you can take the Dash action as a bonus
+        action while you are raging.</p>
+      requiredLevel: 10
+      displayOrder: 4
+    version: 5.2.36
+    featureId: 476
+    featureName: Battlerager Charge
+    requiredLevel: 10
+    prerequisite: null
+    class: Barbarian
+    classId: 73
+    subClass: Path of the Battlerager
+    parentClassId: 9
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Battlerager Charge
+  obsidian:
+    source:
+      type: class
+      text: Path of the Battlerager
+  midi-qol:
+    onUseMacroName: ''
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    riders:
+      activity: []
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  scene-packer:
+    hash: f5a0a87ae406efc17d9990cdbbf961b7bd68b45b
+  crux:
+    trayVisibility: default
+img: icons/magic/light/projectile-beam-yellow.webp
+folder: 6Sf0XPdJ0Lt8UzWG
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.vQFC4tMSECjsd6Af
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1746114618116
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: vQFC4tMSECjsd6Af
+sort: 0
+_key: '!items!vQFC4tMSECjsd6Af'

@@ -1,0 +1,205 @@
+_id: Z038ySVILNe9rI98
+name: Sudden Strike
+type: feat
+effects: []
+system:
+  activities:
+    utilitySuStclNe0:
+      name: Sudden Strike
+      type: utility
+      _id: utilitySuStclNe0
+      sort: 0
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Starting at 17th level, you can strike with deadly speed. If you take
+      the Attack action on your turn, you can make one additional attack as a
+      bonus action. This attack can benefit from your Sneak Attack even if you
+      have already used it this turn, but you can’t use your Sneak Attack
+      against the same target more than once in a turn.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      If you take the Attack action on your turn, you can make one additional
+      attack as a bonus action. It can be an additional Sneak Attack even if you
+      have already used it this turn, but only against a new target.
+
+      </div>
+  identifier: sudden-strike
+  source:
+    book: XGtE
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 17
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 744
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Sudden Strike
+    dndbeyond:
+      requiredLevel: 17
+      displayOrder: 500
+      featureType: 1
+      class: Rogue
+      classId: 112
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Scout
+    subClassId: 112
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Sudden Strike
+        activityCount: 1
+        activityKeys:
+          - utilitySuStclNe0
+        nameMap:
+          utilitySuStclNe0:
+            - Sudden Strike
+  crux:
+    trayVisibility: default
+img: icons/skills/melee/spear-tips-triple-orange.webp
+folder: S9xvXH3nOcPjZR2k
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999545
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!Z038ySVILNe9rI98'

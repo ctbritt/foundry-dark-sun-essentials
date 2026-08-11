@@ -1,0 +1,152 @@
+folder: 3ceHqueQSXMSDgbA
+name: Artisan
+type: background
+img: icons/tools/smithing/anvil.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[dex], &amp;Reference[int],
+      &amp;Reference[cha]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[ins], &amp;Reference[per]</p><p><strong>Tool
+      Proficiencies:</strong> One type of artisan's
+      tools</p><p><strong>Languages:</strong> one of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftCrafter00000]{Crafter} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled}</p><p><strong>Equipment:</strong>
+      A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesComm]{Clothes,
+      Common}, a set of artisan's tools (matching your proficiency), a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 40 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> You are a skilled craftsman or artist who
+      learned their trade at the feet of a master artisan. Artisans come from a
+      wide range of backgrounds - slaves, freemen, villagers, nomads, and
+      hunter-gatherers all count artisans amongst their ranks.¬…¬</p>
+    chat: ''
+  identifier: athas-artisan
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '285'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: 5Ye20LFlITvWP756
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: eUfa2CE6NvYj1cow
+      group: ''
+      sort: 200000
+    - _id: 9hFedMFghlXgOEFi
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: njuBoAOgq6EdoUI2
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - con
+          - wis
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          dex: 2
+          int: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: fUPa6Lt0ePcgLo11
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:*
+        grants:
+          - skills:ins
+          - skills:per
+        mode: default
+      value:
+        chosen:
+          - skills:ins
+          - skills:per
+          - languages:standard:dwarvish
+          - tool:carp
+      level: 0
+      title: Proficiencies
+      hint: >-
+        Your background grants you proficiency in Insight, Persuasion, one type
+        of artisan's tools, and one language of your choice
+    - _id: vtGfZLAZctiWY1zZ
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftCrafter00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added:
+          '0':
+            art5gkiww734hR9uz2b: Compendium.dnd-players-handbook.feats.Item.phbftCrafter00000
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '40'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.JQ0IR5PIfBrvyAJo
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717478920
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: JQ0IR5PIfBrvyAJo
+sort: 200000
+_key: '!items!JQ0IR5PIfBrvyAJo'

@@ -1,0 +1,295 @@
+name: Electrocute
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>A massive arc of lightning leaps from your hand to a target you can see
+      within range. The target must make a Constitution saving throw. On a
+      failed save, the target takes 4d12 lightning damage and is stunned until
+      the start of your next turn. On a successful save, the target takes half
+      as much damage and isn't stunned.</p><p><em><strong>At Higher
+      Levels:</strong></em> When you cast this spell using a spell slot of 4th
+      level or higher, the damage increases by 1d12 for each slot level above
+      3rd.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+  level: 3
+  school: evo
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  activities:
+    cE2fanGzH9ybUmsg:
+      type: save
+      _id: cE2fanGzH9ybUmsg
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: JzE1kogUcEaT7Tbq
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 12
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: whole
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: electrocute
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: any
+      count: ''
+      special: ''
+folder: null
+_id: XQjD3XdKzefMJG9W
+effects:
+  - name: Electrocute
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.XQjD3XdKzefMJG9W
+    transfer: false
+    _id: JzE1kogUcEaT7Tbq
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>A massive arc of lightning leaps from your hand to a target you can see
+      within range. The target must make a Constitution saving throw. On a
+      failed save, the target takes 4d12 lightning damage and is stunned until
+      the start of your next turn. On a successful save, the target takes half
+      as much damage and isn't stunned.</p><p><em><strong>At Higher
+      Levels:</strong></em> When you cast this spell using a spell slot of 4th
+      level or higher, the damage increases by 1d12 for each slot level above
+      3rd.<br></p>
+    tint: '#ffffff'
+    statuses:
+      - stunned
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnStartSource
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!XQjD3XdKzefMJG9W.JzE1kogUcEaT7Tbq'
+flags:
+  scene-packer:
+    hash: ecafe8e6fe21309140e0346e3e2beb2fbced13a3
+    sourceId: Item.XQjD3XdKzefMJG9W
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -982161112
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.XQjD3XdKzefMJG9W
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749612
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3900000
+_key: '!items!XQjD3XdKzefMJG9W'

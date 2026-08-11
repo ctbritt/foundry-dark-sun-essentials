@@ -1,0 +1,217 @@
+_id: YTts9BBlbSrYPFzU
+name: Wrath of the Storm
+type: feat
+system:
+  description:
+    value: >-
+      When a creature within 5 ft. that you can see hits you with an attack, you
+      can use your reaction to cause the creature to make a DEX saving throw (DC
+      [[8 + @abilities.wis.mod + @prof]] or it takes 2d8
+      &amp;Reference[lightning]{lightning} or &amp;Reference[thunder]{thunder}
+      damage (your choice), half damage on success).
+        <details>
+          <summary>
+            More Details
+          </summary>
+          <p>
+            </p><p>Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a &amp;Reference[dex]{Dexterity} saving throw. The creature takes 2d8 &amp;Reference[lightning]{lightning} or &amp;Reference[thunder]{thunder} damage (your choice) on a failed saving throw, and half as much damage on a successful one.</p>
+      <p>You can use this feature a number of times equal to your
+      &amp;Reference[wis]{Wisdom} modifier (a minimum of once). You regain all
+      expended uses when you finish a long rest.</p>
+          <p></p>
+        </details>
+    chat: ''
+  cover: null
+  crewed: false
+  uses:
+    max: '@abilities.wis.mod'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  requirements: Air Domain 1
+  source:
+    revision: 1
+    rules: '2014'
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: reaction
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: 2
+            denomination: 8
+            bonus: ''
+            types:
+              - lightning
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+        critical:
+          allow: false
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+  identifier: wrath-of-the-storm
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+flags:
+  ddbimporter:
+    id: '5078548'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 5935748
+    componentTypeId: 12168134
+    originalName: Wrath of the Storm
+    type: class
+    class: Cleric
+    subclass: Air Domain (Dark Sun)
+    dndbeyond:
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    importId: osoFCo2nPMME6IlT
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: class
+      text: Cleric
+  dnd5e:
+    advancementOrigin: ZJlZhiPpwi7nA413
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 2
+  core: {}
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/magic/lightning/bolts-forked-large-orange.webp
+folder: k0waAkenBUjTU20q
+sort: 550000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.QXGX9pdRSvtBBW4X
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134999543
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!YTts9BBlbSrYPFzU'

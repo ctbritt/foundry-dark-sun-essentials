@@ -1,0 +1,255 @@
+folder: lS6g4QLAasTO8oKE
+name: Lajav (Large)
+type: weapon
+_id: 9GvJHDOUfOCaDBK0
+img: systems/dnd5e/icons/svg/items/weapon.svg
+system:
+  description:
+    value: >-
+      <p>The lajav is a Thri-kreen weapon designed to capture opponents. It
+      incorporates two flattened bones, joined in a hinge about two feet from
+      the end. The result looks something like a nutcracker, and is used roughly
+      in the same crushing way. If you hit an opponent at least one size
+      category smaller than yourself with a lajav, you can immediately initiate
+      a grapple (as a free action) without provoking an attack of opportunity.
+      Regardless of your size, you need two hands to use a lajav, since a second
+      hand is required to hold the other end of the lajav.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 16
+    units: lb
+  price:
+    value: 12
+    denomination: ct
+  rarity: common
+  attunement: ''
+  attuned: false
+  equipped: false
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 2
+      denomination: 4
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: martialM
+    baseItem: ''
+  magicalBonus: null
+  properties:
+    - lgt
+    - two
+    - spc
+  proficient: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: lajav-large
+  ammunition: {}
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: bad00f3c4c7594331465117d20aeddccd20c8e66
+  LocknKey:
+    PickPocketDCFlag: '0'
+  magicitems:
+    enabled: false
+    default: ''
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.9GvJHDOUfOCaDBK0
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114748749
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!9GvJHDOUfOCaDBK0'

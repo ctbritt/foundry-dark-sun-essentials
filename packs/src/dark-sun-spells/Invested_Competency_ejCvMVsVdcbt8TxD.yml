@@ -1,0 +1,176 @@
+_id: ejCvMVsVdcbt8TxD
+name: Invested Competency
+type: spell
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You touch a willing creature imbuing
+      psionic competency into them. Until the spell ends, they gain expertise in
+      on skill of your choice, adding double their proficiency bonus to that
+      skill.</p></div>
+    chat: ''
+  level: 5
+  school: psi
+  properties:
+    - somatic
+    - concentration
+    - psi
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: willing
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: touch
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    fzyQhLl2zVNZ6f74:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: YYJXMdFRfp2AMXSX
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+      _id: fzyQhLl2zVNZ6f74
+  identifier: invested-competency
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/ejCvMVsVdcbt8TxD_1784910618501.png
+flags:
+  plutonium:
+    page: spells.html
+    source: ktp
+    hash: invested%20competency_ktp
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  cat:
+    automation:
+      hash: -902574735
+effects: []
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754413705656
+  modifiedTime: 1784910749527
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 1600000
+_key: '!items!ejCvMVsVdcbt8TxD'

@@ -1,0 +1,94 @@
+_id: phbrgeReliableTa
+name: Reliable Talent
+type: feat
+folder: ymTkGscp5QEOwDlv
+img: icons/skills/ranged/target-bullseye-arrow-glowing.webp
+system:
+  description:
+    value: >-
+      <p>Whenever you make an ability check that uses one of your skill or tool
+      proficiencies, you can treat a d20 roll of 9 or lower as a 10.</p><section
+      class="secret" id="secret-FOATC0HOce35kD20"><p><strong>Foundry
+      Note</strong></p><p>This feature includes an Active Effect which automates
+      the minimum roll of 10 on your skill and tool proficiencies.</p></section>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+    items: []
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: reliable-talent
+  advancement: []
+  crewed: false
+effects:
+  - _id: TIw25thHBYEPdKR1
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.phbrgeReliableTa
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    name: Reliable Talent
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: >-
+        Compendium.dnd5e.classfeatures.Item.YN9xm6MCvse4Y60u.ActiveEffect.vMMZHZQ0qT7MT4I4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    img: icons/skills/ranged/target-bullseye-arrow-glowing.webp
+    type: base
+    system:
+      changes:
+        - key: flags.dnd5e.reliableTalent
+          value: true
+          priority: null
+          type: override
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbrgeReliableTa.TIw25thHBYEPdKR1'
+flags:
+  dnd5e: {}
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999600
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!phbrgeReliableTa'

@@ -1,0 +1,179 @@
+folder: NDrmCdpp44f8CXP0
+name: Psionic Study
+type: feat
+_id: OVpuTTaJ0sPGdXCq
+img: icons/magic/perception/orb-crystal-ball-scrying-blue.webp
+system:
+  activities:
+    zGN2POGhkWx325dV:
+      type: utility
+      _id: zGN2POGhkWx325dV
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      name: ''
+      img: ''
+      flags:
+        dnd5e:
+          riders:
+            activity: false
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof*2'
+  description:
+    value: >-
+      <p><em>Prerequisite: 4th level, Dark Sun
+      Campaign</em></p><p><em>Repeatable: No</em></p><p>Choose one psionic
+      discipline. You can manifest powers from this discipline, though you do
+      not gain the ability to use the disciplines psychic focus unless you are a
+      psion.</p><p><strong>Psionic Ability.</strong> Your psionic ability is the
+      same as that used for your wild talent.</p><p><strong>Psi Points.</strong>
+      Your psi point total is equal to 2 times your proficiency bonus,
+      (currently [[lookup @prof*2]]). You recover all expended psi points when
+      you finish a long rest.</p><p><strong>Psi Limit.</strong> Your psi limit
+      is 1 less than that of a psion of the same level (minimum
+      1).</p><p><strong>Special:</strong> Psions who select this feat gain the
+      selected discipline and add 6 more psi points in addition to those granted
+      by their class. This discipline does not count against the number of
+      disciplines or orders you know.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 4
+    repeatable: false
+  properties: []
+  requirements: Dark Sun Campaign
+  type:
+    value: feat
+    subtype: general
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  cat:
+    automation:
+      hash: 1254582837
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1745340002656
+  modifiedTime: 1784910748572
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!OVpuTTaJ0sPGdXCq'

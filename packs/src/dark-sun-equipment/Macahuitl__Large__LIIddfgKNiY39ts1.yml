@@ -1,0 +1,219 @@
+folder: Z504Aykjld7VQcO9
+name: Macahuitl (Large)
+type: weapon
+img: systems/dnd5e/icons/svg/items/weapon.svg
+system:
+  description:
+    value: >-
+      <p>A macahuitl is a sword painstakingly crafted using a core of solid
+      wood, with small, sharp shards of obsidian embedded into the wood to form
+      an edge on two opposite sides of the weapon. The macahuitl is especially
+      popular among the Draji, who seem to be the only ones who can easily
+      pronounce this weapon’s Draji name (“ma‐ka‐wheet‐luh”). Non‐Draji simply
+      refer to it as the “obsidian sword” or the “Draji sword.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 10
+    units: lb
+  price:
+    value: 35
+    denomination: gp
+  rarity: uncommon
+  attunement: ''
+  attuned: false
+  equipped: false
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 2
+      denomination: 8
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: martialM
+    baseItem: longsword
+  magicalBonus: null
+  properties:
+    - fin
+    - ZNdI9nczTmuNOraS
+    - jLJV1Pv1tTF44wrv
+  proficient: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: macahuitl-large
+  ammunition: {}
+effects: []
+flags:
+  scene-packer:
+    hash: 7840554c274655836fe3d95a2ae9bcac77f3c982
+    sourceId: Item.nJ5mf0kq2AHLNSZh
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.LIIddfgKNiY39ts1
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114780918
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: LIIddfgKNiY39ts1
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!LIIddfgKNiY39ts1'

@@ -1,0 +1,388 @@
+name: Lotulis, Bone
+type: weapon
+img: icons/weapons/daggers/dagger-simple-blue.webp
+effects: []
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Double-Bladed Scimitar
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+    id: 1045184680
+    entityTypeId: 1439493548
+    containerEntityId: 90993494
+    containerEntityTypeId: 1581111423
+    definitionEntityTypeId: 1782728300
+    definitionId: 59
+    originalName: Double-Bladed Scimitar
+    version: 2.9.67
+    importId: 03gimf1esf482b3h
+  betterRolls5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickVersatile:
+      altValue: true
+      value: false
+    quickCharges:
+      value:
+        use: false
+        resource: true
+        quantity: false
+      altValue:
+        use: false
+        resource: true
+        quantity: false
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: false
+      altValue: false
+    quickAttack:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickFlavor:
+      value: true
+      altValue: true
+  magicitems:
+    enabled: false
+  infusions:
+    maps: []
+    applied: []
+    infused: false
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: "<p>Crescent blades with barbed spikes near the points and mounted at either end of a long shaft make this a nasty melee weapon.</p>\n<p>Breakage: 50%</p>\n<p><strong>Versitile Damage.\_</strong>The lotulis can deal slashing damage instead of piercing damage.</p>\n<p><strong>Special.</strong> If you attack with a lotulis as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals 1d4 slashing damage on a hit, instead of 2d4.</p>"
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  quantity: 1
+  weight:
+    value: 7.5
+    units: lb
+  price:
+    value: 3
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: true
+        formula: 1d8[piercing] + @mod
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - spc
+    - two
+  proficient: 0
+  unidentified:
+    description: Double-Bladed Scimitar
+  type:
+    value: martialM
+    baseItem: ''
+  container: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+    dnd5eactivity300:
+      _id: dnd5eactivity300
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '-1'
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: lotulis-bone
+  attuned: false
+  ammunition: {}
+  magicalBonus: null
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-weapons.Item.5EI5kXBgvdLtnmRE
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411179776
+  modifiedTime: 1781135025743
+  lastModifiedBy: wgCeShTrqHJFBbDr
+folder: 0SRfJ5ygkkNqsonv
+_id: sEQCY1Rx6rLaGrcB
+sort: 0
+_key: '!items!sEQCY1Rx6rLaGrcB'

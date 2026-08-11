@@ -1,0 +1,339 @@
+name: Halberd, Bone (Large)
+type: weapon
+img: icons/weapons/polearms/halberd-crescent-glowing.webp
+effects: []
+flags:
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  betterRolls5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: false
+      altValue: false
+    quickAttack:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickFlavor:
+      value: true
+      altValue: true
+    quickCharges:
+      value:
+        quantity: false
+      altValue:
+        quantity: false
+  scene-packer:
+    hash: e260a1b61cbef525045a5c38705d76457f309599
+    sourceId: Item.AiVze2I5f8cnRmkb
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: "<p>A spear-tipped metal shaft accompanied by a crescent blade, the halberd is a strong defensive weapon which allows a warrior to fend off foes using the reach of the shaft to attack from safe distance.</p>\n<p>\_</p>\n<p>Breakage: 50%</p>"
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 3.6
+    units: lb
+  price:
+    value: 20
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 2
+      denomination: 10
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - hvy
+    - two
+    - rch
+    - yOVAoSquHZY4cHEJ
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: martialM
+    baseItem: halberd
+  container: null
+  cover: null
+  crewed: false
+  magicalBonus: null
+  attuned: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: '-1'
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+    dnd5eactivity300:
+      _id: dnd5eactivity300
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: '-1'
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: halberd-bone-large
+  ammunition: {}
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.TJF1gm2LXMS0JmDv
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114788385
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+folder: Z504Aykjld7VQcO9
+_id: TJF1gm2LXMS0JmDv
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!TJF1gm2LXMS0JmDv'

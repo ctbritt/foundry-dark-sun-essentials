@@ -1,0 +1,193 @@
+name: Backlash
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>Also known as the preserver’s scourge, this spell makes the ground
+      dangerous to defilers. This spell only affects a creature with at least
+      one point in defiler aura. Should a defiler try to tap into land that is
+      protected by a backlash, she automatically takes [[/damage 1d6 type=force
+      average=true]] damage. The defiler must make a [[/save Con
+      dc=@abilitiess.speppdc format=long]] or the spell they were casting is
+      lost. Defilers have penalty to the saving throw equal to their defiler
+      aura points. Once it has inflicted damage, the spell is discharged and the
+      ground returns to normal. Only one backlash can be cast on any given plot
+      of ground.</p><p><em><strong>At Higher Levels.</strong></em> When you cast
+      this spell using a spell slot of 2nd level or higher, the damage dealt
+      increases by 1d6 for each spell slot above 1st.</p><p></p>
+    chat: ''
+  materials:
+    value: a thorn
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - material
+    - somatic
+  level: 1
+  school: abj
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: hour
+    value: '24'
+  range:
+    units: ft
+    value: '30'
+  activities:
+    jrE3eQRXDJyXEySI:
+      type: save
+      _id: jrE3eQRXDJyXEySI
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: whole
+              number: 1
+        critical:
+          allow: false
+        onSave: full
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+  identifier: backlash
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: circle
+      size: '40'
+    affects:
+      choice: false
+  sourceClass: Druid
+folder: null
+effects: []
+flags:
+  scene-packer:
+    hash: 0fd81f9e649f10f81c48b0d0607c02459645386f
+    sourceId: Item.Jdx954wwhB8JAoO5
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -504031718
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.wmnSQx5GbP3dtS1T
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749648
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: wmnSQx5GbP3dtS1T
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 4800000
+_key: '!items!wmnSQx5GbP3dtS1T'

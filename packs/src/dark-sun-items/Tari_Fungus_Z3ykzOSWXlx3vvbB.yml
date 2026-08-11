@@ -1,0 +1,197 @@
+_id: Z3ykzOSWXlx3vvbB
+name: Tari Fungus
+type: consumable
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2024'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--2"><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Location.</span></span> <p>Beneath city
+      streets</p><div class="rd__spc-inline-post"></div></div><div class="rd__b 
+      rd__b--3"><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Preparation.</span></span> <p>Various, depending
+      on the type of fungus</p><div class="rd__spc-inline-post"></div></div><div
+      class="rd__b  rd__b--3"><span class="rd__h rd__h--3" data-title-index="3">
+      <span class="entry-title-inner">Description:</span></span> <p>Amongst the
+      Tari who live beneath the city streets, fungus plays an important part of
+      their culture. There are many different sorts of fungus which are used to
+      flavor their otherwise bland meals, but there are three main fungi which
+      are used: Blanvert, Keel, and Sarshi.</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Effect:</span></span> <p>Blanvert is the main
+      fungus used, appearing as a large flat looking fungus, and is the staple
+      of their diet. Keel is a small sweet tasting fungus, regarded as a
+      dessert. Sarshi is believed to be a gift from Turqhoz the Hidden, highly
+      nutritious and resistant to evaporation. Other fungi include Silorn
+      (peppery), Velot (bitter), Bheri (fruity), and Belist (fermented into a
+      drink).</p><div class="rd__spc-inline-post"></div></div></div>
+    chat: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 55
+    denomination: ct
+  identified: true
+  rarity: uncommon
+  type:
+    value: ''
+    subtype: ''
+  properties:
+    - mgc
+  attunement: ''
+  uses:
+    max: ''
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  unidentified:
+    description: ''
+  container: null
+  magicalBonus: null
+  attuned: false
+  equipped: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: tari-fungus
+img: assets/homebrew/img/tarifunugus.webp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  plutonium:
+    page: items.html
+    source: AthasHerbs
+    hash: tari%20fungus_athasherbs
+    propDroppable: item
+    isStandardDragDrop: true
+  scene-packer:
+    hash: 2fb0b9272b9f8cd89fe28d442de4d59dbd1bfbee
+  tidy5e-sheet:
+    section: Harvested Items
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: qMFp8C51hRSu6j7x
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.Z3ykzOSWXlx3vvbB
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882648
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!Z3ykzOSWXlx3vvbB'

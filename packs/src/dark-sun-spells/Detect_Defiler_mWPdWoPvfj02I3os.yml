@@ -1,0 +1,164 @@
+name: Detect Defiler
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      For the duration, you sense the presence of defilers and where the defiler
+      is located.<br />A defiler must have at least 1 point in her defiler aura
+      to be detected.<br />You learn the number of permanent defiler aura points
+      each defiler has, and you learn whether the defiler has less, more, or the
+      same number of Hit Dice as you.<br />This spell can penetrate most
+      barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a
+      thin sheet of lead, or 3 feet of wood or dirt.<br />
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+    - concentration
+    - ritual
+  level: 1
+  school: div
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: minute
+    value: '10'
+  range:
+    units: self
+  activities:
+    IymlIiVQcmo8yiba:
+      type: utility
+      _id: IymlIiVQcmo8yiba
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 0
+    recovery: []
+  identifier: detect-defiler
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+  sourceClass: Druid
+folder: null
+effects: []
+flags:
+  scene-packer:
+    hash: d97c1ebe9f92d47b953386869c5dfaa9af36e540
+    sourceId: Item.mirywcMpgAmvZouT
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1382256269
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.mWPdWoPvfj02I3os
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749631
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: mWPdWoPvfj02I3os
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 4500000
+_key: '!items!mWPdWoPvfj02I3os'

@@ -1,0 +1,189 @@
+_id: 9xWKcCxcQIFY0fnM
+name: Intellect Fortress
+type: spell
+system:
+  source:
+    custom: ''
+    book: XUA25P
+    page: '10'
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>For the duration, one willing creature you
+      can see within range has resistance to Psychic damage, as well as
+      advantage on Intelligence, Wisdom, and Charisma saving
+      throws.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="Using a Higher-Level Spell Slot" class="rd__b 
+      rd__b--3"><p><span class="entry-title-inner">Using a Higher-Level Spell
+      Slot.</span> You can target one additional creature for each spell slot
+      level above 3.</p></div></div>
+    chat: ''
+  level: 3
+  school: abj
+  properties:
+    - vocal
+    - concentration
+    - psi
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: willing
+      choice: false
+      special: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    1RzCLGBIFsIYmeRl:
+      _id: 1RzCLGBIFsIYmeRl
+      type: save
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: none
+        parts: []
+        critical:
+          allow: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+  identifier: intellect-fortress
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/control/control-influence-rally-purple.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XUA2025Psion
+    hash: intellect%20fortress_xua2025psion
+    propDroppable: spell
+    spellClassNames:
+      - Artificer
+      - Bard
+      - Psion
+      - Sorcerer
+      - Warlock
+      - Wizard
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -205445381
+effects: []
+folder: mvNUawDBqd1DJYG3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: 1754411018787
+  modifiedTime: 1784910749554
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!9xWKcCxcQIFY0fnM'

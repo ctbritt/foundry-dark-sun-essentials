@@ -1,0 +1,271 @@
+_id: dTz50J7LOhWtdzpV
+name: Fire Warding
+type: feat
+system:
+  description:
+    value: >-
+      As an action, for 1 minute, you become immune to fire damage. Once you use
+      this trait, you can’t do so again until you finish a long rest.
+        <details>
+          <summary>
+            More Details
+          </summary>
+          <p>
+            </p><p>Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to fire damage. Once you use this trait, you can’t do so again until you finish a long rest.</p>
+          <p></p>
+        </details>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  cover: null
+  crewed: false
+  uses:
+    max: '1'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects:
+        - _id: H7lbBbmeff6Cg0l4
+          level:
+            min: null
+            max: null
+      range:
+        value: '5'
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      name: ''
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+  identifier: fire-warding
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+flags:
+  ddbimporter:
+    id: '6506568'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 10224946
+    componentTypeId: 1960452172
+    originalName: Fire Warding
+    type: race
+    importId: 8cteF7yya4yvvoDi
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects:
+  - name: Fire Warding
+    img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.dTz50J7LOhWtdzpV
+    transfer: false
+    _id: H7lbBbmeff6Cg0l4
+    type: base
+    system:
+      changes:
+        - key: system.traits.di.value
+          value: fire
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>As an action, for 1 minute, you become immune to fire damage. Once you
+      use this trait, you can’t do so again until you finish a long
+      rest.</p><details><summary>More Details</summary><p></p><p>Starting at 5th
+      level, as an action, you can channel your draconic energy to protect
+      yourself. For 1 minute, you become immune to fire damage. Once you use
+      this trait, you can’t do so again until you finish a long
+      rest.</p><p></p></details>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      createdTime: 1766708550243
+      modifiedTime: 1766708597875
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!dTz50J7LOhWtdzpV.H7lbBbmeff6Cg0l4'
+img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+folder: Sf7SoiqVBLhiBUf7
+sort: 600000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.oy4aJs6SbH9uRZLs
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996959
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!dTz50J7LOhWtdzpV'

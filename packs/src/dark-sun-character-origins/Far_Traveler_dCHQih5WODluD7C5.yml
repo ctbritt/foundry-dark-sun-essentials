@@ -1,0 +1,145 @@
+folder: 3ceHqueQSXMSDgbA
+name: Far Traveler
+type: background
+img: icons/weapons/thrown/dart-feathered.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[wis], &amp;Reference[cha],
+      &amp;Reference[int]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[ins], &amp;Reference[prc]</p><p><strong>Tool
+      Proficiencies:</strong> One musical instrument or gaming
+      set</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftObservant0000]{Observant}
+      or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled}</p><p><strong>Equipment:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Traveler's
+      Clothes}, musical instrument or gaming set, poorly wrought maps, jewelry
+      worth 10 cp, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 5 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> From distant lands like the Crimson Savannah,
+      Jagged Cliffs, Last Sea, or Dead Land. Almost everything about the
+      Tablelands is new and strange to you.</p>
+    chat: ''
+  identifier: athas-far-traveler
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '289'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: dH2Jiaux4XHFEPHT
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: Gb7WbCRrgsns0eO7
+      group: ''
+      sort: 200000
+    - _id: w1mnLfo7IaS8tIg9
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: 7ctQeVY0uX3jKu5A
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - con
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          wis: 2
+          cha: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: DTobCqMJrIwaKnRs
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:music:*
+              - tool:game:*
+        grants:
+          - skills:ins
+          - skills:prc
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: 4uuARc5mBO3Z9Fbv
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftObservant0000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '5'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.dCHQih5WODluD7C5
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: dCHQih5WODluD7C5
+sort: 281250
+_key: '!items!dCHQih5WODluD7C5'

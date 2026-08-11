@@ -1,0 +1,199 @@
+_id: uHJI55H8IuFHGxXh
+name: Glinflur
+type: consumable
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2024'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--2"><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Location.</span></span> <p>Rocky badlands,
+      canyons, small forests, scrublands</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Preparation.</span></span> <p>Fruit hollowed and
+      dried for water storage</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="3"> <span
+      class="entry-title-inner">Description:</span></span> <p><i>Glinflur</i> is
+      a large spindly tree (up to 50 feet tall) found in the rocky badlands,
+      canyons, small forests and scrublands. It's roots reach deep underground
+      in a frantic search for water. It has a large red flower fully of
+      honeysuckle which attract insects, and small mammals.</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Effect:</span></span> <p>Its main importance to
+      the nomads of Athas is as a signal/source of water, and gourd used as
+      storage vessels. The fruit contains a low-level toxin which causes nausea
+      and vomiting. Nomads hollow the fruit out and use it as a water storage
+      vessel. The toxin in the skin kills bugs in the water for about a year.
+      <i>Glinflur</i> juice is often used as a sweetener in cooking for the
+      affluent.</p><div class="rd__spc-inline-post"></div></div></div>
+    chat: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 95
+    denomination: ct
+  identified: true
+  rarity: uncommon
+  type:
+    value: ''
+    subtype: ''
+  properties:
+    - mgc
+  attunement: ''
+  uses:
+    max: ''
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  unidentified:
+    description: ''
+  container: null
+  magicalBonus: null
+  attuned: false
+  equipped: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: glinflur
+img: assets/homebrew/img/glinflur.webp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  plutonium:
+    page: items.html
+    source: AthasHerbs
+    hash: glinflur_athasherbs
+    propDroppable: item
+    isStandardDragDrop: true
+  scene-packer:
+    hash: 5442265f4b0f38cddd3124c37a4347bcc1d307d8
+  tidy5e-sheet:
+    section: Harvested Items
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: qMFp8C51hRSu6j7x
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.uHJI55H8IuFHGxXh
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883870
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!uHJI55H8IuFHGxXh'

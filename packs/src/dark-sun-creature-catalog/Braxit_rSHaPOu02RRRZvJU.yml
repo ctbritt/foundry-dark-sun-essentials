@@ -1,0 +1,2302 @@
+name: Braxit
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: EnkidusDarkSunBestiary5e
+    hash: braxit_enkidusdarksunbestiary5e
+  mcdm-flee-mortals-where-evil-lives:
+    role: ''
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1754288106499
+  modifiedTime: 1755395826781
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: rSHaPOu02RRRZvJU
+img: https://i.imgur.com/tXKejr2.jpg?1755276449780
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+    ct: 0
+    cb: 0
+    lb: 0
+  abilities:
+    str:
+      value: 26
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 8
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 22
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 13
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 7
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: natural
+      flat: 18
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      burrow: null
+      climb: null
+      fly: null
+      swim: null
+      walk: 40
+      units: ft
+      hover: false
+    attunement:
+      max: 3
+    senses:
+      darkvision: 120
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spellcasting: int
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      value: 162
+      max: 162
+      temp: null
+      tempmax: null
+      formula: 13d12 + 78
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+  details:
+    biography:
+      value: >-
+        <p>It is difficult to tell whether the braxat are of mammalian or
+        reptilian stock. Their backs are covered with thick, articulated shells,
+        their heads have a squarish lizard-like shape giving them a reptilian
+        appearance, and the crowns of their heads are defended by three to five
+        horny protrusions. At the same time, they walk upright on two feet, can
+        speak with a human-like voice, have a fully opposable thumb, and are
+        warm-blooded.</p><p>Braxats are found throughout Athas, wandering the
+        forlorn wastes in search of prey. They are usually solitary creatures,
+        but may rarely be found in mated pairs (in this case, the young are
+        usually safely hidden away in a remote cavern).</p><p>Braxat are true
+        terrors of the desert, usually attacking at night in search of fresh
+        meat. Although they will eat caravan mounts on occasion (with the
+        exception of kanks), they prefer intelligent races.</p><p>Braxat shells
+        make excellent shields and armor plates. Because of this, they are
+        sometimes hunted by other creatures living near them. Because of the
+        power of the braxat, however, would-be hunters often find the tables
+        turned upon them and end up the targets of a deadly ambush.</p>
+      public: ''
+    alignment: Typically Neutral Evil
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      value: giant
+      subtype: ''
+    habitat:
+      value:
+        - type: desert
+      custom: ''
+    cr: 11
+    treasure:
+      value: []
+  resources:
+    legact:
+      value: 0
+      max: 0
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    revision: 1
+    rules: '2014'
+    custom: ''
+    book: ENK
+    page: '12'
+    license: ''
+  traits:
+    size: huge
+    di:
+      value:
+        - acid
+        - bludgeoning
+        - piercing
+        - psychic
+        - slashing
+      custom: ''
+      bypasses:
+        - met
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value:
+        - charmed
+        - frightened
+      custom: ''
+    languages:
+      value:
+        - common
+        - giant
+      custom: ''
+      communication: {}
+    important: false
+prototypeToken:
+  name: Braxit
+  displayName: 20
+  actorLink: false
+  width: 3
+  height: 3
+  texture:
+    src: tokens/braxit.token.rshapou02rrrzvju.webp?1755276449780
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 120
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    wall-height:
+      tokenHeight: 0
+    perceptive:
+      canbeSpottedFlag: false
+      RevealwhenSpottedFlag: false
+      PPDCFlag: -1
+      PPPLFlag: 0
+      APDCFlag: null
+      APPLFlag: 0
+      SpottingRangeFlag: -1
+      SpottingMessageFlag: ''
+      resetSpottedbyMoveFlag: true
+    Rideable:
+      issetRideableFlag: false
+      MountonEnterFlag: false
+      AutoMountBlackListFlag: ''
+      AutoMountWhiteListFlag: ''
+      MaxRiderFlag: null
+      CustomRidingheightFlag: null
+      UseRidingHeightFlag: false
+      RidersScaleFlag: 1
+      RiderPositioningFlag: RowPlacement
+      RiderOffsetFlag:
+        - 0
+        - 0
+      RiderRotOffsetFlag: 0
+      GrapplePlacementFlag: RowBelow
+      TokenFormFlag: TokenFormCircle
+      InsideMovementFlag: false
+      SpawnRidersFlag: ''
+      WorldMEffectOverrideFlag: false
+      MountingEffectsFlag: ''
+      SelfApplyEffectsFlag: false
+      forMountEffectsFlag: ''
+      canbeGrappledFlag: true
+      GrapplingEffectsFlag: ''
+      CanbePilotedFlag: false
+      CheckPilotedCollisionFlag: false
+      PilotedbyDefaultFlag: false
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 3
+items:
+  - _id: qLCYs6Zswz8KCxyi
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The braxat makes two Greatclub
+          attacks.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        8MIS7QO7m8kNfnjS:
+          _id: 8MIS7QO7m8kNfnjS
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: EnkidusDarkSunBestiary5e
+        hash: multiattack_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942459047
+      modifiedTime: 1754942459047
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!rSHaPOu02RRRZvJU.qLCYs6Zswz8KCxyi'
+  - _id: k7JMUOnBcSvVUZiO
+    name: Acid Breath
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The braxat exhales a 15-foot cone of
+          acid. Each creature in the cone must make a [[/save ability=con
+          dc=18]] saving throw, taking 26 (4d12) damage on a failed save, or
+          half as much damage on a successful one.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: '1'
+        recovery:
+          - formula: '6'
+            period: recharge
+            type: recoverAll
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        gsW9FyIFAZL0Kur8:
+          _id: gsW9FyIFAZL0Kur8
+          type: save
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: cone
+              size: '15'
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: creature
+              choice: false
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '18'
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - acid
+                number: 4
+                denomination: 12
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: acid-breath
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/acid/projectile-smoke-glowing.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: EnkidusDarkSunBestiary5e
+        hash: >-
+          acid%20breath%20(recharge%206)_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942459124
+      modifiedTime: 1754942459124
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!rSHaPOu02RRRZvJU.k7JMUOnBcSvVUZiO'
+  - _id: rV4l1rz5PYtqzeWK
+    name: Intellect Fortress
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The braxat's AC includes its
+          Intelligence modifier.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: intellect-fortress
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/control-influence-rally-purple.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: EnkidusDarkSunBestiary5e
+        hash: >-
+          intellect%20fortress_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+      dnd5e:
+        riders:
+          activity: []
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1754942459160
+      modifiedTime: 1755274768770
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!rSHaPOu02RRRZvJU.rV4l1rz5PYtqzeWK'
+  - _id: HE09FBhyuwHBx9uK
+    name: Limited Magic Immunity
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: SRD 5.1
+        page: ''
+        license: CC-BY-4.0
+        revision: 1
+        rules: '2014'
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Unless it wishes to be affected, the
+          braxat is immune to spells of 3rd level or lower. It has advantage on
+          saving throws against all other spells and magical effects.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: utility
+          activation:
+            type: special
+            value: null
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: inst
+            special: ''
+            override: false
+          effects:
+            - _id: 5GDw7x3tEzi2lcgB
+          range:
+            units: self
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: self
+              choice: false
+              special: ''
+            prompt: true
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            forceDialog: false
+            confirmTargets: default
+            automationOnly: false
+            identifier: ''
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceAttackDialog: false
+            forceDamageDialog: false
+            autoTargetType: any
+            autoTargetAction: default
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          useConditionReason: ''
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: limited-magic-immunity
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        items: []
+        repeatable: false
+      cover: null
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+    flags:
+      core: {}
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      dae:
+        macro:
+          name: Limited Magic Immunity
+          img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+          type: script
+          scope: global
+          command: |-
+            const randomTaunt = {
+                general: "Was that supposed to tickle? Maybe you should stick to card tricks!",
+                arrogant: "Did you really think that would work on me? You need stronger magic to faze someone like me.",
+                mocking: "Aww, did your little spell fizzle out? Maybe you need a bigger wand!",
+                sarcastic: "Impressive! Did you learn that one from a children's book of spells?",
+                playful: "Nice try, but you'll have to do better than that to get my attention!",
+                dismissive: "Is that the best you've got? Maybe magic isn't your thing.",
+                humorous: "I think your spell just took a nap. You might want to wake it up next time!",
+                encouraging: "Don't worry, practice makes perfect! You'll get the hang of it eventually.",
+                stoic: "Your magic is weak, just like your resolve.",
+                bugbear: "Is that the best you can do, or did thatlonelybugbear teach you?",
+                confused: "Did something happen? I didn't feel a thing."
+            };
+
+            function getRandomTaunt() {
+                const keys = Object.keys(randomTaunt);
+                const randomKey = keys[Math.floor(Math.random() * keys.length)];
+                return `As the spell fizzles with no effect, you hear: "${randomTaunt[randomKey]}"`;
+            }
+            if (rolledItem.type == 'spell' && workflow.spellLevel < 7) {
+              const targetedToken = options.token;
+              if (workflow.targets.size == 1)
+                workflow.aborted = true;
+              else game.user.updateTokenTargets(game.user.targets.filter(token=>token !== targetedToken).map(token=>token.id));
+              ui.notifications.info(`${MidiQOL.getTokenPlayerName(targetedToken)} deflects your spell!`)
+              await ChatMessage.implementation.create({content: getRandomTaunt(), speaker: ChatMessage.getSpeaker({alias: MidiQOL.getTokenPlayerName(targetedToken), token: targetedToken})})
+            }
+          author: oKTPW6AHSqX8CsNe
+          ownership:
+            default: 3
+          _id: null
+          folder: null
+          sort: 0
+          flags: {}
+          _stats:
+            coreVersion: '12.330'
+            systemId: dnd5e
+            systemVersion: 3.3.1
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            compendiumSource: null
+            duplicateSource: null
+      midiProperties:
+        confirmTargets: default
+        autoFailFriendly: false
+        autoSaveFriendly: false
+        critOther: false
+        offHandWeapon: false
+        magicdam: false
+        magiceffect: false
+        noConcentrationCheck: false
+        toggleEffect: true
+        ignoreTotalCover: false
+        idr: false
+        idi: false
+        idv: false
+        ida: false
+      midi-qol:
+        rollAttackPerTarget: default
+        itemCondition: ''
+        effectCondition: ''
+      scene-packer:
+        hash: 8a7e74fb48269e238f540f0aa93f8d15ce42e646
+        sourceId: Item.KncF13LrhX6TXCpD
+      dnd5e:
+        riders:
+          activity: []
+          effect: []
+    effects:
+      - name: Limited Magic Immunity
+        transfer: false
+        img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+        _id: 5GDw7x3tEzi2lcgB
+        type: base
+        system:
+          changes:
+            - key: flags.midi-qol.magicResistance.all
+              value: 1
+              priority: 20
+              type: custom
+            - key: flags.midi-qol.onUseMacroName
+              value: ItemMacro, isTargeted
+              priority: 20
+              type: custom
+        disabled: false
+        duration:
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
+        description: ''
+        origin: null
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        flags:
+          dae:
+            disableIncapacitated: false
+            selfTarget: false
+            selfTargetAlways: false
+            dontApply: false
+            stackable: noneName
+            showIcon: false
+            durationExpression: ''
+            macroRepeat: none
+            specialDuration: []
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.1.0
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!rSHaPOu02RRRZvJU.HE09FBhyuwHBx9uK.5GDw7x3tEzi2lcgB
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1754942459199
+      modifiedTime: 1779357085841
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: wkLBE4UH6beN8tQy
+    sort: 400000
+    _key: '!actors.items!rSHaPOu02RRRZvJU.HE09FBhyuwHBx9uK'
+  - _id: q0Y1OfR0CKGwGo0X
+    name: Magic Weapons
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The braxat's weapon attacks are
+          magical.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: magic-weapons
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/weapons/swords/sword-runed-glowing.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: EnkidusDarkSunBestiary5e
+        hash: >-
+          magic%20weapons_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942459231
+      modifiedTime: 1754942459231
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!rSHaPOu02RRRZvJU.q0Y1OfR0CKGwGo0X'
+  - _id: 7jh6RwEvYORM8q7a
+    name: Spellcasting (Psionics)
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The braxat casts one of the following
+          spells, requiring no spell components and using Intelligence as the
+          spellcasting ability (spell save DC 14):</p><p>1/day each: compulsion,
+          fear</p><p>3/day each: shield</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: spellcasting-psionics
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/projectiles-star-purple.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: EnkidusDarkSunBestiary5e
+        hash: >-
+          spellcasting%20(psionics)_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942459265
+      modifiedTime: 1754942459265
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!rSHaPOu02RRRZvJU.7jh6RwEvYORM8q7a'
+  - _id: q7cRcq7VefgacGiK
+    name: Greatclub
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: ENK
+        page: '12'
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +12 to
+          hit, reach 10 ft., one target. <i>Hit:</i> 21 (3d8 + 8)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: null
+        long: null
+        units: ft
+        reach: 10
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: simpleM
+        baseItem: greatclub
+      properties:
+        - mgc
+      activities:
+        AWBV2IlGxCztLObZ:
+          _id: AWBV2IlGxCztLObZ
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: str
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - bludgeoning
+                number: 3
+                denomination: 8
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+            forceAttackDialog: false
+            forceDamageDialog: false
+            otherActivityAsParentType: true
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+          otherActivityAsParentType: true
+      identifier: greatclub
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      crewed: false
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      attuned: false
+      equipped: true
+    img: icons/weapons/clubs/club-simple-barbed.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: EnkidusDarkSunBestiary5e
+        hash: greatclub_braxit_enkidusdarksunbestiary5e_enkidusdarksunbestiary5e
+      dnd5e:
+        riders:
+          activity: []
+        last:
+          AWBV2IlGxCztLObZ:
+            attackMode: oneHanded
+            damageType:
+              '0': bludgeoning
+      scene-packer:
+        hash: ab0be61bdc2fa0715ba2bdb27d4c25855e24c3c7
+    effects: []
+    _stats:
+      compendiumSource: >-
+        Scene.KkVIYXllbD5db4dp.Token.inI9wQ1kLZ1GT33P.Actor.QxgioILAM0DyAxNX.Item.nBAqBXtoa9uZKUzR
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1755274812543
+      modifiedTime: 1755274812543
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    _key: '!actors.items!rSHaPOu02RRRZvJU.q7cRcq7VefgacGiK'
+  - name: Compulsion
+    system:
+      description:
+        value: >-
+          <p>Each creature of your choice that you can see within range must
+          succeed on a Wisdom saving throw or have the Charmed condition until
+          the spell ends.</p><p>For the duration, you can take a Bonus Action to
+          designate a direction that is horizontal to you. Each
+          &amp;Reference[Charmed apply=false] target must use as much of its
+          movement as possible to move in that direction on its next turn,
+          taking the safest route. After moving in this way, a target repeats
+          the save, ending the spell on itself on a success.</p>
+        chat: ''
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      activation:
+        type: action
+        condition: ''
+        value: null
+      duration:
+        value: '1'
+        units: minute
+      target:
+        affects:
+          type: creature
+          count: ''
+          choice: false
+        template:
+          units: ft
+          contiguous: false
+      range:
+        value: '30'
+        units: ft
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      level: 4
+      school: enc
+      properties:
+        - concentration
+        - psi
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: save
+          activation:
+            type: action
+            value: null
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            override: false
+            concentration: false
+          effects:
+            - _id: VMGUJweP1J6ZQUsG
+              onSave: false
+          range:
+            override: false
+            units: self
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          damage:
+            onSave: half
+            parts: []
+            critical:
+              allow: false
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: spellcasting
+              formula: ''
+          uses:
+            spent: 0
+            recovery: []
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            forceAttackDialog: false
+            forceDamageDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          friendlySave: default
+      identifier: compulsion
+      method: spell
+      prepared: 1
+    _id: TWLDXdNxZTIQbee5
+    type: spell
+    img: icons/skills/wounds/anatomy-organ-brain-pink-red.webp
+    effects:
+      - name: Charmed
+        origin: Compendium.dnd-players-handbook.spells.Item.phbsplCompulsion
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        disabled: false
+        flags:
+          dnd5e: {}
+        img: systems/dnd5e/icons/svg/statuses/charmed.svg
+        _id: VMGUJweP1J6ZQUsG
+        type: base
+        system:
+          changes: []
+        description: >-
+          <p>You can take a Bonus Action to designate a direction that is
+          horizontal to you. Each &amp;Reference[Charmed apply=false] target
+          must use as much of its movement as possible to move in that direction
+          on its next turn, taking the safest route. After moving in this way, a
+          target repeats the [[/save ability=wis]] save, ending the spell on
+          itself on a success.</p>
+        tint: '#ffffff'
+        transfer: false
+        statuses:
+          - charmed
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.1.0
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!rSHaPOu02RRRZvJU.TWLDXdNxZTIQbee5.VMGUJweP1J6ZQUsG
+    folder: qi3IbnEwap7mRw4b
+    sort: 3300000
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+      scene-packer:
+        hash: 8f2d3eda482c6e8185154b75c5f3771a89c64eee
+    _stats:
+      compendiumSource: Compendium.dnd-players-handbook.spells.Item.phbsplCompulsion
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1755274817378
+      modifiedTime: 1755274817378
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    _key: '!actors.items!rSHaPOu02RRRZvJU.TWLDXdNxZTIQbee5'
+  - name: Fear
+    system:
+      description:
+        value: >-
+          <p>Each creature in a 30-foot Cone must succeed on a Wisdom saving
+          throw or drop whatever it is holding and have the
+          &amp;Reference[frightened apply=false] condition for the
+          duration.</p><p>A Frightened creature takes the &amp;Reference[dash]
+          action and moves away from you by the safest route on each of its
+          turns unless there is nowhere to move. If the creature ends its turn
+          in a space where it doesn’t have line of sight to you, the creature
+          makes a Wisdom saving throw. On a successful save, the spell ends on
+          that creature.</p>
+        chat: ''
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      activation:
+        type: action
+        condition: ''
+        value: null
+      duration:
+        value: '1'
+        units: minute
+      target:
+        affects:
+          choice: false
+        template:
+          units: ft
+          type: cone
+          size: '30'
+          contiguous: false
+      range:
+        units: self
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      level: 3
+      school: ill
+      properties:
+        - concentration
+        - psi
+      materials:
+        value: a white feather
+        consumed: false
+        cost: 0
+        supply: 0
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: save
+          activation:
+            type: action
+            value: null
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            override: false
+            concentration: false
+          effects:
+            - _id: ijiWLu6EJZmEJPOZ
+              onSave: false
+          range:
+            override: false
+            units: self
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          damage:
+            onSave: half
+            parts: []
+            critical:
+              allow: false
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: spellcasting
+              formula: ''
+          uses:
+            spent: 0
+            recovery: []
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            forceAttackDialog: false
+            forceDamageDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          friendlySave: default
+      identifier: fear
+      method: spell
+      prepared: 1
+    _id: 0sCrUuGvJs7pVDs4
+    type: spell
+    img: icons/magic/unholy/silhouette-robe-evil-glow.webp
+    effects:
+      - name: Fear
+        origin: Compendium.dnd-players-handbook.spells.Item.phbsplFear000000
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        disabled: false
+        flags:
+          dnd5e: {}
+        img: systems/dnd5e/icons/svg/statuses/frightened.svg
+        _id: ijiWLu6EJZmEJPOZ
+        type: base
+        system:
+          changes: []
+        description: >-
+          <p>A &amp;Reference[frightened apply=false] creature takes the
+          &amp;Reference[dash] action and moves away from you by the safest
+          route on each of its turns unless there is nowhere to move. If the
+          creature ends its turn in a space where it doesn’t have line of sight
+          to you, the creature makes a [[/save ability=wis]] saving throw. On a
+          successful save, the spell ends on that creature.</p>
+        tint: '#ffffff'
+        transfer: false
+        statuses:
+          - frightened
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.1.0
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!rSHaPOu02RRRZvJU.0sCrUuGvJs7pVDs4.ijiWLu6EJZmEJPOZ
+    folder: HCovEE4VoPGlIbKi
+    sort: 2300000
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+      scene-packer:
+        hash: 9f1a48dec34536b6b0713871ae47d95763fd60fd
+    _stats:
+      compendiumSource: Compendium.dnd-players-handbook.spells.Item.phbsplFear000000
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1755274818748
+      modifiedTime: 1755274818748
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    _key: '!actors.items!rSHaPOu02RRRZvJU.0sCrUuGvJs7pVDs4'
+  - name: Shield
+    system:
+      description:
+        value: >-
+          <p>An imperceptible barrier of magical force protects you. Until the
+          start of your next turn, you have a +5 bonus to AC, including against
+          the triggering attack, and you take no damage from
+          <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]{Magic
+          Missile}</em>.</p>
+        chat: ''
+      source:
+        custom: PHB 2024
+        rules: '2024'
+        revision: 1
+        book: ''
+        page: ''
+      activation:
+        type: reaction
+        condition: ''
+        value: 1
+      duration:
+        value: '1'
+        units: round
+      target:
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        template:
+          units: ft
+          contiguous: false
+          type: ''
+      range:
+        units: self
+        special: ''
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      level: 1
+      school: abj
+      properties:
+        - psi
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: utility
+          activation:
+            type: action
+            value: null
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects:
+            - _id: MfjPQk1zohC1kHsa
+          range:
+            override: false
+            units: self
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          effectConditionText: ''
+          useConditionReason: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            forceAttackDialog: false
+            forceDamageDialog: false
+            otherActivityAsParentType: true
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          name: ''
+          otherActivityId: none
+      identifier: shield
+      method: spell
+      ability: ''
+      sourceClass: ''
+      prepared: 1
+    _id: oqbUs8oPlqlINlHI
+    type: spell
+    img: icons/equipment/shield/heater-crystal-blue.webp
+    effects:
+      - name: Shield
+        transfer: false
+        img: icons/equipment/shield/heater-crystal-blue.webp
+        _id: MfjPQk1zohC1kHsa
+        type: base
+        system:
+          changes:
+            - key: system.attributes.ac.bonus
+              value: 5
+              priority: 20
+              type: add
+        disabled: false
+        duration:
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
+        description: ''
+        origin: null
+        tint: '#ffffff'
+        statuses: []
+        flags:
+          dae:
+            enableCondition: ''
+            disableCondition: ''
+            disableIncapacitated: false
+            selfTarget: false
+            selfTargetAlways: false
+            dontApply: false
+            stackable: noneName
+            showIcon: false
+            durationExpression: ''
+            macroRepeat: none
+            specialDuration:
+              - turnStart
+          chris-premades:
+            info:
+              identifier: shield
+          dnd5e:
+            riders:
+              statuses: []
+          core:
+            overlay: false
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.1.0
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!rSHaPOu02RRRZvJU.oqbUs8oPlqlINlHI.MfjPQk1zohC1kHsa
+    folder: pBaAAtXBCq9FVEnL
+    sort: 0
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+          effect: []
+        persistSourceMigration: true
+        dependents:
+          - uuid: Actor.kDqmxm3eMOEcv2gD.ActiveEffect.8TO6rKgzo6iqITZw
+      midiProperties:
+        confirmTargets: default
+        autoFailFriendly: false
+        autoSaveFriendly: false
+        critOther: false
+        offHandWeapon: false
+        magicdam: false
+        magiceffect: false
+        noConcentrationCheck: false
+        toggleEffect: false
+        ignoreTotalCover: false
+        idr: false
+        idi: false
+        idv: false
+        ida: false
+      midi-qol:
+        rollAttackPerTarget: default
+        itemCondition: ''
+        effectCondition: ''
+        reactionCondition: reaction === 'isHit'
+        AoETargetType: any
+        AoETargetTypeIncludeSelf: true
+        autoTarget: default
+        removeAttackDamageButtons: default
+        otherCondition: ''
+      scene-packer:
+        hash: 38cbe259dcbf7bbf80527b86b98676cb4f419a8a
+    _stats:
+      compendiumSource: Compendium.dnd-players-handbook.spells.Item.phbsplShield0000
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.1.0
+      createdTime: 1755274820625
+      modifiedTime: 1779357085876
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    _key: '!actors.items!rSHaPOu02RRRZvJU.oqbUs8oPlqlINlHI'
+effects: []
+folder: iMznOM6lT33ymTJA
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!actors!rSHaPOu02RRRZvJU'

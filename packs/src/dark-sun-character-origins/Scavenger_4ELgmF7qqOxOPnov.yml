@@ -1,0 +1,157 @@
+name: Scavenger
+system:
+  description:
+    value: >-
+      <p><strong>Abilities: </strong>Dexterity, Constitution,
+      Intelligence</p><p><strong>Skill Proficiencies</strong>:
+      &amp;Reference[inv], &amp;Reference[sur]</p><p><strong>Tool
+      Proficiencies:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulThievesToo]{Thieves'
+      Tools}</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat</strong>:
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSavageAttac]{Savage
+      Attacker}</p><p><strong>Equipment:</strong> A set of
+      @UUID[Compendium.shareddata.ddb-items.ski4qdvVUyNWkTX2]{Clothes, Common},
+      a small bag of useful odds and ends,
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulThievesToo]{Thieves'
+      Tools}, and a belt pouch containing 10 ceramic
+      pieces.</p><p><strong>Suggested Characteristics</strong>: Scavengers are
+      resourceful and opportunistic, always on the lookout for valuable finds.
+      They are adept at making the most out of limited resources and have a keen
+      eye for hidden potential. Knowing the scarcity of materials on Athas, they
+      allow nothing to go unused and frown upon wasteful practices.</p><p></p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  startingEquipment:
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo
+      requiresProficiency: false
+      _id: AlpgDfVKgcYd5rLC
+      group: LLxlulfK7AuTTfck
+      sort: 0
+    - type: AND
+      requiresProficiency: false
+      _id: LLxlulfK7AuTTfck
+      group: ''
+      sort: 450000
+    - type: linked
+      count: 1
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+      _id: mp0feeLVQbHaU276
+      group: LLxlulfK7AuTTfck
+      sort: 100000
+    - type: linked
+      count: 1
+      key: Compendium.shareddata.ddb-items.Item.ski4qdvVUyNWkTX2
+      requiresProficiency: false
+      _id: 7B991PQwtEPst2lm
+      group: LLxlulfK7AuTTfck
+      sort: 200000
+  identifier: scavenger
+  advancement:
+    - _id: 8gFHAigaFboVUSgH
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - wis
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: Background Ability Score Improvement
+      hint: >-
+        Your background allows you to increase your Dexterity, Constitution, and
+        Charisma scores; increase one of them by 2 and a different one by 1, or
+        increase all three by 1. None of these increases can raise a score above
+        20.
+    - _id: WJA48TLxfqlc3ygz
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.feats.Item.phbftSavageAttac
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Background Feat
+      hint: Your backgrounds grants you the Savage Attacker feat.
+    - _id: CdiCt0Cr9bP9FQNO
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - tool:thief
+          - skills:inv
+          - skills:sur
+        choices:
+          - count: 1
+            pool: []
+      value:
+        chosen: []
+      level: 0
+      title: Background Proficiencies
+      hint: >-
+        Your background grants you proficiency in Investigation and Survival. It
+        also grants you proficiency with Thieves' Tools.
+    - _id: pLGiyOjTP7nwuwTl
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+      value:
+        chosen: []
+      level: 0
+      title: Choose Languages
+      hint: ''
+  wealth: '10'
+type: background
+img: modules/dnd-players-handbook/assets/icons/backgrounds/criminal.webp
+effects: []
+folder: 3ceHqueQSXMSDgbA
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745332221262
+  modifiedTime: 1745878131506
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: 4ELgmF7qqOxOPnov
+sort: 625000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+_key: '!items!4ELgmF7qqOxOPnov'

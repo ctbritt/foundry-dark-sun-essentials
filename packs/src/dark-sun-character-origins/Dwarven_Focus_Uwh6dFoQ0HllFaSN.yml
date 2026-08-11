@@ -1,0 +1,250 @@
+folder: VJq7VIIkVLJb8aqw
+name: Dwarven Focus
+type: feat
+_id: Uwh6dFoQ0HllFaSN
+img: icons/magic/earth/strike-fist-stone.webp
+system:
+  activities:
+    z7XeiaF6pXjmD7c9:
+      type: utility
+      _id: z7XeiaF6pXjmD7c9
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: eEZt4ieRwnFZDMP9
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      name: Dwarven Focus
+      img: ''
+      flags:
+        dnd5e:
+          riders:
+            activity: false
+      appliedEffects:
+        - eEZt4ieRwnFZDMP9
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+  description:
+    value: >-
+      <p>Whenever you make an ability check or a saving throw directly related
+      to your focus, you can roll a d4 and add it to the total. You can use this
+      trait a number of times equal to your Proficiency Bonus, and you regain
+      all expended uses when you finish a Long Rest.</p><p></p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Dwarven Focus
+    transfer: false
+    img: icons/magic/earth/strike-fist-stone.webp
+    _id: eEZt4ieRwnFZDMP9
+    type: base
+    system:
+      changes:
+        - key: system.bonuses.abilities.check
+          value: 1d4
+          priority: 20
+          type: add
+        - key: system.bonuses.abilities.save
+          value: 1d4
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>Whenever you make an ability check or a saving throw directly related
+      to your focus, you can roll a d4 and add it to the total. You can use this
+      trait a number of times equal to your Proficiency Bonus, and you regain
+      all expended uses when you finish a Long Rest.</p><p></p>
+    origin: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.Uwh6dFoQ0HllFaSN
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - isSave
+          - isCheck
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: 1744163607845
+      modifiedTime: 1744164301333
+      lastModifiedBy: 6QG9R6JQRfToF3Mf
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!Uwh6dFoQ0HllFaSN.eEZt4ieRwnFZDMP9'
+sort: 0
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078786403
+  modifiedTime: 1746114664873
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_key: '!items!Uwh6dFoQ0HllFaSN'

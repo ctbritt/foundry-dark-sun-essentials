@@ -1,0 +1,208 @@
+_id: 58bkWXcxZb1YfiON
+name: Master of Tactics
+type: feat
+effects: []
+system:
+  activities:
+    1q97b778ijtPdQLy:
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+        value: '30'
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: '1'
+          type: creatureOrObject
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      useConditionReason: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDamageDialog: ''
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: none
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      _id: 1q97b778ijtPdQLy
+      name: ''
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: "<div class=\"ddb\">\n<p>Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the\_Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you.</p>\n</div>"
+    chat: >-
+      <div class="ddb">
+
+      You can use the Help action as a bonus action. When you use the Help
+      action to aid an ally in attacking a creature, the target of that attack
+      can be within 30 ft. of you if it can see or hear you.
+
+      </div>
+  identifier: master-of-tactics
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 503
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Master of Tactics
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 200
+      featureType: 1
+      class: Rogue
+      classId: 79
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Mastermind
+    subClassId: 79
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Master of Tactics
+        activityCount: 1
+        activityKeys:
+          - utilityMaOTclNe0
+        nameMap:
+          utilityMaOTclNe0:
+            - Master of Tactics
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Master of Tactics
+  dnd5e:
+    advancementOrigin: MW8n7Amm7BeElMhg
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/documents/document-symbol-eye.webp
+folder: YuipdSH7HqRP0OzS
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766792580247
+  modifiedTime: 1781134998470
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!58bkWXcxZb1YfiON'

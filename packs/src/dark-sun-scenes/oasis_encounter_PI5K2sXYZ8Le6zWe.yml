@@ -1,0 +1,3101 @@
+folder: oPwABM7H5thRZ4yj
+name: oasis encounter
+active: false
+navigation: true
+navOrder: 0
+navName: ''
+thumb: worlds/dsr/assets/scenes/PI5K2sXYZ8Le6zWe-thumb.webp
+width: 2800
+height: 2100
+padding: 0
+initial:
+  x: null
+  'y': null
+  scale: null
+grid:
+  type: 1
+  size: 50
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens:
+  - name: Kiestern_hi(1)
+    displayName: 30
+    actorId: null
+    actorLink: false
+    width: 2
+    height: 2
+    x: 1150
+    'y': 750
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: true
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    disposition: 0
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+      LightsHUD:
+        lightspellstate: false
+        lanternconsumablestate: false
+        torchconsumablestate: false
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/5eac9efca33919f9a1f3cea9/dragupload/uploaded/tokens/Kiestern_hi.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: false
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    _id: 9IyIHGyNZAN5zSug
+    delta:
+      _id: 9IyIHGyNZAN5zSug
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.9IyIHGyNZAN5zSug.9IyIHGyNZAN5zSug'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 2
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.9IyIHGyNZAN5zSug'
+  - name: Khuul the Iceman
+    displayName: 40
+    actorId: null
+    actorLink: true
+    width: 1
+    height: 1
+    x: 1400
+    'y': 1000
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    disposition: 1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      token-auras:
+        aura1:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        _version: 1
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+      monks-little-details:
+        glyph: ·
+        targets: []
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Freedom/scene/tokenimage/S8Gbyi7sDhYi5Pfj/token.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    _id: HqsOTibP1rNTX9RQ
+    delta:
+      _id: HqsOTibP1rNTX9RQ
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.HqsOTibP1rNTX9RQ.HqsOTibP1rNTX9RQ'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.HqsOTibP1rNTX9RQ'
+  - flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+      monks-little-details:
+        glyph: â
+        targets: []
+    name: Awakened Giant Wasp(1)
+    displayName: 30
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    actorLink: false
+    disposition: -1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    alpha: 1
+    light:
+      alpha: 1
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        type: null
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    texture:
+      src: https://5e.tools/img/WDMM/Awakened Giant Wasp.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    actorId: null
+    x: 1550
+    'y': 1550
+    hidden: false
+    elevation: 0
+    _id: 4gzhdsdsGNDEJ4rt
+    delta:
+      _id: 4gzhdsdsGNDEJ4rt
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.4gzhdsdsGNDEJ4rt.4gzhdsdsGNDEJ4rt'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.4gzhdsdsGNDEJ4rt'
+  - name: Ash Zombie(1)
+    displayName: 30
+    actorId: null
+    actorLink: false
+    width: 1
+    height: 1
+    x: 1600
+    'y': 1250
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    disposition: -1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+      monks-little-details:
+        glyph: G
+        targets: []
+    texture:
+      src: https://5e.tools/img/LMoP/Ash Zombie.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 60
+      brightness: 0
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    _id: UMB0bv2KwufGk8Z3
+    delta:
+      _id: UMB0bv2KwufGk8Z3
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.UMB0bv2KwufGk8Z3.UMB0bv2KwufGk8Z3'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.UMB0bv2KwufGk8Z3'
+  - name: Tal'Harkoun The Cloudborn
+    displayName: 40
+    actorId: null
+    actorLink: true
+    width: 1
+    height: 1
+    x: 1600
+    'y': 1150
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    disposition: 1
+    displayBars: 0
+    bar1:
+      attribute: null
+    bar2:
+      attribute: null
+    flags:
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+      monks-little-details:
+        glyph: Ó
+        targets: []
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/upload/tal_harkoun_the_cloudborn.Token.webp?1665236907117
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    _id: Nnal71pUNGtlPWS4
+    delta:
+      _id: Nnal71pUNGtlPWS4
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.Nnal71pUNGtlPWS4.Nnal71pUNGtlPWS4'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.Nnal71pUNGtlPWS4'
+  - flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+      monks-little-details:
+        glyph: å
+        targets:
+          - QCFzuRrFTHOaTARZ
+          - ZNBDZq1IfvWlpRaF
+    name: Air Elemental Myrmidon(1)
+    displayName: 30
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    actorLink: false
+    disposition: -1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    alpha: 1
+    light:
+      alpha: 1
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        type: null
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/5eac9efca33919f9a1f3cea9/tokenizer/npc-images/air_elemental_myrmidon.Token.dark-sun-monsters-converted.webp?1664399164441
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 60
+      brightness: 0
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    actorId: null
+    x: 1600
+    'y': 1550
+    hidden: false
+    elevation: 0
+    _id: W2JO56QPJmy7ErcW
+    delta:
+      _id: W2JO56QPJmy7ErcW
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.W2JO56QPJmy7ErcW.W2JO56QPJmy7ErcW'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.W2JO56QPJmy7ErcW'
+  - flags:
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      core: {}
+    name: Upram Uscus
+    displayName: 40
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    actorLink: true
+    disposition: -1
+    displayBars: 0
+    bar1:
+      attribute: null
+    bar2:
+      attribute: null
+    alpha: 1
+    light:
+      alpha: 1
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        type: null
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Adventure_1611015875139/actor/images/M2U5MzNhYzQ4OGE1/avatar.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: false
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    actorId: null
+    x: 1750
+    'y': 900
+    hidden: false
+    elevation: 0
+    _id: kIFsAlMuNVuYKQwO
+    delta:
+      _id: kIFsAlMuNVuYKQwO
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.kIFsAlMuNVuYKQwO.kIFsAlMuNVuYKQwO'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.kIFsAlMuNVuYKQwO'
+  - flags:
+      token-auras:
+        aura1:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+          permission: all
+        aura2:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+          permission: all
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        sightLimit: null
+        light: {}
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      core: {}
+      token-z:
+        zIndex: 0
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      monks-little-details:
+        token-combat-animation: ''
+        token-highlight: ''
+        bloodsplat-colour: ''
+        glyph: π
+        targets: []
+      elevation-drag-ruler:
+        selectedSpeed: auto
+        hideSpeedButton: false
+        hideTerrainButton: false
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+    name: G'orm Greymatter
+    displayName: 40
+    width: 2
+    height: 2
+    lockRotation: false
+    rotation: 0
+    actorLink: true
+    disposition: -1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    alpha: 1
+    light:
+      alpha: 1
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        type: null
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/upload/g_orm_greymatter.TokenBVmQowsiMAn6zK78.webp?1665225995300
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: false
+      range: 18.29
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    actorId: null
+    x: 2000
+    'y': 1450
+    hidden: false
+    elevation: 0
+    _id: h2r5MjSYwXvzyOYA
+    delta:
+      _id: h2r5MjSYwXvzyOYA
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.h2r5MjSYwXvzyOYA.h2r5MjSYwXvzyOYA'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 2
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.h2r5MjSYwXvzyOYA'
+  - name: Farruush Khajiit Farrunner
+    displayName: 40
+    actorId: null
+    actorLink: true
+    width: 1
+    height: 1
+    x: 2000
+    'y': 1550
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    disposition: 1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      token-auras:
+        aura1:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        _version: 1
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+        selectedSpeed: auto
+      tokenmagic: {}
+      monks-little-details:
+        glyph: Ä
+        targets: []
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Freedom/scene/tokenimage/WBVFNFMdtJ3HUjG1/token.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    _id: 3CndQGYrTmCBPaQL
+    delta:
+      _id: 3CndQGYrTmCBPaQL
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.3CndQGYrTmCBPaQL.3CndQGYrTmCBPaQL'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.3CndQGYrTmCBPaQL'
+  - name: campfire(2)(4)
+    displayName: 30
+    actorLink: false
+    texture:
+      src: tokenizer/npc-images/campfire.Token.webp?1666054002384
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 0
+    displayBars: 30
+    bar1:
+      attribute: null
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 30
+      color: '#deecac'
+      coloration: 0
+      dim: 30
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: torch
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      token-z:
+        zIndex: 0
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      monks-little-details:
+        token-combat-animation: ''
+        token-highlight: ''
+        bloodsplat-colour: ''
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+    actorId: null
+    x: 400
+    'y': 350
+    hidden: false
+    elevation: 0
+    _id: 1ifpdTjNVHX99aRB
+    delta:
+      _id: 1ifpdTjNVHX99aRB
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!PI5K2sXYZ8Le6zWe.1ifpdTjNVHX99aRB.1ifpdTjNVHX99aRB'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!PI5K2sXYZ8Le6zWe.1ifpdTjNVHX99aRB'
+lights: []
+notes: []
+sounds: []
+tiles: []
+walls:
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - -640
+      - -450
+      - 3269
+      - -450
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: bxCCx9LxTljNOSdc
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.bxCCx9LxTljNOSdc'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 3269
+      - -450
+      - 3257
+      - 2328
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: G8YkXw7IwtFxBWCH
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.G8YkXw7IwtFxBWCH'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 3257
+      - 2328
+      - -651
+      - 2340
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: cdDTXqycI63tUA9x
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.cdDTXqycI63tUA9x'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2267
+      - 760
+      - 2314
+      - 679
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: 0G3v777ncWZiCXTh
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.0G3v777ncWZiCXTh'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2314
+      - 679
+      - 2298
+      - 618
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: Iz2c1nEn1cmsC2TO
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.Iz2c1nEn1cmsC2TO'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2298
+      - 618
+      - 2293
+      - 574
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: 6VF3F9XAhhWmNnjU
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.6VF3F9XAhhWmNnjU'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2314
+      - 677
+      - 2350
+      - 662
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: Qq5ZEZzvRjz187iy
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.Qq5ZEZzvRjz187iy'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2350
+      - 662
+      - 2364
+      - 643
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: FHXpncinXn7LFKx0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.FHXpncinXn7LFKx0'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1814
+      - 1102
+      - 1867
+      - 1075
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: ON2IrCy2r3itYk14
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.ON2IrCy2r3itYk14'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1862
+      - 1100
+      - 1808
+      - 1071
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: iNtjFFSGgpc4pBiw
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.iNtjFFSGgpc4pBiw'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2312
+      - 1700
+      - 2357
+      - 1650
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: m64ZAxtMkyuJP2xa
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.m64ZAxtMkyuJP2xa'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 2309
+      - 1650
+      - 2368
+      - 1700
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: bOKO2TYWS4dHiFO2
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.bOKO2TYWS4dHiFO2'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1602
+      - 1387
+      - 1637
+      - 1450
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: igv7wCVpTVa0PnSG
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.igv7wCVpTVa0PnSG'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1601
+      - 1428
+      - 1633
+      - 1400
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: xe3Ujy05a5egKliv
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.xe3Ujy05a5egKliv'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1525
+      - 1800
+      - 1562
+      - 1787
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: lly4sU9cKxWDo5aP
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.lly4sU9cKxWDo5aP'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 358
+      - 1808
+      - 442
+      - 1907
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: mUCje4pc7rfzTE45
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.mUCje4pc7rfzTE45'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 366
+      - 1900
+      - 412
+      - 1825
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: pbmoODUmDAuPVGjJ
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.pbmoODUmDAuPVGjJ'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 583
+      - 1783
+      - 583
+      - 1842
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: PJrq01o2EobhpOLt
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.PJrq01o2EobhpOLt'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 557
+      - 1811
+      - 614
+      - 1854
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: a2m0LtQYWj952lri
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.a2m0LtQYWj952lri'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 299
+      - 947
+      - 219
+      - 855
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: 5OgKzk2ABIMc3PgN
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.5OgKzk2ABIMc3PgN'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 219
+      - 855
+      - 307
+      - 780
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: mwKhBa0sfVjkK0HE
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.mwKhBa0sfVjkK0HE'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 307
+      - 780
+      - 360
+      - 705
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: BvC6as9927ZaFtEz
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.BvC6as9927ZaFtEz'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 360
+      - 705
+      - 247
+      - 634
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: BBO2AXmnHbRdTSnf
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.BBO2AXmnHbRdTSnf'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 781
+      - 566
+      - 820
+      - 466
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: HRIuNKYB6uB4gr4X
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.HRIuNKYB6uB4gr4X'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 820
+      - 466
+      - 879
+      - 450
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: e7eyqNNoDV24y5WD
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.e7eyqNNoDV24y5WD'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 879
+      - 450
+      - 1050
+      - 462
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: XvybNq6TrXJ3fDxt
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.XvybNq6TrXJ3fDxt'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1050
+      - 462
+      - 1092
+      - 421
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: oPJxkbNIQqHReZnq
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.oPJxkbNIQqHReZnq'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1092
+      - 421
+      - 1131
+      - 436
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: bVTdhsJc8wap6GzH
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.bVTdhsJc8wap6GzH'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1131
+      - 436
+      - 1218
+      - 456
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: TJ6Squ43nrmG7737
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.TJ6Squ43nrmG7737'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1218
+      - 456
+      - 1319
+      - 454
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: MkTy42I21TlhBxPI
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.MkTy42I21TlhBxPI'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 164
+      - 155
+      - 167
+      - 261
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: VIPAcL3oGAdWFCSU
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.VIPAcL3oGAdWFCSU'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 167
+      - 261
+      - 288
+      - 282
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: PN7MFKuBMXVlvtRi
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.PN7MFKuBMXVlvtRi'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - 1362
+      - 275
+      - 1375
+      - 237
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: w39qnAEUtbiWHMXY
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.w39qnAEUtbiWHMXY'
+  - c:
+      - 2512
+      - 116
+      - 2512
+      - 193
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    _id: SIthsPhtIHLLG4ff
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.SIthsPhtIHLLG4ff'
+  - c:
+      - 2463
+      - 154
+      - 2537
+      - 162
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    _id: rP9UZ3rsyT0RgphD
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.rP9UZ3rsyT0RgphD'
+  - flags:
+      dnd5e-helpers:
+        coverLevel: 3
+      wall-height:
+        top: null
+        bottom: null
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    c:
+      - -651
+      - 2340
+      - -640
+      - -450
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    _id: C36g4rdBKMhxADPz
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!PI5K2sXYZ8Le6zWe.C36g4rdBKMhxADPz'
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+sort: 0
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+flags:
+  enhanced-terrain-layer:
+    opacity: 0.5
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+    terrainvkuzcDEj1UrZPv4W:
+      constructor: {}
+      _id: vkuzcDEj1UrZPv4W
+      shape:
+        type: p
+        width: 1126
+        height: 891
+        radius: null
+        points:
+          - 521.6176470588236
+          - 854.0882352941176
+          - 558.8235294117649
+          - 852.9411764705881
+          - 564.7058823529414
+          - 829.4117647058822
+          - 558.8235294117649
+          - 817.6470588235293
+          - 564.7058823529414
+          - 802.9411764705881
+          - 585.294117647059
+          - 785.2941176470588
+          - 597.0588235294117
+          - 773.5294117647059
+          - 611.7647058823532
+          - 770.5882352941176
+          - 623.5294117647059
+          - 761.7647058823529
+          - 644.1176470588239
+          - 752.9411764705881
+          - 650
+          - 741.1764705882351
+          - 667.6470588235297
+          - 720.5882352941176
+          - 670.588235294118
+          - 708.8235294117646
+          - 667.6470588235297
+          - 682.3529411764705
+          - 644.1176470588239
+          - 667.6470588235293
+          - 620.588235294118
+          - 667.6470588235293
+          - 608.8235294117649
+          - 664.705882352941
+          - 597.0588235294117
+          - 655.8823529411764
+          - 585.294117647059
+          - 641.1764705882351
+          - 579.4117647058824
+          - 626.4705882352939
+          - 579.4117647058824
+          - 611.7647058823529
+          - 582.3529411764707
+          - 600
+          - 582.3529411764707
+          - 594.1176470588234
+          - 582.3529411764707
+          - 582.3529411764705
+          - 605.8823529411766
+          - 561.7647058823529
+          - 614.7058823529414
+          - 561.7647058823529
+          - 626.4705882352941
+          - 561.7647058823529
+          - 647.0588235294117
+          - 558.8235294117646
+          - 655.8823529411766
+          - 547.0588235294117
+          - 658.8235294117649
+          - 526.4705882352941
+          - 658.8235294117649
+          - 514.705882352941
+          - 658.8235294117649
+          - 508.82352941176464
+          - 658.8235294117649
+          - 494.1176470588234
+          - 661.7647058823532
+          - 476.47058823529414
+          - 673.5294117647059
+          - 464.705882352941
+          - 691.1764705882354
+          - 461.7647058823529
+          - 720.5882352941182
+          - 447.0588235294117
+          - 729.4117647058822
+          - 444.1176470588234
+          - 767.64705882353
+          - 429.4117647058822
+          - 782.3529411764705
+          - 426.47058823529414
+          - 808.8235294117651
+          - 417.6470588235293
+          - 844.1176470588236
+          - 411.7647058823529
+          - 850.0000000000002
+          - 408.82352941176464
+          - 861.7647058823534
+          - 411.7647058823529
+          - 873.5294117647056
+          - 429.4117647058822
+          - 882.3529411764705
+          - 435.2941176470588
+          - 917.64705882353
+          - 438.2352941176471
+          - 929.4117647058822
+          - 438.2352941176471
+          - 964.7058823529417
+          - 438.2352941176471
+          - 976.4705882352939
+          - 438.2352941176471
+          - 988.2352941176471
+          - 429.4117647058822
+          - 988.2352941176471
+          - 411.7647058823529
+          - 976.4705882352939
+          - 394.1176470588234
+          - 970.5882352941173
+          - 388.2352941176471
+          - 976.4705882352939
+          - 379.4117647058822
+          - 1026.470588235294
+          - 358.82352941176464
+          - 1032.3529411764705
+          - 358.82352941176464
+          - 1067.64705882353
+          - 347.0588235294117
+          - 1076.470588235294
+          - 347.0588235294117
+          - 1079.4117647058822
+          - 347.0588235294117
+          - 1100.0000000000002
+          - 338.2352941176471
+          - 1108.823529411765
+          - 326.47058823529414
+          - 1114.7058823529417
+          - 302.94117647058806
+          - 1120.5882352941173
+          - 273.52941176470586
+          - 1120.5882352941173
+          - 261.7647058823529
+          - 1120.5882352941173
+          - 235.29411764705878
+          - 1120.5882352941173
+          - 208.82352941176464
+          - 1123.5294117647056
+          - 170.58823529411757
+          - 1126.470588235294
+          - 158.82352941176464
+          - 1100.0000000000002
+          - 141.17647058823513
+          - 1088.235294117647
+          - 129.4117647058822
+          - 1079.4117647058822
+          - 117.64705882352928
+          - 1070.5882352941173
+          - 111.76470588235293
+          - 1044.1176470588236
+          - 111.76470588235293
+          - 1017.64705882353
+          - 114.70588235294099
+          - 1002.9411764705885
+          - 141.17647058823513
+          - 997.0588235294119
+          - 161.76470588235293
+          - 985.2941176470588
+          - 185.29411764705878
+          - 973.5294117647056
+          - 214.70588235294122
+          - 958.8235294117651
+          - 235.29411764705878
+          - 917.64705882353
+          - 241.17647058823513
+          - 885.2941176470588
+          - 229.4117647058822
+          - 873.5294117647056
+          - 205.88235294117635
+          - 870.5882352941173
+          - 185.29411764705878
+          - 861.7647058823534
+          - 164.70588235294122
+          - 844.1176470588236
+          - 138.23529411764684
+          - 826.4705882352939
+          - 114.70588235294099
+          - 802.9411764705885
+          - 82.3529411764705
+          - 794.1176470588236
+          - 58.82352941176464
+          - 794.1176470588236
+          - 47.05882352941171
+          - 791.1764705882354
+          - 35.29411764705878
+          - 744.1176470588236
+          - 11.764705882352928
+          - 691.1764705882354
+          - 0
+          - 667.6470588235297
+          - 8.823529411764639
+          - 629.4117647058824
+          - 23.529411764705856
+          - 555.8823529411766
+          - 29.411764705882206
+          - 497.0588235294117
+          - 14.70588235294099
+          - 452.9411764705883
+          - 5.88235294117635
+          - 376.47058823529414
+          - 5.88235294117635
+          - 355.8823529411766
+          - 5.88235294117635
+          - 297.05882352941217
+          - 14.70588235294099
+          - 273.52941176470586
+          - 23.529411764705856
+          - 258.82352941176487
+          - 38.235294117646845
+          - 247.05882352941217
+          - 50
+          - 235.294117647059
+          - 76.47058823529392
+          - 214.70588235294144
+          - 108.82352941176464
+          - 200
+          - 117.64705882352928
+          - 141.1764705882356
+          - 120.58823529411757
+          - 108.82352941176487
+          - 123.52941176470586
+          - 82.35294117647072
+          - 144.11764705882342
+          - 67.64705882352973
+          - 170.58823529411757
+          - 67.64705882352973
+          - 191.17647058823513
+          - 79.41176470588243
+          - 220.58823529411757
+          - 82.35294117647072
+          - 273.52941176470586
+          - 91.17647058823559
+          - 305.88235294117635
+          - 138.2352941176473
+          - 314.7058823529412
+          - 188.2352941176473
+          - 314.7058823529412
+          - 200
+          - 338.2352941176471
+          - 202.9411764705883
+          - 364.7058823529412
+          - 202.9411764705883
+          - 373.52941176470586
+          - 202.9411764705883
+          - 397.0588235294117
+          - 202.9411764705883
+          - 423.52941176470586
+          - 200
+          - 479.4117647058822
+          - 176.47058823529414
+          - 529.4117647058822
+          - 158.82352941176487
+          - 558.8235294117646
+          - 114.70588235294144
+          - 585.2941176470588
+          - 76.47058823529414
+          - 608.8235294117646
+          - 58.823529411764866
+          - 626.4705882352939
+          - 58.823529411764866
+          - 644.1176470588234
+          - 52.94117647058829
+          - 655.8823529411764
+          - 5.882352941176578
+          - 658.8235294117646
+          - 0
+          - 664.705882352941
+          - 0
+          - 682.3529411764705
+          - 5.882352941176578
+          - 708.8235294117646
+          - 11.764705882353155
+          - 735.2941176470588
+          - 17.647058823529733
+          - 758.8235294117646
+          - 67.64705882352973
+          - 782.3529411764705
+          - 111.76470588235316
+          - 782.3529411764705
+          - 147.05882352941217
+          - 767.6470588235293
+          - 158.82352941176487
+          - 764.705882352941
+          - 167.64705882352973
+          - 770.5882352941176
+          - 220.58823529411802
+          - 811.7647058823529
+          - 226.47058823529414
+          - 841.1764705882351
+          - 235.294117647059
+          - 850
+          - 267.64705882352973
+          - 864.705882352941
+          - 294.1176470588239
+          - 876.4705882352939
+          - 341.1764705882356
+          - 888.2352941176468
+          - 370.588235294118
+          - 891.1764705882351
+          - 408.82352941176487
+          - 885.2941176470588
+          - 444.1176470588239
+          - 870.5882352941176
+          - 461.76470588235316
+          - 867.6470588235293
+          - 491.1764705882356
+          - 867.6470588235293
+          - 508.82352941176487
+          - 864.705882352941
+      x: 662.5
+      'y': 487.5
+      hidden: false
+      locked: false
+      multiple: 2
+      elevation: 0
+      depth: 0
+      opacity: 1
+      drawcolor: null
+      environment: water
+      obstacle: ''
+      flags: {}
+  token-attacher: {}
+  weatherfx:
+    auto-apply: true
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221481317
+  modifiedTime: 1755221481317
+  lastModifiedBy: Gyn3hbFo8wof84M9
+_id: PI5K2sXYZ8Le6zWe
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1666053139929
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!PI5K2sXYZ8Le6zWe'
+templates: []

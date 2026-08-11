@@ -1,0 +1,342 @@
+_id: Q0YOmNJJJfQCvauo
+name: Ambush Master
+type: feat
+effects:
+  - name: 'Ambush Master: Initiative'
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.Q0YOmNJJJfQCvauo
+    transfer: false
+    _id: d1d7fw8gC7IdtHSt
+    type: base
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: 5
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>Starting at 13th level, you excel at leading ambushes. If any of your
+      foes are surprised, you can use a bonus action on your turn in the first
+      round of the combat to grant each ally who can see you a +5 bonus to
+      initiative that lasts until the combat ends. If the initiative bonus would
+      increase an ally’s initiative above yours, the ally’s initiative instead
+      equals your initiative.</p><p class="p1">Each of the allies also receives
+      a 10-foot increase to speed that lasts until the end of the ally’s next
+      turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - combatEnd
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!Q0YOmNJJJfQCvauo.d1d7fw8gC7IdtHSt'
+  - name: 'Ambush Master: Speed'
+    img: icons/magic/nature/stealth-hide-eyes-green.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.Q0YOmNJJJfQCvauo
+    transfer: false
+    _id: BcXDC25uaFYfohvw
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+    disabled: false
+    duration:
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>Starting at 13th level, you excel at leading ambushes. If any of your
+      foes are surprised, you can use a bonus action on your turn in the first
+      round of the combat to grant each ally who can see you a +5 bonus to
+      initiative that lasts until the combat ends. If the initiative bonus would
+      increase an ally’s initiative above yours, the ally’s initiative instead
+      equals your initiative.</p><p class="p1">Each of the allies also receives
+      a 10-foot increase to speed that lasts until the end of the ally’s next
+      turn.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnEnd
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!Q0YOmNJJJfQCvauo.BcXDC25uaFYfohvw'
+system:
+  activities:
+    CjiWikLq2GORBJVz:
+      type: utility
+      _id: CjiWikLq2GORBJVz
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: d1d7fw8gC7IdtHSt
+          level:
+            min: null
+            max: null
+        - _id: BcXDC25uaFYfohvw
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <p>Starting at 13th level, you excel at leading ambushes. If any of your
+      foes are surprised, you can use a bonus action on your turn in the first
+      round of the combat to grant each ally who can see you a +5 bonus to
+      initiative that lasts until the combat ends. If the initiative bonus would
+      increase an ally’s initiative above yours, the ally’s initiative instead
+      equals your initiative.</p><p class="p1">Each of the allies also receives
+      a 10-foot increase to speed that lasts until the end of the ally’s next
+      turn.</p>
+    chat: >-
+      <div class="ddb">
+
+      You have advantage on initiative rolls. 
+
+
+      In addition, the first creature you hit during the first round of a combat
+      becomes easier for you and others to strike; attack rolls against that
+      target have advantage until the start of your next turn.
+
+      </div>
+  identifier: athas-ambush-master
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 13
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 743
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Ambush Master
+    dndbeyond:
+      requiredLevel: 13
+      displayOrder: 400
+      featureType: 1
+      class: Rogue
+      classId: 112
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Rogue
+    classId: 12
+    subClass: Scout
+    subClassId: 112
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+  dae:
+    alwaysActive: false
+    activeEquipped: false
+  midi-qol:
+    removeAttackDamageButtons: default
+    forceCEOff: true
+  midiProperties:
+    confirmTargets: default
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/magic/nature/stealth-hide-eyes-green.webp
+folder: S9xvXH3nOcPjZR2k
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998517
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!Q0YOmNJJJfQCvauo'

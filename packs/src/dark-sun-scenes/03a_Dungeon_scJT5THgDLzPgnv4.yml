@@ -1,0 +1,335 @@
+folder: sTce0NyX83QzojIN
+name: 03a Dungeon
+navigation: false
+navOrder: 0
+navName: ''
+thumb: modules/shareddata/assets/scenes/scJT5THgDLzPgnv4-thumb.webp
+width: 7000
+height: 8400
+padding: 0.25
+initial:
+  x: 3754
+  'y': 3223
+  scale: 0.25
+grid:
+  type: 1
+  size: 140
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens: []
+lights:
+  - x: 3220
+    'y': 3640
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: Ou6ZzMCdrdOCL57h
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.Ou6ZzMCdrdOCL57h'
+  - x: 6440
+    'y': 3780
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: lkvC31MHKUbUsIBs
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.lkvC31MHKUbUsIBs'
+  - x: 7000
+    'y': 6020
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: 7YtHXy4ClscQITM0
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.7YtHXy4ClscQITM0'
+  - x: 3780
+    'y': 6300
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: yns8bpLaciV1IvxB
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.yns8bpLaciV1IvxB'
+  - x: 3920
+    'y': 8680
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: aMZ05yoEPUVDCoHY
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.aMZ05yoEPUVDCoHY'
+  - x: 7140
+    'y': 8540
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      color: '#5a503a'
+      coloration: 1
+      dim: 80
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: fog
+        speed: 6
+        intensity: 3
+        reverse: true
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    hidden: false
+    flags: {}
+    _id: VDXGuTHXeUs2yf7J
+    elevation: 0
+    levels: []
+    locked: false
+    _key: '!scenes.lights!scJT5THgDLzPgnv4.VDXGuTHXeUs2yf7J'
+notes: []
+sounds:
+  - path: modules/moonlight-maps-plain-terrain-deserts/01%20SFX/Wind_forest.ogg
+    x: 5880
+    'y': 6160
+    radius: 210
+    easing: false
+    walls: false
+    volume: 0.4
+    darkness:
+      min: 0
+      max: 1
+    repeat: false
+    hidden: false
+    flags: {}
+    _id: KGreqwMzuQZXKGfv
+    elevation: 0
+    effects:
+      base:
+        intensity: 5
+      muffled:
+        intensity: 5
+    levels: []
+    locked: false
+    _key: '!scenes.sounds!scJT5THgDLzPgnv4.KGreqwMzuQZXKGfv'
+tiles: []
+walls: []
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+flags:
+  token-attacher: {}
+  scene-packer:
+    hash: b978153ab079efac44b5b02e5d989246c6b7f30c
+    sourceId: Scene.scJT5THgDLzPgnv4
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+  walledtemplates:
+    version: 0.9.1
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.4
+  createdTime: 1756614652456
+  modifiedTime: 1756614706694
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: scJT5THgDLzPgnv4
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1732914636047
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+regions: []
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+active: false
+sort: 150000
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!scJT5THgDLzPgnv4'
+templates: []

@@ -1,0 +1,155 @@
+folder: 3ceHqueQSXMSDgbA
+name: Explorer
+type: background
+_id: qKAnSDfgo4dDX2kV
+img: icons/tools/navigation/map-marked-brown.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilitiies: </strong>&amp;Reference[con], &amp;Reference[int],
+      &amp;Reference[cha]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[prc], &amp;Reference[sur]</p><p><strong>Tool
+      Proficiencies:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulNavigators]{Navigator's
+      Tools}</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftAlert000000]{Alert}</p><p><strong>Equipment:</strong>
+      A @UUID[Compendium.dnd-players-handbook.equipment.phbagMap00000000]{Map}
+      of unexplored area, a set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Clothes,
+      Traveler's}, a
+      @UUID[Compendium.shareddata.ddb-override.Aj65KonyHIPUpIlF]{Compass}, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 15 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> Explorers are curious and adventurous, with a
+      deep respect for nature. They are always seeking new frontiers and the
+      thrill of discovery. Explorers typically search for lost ruins in the
+      wastelands of Athas or work as guide for others.</p><p></p>
+    chat: ''
+  identifier: athas-explorer
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: linked
+      count: null
+      key: Compendium.shareddata.ddb-override.Item.Aj65KonyHIPUpIlF
+      requiresProficiency: false
+      _id: vYRhH3zKeSXG23qd
+      group: ''
+      sort: 500000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav
+      requiresProficiency: false
+      _id: oneGorkdnpd2id4b
+      group: ''
+      sort: 600000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagMap00000000
+      requiresProficiency: false
+      _id: q73KWLkjhdASbTcL
+      group: ''
+      sort: 700000
+  advancement:
+    - _id: 2qVBXOPxdnhusM6a
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:prc
+          - skills:sur
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: 4D3QoJP72WjflMYi
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:navg
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: P9f3LOw9fgV0w7LU
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: DUlwWIeUUo3j4zwQ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftAlert000000
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+    - _id: jJhJr0XfGmPuk07W
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+  wealth: '15'
+effects: []
+sort: 600000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1744174042167
+  modifiedTime: 1766717805184
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!qKAnSDfgo4dDX2kV'

@@ -1,0 +1,238 @@
+_id: MmvB0W7cMJAGihLD
+name: A travelers map
+active: false
+navigation: true
+navOrder: 100000
+navName: ''
+thumb: worlds/dsr/assets/scenes/MmvB0W7cMJAGihLD-thumb.webp
+width: 1400
+height: 1866
+padding: 0.25
+initial:
+  x: 1251
+  'y': 1155
+  scale: 0.75
+grid:
+  size: 50
+  type: 1
+  color: '#000000'
+  alpha: 0
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: false
+drawings: []
+tokens:
+  - _id: vZoiHjFF91nHKTBc
+    name: Farruush Khajiit Farrunner
+    displayName: 40
+    actorId: null
+    actorLink: true
+    width: 1
+    height: 1
+    x: 1050
+    'y': 1100
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    hidden: false
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      attenuation: 0.5
+      negative: false
+      priority: 0
+    disposition: 1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    flags:
+      token-auras:
+        aura1:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+      perfect-vision:
+        visionRules: default
+        monoVisionColor: ''
+        _version: 1
+      dnd5e-helpers:
+        coverLevel: 1
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Freedom/scene/tokenimage/WBVFNFMdtJ3HUjG1/token.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 0
+      brightness: 1
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: vZoiHjFF91nHKTBc
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!MmvB0W7cMJAGihLD.vZoiHjFF91nHKTBc.vZoiHjFF91nHKTBc'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!MmvB0W7cMJAGihLD.vZoiHjFF91nHKTBc'
+lights: []
+notes: []
+sounds: []
+tiles: []
+walls: []
+playlist: null
+playlistSound: null
+journal: null
+weather: ''
+folder: 2oVJ25yAn0EL41eX
+sort: 700000
+flags:
+  perfect-vision:
+    sightLimit: null
+    globalLight: default
+    daylightColor: ''
+    darknessColor: ''
+    _version: 1
+    saturation: null
+  token-attacher: {}
+  importid: {}
+  wallHeight:
+    wallHeightAdvancedVision: true
+  monks-common-display:
+    screen: gm
+  weatherfx:
+    auto-apply: true
+  enhanced-terrain-layer:
+    opacity: ''
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+    drawcolor: ''
+ownership:
+  default: 2
+  Gyn3hbFo8wof84M9: 3
+journalEntryPage: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221508858
+  modifiedTime: 1756273819796
+  lastModifiedBy: wgCeShTrqHJFBbDr
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1630023738978
+  colors:
+    explored: null
+    unexplored: null
+  mode: 0
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!MmvB0W7cMJAGihLD'
+templates: []

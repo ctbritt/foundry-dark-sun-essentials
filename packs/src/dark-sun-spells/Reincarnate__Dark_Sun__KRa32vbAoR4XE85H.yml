@@ -1,0 +1,225 @@
+name: Reincarnate (Dark Sun)
+type: spell
+system:
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You touch a dead humanoid or a piece of a
+      dead humanoid. Provided that the creature has been dead no longer than 10
+      days, the spell forms a new adult body for it and then calls the soul to
+      enter that body. If the target's soul isn't free or willing to do so, the
+      spell fails.</p><p>The magic fashions a new body for the creature to
+      inhabit, which likely causes the creature's race to change. The DM rolls a
+      [[/r d100]] and consults the following table to determine what form the
+      creature takes when restored to life, or the DM chooses a form.</p><table
+      class="w-100 rd__table  stripe-odd-table"><caption>Reincarnate
+      Races</caption><thead><tr><th class="col-1 ve-text-center no-wrap"
+      data-rd-isroller="true"></th></tr></thead><tbody><tr></tr></tbody></table><table
+      style="border:0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-weight:400;font-stretch:inherit;font-size:0.318cm;line-height:16px;font-family:ScalySansRemake;font-optical-sizing:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;vertical-align:baseline;margin:0.325cm
+      0px
+      0px;padding:0px;border-collapse:collapse;border-spacing:0px;box-sizing:border-box;-webkit-print-color-adjust:exact;width:319.188px;z-index:15;break-inside:avoid;color:rgb(0,
+      0,
+      0);letter-spacing:normal;orphans:2;text-align:justify;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238,
+      229,
+      206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial"><thead><tr><th>Roll</th><th>Race</th></tr></thead><tbody><tr><td>01-03</td><td>Aarakocra</td></tr><tr><td>04-06</td><td>Dray,
+      first generation</td></tr><tr><td>07-09</td><td>Dray, second
+      generation</td></tr><tr><td>10-22</td><td>Dwarf</td></tr><tr><td>23-35</td><td>Elf</td></tr><tr><td>35-42</td><td>Half-elf</td></tr><tr><td>43-49</td><td>Half-giant</td></tr><tr><td>50-54</td><td>Halfling</td></tr><tr><td>55-74</td><td>Human</td></tr><tr><td>75-76</td><td>Human,
+      Vilichi</td></tr><tr><td>77-80</td><td>Mul</td></tr><tr><td>81-84</td><td>Pterran</td></tr><tr><td>85-87</td><td>Ukovan,
+      air</td></tr><tr><td>88-91</td><td>Ukovan,
+      earth</td></tr><tr><td>91-94</td><td>Ukovan,
+      fire</td></tr><tr><td>95-96</td><td>Ukovan,
+      water</td></tr><tr><td>97-100</td><td>Targets Original
+      Race</td></tr></tbody></table><p>The reincarnated creature recalls its
+      former life and experiences. It retains the capabilities it had in its
+      original form, except it exchanges its original race for the new one and
+      changes its racial traits accordingly.</p></div><h5>Reincarnate and
+      Thri-kreen</h5><p>Thri-kreen are classified as Monstrosities, not
+      humanoids. As such they are unaffected by the Reincarnate spell and by
+      extension shouldn’t be on table of possible races to be reincarnated
+      into.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: PHB
+    page: '271'
+    license: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: hour
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '0'
+    units: touch
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 5
+  school: trs
+  materials:
+    value: rare oils and unguents worth at least 1,000 gp, which the spell consumes
+    consumed: true
+    cost: 1000
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+    - material
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types: []
+        custom:
+          enabled: false
+          formula: ''
+        scaling:
+          mode: ''
+          number: null
+          formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+  identifier: reincarnate-dark-sun
+img: icons/magic/nature/plant-vines-skull-green.webp
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  plutonium:
+    page: spells.html
+    source: PHB
+    hash: reincarnate_phb
+    propDroppable: spell
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -375562760
+effects: []
+folder: null
+sort: 3000000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411092228
+  modifiedTime: 1784910749576
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: KRa32vbAoR4XE85H
+_key: '!items!KRa32vbAoR4XE85H'

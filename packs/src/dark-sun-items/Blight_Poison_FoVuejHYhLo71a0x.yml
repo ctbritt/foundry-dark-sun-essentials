@@ -1,0 +1,149 @@
+name: Blight Poison
+type: loot
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>A recipe for crafting Blight Poison, an injury poison derived from
+      undead pixies that causes paralysis by disrupting the central nervous
+      system. This sinister concoction leaves its victims fully aware but unable
+      to move.</p><p><strong>Crafting Steps:</strong></p><ol><li>Harvest essence
+      from an undead pixie</li><li>Mix with powdered nightshade</li><li>Add a
+      binding agent</li><li>Distill the mixture in an alembic</li><li>Store in a
+      sealed vial</li></ol>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 90
+    denomination: ct
+  rarity: uncommon
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: blight-poison
+flags:
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Athas Poisons
+      instruction: >-
+        <p>Harvest undead essence and mix with nightshade. Add a binding agent,
+        distill the mixture, and store in a sealed vial. A poisoner's kit is
+        required for this process.</p>
+      required:
+        '3':
+          Compendium-shareddata-ddb-items-Item-VXsUFoyJO7jiGCZk:
+            id: VXsUFoyJO7jiGCZk
+            uuid: Compendium.shareddata.ddb-items.Item.VXsUFoyJO7jiGCZk
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Item-RqEPsDNrTG9TaCeS:
+            id: RqEPsDNrTG9TaCeS
+            uuid: Item.RqEPsDNrTG9TaCeS
+            img: icons/consumables/potions/bottle-conical-bubbling-blue.webp
+            type: Item
+            name: Blight Poison
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: ct
+        value: 45
+      input:
+        '1':
+          Compendium-potion-crafting-and-gathering-potion-crafting-and-gathering-ingredients-Item-PpZ5ysLIab4PNiCL:
+            id: PpZ5ysLIab4PNiCL
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.Item.PpZ5ysLIab4PNiCL
+            img: icons/consumables/plants/leaf-pink.webp
+            type: Item
+            name: Nightshade
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-fH0ZTrw8welBty7Y:
+            id: fH0ZTrw8welBty7Y
+            uuid: Compendium.shareddata.ddb-items.Item.fH0ZTrw8welBty7Y
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: container
+            flags:
+              beavers-crafting: {}
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 15
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 15
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 478c85c1945b9b0400d97917e8633bb8192f301f
+    sourceId: Item.BlightPoisonRecipe
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: o1LYkykMt2p6J6ix
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.FoVuejHYhLo71a0x
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114881583
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource:
+    worldId: Rime-of-the-Frost-Maiden
+    uuid: null
+    coreVersion: '12.331'
+    systemId: dnd5e
+    systemVersion: 3.3.1
+_id: FoVuejHYhLo71a0x
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!FoVuejHYhLo71a0x'

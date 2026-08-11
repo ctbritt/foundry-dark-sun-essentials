@@ -1,0 +1,335 @@
+name: Cold Snap
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>A swirling burst of freezing wind erupts at a point you choose within
+      range. Each creature in a 5-foot-radius sphere centered on that point must
+      make a [[/save con dc=@abilities.spelldc format=long]]. On a failed save,
+      a creature takes [[/damage 3d8 type=cold average=true]] damage and becomes
+      stuck in the ice, reducing their movement speed on their next turn by 10
+      feet. On a success, the target takes half as much damage and is not stuck
+      in ice.</p><p>The ground in the area is covered with slick ice and snow,
+      making it &amp;Reference[difficult terrain] until the start of your next
+      turn.</p><p><em><strong>At Higher Levels:</strong></em> When you cast this
+      spell using a spell slot of 3rd level or higher, the damage increases by
+      1d8 for each slot level above 2nd.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+  level: 2
+  school: evo
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: ft
+    value: '90'
+    special: ''
+  target:
+    affects:
+      choice: false
+      type: creature
+      count: ''
+      special: ''
+    template:
+      units: ft
+      type: sphere
+      size: '5'
+      contiguous: false
+      count: ''
+  activities:
+    LgNSbpjBEMDSlazE:
+      type: save
+      _id: LgNSbpjBEMDSlazE
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: hgm12QIhG4SezrL8
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          size: '5'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - cold
+            scaling:
+              mode: whole
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: cold-snap
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+folder: null
+_id: RBodXx1ofj4cmy5c
+effects:
+  - name: Cold Snap
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.RBodXx1ofj4cmy5c
+    transfer: false
+    _id: hgm12QIhG4SezrL8
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: -10
+          priority: 20
+          type: custom
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>A swirling burst of freezing wind erupts at a point you choose within
+      range. Each creature in a 5-foot-radius sphere centered on that point must
+      make a [[/save con dc=@abilities.spelldc format=long]]. On a failed save,
+      a creature takes [[/damage 3d8 type=cold average=true]] damage and becomes
+      stuck in the ice, reducing their movement speed on their next turn by 10
+      feet. On a success, the target takes half as much damage and is not stuck
+      in ice.</p><p>The ground in the area is covered with slick ice and snow,
+      making it &amp;Reference[difficult terrain] until the start of your next
+      turn.</p><p><em><strong>At Higher Levels:</strong></em> When you cast this
+      spell using a spell slot of 3rd level or higher, the damage increases by
+      1d8 for each slot level above 2nd.<br></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!RBodXx1ofj4cmy5c.hgm12QIhG4SezrL8'
+flags:
+  scene-packer:
+    hash: cc196badcf0fab3363bed119916007e97ecf63eb
+    sourceId: Item.RBodXx1ofj4cmy5c
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  region-attacher:
+    attachRegionToTemplate:
+      LgNSbpjBEMDSlazE: true
+    regionBehaviors:
+      LgNSbpjBEMDSlazE:
+        - name: Set Terrain
+          type: terrainmapper.setTerrain
+          _id: dWZqvRp2Nl53GN79
+          system:
+            terrains:
+              - Terrain_difficult-x2
+            secret: false
+          disabled: false
+          flags: {}
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '12.331'
+            systemId: dnd5e
+            systemVersion: 4.2.1
+            createdTime: 1737563391506
+            modifiedTime: 1737563397525
+            lastModifiedBy: jM4h8qpyxwTpfNli
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1019435956
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.RBodXx1ofj4cmy5c
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749595
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3600000
+_key: '!items!RBodXx1ofj4cmy5c'

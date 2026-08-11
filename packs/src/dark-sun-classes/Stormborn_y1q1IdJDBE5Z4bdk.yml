@@ -1,0 +1,159 @@
+_id: y1q1IdJDBE5Z4bdk
+name: Stormborn
+type: feat
+system:
+  source:
+    custom: ''
+    book: PHB
+    page: '62'
+    license: ''
+    revision: 1
+    rules: '2014'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--1"><p>At 17th level, you have a flying speed
+      equal to your current walking speed whenever you are not underground or
+      indoors.</p></div>
+    chat: ''
+  requirements: Cleric 17 (Tempest)
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  cover: null
+  crewed: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: ''
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: stormborn
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/control/buff-flight-wings-runes-blue-white.webp
+flags:
+  plutonium:
+    page: subclassFeature
+    source: PHB
+    hash: stormborn_cleric_phb_tempest_phb_17_phb
+    propDroppable: subclassFeature
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: k0waAkenBUjTU20q
+sort: 1100000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781135000319
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!y1q1IdJDBE5Z4bdk'

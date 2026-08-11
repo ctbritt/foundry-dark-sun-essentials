@@ -1,0 +1,154 @@
+folder: zEMXci6c98Zq0mu5
+name: Dray - First Generation
+type: race
+_id: q0auikwt0fJfuMFg
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/images/dark-sun/Dray%20DarkSun%20Dragon%27s%20Wake.webp
+system:
+  description:
+    value: >-
+      <p>These are the descendants of the first humans transformed into draconic
+      forms. Unlike their later cousins, those of the first generation have
+      bodies are mostly hunched over with jagged claws and mottled, uneven
+      scales. They live nearly feral in the tunnels of
+      Giustenal.</p><p><strong>Ability Score Increase. </strong>Your Strength,
+      Constitution, and Charisma scores in<span class="No-Break">crease by
+      1.</span></p><p><strong>Age. </strong>Dray have lifespans comparable to
+      humans. They enter adulthood in their late teens and usually live less
+      than a century.</p><p><strong>Alignment. </strong>Those of the first
+      generation tend towards chaos as they live hard, struggling lives in the
+      fiery caverns near Guistenal. Those of teh second generation by contrast
+      tend towards law because of the relative safety of the hidden city-state
+      and the leadership of Dregoth.</p><p><strong>Size. </strong>Dray are
+      taller and heavier than humans, standing well over 6 feet tall and
+      averaging almost 250 pounds. Your size is Medium.</p><p><strong>Speed.
+      </strong>Your base walking speed is 30
+      feet.</p><p><strong>@Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{Darkvision}.
+      </strong>You have superior vision in dark and dim conditions. You can see
+      in dim light within 60 feet of you as if it were bright light, and in
+      darkness as if it were dim light. You can’t discern color in darkness,
+      only shades of gray.</p><p><strong>Claws. </strong>You have retractable
+      claws in the tips of your fingers. Extending or retracting the claws
+      requires no action. The claws are natural weapons, which you can use to
+      make unarmed strikes. If you hit with them, you deal slashing damage equal
+      to 1d6 + your Strength modifier, instead of the normal bludgeoning damage
+      for an unarmed strike.</p><p><strong>Fire Resistance. </strong>You have
+      resistance to fire damage.</p><p><strong>Breath Weapon. </strong>When you
+      take the Attack action on your turn, you can replace one of your attacks
+      with an exhalation of burning energy in a 30-foot line that is 5 feet
+      wide. Each creature in that area must make a Dexterity saving throw (DC =
+      8 + your Constitution modifier + your proficiency bonus). On a failed
+      save, the creature takes 1d10 fire damage. On a successful save, it takes
+      half as much damage. This damage increases by 1d10 when you reach 5th
+      level (2d10), 11th level (3d10), and 17th level (4d10).</p><p><strong>Fire
+      Warding. </strong>Starting at 5th level, as an action, you can channel
+      your draconic energy to protect yourself. For 1 minute, you become immune
+      to fire damage. Once you use this trait, you can’t do so again until you
+      finish a long rest.</p><p><strong>Languages. </strong>You can speak Common
+      and Guistenal. With DM permission, your character might be able to read
+      and write with an appropriate background.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  advancement:
+    - type: Size
+      _id: Mz3PoN7JT1krNHt3
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - type: Trait
+      configuration:
+        grants:
+          - languages:standard:common
+        mode: default
+        allowReplacements: false
+        choices: []
+      _id: QskX5FQqOK888jF7
+      level: 0
+      title: ''
+      icon: null
+      value: {}
+      hint: >-
+        You can speak Common and Guistenal (add manually). With DM permission,
+        your character might be able to read and write with an appropriate
+        background.
+    - _id: mtpCrKCsQZPaTrP6
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.rmTLRk0yzklwQvxs
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.bFRRa3YbQlHnng6c
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.ruzCRvJy50tyudxU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+    - _id: 7IRNO5yhGWPm99Rq
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.dTz50J7LOhWtdzpV
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: ''
+      icon: null
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: 60
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+    custom: ''
+    subtype: Dray
+  identifier: dray-first-generation
+effects: []
+sort: 0
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134997465
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!q0auikwt0fJfuMFg'

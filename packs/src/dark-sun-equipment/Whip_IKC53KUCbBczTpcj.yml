@@ -1,0 +1,260 @@
+name: Whip
+type: weapon
+system:
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Proficiency with a whip allows you to add your proficiency bonus to the
+      attack roll for any attack you make with it.</p>
+
+      </div>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 2
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: true
+        formula: 1d4[slashing] + @mod
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  properties:
+    - fin
+    - rch
+  proficient: null
+  unidentified:
+    description: Whip
+  type:
+    value: martialM
+    baseItem: whip
+  container: null
+  attuned: false
+  magicalBonus: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: whip
+  ammunition: {}
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Whip
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Control
+        - Combat
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+      ability: dex
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 1782728300
+    definitionId: 34
+    originalName: Whip
+    version: 5.2.29
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Whip
+  scene-packer:
+    sourceId: Item.
+    hash: acf00228ac01bb8748a5a59c379432d0b9e07e93
+  midi-qol:
+    onUseMacroName: ''
+  midiProperties:
+    confirmTargets: default
+  magicitems:
+    enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/weapons/misc/whip-red-yellow.webp
+folder: yLICocLeSTgRD5mO
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.IKC53KUCbBczTpcj
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078821239
+  modifiedTime: 1765664438666
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: IKC53KUCbBczTpcj
+sort: 3900000
+_key: '!items!IKC53KUCbBczTpcj'

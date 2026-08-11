@@ -1,0 +1,2192 @@
+name: Bodyguard
+active: false
+navigation: true
+navOrder: 1700000
+navName: ''
+width: 7680
+height: 6400
+padding: 0.25
+initial:
+  x: 5345
+  'y': 3234
+  scale: 0.25
+grid:
+  size: 100
+  type: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens:
+  - name: Urrgos(3)
+    displayName: 30
+    actorLink: false
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_262.webp
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 2
+    height: 2
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 0
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: null
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+    actorId: 9wngawt7wk3KGVvz
+    x: 5800
+    'y': 4500
+    hidden: false
+    elevation: 0
+    _id: 5iUzwstgmBBHKutc
+    delta:
+      name: Urrgos(3)
+      _id: 5iUzwstgmBBHKutc
+      type: null
+      img: null
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      ownership: null
+      _key: '!scenes.tokens.delta!iuC9X2yCDOA9lKBl.5iUzwstgmBBHKutc.5iUzwstgmBBHKutc'
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 2
+    level: defaultLevel0000
+    _key: '!scenes.tokens!iuC9X2yCDOA9lKBl.5iUzwstgmBBHKutc'
+  - name: Commoner(4)
+    displayName: 30
+    actorLink: false
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_228.webp
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 0
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: null
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+        selectedSpeed: auto
+        hasBonusDash: false
+        hasNimbleness: false
+        hasElementalForm: false
+        hasFreedomOfMovement: false
+        hasIncorporealMovement: false
+        hideSpeedButton: false
+        hideTerrainButton: false
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+      token-z:
+        zIndex: 0
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      splatter:
+        bloodColor: ''
+      mountup:
+        isamount: false
+        lockrider: false
+        iconhud: '0'
+    actorId: ilkhJtJldBsolghW
+    x: 5800
+    'y': 4300
+    hidden: false
+    elevation: 0
+    _id: fd1gMYNIKzHMU6Do
+    delta:
+      name: Commoner(4)
+      system:
+        attributes:
+          hp:
+            value: 7
+            max: 7
+          init:
+            bonus: null
+      effects:
+        - disabled: true
+          duration:
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
+          origin: Item.z3or91Ugmw0R7vA5
+          tint: '#ffffff'
+          transfer: false
+          flags:
+            isCustomConvenient: {}
+            convenientDescription: {}
+            core:
+              statusId: 'Convenient Effect: Wounded'
+              overlay: false
+            dae:
+              transfer: false
+              specialDuration: []
+              stackable: multi
+            times-up:
+              isPassive: false
+          _id: WkqjpDe7tyLYQLns
+          name: Wounded
+          img: modules/dfreds-convenient-effects/images/wounded.svg
+          type: base
+          system:
+            changes: []
+          description: ''
+          statuses: []
+          sort: 0
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.4.4
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          start:
+            combat: null
+            round: null
+            time: 1665964927
+            turn: null
+            combatant: null
+            initiative: null
+          showIcon: 1
+          folder: null
+          _key: >-
+            !scenes.tokens.delta.effects!iuC9X2yCDOA9lKBl.fd1gMYNIKzHMU6Do.fd1gMYNIKzHMU6Do.WkqjpDe7tyLYQLns
+        - disabled: false
+          duration:
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
+          origin: Item.z3or91Ugmw0R7vA5
+          tint: '#ffffff'
+          transfer: false
+          flags:
+            isCustomConvenient: {}
+            convenientDescription: {}
+            core:
+              statusId: 'Convenient Effect: Wounded'
+              overlay: false
+            dae:
+              transfer: false
+              specialDuration: []
+              stackable: multi
+            times-up:
+              isPassive: false
+          _id: amww8YwNB9ID09Dh
+          name: Wounded
+          img: modules/dfreds-convenient-effects/images/wounded.svg
+          type: base
+          system:
+            changes: []
+          description: ''
+          statuses: []
+          sort: 0
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.4.4
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          start:
+            combat: null
+            round: 0
+            time: 1665964927
+            turn: 0
+            combatant: null
+            initiative: null
+          showIcon: 1
+          folder: null
+          _key: >-
+            !scenes.tokens.delta.effects!iuC9X2yCDOA9lKBl.fd1gMYNIKzHMU6Do.fd1gMYNIKzHMU6Do.amww8YwNB9ID09Dh
+      flags:
+        midi-qol:
+          concentration-damage: 0
+      _id: fd1gMYNIKzHMU6Do
+      type: null
+      img: null
+      items: []
+      ownership: null
+      _key: '!scenes.tokens.delta!iuC9X2yCDOA9lKBl.fd1gMYNIKzHMU6Do.fd1gMYNIKzHMU6Do'
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!iuC9X2yCDOA9lKBl.fd1gMYNIKzHMU6Do'
+  - name: Commoner(5)
+    displayName: 30
+    actorLink: false
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_263.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 0
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: null
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+        selectedSpeed: auto
+        hasBonusDash: false
+        hasNimbleness: false
+        hasElementalForm: false
+        hasFreedomOfMovement: false
+        hasIncorporealMovement: false
+        hideSpeedButton: false
+        hideTerrainButton: false
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+      token-z:
+        zIndex: 0
+      patrol:
+        enablePatrol: false
+        enableSpotting: false
+        makePatroller: false
+        multiPath: false
+        patrolPathName: ''
+        pathNodeIndex: '0'
+      splatter:
+        bloodColor: ''
+      mountup:
+        isamount: false
+        lockrider: false
+        iconhud: '0'
+    actorId: ilkhJtJldBsolghW
+    x: 5900
+    'y': 4300
+    hidden: false
+    elevation: 0
+    _id: ocOVPTF1PotUU9lw
+    delta:
+      name: Commoner(5)
+      system:
+        attributes:
+          hp:
+            value: 7
+            max: 7
+            temp: null
+          init:
+            bonus: null
+          death:
+            success: 0
+            failure: 0
+      effects:
+        - disabled: false
+          duration:
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
+          origin: null
+          tint: '#ffffff'
+          transfer: false
+          flags:
+            core:
+              statusId: 'Convenient Effect: Prone'
+              overlay: false
+            dfreds-convenient-effects:
+              description: >-
+                - A prone creature's only movement option is to crawl, unless it
+                stands up and thereby ends the condition.<br/>- The creature has
+                disadvantage on attack rolls.<br/>- An attack roll against the
+                creature has advantage if the attacker is within 5 feet of the
+                creature. Otherwise, the attack roll has disadvantage.
+              isConvenient: true
+              isDynamic: false
+              isViewable: true
+              nestedEffects: []
+              subEffects: []
+            dae:
+              transfer: false
+              specialDuration: []
+              stackable: multi
+            times-up:
+              isPassive: false
+          _id: rXcYxIifksao9LNq
+          name: Prone
+          img: modules/dfreds-convenient-effects/images/prone.svg
+          type: base
+          system:
+            changes:
+              - key: flags.midi-qol.grants.advantage.attack.mwak
+                value: 1
+                priority: null
+                type: custom
+              - key: flags.midi-qol.grants.advantage.attack.msak
+                value: 1
+                priority: null
+                type: custom
+              - key: flags.midi-qol.grants.disadvantage.attack.rwak
+                value: 1
+                priority: null
+                type: custom
+              - key: flags.midi-qol.grants.disadvantage.attack.rsak
+                value: 1
+                priority: null
+                type: custom
+              - key: flags.midi-qol.disadvantage.attack.all
+                value: 1
+                priority: null
+                type: custom
+              - key: system.attributes.movement.all
+                value: '*0.5'
+                priority: 25
+                type: custom
+          description: ''
+          statuses: []
+          sort: 0
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.4.4
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          start:
+            combat: null
+            round: null
+            time: 1665964927
+            turn: null
+            combatant: null
+            initiative: null
+          showIcon: 1
+          folder: null
+          _key: >-
+            !scenes.tokens.delta.effects!iuC9X2yCDOA9lKBl.ocOVPTF1PotUU9lw.ocOVPTF1PotUU9lw.rXcYxIifksao9LNq
+      flags:
+        midi-qol:
+          concentration-damage: 0
+        dae:
+          damageApplied: 9
+      _id: ocOVPTF1PotUU9lw
+      type: null
+      img: null
+      items: []
+      ownership: null
+      _key: '!scenes.tokens.delta!iuC9X2yCDOA9lKBl.ocOVPTF1PotUU9lw.ocOVPTF1PotUU9lw'
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!iuC9X2yCDOA9lKBl.ocOVPTF1PotUU9lw'
+  - name: King Kalak(1)
+    displayName: 30
+    actorLink: false
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_264.webp
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: -1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: null
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      tagger:
+        tags: ''
+      elevation-drag-ruler:
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+      token-auras:
+        aura1:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+        aura2:
+          permission: all
+          colour: '#ffffff'
+          opacity: 0.5
+          distance: null
+          square: false
+    actorId: AxnS8wEAAizt0Jxw
+    x: 5800
+    'y': 3900
+    hidden: false
+    _id: VcCeONBYryBp5Aq5
+    elevation: 0
+    delta:
+      name: King Kalak(1)
+      _id: VcCeONBYryBp5Aq5
+      type: null
+      img: null
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      ownership: null
+      _key: '!scenes.tokens.delta!iuC9X2yCDOA9lKBl.VcCeONBYryBp5Aq5.VcCeONBYryBp5Aq5'
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!iuC9X2yCDOA9lKBl.VcCeONBYryBp5Aq5'
+lights: []
+notes: []
+sounds: []
+tiles:
+  - x: 6100
+    'y': 3800
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_265.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: NA5WLzstzlPSAKee
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.NA5WLzstzlPSAKee'
+  - x: 5950
+    'y': 3750
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_266.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: 30TpUVAZxPKOZHv4
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.30TpUVAZxPKOZHv4'
+  - x: 5850
+    'y': 3750
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_267.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: 9fzqqIqiPRfbFcox
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.9fzqqIqiPRfbFcox'
+  - x: 5750
+    'y': 3750
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_268.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: F702dln5Qa4F9GUk
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.F702dln5Qa4F9GUk'
+  - x: 6000
+    'y': 3850
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_269.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: gAO1uRT5ypGOYa16
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.gAO1uRT5ypGOYa16'
+  - x: 6150
+    'y': 5200
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_270.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: eBPFEsR3H5eM38VJ
+    rotation: 180
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.eBPFEsR3H5eM38VJ'
+  - x: 6050
+    'y': 4951
+    width: 100
+    height: 101
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_271.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: LXyjvRrtwrgkwNVq
+    rotation: 165
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.LXyjvRrtwrgkwNVq'
+  - x: 5651
+    'y': 5400
+    width: 101
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_272.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: qvBujffpam8cy2oa
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.qvBujffpam8cy2oa'
+  - x: 5550
+    'y': 4800
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_273.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: d8Izs7BmKOLuruHy
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.d8Izs7BmKOLuruHy'
+  - x: 5700
+    'y': 5750
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_274.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: i63lbQeMLbm0lI14
+    rotation: 330
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.i63lbQeMLbm0lI14'
+  - x: 5400
+    'y': 5600
+    width: 101
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_275.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: owu3rLbUgnJCHE7K
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.owu3rLbUgnJCHE7K'
+  - x: 5450
+    'y': 4850
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_276.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: TdHFP0g5Jonjo1yJ
+    rotation: 285
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.TdHFP0g5Jonjo1yJ'
+  - x: 6250
+    'y': 5050
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_277.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    _id: 7aRcAJbzn91wnYu0
+    rotation: 150
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.7aRcAJbzn91wnYu0'
+  - x: 6200
+    'y': 3800
+    width: 201
+    height: 200
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_278.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: 7e3pzvn0CWrnybrD
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.7e3pzvn0CWrnybrD'
+  - x: 5550
+    'y': 3800
+    width: 201
+    height: 200
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_278.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: TZAe17xvuduY55JO
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.TZAe17xvuduY55JO'
+  - x: 6050
+    'y': 5150
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_270.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: varICNxxjhc2j5W9
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.varICNxxjhc2j5W9'
+  - x: 6150
+    'y': 4950
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_276.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: nE2BCaLieKapJKvE
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.nE2BCaLieKapJKvE'
+  - x: 6250
+    'y': 4650
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_273.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: 6ZBWbc225sPmHfqf
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.6ZBWbc225sPmHfqf'
+  - x: 6350
+    'y': 4851
+    width: 100
+    height: 101
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_271.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: CVTi4ut7KJ7U77Dr
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.CVTi4ut7KJ7U77Dr'
+  - x: 6351
+    'y': 5250
+    width: 101
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_272.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: OZpnAzrbp4SDYkjx
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.OZpnAzrbp4SDYkjx'
+  - x: 6350
+    'y': 5050
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_277.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 135
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: yIySwcy4mikloPuO
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.yIySwcy4mikloPuO'
+  - x: 5500
+    'y': 5300
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_270.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: QXRw8FCb4pwfcCfk
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.QXRw8FCb4pwfcCfk'
+  - x: 5600
+    'y': 5100
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_276.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 285
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: 08SB4OP7CcW5NivF
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.08SB4OP7CcW5NivF'
+  - x: 5650
+    'y': 5250
+    width: 100
+    height: 99
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_273.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: NUWJXPJCGgS8zm4f
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.NUWJXPJCGgS8zm4f'
+  - x: 5500
+    'y': 4951
+    width: 100
+    height: 101
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_271.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: xjiUASvapaBLtzRU
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.xjiUASvapaBLtzRU'
+  - x: 5901
+    'y': 4950
+    width: 101
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_272.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 225
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: LrSsZ1bGU6qaRT3Q
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.LrSsZ1bGU6qaRT3Q'
+  - x: 6250
+    'y': 5150
+    width: 100
+    height: 100
+    texture:
+      src: imported-adventures/assets/vMAhnXlODBz03jNI/asset_277.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      alphaThreshold: 0.75
+    rotation: 195
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags: {}
+    _id: QJQUwwnGmeWFxnvM
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!iuC9X2yCDOA9lKBl.QJQUwwnGmeWFxnvM'
+walls:
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2000
+      - 1600
+      - 9680
+      - 1600
+    _id: 7hI1cdAfTccXnHZV
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!iuC9X2yCDOA9lKBl.7hI1cdAfTccXnHZV'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 9680
+      - 1600
+      - 9680
+      - 8000
+    _id: LrUQuLbuF3OtEAFb
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!iuC9X2yCDOA9lKBl.LrUQuLbuF3OtEAFb'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 9680
+      - 8000
+      - 2000
+      - 8000
+    _id: nkWWPlBZMaDXJcod
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!iuC9X2yCDOA9lKBl.nkWWPlBZMaDXJcod'
+  - dir: 0
+    door: 0
+    ds: 0
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2000
+      - 8000
+      - 2000
+      - 1600
+    _id: zwIbJf4JWA0APlpL
+    flags: {}
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!iuC9X2yCDOA9lKBl.zwIbJf4JWA0APlpL'
+playlist: null
+playlistSound: null
+journal: null
+weather: ''
+folder: K0R6CPEAAXHdqt3B
+sort: 100000
+flags:
+  perfect-vision:
+    sightLimit: null
+    daylightColor: ''
+    darknessColor: ''
+    saturation: null
+  token-attacher: {}
+  importid: {}
+  weatherfx:
+    auto-apply: true
+  enhanced-terrain-layer:
+    opacity: ''
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+    drawcolor: ''
+  scene-packer:
+    hash: 17240576ee273742b0d99d94b1b4659528846e7d
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+  wgCeShTrqHJFBbDr: 3
+thumb: modules/shareddata/assets/scenes/iuC9X2yCDOA9lKBl-thumb.webp
+journalEntryPage: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1753114116925
+  modifiedTime: 1755221437063
+  lastModifiedBy: Gyn3hbFo8wof84M9
+  exportSource:
+    worldId: dsr
+    uuid: null
+    coreVersion: '10.291'
+    systemId: dnd5e
+    systemVersion: 2.1.4
+_id: iuC9X2yCDOA9lKBl
+fog:
+  reset: 1631020436249
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  globalLight:
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+regions: []
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!iuC9X2yCDOA9lKBl'
+templates: []

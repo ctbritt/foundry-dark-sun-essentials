@@ -19,10 +19,16 @@ const DND5E_ABBREVIATIONS = [
   "ft", "mi", "m", "km"             // movementUnits
 ];
 
-/** Every source file that could reference a localization key. */
+/**
+ * Every source file that could reference a localization key.
+ *
+ * `tools/` is excluded: it is build and migration tooling that runs under node,
+ * never inside Foundry, so a module-prefixed string there is a pack address or
+ * a comment rather than a key to translate.
+ */
 function sourceFiles(dir = ROOT, found = []) {
   for ( const entry of readdirSync(dir) ) {
-    if ( ["node_modules", ".git", "test", "docs"].includes(entry) ) continue;
+    if ( ["node_modules", ".git", "test", "docs", "tools"].includes(entry) ) continue;
     const path = join(dir, entry);
     if ( statSync(path).isDirectory() ) sourceFiles(path, found);
     else if ( [".mjs", ".hbs", ".js"].includes(extname(path)) ) found.push(path);

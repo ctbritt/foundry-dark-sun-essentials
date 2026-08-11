@@ -1,0 +1,213 @@
+name: Aether Lance
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You gather raw aether in your hand and expel it in a lance of power
+      forming a line 30 foot long and 5 foot wide. Each creature in a line
+      takes  [[/damage 8d4 + @mod type=force average=true]] damage.<br
+      /><em><strong>At Higher Levels.</strong></em> When you cast this spell
+      using a spell slot of 4th level or higher, the damage increases by 1d4 for
+      each slot level above 3rd.<br /></p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+  level: 3
+  school: evo
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: self
+    special: ''
+  target:
+    affects:
+      choice: false
+      type: creature
+      count: ''
+      special: ''
+    template:
+      units: ft
+      type: line
+      size: '30'
+      contiguous: false
+      width: '5'
+      count: ''
+  activities:
+    oOYBS9ok2CyTJA1J:
+      type: damage
+      _id: oOYBS9ok2CyTJA1J
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 8
+            denomination: 4
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: whole
+              number: 1
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: aether-lance
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  sourceClass: Wizard, Sorcerer
+folder: null
+_id: RwizcGWSTvq8so0W
+effects: []
+flags:
+  scene-packer:
+    hash: 77f8f487b00a154490683a8786ba43a9dd318851
+    sourceId: Item.RwizcGWSTvq8so0W
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1594854978
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.RwizcGWSTvq8so0W
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749599
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3700000
+_key: '!items!RwizcGWSTvq8so0W'

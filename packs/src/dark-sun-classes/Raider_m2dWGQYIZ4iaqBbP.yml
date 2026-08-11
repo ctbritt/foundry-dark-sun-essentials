@@ -1,0 +1,130 @@
+_id: m2dWGQYIZ4iaqBbP
+name: Raider
+type: subclass
+system:
+  advancement:
+    - _id: QHIzbi5E1UKwGKsb
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.TSwd7btT6fOoA9Wf
+            optional: false
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.27YdU24mwVfKdOEd
+            optional: false
+        optional: false
+        spell: null
+      level: 3
+      title: Features
+      value: {}
+    - _id: 2qmeLEs3xInKb264
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.LYJSSqnDsAzz3pMN
+            optional: false
+        optional: false
+        spell: null
+      level: 9
+      title: Features
+      value: {}
+    - _id: 858xkrPsRfVCUSSC
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-classes.Item.Q0YOmNJJJfQCvauo
+            optional: false
+        optional: false
+        spell: null
+      level: 13
+      title: Features
+      value: {}
+    - _id: XXVt33HMOhxRMF8E
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-classes-2014.Item.Z038ySVILNe9rI98
+            optional: false
+        optional: false
+        spell: null
+      level: 17
+      title: Features
+      value: {}
+    - _id: VbSTGjbasPujOmMA
+      type: Trait
+      configuration:
+        allowReplacements: true
+        choices: []
+        grants:
+          - skills:nat
+          - skills:sur
+        mode: default
+      level: 3
+      title: Survivalist
+      value: {}
+    - _id: Yw3sUDT8Rjter3dA
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:prc
+              - skills:nat
+        grants:
+          - skills:prc
+          - skills:nat
+        mode: expertise
+      level: 3
+      title: Survivalist (Expertise)
+      value: {}
+  description:
+    value: "<div class=\"ddb\"><h1>Description</h1><aside class=\"notable\"><p>You are at home amongst raiding tribes of Athas.Hailing from either an escaped slave village or a nomadic elven tribe, you served as their eyes and ears and honed them to a sharpened point. Compared to other rogues, you are skilled at surviving in the wilds.</p></aside><p class=\"p1\"><span class=\"characters-statblock\" style=\"font-family:'Roboto Condensed';font-size:14px\"><strong>Hit Die:</strong> d8<br /><strong>Primary Ability:</strong> Dexterity<br /><strong>Saves:</strong>\_Dexterity &amp; Intelligence</span></p><h1>Class Features</h1><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.TSwd7btT6fOoA9Wf]{Level 3: Skirmisher}</strong></p><p>Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.27YdU24mwVfKdOEd]{Level 3: Survivalist}</strong></p><p>When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.LYJSSqnDsAzz3pMN]{Level 9: Superior Mobility}</strong></p><p>At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.Q0YOmNJJJfQCvauo]{Level 13: Ambush Master}</strong></p><p>Starting at 13th level, you excel at leading ambushes and acting first in a fight.</p><p>You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn.</p><p><strong>@UUID[Compendium.shareddata.ddb-classes-2014.Item.Z038ySVILNe9rI98]{Level 17: Sudden Strike}</strong></p><p>Starting at 17th level, you can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use your Sneak Attack against the same target more than once in a turn.</p></div>"
+    chat: ''
+  identifier: athas-raider
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  classIdentifier: athas-rogue
+  spellcasting:
+    progression: none
+    preparation: {}
+flags:
+  ddbimporter:
+    class: Rogue
+    subclass: Scout
+    id: 218944516
+    classDefinitionId: 12
+    definitionId: 112
+    subclassDefinitionId: 112
+    type: class
+    ddbImg: >-
+      https://www.dndbeyond.com/avatars/10/8/636336417681318097.jpeg?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+    is2014: true
+    is2024: false
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: modules/dnd-players-handbook/assets/icons/items/rapier.webp
+folder: f0kFZlL2QItlpDSs
+effects: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999573
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 500000
+_key: '!items!m2dWGQYIZ4iaqBbP'

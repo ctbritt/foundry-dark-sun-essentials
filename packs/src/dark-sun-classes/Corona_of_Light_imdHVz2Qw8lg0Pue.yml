@@ -1,0 +1,195 @@
+_id: imdHVz2Qw8lg0Pue
+name: Corona of Light
+type: feat
+system:
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2014'
+  description:
+    value: >-
+      <p>Starting at 17th level, you can use your action to activate an aura of
+      sunlight that lasts for 1 minute or until you dismiss it using another
+      action. You emit bright light in a 60-foot radius and dim light 30 feet
+      beyond that. Your enemies in the Bright Light have Disadvantage on saving
+      throws against your Radiance of the Dawn and any spell that deals Fire or
+      Radiant damage.</p><p>You can use this feature a number of times equal to
+      your Wisdom modifier (minimum of once), and you regain all expended uses
+      when you finish a Long Rest.</p>
+    chat: ''
+  requirements: Cleric 17 (Fire)
+  uses:
+    max: '@abilities.wis.mod'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  cover: null
+  crewed: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: sphere
+          size: '60'
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: corona-of-light
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/light/explosion-beam-impact-silhouette.webp
+flags:
+  plutonium:
+    page: subclassFeature
+    source: PHB
+    hash: corona%20of%20light_cleric_phb_light_phb_17_phb
+    propDroppable: subclassFeature
+  midi-qol:
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 1
+  crux:
+    trayVisibility: default
+effects: []
+folder: iyDyC14p2DAkVXbW
+sort: 900000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134999567
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!imdHVz2Qw8lg0Pue'

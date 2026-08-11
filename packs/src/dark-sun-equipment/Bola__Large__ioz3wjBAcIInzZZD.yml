@@ -1,0 +1,343 @@
+folder: fKjsxHiP7ALYIWl0
+name: Bola (Large)
+type: weapon
+img: systems/dnd5e/icons/svg/items/weapon.svg
+system:
+  description:
+    value: >-
+      <p>A bola consists of a length of cord with weights on each end or three
+      to six weights tied to a center point. A creature hit by a bola is
+      grappled until it is freed. A bola has no effect on creatures that are
+      formless, or creatures that are Huge or larger. A creature can use its
+      action to make a <span class="roll-link" data-type="check" data-dc="10"
+      data-format="long" data-ability="str"><a data-action="roll"><i
+      class="fa-solid fa-dice-d20"></i>DC 10 Strength check</a><a
+      class="enricher-action" data-action="request"
+      data-tooltip="EDITOR.DND5E.Inline.RequestRoll" aria-label="Request
+      Roll"><i class="fa-solid fa-comment-dots"></i></a></span>, freeing itself
+      or another creature within reach on a success. Dealing 5 slashing damage
+      to the bola (AC 10) also frees the creature harmlessly by destroying the
+      bola.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 6
+    units: lb
+  price:
+    value: 1
+    denomination: ct
+  rarity: common
+  attunement: ''
+  attuned: false
+  equipped: false
+  cover: null
+  crewed: false
+  range:
+    value: 20
+    long: 60
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 2
+      denomination: 4
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: martialR
+    baseItem: ''
+  magicalBonus: null
+  properties:
+    - thr
+    - spc
+  proficient: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects:
+        - _id: WQaeYuSnAqHcAIXb
+      range:
+        value: '20'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: bola-large
+  ammunition: {}
+effects:
+  - name: Bola
+    transfer: false
+    img: systems/dnd5e/icons/svg/items/weapon.svg
+    _id: WQaeYuSnAqHcAIXb
+    type: base
+    system:
+      changes:
+        - key: macro.StatusEffect
+          value: grappled
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.OverTime
+          value: >-
+            turn=start,rollType=check,saveDC=10,saveDamage=nodamage,saveRemove=true,actionSave=true,rollMode=publicroll,
+          priority: 20
+          type: custom
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>A bola consists of a length of cord with weights on each end or three
+      to six weights tied to a center point. A creature hit by a bola is
+      grappled until it is freed. A bola has no effect on creatures that are
+      formless, or creatures that are Huge or larger. A creature can use its
+      action to make a [[/check str dc=10 format=long]], freeing itself or
+      another creature within reach on a success. Dealing 5 slashing damage to
+      the bola (AC 10) also frees the creature harmlessly by destroying the
+      bola.</p>
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: 1779357090938
+      modifiedTime: 1779357090952
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ioz3wjBAcIInzZZD.WQaeYuSnAqHcAIXb'
+flags:
+  scene-packer:
+    hash: 1dbc0faf7bb02d69a7d7686e10360efacf76d05f
+    sourceId: Item.P62PLdJdXl3RlhVn
+  LocknKey:
+    PickPocketDCFlag: '0'
+  magicitems:
+    enabled: false
+    default: ''
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: target.traits.size !== 'huge' && target.traits.size !== 'grg'
+    fumbleThreshold: null
+    removeAttackDamageButtons: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.ioz3wjBAcIInzZZD
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114802913
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: ioz3wjBAcIInzZZD
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!ioz3wjBAcIInzZZD'

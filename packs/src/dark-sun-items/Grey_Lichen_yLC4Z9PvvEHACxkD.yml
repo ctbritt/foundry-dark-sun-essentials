@@ -1,0 +1,194 @@
+_id: yLC4Z9PvvEHACxkD
+name: Grey Lichen
+type: consumable
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2024'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--2"><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Location.</span></span> <p>Salt flats in the
+      Ivory Triangle</p><div class="rd__spc-inline-post"></div></div><div
+      class="rd__b  rd__b--3"><span class="rd__h rd__h--3" data-title-index="2">
+      <span class="entry-title-inner">Preparation.</span></span> <p>Used as a
+      spice</p><div class="rd__spc-inline-post"></div></div><div class="rd__b 
+      rd__b--3"><span class="rd__h rd__h--3" data-title-index="3"> <span
+      class="entry-title-inner">Description:</span></span> <p>A popular spice
+      used by the Drajians to flavor an otherwise bland meal, the gray lichen is
+      found in the salt flats in the Ivory Triangle.</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Effect:</span></span> <p>It provides a pungent
+      earthy flavor (with a hint of sweetness and nuts) to bland meals. It lives
+      on salt compounds and small amounts of water, and is very resistant to
+      both defiling and water loss. A defiler in the salt flats can try to
+      utilize its energy, but the lichen can save vs. spell +4 to avoid giving
+      up its energy.</p><div class="rd__spc-inline-post"></div></div></div>
+    chat: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 6
+    denomination: ct
+  identified: true
+  rarity: common
+  type:
+    value: ''
+    subtype: ''
+  properties:
+    - mgc
+  attunement: ''
+  uses:
+    max: ''
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  unidentified:
+    description: ''
+  container: null
+  magicalBonus: null
+  attuned: false
+  equipped: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: grey-lichen
+img: assets/homebrew/img/greylichen.webp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  plutonium:
+    page: items.html
+    source: AthasHerbs
+    hash: grey%20lichen_athasherbs
+    propDroppable: item
+    isStandardDragDrop: true
+  scene-packer:
+    hash: 7c237b2c6e509e4fea53e3fa0415c5a5a6a89d71
+  tidy5e-sheet:
+    section: Harvested Items
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: qMFp8C51hRSu6j7x
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.yLC4Z9PvvEHACxkD
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114884117
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!yLC4Z9PvvEHACxkD'

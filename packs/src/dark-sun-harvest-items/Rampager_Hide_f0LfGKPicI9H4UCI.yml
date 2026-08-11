@@ -1,0 +1,106 @@
+name: Rampager Hide
+type: loot
+system:
+  description:
+    value: >-
+      <section id="null" class="secret"><p>Acts as a blanket. Can be carefully
+      crafted (leatherworker’s tools) into the equivalent of studded leather
+      armor or a chain shirt.</p></section>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 10
+    units: lb
+  price:
+    value: 2
+    denomination: ct
+  rarity: common
+  identified: true
+  type:
+    value: ''
+    subtype: ''
+  unidentified:
+    description: Gear
+  container: null
+  properties: []
+  identifier: rampager-hide
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Adventuring Gear
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Social
+        - Utility
+        - Exploration
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+      stackable: true
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 2103445194
+    definitionId: 89
+    originalName: Tent, Two-Person
+    version: 3.1.17
+  magicitems:
+    enabled: false
+  midi-qol: {}
+  core: {}
+  cf: {}
+  scene-packer:
+    sourceId: Item.waVY9WL6u4yMbpb4
+    hash: 80c0e89cbeee63f60e4d66fbd9625d977d685945
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  LocknKey:
+    PickPocketDCFlag: '0'
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/commodities/leather/scales-blue-white.webp
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078894285
+  modifiedTime: 1746114872051
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+folder: null
+_id: f0LfGKPicI9H4UCI
+sort: 101173
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!f0LfGKPicI9H4UCI'

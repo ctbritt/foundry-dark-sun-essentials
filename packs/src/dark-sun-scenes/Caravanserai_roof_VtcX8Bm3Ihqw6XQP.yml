@@ -1,0 +1,185 @@
+folder: lMQTLuDDgJbZVW8e
+name: Caravanserai roof
+active: false
+navigation: false
+navOrder: 0
+navName: ''
+thumb: worlds/dsr/assets/scenes/VtcX8Bm3Ihqw6XQP-thumb.webp
+width: 4454
+height: 4454
+padding: 0.25
+initial:
+  x: null
+  'y': null
+  scale: null
+grid:
+  type: 1
+  size: 100
+  color: '#000000'
+  alpha: 0
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens: []
+lights: []
+notes:
+  - entryId: PQK2vCFWD8vcNYHo
+    fontSize: 20
+    iconSize: 32
+    textAnchor: 1
+    textColor: '#ffffff'
+    x: 50
+    'y': 50
+    text: Dungeon Draw
+    flags: {}
+    texture:
+      src: icons/svg/cave.svg
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0
+    _id: pgt3glmlt6Mtd5SS
+    pageId: null
+    fontFamily: Signika
+    global: false
+    elevation: 0
+    sort: 0
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!VtcX8Bm3Ihqw6XQP.pgt3glmlt6Mtd5SS'
+sounds: []
+tiles:
+  - texture:
+      src: caravansarai%20roof.webp
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    x: 1050
+    'y': 1250
+    width: 4450
+    height: 4450
+    rotation: 0
+    alpha: 1
+    flags:
+      tagger:
+        tags: ''
+      monks-active-tiles:
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger: enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        pertoken: false
+        minrequired: 0
+        chance: 100
+        fileindex: -1
+        actions: []
+        files: []
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    _id: L9jgpAEM5rrTXlEP
+    hidden: false
+    locked: false
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!VtcX8Bm3Ihqw6XQP.L9jgpAEM5rrTXlEP'
+walls: []
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+sort: 300000
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+flags:
+  enhanced-terrain-layer:
+    opacity: 0.5
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+  token-attacher: {}
+  stairways: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221478623
+  modifiedTime: 1755221478623
+  lastModifiedBy: Gyn3hbFo8wof84M9
+_id: VtcX8Bm3Ihqw6XQP
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1666372189195
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+levels:
+  - defaultLevel0000
+shiftX: 157
+shiftY: -71
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!VtcX8Bm3Ihqw6XQP'
+templates: []

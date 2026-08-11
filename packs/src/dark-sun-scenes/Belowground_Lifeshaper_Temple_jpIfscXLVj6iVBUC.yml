@@ -1,0 +1,6208 @@
+name: Belowground Lifeshaper Temple
+padding: 0.1
+_id: jpIfscXLVj6iVBUC
+active: false
+navigation: false
+navOrder: 0
+thumb: modules/shareddata/assets/scenes/jpIfscXLVj6iVBUC-thumb.webp
+width: 4000
+height: 3000
+initial:
+  x: null
+  'y': null
+  scale: null
+grid:
+  type: 0
+  size: 70
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  darknessLevel: 1
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 1
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens:
+  - name: Kaine (Copy)
+    displayName: 20
+    actorLink: true
+    width: 1
+    height: 1
+    texture:
+      src: https://assets.myarchivist.ai/35422dcd-0728-4a17-bc05-2fa22acd69b5.png
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: true
+    rotation: 25.688143435647333
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: >-
+          tokens/player_characters/_captain_kaine_strongjaw.Token.J2oW6sgeZDwUU9fs.webp?1756242596645
+    turnMarker:
+      mode: 0
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    flags:
+      wall-height:
+        tokenHeight: 6
+      elevatedvision:
+        tokenHeight: 6
+      perceptive:
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+    actorId: zaXNorC2h8KoMgME
+    hidden: false
+    sort: 0
+    shape: 4
+    _id: Sc7Vqe0vBzsJcUtE
+    delta:
+      _id: Sc7Vqe0vBzsJcUtE
+      system: {}
+      flags: {}
+      name: null
+      type: null
+      img: null
+      items: []
+      effects: []
+      ownership: null
+      _key: '!scenes.tokens.delta!jpIfscXLVj6iVBUC.Sc7Vqe0vBzsJcUtE.Sc7Vqe0vBzsJcUtE'
+    x: 2384
+    'y': 1112
+    elevation: 0
+    locked: false
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!jpIfscXLVj6iVBUC.Sc7Vqe0vBzsJcUtE'
+  - name: Cadice (Copy)
+    displayName: 20
+    actorLink: true
+    width: 1
+    height: 1
+    texture:
+      src: >-
+        tokens/player_characters/cadice_b_rnier_copy_.Token.5clKdAhhjrqrUBDZ.webp?1761324107651
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: true
+    rotation: 355.0062560141766
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 0
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        GrapplingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: false
+        PilotedbyDefaultFlag: false
+      ATL:
+        originals:
+          light: {}
+    actorId: 5clKdAhhjrqrUBDZ
+    hidden: false
+    sort: 1
+    shape: 4
+    _id: CcUHHvdB1ANWXJNq
+    delta:
+      _id: CcUHHvdB1ANWXJNq
+      system: {}
+      flags: {}
+      name: null
+      type: null
+      img: null
+      items: []
+      effects: []
+      ownership: null
+      _key: '!scenes.tokens.delta!jpIfscXLVj6iVBUC.CcUHHvdB1ANWXJNq.CcUHHvdB1ANWXJNq'
+    x: 2529
+    'y': 1149
+    elevation: 0
+    locked: false
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!jpIfscXLVj6iVBUC.CcUHHvdB1ANWXJNq'
+  - name: Itilda (Copy)
+    displayName: 20
+    actorLink: true
+    width: 1
+    height: 1
+    texture:
+      src: https://assets.myarchivist.ai/6238fa77-eebf-4be0-8b21-4ece4d844d8f.png
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: true
+    rotation: 270
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.25
+      angle: 360
+      bright: 20
+      color: '#ffb433'
+      coloration: 1
+      dim: 40
+      attenuation: 0.75
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0.15
+      shadows: 0.2
+      animation:
+        type: torch
+        speed: 4
+        intensity: 4
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: >-
+          tokens/player_characters/itilda_the_mutilator_of_manhood.Token.dtxbNZYzOLoxZNoq.webp?1756242738359
+    turnMarker:
+      mode: 0
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    flags:
+      wall-height:
+        tokenHeight: 6
+      elevatedvision:
+        tokenHeight: 6
+      perceptive:
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      ATL:
+        originals:
+          light:
+            dim: 0
+            bright: 0
+            alpha: 0.5
+            angle: 360
+            luminosity: 0.5
+            color: null
+            animation:
+              type: null
+              speed: 5
+              intensity: 5
+            attenuation: 0.5
+            contrast: 0
+            shadows: 0
+      sequencer:
+        effects:
+          - - 8mTOEf7m1NlFope4
+            - _id: 8mTOEf7m1NlFope4
+              flagVersion: 3.2.1
+              sequenceId: G3W77r2puvcif5qD
+              creationTimestamp: 1761859282548
+              sceneId: jpIfscXLVj6iVBUC
+              creatorUserId: wgCeShTrqHJFBbDr
+              moduleName: Sequencer
+              users: false
+              name: WHr9FR632gvn18hU Torch
+              origin: null
+              index: 2
+              repetition: 0
+              private: null
+              temporary: false
+              tiedDocuments: []
+              source: Scene.jpIfscXLVj6iVBUC.Token.WHr9FR632gvn18hU
+              target: false
+              rotateTowards: null
+              stretchTo: false
+              moveTowards: false
+              attachTo:
+                active: true
+                align: center
+                edge: 'on'
+                bindVisibility: true
+                bindAlpha: true
+                bindScale: true
+                bindElevation: true
+                bindRotation: true
+              missed: null
+              file: modules/gambits-premades/assets/images/torch.webp
+              customRange: false
+              forcedIndex: false
+              fileOptions:
+                antialiasing: 1
+              text: null
+              tilingTexture: null
+              masks: []
+              shapes: []
+              volume: null
+              isometric: null
+              syncGroup: null
+              scale:
+                x: 1
+                'y': 1
+              spriteScale:
+                x: 1
+                'y': 1
+              angle: 0
+              size: null
+              offset: null
+              anchor: null
+              spriteOffset:
+                x: 0.35
+                'y': 0.1
+                gridUnits: true
+                local: false
+              spriteAnchor: null
+              template: null
+              zeroSpriteRotation: null
+              randomOffset:
+                source: false
+                target: false
+              randomRotation: null
+              scaleToObject:
+                scale: 1.2
+                considerTokenScale: true
+                uniform: false
+              elevation: null
+              sortLayer: 800
+              aboveLighting: null
+              aboveInterface: null
+              xray: null
+              zIndex: null
+              opacity: 1
+              filters: null
+              loopOptions: null
+              spriteRotation: 0
+              randomSpriteRotation: false
+              flipX: null
+              flipY: null
+              duration: false
+              persist: true
+              persistOptions:
+                id: od7fkWiJxHZSCN5T
+                persistTokenPrototype: false
+              playbackRate: null
+              extraEndDuration: null
+              time: false
+              moves: null
+              moveSpeed: null
+              fadeIn: null
+              fadeOut: null
+              scaleIn:
+                value: 0
+                duration: 500
+                ease: easeOutElastic
+                delay: 0
+              scaleOut:
+                value: 0
+                duration: 250
+                ease: easeOutCubic
+                delay: 0
+              rotateIn: null
+              rotateOut: null
+              fadeInAudio: null
+              fadeOutAudio: null
+              animations:
+                - target: sprite
+                  propertyName: rotation
+                  from: 60
+                  to: -60
+                  duration: 300
+                  delay: 0
+                  ease: easeInOutBack
+                  looping: false
+                  fromEnd: false
+                  gridUnits: false
+                  absolute: false
+                  screenSpace: false
+                - target: sprite
+                  propertyName: rotation
+                  from: 0
+                  to: 30
+                  duration: 250
+                  delay: 200
+                  ease: easeOutBack
+                  looping: false
+                  fromEnd: false
+                  gridUnits: false
+                  absolute: false
+                  screenSpace: false
+                - target: sprite
+                  propertyName: rotation
+                  values:
+                    - 2
+                    - -2
+                  duration: 1500
+                  delay: 0
+                  ease: easeOutQuad
+                  looping: true
+                  indefinite: true
+                  pingPong: true
+                  gridUnits: false
+                  screenSpace: false
+              screenSpace: null
+              screenSpaceAboveUI: null
+              screenSpaceAnchor: null
+              screenSpacePosition: null
+              screenSpaceScale: null
+              nameOffsetMap:
+                WHr9FR632gvn18hU Torch:
+                  seed: WHr9FR632gvn18hU Torch-LuKxsuV5YITJ5onX
+                  source: Scene.jpIfscXLVj6iVBUC.Token.WHr9FR632gvn18hU
+                  target: false
+                  randomOffset:
+                    source: false
+                    target: false
+                  angle: 0
+                  randomRotation: null
+                  mirrorX: null
+                  mirrorY: null
+                  missed: null
+                  offset: null
+                  repetitions: 1
+                  twister: {}
+          - - g19Ci2idMSJAC0mi
+            - _id: g19Ci2idMSJAC0mi
+              flagVersion: 3.2.1
+              sequenceId: G3W77r2puvcif5qD
+              creationTimestamp: 1761859282904
+              sceneId: jpIfscXLVj6iVBUC
+              creatorUserId: wgCeShTrqHJFBbDr
+              moduleName: Sequencer
+              users: false
+              name: WHr9FR632gvn18hU Torch
+              origin: null
+              index: 3
+              repetition: 0
+              private: null
+              temporary: false
+              tiedDocuments: []
+              source: Scene.jpIfscXLVj6iVBUC.Token.WHr9FR632gvn18hU
+              target: false
+              rotateTowards: null
+              stretchTo: false
+              moveTowards: false
+              attachTo:
+                active: true
+                align: center
+                edge: 'on'
+                bindVisibility: true
+                bindAlpha: true
+                bindScale: true
+                bindElevation: true
+                bindRotation: true
+              missed: null
+              file: jb2a.flames.01.orange
+              customRange: false
+              forcedIndex: false
+              fileOptions:
+                antialiasing: 1
+              text: null
+              tilingTexture: null
+              masks: []
+              shapes: []
+              volume: null
+              isometric: null
+              syncGroup: null
+              scale:
+                x: 1
+                'y': 1
+              spriteScale:
+                x: 1
+                'y': 1
+              angle: 0
+              size: null
+              offset: null
+              anchor: null
+              spriteOffset:
+                x: 0.5
+                'y': -0.05
+                gridUnits: true
+                local: false
+              spriteAnchor: null
+              template: null
+              zeroSpriteRotation: null
+              randomOffset:
+                source: false
+                target: false
+              randomRotation: null
+              scaleToObject:
+                scale: 1
+                considerTokenScale: true
+                uniform: false
+              elevation: null
+              sortLayer: 800
+              aboveLighting: null
+              aboveInterface: null
+              xray: null
+              zIndex: 0.1
+              opacity: 1
+              filters: null
+              loopOptions: null
+              spriteRotation: 45
+              randomSpriteRotation: false
+              flipX: null
+              flipY: null
+              duration: false
+              persist: true
+              persistOptions:
+                id: l1HOjuoIVhKiHB4M
+                persistTokenPrototype: false
+              playbackRate: null
+              extraEndDuration: null
+              time: false
+              moves: null
+              moveSpeed: null
+              fadeIn: null
+              fadeOut: null
+              scaleIn: null
+              scaleOut: null
+              rotateIn: null
+              rotateOut: null
+              fadeInAudio: null
+              fadeOutAudio: null
+              animations:
+                - target: sprite
+                  propertyName: rotation
+                  from: 60
+                  to: -60
+                  duration: 300
+                  delay: 0
+                  ease: easeInOutBack
+                  looping: false
+                  fromEnd: false
+                  gridUnits: false
+                  absolute: false
+                  screenSpace: false
+                - target: sprite
+                  propertyName: rotation
+                  from: 0
+                  to: 30
+                  duration: 250
+                  delay: 200
+                  ease: easeOutBack
+                  looping: false
+                  fromEnd: false
+                  gridUnits: false
+                  absolute: false
+                  screenSpace: false
+                - target: sprite
+                  propertyName: rotation
+                  values:
+                    - 2
+                    - -2
+                  duration: 1500
+                  delay: 0
+                  ease: easeOutQuad
+                  looping: true
+                  indefinite: true
+                  pingPong: true
+                  gridUnits: false
+                  screenSpace: false
+              screenSpace: null
+              screenSpaceAboveUI: null
+              screenSpaceAnchor: null
+              screenSpacePosition: null
+              screenSpaceScale: null
+              nameOffsetMap:
+                WHr9FR632gvn18hU Torch:
+                  seed: WHr9FR632gvn18hU Torch-LuKxsuV5YITJ5onX
+                  source: Scene.jpIfscXLVj6iVBUC.Token.WHr9FR632gvn18hU
+                  target: false
+                  randomOffset:
+                    source: false
+                    target: false
+                  angle: 0
+                  randomRotation: null
+                  mirrorX: null
+                  mirrorY: null
+                  missed: null
+                  offset: null
+                  repetitions: 1
+                  twister: {}
+    actorId: Qr9lO5XAoF99JOu2
+    hidden: false
+    sort: 2
+    shape: 4
+    _id: WHr9FR632gvn18hU
+    delta:
+      _id: WHr9FR632gvn18hU
+      system: {}
+      flags: {}
+      name: null
+      type: null
+      img: null
+      items: []
+      effects: []
+      ownership: null
+      _key: '!scenes.tokens.delta!jpIfscXLVj6iVBUC.WHr9FR632gvn18hU.WHr9FR632gvn18hU'
+    x: 2191
+    'y': 1577
+    elevation: 0
+    locked: false
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!jpIfscXLVj6iVBUC.WHr9FR632gvn18hU'
+lights:
+  - _id: 0PmWJJ2JO2jRhnZ7
+    x: 2541
+    'y': 1556
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      bright: 18.22
+      color: '#acd123'
+      coloration: 5
+      dim: 36.44
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0.35
+      contrast: 0
+      shadows: 0
+      animation:
+        type: energy
+        speed: 5
+        intensity: 7
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger: {}
+    levels: []
+    locked: false
+    _key: '!scenes.lights!jpIfscXLVj6iVBUC.0PmWJJ2JO2jRhnZ7'
+  - x: 2554
+    'y': 652
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      negative: false
+      priority: 0
+      alpha: 0.05
+      angle: 360
+      bright: 7
+      color: '#acd123'
+      coloration: 5
+      dim: 0
+      attenuation: 1
+      luminosity: 0.15
+      saturation: 0.35
+      contrast: 0
+      shadows: 0
+      animation:
+        type: pulse
+        speed: 5
+        intensity: 7
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags: ''
+    _id: t4jfH1IpjTJSYAWo
+    levels: []
+    locked: false
+    _key: '!scenes.lights!jpIfscXLVj6iVBUC.t4jfH1IpjTJSYAWo'
+notes: []
+sounds: []
+regions: []
+tiles:
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        https://rime-of-the-frostmaiden.s3.us-east-1.amazonaws.com/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Rubble/Rubble_Piles/Mixed/Rubble_Pile_Stone_Earthy_Wood_Walnut_B1_3x2.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 600
+    height: 400
+    x: 933
+    'y': 456
+    rotation: 0
+    elevation: 0
+    sort: 1
+    _id: QQArNNMtaoBbMLOZ
+    alpha: 1
+    hidden: false
+    locked: true
+    restrictions:
+      light: false
+      weather: false
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: 5jhL85iv2BaOSNP3
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.23
+                scaleY: 0.23
+                translationX: 0.004
+                translationY: -0.006
+                rotation: 240
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: CDqhSdjXVTZVbbJX
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: 5jhL85iv2BaOSNP3
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: Dy722naikeKm0DB5
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-01.webp
+                scaleX: 1.02
+                scaleY: 1.02
+                rotation: 300
+                translationX: -0.01
+                translationY: -0.009000000000000001
+                updateId: r8Xu1UC0IzD4oIvJ
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: Dy722naikeKm0DB5
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: q7OK75Q0ur4tn88U
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintableNULL.webp
+                scaleX: 0.51
+                scaleY: 0.51
+                rotation: 230
+                translationX: 0.73
+                translationY: -0.42999999999999994
+                updateId: u0PWAi5pmBIgyTn6
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: q7OK75Q0ur4tn88U
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: XctiBZRSqtKOFGIk
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintableNULL.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 30
+                translationX: 0.40000000000000013
+                translationY: 0.3600000000000001
+                updateId: zDvzPmANW3mz8TNv
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: XctiBZRSqtKOFGIk
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Terrain Uneven
+              tmFilterInternalId: hJtnGgLvrdmA6Bdd
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Terrain Uneven
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/wilderness/grass/bw-terrain-grass-hills-small-03-transparent2.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.67
+                scaleY: 1.67
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: 0.010000000000000009
+                translationY: 0.6200000000000001
+                rotation: 30
+                alpha: 0.55
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: UT5VElMF4b7uWRew
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: hJtnGgLvrdmA6Bdd
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: Dbnj9bIoFvT8W7VM
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.9
+                scaleY: 2.9
+                rotation: 210
+                translationX: -0.48
+                translationY: -0.76
+                updateId: 1Fxdkxvvi3BzDXoW
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: Dbnj9bIoFvT8W7VM
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: cI5zegHNRklpZfKF
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 0.92
+                scaleY: 0.92
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.25
+                translationY: 0.43999999999999995
+                rotation: 130
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: JwcQK8QKVsctgJ0H
+                placeableId: QQArNNMtaoBbMLOZ
+                filterInternalId: cI5zegHNRklpZfKF
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+      multiface-tiles:
+        originalImage: >-
+          https://rime-of-the-frostmaiden.s3.us-east-1.amazonaws.com/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Rubble/Rubble_Piles/Mixed/Rubble_Pile_Stone_Earthy_Wood_Walnut_B1_3x2.webp
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.QQArNNMtaoBbMLOZ'
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_cover_stone_01.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#9b9e94'
+      alphaThreshold: 0.75
+    width: 300
+    height: 105
+    x: 1784
+    'y': 1585
+    rotation: 270
+    elevation: 0
+    sort: 2
+    alpha: 0.85
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger:
+        tags: ''
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      levels-3d-preview:
+        model3d: ''
+        dynaMesh: default
+        dynaMeshResolution: 1
+        font: ''
+        gmOnlyInteractive: false
+        displacementMap: ''
+        invertDisplacementMap: false
+        displacementIntensity: 1
+        displacementMatrix: 0,0,1,1
+        enableAnim: true
+        animIndex: 0
+        animSpeed: 1
+        animationOnce: false
+        paused: false
+        highlightOnHover: false
+        autoCenter: false
+        autoGround: false
+        tiltX: 0
+        tiltZ: 0
+        depth: 100
+        offset:
+          x: 0
+          z: 0
+          'y': 0
+        imageTexture: ''
+        textureRepeat: 1
+        flipY: false
+        color: '#ffffff'
+        roughness: -0.01
+        metalness: -0.01
+        transparency: -0.01
+        alphaClip: -0.01
+        transmission: -0.01
+        ior: -0.01
+        shading: default
+        sides: default
+        castShadow: true
+        collision: true
+        sight: true
+        cameraCollision: false
+        doorType: '0'
+        doorSound: ''
+        doorState: '0'
+        doorStyle: '0'
+        doorAnimationDuration: 400
+        doorAnimateAngle: 90
+        doorSlidePercent: 50
+        doorGrabTokens: false
+        fillType: stretch
+        enableGravity: none
+        tileScale: 1
+        yScale: 1
+        gap: 0
+        randomRotation: false
+        randomScale: false
+        randomDepth: false
+        randomPosition: false
+        randomColor: false
+        randomSeed: RxibF1w
+        ParticleType: none
+        enableParticleHidden: false
+        ParticleIntensity: 1
+        ParticleSprite: modules/levels-3d-preview/assets/particles/emberssmall.png
+        ParticleScale: 1
+        ParticleColor: '#ffffff'
+        ParticleColor2: '#ffffff'
+        onAnimation: ''
+        noiseType: none
+        noiseScale: 1
+        noiseHeight: 1
+        noisePersistence: 0.5
+        noiseOctaves: 1
+        noiseLacunarity: 1
+        noiseFlattening: 0
+        noiseExponent: 2
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_cover_stone_01.webp
+        altImages:
+          - >-
+            modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_cover_wood_01.webp
+        imageRemove: true
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        TilePerceptiveNameFlag:
+          - >-
+            Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+          - Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+          - Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+        canbeSpottedFlag:
+          - true
+          - true
+          - true
+        RevealwhenSpottedFlag:
+          - true
+          - true
+          - true
+        PPDCFlag:
+          - null
+          - null
+          - null
+        PPPLFlag:
+          - null
+          - null
+          - null
+        APDCFlag:
+          - null
+          - null
+          - null
+        APPLFlag:
+          - null
+          - null
+          - null
+        SpottingRangeFlag:
+          - null
+          - null
+          - null
+        SpottingMessageFlag:
+          - ',,,,,,,,,,,,,,,'
+          - ',,,,,,,'
+          - ',,,,,,,'
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag:
+          - true
+          - true
+          - true
+        TileRideableNameFlag:
+          - >-
+            Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+          - Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+          - Tile,Tile,Tile,Tile,Tile,Tile,Tile,Tile
+        MountonEnterFlag:
+          - true
+          - true
+          - true
+        AutoMountBlackListFlag:
+          - ',,,,,,,,,,,,,,,'
+          - ',,,,,,,'
+          - ',,,,,,,'
+        AutoMountWhiteListFlag:
+          - ',,,,,,,,,,,,,,,'
+          - ',,,,,,,'
+          - ',,,,,,,'
+        MaxRiderFlag:
+          - null
+          - null
+          - null
+        CustomRidingheightFlag:
+          - null
+          - null
+          - null
+        UseRidingHeightFlag:
+          - true
+          - true
+          - true
+        RidersScaleFlag:
+          - null
+          - null
+          - null
+        RiderPositioningFlag:
+          - RowPlacement
+          - RowPlacement
+          - RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        RiderRotOffsetFlag:
+          - null
+          - 0
+          - null
+        GrapplePlacementFlag:
+          - RowBelow
+          - RowBelow
+          - RowBelow
+        TokenFormFlag:
+          - TokenFormCircle
+          - TokenFormCircle
+          - TokenFormCircle
+        InsideMovementFlag:
+          - true
+          - true
+          - true
+        SpawnRidersFlag:
+          - ',,,,,,,,,,,,,,,'
+          - ',,,,,,,'
+          - ',,,,,,,'
+        WorldMEffectOverrideFlag:
+          - true
+          - true
+          - true
+        MountingEffectsFlag:
+          - ',,,,,,,,,,,,,,,'
+          - ',,,,,,,'
+          - ',,,,,,,'
+        CanbePilotedFlag:
+          - true
+          - true
+          - true
+        CheckPilotedCollisionFlag:
+          - true
+          - true
+          - true
+        PilotedbyDefaultFlag:
+          - true
+          - true
+          - true
+      region-attacher:
+        attachRegionToTile: false
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: 0RFBOsHy3Kzzwyri
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.49
+                scaleY: 1.49
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.94
+                translationY: 0.49
+                rotation: 300
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: hlMXryY0p1zf1gzz
+                placeableId: lTMWowYqidHbbzWm
+                filterInternalId: 0RFBOsHy3Kzzwyri
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Terrain Uneven
+              tmFilterInternalId: MIdVXlG0Yrvn2uuO
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Terrain Uneven
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/wilderness/grass/bw-terrain-grass-hills-small-03-transparent2.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.17
+                scaleY: 1.17
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: 0.8500000000000001
+                translationY: -0.26
+                rotation: 70
+                alpha: 0.5700000000000001
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: iagoomexMANZASRB
+                placeableId: lTMWowYqidHbbzWm
+                filterInternalId: MIdVXlG0Yrvn2uuO
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: gxL7UdGpxi9EFFTI
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-04.webp
+                scaleX: 0.96
+                scaleY: 0.96
+                rotation: 210
+                translationX: -0.006
+                translationY: -0.009000000000000001
+                updateId: A1Bqltf4IUV17zG4
+                placeableId: lTMWowYqidHbbzWm
+                filterInternalId: gxL7UdGpxi9EFFTI
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 2
+              tmFilterInternalId: BtZqY5EnHBPT5dH5
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 2
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.7
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-grunge-dust-06.webp
+                scaleX: 1.07
+                scaleY: 1.07
+                rotation: 290
+                translationX: 0.006
+                translationY: 0.004
+                updateId: h313iK06yOZqBaNi
+                placeableId: lTMWowYqidHbbzWm
+                filterInternalId: BtZqY5EnHBPT5dH5
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    _id: FR1fTSXRVxZVN50i
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.FR1fTSXRVxZVN50i'
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_01.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#9b9e94'
+      alphaThreshold: 0.75
+    width: 37
+    height: 30
+    x: 1765
+    'y': 1412
+    rotation: 0
+    elevation: 8.9
+    sort: 4
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    _id: KNCWEa7ozoBmr2BT
+    alpha: 0.7
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: myShadow
+              tmFilterInternalId: d8qSEPLlAEc729Al
+              tmFilterType: shadow
+              tmFilterOwner: cvMfFhYzS8WVOYAy
+              tmParams:
+                filterType: shadow
+                filterId: myShadow
+                imagePath: >-
+                  ZZ-TESTING/00-test-may-24/streetlamps/bw_streetlamp_shadow_03.png
+                rotation: 35
+                blur: 0.02
+                quality: 5
+                distance: 10
+                alpha: 0.7
+                padding: 10
+                shadowOnly: false
+                color: 0
+                zOrder: 6000
+                animated:
+                  blur:
+                    active: false
+                    loopDuration: 1
+                    animType: syncCosOscillation
+                    val1: 2
+                    val2: 4
+                  rotation:
+                    active: false
+                    loopDuration: 100
+                    animType: syncSinOscillation
+                    val1: 33
+                    val2: 37
+                updateId: 1jsarwY94h8nI40G
+                rank: 10000
+                enabled: true
+                placeableId: PVBDlQon3cT7kqw2
+                filterInternalId: d8qSEPLlAEc729Al
+                filterOwner: cvMfFhYzS8WVOYAy
+                placeableType: Tile
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_01.webp
+        altImages:
+          - >-
+            modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_wood_01.webp
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger: {}
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: true
+        PilotedbyDefaultFlag: false
+      region-attacher:
+        attachRegionToTile: false
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.KNCWEa7ozoBmr2BT'
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_02.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#9b9e94'
+      alphaThreshold: 0.75
+    width: 43
+    height: 38
+    x: 1765
+    'y': 1727
+    rotation: 0
+    elevation: 8.9
+    sort: 3
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    _id: OET7tvG2MfTNr6JR
+    alpha: 0.7
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: myShadow
+              tmFilterInternalId: DgGqzWfGhTCZZfmG
+              tmFilterType: shadow
+              tmFilterOwner: cvMfFhYzS8WVOYAy
+              tmParams:
+                filterType: shadow
+                filterId: myShadow
+                imagePath: >-
+                  ZZ-TESTING/00-test-may-24/streetlamps/bw_streetlamp_shadow_03.png
+                rotation: 35
+                blur: 0.02
+                quality: 5
+                distance: 10
+                alpha: 0.7
+                padding: 10
+                shadowOnly: false
+                color: 0
+                zOrder: 6000
+                animated:
+                  blur:
+                    active: false
+                    loopDuration: 1
+                    animType: syncCosOscillation
+                    val1: 2
+                    val2: 4
+                  rotation:
+                    active: false
+                    loopDuration: 100
+                    animType: syncSinOscillation
+                    val1: 33
+                    val2: 37
+                updateId: leq2j63oipz56I3b
+                rank: 10000
+                enabled: true
+                placeableId: cP7Z9dUujZUFSHhG
+                filterInternalId: DgGqzWfGhTCZZfmG
+                filterOwner: cvMfFhYzS8WVOYAy
+                placeableType: Tile
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_02.webp
+        altImages:
+          - >-
+            modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_wood_02.webp
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger: {}
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: true
+        PilotedbyDefaultFlag: false
+      region-attacher:
+        attachRegionToTile: false
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.OET7tvG2MfTNr6JR'
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_02.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#9b9e94'
+      alphaThreshold: 0.75
+    width: 43
+    height: 38
+    x: 3285
+    'y': 1743
+    rotation: 0
+    elevation: 8.9
+    sort: 6
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    _id: pcaojpWZ3y2fbLeL
+    alpha: 0.7
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: myShadow
+              tmFilterInternalId: DgGqzWfGhTCZZfmG
+              tmFilterType: shadow
+              tmFilterOwner: cvMfFhYzS8WVOYAy
+              tmParams:
+                filterType: shadow
+                filterId: myShadow
+                imagePath: >-
+                  ZZ-TESTING/00-test-may-24/streetlamps/bw_streetlamp_shadow_03.png
+                rotation: 35
+                blur: 0.02
+                quality: 5
+                distance: 10
+                alpha: 0.7
+                padding: 10
+                shadowOnly: false
+                color: 0
+                zOrder: 6000
+                animated:
+                  blur:
+                    active: false
+                    loopDuration: 1
+                    animType: syncCosOscillation
+                    val1: 2
+                    val2: 4
+                  rotation:
+                    active: false
+                    loopDuration: 100
+                    animType: syncSinOscillation
+                    val1: 33
+                    val2: 37
+                updateId: leq2j63oipz56I3b
+                rank: 10000
+                enabled: true
+                placeableId: cP7Z9dUujZUFSHhG
+                filterInternalId: DgGqzWfGhTCZZfmG
+                filterOwner: cvMfFhYzS8WVOYAy
+                placeableType: Tile
+      multi-token-edit: {}
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_02.webp
+        altImages:
+          - >-
+            modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_wood_02.webp
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger: {}
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: true
+        PilotedbyDefaultFlag: false
+      region-attacher:
+        attachRegionToTile: false
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.pcaojpWZ3y2fbLeL'
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_01.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#9b9e94'
+      alphaThreshold: 0.75
+    width: 37
+    height: 30
+    x: 3287
+    'y': 1430
+    rotation: 0
+    elevation: 8.9
+    sort: 7
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    _id: IpaPBmv2fo7OXN5d
+    alpha: 0.7
+    hidden: false
+    locked: false
+    restrictions:
+      light: false
+      weather: false
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: myShadow
+              tmFilterInternalId: d8qSEPLlAEc729Al
+              tmFilterType: shadow
+              tmFilterOwner: cvMfFhYzS8WVOYAy
+              tmParams:
+                filterType: shadow
+                filterId: myShadow
+                imagePath: >-
+                  ZZ-TESTING/00-test-may-24/streetlamps/bw_streetlamp_shadow_03.png
+                rotation: 35
+                blur: 0.02
+                quality: 5
+                distance: 10
+                alpha: 0.7
+                padding: 10
+                shadowOnly: false
+                color: 0
+                zOrder: 6000
+                animated:
+                  blur:
+                    active: false
+                    loopDuration: 1
+                    animType: syncCosOscillation
+                    val1: 2
+                    val2: 4
+                  rotation:
+                    active: false
+                    loopDuration: 100
+                    animType: syncSinOscillation
+                    val1: 33
+                    val2: 37
+                updateId: 1jsarwY94h8nI40G
+                rank: 10000
+                enabled: true
+                placeableId: PVBDlQon3cT7kqw2
+                filterInternalId: d8qSEPLlAEc729Al
+                filterOwner: cvMfFhYzS8WVOYAy
+                placeableType: Tile
+      multi-token-edit: {}
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_stone_01.webp
+        altImages:
+          - >-
+            modules/baileywiki-nuts-and-bolts/assets/doors-animated/bw_door_animated_frame_wood_01.webp
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger: {}
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: true
+        PilotedbyDefaultFlag: false
+      region-attacher:
+        attachRegionToTile: false
+    levels: []
+    _key: '!scenes.tiles!jpIfscXLVj6iVBUC.IpaPBmv2fo7OXN5d'
+walls:
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 971
+      - 683
+      - 761
+      - 683
+    _id: SCAwqvTTHpgmWbYU
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.SCAwqvTTHpgmWbYU'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 761
+      - 683
+      - 761
+      - 1426
+    _id: kS5BViRRO4DtWeZe
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.kS5BViRRO4DtWeZe'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 761
+      - 1426
+      - 691
+      - 1575
+    _id: 8IN1gjGV9yeRaE9L
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.8IN1gjGV9yeRaE9L'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 691
+      - 1575
+      - 656
+      - 1724
+    _id: SQd1UR6ujBfMmNYz
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.SQd1UR6ujBfMmNYz'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 656
+      - 1724
+      - 761
+      - 1881
+    _id: kQbiHuI6LHIL5LAY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.kQbiHuI6LHIL5LAY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 761
+      - 1881
+      - 744
+      - 3098
+    _id: TLIOs6SvIygMc0M5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.TLIOs6SvIygMc0M5'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 744
+      - 3098
+      - 4121
+      - 3106
+    _id: TgtwMQaoJI4HiL1v
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.TgtwMQaoJI4HiL1v'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 4121
+      - 3106
+      - 4113
+      - 674
+    _id: biFBVfgp5B58IBiQ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.biFBVfgp5B58IBiQ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 4113
+      - 674
+      - 2818
+      - 683
+    _id: WpwAarf1Bk6Lj7M0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.WpwAarf1Bk6Lj7M0'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2818
+      - 683
+      - 2809
+      - 595
+    _id: hvvPdGmqP16Gvdrq
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.hvvPdGmqP16Gvdrq'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2809
+      - 595
+      - 2651
+      - 604
+    _id: qKUgYcw84l0bHs3A
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.qKUgYcw84l0bHs3A'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2651
+      - 604
+      - 2573
+      - 560
+    _id: UX9ax41TKtjvVRWf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.UX9ax41TKtjvVRWf'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2573
+      - 560
+      - 2275
+      - 595
+    _id: VcsRNe8DEGOWp6uM
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.VcsRNe8DEGOWp6uM'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2275
+      - 595
+      - 2275
+      - 674
+    _id: kBPgmyESDrIw9hqA
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.kBPgmyESDrIw9hqA'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2275
+      - 674
+      - 1321
+      - 674
+    _id: CKWPx5wSdFNnWJfZ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.CKWPx5wSdFNnWJfZ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1321
+      - 674
+      - 1243
+      - 648
+    _id: oV08j4rajyU4WH5P
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.oV08j4rajyU4WH5P'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1243
+      - 648
+      - 1190
+      - 613
+    _id: hCjMKAOpn2dmi5sB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.hCjMKAOpn2dmi5sB'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1190
+      - 613
+      - 1138
+      - 569
+    _id: lTNN9Z7RTXQv2LhM
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.lTNN9Z7RTXQv2LhM'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1138
+      - 569
+      - 1059
+      - 578
+    _id: qeudSLiMUW6t5HT3
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.qeudSLiMUW6t5HT3'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1059
+      - 578
+      - 989
+      - 613
+    _id: 5u5P6nOGkwbAnJi5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.5u5P6nOGkwbAnJi5'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 989
+      - 613
+      - 971
+      - 683
+    _id: bTwpifu4fxhlj12I
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.bTwpifu4fxhlj12I'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2275
+      - 674
+      - 2275
+      - 849
+    _id: OEwT8YNOfiVOSabG
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.OEwT8YNOfiVOSabG'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2275
+      - 849
+      - 2441
+      - 849
+    _id: rzUWfY1J9U6KhP1o
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.rzUWfY1J9U6KhP1o'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2651
+      - 858
+      - 2818
+      - 858
+    _id: 8yYId2desXSuZ6nf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.8yYId2desXSuZ6nf'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2818
+      - 858
+      - 2818
+      - 683
+    _id: KNscvKnOWxovuOB6
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.KNscvKnOWxovuOB6'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3054
+      - 1006
+      - 3465
+      - 998
+    _id: vikMTvWltajdLWk9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.vikMTvWltajdLWk9'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3465
+      - 998
+      - 3465
+      - 1155
+    _id: JZ1lDm5J2RAj26Ti
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.JZ1lDm5J2RAj26Ti'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3465
+      - 1155
+      - 3911
+      - 1164
+    _id: eakBZlv7NwbTBiV2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.eakBZlv7NwbTBiV2'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3465
+      - 691
+      - 3465
+      - 866
+    _id: Adx42qrtGS7gX716
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Adx42qrtGS7gX716'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3465
+      - 945
+      - 3465
+      - 998
+    _id: r1zihYHQHEvRzbLx
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.r1zihYHQHEvRzbLx'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3010
+      - 884
+      - 3054
+      - 1006
+    _id: a5bugCmbENJd8WXu
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.a5bugCmbENJd8WXu'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3308
+      - 1453
+      - 3334
+      - 1313
+    _id: 7vJZDOG9qHGrZ4fu
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.7vJZDOG9qHGrZ4fu'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3334
+      - 1313
+      - 3824
+      - 1313
+    _id: fWvw59qg2SDCSZ9E
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.fWvw59qg2SDCSZ9E'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3824
+      - 1313
+      - 3833
+      - 1164
+    _id: fTvRXGSroEmL9hAH
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.fTvRXGSroEmL9hAH'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3299
+      - 1759
+      - 3343
+      - 1759
+    _id: Fkc7TpzUt4NpUi8u
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Fkc7TpzUt4NpUi8u'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3343
+      - 1759
+      - 3343
+      - 1986
+    _id: q6YY5bbabFTOaG2l
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.q6YY5bbabFTOaG2l'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3343
+      - 1986
+      - 4121
+      - 1986
+    _id: cmufwOvOy4fcOlpR
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.cmufwOvOy4fcOlpR'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 4130
+      - 2039
+      - 4025
+      - 2091
+    _id: z8x2kyys7z8cWFjp
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.z8x2kyys7z8cWFjp'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 4025
+      - 2091
+      - 3911
+      - 2126
+    _id: 6lytyvOverACjBbs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.6lytyvOverACjBbs'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3911
+      - 2126
+      - 3850
+      - 2179
+    _id: CMoJwAZU1LrSrKCW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.CMoJwAZU1LrSrKCW'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3850
+      - 2179
+      - 3824
+      - 2188
+    _id: THwmkr3td7INRxAs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.THwmkr3td7INRxAs'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3824
+      - 2188
+      - 3824
+      - 2363
+    _id: qVouAXkOi9DwMEXY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.qVouAXkOi9DwMEXY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3824
+      - 2363
+      - 3518
+      - 2363
+    _id: MVEJezwOvCBntWTW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.MVEJezwOvCBntWTW'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3351
+      - 2363
+      - 3351
+      - 2144
+    _id: tbz4ZAtsdc9ZSjzx
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.tbz4ZAtsdc9ZSjzx'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3351
+      - 2144
+      - 3824
+      - 2144
+    _id: 1uizqofKNz91XgJ6
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.1uizqofKNz91XgJ6'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3824
+      - 2144
+      - 3824
+      - 2188
+    _id: T1OyUvK8Gpb8qjdB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.T1OyUvK8Gpb8qjdB'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2634
+      - 2205
+      - 3054
+      - 2205
+    _id: XlcCMASnKddlh4Qp
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.XlcCMASnKddlh4Qp'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3054
+      - 2205
+      - 3089
+      - 2223
+    _id: bf2a78BmP73luMJZ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.bf2a78BmP73luMJZ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3089
+      - 2223
+      - 3115
+      - 2284
+    _id: aDhyIhRXpM4GU9VE
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.aDhyIhRXpM4GU9VE'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3115
+      - 2284
+      - 3220
+      - 2284
+    _id: dk4hWzmLJYTVewuD
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.dk4hWzmLJYTVewuD'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3220
+      - 2284
+      - 3351
+      - 2275
+    _id: AsJmqF6L6bWlTH2Y
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.AsJmqF6L6bWlTH2Y'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3299
+      - 1759
+      - 3299
+      - 1838
+    _id: 6IdrXJeFO7IIltLq
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.6IdrXJeFO7IIltLq'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3299
+      - 1838
+      - 3264
+      - 1899
+    _id: MR9ddMhxZSl96kTD
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.MR9ddMhxZSl96kTD'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3264
+      - 1899
+      - 3273
+      - 1951
+    _id: ZMwkDsmFrTAItyP5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.ZMwkDsmFrTAItyP5'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3273
+      - 1951
+      - 3238
+      - 2021
+    _id: MWVuvTkEA0gaPHuf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.MWVuvTkEA0gaPHuf'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3238
+      - 2021
+      - 3211
+      - 2091
+    _id: 7KmQpep5KjcdUutc
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.7KmQpep5KjcdUutc'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3211
+      - 2091
+      - 3124
+      - 2100
+    _id: OORNI0cPDfBrMnzO
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.OORNI0cPDfBrMnzO'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3124
+      - 2100
+      - 3089
+      - 2126
+    _id: oodXulkYebC90l2N
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.oodXulkYebC90l2N'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3089
+      - 2126
+      - 3080
+      - 2179
+    _id: m7TfXpJ4NrfbFVhF
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.m7TfXpJ4NrfbFVhF'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3080
+      - 2179
+      - 3054
+      - 2205
+    _id: BDKwl5tNrwAxS7KO
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.BDKwl5tNrwAxS7KO'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2896
+      - 1050
+      - 2975
+      - 1050
+    _id: llPN6q5P4ACPSZEB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.llPN6q5P4ACPSZEB'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2975
+      - 1050
+      - 3010
+      - 1059
+    _id: 9iAmvdLWhLNwlZ4J
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.9iAmvdLWhLNwlZ4J'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3010
+      - 1059
+      - 3080
+      - 1111
+    _id: 4lGYyYm7qoNHdgPn
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.4lGYyYm7qoNHdgPn'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3080
+      - 1111
+      - 3124
+      - 1138
+    _id: 9DAZgkTUnZxDD9Sv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.9DAZgkTUnZxDD9Sv'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3124
+      - 1138
+      - 3176
+      - 1164
+    _id: ONlRm8WffUTHFr0s
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.ONlRm8WffUTHFr0s'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3176
+      - 1164
+      - 3220
+      - 1208
+    _id: tstwJBO3kFLzCESB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.tstwJBO3kFLzCESB'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3220
+      - 1208
+      - 3255
+      - 1278
+    _id: x4O0Iajj5CbQ9hnl
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.x4O0Iajj5CbQ9hnl'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3255
+      - 1278
+      - 3290
+      - 1339
+    _id: yN8c131RYVhcFGjt
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.yN8c131RYVhcFGjt'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3290
+      - 1339
+      - 3308
+      - 1453
+    _id: rY71bfvDsqzkzEkA
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.rY71bfvDsqzkzEkA'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2879
+      - 1041
+      - 2931
+      - 1015
+    _id: 20pj3RcXY5m1ifMs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.20pj3RcXY5m1ifMs'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2931
+      - 1015
+      - 2931
+      - 963
+    _id: zlqfxQTmFaTAQ8ds
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.zlqfxQTmFaTAQ8ds'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2931
+      - 963
+      - 2931
+      - 875
+    _id: iJ5ai5JLd2ZnAvAh
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.iJ5ai5JLd2ZnAvAh'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2931
+      - 875
+      - 2940
+      - 796
+    _id: s6cNzYrMiWp4QLtg
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.s6cNzYrMiWp4QLtg'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2940
+      - 796
+      - 2966
+      - 744
+    _id: YA4cLfOGcBywWVkQ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.YA4cLfOGcBywWVkQ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2966
+      - 744
+      - 2993
+      - 753
+    _id: ccfHauMwtzvSuwU1
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.ccfHauMwtzvSuwU1'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2993
+      - 753
+      - 2984
+      - 796
+    _id: 9DHY1wDBYBr0771k
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.9DHY1wDBYBr0771k'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2984
+      - 796
+      - 2975
+      - 875
+    _id: sryj4YPjLNQgCkXd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.sryj4YPjLNQgCkXd'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2975
+      - 875
+      - 3010
+      - 884
+    _id: xBybBWJB0wYjteoa
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.xBybBWJB0wYjteoa'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2879
+      - 1041
+      - 2896
+      - 1050
+    _id: EUlmIMfgar0n5eJx
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.EUlmIMfgar0n5eJx'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2459
+      - 2205
+      - 2214
+      - 2205
+    _id: U5LbnZ4jd8DlSKoe
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.U5LbnZ4jd8DlSKoe'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2214
+      - 2205
+      - 2205
+      - 2459
+    _id: vMDO5RIWoBUCjW8Y
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.vMDO5RIWoBUCjW8Y'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2205
+      - 2459
+      - 2450
+      - 2468
+    _id: PrBRIEcZ00xodFmV
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.PrBRIEcZ00xodFmV'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1033
+      - 2721
+      - 1181
+      - 2721
+    _id: 11rSLPe5aRTgnm6g
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.11rSLPe5aRTgnm6g'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1181
+      - 2721
+      - 1243
+      - 2870
+    _id: l1b1wGOdhcLO488O
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.l1b1wGOdhcLO488O'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1243
+      - 2870
+      - 1628
+      - 2870
+    _id: MzzcOVtz5jylUGNU
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.MzzcOVtz5jylUGNU'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1785
+      - 2879
+      - 2249
+      - 2870
+    _id: 2cBfPYYzTOxEgUel
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.2cBfPYYzTOxEgUel'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2441
+      - 2870
+      - 2835
+      - 2870
+    _id: p8XhzXqcV6shMntV
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.p8XhzXqcV6shMntV'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2678
+      - 2966
+      - 2678
+      - 3106
+    _id: oWdF4GKOmMi1mwgT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.oWdF4GKOmMi1mwgT'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3001
+      - 2870
+      - 3343
+      - 2870
+    _id: tjce126DPUWDwQqI
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.tjce126DPUWDwQqI'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3343
+      - 2870
+      - 3483
+      - 2844
+    _id: VFHkxouNKmsAg5Yn
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.VFHkxouNKmsAg5Yn'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3483
+      - 2844
+      - 3605
+      - 2818
+    _id: 0GGwVXOQgBPEzgVt
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.0GGwVXOQgBPEzgVt'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3605
+      - 2818
+      - 3771
+      - 2721
+    _id: Nwdd3WOAI3B12ePg
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Nwdd3WOAI3B12ePg'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 3771
+      - 2721
+      - 3859
+      - 2660
+    _id: lAA0nlZESbVID1VP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.lAA0nlZESbVID1VP'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1593
+      - 1435
+      - 1785
+      - 1418
+    _id: p3n2JljNLw7zdPeY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.p3n2JljNLw7zdPeY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1785
+      - 1418
+      - 1873
+      - 1304
+    _id: xAn0qcgPLcO3pxuv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.xAn0qcgPLcO3pxuv'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1873
+      - 1304
+      - 1934
+      - 1199
+    _id: yf8FY89vrrmCE0EJ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.yf8FY89vrrmCE0EJ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1934
+      - 1199
+      - 2013
+      - 1138
+    _id: yf6cbzGvozZspmPm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.yf6cbzGvozZspmPm'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2013
+      - 1138
+      - 2065
+      - 1076
+    _id: qsOxBGx1WfRBAAkG
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.qsOxBGx1WfRBAAkG'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2065
+      - 1076
+      - 2188
+      - 1041
+    _id: yGpHGJibhriwFfuh
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.yGpHGJibhriwFfuh'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2188
+      - 1041
+      - 2345
+      - 1024
+    _id: zzDkL6VVlJvmOxFi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.zzDkL6VVlJvmOxFi'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2345
+      - 1024
+      - 2424
+      - 1015
+    _id: m4vD2InO0F7xZ0dU
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.m4vD2InO0F7xZ0dU'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2424
+      - 893
+      - 2441
+      - 849
+    _id: CF8rH79UGDMmTsWY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.CF8rH79UGDMmTsWY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2433
+      - 963
+      - 2424
+      - 1015
+    _id: VP5wD4XM1WSa1SBF
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.VP5wD4XM1WSa1SBF'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2424
+      - 963
+      - 2336
+      - 963
+    _id: Oujvv1V6qwuTnVVj
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Oujvv1V6qwuTnVVj'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2336
+      - 963
+      - 2249
+      - 971
+    _id: QHqErJpAqqK5OZH7
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.QHqErJpAqqK5OZH7'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2249
+      - 971
+      - 2170
+      - 998
+    _id: HsGhBMCkgPXU9V1N
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.HsGhBMCkgPXU9V1N'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2170
+      - 998
+      - 2065
+      - 980
+    _id: qoyfM0PHhnSrbi53
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.qoyfM0PHhnSrbi53'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2065
+      - 980
+      - 1969
+      - 1015
+    _id: lUMXEQ1dOFSO5O0w
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.lUMXEQ1dOFSO5O0w'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1969
+      - 1015
+      - 1881
+      - 1076
+    _id: EgaExO3FtGqbX2gv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.EgaExO3FtGqbX2gv'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1881
+      - 1076
+      - 1820
+      - 1155
+    _id: Iqyrsz8WkOMikG2Y
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Iqyrsz8WkOMikG2Y'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1820
+      - 1155
+      - 1715
+      - 1199
+    _id: q68QlwuSMecgu9M2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.q68QlwuSMecgu9M2'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1715
+      - 1199
+      - 1698
+      - 1243
+    _id: j9tFzdESaGe2jCNo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.j9tFzdESaGe2jCNo'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1698
+      - 1243
+      - 1741
+      - 1304
+    _id: ZWyGJmS9JxQGgXj2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.ZWyGJmS9JxQGgXj2'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1741
+      - 1304
+      - 1706
+      - 1374
+    _id: Tyj6qfixFq9h4oj8
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Tyj6qfixFq9h4oj8'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1706
+      - 1374
+      - 1593
+      - 1435
+    _id: 0RxnoaWaokNZKScv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.0RxnoaWaokNZKScv'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2660
+      - 980
+      - 2660
+      - 1006
+    _id: cw6JS1KJbNHvAVgN
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.cw6JS1KJbNHvAVgN'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2660
+      - 1006
+      - 2695
+      - 1006
+    _id: V2likgYpzLE9jQoS
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.V2likgYpzLE9jQoS'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2695
+      - 1006
+      - 2774
+      - 1015
+    _id: 89BlMvxFrt2VWREK
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.89BlMvxFrt2VWREK'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2774
+      - 1015
+      - 2835
+      - 1015
+    _id: b0TpCnl1nJEG1hj7
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.b0TpCnl1nJEG1hj7'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2835
+      - 1015
+      - 2888
+      - 1015
+    _id: lX2JoDsKm0zyzsCV
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.lX2JoDsKm0zyzsCV'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2888
+      - 1015
+      - 2896
+      - 998
+    _id: AC2f7XEwzzzef7Fi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.AC2f7XEwzzzef7Fi'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2896
+      - 998
+      - 2870
+      - 971
+    _id: mGGOKX6LgKMARMWk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.mGGOKX6LgKMARMWk'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2870
+      - 971
+      - 2791
+      - 989
+    _id: k5CRTnTkQ8rajXNY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.k5CRTnTkQ8rajXNY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2791
+      - 989
+      - 2756
+      - 998
+    _id: pGfHPa8DkscUN0b6
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.pGfHPa8DkscUN0b6'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2756
+      - 998
+      - 2695
+      - 998
+    _id: 1YmyZi2FliMK8yRQ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.1YmyZi2FliMK8yRQ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2695
+      - 998
+      - 2695
+      - 971
+    _id: 9zfdwdbaUggW84x0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.9zfdwdbaUggW84x0'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2695
+      - 971
+      - 2660
+      - 980
+    _id: NeVDDKYEOdFFvHfC
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.NeVDDKYEOdFFvHfC'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1785
+      - 1759
+      - 1794
+      - 1803
+    _id: J1YaQofQR52uYX92
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.J1YaQofQR52uYX92'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1794
+      - 1803
+      - 1855
+      - 1855
+    _id: WIEUmWcD0CyLKqUd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.WIEUmWcD0CyLKqUd'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1855
+      - 1855
+      - 1960
+      - 1943
+    _id: RBIz4Zxs8h34ctf2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.RBIz4Zxs8h34ctf2'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1960
+      - 1943
+      - 1890
+      - 1951
+    _id: SVcja5EwedfPFuSl
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.SVcja5EwedfPFuSl'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1890
+      - 1951
+      - 1759
+      - 1864
+    _id: NVWYLvxdzb5BTR0Z
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.NVWYLvxdzb5BTR0Z'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1759
+      - 1864
+      - 1733
+      - 1768
+    _id: nOIk1bz81ZaoZ450
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.nOIk1bz81ZaoZ450'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1733
+      - 1768
+      - 1785
+      - 1759
+    _id: H0dF6pkAEDX4uVsT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.H0dF6pkAEDX4uVsT'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1409
+      - 1768
+      - 1636
+      - 1768
+    _id: aPwIjB8RAT7rnITa
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.aPwIjB8RAT7rnITa'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1409
+      - 1768
+      - 1400
+      - 2424
+    _id: VVGey7J7wUgzhHqk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.VVGey7J7wUgzhHqk'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1409
+      - 2581
+      - 1400
+      - 2660
+    _id: KOejp1gWtqRsPyGA
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.KOejp1gWtqRsPyGA'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1400
+      - 2660
+      - 1523
+      - 2669
+    _id: 2Vrj26G0zQQEJnuR
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.2Vrj26G0zQQEJnuR'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1864
+      - 2214
+      - 1645
+      - 2223
+    _id: MciE8zfQxirhBtFY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.MciE8zfQxirhBtFY'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1645
+      - 2223
+      - 1654
+      - 1951
+    _id: TwVfedz509zGtwGq
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.TwVfedz509zGtwGq'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1654
+      - 1951
+      - 1408
+      - 1948
+    _id: ytzyxIWP9YkcnK4q
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.ytzyxIWP9YkcnK4q'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1986
+      - 2424
+      - 1995
+      - 2573
+    _id: Dm7inh784Ne25VJP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Dm7inh784Ne25VJP'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1995
+      - 2573
+      - 1899
+      - 2669
+    _id: hssp7nydTW0gxbGZ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.hssp7nydTW0gxbGZ'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1899
+      - 2669
+      - 1759
+      - 2695
+    _id: xPtmldqkFYoWeOd2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.xPtmldqkFYoWeOd2'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 2634
+      - 2205
+      - 2634
+      - 2625
+    _id: 36IaE5nDEq1lc4bm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.36IaE5nDEq1lc4bm'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 989
+      - 1033
+      - 980
+      - 1750
+    _id: M2FduQAzUHBN3rNe
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.M2FduQAzUHBN3rNe'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 980
+      - 2371
+      - 980
+      - 1899
+    _id: fcC3b51kqYE0dIgP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags: {}
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.fcC3b51kqYE0dIgP'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1785
+      - 1735
+      - 1785
+      - 1761
+    _id: sZMiHSt9SBCAWBW6
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.sZMiHSt9SBCAWBW6'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1785
+      - 1437
+      - 1785
+      - 1420
+    _id: E2bvdjfaHA1hzxZg
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.E2bvdjfaHA1hzxZg'
+  - c:
+      - 1785
+      - 1735
+      - 1785
+      - 1437
+    light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    door: 1
+    _id: 6n4A2Pn1U5qGAg10
+    dir: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      type: swing
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      flip: false
+      double: true
+      direction: 1
+      duration: 2500
+      strength: 0.7
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger:
+        tags: ''
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        LockPeekingWallIDsFlag:
+          - 2WyqBw9DlsHe9sbW
+          - bCWKDggMmQTYesXy
+          - t3qU3iENNpu459PL
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+        DoorSwingStateFlag: 0
+        DoorSlideStateFlag: 1
+        canbeLockpeekedFlag: true
+        PeekingDCFlag: 15
+        LockPeekSizeFlag: 0.05
+        LockPeekPositionFlag: 0.5
+        DoorMovementFlag: none
+        PreventNormalOpenFlag: false
+        DoorHingePositionFlag: '0'
+        DoorSwingSpeedFlag: 5
+        DoorSwingRangeFlag:
+          - null
+          - null
+        DoorSlideSpeedFlag: 0.05
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    doorSound: stoneRocky
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.6n4A2Pn1U5qGAg10'
+  - c:
+      - 1785
+      - 1735
+      - 1785
+      - 1593
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger:
+        tags: ''
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: oWRyz34FpfdnYacQ
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.oWRyz34FpfdnYacQ'
+  - c:
+      - 1785
+      - 1579
+      - 1785
+      - 1437
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger:
+        tags: ''
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: 9JyDZGQv3FAb5xKg
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.9JyDZGQv3FAb5xKg'
+  - c:
+      - 1785
+      - 1735
+      - 1785
+      - 1437
+    light: 0
+    move: 20
+    sight: 0
+    sound: 0
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger:
+        tags: ''
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: EjLxYJx8ZWjUA30U
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.EjLxYJx8ZWjUA30U'
+  - c:
+      - 1785
+      - 1735
+      - 1785
+      - 1593
+    light: 0
+    move: 0
+    sight: 0
+    sound: 0
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger: {}
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: 2WyqBw9DlsHe9sbW
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.2WyqBw9DlsHe9sbW'
+  - c:
+      - 1785
+      - 1579
+      - 1785
+      - 1437
+    light: 0
+    move: 0
+    sight: 0
+    sound: 0
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger: {}
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: bCWKDggMmQTYesXy
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.bCWKDggMmQTYesXy'
+  - c:
+      - 1785
+      - 1735
+      - 1785
+      - 1437
+    light: 0
+    move: 0
+    sight: 0
+    sound: 0
+    dir: 0
+    door: 0
+    ds: 0
+    doorSound: stoneRocky
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation:
+      direction: 1
+      double: true
+      duration: 2500
+      flip: false
+      strength: 0.7
+      texture: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/assets/FA_Assets/FA_Assets_Webp/!Core_Settlements/Structures/Building/Doors/Door_Stone_Volcanic_E_Rusty_1x1.webp
+      type: swing
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+      tagger: {}
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      multi-token-edit:
+        links:
+          - id: aSIL3ykeZqHITygH
+            type: 1
+            label: S_LINK
+          - id: 4EIoClpqtRog3Gsq
+            type: 0
+            label: S_LINK
+      perceptive:
+        isPerceptiveWallFlag: true
+        isLockpeekingWallFlag: true
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+        LockpeekedbyFlag: []
+      smartdoors:
+        synchronizationGroup: ''
+        synchronizeSecretStatus: false
+    _id: t3qU3iENNpu459PL
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.t3qU3iENNpu459PL'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 760
+      - 1023
+      - 991
+      - 1032
+    _id: Kpe1CLhCymAOQKrh
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    levels: []
+    _key: '!scenes.walls!jpIfscXLVj6iVBUC.Kpe1CLhCymAOQKrh'
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: venom_spores
+folder: Q2aVi9KNhjNHo2hR
+sort: 100000
+ownership:
+  default: 0
+flags:
+  smalltime:
+    darkness-link: false
+    player-vis: '2'
+    moonlight: false
+  multi-token-edit:
+    blackBars: false
+  simple-cinematic-pan:
+    cinematicModeOnLoadScene: false
+  perceptive:
+    SceneBrightEndFlag: 0.25
+    SceneDimEndFlag: 0.75
+  wall-height:
+    advancedVision: true
+  dimensional-weather:
+    terrain: ''
+  fxmaster: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765145678
+  modifiedTime: 1782140173490
+  lastModifiedBy: wgCeShTrqHJFBbDr
+navName: Undergound Temple
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!jpIfscXLVj6iVBUC'
+templates: []

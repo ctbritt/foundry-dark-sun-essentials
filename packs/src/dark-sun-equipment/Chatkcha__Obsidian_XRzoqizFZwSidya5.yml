@@ -1,0 +1,316 @@
+name: Chatkcha, Obsidian
+type: weapon
+img: icons/weapons/thrown/shuriken-double-red.webp
+effects: []
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Boomerang
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: true
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources: []
+    id: 1045273001
+    entityTypeId: 1439493548
+    containerEntityId: 90993494
+    containerEntityTypeId: 1581111423
+    definitionEntityTypeId: 112130694
+    definitionId: 2640744
+    originalName: Boomerang Redone
+    version: 2.9.67
+    importId: b11sxiehnm719v3q
+  betterRolls5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickVersatile:
+      altValue: true
+      value: false
+    quickCharges:
+      value:
+        use: false
+        resource: true
+        quantity: false
+      altValue:
+        use: false
+        resource: true
+        quantity: false
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: false
+      altValue: false
+    quickAttack:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickFlavor:
+      value: true
+      altValue: true
+  magicitems:
+    enabled: true
+    charges: 0
+    chargeType: c1
+    rechargeable: false
+    recharge: 0
+    rechargeType: t2
+    rechargeUnit: ''
+    destroy: false
+    destroyCheck: d1
+    spells: {}
+    feats: {}
+    tables: {}
+    equipped: true
+    attuned: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    sorting: l
+  infusions:
+    maps: []
+    applied: []
+    infused: false
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: >-
+      <p>This small 3-bladed crystalline throwing wedge is made exclusively by
+      thri-kreen in a secret process carefully guarded by them. In their
+      language, it means “rememberer-who-ends-knowledge,” reflecting it ends
+      awareness by killing and remembers to return to its thrower.</p>
+
+      <p>Breakage: 75%</p>
+
+      <p><strong>Special.</strong> Due to its spin it will return to a
+      proficient thrower if it misses.</p>
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  quantity: 1
+  weight:
+    value: 0.25
+    units: lb
+  price:
+    value: 7.5
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: 30
+    long: 90
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: true
+        formula: 1d6[slashing] + @mod
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - fin
+    - lgt
+    - spc
+    - thr
+  proficient: 0
+  unidentified:
+    description: Boomerang
+  type:
+    value: martialR
+    baseItem: ''
+  container: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '30'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  identifier: chatkcha-obsidian
+  attuned: false
+  ammunition: {}
+  magicalBonus: null
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-weapons.Item.iX9FVNTLxg3jbUkt
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411179776
+  modifiedTime: 1781135015819
+  lastModifiedBy: wgCeShTrqHJFBbDr
+folder: 0SRfJ5ygkkNqsonv
+_id: XRzoqizFZwSidya5
+sort: 0
+_key: '!items!XRzoqizFZwSidya5'

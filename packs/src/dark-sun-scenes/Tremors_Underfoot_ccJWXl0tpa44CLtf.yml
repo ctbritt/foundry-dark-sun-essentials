@@ -1,0 +1,1834 @@
+name: Tremors Underfoot
+_id: ccJWXl0tpa44CLtf
+navigation: false
+navName: Desert Hell
+thumb: worlds/Rime-of-the-Frost-Maiden/assets/scenes/ccJWXl0tpa44CLtf-thumb.webp
+width: 4000
+height: 3000
+padding: 0.25
+initial:
+  x: 3298
+  'y': 2204
+  scale: 0.5
+grid:
+  type: 1
+  size: 70
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  darknessLevel: 0.5
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 0.63
+  cycle: true
+  base:
+    hue: 0.07777777777777778
+    intensity: 0.5
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens:
+  - name: Kaine
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/_captain_kaine_strongjaw.token.webp?1721772058363
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/_captain_kaine_strongjaw.token.webp?1721772058363
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 15
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#ff3700'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2730
+    'y': 1400
+    hidden: false
+    elevation: 0
+    _id: HZEBWOwebWS1gSnI
+    delta:
+      _id: qwBSFGoSdkdsTHum
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.HZEBWOwebWS1gSnI.qwBSFGoSdkdsTHum'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.HZEBWOwebWS1gSnI'
+  - name: Cadice
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/cadice_b_rnier.token.webp?1721772389744
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      smarttarget:
+        gmtargetimg: s3/tokens/player_characters/tiuk.token.webp?1721777054491
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 10
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#b128cc'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2590
+    'y': 1610
+    hidden: false
+    elevation: 0
+    _id: gQILDAVcs6rULDe0
+    delta:
+      _id: cydoShS9RQItRYsq
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.gQILDAVcs6rULDe0.cydoShS9RQItRYsq'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.gQILDAVcs6rULDe0'
+  - name: Itilda
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/itilda_the_mutilator_of_manhood.token.webp?1721773665329
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      dnd5e:
+        tokenRing:
+          effects: 1
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      smarttarget:
+        gmtargetimg: s3/tokens/party_of_five.token.webp?1721770534521
+    ring:
+      enabled: true
+      colors:
+        ring: '#04f6f2'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2730
+    'y': 1470
+    hidden: false
+    elevation: 0
+    _id: yiCEiiW7TQxduZDS
+    delta:
+      _id: xW90jF1rIYObtrS2
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.yiCEiiW7TQxduZDS.xW90jF1rIYObtrS2'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.yiCEiiW7TQxduZDS'
+  - name: Rickvon
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 3
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      tokencover:
+        maximumCoverGrant: 1
+      smarttarget:
+        gmtargetimg: s3/tokens/party_of_five.token.webp?1721770534521
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 5
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#cc8028'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2730
+    'y': 1610
+    hidden: false
+    elevation: 0
+    _id: yHycwbQaLMy5TCs4
+    delta:
+      _id: l1SazlraN1Hs3o8F
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.yHycwbQaLMy5TCs4.l1SazlraN1Hs3o8F'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.yHycwbQaLMy5TCs4'
+  - name: Tiuk
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/tiuk.token.webp?1721777054491
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/itilda_the_mutilator_of_manhood.token.webp?1721773665329
+      ATL:
+        originals: {}
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 5
+          combatMoveData: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#b128cc'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2800
+    'y': 1610
+    hidden: false
+    elevation: 0
+    _id: JFWyo952bVRossXg
+    delta:
+      _id: bsp5v6jgpFUzpMa6
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.JFWyo952bVRossXg.bsp5v6jgpFUzpMa6'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.JFWyo952bVRossXg'
+  - name: Hadozee Crew
+    displayName: 0
+    actorLink: false
+    width: 1
+    height: 1
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/crew_member.Avatar.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: -1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: false
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: '#a01f07'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    flags:
+      token-variants:
+        name: null
+      smarttarget:
+        gmtargetimg: s3/tokens/party_of_five.token.webp?1721770534521
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 45
+          combatMoveData: {}
+    actorId: null
+    hidden: false
+    sort: 1
+    _id: x0frRHEVtzsInY7n
+    delta:
+      _id: 3dtD1hYyCu0gX4Jp
+      system:
+        members:
+          - actor: wULCUBqpU0i0GIyB
+            quantity:
+              value: 7
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.x0frRHEVtzsInY7n.3dtD1hYyCu0gX4Jp'
+    x: 2660
+    'y': 1610
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.x0frRHEVtzsInY7n'
+  - name: Party Of Five
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/party_of_five.token.webp?1721770534521
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: null
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.1
+      angle: 360
+      bright: 0
+      color: '#ffffff'
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes:
+      basicSight:
+        range: 60
+        enabled: true
+    flags:
+      wall-height:
+        tokenHeight: 6
+      token-z:
+        zIndex: 0
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: default
+      swarm:
+        isSwarm: false
+        swarmOverPlayers: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: ''
+      tagger: {}
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      core:
+        priority: null
+      perfect-vision:
+        sight:
+          range: null
+        light:
+          resolution: 1
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      elevation-drag-ruler:
+        selectedSpeed: auto
+        hasBonusDash: false
+        hasNimbleness: false
+        hasElementalForm: false
+        hasFreedomOfMovement: false
+        hasIncorporealMovement: false
+        hideSpeedButton: false
+        hideTerrainButton: false
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+      combat-music-master:
+        resource: attributes.hp
+        priority: 10
+        musicList:
+          - - ''
+            - 100
+        turnOnly: false
+      monks-combat-details:
+        displayBarsCombat: null
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        RiderPositioningFlag: RowPlacement
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        GrapplePlacementFlag: RowBelow
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        canbeGrappledFlag: true
+        SelfApplyEffectsFlag: false
+        AutoMountBlackListFlag: ''
+        forMountEffectsFlag: ''
+        CanbePilotedFlag: false
+        UseRidingHeightFlag: true
+        AutoMountWhiteListFlag: ''
+        RidersScaleFlag: 1
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        PilotedbyDefaultFlag: false
+        CheckPilotedCollisionFlag: false
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: 15
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottingMessageFlag: ''
+        RevealwhenSpottedFlag: false
+      tokencover:
+        maximumCoverGrant: 1
+      dnd5e:
+        tokenRing:
+          effects: 1
+      splatter:
+        bloodColor: ''
+    ring:
+      enabled: true
+      colors:
+        ring: '#b128cc'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: TtpoJiv4kYXbGPP1
+    hidden: false
+    sort: 1
+    _id: S0fjYqHyH0SxLpwZ
+    delta:
+      _id: 4OaLqedaegfTHqkv
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!ccJWXl0tpa44CLtf.S0fjYqHyH0SxLpwZ.4OaLqedaegfTHqkv'
+    x: 2730
+    'y': 1890
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!ccJWXl0tpa44CLtf.S0fjYqHyH0SxLpwZ'
+lights: []
+notes:
+  - entryId: DiZ01phCWM1BOqBB
+    fontSize: 20
+    iconSize: 32
+    textAnchor: 1
+    textColor: '#ffffff'
+    x: 50
+    'y': 50
+    text: Dungeon Draw
+    flags: {}
+    _id: ifVCvR1FyF6FZA9x
+    pageId: null
+    elevation: 0
+    sort: 0
+    texture:
+      src: icons/svg/book.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0
+    fontFamily: Signika
+    global: false
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!ccJWXl0tpa44CLtf.ifVCvR1FyF6FZA9x'
+sounds: []
+regions: []
+tiles:
+  - width: 4000
+    height: 3000
+    x: 1050
+    'y': 770
+    rotation: 0
+    elevation: 0
+    texture:
+      src: modules/baileywiki-maps-premium-towns/maps/active-tiles/black-square.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-maps-premium-towns/maps/active-tiles/black-square.png
+      tagger:
+        tags:
+          - unlimited-terrain
+          - background
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+      monks-active-tiles:
+        active: true
+        record: false
+        restriction: all
+        controlled: gm
+        trigger:
+          - ''
+          - dblclick
+        allowpaused: true
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: 0
+        cooldown: null
+        chance: 100
+        fileindex: 2
+        actions:
+          - action: dialog
+            data:
+              dialogtype: custom
+              id: ''
+              title: Unlimited Terrain Tile
+              showto: trigger
+              closeNo: true
+              content: >-
+                This is an unlimited terrain tile. You can change it in multiple
+                ways.
+              file: ''
+              options: ''
+              width: ''
+              height: ''
+              buttons:
+                - id: gv3STThMhLjCH82d
+                  name: Adjust Position
+                  goto: adjust
+                - id: JfhcuSz2gzLirHX6
+                  name: Change Overlay
+                  goto: change
+                - id: G6LXCej40AwKALbd
+                  name: Don't Show Again
+                  goto: deactivate
+              'yes': ''
+              'no': ''
+            id: NtVNt51YKPR6M2Cb
+          - action: anchor
+            data:
+              tag: change
+              stop: true
+            id: eX7Lu6vyv17RJxWm
+          - action: notification
+            data:
+              text: 'PRO TIP: Use Dig Down module to search for "tileable" images!!'
+              type: info
+              showto: gm
+            id: oeNbuwGk8mqeDMDX
+          - action: runmacro
+            data:
+              entity:
+                id: >-
+                  Compendium.baileywiki-nuts-and-bolts.macros.Macro.RmuzIewlAVB0T1JG
+                name: TMFX Terrain Overlay With Filepicker (tagger)
+              args: background
+              runasgm: gm
+            id: IQ6Qwvv5A1jvzjmV
+          - action: anchor
+            data:
+              tag: adjust
+              stop: true
+            id: bsw6IoL7S9q2hldS
+          - action: runmacro
+            data:
+              entity:
+                id: >-
+                  Compendium.baileywiki-nuts-and-bolts.macros.Macro.LFFq0WooZK1W5n20
+                name: MATT-Targeted Scrolling TMFX Controls
+              args: background
+              runasgm: gm
+            id: lgI13aJt1qIBiXPR
+          - action: anchor
+            data:
+              tag: deactivate
+              stop: true
+            id: aYI6z6p9Bt9RixCO
+          - action: activate
+            data:
+              entity: ''
+              collection: tiles
+              activate: deactivate
+            id: 1gKoyUKIbuaGyjDN
+          - action: dialog
+            data:
+              dialogtype: alert
+              id: '12345'
+              title: Deactivate Unlimited Terrain Tile
+              showto: gm
+              closeNo: true
+              content: >-
+                To reactivate this tile, right-click it and use the activation
+                button on the hud.
+              file: ''
+              options: ''
+              width: ''
+              height: ''
+              buttons: []
+              'yes': ''
+              'no': ''
+            id: 8lZIEENHGf1OuTyO
+        files: []
+      levels-3d-preview:
+        model3d: ''
+        dynaMesh: default
+        dynaMeshResolution: 1
+        font: ''
+        gmOnlyInteractive: false
+        displacementMap: ''
+        invertDisplacementMap: false
+        displacementIntensity: 1
+        displacementMatrix: 0,0,1,1
+        enableAnim: true
+        animIndex: 0
+        animSpeed: 1
+        paused: false
+        highlightOnHover: false
+        autoCenter: false
+        autoGround: false
+        tiltX: 0
+        tiltZ: 0
+        depth: 100
+        offset:
+          x: 0
+          z: 0
+          'y': 0
+        imageTexture: ''
+        textureRepeat: 1
+        flipY: false
+        color: '#ffffff'
+        roughness: -0.01
+        metalness: -0.01
+        transparency: -0.01
+        alphaClip: -0.01
+        transmission: -0.01
+        ior: -0.01
+        shading: default
+        sides: default
+        castShadow: true
+        collision: true
+        sight: true
+        cameraCollision: false
+        doorType: '0'
+        doorSound: ''
+        doorState: '0'
+        doorStyle: '0'
+        doorAnimationDuration: 400
+        doorAnimateAngle: 90
+        doorSlidePercent: 50
+        doorGrabTokens: false
+        fillType: stretch
+        enableGravity: none
+        tileScale: 1
+        yScale: 1
+        gap: 0
+        randomRotation: false
+        randomScale: false
+        randomDepth: false
+        randomPosition: false
+        randomColor: false
+        randomSeed: D2YSuzT
+        ParticleType: none
+        enableParticleHidden: false
+        ParticleIntensity: 1
+        ParticleSprite: modules/levels-3d-preview/assets/particles/emberssmall.png
+        ParticleScale: 1
+        ParticleColor: '#ffffff'
+        ParticleColor2: '#ffffff'
+        onAnimation: ''
+        noiseType: none
+        noiseScale: 1
+        noiseHeight: 1
+        noisePersistence: 0.5
+        noiseOctaves: 1
+        noiseLacunarity: 1
+        noiseFlattening: 0
+        noiseExponent: 2
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: base-terrain
+              tmFilterInternalId: Dk3PJ1h8aRgtvaub
+              tmFilterType: sprite
+              tmFilterOwner: cvMfFhYzS8WVOYAy
+              tmParams:
+                filterType: sprite
+                filterId: base-terrain
+                animated:
+                  translationX:
+                    active: false
+                    speed: -0.0000012
+                    animType: move
+                rank: 10000
+                enabled: true
+                repeat: true
+                alphaDiscard: true
+                inverse: true
+                gridPadding: 0
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -1
+                translationY: -1
+                top: true
+                randomized:
+                  active: true
+                  imagePath:
+                    - >-
+                      modules/baileywiki-maps-premium-towns/maps/wilderness/desert/bw_desert_15_tileable.webp
+                  scaleX:
+                    val1: 2
+                    val2: 2
+                    step: 0.1
+                    link: scaleY
+                active: null
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/wilderness/desert/bw_desert_15_tileable.webp
+                scaleX: 2
+                scaleY: 2
+                rotation: 65
+                updateId: Rb8fgtMyk4Avqn7u
+                placeableId: zLwvM2DimFt09L5f
+                filterInternalId: Dk3PJ1h8aRgtvaub
+                filterOwner: cvMfFhYzS8WVOYAy
+                placeableType: Tile
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    sort: 5
+    restrictions:
+      light: false
+      weather: false
+    _id: ho6U9nQTTuXjswy1
+    levels: []
+    _key: '!scenes.tiles!ccJWXl0tpa44CLtf.ho6U9nQTTuXjswy1'
+walls: []
+playlist: cNqa04HTIXl6bbDy
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+folder: beNZN68lHIM2Vtxg
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: 074a5fbef2454afac3f6b55f7de8fdd6af849cc2
+  smalltime:
+    darkness-link: true
+    player-vis: '1'
+    moonlight: true
+  zoom-pan-options:
+    minZoom: null
+    maxZoom: null
+  terrainmapper:
+    backgroundElevation: null
+  wall-height:
+    advancedVision: true
+  token-attacher: {}
+  walledtemplates:
+    version: 0.8.0
+  fxmaster:
+    effects: {}
+  sequencer:
+    effects: []
+  monks-common-display:
+    focus: combat
+_stats:
+  compendiumSource: Compendium.world.dark-sun-scenes.Scene.ccJWXl0tpa44CLtf
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744079048933
+  modifiedTime: 1782140173437
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+active: false
+navOrder: 0
+sort: 0
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!ccJWXl0tpa44CLtf'
+templates: []

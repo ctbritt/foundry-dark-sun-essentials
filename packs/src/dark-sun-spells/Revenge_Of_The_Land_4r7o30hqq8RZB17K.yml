@@ -1,0 +1,189 @@
+name: Revenge Of The Land
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>The life energy of the earth is channeled in translucent arcs of energy
+      that radiate from the seed in the ground at your feet and unerringly seek
+      out defilers before returning to the ground. This spell only affects a
+      creature with at least one point in defiler aura.<br />A defiler that
+      starts its turn within or moves into the spell's radius must make a
+      Constitution save. On a failed save, the defiler takes [[/damage 4d8
+      type=force average=true]]  force damage. Defilers have a penalty to the
+      saving throw equal to their defiler aura points.<br /></p>
+    chat: ''
+  materials:
+    value: a live seed pushed into the ground at your feet
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - concentration
+    - vocal
+    - material
+    - somatic
+  level: 5
+  school: evo
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: minute
+    value: '1'
+  range:
+    units: self
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: radius
+      size: '30'
+      contiguous: false
+  activities:
+    eA8h71rboLWXN8yY:
+      type: save
+      _id: eA8h71rboLWXN8yY
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 8
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: ''
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+  identifier: revenge-of-the-land
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  sourceClass: Druid
+folder: null
+effects: []
+flags:
+  scene-packer:
+    hash: a3eb690a6f7d646f19514259472c39cfd7a5a97c
+    sourceId: Item.5RANHPgFsxNemhO1
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1024881146
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.4r7o30hqq8RZB17K
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749545
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: 4r7o30hqq8RZB17K
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 2700000
+_key: '!items!4r7o30hqq8RZB17K'

@@ -1,0 +1,244 @@
+folder: 8KZYflrewlAKvkkN
+name: Animal Affinity
+type: feat
+_id: MEpN0PbksBAAlJhs
+img: icons/creatures/mammals/ox-bull-horned-glowing-orange.webp
+system:
+  activities:
+    4pwj6J3xQoy5CjOG:
+      type: save
+      _id: 4pwj6J3xQoy5CjOG
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: L1eI3lIsyRk2doH5
+          onSave: false
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts: []
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: wis
+          formula: ''
+      useConditionText: >-
+        "med", "sm", "tiny"].includes(target.traits.size) &&
+        target.abilities.int.value < 4
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      name: ''
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  description:
+    value: >-
+      <p>At 3rd level, you can you can use an Action to attempt to charm a
+      medium size or smaller beast with Intelligence 3 or lower. You must be
+      able to touch and talk to the beast. If your or your companions are
+      fighting the beast, it cannot be charmed. It must pass a Wisdom save or be
+      charmed for 24 hours. The saving throw is 8 + your proficiency bonus +
+      your Wisdom modifier. If you or your companions do anything harmful to the
+      beast, the charm ends. You cannot use this trait again until you complete
+      a long rest.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Animal Affinity
+    img: icons/creatures/mammals/ox-bull-horned-glowing-orange.webp
+    origin: Compendium.world.dark-sun-character-origins.Item.MEpN0PbksBAAlJhs
+    transfer: false
+    _id: L1eI3lIsyRk2doH5
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: 86400
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - charmed
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!MEpN0PbksBAAlJhs.L1eI3lIsyRk2doH5'
+sort: 0
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078786403
+  modifiedTime: 1746114660749
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_key: '!items!MEpN0PbksBAAlJhs'

@@ -1,0 +1,314 @@
+name: Create Food and Water (Dark Sun)
+type: spell
+system:
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create 3 pounds of food and
+      one-and-a-half gallons of water on the ground or in containers within
+      range. The food is bland but nourishing, and spoils if uneaten after 24
+      hours. The water is clean and doesn't go bad.</p></div>
+    chat: ''
+  source:
+    custom: ''
+    book: PHB
+    page: '229'
+    license: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: space
+      count: '0'
+      choice: false
+    template:
+      units: any
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 3
+  school: con
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: create-food-and-water-dark-sun
+img: icons/magic/water/water-hand.webp
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  plutonium:
+    page: spells.html
+    source: PHB
+    hash: create%20food%20and%20water_phb
+    propDroppable: spell
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    onUseMacroName: '[postActiveEffects]ItemMacro'
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  walledtemplates:
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    wallsBlock: unwalled
+    wallRestriction: light
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+    snapCenter: false
+    snapCorner: false
+    snapSideMidpoint: false
+  dae:
+    macro:
+      name: Create Food and Water (Dark Sun)
+      img: icons/magic/water/water-hand.webp
+      type: script
+      scope: global
+      command: |-
+        // Create Food and Water — Dark Sun
+        // MidiQOL Item Macro | After Active Effects
+        if (workflow.macroPass !== "postActiveEffects") return;
+
+        const pack = game.packs.get("dnd-players-handbook.equipment");
+        const caster = workflow.actor;
+        const PINTS_PER_SKIN = 4;
+        const TOTAL_PINTS = 16; // 2 gallons
+
+        // Target selection — caster or party
+        let target = caster;
+        const party = game.settings.get("dnd5e", "primaryParty")?.actor;
+        if (party) {
+          const buttons = [
+            [caster.name, "self", { image: caster.img }],
+            [party.name + " (Party)", "party", { image: party.img }]
+          ];
+          const choice = await chrisPremades.utils.dialogUtils.buttonDialog(
+            "Create Food and Water", "Add provisions to:", buttons
+          );
+          if (choice === false) return;
+          if (choice === "party") target = party;
+        }
+
+        // ── 3 Rations ──────────────────────────────────
+        let [rations] = await pack.getDocuments({ name: "Rations" });
+        let rationData = game.items.fromCompendium(rations);
+        let existingRations = target.items.getName("Rations");
+        if (existingRations) {
+          await existingRations.update({ "system.quantity": existingRations.system.quantity + 3 });
+        } else {
+          rationData.system.quantity = 3;
+          await Item.implementation.create(rationData, { parent: target });
+        }
+
+        // ── Water (16 pints) ───────────────────────────
+        let [waterTemplate] = await pack.getDocuments({ name: "Water (Pint)" });
+        let remaining = TOTAL_PINTS;
+
+        // Fill waterskins on a given actor, return leftover pints
+        async function fillWaterskins(actor, pints) {
+          const skins = actor.items.filter(i => i.name === "Waterskin");
+          for (const skin of skins) {
+            if (pints <= 0) break;
+            // Check how much water is already inside this waterskin
+            const waterInside = actor.items.find(
+              i => i.name === "Water (Pint)" && i.system.container === skin.id
+            );
+            const currentPints = waterInside?.system.quantity ?? 0;
+            const capacity = PINTS_PER_SKIN - currentPints;
+            if (capacity <= 0) continue;
+            const toAdd = Math.min(capacity, pints);
+            if (waterInside) {
+              await waterInside.update({ "system.quantity": currentPints + toAdd });
+            } else {
+              let waterData = game.items.fromCompendium(waterTemplate);
+              waterData.system.quantity = toAdd;
+              waterData.system.container = skin.id;
+              await Item.implementation.create(waterData, { parent: actor });
+            }
+            pints -= toAdd;
+          }
+          return pints;
+        }
+
+        // 1. Fill waterskins on the target actor
+        remaining = await fillWaterskins(target, remaining);
+
+        // 2. Overflow → fill waterskins on party actor
+        if (remaining > 0 && party && target.id !== party.id) {
+          remaining = await fillWaterskins(party, remaining);
+        }
+
+        // 3. Any leftover pints go loose on the party (or target if no party)
+        if (remaining > 0) {
+          const overflow = (party && target.id !== party.id) ? party : target;
+          let existingLoose = overflow.items.find(
+            i => i.name === "Water (Pint)" && !i.system.container
+          );
+          if (existingLoose) {
+            await existingLoose.update({ "system.quantity": existingLoose.system.quantity + remaining });
+          } else {
+            let waterData = game.items.fromCompendium(waterTemplate);
+            waterData.system.quantity = remaining;
+            await Item.implementation.create(waterData, { parent: overflow });
+          }
+          ui.notifications.warn(
+            `${remaining} pints of water couldn't fit in waterskins — added loose to ${overflow.name}`
+          );
+        }
+      author: wgCeShTrqHJFBbDr
+      ownership:
+        default: 3
+      _id: null
+      folder: null
+      sort: 0
+      flags: {}
+      _stats:
+        coreVersion: '13.351'
+        systemId: dnd5e
+        systemVersion: 5.2.5
+        lastModifiedBy: null
+        compendiumSource: null
+        duplicateSource: null
+        exportSource: null
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1563515213
+effects: []
+folder: null
+sort: 2500000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1754411092228
+  modifiedTime: 1784910749580
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: KfyHnAocb0A2DV7I
+_key: '!items!KfyHnAocb0A2DV7I'

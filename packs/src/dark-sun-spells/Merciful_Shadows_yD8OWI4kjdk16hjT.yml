@@ -1,0 +1,245 @@
+_id: yD8OWI4kjdk16hjT
+type: spell
+system:
+  activities:
+    utilityMerciShad:
+      type: utility
+      _id: utilityMerciShad
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p class="p1"><span class="s16">This</span> <span class="s16">spell</span>
+      <span class="s16">cloaks</span> <span class="s16">the</span> <span
+      class="s16">target</span> <span class="s16">in</span> <span
+      class="s16">magical</span> <span class="s16">shade, </span>which provides
+      protection against the scorching <span class="s3">sun.</span> <span
+      class="s3">Once</span> <span class="s3">cast,</span> <span
+      class="s3">the</span> <span class="s3">target</span> <span
+      class="s3">gains</span> <span class="s3">advantage</span> <span
+      class="s3">on </span>saving throws made to resist exhaustion caused by
+      extreme heat.</p>
+
+      <p class="p5"><span class="s16">Their</span> <span
+      class="s16">water</span> <span class="s16">requirements</span> <span
+      class="s16">are</span> <span class="s16">also</span> <span
+      class="s16">halved</span> <span class="s16">for </span><span
+      class="s12">the</span> <span class="s12">duration.</span> <span
+      class="s12">The</span> <span class="s12">individual</span> <span
+      class="s12">so</span> <span class="s12">protected </span><span
+      class="s17">appears</span> <span class="s17">normal</span> <span
+      class="s17">except</span> <span class="s17">that</span> <span
+      class="s17">he</span> <span class="s17">doesn't</span> <span
+      class="s17">sweat</span> <span class="s17">as </span><span
+      class="s16">much</span> <span class="s16">as expected and his
+      coloration</span> <span class="s16">is a bit </span><span
+      class="s3">gray.</span></p>
+
+      <p class="p6"><span class="s1"><b>At</b></span> <span
+      class="s1"><b>Higher</b></span> <span class="s1"><b>Levels:</b></span>
+      <span class="s12">When</span> <span class="s12">you</span> <span
+      class="s12">cast</span> <span class="s12">this</span> <span
+      class="s12">spell</span> <span class="s12">using </span><span
+      class="s17">a</span> <span class="s17">spell</span> <span
+      class="s17">slot</span> <span class="s17">of</span> <span
+      class="s17">2nd</span> <span class="s17">level</span> <span
+      class="s17">or</span> <span class="s17">higher,</span> <span
+      class="s17">you</span> <span class="s17">can</span> <span
+      class="s17">target </span><span class="s12">one additional target for each
+      spell slot level above 1st.</span></p>
+
+      </div>
+    chat: ''
+  identifier: merciful-shadows
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    value: '24'
+    units: hour
+  level: 1
+  materials:
+    value: a piece of palm leaf
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+  range:
+    units: touch
+  school: abj
+  target:
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+effects: []
+name: Merciful Shadows
+flags:
+  ddbimporter:
+    id: 22730739
+    definitionId: 2768299
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: true
+    originalName: Merciful Shadows
+    sources: []
+    tags:
+      - Environment
+    version: 6.6.34
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: false
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+  midi-qol:
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -457965577
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/ddb-images/cache/spell/school/abjuration.webp
+folder: dldiEaN7fu6uAw2m
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766653986569
+  modifiedTime: 1784910749652
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!yD8OWI4kjdk16hjT'

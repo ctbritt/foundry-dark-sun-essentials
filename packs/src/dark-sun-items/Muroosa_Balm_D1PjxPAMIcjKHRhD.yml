@@ -1,0 +1,126 @@
+folder: Ob8eTVGB5n6ERlyk
+name: Muroosa Balm
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Common Remedies
+      instruction: >-
+        <p>This paste made from the muroosa bush is known to help prevent
+        sunburn, but it is also a fire retardant. After spending 1 minute
+        applying a quarter pint of muroosa balm to your skin, you gain
+        resistance against fire damage for 1 hour.</p><p>Ingredients: Flame
+        Lilly, Muroosa twigs</p>
+      currency:
+        name: gp
+        value: 25
+      required:
+        '1':
+          key:
+            id: ZZqVDTOWssrEhOEP
+            uuid: Compendium.shareddata.ddb-items.ZZqVDTOWssrEhOEP
+            img: icons/containers/bags/pouch-leather-green.webp
+            type: Item
+            name: Herbalism Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: KxyuMr06YyMT9uVI
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.KxyuMr06YyMT9uVI
+            img: icons/consumables/plants/flax-leaves-spiked-bundle-orange.webp
+            type: Item
+            name: Flame Lily
+            quantity: 1
+            itemType: loot
+        '2':
+          key:
+            id: sODZElZQJ8PiIvH1
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.sODZElZQJ8PiIvH1
+            img: icons/consumables/plants/fern-sword-green.webp
+            type: Item
+            name: Muroosa Twigs
+            quantity: 1
+            itemType: loot
+      output:
+        '1':
+          key:
+            id: kImRIodasqHHp4W4
+            uuid: Item.kImRIodasqHHp4W4
+            img: icons/tools/laboratory/bowl-herbs-green.webp
+            type: Item
+            name: Muroosa Balm
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: med
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: d09aa89b89503b34832638c552489808e30d0095
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: muroosa-balm
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.D1PjxPAMIcjKHRhD
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114881518
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: D1PjxPAMIcjKHRhD
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!D1PjxPAMIcjKHRhD'

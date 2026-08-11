@@ -1,0 +1,153 @@
+name: Thri-kreen (Dark Sun)
+type: race
+system:
+  description:
+    value: "<p><strong>Age. </strong>A thri-kreen is born from an egg and becomes fully mature at 6 years. They demonstrate no effect of aging until they reach the end of their life cycle around 30 years. Sensing their death, such thri-kreen go on a final hunt.\_</p><p><strong>Alignment. </strong>Most Thri‐kreen are chaotic, acting in whatever fashion benefits the pack mentality, and this rarely leads them to philosophies of good and evil.</p><p><strong>Size. </strong>Thri-kreen height can range from 4 and a half to 7 feet tall and weight\_can range from\_100 to 375 lbs. You are Medium or Small. You choose the size when you select this race.</p><p><strong>Speed. </strong>Your base walking speed is 35 feet if you are Medium, 30 if you are Small.</p><p><strong>Creature Type. </strong>You area Monstrosity.</p><p><strong>@Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{Darkvision}. </strong>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p><p><strong>Chameleon Carapace. </strong>While you aren’t wearing armor, your carapace gives you a base Armor Class of 13 + your Dexterity modifier.\_You can wear armor but it must be specially made or altered to fit your frame. Such armor would cost twice the amount it normally would.\_</p><p>As an action, if you are unarmored, you can change the color of your carapace to match the color and texture of your surroundings, giving you advantage on Dexterity (@Compendium[dnd5e.rules.0AGfrwZRzSG0vNKb]{Stealth})\_checks made to hide in those surroundings.</p><p><strong>Sleepless. </strong>You do not require sleep and magic can’t put you to sleep. However,\_ you must still refrain from strenuous activity to gain the benefit of the rest.</p><p><strong>Secondary Arms. </strong>You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property.</p><p><strong>Natural Weapons. </strong>Your maw and claws can be used to\_make unarmed strikes.\_If you hit with one of your claws,\_you deal\_[[/damage 1d6 + @abilities.str.mod type=slashing average=true format=long]], instead of the bludgeoning damage normal for an unarmed strike. If you hit with your bite, you [[/damage 1d4 + @abilities.str.mod average=true type=piercing format=long]], instead of the bludgeoning damage normal for an unarmed strike.</p><p>Starting at 5th level,\_any target you hit with your bite must\_make a [[/save con dc=@abilities.con.dc format=long]].\_A creature\_becomes @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{&amp;Reference[poisoned]} for 1 minute on a failed save, and doesn't become @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{&amp;Reference[poisoned]} on a successful one.\_The @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{&amp;Reference[poisoned]} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If they succeed, they are immune to this effect for 24 hours.</p><p><strong>Leap. </strong>Whenever you make a long or high jump, you can roll a d8 and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal.</p><p><strong>Thri-kreen Physiology. </strong>You require half as much water as other races, needing only half a gallon of water per day, or one gallon per day if the weather is hot.</p><p><strong>Languages. </strong>You can speak Thri-Kreen and Common. Thri-Kreen is a language composed of clicks and whirring, antennae movements, and pheromone emissions that non-kreen find too difficult to interpret and impossible to duplicate. When you speak other languages, you use a high-pitched voice.</p><p></p><div><div class=\"rd__b  rd__b--0\"><div class=\"rd__b  rd__b--1\"><div class=\"rd__b-special rd__b-inset \"><h4><strong>Roleplaying a Thri-kreen</strong></h4><p><span class=\"rd__h-toggle ml-2 clickable no-select\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></p><p>You tend to rely on your natural attacks and special kreen weapons. Everything you kill is a potential dinner. You have a strong need for a party leader – obedience to this leader in the party is important to you. If you seem to be the most powerful and capable, then you will assume leadership; if someone challenges your authority then you will wish to test whether they are in fact stronger than you. It is not a question of vanity; you won’t want to fight to the death, but merely to ascertain who is worthy to lead the party. You do not have the focus of a dwarf to complete a project, but you would give your life to protect your companions. If you did not trust and honor them as your own family, then you would not travel with them and work together with them. You do not understand the concept of sleep. It disturbs you that your dra (sentient meat creatures like humans) companions lie &amp;Reference[unconscious] for a third of their lifetimes. Spend your rest periods watching them in this state. You own only what you can carry, caring little for money or other items that other races consider as treasure. Your philosophy of ownership sometimes leads you into conflict with presumptuous dra who think they can own buildings, land, and even whole herds of carru!</p></div></div></div></div><h3>Thri-kreen names</h3><p>The Kreen language is very different from those of the other intelligent races. They have no lips or tongues, and so cannot make the same sounds humanoids make. Kreen language is made up of clicks, pops, or grinding noises. They do not distinguish male and female names.</p><p><strong>Names:</strong> Cha’ka, Chuka-tet, Drasna, Drik-chkit, Hakka, Ka’cha, Ka’tho, Klik-chaka’da, Lakta-cho, Qhak’cha, Qhik-ik-cha, Sa’Relka, T’Chai, Tak-tha.</p>"
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+  advancement:
+    - _id: sQpeLnevrborVvMl
+      type: Size
+      configuration:
+        sizes:
+          - med
+          - sm
+      level: 0
+      value:
+        size: med
+    - _id: kwc8uP0UGaAsMd2N
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool: []
+      value:
+        chosen:
+          - languages:common
+      level: 0
+      title: Languages
+      icon: null
+      hint: Choose Common and Thri-Kreen (add manually)
+    - _id: 1V2iFslMdmIIYQwT
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.mSRBhRPvqwY4WygP
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.kRlbN4A4886DT64W
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.bzJrxxUVTcPG5VtF
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.yyVO1YQHRUyTAmO6
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.CgagqQb8p5bKfC4a
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.Qm2Njfcfp3JgV8sw
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.3fWyedsIcbRQDJYF
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.VgEZcWKoRrxDrye0
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+    - _id: noFIH6fusXgLxsHP
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.CgagqQb8p5bKfC4a
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: ''
+      icon: null
+  movement:
+    burrow: ''
+    climb: ''
+    fly: ''
+    swim: ''
+    walk: 30
+    units: ft
+    hover: false
+  senses:
+    darkvision: 60
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: monstrosity
+    custom: ''
+    subtype: thri-kreen
+  identifier: athas-thri-kreen
+flags:
+  ddbimporter:
+    type: race
+    entityRaceId: 1000158
+    version: 3.7.14
+    sourceId: -1
+    baseName: Thri-kreen (Dark Sun/Spelljammer)
+    baseRaceId: 1000158
+    baseRaceName: Thri-kreen (Dark Sun/Spelljammer)
+    fullName: Thri-kreen (Dark Sun/Spelljammer)
+    subRaceShortName: null
+    isHomebrew: true
+    isLegacy: false
+    isSubRace: false
+    moreDetailsUrl: /races/1000158-thri-kreen-dark-sun-spelljammer
+    featIds: []
+    portraitAvatarUrl: >-
+      https://www.dndbeyond.com/avatars/25905/689/637886487071887666.png?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+    largeAvatarUrl: >-
+      https://www.dndbeyond.com/avatars/25905/698/637886487599247025.png?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+  obsidian:
+    source:
+      type: race
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: >-
+  https://www.dndbeyond.com/avatars/25905/689/637886487071887666.png?width=1000&height=1000&fit=bounds&quality=95&auto=webp
+effects: []
+_id: 6fv3P7zjQwNEO6Lj
+folder: l7gx9rg5OR68wtpF
+sort: 900000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.vMUiSZV4WNS6lQZV.Item.jmV7qB8VNTjnRXjW
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996201
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!6fv3P7zjQwNEO6Lj'

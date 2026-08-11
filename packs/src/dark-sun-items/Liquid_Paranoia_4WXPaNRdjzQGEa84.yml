@@ -1,0 +1,126 @@
+folder: QYufUtCWt2VF1PrB
+name: Liquid Paranoia
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      instruction: >-
+        <p>A creature who ingests this poison is inflicted with the frightened
+        condition, with the source of fear being the next humanoid it sees
+        within 5 minutes of ingestion. The creature must make a DC 15 Wisdom
+        saving throw, on a failed save the fear lasts for 1 hour or half as long
+        on a success.</p><p>Type: Ingested</p><p>Ingredients: Moonstalker</p>
+      currency:
+        name: gp
+        value: 25
+      folder: Common Poisons
+      required:
+        '1':
+          key:
+            id: k5CAeSs515lTeOw9
+            uuid: Compendium.shareddata.ddb-items.k5CAeSs515lTeOw9
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: XsePsNGNXztjGhqt
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.XsePsNGNXztjGhqt
+            img: icons/commodities/flowers/dandelion-pod-blue.webp
+            type: Item
+            name: Moonstalker
+            quantity: 1
+            itemType: loot
+        '2':
+          key:
+            id: KvTE3mcif3xyes2V
+            uuid: Compendium.shareddata.ddb-items.KvTE3mcif3xyes2V
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: backpack
+      output:
+        '1':
+          key:
+            id: it2rFB0l1YwZPU5i
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-poisons.it2rFB0l1YwZPU5i
+            img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+            type: Item
+            name: Liquid Paranoia
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 10
+                  uuid: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+            hits: 1
+      macro: ''
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: 4a6aaeda72d14cbc44ea34381a70cd9ebe994cbd
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: liquid-paranoia
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.4WXPaNRdjzQGEa84
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114880552
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: 4WXPaNRdjzQGEa84
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!4WXPaNRdjzQGEa84'

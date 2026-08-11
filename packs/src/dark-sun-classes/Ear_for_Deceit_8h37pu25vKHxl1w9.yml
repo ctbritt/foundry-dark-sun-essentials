@@ -1,0 +1,312 @@
+_id: 8h37pu25vKHxl1w9
+name: Ear for Deceit
+type: feat
+effects: []
+system:
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionReason: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>When you choose this archetype at 3rd level, you develop a talent for
+      picking out lies. Whenever you make a Wisdom (Insight) check to determine
+      whether a creature is lying, treat a roll of 7 or lower on the d20 as an
+      8.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      Whenever you make an Insight check to determine whether a creature is
+      lying, treat a roll of 7 or lower on the d20 as an 8.
+
+      </div>
+  identifier: ear-for-deceit
+  source:
+    book: XGtE
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 734
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Ear for Deceit
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 100
+      featureType: 1
+      class: Rogue
+      classId: 111
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Rogue
+    classId: 12
+    subClass: Inquisitive
+    subClassId: 111
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Ear for Deceit
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midi-qol:
+    effectActivation: false
+    onUseMacroName: '[postActiveEffects]ItemMacro'
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    rollOther: false
+    critOther: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    offHandWeapon: false
+    ignoreTotalCover: false
+  itemacro:
+    macro:
+      _id: null
+      name: Ear for Deceit
+      type: script
+      author: Tyd5yiqWrRZMvG30
+      img: icons/svg/dice-target.svg
+      scope: global
+      command: >-
+        async function wait(ms) { return new Promise(resolve => {
+        setTimeout(resolve, ms); }); }
+
+        const lastArg = args[args.length - 1];
+
+        const version = Math.floor(game.version);
+
+        let tactor;
+
+        if (lastArg.tokenId) tactor = canvas.tokens.get(lastArg.tokenId).actor;
+
+        else tactor = game.actors.get(lastArg.actorId);
+
+        const playerSkill = "ins";
+
+        const itemD = lastArg.item;
+
+
+        if (args[0].tag === "OnUse") {
+            let choice = false;
+            await new Dialog({
+                title: itemD.name,
+                content: `${CONFIG.DND5E.skills[playerSkill]} Skill Check`,
+                buttons: {
+                    advantage: { label: "Advantage", callback: () => choice = "adv" },
+                    normal: { label: "Normal", callback: () => choice = "norm" },
+                    disadvantage: { label: "Disadvantage", callback: () => choice = "dis" }
+                },
+                default: "norm",
+                close: async (html) => {
+                    if (!choice) return;
+                    let advChoice = { chatMessage: false, fastForward: true };
+                    if (choice === "adv") advChoice["advantage"] = true;
+                    else if (choice === "dis") advChoice["disadvantage"] = true;
+                    const playerCheck = await MidiQOL.socket().executeAsGM("rollAbility", { request: "skill", targetUuid: tactor.uuid, ability: playerSkill, options: advChoice });
+                    await game.dice3d?.showForRoll(playerCheck);
+                    await updateChat(playerCheck, choice);
+                    return;
+                }
+            }).render(true);
+            async function updateChat(playerCheck, choice) {
+                let rollAdv = choice === "adv" ? " advantage" : choice === "dis" ? " disadvantage" : "";
+                let playerRoll = playerCheck.terms[0].results.reduce((acc, item) => acc += `<li class="roll die d20${rollAdv}${item.active ? "" : " hidden"}">${item.result}</li>`, ``);
+                let rollResults = `<div class="dice-roll"><div class="dice-result"><div class="dice-formula">${playerCheck.formula}</div><div class="dice-tooltip"><section class="tooltip-part"><div class="dice"><span class="part-formula">${playerCheck.formula}</span><span class="part-total">${playerCheck.total}</span></header><ol class="dice-rolls">${playerRoll}</ol></div></section></div><h4 class="dice-total">${Math.max(8, playerCheck.total)}</h4></div></div>`;
+                let targetInfo = `<div class="midi-qol-nobox midi-qol-bigger-text">${rollResults}</div>`;
+                let chatMessage = await game.messages.get(lastArg.itemCardId);
+                let content = await duplicate((version > 9 ? chatMessage.content : chatMessage.data.content));
+                let searchString = /<div class="midi-qol-hits-display">[\s\S]*<div class="end-midi-qol-hits-display">/g;
+                let replaceString = `<div class="midi-qol-hits-display"><div class="end-midi-qol-hits-display">${targetInfo}`;
+                content = await content.replace(searchString, replaceString);
+                await chatMessage.update({ content: content });
+                await ui.chat.scrollBottom();
+            }
+        }
+      folder: null
+      sort: 0
+      permission:
+        default: 0
+      flags: {}
+  custom-character-sheet-sections:
+    sectionName: ''
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  scene-packer:
+    hash: a2c82b1e1e66371dd3794e5b0a1bfd6530a6d1d5
+    sourceId: Item.BisyKhfolbNw2So9
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+img: icons/magic/symbols/runes-triangle-orange-purple.webp
+folder: q8k0E01OARsBkmBB
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998483
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!8h37pu25vKHxl1w9'

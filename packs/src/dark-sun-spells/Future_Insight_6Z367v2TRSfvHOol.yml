@@ -1,0 +1,327 @@
+name: Future Insight
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>Your roll 3d4 or 1d12 (your choice) and record the results. During the
+      duration, you can add or subtract the dice you rolled from any attack
+      roll, saving throw, or ability check made by a creature within 60 feet of
+      you, until the dice are exhausted or the spell ends. You must expend the
+      die after the roll is made, but before you know the outcome of the
+      roll.</p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - somatic
+    - psionic
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: minute
+    value: '10'
+  range:
+    units: ft
+    special: ''
+    value: '60'
+  level: 1
+  school: psi
+  target:
+    template:
+      type: ''
+      contiguous: false
+      units: ft
+      size: ''
+      count: ''
+    affects:
+      choice: false
+      count: ''
+      type: ''
+  activities:
+    8T2pIuY9Vlew5y8V:
+      type: utility
+      _id: 8T2pIuY9Vlew5y8V
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Wcn6z8X5WOsMJY7l
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: true
+        name: Roll 3d4
+        formula: 3d4
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: Roll 3d4
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+    XNJqUglR8750wl9j:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Wcn6z8X5WOsMJY7l
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: true
+        formula: 1d12
+        name: Roll 1d12
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: Roll 1d12
+      _id: XNJqUglR8750wl9j
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: future-insight
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+_id: 6Z367v2TRSfvHOol
+effects:
+  - name: Future Insight
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.6Z367v2TRSfvHOol
+    transfer: false
+    _id: Wcn6z8X5WOsMJY7l
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>Your roll 3d4 or 1d12 (your choice) and record the results. During the
+      duration, you can add or subtract the dice you rolled from any attack
+      roll, saving throw, or ability check made by a creature within 60 feet of
+      you, until the dice are exhausted or the spell ends. You must expend the
+      die after the roll is made, but before you know the outcome of the
+      roll.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!6Z367v2TRSfvHOol.Wcn6z8X5WOsMJY7l'
+folder: null
+flags:
+  scene-packer:
+    hash: c83e088f9eca063f760cee778f1e8f90b71a19f4
+    sourceId: Item.6Z367v2TRSfvHOol
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1982346051
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.6Z367v2TRSfvHOol
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749551
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 400000
+_key: '!items!6Z367v2TRSfvHOol'

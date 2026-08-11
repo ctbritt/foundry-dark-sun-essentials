@@ -1,0 +1,237 @@
+folder: xGCtrTsIcnQYzxRY
+name: Splashbow
+type: weapon
+_id: hiHH9v15zR9ppxIS
+img: systems/dnd5e/icons/svg/items/weapon.svg
+system:
+  description:
+    value: >-
+      <p>This exotic weapon looks like a misshapen crossbow, only three feet
+      long from bow to stock, but with a horizontal bow nearly five feet wide.
+      Rather than bolts, the splashbow fires hinged pelotas, which are filled
+      with splash<span class="s1">–</span>globes of acid, alchemical fire, or
+      contact poisons. Splash<span class="s1">–</span>globes burst on impact,
+      functioning as an acid flask, alchemist’s fire, or contact poison
+      depending on the ammunition. The splashbow takes a full round to draw and
+      load, assuming that the hinged pelotas have already been prepared.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 60
+    units: lb
+  price:
+    value: 300
+    denomination: ct
+  rarity: uncommon
+  attunement: ''
+  attuned: false
+  equipped: false
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ''
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: martialR
+    baseItem: ''
+  magicalBonus: null
+  properties:
+    - spc
+    - amm
+  proficient: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: special
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: splashbow
+  ammunition: {}
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: fb392682989de76605c72e939a481b6526a245f1
+  LocknKey:
+    PickPocketDCFlag: '0'
+  magicitems:
+    enabled: false
+    default: ''
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.hiHH9v15zR9ppxIS
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078821239
+  modifiedTime: 1746114802248
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!hiHH9v15zR9ppxIS'

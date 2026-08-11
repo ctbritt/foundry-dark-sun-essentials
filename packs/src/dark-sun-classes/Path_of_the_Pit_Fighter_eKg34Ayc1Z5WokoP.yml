@@ -1,0 +1,147 @@
+folder: RXRG20ZAAdv1ebVh
+name: Path of the Pit Fighter
+type: subclass
+flags:
+  beavers-crafting:
+    subtype: ''
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: 06ec54c2b72acd8599a0b3aecc5c6a9bca02383d
+  crux:
+    trayVisibility: default
+img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
+system:
+  description:
+    value: >-
+      <h2>PATH OF THE PIT FIGHTER</h2><p>Pit fighters tend to be some of the
+      strongest, toughest, and most dangerous adversaries in the arena. Battling
+      for survival has been the only constant in their violent lives; they have
+      little to lose or gain except their lives. Usually regarded as property to
+      be bought and sold, these brutal warriors have nothing to fear and always
+      lunge into battle.</p><h3>BRAWLER</h3><p>When you choose this path at 3rd
+      level, you gain several benefits that make you more effective in unarmed
+      combat.</p><ul><li>You can roll a d4 in place of the normal damage of your
+      unarmed strike. This die improves as you gain barbarian levels, increasing
+      at 6th level (d6), 12th level (d8), and 18th level (d10).</li><li>When you
+      use the Attack action to make an unarmed strike or attempt a grapple, you
+      can make one unarmed strike as a bonus action.</li></ul><h3>RECKLESS
+      ABANDON</h3><p>Starting at 6th level, when you use Reckless Attack while
+      raging, you also gain temporary hit points equal to your Constitution
+      modifier (minimum of 1). They vanish if any remain when your rage
+      ends.</p><h3>RAGING CHARGE</h3><p>Beginning at 10th level, you can take
+      the Dash action as a bonus action while raging.</p><h3>EYE FOR AN
+      EYE</h3><p>Starting at 14th level, when you take damage from a creature
+      within 5 feet of you, you can use your reaction to make an unarmed attack
+      against that creature. You must have a free hand.</p>
+    chat: ''
+  identifier: path-of-the-pitfighter
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement:
+    - _id: GWpG5w0x9RIRsGcV
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.dark-sun-classes.Item.4j8Mqj4mRowhAMc4
+            optional: false
+          - uuid: Compendium.world.dark-sun-classes.Item.TMSEBK3jzbwfWZer
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: NqEH4mefBUZfWBmv
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-class-features.Item.8G6cdn7nnPPeNuZx
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: ''
+      hint: ''
+    - _id: xkVbF9MuwtpJCAp6
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.dark-sun-classes.Item.vQFC4tMSECjsd6Af
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: ''
+      hint: ''
+    - _id: MPBy1JiAyJq8rcbA
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.world.dark-sun-classes.Item.YGxOvZy8GKUfbtAn
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: ''
+      hint: ''
+    - _id: ViwQrALII3XtqA4G
+      type: ScaleValue
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '3':
+            number: 1
+            faces: 4
+            modifiers: []
+          '6':
+            number: 1
+            faces: 6
+            modifiers: []
+          '12':
+            number: 1
+            faces: 8
+            modifiers: []
+          '18':
+            number: 1
+            faces: 10
+            modifiers: []
+      value: {}
+      title: Unarmed Strike Damage
+      hint: ''
+  classIdentifier: barbarian
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: ''
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.eKg34Ayc1Z5WokoP
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1746114597614
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: eKg34Ayc1Z5WokoP
+sort: 0
+_key: '!items!eKg34Ayc1Z5WokoP'

@@ -1,0 +1,200 @@
+_id: S0rdhtVLHdPm0rIs
+name: Telekinetic Fling
+type: spell
+system:
+  source:
+    custom: ''
+    book: XUA25P
+    page: '11'
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You brandish the ammunition used to cast
+      this spell and fire it at a creature within range using psionic energy.
+      Make a ranged spell attack against the target. On a hit, the target takes
+      [[/damage 1d10 type=force]] damage, and the ammunition is
+      destroyed.</p></div><div class="rd__b  rd__b--3"><p></p><div
+      data-roll-name-ancestor="Cantrip Upgrade" class="rd__b  rd__b--3"><p><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Cantrip Upgrade.</span></span> The damage
+      increases by [[/r 1d10]] when you reach levels 5 ([[/r 2d10]]), 11 ([[/r
+      3d10]]), and 17 ([[/r 4d10]]).</p></div></div>
+    chat: ''
+  level: 0
+  school: evo
+  properties:
+    - vocal
+    - material
+    - psi
+  materials:
+    value: an Arrow, Bolt, Bullet, or Needle worth at least 1 CP
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: always
+    prepared: true
+  activities:
+    t63S1potBv7l7ukq:
+      _id: t63S1potBv7l7ukq
+      type: attack
+      name: ''
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical: {}
+        flat: false
+        type:
+          value: ranged
+      damage:
+        critical: {}
+        includeBase: true
+        parts:
+          - types:
+              - force
+            number: 1
+            denomination: 10
+            bonus: ''
+            scaling:
+              mode: whole
+              number: 1
+            custom:
+              enabled: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  identifier: telekinetic-fling
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/fire/projectile-fireball-orange-yellow.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XUA2025Psion
+    hash: telekinetic%20fling_xua2025psion
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 868824696
+effects: []
+folder: mvNUawDBqd1DJYG3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411018787
+  modifiedTime: 1784910749601
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!S0rdhtVLHdPm0rIs'

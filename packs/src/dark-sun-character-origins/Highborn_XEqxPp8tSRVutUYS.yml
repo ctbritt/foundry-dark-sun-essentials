@@ -1,0 +1,156 @@
+folder: 3ceHqueQSXMSDgbA
+name: Highborn
+type: background
+img: icons/commodities/treasure/statue-gold-laurel-wreath.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[cha], &amp;Reference[int],
+      &amp;Reference[str]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[per], and one from among &amp;Reference[dec],
+      &amp;Reference[his], and
+      &amp;Reference[itm]</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Literacy:</strong> You can read and write any
+      language you can speak</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled0000]{Skilled} or
+      @UUID[Compendium.shareddata.ddb-feats.lvXtNoJ2xt9POm3q]{Initiate
+      (Psionic)}</p><p><strong>Equipment:</strong> A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesFine]{Fine
+      Clothes}, a signet ring, a scroll of pedigree, and a belt
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 150 ceramic pieces.</p><p><strong>Race Restriction:</strong>
+      Only humans can select this background</p><p><strong>Suggested
+      Characteristics:</strong> As a member of the nobility, you were born into
+      a life of wealth, power, and privilege. You carry a noble title and your
+      family owns land and water rights as well as a sizable force of slave
+      laborers, soldiers, and gladiators. Your power and influence are rivaled
+      only by the highest ranking templars and heads of merchant dynasties. You
+      are also one of the privileged few who are legally permitted to read and
+      write.</p>
+    chat: ''
+  identifier: athas-highborn
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '285'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: NTdCjUC4JsgJIsUO
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine
+      requiresProficiency: false
+      _id: I6kvIpcHawNIIjqp
+      group: ''
+      sort: 200000
+    - _id: L8mJk5dHqFvYMbEy
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: OFYaReuXHnd397Tc
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - con
+          - wis
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          cha: 2
+          int: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: lEJggLRLxcKgyP6A
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:his
+              - skills:itm
+        grants:
+          - skills:per
+        mode: default
+      value:
+        chosen:
+          - skills:per
+          - skills:his
+          - languages:standard:elvish
+      level: 0
+      title: Proficiencies
+      hint: >-
+        Your background grants you proficiency in Persuasion, one skill from
+        Deception/History/Intimidation, and one language. You can read and write
+        all languages you speak.
+    - _id: onU3BAl3nm1bobpM
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.gso4BrUPEMykqN06
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '150'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.XEqxPp8tSRVutUYS
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717982710
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: XEqxPp8tSRVutUYS
+sort: 268750
+_key: '!items!XEqxPp8tSRVutUYS'

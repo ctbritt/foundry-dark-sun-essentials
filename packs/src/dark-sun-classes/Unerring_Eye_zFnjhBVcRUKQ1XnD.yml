@@ -1,0 +1,237 @@
+_id: zFnjhBVcRUKQ1XnD
+name: Unerring Eye
+type: feat
+effects: []
+system:
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '30'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        otherActivityAsParentType: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      useConditionReason: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    max: '@abilities.wis.mod'
+    recovery:
+      - period: lr
+        type: recoverAll
+  advancement: []
+  description:
+    value: "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren’t blinded\_or\_deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.</p>\n<p class=\"Core-Styles_Core-Body\">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>\n</div>"
+    chat: >-
+      <div class="ddb">
+
+      As an action, you sense the presence of illusions, shapechangers not in
+      their original form, and other magic designed to deceive the senses within
+      30 ft. of you, if you aren’t blinded or deafened. You can use this feature
+      [[max( + @abilities.wis.mod, 1)]] times per long rest.
+
+      </div>
+  identifier: unerring-eye
+  source:
+    book: XGtE
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 13
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 738
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Unerring Eye
+    dndbeyond:
+      requiredLevel: 13
+      displayOrder: 500
+      featureType: 1
+      class: Rogue
+      classId: 111
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Inquisitive
+    subClassId: 111
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Unerring Eye
+        activityCount: 1
+        activityKeys:
+          - utilityUnEyclNe0
+        nameMap:
+          utilityUnEyclNe0:
+            - Unerring Eye
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Unerring Eye
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  favtab:
+    isFavorite: true
+  scene-packer:
+    hash: f43a20e16169203c9d5c5ac12a2cba8f259b4562
+    sourceId: Item.Um5o3VJllmelPBw8
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 2
+  crux:
+    trayVisibility: default
+img: icons/commodities/biological/eye-blue.webp
+folder: q8k0E01OARsBkmBB
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781135000322
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!zFnjhBVcRUKQ1XnD'

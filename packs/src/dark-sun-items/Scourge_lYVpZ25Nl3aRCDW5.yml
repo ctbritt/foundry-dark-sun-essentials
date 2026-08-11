@@ -1,0 +1,712 @@
+name: Scourge
+type: weapon
+img: >-
+  modules/dnd-dungeon-masters-guide/assets/icons/items/dragon-slayer-greatsword.webp
+system:
+  activities:
+    attackLongswordI:
+      type: attack
+      _id: attackLongswordI
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        value: ''
+        units: inst
+        special: ''
+        override: true
+        concentration: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: null
+        recovery: []
+        max: ''
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        parts: []
+        includeBase: true
+        critical:
+          bonus: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        otherActivityAsParentType: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      name: ''
+      useConditionReason: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      otherActivityAsParentType: true
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+    wk1Q943z4fRhZxRU:
+      type: damage
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: true
+          bonus: ''
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 6
+            bonus: ''
+            types:
+              - slashing
+            scaling:
+              number: 1
+      useConditionText: >-
+        raceOrType.includes("dragon") && (item.attuned || item.attunement !==
+        "required")
+      effectConditionText: ''
+      name: Slayer Damage
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        confirmTargets: default
+        automationOnly: true
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        otherActivityAsParentType: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      _id: wk1Q943z4fRhZxRU
+      useConditionReason: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  uses:
+    spent: null
+    recovery: []
+  description:
+    value: >-
+      <p>Scourge is cold and heavy in your hands, black as the stone of lost
+      Kemolak. When dragons draw near, blue runes shimmer along the blade, and
+      echoes of ancient dwarven oaths resound in your mind: “We do not yield. We
+      do not break. We will bear our doom with honor.”</p>
+    chat: ''
+  identifier: longsword
+  source:
+    book: ''
+    page: ''
+    license: ''
+    custom: 1.0.22
+    rules: '2014'
+    revision: 1
+  identified: true
+  unidentified:
+    description: <p>This obsidian longsword is cold and heavy in your hands.</p>
+    name: Unidentified Longsword
+  container: null
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 10000
+    denomination: ct
+  rarity: legendary
+  attunement: required
+  armor:
+    value: null
+  cover: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: martialM
+    baseItem: longsword
+  ammunition: {}
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    versatile:
+      number: null
+      denomination: 10
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      bonus: ''
+  magicalBonus: 1
+  mastery: sap
+  properties:
+    - mgc
+    - ver
+    - obs
+  proficient: null
+  range:
+    value: null
+    long: 0
+    units: ft
+    reach: null
+  attuned: true
+  equipped: true
+  crew:
+    value: []
+effects:
+  - type: enchantment
+    name: Dragon Slayer
+    img: systems/dnd5e/icons/spell-tiers/spell3.webp
+    disabled: false
+    _id: qLx2RpSlCAmHI6zp
+    system:
+      changes:
+        - key: system.properties
+          value: mgc
+          priority: 20
+          type: add
+        - key: system.magicalBonus
+          value: 1
+          priority: 40
+          type: upgrade
+        - key: activities[attack].midiProperties.triggeredActivityConditionText
+          value: raceOrType.includes("dragon")
+          priority: 20
+          type: override
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p><em>Weapon (Any Simple or Martial), Rare</em></p><p>You gain a +1 bonus
+      to attack rolls and damage rolls made with this magic weapon.</p><p>The
+      weapon deals an extra 3d6 damage of the weapon’s type if the target is a
+      Dragon.</p><p>Midi: To use the item drag the dragon slayer effect to any
+      weapon and it will do a bonus 3d6 damage to dragons.</p><p>This is based
+      on a idea from the new Dungeons Master's Guide foundry premium content
+      which has lots of clever ideas in it.</p>
+    origin: Item.25HlrtS7yvq00pT7
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+      dnd5e:
+        riders:
+          statuses: []
+        dependents:
+          - uuid: Item.nmu4S8tgDJee4YDg.Activity.wk1Q943z4fRhZxRU
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.3
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!lYVpZ25Nl3aRCDW5.qLx2RpSlCAmHI6zp'
+folder: null
+flags:
+  ddbimporter:
+    originalName: Longsword
+    version: 6.0.54
+    dndbeyond:
+      type: Longsword
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      homebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources:
+        - sourceId: 148
+          pageNumber: null
+          sourceType: 1
+      damage:
+        parts: []
+      classFeatures: []
+      ability: str
+    is2014: false
+    is2024: true
+    legacy: false
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 1782728300
+    definitionId: 4
+  scene-packer:
+    sourceId: Item.ESXA6Q1f4wwUxrgh
+    hash: 146b11d8db9e7621078584d5c3f45b31acafd32f
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    last:
+      attackLongswordI:
+        attackMode: oneHanded
+        damageType:
+          '0': slashing
+      wk1Q943z4fRhZxRU:
+        damageType:
+          '0': slashing
+  dae:
+    macro:
+      name: Longsword
+      img: icons/weapons/swords/greatsword-guard.webp
+      type: script
+      scope: global
+      command: |-
+        if(args[0].macroPass === "preDamageRollComplete") {
+                const weapon = 'jb2a.melee_attack.03.greatsword.01';
+                const trail = '';
+                const impact = '';
+                const impactScale = 1;
+                const soundFileMelee = "";
+                const soundFileRange = "";
+                const delaySound = 300;
+                const switchDistanceFt = 5;
+                const range = "";
+                const returnFile = "";
+                const delayBetweenAttacks = 1000;
+                const enableTrail = false;
+                const enableImpact = false;
+                const source = token;
+                const targets = workflow.hitTargets;
+
+                await game.gps.weaponAnimations({weapon, trail, impact, impactScale, soundFileMelee, soundFileRange, delaySound, switchDistanceFt, range, returnFile, delayBetweenAttacks, source, targets, enableTrail, enableImpact});
+        }
+      author: roRDywD19pu2VxlC
+      ownership:
+        default: 3
+      _id: null
+      folder: null
+      sort: 0
+      flags: {}
+      _stats:
+        coreVersion: '12.331'
+        systemId: dnd5e
+        systemVersion: 4.3.8
+        createdTime: null
+        modifiedTime: null
+        lastModifiedBy: null
+        compendiumSource: null
+        duplicateSource: null
+  midi-qol:
+    onUseMacroName: '[preDamageRollComplete]ItemMacro'
+    fumbleThreshold: null
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  autoanimations:
+    id: 67aa90e2-c042-4f1c-ab59-34ae18660ab0
+    label: Longsword
+    levels3d:
+      type: explosion
+      data:
+        color01: '#FFFFFF'
+        color02: '#FFFFFF'
+        spritePath: modules/levels-3d-preview/assets/particles/dust.png
+      sound:
+        enable: false
+      secondary:
+        enable: false
+        data:
+          color01: '#FFFFFF'
+          color02: '#FFFFFF'
+          spritePath: modules/levels-3d-preview/assets/particles/dust.png
+    macro:
+      enable: false
+    meleeSwitch:
+      video:
+        dbSection: range
+        menuType: weapon
+        animation: arrow
+        variant: regular
+        color: regular
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        detect: automatic
+        range: 2
+        returning: false
+        switchType: 'on'
+    menu: melee
+    primary:
+      video:
+        dbSection: melee
+        menuType: weapon
+        animation: club
+        variant: '01'
+        color: white
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        isWait: false
+        opacity: 1
+        playbackRate: 1
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        zIndex: 1
+    secondary:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: true
+        isWait: false
+        opacity: 1
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1.5
+        tint: false
+        tintColor: '#FFFFFF'
+        zIndex: 1
+    soundOnly:
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+    source:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: false
+        isWait: true
+        opacity: 1
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        zIndex: 1
+    target:
+      enable: false
+      video:
+        dbSection: static
+        menuType: spell
+        animation: curewounds
+        variant: '01'
+        color: blue
+        enableCustom: false
+        customPath: ''
+      sound:
+        enable: false
+        delay: 0
+        repeat: 1
+        repeatDelay: 250
+        startTime: 0
+        volume: 0.75
+      options:
+        addTokenWidth: false
+        anchor: '0.5'
+        contrast: 0
+        delay: 0
+        elevation: 1000
+        fadeIn: 250
+        fadeOut: 500
+        isMasked: false
+        isRadius: false
+        opacity: 1
+        persistent: false
+        repeat: 1
+        repeatDelay: 250
+        saturate: 0
+        size: 1
+        tint: false
+        tintColor: '#FFFFFF'
+        unbindAlpha: false
+        unbindVisibility: false
+        zIndex: 1
+    isEnabled: false
+    isCustomized: false
+    fromAmmo: false
+    version: 5
+  crux:
+    trayVisibility: default
+  archivist-sync:
+    archivistId: bbbd9ea78a674e3d98bc7ed79d43e823
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1765664509972
+  modifiedTime: 1765664510043
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: lYVpZ25Nl3aRCDW5
+sort: 200000
+_key: '!items!lYVpZ25Nl3aRCDW5'

@@ -1,0 +1,191 @@
+name: Mage Hand - Telekinetic Grasp (Wis)
+type: spell
+system:
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>A spectral, floating hand appears at a
+      point you choose within range. The hand lasts for the duration or until
+      you dismiss it as an action. The hand vanishes if it is ever more than 30
+      feet away from you or if you cast this spell again.</p><div
+      class="rd__spc-inline-post"></div><p>You can use your action to control
+      the hand. You can use the hand to manipulate an object, open an unlocked
+      door or container, stow or retrieve an item from an open container, or
+      pour the contents out of a vial. You can move the hand up to 30 feet each
+      time you use it.</p><p>The hand can't attack, activate magic items, or
+      carry more than 10 pounds.</p></div>
+    chat: ''
+  source:
+    custom: ''
+    book: PHB
+    page: '256'
+    license: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      type: space
+      count: '1'
+      choice: false
+    template:
+      units: ''
+      contiguous: false
+  range:
+    value: '15'
+    units: ft
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: wis
+  level: 0
+  school: con
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: mage-hand-telekinetic-grasp-wis
+img: icons/magic/light/orbs-hand-gray.webp
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  plutonium:
+    page: spells.html
+    source: PHB
+    hash: mage%20hand_phb
+    propDroppable: spell
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  core: {}
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: 7gMBz6rDIWy1Ltp2
+sort: 1350000
+_stats:
+  compendiumSource: Item.zAEEqyYolZK7Yd0m
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411530331
+  modifiedTime: 1781134997470
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: slvwni2kP75eLTMw
+_key: '!items!slvwni2kP75eLTMw'

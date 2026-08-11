@@ -1,0 +1,2309 @@
+name: Lifeshaper Temple
+padding: 0.1
+active: false
+navigation: false
+navOrder: 0
+thumb: modules/shareddata/assets/scenes/h6yGRJhoB6WaonGz-thumb.webp
+width: 4000
+height: 3000
+initial:
+  x: 2600
+  'y': 1795
+  scale: 0.398
+grid:
+  type: 0
+  size: 70
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  darknessLevel: 0.6
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 1
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens:
+  - name: Kaine (Copy)
+    displayName: 20
+    actorLink: true
+    width: 1
+    height: 1
+    texture:
+      src: https://assets.myarchivist.ai/35422dcd-0728-4a17-bc05-2fa22acd69b5.png
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: true
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: >-
+          tokens/player_characters/_captain_kaine_strongjaw.Token.J2oW6sgeZDwUU9fs.webp?1756242596645
+    turnMarker:
+      mode: 0
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    flags:
+      wall-height:
+        tokenHeight: 6
+      elevatedvision:
+        tokenHeight: 6
+      perceptive:
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+    actorId: zaXNorC2h8KoMgME
+    x: 5670
+    'y': 3695
+    shape: 4
+    _id: DO2HRTXx0cP44CZA
+    delta:
+      _id: DO2HRTXx0cP44CZA
+      name: null
+      type: null
+      img: null
+      system: {}
+      items: []
+      effects: []
+      ownership: null
+      flags: {}
+      _key: '!scenes.tokens.delta!h6yGRJhoB6WaonGz.DO2HRTXx0cP44CZA.DO2HRTXx0cP44CZA'
+    elevation: 0
+    sort: 0
+    locked: false
+    hidden: false
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!h6yGRJhoB6WaonGz.DO2HRTXx0cP44CZA'
+lights: []
+notes: []
+sounds: []
+regions: []
+tiles:
+  - texture:
+      scaleX: 1
+      scaleY: 1
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/wilderness/plant-and-wood/bushes05.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1175
+    height: 940
+    x: 4107
+    'y': 1719
+    rotation: 358
+    elevation: 0
+    flags:
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: 0Uk5CahEWMRVSqp6
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.21000000000000002
+                scaleY: 0.21000000000000002
+                translationX: -0.01
+                translationY: -0.005
+                rotation: 0
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: LCGdz1yBzbnStMy9
+                placeableId: BvdTjtd8drJHbDpx
+                filterInternalId: 0Uk5CahEWMRVSqp6
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: KiFOefVnbAMyyYPq
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-03.webp
+                scaleX: 0.91
+                scaleY: 0.91
+                rotation: 340
+                translationX: 0.0009999999999999992
+                translationY: 0.004999999999999999
+                updateId: iuoOent9W8z2NxAH
+                placeableId: BvdTjtd8drJHbDpx
+                filterInternalId: KiFOefVnbAMyyYPq
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-maps-premium-towns/maps/wilderness/plant-and-wood/bushes05.webp
+    hidden: false
+    locked: false
+    sort: 10
+    _id: BvdTjtd8drJHbDpx
+    alpha: 1
+    restrictions:
+      light: false
+      weather: false
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.BvdTjtd8drJHbDpx'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_04_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 674
+    height: 674
+    x: 2275
+    'y': 805
+    rotation: 3
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 11
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: kvwEDLF1Nb86PnnM
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: o4dsSPZTkI0gp944
+                rank: 10000
+                enabled: true
+                placeableId: ChZBScRzPzUwDgjc
+                filterInternalId: kvwEDLF1Nb86PnnM
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: ChZBScRzPzUwDgjc
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.ChZBScRzPzUwDgjc'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_02_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1428
+    height: 1428
+    x: 1470
+    'y': 805
+    rotation: 35
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 3
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: UQ3SqXCQtxSCcf9f
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: f42Ky9MfvBa0LXnw
+                rank: 10000
+                enabled: true
+                placeableId: SRk2WVVgCzNWokSv
+                filterInternalId: UQ3SqXCQtxSCcf9f
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: SRk2WVVgCzNWokSv
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.SRk2WVVgCzNWokSv'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_04_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1312
+    height: 1312
+    x: 875
+    'y': 1330
+    rotation: 47
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 2
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: JAMLMtJ9XPNd6JtR
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: Sq0AeOljDvSOKTVU
+                rank: 10000
+                enabled: true
+                placeableId: aLCDCgiiWK7Lvvgz
+                filterInternalId: JAMLMtJ9XPNd6JtR
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: aLCDCgiiWK7Lvvgz
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.aLCDCgiiWK7Lvvgz'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_01_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1448
+    height: 1448
+    x: 980
+    'y': 2625
+    rotation: 11
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 3
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: MDgSTNH2cUsUnrZd
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: ag1Tb0IWW2ZNiJFg
+                rank: 10000
+                enabled: true
+                placeableId: QYmaX4UIuof2z9bj
+                filterInternalId: MDgSTNH2cUsUnrZd
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: QYmaX4UIuof2z9bj
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.QYmaX4UIuof2z9bj'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_01_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1522
+    height: 1522
+    x: 2381
+    'y': 2766
+    rotation: 5
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 6
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: suMBXcKurCCwqMRa
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: D11IQ7pnTq5dVn8p
+                rank: 10000
+                enabled: true
+                placeableId: vJtIju2fvDVwAY7P
+                filterInternalId: suMBXcKurCCwqMRa
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: vJtIju2fvDVwAY7P
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.vJtIju2fvDVwAY7P'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_02_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1836
+    height: 1836
+    x: 3678
+    'y': 2344
+    rotation: 28
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 5
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: G4jHKqwahQjJ8fiY
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: EMsLkkBnK9JZTbSx
+                rank: 10000
+                enabled: true
+                placeableId: 1QjvBh8ncG8m1I1D
+                filterInternalId: G4jHKqwahQjJ8fiY
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: 1QjvBh8ncG8m1I1D
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.1QjvBh8ncG8m1I1D'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_01_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 967
+    height: 967
+    x: 4148
+    'y': 1122
+    rotation: 6
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 5
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: Anvrb4Bys5Kv32pc
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: FmR5I6LsjQejg6RU
+                rank: 10000
+                enabled: true
+                placeableId: dnrVp7ZgQc3NQtp5
+                filterInternalId: Anvrb4Bys5Kv32pc
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: dnrVp7ZgQc3NQtp5
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.dnrVp7ZgQc3NQtp5'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_03_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 786
+    height: 786
+    x: 3488
+    'y': 788
+    rotation: 18
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 4
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: ynf3aZiwSI4fx5cx
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: gRI3nJgWI2keve8R
+                rank: 10000
+                enabled: true
+                placeableId: YYsgoMYObtTGLQlv
+                filterInternalId: ynf3aZiwSI4fx5cx
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: YYsgoMYObtTGLQlv
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.YYsgoMYObtTGLQlv'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/townsquare/misc2/2024-may-release/trees/bw_plant_tree_01_colorable.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#a9c978'
+      alphaThreshold: 0.75
+    width: 1274
+    height: 1274
+    x: 3499
+    'y': 1621
+    rotation: 18
+    hidden: false
+    locked: false
+    elevation: 20
+    sort: 4
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: DDTint
+              tmFilterInternalId: ijkNGHfAhG0XW8j8
+              tmFilterType: ddTint
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: ddTint
+                filterId: DDTint
+                tint:
+                  - 0.27843138575553894
+                  - 0.7529411911964417
+                  - 0.10588235408067703
+                updateId: PgtncPf0lla53XSH
+                rank: 10000
+                enabled: true
+                placeableId: X212H3TH0E8HIhfT
+                filterInternalId: ijkNGHfAhG0XW8j8
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: X212H3TH0E8HIhfT
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.X212H3TH0E8HIhfT'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/wilderness/jungle/jungle-growth-clump1_150dpi.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 884
+    height: 884
+    x: 2771
+    'y': 1057
+    rotation: 338
+    hidden: false
+    locked: false
+    elevation: 0
+    sort: 7
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: AOslKnvmLAnX1hQT
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.37
+                scaleY: 0.37
+                translationX: 0.004
+                translationY: -0.009000000000000001
+                rotation: 30
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: 0HV5nCMq1nhpo9Wn
+                placeableId: IqOJutruNmDrezyr
+                filterInternalId: AOslKnvmLAnX1hQT
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: 6ShxVswmtfyHJMaK
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-04.webp
+                scaleX: 1.07
+                scaleY: 1.07
+                rotation: 300
+                translationX: 0.003000000000000001
+                translationY: -0.004
+                updateId: 6Z9Df9T31utZ6lRK
+                placeableId: IqOJutruNmDrezyr
+                filterInternalId: 6ShxVswmtfyHJMaK
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: IqOJutruNmDrezyr
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.IqOJutruNmDrezyr'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/wilderness/jungle/jungle-growth-clump1_150dpi.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 712
+    height: 712
+    x: 1582
+    'y': 1308
+    rotation: 43
+    hidden: false
+    locked: false
+    elevation: 0
+    sort: 8
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: TrluR6Y8Y5tzdLNu
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.15000000000000002
+                scaleY: 0.15000000000000002
+                translationX: 0.007000000000000001
+                translationY: 0
+                rotation: 90
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: k8yWO5aq9qF9DEvX
+                placeableId: 7CLXpvCz7JFP5p6H
+                filterInternalId: TrluR6Y8Y5tzdLNu
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: GVrrtuvlqWdvHt7H
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-02.webp
+                scaleX: 0.96
+                scaleY: 0.96
+                rotation: 170
+                translationX: -0.0009999999999999992
+                translationY: -0.0009999999999999992
+                updateId: 76TqCPgYAZ9tTJiZ
+                placeableId: 7CLXpvCz7JFP5p6H
+                filterInternalId: GVrrtuvlqWdvHt7H
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: 7CLXpvCz7JFP5p6H
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.7CLXpvCz7JFP5p6H'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/wilderness/plant-and-wood/bushes05.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1157
+    height: 926
+    x: 1616
+    'y': 2451
+    rotation: 354
+    hidden: false
+    locked: false
+    elevation: 0
+    sort: 9
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: wwWYQhzkkEC0HkMU
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.13
+                scaleY: 0.13
+                translationX: 0.002
+                translationY: 0.004999999999999999
+                rotation: 280
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: Z7Ht5R8LFyNj22d6
+                placeableId: Y7dWHs46wlz0kppO
+                filterInternalId: wwWYQhzkkEC0HkMU
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: dLtkbQsjuqTYlLHZ
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-04.webp
+                scaleX: 1.01
+                scaleY: 1.01
+                rotation: 200
+                translationX: -0.009000000000000001
+                translationY: 0.004999999999999999
+                updateId: Mbrvtqx6tBzBM5Fd
+                placeableId: Y7dWHs46wlz0kppO
+                filterInternalId: dLtkbQsjuqTYlLHZ
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: Y7dWHs46wlz0kppO
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.Y7dWHs46wlz0kppO'
+  - texture:
+      src: >-
+        modules/baileywiki-maps-premium-towns/maps/wilderness/jungle/jungle-growth-clump1_150dpi.webp
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 661
+    height: 661
+    x: 689
+    'y': 1519
+    rotation: 0
+    hidden: false
+    locked: false
+    elevation: 0
+    sort: 7
+    occlusion:
+      alpha: 0
+      modes: []
+    flags:
+      fa-nexus:
+        shadow: true
+        shadowAlpha: 0.65
+        shadowDilation: 4.2
+        shadowBlur: 7.7
+        shadowOffsetDistance: 18.34
+        shadowOffsetAngle: 139.3
+        shadowOffsetX: -13.91
+        shadowOffsetY: 11.96
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Nature Vines 1
+              tmFilterInternalId: 7ezWF6kLAqnRhh14
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Nature Vines 1
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-nature-vines-02.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: true
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                scaleX: 0.22
+                scaleY: 0.22
+                translationX: -0.008
+                translationY: 0.004999999999999999
+                rotation: 30
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: Bpg04soAQFctVWo0
+                placeableId: 41sP2YGNWVU4mzmI
+                filterInternalId: 7ezWF6kLAqnRhh14
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+          - tmFilters:
+              tmFilterId: BW Overlay Grunge 1
+              tmFilterInternalId: IDenF0PEhsB24SpD
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Grunge 1
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                imagePath: >-
+                  modules/baileywiki-nuts-and-bolts/assets/free-tmfx-sprite-overlays/overlay-grunge-04.webp
+                scaleX: 0.91
+                scaleY: 0.91
+                rotation: 110
+                translationX: -0.005
+                translationY: -0.008
+                updateId: wAVPMabTDSJwuAdl
+                placeableId: 41sP2YGNWVU4mzmI
+                filterInternalId: IDenF0PEhsB24SpD
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: Tile
+    restrictions:
+      light: false
+      weather: false
+    _id: 41sP2YGNWVU4mzmI
+    alpha: 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    levels: []
+    _key: '!scenes.tiles!h6yGRJhoB6WaonGz.41sP2YGNWVU4mzmI'
+walls:
+  - flags:
+      wall-height:
+        top: 6
+        bottom: null
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: 3DnVqB8c1yvyFxGi
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.6600000000000001
+                scaleY: 1.6600000000000001
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.28
+                translationY: -0.53
+                rotation: 110
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: lMIXoxoXtBbq7oZY
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: HfaPEVeSZpjmj5cz
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: Wq897Shd6aPDOAk2
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.26
+                scaleY: 2.26
+                rotation: 320
+                translationX: -0.28
+                translationY: 0.32000000000000006
+                updateId: b8RVc85eJWt3NBiD
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: IhxnEifjEsCmx688
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: ESqMmzZ1UGlBNrXk
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 150
+                translationX: 0.9299999999999999
+                translationY: 0.6200000000000001
+                updateId: VCuqjOv5BNkzbNyd
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: yHp7iyU3qAYoc8zG
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: 1ni5eYv1RSSYMJ7H
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.66
+                scaleY: 0.66
+                rotation: 10
+                translationX: -0.6499999999999999
+                translationY: -0.16000000000000003
+                updateId: HYKBm7AjS9tqidcZ
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: hLuUXbQo1VX0QdY2
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    c:
+      - 4379
+      - 1973
+      - 4299
+      - 1388
+    move: 0
+    dir: 0
+    door: 0
+    ds: 0
+    sight: 10
+    light: 10
+    _id: 3kJu0EuGwzobJGVB
+    sound: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!h6yGRJhoB6WaonGz.3kJu0EuGwzobJGVB'
+  - flags:
+      wall-height:
+        top: 6
+        bottom: null
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: dmNjPuICLO7oB9Fv
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.6600000000000001
+                scaleY: 1.6600000000000001
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.28
+                translationY: -0.53
+                rotation: 110
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: lMIXoxoXtBbq7oZY
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: HfaPEVeSZpjmj5cz
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: 99IIwel95QEKX9cz
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.26
+                scaleY: 2.26
+                rotation: 320
+                translationX: -0.28
+                translationY: 0.32000000000000006
+                updateId: b8RVc85eJWt3NBiD
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: IhxnEifjEsCmx688
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: jhmbhfKGgL4vsCaY
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 150
+                translationX: 0.9299999999999999
+                translationY: 0.6200000000000001
+                updateId: VCuqjOv5BNkzbNyd
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: yHp7iyU3qAYoc8zG
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: i3G0mGAXtHJKAnw0
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.66
+                scaleY: 0.66
+                rotation: 10
+                translationX: -0.6499999999999999
+                translationY: -0.16000000000000003
+                updateId: HYKBm7AjS9tqidcZ
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: hLuUXbQo1VX0QdY2
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    c:
+      - 4299
+      - 1388
+      - 4133
+      - 1659
+    move: 0
+    dir: 0
+    door: 0
+    ds: 0
+    sight: 10
+    light: 10
+    _id: 1ayU6T5590S82Zi1
+    sound: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!h6yGRJhoB6WaonGz.1ayU6T5590S82Zi1'
+  - flags:
+      wall-height:
+        top: 6
+        bottom: null
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: me6qzZycen0xA3cH
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.6600000000000001
+                scaleY: 1.6600000000000001
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.28
+                translationY: -0.53
+                rotation: 110
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: lMIXoxoXtBbq7oZY
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: HfaPEVeSZpjmj5cz
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: gKkBGjfvvPyx7CsT
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.26
+                scaleY: 2.26
+                rotation: 320
+                translationX: -0.28
+                translationY: 0.32000000000000006
+                updateId: b8RVc85eJWt3NBiD
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: IhxnEifjEsCmx688
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: u9eltvQlYKgWgxWS
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 150
+                translationX: 0.9299999999999999
+                translationY: 0.6200000000000001
+                updateId: VCuqjOv5BNkzbNyd
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: yHp7iyU3qAYoc8zG
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: 8RpzJQtIrSATDZkc
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.66
+                scaleY: 0.66
+                rotation: 10
+                translationX: -0.6499999999999999
+                translationY: -0.16000000000000003
+                updateId: HYKBm7AjS9tqidcZ
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: hLuUXbQo1VX0QdY2
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    c:
+      - 3937
+      - 1929
+      - 4379
+      - 1973
+    move: 0
+    dir: 0
+    door: 0
+    ds: 0
+    sight: 10
+    light: 10
+    _id: URRXK3hkNdh8k0jZ
+    sound: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!h6yGRJhoB6WaonGz.URRXK3hkNdh8k0jZ'
+  - flags:
+      wall-height:
+        top: 6
+        bottom: null
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: QinNxHGcgEgbPhac
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.6600000000000001
+                scaleY: 1.6600000000000001
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.28
+                translationY: -0.53
+                rotation: 110
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: lMIXoxoXtBbq7oZY
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: HfaPEVeSZpjmj5cz
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: rTcvuoLfOztS24jR
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.26
+                scaleY: 2.26
+                rotation: 320
+                translationX: -0.28
+                translationY: 0.32000000000000006
+                updateId: b8RVc85eJWt3NBiD
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: IhxnEifjEsCmx688
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: UozYsnBBiSNjxqgm
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 150
+                translationX: 0.9299999999999999
+                translationY: 0.6200000000000001
+                updateId: VCuqjOv5BNkzbNyd
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: yHp7iyU3qAYoc8zG
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: X1WSdHy7PBFsPVfS
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.66
+                scaleY: 0.66
+                rotation: 10
+                translationX: -0.6499999999999999
+                translationY: -0.16000000000000003
+                updateId: HYKBm7AjS9tqidcZ
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: hLuUXbQo1VX0QdY2
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    c:
+      - 4133
+      - 1659
+      - 3958
+      - 1724
+    move: 0
+    dir: 0
+    door: 0
+    ds: 0
+    sight: 10
+    light: 10
+    _id: HuBUwVhe32Rkl2rO
+    sound: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!h6yGRJhoB6WaonGz.HuBUwVhe32Rkl2rO'
+  - flags:
+      wall-height:
+        top: 6
+        bottom: null
+      multi-token-edit:
+        links:
+          - id: G2dgRD9QWJj4YhGh
+            type: 0
+      tokenmagic:
+        filters:
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Cracks
+              tmFilterInternalId: HfaPEVeSZpjmj5cz
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Cracks
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_cracks_01_tileable_1k.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                scaleX: 1.6600000000000001
+                scaleY: 1.6600000000000001
+                maintainAspectRatio: true
+                maintainScale: true
+                translationX: -0.28
+                translationY: -0.53
+                rotation: 110
+                alpha: 1
+                top: true
+                animated:
+                  rotation:
+                    active: false
+                    clockWise: false
+                    loopDuration: 30000
+                    animType: syncRotation
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                updateId: lMIXoxoXtBbq7oZY
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: HfaPEVeSZpjmj5cz
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: BW Overlay Dmg Scorch
+              tmFilterInternalId: IhxnEifjEsCmx688
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                filterId: BW Overlay Dmg Scorch
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/overlay-damage-scorch-01.webp
+                repeat: true
+                alphaDiscard: true
+                colorize: true
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 0.8
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                scaleX: 2.26
+                scaleY: 2.26
+                rotation: 320
+                translationX: -0.28
+                translationY: 0.32000000000000006
+                updateId: b8RVc85eJWt3NBiD
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: IhxnEifjEsCmx688
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-01
+              tmFilterInternalId: yHp7iyU3qAYoc8zG
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-01
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.86
+                scaleY: 0.86
+                rotation: 150
+                translationX: 0.9299999999999999
+                translationY: 0.6200000000000001
+                updateId: VCuqjOv5BNkzbNyd
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: yHp7iyU3qAYoc8zG
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+          - tmFilters:
+              tmFilterId: overlay-rubble-02
+              tmFilterInternalId: hLuUXbQo1VX0QdY2
+              tmFilterType: sprite
+              tmFilterOwner: wgCeShTrqHJFBbDr
+              tmParams:
+                filterType: sprite
+                repeat: true
+                alphaDiscard: true
+                colorize: false
+                color: 16777215
+                inverse: false
+                gridPadding: 1
+                maintainAspectRatio: true
+                maintainScale: true
+                alpha: 1
+                top: true
+                rank: 10001
+                randomized: null
+                enabled: true
+                active: null
+                filterId: overlay-rubble-02
+                imagePath: >-
+                  modules/baileywiki-maps-premium-towns/maps/fx-tiles/overlay-fx/july-2023/bw_overlay_rubble_03_tileable_1k_tintable.webp
+                scaleX: 0.66
+                scaleY: 0.66
+                rotation: 10
+                translationX: -0.6499999999999999
+                translationY: -0.16000000000000003
+                updateId: HYKBm7AjS9tqidcZ
+                placeableId: sDlneAgsXAhRvT9e
+                filterInternalId: hLuUXbQo1VX0QdY2
+                filterOwner: wgCeShTrqHJFBbDr
+                placeableType: null
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+    c:
+      - 3958
+      - 1724
+      - 3937
+      - 1929
+    move: 0
+    dir: 0
+    door: 0
+    ds: 0
+    sight: 10
+    light: 10
+    _id: sDlneAgsXAhRvT9e
+    sound: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!h6yGRJhoB6WaonGz.sDlneAgsXAhRvT9e'
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: venom_spores
+folder: Q2aVi9KNhjNHo2hR
+sort: 200000
+ownership:
+  default: 0
+flags:
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+    moonlight: true
+  multi-token-edit:
+    blackBars: true
+  simple-cinematic-pan:
+    cinematicModeOnLoadScene: false
+  perceptive:
+    SceneBrightEndFlag: 0.25
+    SceneDimEndFlag: 0.75
+  wall-height:
+    advancedVision: true
+  dimensional-weather:
+    terrain: ''
+  fxmaster: {}
+_stats:
+  compendiumSource: Scene.h6yGRJhoB6WaonGz
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765145678
+  modifiedTime: 1782140173473
+  lastModifiedBy: wgCeShTrqHJFBbDr
+navName: Jungle Temple
+_id: h6yGRJhoB6WaonGz
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!h6yGRJhoB6WaonGz'
+templates: []

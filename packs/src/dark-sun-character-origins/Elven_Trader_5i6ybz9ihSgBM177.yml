@@ -1,0 +1,140 @@
+folder: 3ceHqueQSXMSDgbA
+name: Elven Trader
+type: background
+img: modules/dnd-players-handbook/assets/icons/species/elf-high.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[dex], &amp;Reference[cha],
+      &amp;Reference[wis]</p><p><strong>Skill Proficiencies:</strong> Two from
+      among &amp;Reference[dec], &amp;Reference[slt], &amp;Reference[ins],
+      &amp;Reference[per]</p><p><strong>Languages:</strong> Two of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftLucky000000]{Lucky}</p><p><strong>Equipment:</strong>
+      A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesComm]{Common
+      Clothes}, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 50 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> Elves who enrich themselves and their tribe
+      through trade, often dealing in stolen property and banned goods. The
+      elven market is disreputable but essential.</p>
+    chat: ''
+  identifier: athas-elven-trader
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '286'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: aV99brlVhs5SMlfc
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: K5tft2TH9E78HyCA
+      group: ''
+      sort: 200000
+    - _id: xd1BLGFz3KNfvxpj
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: oicvPiTms7ixZKce
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - con
+          - int
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          dex: 2
+          cha: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: iqCCZDIpJLFwP9RV
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - skills:*
+          - count: 2
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: guPhfHZVtU84B56A
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftLucky000000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '50'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.5i6ybz9ihSgBM177
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717526423
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: 5i6ybz9ihSgBM177
+sort: 275000
+_key: '!items!5i6ybz9ihSgBM177'

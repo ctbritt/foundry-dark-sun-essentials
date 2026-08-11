@@ -1,0 +1,268 @@
+name: Ego Whip
+type: spell
+system:
+  source:
+    custom: ''
+    book: PsPr
+    page: '66'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="Psi
+      Cost" class="rd__b  rd__b--3"><p><span class="entry-title-inner">Psi
+      Cost.</span> 3 psi points</p></div><div data-roll-name-ancestor="Psychic
+      Components" class="rd__b  rd__b--3"><p><span
+      class="entry-title-inner">Psychic </span>&amp;Reference[components]<span
+      class="entry-title-inner">.</span> Observable</p></div><p>You form your
+      thoughts into a briefly perceptible whip of telepathic energy, and strike
+      the mind of one creature you can see within &amp;Reference[range],
+      forcefully imposing a sudden and intense feeling of self-doubt in it. The
+      target must make a [[/save wis format=long]]. On a failed save, the
+      creature takes [[/damage 3d8 type=psychic format=long]], and it can only
+      take the &amp;Reference[dodge], &amp;Reference[disengage], or
+      &amp;Reference[hide] actions on its next turn. On a successful saving
+      throw, the target takes half as much damage, and its choice of action is
+      not limited by this power.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="Intensify" class="rd__b 
+      rd__b--3"><p><span
+      class="entry-title-inner"><strong>Intensify.</strong></span> When you
+      spend extra psi points to manifest this augment, you may target 1
+      additional creature you can see within range for every 2 additional psi
+      points spent beyond the minimum cost.</p></div></div>
+    chat: ''
+  level: 2
+  school: ''
+  properties:
+    - psionic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+      stationary: false
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '0'
+    units: ft
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: '3'
+    recovery: []
+    spent: 0
+  method: innate
+  activities:
+    4vGo2w4h0RVwaut8:
+      _id: 4vGo2w4h0RVwaut8
+      type: save
+      name: ''
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: creature
+          count: '2'
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - psychic
+            scaling:
+              mode: ''
+              number: 1
+        critical:
+          allow: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      sort: 0
+      flags: {}
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  identifier: ego-whip
+  prepared: 1
+img: icons/VZIk8PmJbHPrSjoF_1769120885696.png
+flags:
+  plutonium:
+    page: spells.html
+    source: Psions Primer
+    hash: ego%20whip_psions%20primer
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+      - Icon
+  dnd5e:
+    riders:
+      activity: []
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  crux:
+    trayVisibility: default
+  scene-packer:
+    sourceId: Actor.tUXrNjeJLWOeIVFV.Item.dPTiR9mvl5NyEeeW
+    hash: 417aa4c082ee84fc367a94a2c11350453020fba0
+  cat:
+    automation:
+      hash: 667110428
+effects: []
+folder: null
+_stats:
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1784910462195
+  modifiedTime: 1784910749530
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 1350000
+_id: dbfuJq6NJWS9XNjj
+_key: '!items!dbfuJq6NJWS9XNjj'

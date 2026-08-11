@@ -1,0 +1,1960 @@
+system:
+  abilities:
+    str:
+      value: 20
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 11
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 16
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 3
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 13
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 8
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  details:
+    cr: 5
+    biography:
+      value: >-
+        <p>Resembling giant wolf spiders, crystal spiders have bodies composed
+        of multifaceted crystal that creates dazzling patterns of refracted
+        light. They spin glass webs that are very sharp and can focus a damaging
+        beam of light at a potential victim.<br />The crystal spider is a
+        beautiful creature. During the day the sunlight refracts through it,
+        reflecting a myriad of colors which change as it moves. At night it
+        reflects any ambient light, retaining its colors but not as radiant as
+        during the day. When the spider has fed, it takes on a reddish tinge but
+        this fades over a few days.<br /></p><p>A crystal spider is incapable of
+        making sounds but can communicate with others of its kind by means of
+        controlled light.<br /></p><p>Crystal spiders get most of their
+        nutrients from sunlight but do require liquids to survive, preferring
+        humanoid blood. They are hunted for their webs, which make excellent
+        weapons, and for the gems which they instinctively weave into these webs
+        (although the spiders are themselves unaware of their value).<br
+        /></p><p>A typical crystal spider is eight feet long and can live up to
+        150 years. Before death, a crystal spider will lay a single huge cluster
+        of eggs (as many as 200) in a specially crafted web.</p>
+      public: ''
+    type:
+      value: elemental
+      custom: From Terrors Of Athas 5e 1
+      subtype: ''
+      swarm: ''
+    alignment: ''
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    habitat:
+      value: []
+      custom: ''
+    treasure:
+      value: []
+  attributes:
+    ac:
+      calc: natural
+      flat: 18
+    hp:
+      value: 85
+      max: 85
+      formula: 10d10 + 30
+      temp: 0
+      tempmax: 0
+    senses:
+      darkvision: 60
+      tremorsense: 60
+      special: ''
+      blindsight: null
+      truesight: null
+      units: null
+    movement:
+      burrow: '0'
+      climb: '30'
+      fly: '0'
+      swim: '0'
+      hover: false
+      walk: '60'
+      units: null
+      ignoredDifficultTerrain: []
+    init:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    attunement:
+      max: 3
+    spellcasting: wis
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    price:
+      value: null
+      denomination: gp
+    spell:
+      level: 0
+  traits:
+    ci:
+      value:
+        - paralyzed
+        - poisoned
+        - stunned
+        - unconscious
+      custom: ''
+    di:
+      value:
+        - poison
+      bypasses: []
+      custom: ''
+    dr:
+      value:
+        - bludgeoning
+        - piercing
+        - slashing
+      bypasses: []
+      custom: and  from nonmetal weapons
+    languages:
+      value: []
+      custom: —
+      communication:
+        telepathy:
+          value: null
+          units: ft
+    size: lg
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    important: false
+  currency:
+    pp: 0
+    gp: 0
+    sp: 0
+    ct: 0
+    cb: 0
+    lb: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    psi:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 2
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+    spell2:
+      value: 0
+    spell3:
+      value: 0
+    spell4:
+      value: 0
+    spell5:
+      value: 0
+    spell6:
+      value: 0
+    spell7:
+      value: 0
+    spell8:
+      value: 0
+    spell9:
+      value: 0
+    pact:
+      value: 0
+  resources:
+    legact:
+      max: 0
+      spent: 0
+    legres:
+      max: 0
+      spent: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    revision: 1
+    rules: '2024'
+items:
+  - name: Multiattack
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>The crystal spider makes one [[/item Bite]] attack and two [[/item
+          Foreleg]] attacks.</p>
+        chat: ''
+      activities:
+        uZwG6zL09VFYRTcF:
+          _id: uZwG6zL09VFYRTcF
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          roll:
+            prompt: false
+            visible: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+          otherActivityAsParentType: true
+      uses:
+        spent: 0
+        recovery: []
+      advancement: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    _id: qQGFUOkec22EYucg
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.qQGFUOkec22EYucg'
+  - name: Bite
+    type: weapon
+    system:
+      description:
+        value: >-
+          <p><em>Melee Weapon Attack:</em> [[/attack]] to hit, reach 5 ft., one
+          target. Hit: [[/damage average]] damage.</p>
+        chat: ''
+      identified: true
+      equipped: true
+      attunement: required
+      proficient: 1
+      quantity: 1
+      type:
+        value: natural
+        baseItem: ''
+      activities:
+        kxQ30K8prc6GatsF:
+          _id: kxQ30K8prc6GatsF
+          type: attack
+          activation:
+            type: action
+            value: 1
+            override: false
+          attack:
+            type:
+              value: melee
+            critical: {}
+            flat: false
+          damage:
+            parts:
+              - number: 4
+                denomination: 6
+                types:
+                  - poison
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      range:
+        reach: 5
+        units: ft
+      damage:
+        base:
+          number: 1
+          denomination: 8
+          types:
+            - piercing
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      attuned: true
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      unidentified:
+        description: ''
+      container: null
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      crew:
+        value: []
+      ammunition: {}
+      armor: {}
+      properties: []
+    img: icons/creatures/abilities/mouth-teeth-long-red.webp
+    _id: UcBloYQFK76oQuzv
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.UcBloYQFK76oQuzv'
+  - name: Foreleg
+    type: weapon
+    system:
+      description:
+        value: >-
+          <p><em>Melee Weapon Attack:</em> [[/attack]] to hit, reach 5 ft., one
+          target. Hit: [[/damage average]] damage, and if the target is a
+          creature it is &amp;Reference[Grappled apply=false] (escape DC 16).
+          While &amp;Reference[Grappled apply=false], the target is
+          &amp;Reference[Restrained apply=false].</p>
+        chat: ''
+      identified: true
+      equipped: true
+      attunement: required
+      proficient: 1
+      quantity: 1
+      type:
+        value: natural
+        baseItem: ''
+      activities:
+        CXcBbLLYyzzJ5W9e:
+          _id: CXcBbLLYyzzJ5W9e
+          type: attack
+          activation:
+            type: action
+            value: 1
+            override: false
+          attack:
+            type:
+              value: melee
+            critical: {}
+            flat: false
+          effects:
+            - _id: z4f7hwN9Jzl23vpn
+              level: {}
+          damage:
+            parts: []
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      range:
+        reach: 5
+        units: ft
+      damage:
+        base:
+          number: 2
+          denomination: 4
+          types:
+            - slashing
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      attuned: true
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      unidentified:
+        description: ''
+      container: null
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      crew:
+        value: []
+      ammunition: {}
+      armor: {}
+      properties: []
+    img: icons/creatures/claws/claw-curved-poison-purple.webp
+    effects: []
+    _id: f189EKHJIcgee2Tk
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      createdTime: 1779357062984
+      modifiedTime: 1779357063004
+    _key: '!actors.items!3yfwzNthkHre60w7.f189EKHJIcgee2Tk'
+  - name: Ray Of Light
+    type: weapon
+    system:
+      description:
+        value: >-
+          <p><em>Ranged Spell Attack:</em> [[/attack]] to hit, range 30 ft., one
+          target. Hit: [[/damage average]] damage and the target must make a
+          Constitution saving throw DC 14 or be &amp;Reference[Blinded
+          apply=false] until the end of its next turn.</p>
+        chat: ''
+      identified: true
+      equipped: true
+      attunement: required
+      proficient: 1
+      quantity: 1
+      type:
+        value: natural
+        baseItem: ''
+      activities:
+        Q8JwvyYYj48I7IDR:
+          _id: Q8JwvyYYj48I7IDR
+          type: attack
+          activation:
+            type: action
+            value: 1
+            override: false
+          attack:
+            type:
+              value: ranged
+              classification: spell
+            ability: spellcasting
+            flat: true
+            bonus: '6'
+            critical: {}
+          damage:
+            parts:
+              - number: 3
+                denomination: 6
+                types:
+                  - radiant
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+            includeBase: false
+            critical: {}
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+        YoAb4v4s6ej2hQnb:
+          type: save
+          _id: YoAb4v4s6ej2hQnb
+          sort: 0
+          activation:
+            type: action
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects:
+            - _id: dnd5eblinded0000
+              level: {}
+              onSave: false
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+            identifier: ''
+          damage:
+            onSave: ''
+            critical:
+              allow: false
+            parts: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: ''
+              formula: '14'
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          friendlySave: default
+          name: ''
+      range:
+        value: 30
+        long: null
+        units: ft
+      damage:
+        base:
+          number: 3
+          denomination: 6
+          types:
+            - radiant
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      attuned: true
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      unidentified:
+        description: ''
+      container: null
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      crew:
+        value: []
+      ammunition: {}
+      armor: {}
+      properties: []
+    _id: RQFx7wd9ZSN9BLge
+    img: icons/RQFx7wd9ZSN9BLge_1769907896585.png
+    effects:
+      - name: Blinded
+        _id: dnd5eblinded0000
+        img: modules/chris-premades/images/blinded.svg
+        statuses:
+          - blinded
+        description: >-
+          <p>@Embed[Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.0b8N4FymGGfbZGpJ
+          inline]</p>
+        type: base
+        system:
+          changes: []
+        disabled: false
+        duration:
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
+        tint: '#ffffff'
+        transfer: false
+        sort: 0
+        flags:
+          chris-premades:
+            effectInterface:
+              status: blinded
+          dnd5e:
+            riders:
+              statuses: []
+          dae:
+            disableCondition: ''
+            stackable: noneName
+            showIcon: false
+            disableIncapacitated: false
+            durationExpression: ''
+            macroRepeat: none
+            specialDuration:
+              - turnEnd
+            enableCondition: ''
+            selfTarget: false
+            selfTargetAlways: false
+            dontApply: false
+          core:
+            overlay: false
+          ActiveAuras:
+            isAura: false
+            aura: All
+            nameOverride: ''
+            radius: ''
+            alignment: ''
+            type: ''
+            customCheck: ''
+            ignoreSelf: false
+            height: false
+            hidden: false
+            displayTemp: false
+            hostile: false
+            onlyOnce: false
+            wallsBlock: system
+            statuses: []
+        origin: Actor.39bISDVCAumH1Ya2.Item.RQFx7wd9ZSN9BLge
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.2.5
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!3yfwzNthkHre60w7.RQFx7wd9ZSN9BLge.dnd5eblinded0000
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.RQFx7wd9ZSN9BLge'
+  - name: Innate Psionic Powers
+    type: weapon
+    system:
+      description:
+        value: >-
+          <p>The crystal spider's psionic ability is Wisdom (power save DC 12,
+          +4 to hit with power attacks). The crystal spider can innately use the
+          following powers:</p><p>At-will: control light &amp; sound</p>
+        chat: ''
+      type:
+        value: natural
+        baseItem: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: false
+      crew:
+        value: []
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      properties: []
+      proficient: null
+      range:
+        units: ft
+    img: icons/cLLOn3ztHWH22bZ3_1768865588774.png
+    _id: kxf3Z4Ua8ZzqeDMq
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.kxf3Z4Ua8ZzqeDMq'
+  - name: Spider Climb
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>The spider can climb difficult surfaces, including upside down on
+          ceilings, without needing to make an ability check.</p>
+        chat: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      advancement: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/creatures/invertebrates/spider-beetle-runed-green.webp
+    _id: UtnvTDFtPz4S7ea0
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.UtnvTDFtPz4S7ea0'
+  - name: Web
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Crystal spiders weave razor-sharp webs of crystal spanning 20
+          square feet. Creatures must make a [[/check prc dc=20 format=long]] to
+          notice a web. Creatures that come in contact with the web suffer 7
+          ([[/r 2d6]]) slashing damage and are &amp;Reference[Restrained
+          apply=false]. As an action, the &amp;Reference[Restrained apply=false]
+          target can make a [[/check str dc=16 format=long]], bursting the
+          webbing on a success; on a failure they take 3 (1d6) slashing damage.
+          The webbing can also be attacked and destroyed (AC 15; hp 12;
+          resistance to slashing and piercing; immunity to bludgeoning, poison,
+          and psychic damage).</p>
+        chat: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      advancement: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/creatures/webs/web-thin-pruple.webp
+    _id: FjCw8fECj5oymFto
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags:
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.FjCw8fECj5oymFto'
+  - name: Web Sense
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>While in contact with a web, the spider knows the exact location of
+          any other creature in contact with the same web.</p>
+        chat: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      advancement: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/magic/control/debuff-chains-ropes-net-white.webp
+    _id: uNg1E6uxfK6q5UEO
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.uNg1E6uxfK6q5UEO'
+  - name: Web Walker
+    type: feat
+    system:
+      description:
+        value: <p>The spider ignores movement restrictions caused by webbing.</p>
+        chat: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      advancement: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/creatures/webs/web-spider-glowing-purple.webp
+    _id: K8XA87tEQuIhHU70
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.K8XA87tEQuIhHU70'
+  - name: Control Light & Sound
+    type: spell
+    img: modules/5e-spellblock-importer/img/spell.png
+    system:
+      description:
+        value: >-
+          <p>You manifest a minor wonder, a sign of supernatural power, within
+          range. You create one of the following magical effects within
+          range:</p><ul><li><p>Your voice booms up to three times as loud as
+          normal for 1 minute.</p></li><li><p>You cause flames to flicker,
+          brighten, dim, or change color for 1 minute.<br />You create an
+          instantaneous sound that originates from a point of your choice within
+          range, such as a rumble of thunder, the cry of an eagle, or ominous
+          whispers</p></li><li><p>Brighten a light source until it hurts to look
+          at it.<br />This gives everyone within 10 feet to the light
+          disadvantage on attack rolls.</p></li><li><p>Lighten existing shadows,
+          reducing hiding ability by 1d4 for 1 minute.</p></li><li><p>You cause
+          shadows to deepen, increasing hiding ability by 1d4 for 1
+          minute.</p></li><li><p>You shape and alter existing sounds, making
+          them sound like something else for up to 1 minute.</p></li><li><p>You
+          shed bright light in a 20-foot radius and dim light for an additional
+          20 feet around you for up to 1 hour. The light can be colored as you
+          like.</p></li></ul><p>If you manifest this power multiple times, you
+          can have up to three of its 1-minute effects active at a time, and you
+          can dismiss such an effect as an action.</p>
+        chat: ''
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      properties:
+        - psionic
+      duration:
+        units: spec
+      range:
+        units: ft
+        value: '100'
+      activities:
+        KlHL4WD2aFv23Rlz:
+          type: utility
+          _id: KlHL4WD2aFv23Rlz
+          sort: 0
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          roll:
+            prompt: false
+            visible: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+          otherActivityAsParentType: true
+      uses:
+        spent: 0
+        recovery: []
+      identifier: control-light-and-sound
+      source:
+        revision: 1
+        rules: '2024'
+      activation:
+        type: action
+      level: 0
+      method: atwill
+      school: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: square
+          size: '400'
+        affects:
+          choice: false
+      prepared: 1
+    folder: null
+    _id: FIk8e5jy7rTNVXqd
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    flags:
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    _key: '!actors.items!3yfwzNthkHre60w7.FIk8e5jy7rTNVXqd'
+prototypeToken:
+  sight:
+    range: 60
+    enabled: true
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes:
+    feelTremor:
+      enabled: true
+      range: 60
+  name: Crystal Spider
+  displayName: 20
+  actorLink: false
+  width: 2
+  height: 2
+  texture:
+    src: tokens/crystal_spider.Token.39bISDVCAumH1Ya2.webp?1769907712084
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  occludable:
+    radius: 0
+  ring:
+    enabled: true
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: tokens/crystal_spider.Token.39bISDVCAumH1Ya2.webp?1769907712084
+  turnMarker:
+    mode: 0
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 2
+folder: aedyWq1YcAc4ZkiL
+name: Crystal Spider
+type: npc
+img: tokens/crystal_spider.Avatar.39bISDVCAumH1Ya2.webp?1769907712084
+effects: []
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+flags:
+  tidy5e-sheet:
+    sheet-theme-settings:
+      accentColor: ''
+      useHeaderBackground: true
+      actorHeaderBackground: ''
+      itemSidebarBackground: ''
+      portraitShape: round
+      rarityColors: {}
+      spellPreparationMethodColors: {}
+  dnd5e:
+    showTokenPortrait: false
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1769908701893
+  modifiedTime: 1769908702499
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: 3yfwzNthkHre60w7
+sort: 200000
+_key: '!actors!3yfwzNthkHre60w7'

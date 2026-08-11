@@ -1,0 +1,3677 @@
+name: Eladrin Mirage Adept
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: DarkSunCreatureCatalog
+    hash: eladrin%20mirage%20adept_darksuncreaturecatalog
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754288106499
+  modifiedTime: 1755395831039
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: wtpTmZg2GSXTC1oy
+img: https://i.imgur.com/fYZENeV.png?1754943565978
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  abilities:
+    str:
+      value: 10
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 16
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: '1'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 15
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '4'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 18
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: '-1'
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: default
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      burrow: null
+      climb: null
+      fly: null
+      swim: null
+      walk: 40
+      units: ft
+      hover: false
+    attunement:
+      max: 3
+    senses:
+      darkvision: 60
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spellcasting: cha
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      value: 111
+      max: 111
+      temp: 0
+      tempmax: 0
+      formula: 14d8 + 28
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+  details:
+    biography:
+      value: >-
+        <p><a
+        href="https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view"
+        target="_blank" rel="noopener noreferrer">Monster Manual - Dark Sun 5th
+        Edition by Stanislav Zabielin</a> by <a
+        href="https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/"
+        target="_blank" rel="noopener noreferrer">auquid</a> and <a
+        href="https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0"
+        target="_blank" rel="noopener noreferrer">Athas Arena Forum by Nathan
+        Hasle</a></p><p>A mysterious, vanishing people</p><p>who now cling to a
+        handful of crumbling palaces in the Lands Within the Wind, eladrin are
+        rare in the cities and villages of Athas. They guard the few remaining
+        passages between the world and their realm, bewitching or slaying
+        travelers who wander too close to their ancient
+        places.</p><p>Lore</p><p>Great eladrin realms once spanned the Lands
+        Within the Wind, but over the centuries the fey otherworld has slowly
+        receded, consumed by the defiling magic that ravaged Athas. As their
+        world died, the fey kingdoms fell into ruin. The eladrin now inhabit a
+        handful of palaces and castles, a small remnant of their former numbers.
+        They guard the hidden doors to their diminished realm with illusions and
+        mazes of psionic enchantment.</p><p>A rare few eladrin, twisted by the
+        slow death of their realm, have become so hate· filled that they
+        sacrifice themselves for the opportunity to hunt those they blame for
+        their home's destruction. These windwalkers allow their essence to
+        slowly bleed into the Lands Within the Wind in exchange for infusion
+        with the energy of that plane. They haunt the trade ways near eladrin
+        lands, slaying every humanoid they can catch unprotected. During their
+        final years of existence, windwalkers fade to ghostlike, semisolid
+        embodiments of murderous hatred.</p><p>Encounters</p><p>Eladrin have
+        little in common with their elf cousins, but both races recognize their
+        old kinship and honor it. Eladrin emissaries might travel with elf
+        tribes for a time to spy on the deserts and cities of Athas. More
+        vicious eladrin, especially windwalkers, occasionally throw in with
+        bandits or other violent humanoids dwelling at the edges of their
+        territory.</p><p>Info</p><p>The wavering mirages and blowing winds open
+        like a curtain, and the mirage adepts step through behind the veiled
+        warriors. Around them, reality ripples and shifts. Mirage adepts are
+        powerful psions who use illusion to hide eladrin ruins and outposts from
+        the sorcerer-kings' spies. They prefer to fight at a distance,
+        retreating to defensible positions behind allies.</p>
+      public: ''
+    alignment: Neutral
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      value: fey
+      subtype: ''
+    habitat:
+      value:
+        - type: desert
+        - type: forest
+        - type: grassland
+        - type: swamp
+        - type: urban
+      custom: ''
+    cr: 7
+    treasure:
+      value: []
+  resources:
+    legact:
+      value: 0
+      max: 0
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    revision: 1
+    rules: '2014'
+    custom: ''
+    book: DarkSunCreatureCatalog
+    page: ''
+    license: ''
+  traits:
+    size: med
+    di:
+      value: []
+      custom: ''
+      bypasses: []
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value: []
+      custom: ''
+    languages:
+      value:
+        - common
+        - elvish
+        - sylvan
+      custom: ''
+      communication: {}
+    important: false
+prototypeToken:
+  name: Eladrin Mirage Adept
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      tokens/eladrin_mirage_adept.token.dark-sun-creature-catalog.webp?1754943565978
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 60
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 1
+items:
+  - _id: q3A3iiCAMqzAkxTi
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The eladrin makes two melee
+          attacks.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        dlOgRmPZdaevW2k5:
+          _id: dlOgRmPZdaevW2k5
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          multiattack_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537640
+      modifiedTime: 1754942537640
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.q3A3iiCAMqzAkxTi'
+  - _id: dnPqe9qi0yRDgRqg
+    name: Longsword
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '215'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +6 to hit,
+          reach 5 ft., one target. <i>Hit:</i> 7 (1d8 + 3) damage, plus 6 (2d6)
+          damage.</p></div>
+        chat: ''
+      range:
+        value: 0
+        long: 0
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: martialM
+        baseItem: longsword
+      properties:
+        - ver
+      activities:
+        O2fLmB1YJc9SraVn:
+          _id: O2fLmB1YJc9SraVn
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: dex
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - slashing
+                number: 1
+                denomination: 8
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+              - types:
+                  - psychic
+                number: 2
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      rarity: ''
+      identified: true
+      equipped: true
+      attunement: ''
+      price:
+        value: 1500
+        denomination: cp
+      quantity: 1
+      weight:
+        value: 3
+        units: lb
+      ammunition:
+        type: ''
+      mastery: sap
+      armor: {}
+      identifier: longsword
+      unidentified:
+        description: ''
+      container: null
+      attuned: false
+      crewed: false
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/weapons/swords/greatsword-guard.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          longsword_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537701
+      modifiedTime: 1754942537701
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.dnPqe9qi0yRDgRqg'
+  - _id: JmIQd1ko0bf6xjJE
+    name: Speak with Beasts and Plants
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The eladrin can communicate with
+          beasts and plans as if they shared a language.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: speak-with-beasts-and-plants
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/commodities/currency/coin-engraved-sun-smile-copper.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          speak%20with%20beasts%20and%20plants_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537733
+      modifiedTime: 1754942537733
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.JmIQd1ko0bf6xjJE'
+  - _id: 4oTo6W73KSjGMjvi
+    name: Magic Resistance
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The eladrin has advantage on saving
+          throws against spells and other magical effects.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: magic-resistance
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          magic%20resistance_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537765
+      modifiedTime: 1754942537765
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.4oTo6W73KSjGMjvi'
+  - _id: B29PmdwG9ReGkfYV
+    name: Illusory Self
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The eladrin can create an illusory
+          duplicate of himself as an instant, almost instinctual reaction to
+          danger. When a creature makes an attack roll against the eladrin, it
+          can use its reaction to interpose an illusory duplicate between him
+          and the attacker. The attack automatically misses, then the illusion
+          dissipates.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: '1'
+        recovery:
+          - formula: '5'
+            period: recharge
+            type: recoverAll
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        PdRl9loqEe725LXX:
+          _id: PdRl9loqEe725LXX
+          type: utility
+          activation:
+            type: reactionmanual
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: illusory-self
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/defensive/illusion-evasion-echo-purple.webp
+    flags:
+      plutonium:
+        page: monsterReaction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          illusory%20self%20(recharge%205%e2%80%936)_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537802
+      modifiedTime: 1754942537802
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.B29PmdwG9ReGkfYV'
+  - _id: GJ7bGC9hynEIWu7m
+    name: Mirage Arcane
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '299'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>You make terrain in an area up to 1
+          mile square look, sound, smell, and even feel like some other sort of
+          terrain. Open fields or a road could be made to resemble a swamp,
+          hill, crevasse, or some other rough or impassable terrain. A pond can
+          be made to seem like a grassy meadow, a precipice like a gentle slope,
+          or a rock-strewn gully like a wide and smooth road.</p><p>Similarly,
+          you can alter the appearance of structures or add them where none are
+          present. The spell doesn't disguise, conceal, or add
+          creatures.</p><p>The illusion includes audible, visual, tactile, and
+          olfactory elements, so it can turn clear ground into
+          @variantrule[Difficult Terrain|XPHB] (or vice versa) or otherwise
+          impede movement through the area. Any piece of the illusory terrain
+          (such as a rock or stick) that is removed from the spell's area
+          disappears immediately.</p><p>Creatures with
+          &amp;Reference[rule=Truesight] can see through the illusion to the
+          terrain's true form; however, all other elements of the illusion
+          remain, so while the creature is aware of the illusion's presence, the
+          creature can still physically interact with the illusion.</p></div>
+        chat: ''
+      level: 7
+      school: ill
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: spec
+      activation:
+        type: minute
+        value: 10
+        condition: ''
+      duration:
+        value: '10'
+        units: day
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          name: Alter Terrain
+          type: utility
+          activation:
+            type: action
+            override: false
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: mirage-arcane
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/air/fog-gas-smoke-swirling-blue.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: mirage%20arcane_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Druid
+          - Wizard
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537842
+      modifiedTime: 1754942537842
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.GJ7bGC9hynEIWu7m'
+  - _id: ipaM195nwWzOR6ym
+    name: Prismatic Spray
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '307'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Eight rays of light flash from you in
+          a 60-foot @variantrule[Cone [Area of Effect]|XPHB|Cone]. Each creature
+          in the @variantrule[Cone [Area of Effect]|XPHB|Cone] makes a Dexterity
+          saving throw. For each target, roll 1d8 to determine which color ray
+          affects it, consulting the Prismatic Rays table.</p><table
+          class="w-100 rd__table  stripe-odd-table"
+          data-roll-name-ancestor="Prismatic Rays"><caption>Prismatic
+          Rays</caption><thead><tr><th class="rd__th ve-col-2 ve-text-center "
+          data-rd-isroller="true">1d8</th><th class="rd__th ve-col-10 "
+          data-rd-isroller="false">Ray</th></tr></thead><tbody><tr><td
+          class="rd__th ve-col-2 ve-text-center " data-roll-min="1"
+          data-roll-max="1">1</td><td class="rd__th ve-col-10 "><b>Red.</b>
+          <i>Failed Save:</i> 12d6 damage. <i>Successful Save:</i> Half as much
+          damage.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="2" data-roll-max="2">2</td><td class="rd__th ve-col-10
+          "><b>Orange.</b> <i>Failed Save:</i> 12d6 damage. <i>Successful
+          Save:</i> Half as much damage.</td></tr><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="3" data-roll-max="3">3</td><td
+          class="rd__th ve-col-10 "><b>Yellow.</b> <i>Failed Save:</i> 12d6
+          damage. <i>Successful Save:</i> Half as much damage.</td></tr><tr><td
+          class="rd__th ve-col-2 ve-text-center " data-roll-min="4"
+          data-roll-max="4">4</td><td class="rd__th ve-col-10 "><b>Green.</b>
+          <i>Failed Save:</i> 12d6 damage. <i>Successful Save:</i> Half as much
+          damage.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="5" data-roll-max="5">5</td><td class="rd__th ve-col-10
+          "><b>Blue.</b> <i>Failed Save:</i> 12d6 damage. <i>Successful
+          Save:</i> Half as much damage.</td></tr><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="6" data-roll-max="6">6</td><td
+          class="rd__th ve-col-10 "><b>Indigo.</b> <i>Failed Save:</i> The
+          target has the &amp;Reference[condition=Restrained] condition and
+          makes a Constitution saving throw at the end of each of its turns. If
+          it successfully saves three times, the condition ends. If it fails
+          three times, it has the &amp;Reference[condition=Petrified] condition
+          until it is freed by an effect like the @spell[Greater
+          Restoration|XPHB] spell. The successes and failures needn't be
+          consecutive; keep track of both until the target collects three of a
+          kind.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="7" data-roll-max="7">7</td><td class="rd__th ve-col-10
+          "><b>Violet.</b> <i>Failed Save:</i> The target has the
+          &amp;Reference[condition=Blinded] condition and makes a Wisdom saving
+          throw at the start of your next turn. On a successful save, the
+          condition ends. On a failed save, the condition ends, and the creature
+          teleports to another plane of existence (DM's
+          choice).</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="8" data-roll-max="8">8</td><td class="rd__th ve-col-10
+          "><b>Special.</b> The target is struck by two rays. Roll twice,
+          rerolling any 8.</td></tr></tbody></table></div>
+        chat: ''
+      level: 7
+      school: evo
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cone
+          size: '60'
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: self
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          name: Cast
+          type: save
+          activation:
+            type: action
+            override: false
+          damage:
+            parts:
+              - number: 12
+                denomination: 6
+                types:
+                  - acid
+                  - cold
+                  - fire
+                  - lightning
+                  - poison
+                scaling:
+                  number: 1
+                custom:
+                  enabled: false
+            onSave: half
+            critical:
+              allow: false
+          save:
+            ability:
+              - dex
+            dc:
+              calculation: spellcasting
+          effects:
+            - _id: prismaticSpray00
+              onSave: false
+            - _id: prismaticSpray10
+              onSave: false
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        dnd5eactivity001:
+          name: Indigo Save (Con)
+          type: save
+          img: systems/dnd5e/icons/svg/abilities/constitution.svg
+          activation:
+            type: action
+            override: false
+          target:
+            affects:
+              count: '1'
+              type: creature
+              choice: false
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            override: false
+          range:
+            units: any
+            override: false
+          damage:
+            onSave: half
+            critical:
+              allow: false
+            parts: []
+          save:
+            ability:
+              - con
+            dc:
+              calculation: spellcasting
+          _id: dnd5eactivity001
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+        dnd5eactivity002:
+          name: Violet Save (Wis)
+          type: save
+          img: systems/dnd5e/icons/svg/abilities/wisdom.svg
+          activation:
+            type: action
+            override: false
+          target:
+            affects:
+              count: '1'
+              type: creature
+              choice: false
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            override: false
+          range:
+            units: any
+            override: false
+          damage:
+            onSave: half
+            critical:
+              allow: false
+            parts: []
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: spellcasting
+          _id: dnd5eactivity002
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: prismatic-spray
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/projectile-beams-salvo-yellow.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: prismatic%20spray_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Sorcerer
+          - Wizard
+    effects:
+      - _id: prismaticSpray00
+        name: Petrifying (Indigo)
+        img: icons/magic/light/projectile-beams-salvo-yellow.webp
+        description: >-
+          <div class="rd__b  rd__b--3"><p>The target has the
+          &amp;Reference[Restrained apply=false] condition and makes a [[/save
+          ability=con format=long]] at the end of each of its turns. If it
+          successfully saves three times, the condition ends. If it fails three
+          times, it has the &amp;Reference[Petrified] condition until it is
+          freed by an effect like the <a
+          href="https://5e.tools/spells.html#greater%20restoration_xphb"
+          data-vet-page="spells.html" data-vet-source="XPHB"
+          data-vet-hash="greater%20restoration_xphb">Greater Restoration</a>
+          spell. The successes and failures needn't be consecutive; keep track
+          of both until the target collects three of a kind.</p></div>
+        disabled: false
+        duration:
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: petrifying-indigo
+        statuses:
+          - restrained
+        type: base
+        system:
+          changes: []
+        tint: '#ffffff'
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.ipaM195nwWzOR6ym.prismaticSpray00
+      - _id: prismaticSpray10
+        name: Teleporting (Violet)
+        img: icons/magic/light/projectile-beams-salvo-yellow.webp
+        description: >-
+          The target has the &amp;Reference[Blinded apply=false] condition and
+          makes a [[/save ability=wis format=long]] at the start of your next
+          turn. On a successful save, the condition ends. On a failed save, the
+          condition ends, and the creature teleports to another plane of
+          existence (DM's choice).
+        disabled: false
+        duration:
+          value: 1
+          units: rounds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: teleporting-violet
+        statuses:
+          - blinded
+        type: base
+        system:
+          changes: []
+        tint: '#ffffff'
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.ipaM195nwWzOR6ym.prismaticSpray10
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537888
+      modifiedTime: 1754942537888
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.ipaM195nwWzOR6ym'
+  - _id: KI00qR42W1krVith
+    name: True Seeing
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '336'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>For the duration, the willing creature
+          you touch has &amp;Reference[rule=Truesight] with a range of 120
+          feet.</p></div>
+        chat: ''
+      level: 6
+      school: div
+      properties:
+        - vocal
+        - somatic
+        - material
+      ability: cha
+      materials:
+        value: mushroom powder worth 25+ GP, which the spell consumes
+        consumed: true
+        cost: 25
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: willing
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: touch
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: hour
+      uses:
+        max: '1'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          name: Grant Truesight
+          type: utility
+          activation:
+            type: action
+            override: false
+          effects:
+            - _id: trueSeeing000000
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: true-seeing
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/perception/eye-ringed-glow-angry-large-teal.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: true%20seeing_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Cleric
+          - Sorcerer
+          - Warlock
+          - Wizard
+    effects:
+      - _id: trueSeeing000000
+        name: Truesight
+        img: icons/magic/perception/eye-ringed-glow-angry-large-teal.webp
+        description: ''
+        disabled: false
+        duration:
+          value: 3600
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: truesight
+        type: base
+        system:
+          changes:
+            - key: system.attributes.senses.truesight
+              value: 120
+              priority: 4
+              type: upgrade
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.KI00qR42W1krVith.trueSeeing000000
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537952
+      modifiedTime: 1754942537952
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.KI00qR42W1krVith'
+  - _id: 5oKqmNk2NPorOhBm
+    name: Confusion
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '253'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Each creature in a 10-foot-radius
+          @variantrule[Sphere [Area of Effect]|XPHB|Sphere] centered on a point
+          you choose within range must succeed on a Wisdom saving throw, or that
+          target can't take Bonus Actions or Reactions and must roll 1d10 at the
+          start of each of its turns to determine its behavior for that turn,
+          consulting the table below.</p><table class="w-100 rd__table 
+          stripe-odd-table"><thead><tr><th class="rd__th ve-col-2 ve-text-center
+          " data-rd-isroller="true">1d10</th><th class="rd__th ve-col-10 "
+          data-rd-isroller="false">Behavior for the
+          Turn</th></tr></thead><tbody><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="1" data-roll-max="1">1</td><td
+          class="rd__th ve-col-10 ">The target doesn't take an action, and it
+          uses all its movement to move. Roll 1d4 for the direction: <b>1</b>,
+          north; <b>2</b>, east; <b>3</b>, south; or <b>4</b>,
+          west.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="2" data-roll-max="6">2-6</td><td class="rd__th
+          ve-col-10 ">The target doesn't move or take actions.</td></tr><tr><td
+          class="rd__th ve-col-2 ve-text-center " data-roll-min="7"
+          data-roll-max="8">7-8</td><td class="rd__th ve-col-10 ">The target
+          doesn't move, and it takes the @action[Attack|XPHB] action to make one
+          melee attack against a random creature within reach. If none are
+          within reach, the target takes no action.</td></tr><tr><td
+          class="rd__th ve-col-2 ve-text-center " data-roll-min="9"
+          data-roll-max="10">9-10</td><td class="rd__th ve-col-10 ">The target
+          chooses its behavior.</td></tr></tbody></table><p>At the end of each
+          of its turns, an affected target repeats the save, ending the spell on
+          itself on a success.</p></div><div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Using a Higher-Level Spell Slot"
+          class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+          data-title-index="1"> <span class="entry-title-inner">Using a
+          Higher-Level Spell Slot.</span></span> The @variantrule[Sphere [Area
+          of Effect]|XPHB|Sphere]'s radius increases by 5 feet for each spell
+          slot level above 4.</p></div></div>
+        chat: ''
+      level: 4
+      school: enc
+      properties:
+        - vocal
+        - somatic
+        - material
+        - concentration
+      ability: cha
+      materials:
+        value: three nut shells
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: sphere
+          size: '@item.level * 5 - 10'
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '90'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: minute
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          type: save
+          activation:
+            type: action
+            override: false
+          damage:
+            onSave: half
+            critical:
+              allow: false
+            parts: []
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: spellcasting
+          effects:
+            - _id: confusion0000000
+              onSave: false
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: confusion
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/air/wind-tornado-cyclone-purple-pink.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: confusion_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Druid
+          - Sorcerer
+          - Wizard
+    effects:
+      - _id: confusion0000000
+        name: Confused
+        img: icons/magic/air/wind-tornado-cyclone-purple-pink.webp
+        description: >-
+          <div class="rd__b  rd__b--3"><p>The target can't take Bonus Actions or
+          Reactions and must roll 1d10 at the start of each of its turns to
+          determine its behavior for that turn, consulting the table
+          below.</p><table class="w-100 rd__table 
+          stripe-odd-table"><thead><tr><th class="rd__th ve-col-2 ve-text-center
+          " data-rd-isroller="true"><span class="roller render-roller"
+          title="Click to roll. SHIFT/CTRL to roll twice."
+          data-packed-dice="{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;1d10&quot;,&quot;displayText&quot;:&quot;1d10&quot;}">1d10</span></th><th
+          class="rd__th ve-col-10 " data-rd-isroller="false">Behavior for the
+          Turn</th></tr></thead><tbody><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="1" data-roll-max="1">1</td><td
+          class="rd__th ve-col-10 ">The target doesn't take an action, and it
+          uses all its movement to move. Roll <span class="roller render-roller"
+          title="Click to roll. SHIFT/CTRL to roll twice."
+          data-packed-dice="{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;1d4&quot;,&quot;displayText&quot;:&quot;1d4&quot;}">1d4</span>
+          for the direction: <b>1</b>, north; <b>2</b>, east; <b>3</b>, south;
+          or <b>4</b>, west.</td></tr><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="2" data-roll-max="6">2-6</td><td
+          class="rd__th ve-col-10 ">The target doesn't move or take
+          actions.</td></tr><tr><td class="rd__th ve-col-2 ve-text-center "
+          data-roll-min="7" data-roll-max="8">7-8</td><td class="rd__th
+          ve-col-10 ">The target doesn't move, and it takes the <a
+          href="https://5e.tools/actions.html#attack_xphb"
+          data-vet-page="actions.html" data-vet-source="XPHB"
+          data-vet-hash="attack_xphb">Attack</a> action to make one melee attack
+          against a random creature within reach. If none are within reach, the
+          target takes no action.</td></tr><tr><td class="rd__th ve-col-2
+          ve-text-center " data-roll-min="9" data-roll-max="10">9-10</td><td
+          class="rd__th ve-col-10 ">The target chooses its
+          behavior.</td></tr></tbody></table><p>At the end of each of its turns,
+          an affected target repeats the [[/save ability=wis]] save, ending the
+          spell on itself on a success.</p></div>
+        disabled: false
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: confused
+        type: base
+        system:
+          changes: []
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.5oKqmNk2NPorOhBm.confusion0000000
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942537993
+      modifiedTime: 1754942537993
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.5oKqmNk2NPorOhBm'
+  - _id: ceenB4QKdIIxBAgh
+    name: Dispel Magic
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '264'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Choose one creature, object, or
+          magical effect within range. Any ongoing spell of level 3 or lower on
+          the target ends. For each ongoing spell of level 4 or higher on the
+          target, make an ability check using your spellcasting ability (DC
+          <span class="rd__dc">10</span> plus that spell's level). On a
+          successful check, the spell ends.</p></div><div class="rd__b 
+          rd__b--3"><p></p><div data-roll-name-ancestor="Using a Higher-Level
+          Spell Slot" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+          data-title-index="1"> <span class="entry-title-inner">Using a
+          Higher-Level Spell Slot.</span></span> You automatically end a spell
+          on the target if the spell's level is equal to or less than the level
+          of the spell slot you use.</p></div></div>
+        chat: ''
+      level: 3
+      school: abj
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+      range:
+        value: '120'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        oPTl7NSCvfC4A7LO:
+          _id: oPTl7NSCvfC4A7LO
+          type: utility
+          name: Cast
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: dispel-magic
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/skills/melee/strike-blade-knife-orange-blue.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: dispel%20magic_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Cleric
+          - Druid
+          - Ranger
+          - Sorcerer
+          - Warlock
+          - Wizard
+          - Paladin
+          - Artificer
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538050
+      modifiedTime: 1754942538050
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.ceenB4QKdIIxBAgh'
+  - _id: jzhp8Xs8ky7kQ6Ac
+    name: Mirror Image
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '299'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Three illusory duplicates of yourself
+          appear in your space. Until the spell ends, the duplicates move with
+          you and mimic your actions, shifting position so it's impossible to
+          track which image is real.</p><p>Each time a creature hits you with an
+          attack roll during the spell's duration, roll a d6 for each of your
+          remaining duplicates. If any of the d6s rolls a 3 or higher, one of
+          the duplicates is hit instead of you, and the duplicate is destroyed.
+          The duplicates otherwise ignore all other damage and effects. The
+          spell ends when all three duplicates are destroyed.</p><p>A creature
+          is unaffected by this spell if it has the
+          &amp;Reference[condition=Blinded] condition,
+          &amp;Reference[rule=Blindsight], or
+          &amp;Reference[rule=Truesight].</p></div>
+        chat: ''
+      level: 2
+      school: ill
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: self
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: self
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: minute
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          type: utility
+          activation:
+            type: action
+            override: false
+          roll:
+            formula: (@flags.dnd-players-handbook.mirrorImages)d6kh
+            prompt: false
+            visible: false
+          effects:
+            - _id: mirrorImage00000
+            - _id: mirrorImage10000
+            - _id: mirrorImage20000
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: mirror-image
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: mirror%20image_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Sorcerer
+          - Warlock
+          - Wizard
+    effects:
+      - _id: mirrorImage00000
+        name: Duplicate A
+        img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+        description: ''
+        disabled: false
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: duplicate-a
+        type: base
+        system:
+          changes:
+            - key: flags.dnd-players-handbook.mirrorImages
+              value: 1
+              priority: 7
+              type: add
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.jzhp8Xs8ky7kQ6Ac.mirrorImage00000
+      - _id: mirrorImage10000
+        name: Duplicate B
+        img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+        description: ''
+        disabled: false
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: duplicate-b
+        type: base
+        system:
+          changes:
+            - key: flags.dnd-players-handbook.mirrorImages
+              value: 1
+              priority: 7
+              type: add
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.jzhp8Xs8ky7kQ6Ac.mirrorImage10000
+      - _id: mirrorImage20000
+        name: Duplicate C
+        img: icons/magic/control/debuff-energy-hold-levitate-pink.webp
+        description: ''
+        disabled: false
+        duration:
+          value: 60
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: duplicate-c
+        type: base
+        system:
+          changes:
+            - key: flags.dnd-players-handbook.mirrorImages
+              value: 1
+              priority: 7
+              type: add
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.jzhp8Xs8ky7kQ6Ac.mirrorImage20000
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538094
+      modifiedTime: 1754942538094
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.jzhp8Xs8ky7kQ6Ac'
+  - _id: 2ken55JmafMdZ3U3
+    name: Mislead
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '299'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>You gain the
+          &amp;Reference[condition=Invisible] condition at the same time that an
+          illusory double of you appears where you are standing. The double
+          lasts for the duration, but the invisibility ends immediately after
+          you make an attack roll, deal damage, or cast a spell.</p><p>As a
+          @action[Magic|XPHB] action, you can move the illusory double up to
+          twice your @variantrule[Speed|XPHB] and make it gesture, speak, and
+          behave in whatever way you choose. It is intangible and
+          invulnerable.</p><p>You can see through its eyes and hear through its
+          ears as if you were located where it is.</p></div>
+        chat: ''
+      level: 5
+      school: ill
+      properties:
+        - somatic
+        - concentration
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: self
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: self
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: hour
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        M0WS5Er5MfBBBQzV:
+          _id: M0WS5Er5MfBBBQzV
+          type: utility
+          name: Cast
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets:
+              - target: ''
+                value: '1'
+                type: itemUses
+                scaling: {}
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: mislead
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: mislead_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Warlock
+          - Wizard
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538176
+      modifiedTime: 1754942538176
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.2ken55JmafMdZ3U3'
+  - _id: TabEQlESwruvad5o
+    name: Disguise Self
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '262'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>You make yourself—including your
+          clothing, armor, weapons, and other belongings on your person—look
+          different until the spell ends. You can seem 1 foot shorter or taller
+          and can appear heavier or lighter. You must adopt a form that has the
+          same basic arrangement of limbs as you have. Otherwise, the extent of
+          the illusion is up to you.</p><p>The changes wrought by this spell
+          fail to hold up to physical inspection. For example, if you use this
+          spell to add a hat to your outfit, objects pass through the hat, and
+          anyone who touches it would feel nothing.</p><p>To discern that you
+          are disguised, a creature must take the @action[Study|XPHB] action to
+          inspect your appearance and succeed on an Intelligence
+          (&amp;Reference[skill=Investigation]) check against your spell save
+          DC.</p></div>
+        chat: ''
+      level: 1
+      school: ill
+      properties:
+        - vocal
+        - somatic
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: self
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: self
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '1'
+        units: hour
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        dnd5eactivity000:
+          type: utility
+          activation:
+            type: action
+            override: false
+          effects:
+            - _id: disguiseSelf0000
+          _id: dnd5eactivity000
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: disguise-self
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/debuff-energy-hold-teal-blue.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: disguise%20self_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+          - Sorcerer
+          - Wizard
+          - Artificer
+    effects:
+      - _id: disguiseSelf0000
+        name: Disguised
+        img: icons/magic/control/debuff-energy-hold-teal-blue.webp
+        description: >-
+          To discern that you are disguised, a creature must take the Study
+          action to inspect your appearance and succeed on an [[/check
+          ability=int skill=inv]] check against your spell save DC.
+        disabled: false
+        duration:
+          value: 3600
+          units: seconds
+          expiry: turnStart
+          expired: false
+        origin: null
+        transfer: false
+        flags:
+          plutonium:
+            dedupeId: disguised
+        type: base
+        system:
+          changes: []
+        tint: '#ffffff'
+        statuses: []
+        sort: 0
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        start: null
+        showIcon: 1
+        folder: null
+        _key: >-
+          !actors.items.effects!wtpTmZg2GSXTC1oy.TabEQlESwruvad5o.disguiseSelf0000
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538238
+      modifiedTime: 1754942538238
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.TabEQlESwruvad5o'
+  - _id: G4UEVLqKLxuhmFQ2
+    name: Dissonant Whispers
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '264'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>One creature of your choice that you
+          can see within range hears a discordant melody in its mind. The target
+          makes a Wisdom saving throw. On a failed save, it takes 3d6 damage and
+          must immediately use its @variantrule[Reaction|XPHB], if available, to
+          move as far away from you as it can, using the safest route. On a
+          successful save, the target takes half as much damage
+          only.</p></div><div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Using a Higher-Level Spell Slot"
+          class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+          data-title-index="1"> <span class="entry-title-inner">Using a
+          Higher-Level Spell Slot.</span></span> The damage increases by 1d6 for
+          each spell slot level above 1.</p></div></div>
+        chat: ''
+      level: 1
+      school: enc
+      properties:
+        - vocal
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: true
+          special: ''
+      range:
+        value: '60'
+        units: ft
+      activation:
+        type: action
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        3peE7WRNbQJrcvK7:
+          _id: 3peE7WRNbQJrcvK7
+          type: save
+          name: ''
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          save:
+            ability:
+              - wis
+            dc:
+              calculation: spellcasting
+          damage:
+            onSave: half
+            parts:
+              - types:
+                  - psychic
+                number: 3
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: whole
+                  number: 1
+                custom:
+                  enabled: false
+            critical:
+              allow: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          friendlySave: default
+      identifier: dissonant-whispers
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/fear-fright-shadow-monster-green.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: dissonant%20whispers_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Bard
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538294
+      modifiedTime: 1754942538294
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.G4UEVLqKLxuhmFQ2'
+  - _id: RyrxCzBM5moVODhk
+    name: Misty Step
+    type: spell
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '299'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Briefly surrounded by silvery mist,
+          you teleport up to 30 feet to an unoccupied space you can
+          see.</p></div>
+        chat: ''
+      level: 2
+      school: con
+      properties:
+        - vocal
+      ability: cha
+      materials:
+        value: ''
+        consumed: false
+        cost: 0
+        supply: 0
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: self
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+      range:
+        value: '0'
+        units: self
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+      duration:
+        value: '0'
+        units: inst
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      preparation:
+        mode: innate
+        prepared: true
+      activities:
+        gOFrMPGKojITjbQQ:
+          _id: gOFrMPGKojITjbQQ
+          type: utility
+          name: Cast
+          activation:
+            type: action
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            forceDialog: false
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+      identifier: misty-step
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/control/debuff-energy-snare-brown.webp
+    flags:
+      plutonium:
+        page: spells.html
+        source: XPHB
+        hash: misty%20step_xphb
+        propDroppable: spell
+        spellClassNames:
+          - Sorcerer
+          - Warlock
+          - Wizard
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538350
+      modifiedTime: 1754942538350
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.RyrxCzBM5moVODhk'
+  - _id: G1jtv9sD2kCPjMB8
+    name: Innate Spellcasting (Psionics)
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p></p><div
+          data-roll-name-ancestor="Innate Spellcasting (Psionics)" class="rd__b 
+          rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="1"> <span
+          class="entry-title-inner">Innate Spellcasting
+          (Psionics).</span></span> The eladrin innate spellcasting ability is
+          Charisma (spell save DC <span class="rd__dc">15</span>). The eladrin
+          can innately cast the following spells, requiring no material
+          components:</p><ul class="rd__list rd__list-hang-notitle"><li
+          class="rd__li  rd__li-spell"><p>At will: @UUID[.TabEQlESwruvad5o],
+          @UUID[.G4UEVLqKLxuhmFQ2] (4th level spell),
+          @UUID[.RyrxCzBM5moVODhk]</p></li><li class="rd__li 
+          rd__li-spell"><p>3/day each: @UUID[.5oKqmNk2NPorOhBm],
+          @UUID[.ceenB4QKdIIxBAgh], @UUID[.jzhp8Xs8ky7kQ6Ac],
+          @UUID[.2ken55JmafMdZ3U3]</p></li><li class="rd__li 
+          rd__li-spell"><p>1/day each: @UUID[.GJ7bGC9hynEIWu7m],
+          @UUID[.ipaM195nwWzOR6ym],
+          @UUID[.KI00qR42W1krVith]</p></li></ul></div></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities: {}
+      identifier: innate-spellcasting-psionics
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+    ownership:
+      default: 0
+      wgCeShTrqHJFBbDr: 3
+    img: icons/magic/light/projectiles-star-purple.webp
+    flags:
+      plutonium:
+        page: monsterSpellcasting
+        source: DarkSunCreatureCatalog
+        hash: >-
+          innate%20spellcasting%20(psionics)_eladrin%20mirage%20adept_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      createdTime: 1754942538395
+      modifiedTime: 1754942538395
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    folder: null
+    sort: 0
+    _key: '!actors.items!wtpTmZg2GSXTC1oy.G1jtv9sD2kCPjMB8'
+effects: []
+folder: 0tbHQFYYfAPRA3nL
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!actors!wtpTmZg2GSXTC1oy'

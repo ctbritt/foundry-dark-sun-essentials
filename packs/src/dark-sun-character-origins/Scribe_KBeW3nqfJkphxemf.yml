@@ -1,0 +1,139 @@
+folder: 3ceHqueQSXMSDgbA
+name: Scribe
+type: background
+img: icons/sundries/documents/document-sealed-red-tan.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[int], &amp;Reference[cha],
+      &amp;Reference[wis]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[per], &amp;Reference[his]</p><p><strong>Languages:</strong>
+      Read and Write Cavilish (merchant's tongue) and
+      Common</p><p><strong>Literacy:</strong> You can read and write the
+      languages you speak</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftKeenMind00000]{Keen
+      Mind}</p><p><strong>Equipment:</strong> Bottle of lead ink, quill,
+      merchant's robes, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 15 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> A literate slave owned by a merchant house,
+      templarate, or noble. Recently freed, escaped, or your master passed away
+      granting you freedom.</p>
+    chat: ''
+  identifier: athas-scribe
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '289'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: WdsBeZxY55QxtWjP
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: 8ZSEI8KTb7wcIoS4
+      group: ''
+      sort: 200000
+    - _id: ONWyDnBTGD8cq9gd
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: EmQxjpwVfEC3TTl3
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - con
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          int: 2
+          cha: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: rb5l0ppP2JPtAhlj
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - languages:standard:*
+        grants:
+          - skills:per
+          - skills:his
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: 6hpyDizKgqFb6sUF
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftKeenMind00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '15'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.KBeW3nqfJkphxemf
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: KBeW3nqfJkphxemf
+sort: 274219
+_key: '!items!KBeW3nqfJkphxemf'

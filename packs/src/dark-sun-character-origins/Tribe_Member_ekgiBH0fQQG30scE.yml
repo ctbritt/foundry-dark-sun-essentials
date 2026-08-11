@@ -1,0 +1,144 @@
+folder: 3ceHqueQSXMSDgbA
+name: Tribe Member
+type: background
+img: icons/magic/nature/tree-spirit-blue.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[str], &amp;Reference[con],
+      &amp;Reference[dex]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[ath], &amp;Reference[sur]</p><p><strong>Tool
+      Proficiencies:</strong> One musical instrument or artisan's
+      tools</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX]{Survivor} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftTough000000]{Tough}</p><p><strong>Equipment:</strong>
+      Hunting trap, totemic token or tribal tattoos,
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Traveler's
+      Clothes}, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 10 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> A member of an elven tribe, halfling tribe,
+      slave tribe, or thri-kreen clutch. Your people hold to old ways, and
+      tradition has kept you strong.</p>
+    chat: ''
+  identifier: athas-tribe-member
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '288'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: SxDhjqOzEVaV5eYh
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: IoV09rHYdYNlwh5Z
+      group: ''
+      sort: 200000
+    - _id: jK4GrPt9uzgSbfAG
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: zIJc2S6EFa0OIe98
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - int
+          - wis
+          - cha
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          str: 2
+          con: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: wnmz2e1SEkqgtazy
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:music:*
+              - tool:*
+        grants:
+          - skills:ath
+          - skills:sur
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: Lt6HuB4vVEH560l8
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftTough000000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '10'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.ekgiBH0fQQG30scE
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: ekgiBH0fQQG30scE
+sort: 273829
+_key: '!items!ekgiBH0fQQG30scE'

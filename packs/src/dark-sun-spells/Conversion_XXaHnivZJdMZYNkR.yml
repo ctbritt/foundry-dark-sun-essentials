@@ -1,0 +1,96 @@
+name: Conversion
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>This spell removes the burden of acts of defiling from an arcane
+      spellcaster. The casters druid level must be equal to or higher then the
+      targets arcane spellcaster level.</p><p>If the defiler seeking atonement
+      is truly repentant and desires setting right their destruction of plant
+      life, the spell causes the following effects: </p><ul><li><p>The targets
+      number of defiler points and defiler aura points are reduced to
+      zero.</p></li><li><p>The targets penalty to Charisma checks caused by
+      defiling are halved.</p></li><li><p>The targets reductions to their
+      Constitution score caused by defiling are halved.</p></li><li><p>If the
+      targets alignment was changed to evil from defiling, it reverts back to
+      the alignment is was before the change.</p></li><li><p>If the target
+      defiled while under some sort of magical or psionic compulsion or was
+      otherwise unwilling, both the target and the caster gain 1 point of
+      exhaustion at the end of spell.  However, if any of the defiling was
+      deliberate and willful, both the target and the caster instead gain 2
+      points of exhaustion at the end of spell.</p></li></ul><p>A creature can
+      only benefit from this spell once. Any future attempts will automatically
+      fail.<br />If conversion is cast on a defiler not truly seeking atonement,
+      then the spell fails and the target instead takes 6d6 necrotic damage that
+      can’t be reduced in any way then gains 2 points of exhaustion.</p><p>If
+      the spell is successful and the target ever defiles again, The Charisma
+      check and Constitution score penalties change back to a -2 instead of a -1
+      whenever they reach the appropriate level in the defiler aura table.<br
+      /></p>
+    chat: ''
+  materials:
+    value: >-
+      Burning incense, along with various rare plants and herbs worth at least
+      500 ct
+    consumed: true
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - material
+    - somatic
+  level: 5
+  school: abj
+  duration:
+    units: inst
+  range:
+    units: touch
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  identifier: conversion
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: hour
+    value: 1
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+  sourceClass: Druid
+folder: null
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 3423395
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754433467772
+  modifiedTime: 1784910749613
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: XXaHnivZJdMZYNkR
+sort: 650000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!XXaHnivZJdMZYNkR'

@@ -1,0 +1,272 @@
+_id: 8TksPVusm2a9Nwl5
+type: spell
+system:
+  activities:
+    utilityRejuvenat:
+      type: utility
+      _id: utilityRejuvenat
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p class="p1">This spell restores deﬁled or otherwise desolate <span
+      class="s10">terrain</span> <span class="s10">to</span> <span
+      class="s10">where</span> <span class="s10">it</span> <span
+      class="s10">can</span> <span class="s10">support</span> <span
+      class="s10">life</span> <span class="s10">again.</span> <span
+      class="s10">The spell</span> <span class="s10">may</span> <span
+      class="s10">be</span> <span class="s10">cast</span> <span
+      class="s10">on</span> <span class="s10">any</span> <span
+      class="s10">ground</span> <span class="s10">short</span> <span
+      class="s10">of</span> <span class="s10">solid </span><span
+      class="s14">rock,</span> <span class="s14">including</span> <span
+      class="s14">sand,</span> <span class="s14">rocky</span> <span
+      class="s14">sand,</span> <span class="s14">soil,</span> <span
+      class="s14">or</span> <span class="s14">dust. </span></p>
+
+      <p class="p7">The spell effects the ground in a 50-foot radius <span
+      class="s1">centered</span> <span class="s1">on</span> <span
+      class="s1">the</span> <span class="s1">caster.</span> <span
+      class="s1">Once</span> <span class="s1">cast,</span> <span
+      class="s1">the</span> <span class="s1">soil</span> <span class="s1">is
+      enriched</span> <span class="s1">and</span> <span
+      class="s1">moistened,</span> <span class="s1">and</span> <span
+      class="s1">a</span> <span class="s1">layer</span> <span
+      class="s1">of</span> <span class="s1">ﬁne grass</span> <span
+      class="s1">or</span> <span class="s1">other</span> <span
+      class="s1">plant</span> <span class="s1">life</span> <span
+      class="s1">appropriate</span> <span class="s1">to</span> <span
+      class="s1">the terrain</span> <span class="s1">emerges</span> <span
+      class="s1">instantly.</span></p>
+
+      <p class="p8"><span class="s1">Once</span> <span class="s1">cast,</span>
+      <span class="s1">the</span> <span class="s1">moist</span> <span
+      class="s1">soil</span> <span class="s1">and</span> <span
+      class="s1">grass</span> <span class="s1">are</span> <span class="s1">not
+      </span><span class="s10">magical</span> <span class="s10">and</span> <span
+      class="s10">are</span> <span class="s10">subject</span> <span
+      class="s10">to</span> <span class="s10">all</span> <span
+      class="s10">natural</span> <span class="s10">forces </span><span
+      class="s2">upon</span> <span class="s2">them.</span> <span
+      class="s2">They</span> <span class="s2">will,</span> <span
+      class="s2">however,</span> <span class="s2">survive a</span> <span
+      class="s2">week </span>in even the worst of conditions. Rejuvenate will
+      otherwise last until another arcane defilement <span
+      class="s10">spell</span> <span class="s10">destroys</span> <span
+      class="s10">the</span> <span class="s10">vegetation</span> <span
+      class="s10">in</span> <span class="s10">the</span> <span
+      class="s10">area.</span></p>
+
+      <p class="p9">Wizards who are Defilers cannot cast this<span class="s1">
+      spell.</span></p>
+
+      <p class="p10"><span class="s16"><b>At</b></span> <span
+      class="s16"><b>Higher</b></span> <span class="s16"><b>Levels.</b></span>
+      <span class="s2">When</span> <span class="s2">you</span> <span
+      class="s2">cast</span> <span class="s2">this</span> <span
+      class="s2">spell</span> <span class="s2">using </span><span
+      class="s1">a</span> <span class="s1">spell</span> <span
+      class="s1">slot</span> <span class="s1">of</span> <span
+      class="s1">6th</span> <span class="s1">level</span> <span
+      class="s1">or</span> <span class="s1">higher,</span> <span
+      class="s1">the</span> <span class="s1">area</span> <span class="s1">of
+      </span><span class="s2">effect</span> <span class="s2">is</span> <span
+      class="s2">increased</span> <span class="s2">by</span> <span class="s2">50
+      feet</span> <span class="s2">per spell slot</span> <span class="s2">level
+      above 5th.</span></p>
+
+      </div>
+    chat: ''
+  identifier: rejuvenate
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: unti
+  level: 5
+  materials:
+    value: any type of seed and a drop of water
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+  range:
+    units: touch
+  school: abj
+  target:
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: radius
+      size: '50'
+      width: ''
+      height: ''
+      units: ft
+effects: []
+name: Rejuvenate
+flags:
+  ddbimporter:
+    id: 22730777
+    definitionId: 2768304
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: true
+    originalName: Rejuvenate
+    sources: []
+    tags:
+      - Environment
+    version: 6.6.34
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: false
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+  midi-qol:
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 931506316
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/ddb-images/cache/spell/school/abjuration.webp
+folder: AxGedQZ1elc7WWhn
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766653986569
+  modifiedTime: 1784910749552
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!8TksPVusm2a9Nwl5'

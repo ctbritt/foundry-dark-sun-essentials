@@ -1,0 +1,202 @@
+_id: VUmiTJR0YqJR2UGg
+name: Elegant Maneuver
+type: feat
+effects: []
+system:
+  activities:
+    utilityElMaclNe0:
+      name: Elegant Maneuver
+      type: utility
+      _id: utilityElMaclNe0
+      sort: 0
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Starting at 13th level, you can use a bonus action on your turn to gain
+      advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check
+      you make during the same turn.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      You can use a bonus action on your turn to gain advantage on the next
+      Acrobatics or Athletics check you make during the same turn.
+
+      </div>
+  identifier: elegant-maneuver
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 13
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 510
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Elegant Maneuver
+    dndbeyond:
+      requiredLevel: 13
+      displayOrder: 400
+      featureType: 1
+      class: Rogue
+      classId: 80
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Swashbuckler
+    subClassId: 80
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Elegant Maneuver
+        activityCount: 1
+        activityKeys:
+          - utilityElMaclNe0
+        nameMap:
+          utilityElMaclNe0:
+            - Elegant Maneuver
+  crux:
+    trayVisibility: default
+img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
+folder: IEz35CZVpyYPq51b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134999537
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!VUmiTJR0YqJR2UGg'

@@ -1,0 +1,119 @@
+name: Agave Syrup
+type: consumable
+img: icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp
+system:
+  description:
+    value: A sweet syrup derived from agave plants.
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 4
+    denomination: cb
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  uses:
+    max: '1'
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  type:
+    value: food
+    subtype: ''
+  unidentified:
+    description: ''
+  container: null
+  attuned: false
+  magicalBonus: null
+  properties: []
+  activities: {}
+  identifier: agave-syrup
+effects: []
+flags:
+  scene-packer:
+    hash: b273afb0f9ac07309f6afea1520c3747c800b13c
+  LocknKey:
+    PickPocketDCFlag: '0'
+  rest-recovery:
+    data:
+      consumable:
+        enabled: true
+        dayWorth: true
+        type: food
+  magicitems:
+    enabled: false
+    default: ''
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_id: MDPaXKzpStZcYccp
+folder: TjnDASryJkkk2hRB
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.MDPaXKzpStZcYccp
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882049
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!MDPaXKzpStZcYccp'

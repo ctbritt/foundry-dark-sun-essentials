@@ -1,0 +1,189 @@
+folder: Sf7SoiqVBLhiBUf7
+name: Claws
+type: weapon
+_id: ruzCRvJy50tyudxU
+img: icons/weapons/fist/claw-hooked-grey.webp
+system:
+  activities:
+    UnBl7BMjZagYJI64:
+      _id: UnBl7BMjZagYJI64
+      type: attack
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        critical: {}
+        flat: false
+        type: {}
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  uses:
+    spent: 0
+    recovery: []
+  description:
+    value: >-
+      <p>You have retractable claws in the tips of your fingers. Extending or
+      retracting the claws requires no action. The claws are natural weapons,
+      which you can use to make unarmed strikes. If you hit with them, you deal
+      [[/damage average]], instead of the normal bludgeoning damage for an
+      unarmed strike.</p>
+    chat: ''
+  identifier: weapon
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  crew:
+    value: []
+  ammunition: {}
+  armor: {}
+  damage:
+    base:
+      types:
+        - slashing
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      number: 1
+      denomination: 6
+      bonus: '@mod'
+    versatile:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+  properties: []
+  proficient: null
+  range:
+    units: ft
+    value: 5
+  type:
+    value: natural
+    baseItem: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766709939121
+  modifiedTime: 1781134997469
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!ruzCRvJy50tyudxU'

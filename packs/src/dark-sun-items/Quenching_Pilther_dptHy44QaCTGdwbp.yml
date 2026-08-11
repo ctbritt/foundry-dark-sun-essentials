@@ -1,0 +1,128 @@
+folder: Ob8eTVGB5n6ERlyk
+name: Quenching Pilther
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Common Remedies
+      instruction: >-
+        <p>A blue potion that always has 2 ice cubes, a sprig of mint and 2
+        slices of lemon floating in it. It always cool to the touch. Drinking
+        the potion quenching a person’s thirst completely and removes their need
+        to drink anything for 2 days. This makes it highly sought after near
+        desserts for those who venture on caravans.</p><p>Ingredients: Muroosa
+        Bush, Gillyweed</p>
+      currency:
+        name: gp
+        value: 25
+      required:
+        '1':
+          key:
+            id: ZZqVDTOWssrEhOEP
+            uuid: Compendium.shareddata.ddb-items.ZZqVDTOWssrEhOEP
+            img: icons/containers/bags/pouch-leather-green.webp
+            type: Item
+            name: Herbalism Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: kUzQnkx0GC5NTHsv
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.kUzQnkx0GC5NTHsv
+            img: icons/consumables/plants/basil-herb-green.webp
+            type: Item
+            name: Gillyweed
+            quantity: 1
+            itemType: loot
+        '2':
+          key:
+            id: sODZElZQJ8PiIvH1
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.sODZElZQJ8PiIvH1
+            img: icons/consumables/plants/fern-sword-green.webp
+            type: Item
+            name: Muroosa Twigs
+            quantity: 1
+            itemType: loot
+      output:
+        '1':
+          key:
+            id: C7gLIV0v5kpKw9oz
+            uuid: Item.C7gLIV0v5kpKw9oz
+            img: >-
+              icons/consumables/potions/bottle-conical-corked-labeled-shell-cyan.webp
+            type: Item
+            name: Quenching Pilther
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '2':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: nat
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: 1dd2159bbc029477a0d580a02d631080cecb5c7d
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: quenching-pilther
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.dptHy44QaCTGdwbp
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882926
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: dptHy44QaCTGdwbp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!dptHy44QaCTGdwbp'

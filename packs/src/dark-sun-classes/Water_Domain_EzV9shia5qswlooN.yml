@@ -1,0 +1,308 @@
+name: Water Domain
+type: subclass
+img: icons/magic/symbols/rune-sigil-horned-blue.webp
+system:
+  description:
+    value: >-
+      <p>Water is the rarest of domains, life-giving and life-taking, with a
+      severe and unforgiving animosity to any who would defile a well or plants.
+      Clerics of water instinctively sense a duty to perform an age-old function
+      of being healer and bringer of life regardless of the morals of the
+      target, and they bear a sadness to the moisture that has been lost by
+      defilement. Some eventually go insane, consumed by the thirst of this land
+      and an inability to quench it.</p><p>They worship by finding the dew of
+      the morning and encouraging it, or keeping the lifeblood from needlessly
+      spilling onto barren land (if it falls on fertile land, that is another
+      matter). Because water can be found in all living things, they have access
+      to powers that can restore, or manipulate,
+      beings.</p><blockquote><h5><span style="font-family:ScalySansRemake">Water
+      Initiation</span></h5><blockquote
+      style="border:0px;font:inherit;vertical-align:baseline;margin:0.1cm 0px
+      0px;padding:0px;quotes:none;box-sizing:border-box;-webkit-print-color-adjust:exact;z-index:15;break-inside:avoid"><p><span
+      style="font-family:ScalySansRemake">When a mentor feels a student is
+      ready, they begin the long journey to a rare body of water such as Lake
+      Island or the Lake of the Golden Dreams. For a day they meditate on the
+      lake’s edge, and at dusk, the student enters the water and surrenders to
+      the depths. If accepted, the initiate spends the night in the dark water
+      forging a pact with babbling spirits. If not, the student likely
+      drowns</span></p></blockquote></blockquote><table><caption>Life Domain
+      Spells</caption><thead><tr><td>Cleric
+      Level</td><td>Spells</td></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.dark-sun-essentials.dark-sun-spells.KfyHnAocb0A2DV7I]{Create
+      Food and Water (Dark Sun)},
+      @UUID[Compendium.shareddata.ddb-spells.kE4g3DB6Y0duTbFi]{Fog
+      Cloud}</td></tr><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.F0GsG0SJzsIOacwV]{Lesser
+      Restoration}, @UUID[Compendium.dnd5e.spells.Item.wqfAVANuQonNBgnL]{Misty
+      Step}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd]{Sleet
+      Storm}@UUID[Compendium.dnd5e.spells.Item.13uVuBQP6VaiSPvC]{Water
+      Breathing}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.7fFHlBk3UNX8gPKL]{Control
+      Water}, @UUID[Compendium.shareddata.ddb-spells.z4HNmfz5thgSHBUe]{Summon
+      Elemental (Water
+      Only)}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA]{Cone
+      of Cold},
+      @UUID[Compendium.shareddata.ddb-spells.1ZKi4e4hGIlSoLCW]{Maelstrom}</td></tr></tbody></table><h3>Disciple
+      of the Oasis</h3><p>Also at 1st level you are imbued with the life giving
+      power of water. This grants several benefits:</p><ul><li>You gain a
+      swimming speed equal to your walking speed. If you already have a swimming
+      speed, it instead increases by 10 feet.</li><li>When you cast a spell that
+      creates water, you produce double the amount you normally
+      would.</li><li>Whenever you use a spell of 1st level or higher to restore
+      HP, the creature regains additional HP equal to 2 + the spell’s
+      level.</li><li>You learn the shape water or ray of frost cantrip, your
+      choice. The cantrip you selected counts as a cleric cantrip for you and
+      doesn’t count against the number of cleric cantrips you know.</li><li>When
+      you use your Turn Undead channel divinity, you can also effect non-water
+      elementals.</li></ul><h3>Channel Divinity: Preserve Life</h3><p>Starting
+      at 2nd level, you can use your Channel Divinity to heal the badly
+      injured.</p><p>As an action, you present your holy symbol and evoke
+      healing energy that can restore a number of hit points equal to five times
+      your cleric level. Choose any creatures within 30 feet of you, and divide
+      those hit points among them. This feature can restore a creature to no
+      more than half of its hit point maximum. You can’t use this feature on an
+      undead or a construct.</p><h3>Dampen Elements</h3><p>Starting at 6th
+      level, when you or a creature within 30 feet of you takes acid, cold,
+      fire, lightning or thunder damage, you can use your reaction to grant
+      resistance to the creature against that instance of the damage. If it is
+      acid or other water related damage, you or the creature take no
+      damage.</p><h3>Potent Spellcasting</h3><p>Starting at 8th level, you add
+      your Wisdom modifier to the damage you deal with any cleric
+      cantrip.</p><h3>Supreme Healing</h3><p>Starting at 17th level, when you
+      would normally roll one or more dice to restore hit points with a spell,
+      you instead use the highest number possible for each die. For example,
+      instead of restoring 2d6 hit points to a creature, you restore 12.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  identifier: water-domain
+  classIdentifier: cleric
+  advancement:
+    - _id: 9fyr5t01nhdg0u8n
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.tJYoOSiiyQROGcso
+            optional: false
+        optional: false
+        spell:
+          ability:
+            - ''
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 1
+      title: Features
+    - _id: 4qh4ejxpwugva6ma
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classfeatures.hEymt45rICi4f9eL
+            optional: false
+        optional: false
+        spell:
+          ability:
+            - ''
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 2
+      title: Features
+    - _id: ihquu4r80mxr07qt
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.O41uU2m7BFuaFwtJ
+            optional: false
+        optional: false
+        spell:
+          ability:
+            - ''
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 6
+      title: Features
+    - _id: ayh4gqp9vxjo9yd3
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.Mi5jVqwFhGEmDf8S
+            optional: false
+        optional: false
+        spell:
+          ability:
+            - ''
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 8
+      title: Features
+    - _id: m4m8xp6cabt71mdq
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.classfeatures.4UOgxzr83vFuUash
+            optional: false
+        optional: false
+        spell:
+          ability:
+            - ''
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 17
+      title: Features
+    - _id: Bilyuu60M73dE1HR
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.KfyHnAocb0A2DV7I
+          - optional: false
+            uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.WQaSYIsXSdwtrpcN
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 1
+      title: ''
+      hint: ''
+    - _id: 2p3BFklVSdOOxpW1
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.F0GsG0SJzsIOacwV
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.wqfAVANuQonNBgnL
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: 1HfDDtIXCphAzGlq
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.13uVuBQP6VaiSPvC
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: ''
+      hint: ''
+    - _id: cyftoqIIoAW7Micu
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.7fFHlBk3UNX8gPKL
+          - optional: false
+            uuid: Item.cgKD8tXwFD9zviME
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: ''
+      hint: ''
+    - _id: jac2nmagaxsRla0U
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA
+          - optional: false
+            uuid: Item.aRRlNvUagAyexc51
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: ''
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+folder: xPV7xcWDDRomMFIp
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134998498
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: EzV9shia5qswlooN
+sort: 0
+_key: '!items!EzV9shia5qswlooN'

@@ -1,0 +1,98 @@
+name: Potent Spellcasting
+type: feat
+system:
+  description:
+    value: >-
+      <p>You add + [[@abilities.wis.mod]] to the damage you deal with any cleric
+      cantrip.</p><p></p><blockquote><p>Note: Impossible to automate.</p><p>You
+      must either:</p><ul><li><p>Add "@abilities.wis.mod" as extra damage on
+      each cantrip manually</p></li><li><p>Use the "Build-A-Bonus"
+      mod.</p></li><li><p>Use the "Chris' Premades"
+      mod.</p></li></ul></blockquote>
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  requirements: Fire Domain 8
+  identifier: potent-spellcasting
+  activities: {}
+  advancement: []
+  enchant: {}
+  prerequisites:
+    repeatable: false
+flags:
+  ddbimporter:
+    id: 6004419
+    type: class
+    entityTypeId: 12168134
+    dndbeyond:
+      requiredLevel: 8
+      displayOrder: 500
+      featureType: 1
+      classId: 1284508
+      entityType: class-feature
+      class: 'Cleric : Water Domain (Dark Sun)'
+    class: Cleric
+    subclass: Water Domain (Dark Sun)
+    importId: 2CchznKrf7kB0BYZ
+  obsidian:
+    source:
+      type: class
+      text: Cleric
+  dnd5e:
+    advancementOrigin: ZJlZhiPpwi7nA413
+  core: {}
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/magic/light/beams-rays-orange-purple-large.webp
+folder: iyDyC14p2DAkVXbW
+sort: 825000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.mHk3vkReywmZATp2
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134999548
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: ZETRtFv9dpZsdSNo
+_key: '!items!ZETRtFv9dpZsdSNo'

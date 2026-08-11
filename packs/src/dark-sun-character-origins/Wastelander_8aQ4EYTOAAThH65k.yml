@@ -1,0 +1,166 @@
+folder: 3ceHqueQSXMSDgbA
+name: Wastelander
+type: background
+_id: 8aQ4EYTOAAThH65k
+img: icons/sundries/survival/wetskin-leather-tan.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[str], &amp;Reference[con],
+      &amp;Reference[wis]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[sur], and &amp;Reference[nat] or
+      &amp;Reference[ani]</p><p><strong>Tool Proficiencies:</strong> Vehicles
+      (land) or
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulHerbalismK]{Herbalism
+      Kit}</p><p><strong>Languages:</strong> one of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX]{Survivor} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftTough000000]{Tough}</p><p><strong>Equipment:</strong>
+      A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Clothes,
+      Traveler's},
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagHealersKit0]{Healer's
+      Kit}, a small
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagTent0000000]{Tent},
+      and a belt
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 10 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> Wasteland Nomads are hardy and self-reliant,
+      with a deep knowledge of the desert’s dangers and resources. They are
+      always on the move, seeking new horizons and the freedom of the open
+      desert.</p><p></p>
+    chat: ''
+  identifier: athas-wastelander
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: JNKe5dWPXE7V7zqg
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0
+      requiresProficiency: false
+      _id: ID2BjUQOJJBNC1da
+      group: JNKe5dWPXE7V7zqg
+      sort: 200000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav
+      requiresProficiency: false
+      _id: VVurtobdN4NIM0Co
+      group: JNKe5dWPXE7V7zqg
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000
+      requiresProficiency: false
+      _id: w47IHYftLKBdJjz7
+      group: JNKe5dWPXE7V7zqg
+      sort: 400000
+    - _id: pFd92Gik0AErtcK8
+      group: JNKe5dWPXE7V7zqg
+      sort: 500000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: epTdHoalmzu8FFs7
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - int
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: OVGGAgQxMwzHH0yo
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:ani
+              - skills:nat
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:herb
+              - tool:vehicle:land
+        grants:
+          - skills:sur
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: >-
+        Your background grants you proficiency in Survival, and Nature or Animal
+        Handling, Vehicles (Land) or Healer's Kit, and one language of your
+        choice
+    - _id: d6oHmgtRAY5U8Gey
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.aV962nxyB1ssGpHX
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftTough000000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '10'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1745335227019
+  modifiedTime: 1766718099629
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!8aQ4EYTOAAThH65k'

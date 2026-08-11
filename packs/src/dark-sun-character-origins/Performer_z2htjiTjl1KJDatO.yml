@@ -1,0 +1,144 @@
+folder: 3ceHqueQSXMSDgbA
+name: Performer
+type: background
+img: icons/tools/instruments/lute-gold-brown.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[cha], &amp;Reference[dex],
+      &amp;Reference[wis]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[prf], plus your choice from among &amp;Reference[acr],
+      &amp;Reference[per], or &amp;Reference[slt]</p><p><strong>Tool
+      Proficiencies:</strong> Disguise Kit and one musical
+      instrument</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftMusician00000]{Musician}
+      or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled}</p><p><strong>Equipment:</strong>
+      A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesCost]{Costume
+      Clothes}, a musical instrument, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 40 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> You make your living through music, dance, or
+      other forms of entertainment. Your art is your life.</p>
+    chat: ''
+  identifier: athas-performer
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '286'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: QhqS3mV8AOD8Qhfo
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: x6EfsOO77jBB57Lv
+      group: ''
+      sort: 200000
+    - _id: iwX3VnA3SqsXeAkb
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: Ud6arFqTElWQn19u
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - con
+          - int
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          cha: 2
+          dex: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: X5TfUgeMqDIN2P3h
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:acr
+              - skills:per
+              - skills:slt
+          - count: 1
+            pool:
+              - tool:music:*
+        grants:
+          - skills:prf
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: dzyJFtmexlZEPAjc
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftMusician00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '40'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.z2htjiTjl1KJDatO
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: z2htjiTjl1KJDatO
+sort: 273438
+_key: '!items!z2htjiTjl1KJDatO'

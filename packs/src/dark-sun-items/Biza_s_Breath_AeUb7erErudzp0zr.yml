@@ -1,0 +1,138 @@
+folder: QYufUtCWt2VF1PrB
+name: Biza's Breath
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      instruction: >-
+        <p>A creature subjected to this poison must succeed on a DC 16
+        Constitution saving throw or become poisoned for 1 minute. The poisoned
+        creature must use its action to make a melee attack against a randomly
+        determined creature within its reach. If there is no other creature
+        within its reach, the poisoned creature does nothing on its turn. The
+        creature can repeat the saving throw at the end of each of its turns,
+        ending the effect on itself on a success</p><p>Type:
+        Inhaled</p><p>Ingredients: Angle’s Trumpet, Frost Lichen</p>
+      currency:
+        name: gp
+        value: 25
+      folder: Common Poisons
+      required:
+        '1':
+          key:
+            id: k5CAeSs515lTeOw9
+            uuid: Compendium.shareddata.ddb-items.k5CAeSs515lTeOw9
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: KvTE3mcif3xyes2V
+            uuid: Compendium.shareddata.ddb-items.KvTE3mcif3xyes2V
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: backpack
+        '2':
+          key:
+            id: 2Q5eat8DBOS7E7Xf
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.2Q5eat8DBOS7E7Xf
+            img: icons/commodities/flowers/lily-grey-orange.webp
+            type: Item
+            name: Angel's Trumpet
+            quantity: 1
+            itemType: consumable
+        '3':
+          key:
+            id: 4ybCoZqAMDLiQsmb
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.4ybCoZqAMDLiQsmb
+            img: icons/consumables/plants/leaf-broad-blue.webp
+            type: Item
+            name: Frost Lichen
+            quantity: 1
+            itemType: loot
+      output:
+        '1':
+          key:
+            id: MTdmIyrPbtXir4va
+            uuid: Compendium.shareddata.ddb-items.MTdmIyrPbtXir4va
+            img: ddb-images/other/webp/ddb/loot/Poison.webp
+            type: Item
+            name: Biza's Breath (Inhaled)
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 10
+                  uuid: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+            hits: 1
+      macro: ''
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: 962b3167eb57a0a8bfed8713745c93f117fc535e
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: bizas-breath
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.AeUb7erErudzp0zr
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114881236
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: AeUb7erErudzp0zr
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!AeUb7erErudzp0zr'

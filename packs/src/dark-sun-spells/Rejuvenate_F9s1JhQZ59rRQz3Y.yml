@@ -1,0 +1,89 @@
+name: Rejuvenate
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>This spell grants the ability to support vegetation to an area of
+      ground. In the case of ground made barren by defiler magic, rejuvenate
+      dispels the ground’s sterility, making it immediately capable of
+      supporting vegetation. The spell may also be cast on any ground short of
+      solid rock, including sand, rocky sand or soil, and dust.</p><p>The spell
+      affects the ground in a 50 foot radius from the caster. Once cast, the
+      soil is enriched and moistened, and a blanket of fine grass emerges
+      instantly. Once cast, the moist soil and grass are not magical, and are
+      subject to all natural forces upon them. They will, however, survive a
+      week in even the worst of conditions. Rejuvenate otherwise lasts until a
+      spellcaster uses defiling to destroy the vegetation.</p><p>This spell
+      automatically fails if cast by any creature with at least 1 point in a
+      defiler aura.<br /></p>
+    chat: ''
+  materials:
+    value: >-
+      A seed (of any type) and a drop of water, both of which the spell
+      consumes.
+    consumed: true
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - material
+    - somatic
+  level: 5
+  school: trs
+  activation:
+    condition: ''
+    type: minute
+    value: 1
+  range:
+    units: self
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: radius
+      size: '50'
+      contiguous: false
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  identifier: rejuvenate
+  source:
+    revision: 1
+    rules: '2024'
+  duration:
+    units: day
+    value: '7'
+  preparation:
+    mode: prepared
+    prepared: false
+  sourceClass: Wizard, Druid
+folder: null
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 2077283826
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754433465411
+  modifiedTime: 1784910749567
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: F9s1JhQZ59rRQz3Y
+sort: 700000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!F9s1JhQZ59rRQz3Y'

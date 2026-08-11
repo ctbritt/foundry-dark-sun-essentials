@@ -1,0 +1,293 @@
+name: Nullify Effect
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You gain advantage on Intelligence, Wisdom, and Charisma saving throws
+      until the start of your next turn. You also gain resistance to Psychic and
+      Force damage until the start of your next turn.</p><p><strong>At Higher
+      Levels:</strong> When you cast this spell using a spell slot of 4th level
+      or higher, you can roll an additional d20 as part of your advantage roll.
+      If you cast this at the 5th level or higher, it grants immunity to Psychic
+      and Force damage for the duration.</p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - somatic
+    - psionic
+    - reaction
+    - resistance
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: round
+    value: '1'
+  range:
+    units: self
+    special: ''
+  level: 2
+  school: psi
+  target:
+    template:
+      type: ''
+      contiguous: false
+      units: ft
+      size: ''
+      count: ''
+    affects:
+      choice: false
+      count: ''
+      type: self
+      special: ''
+  activities:
+    Fe0KijihPdNxjOPe:
+      type: utility
+      _id: Fe0KijihPdNxjOPe
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: CsmbHiLlYTNMrxKw
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: nullify-effect
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+_id: SXcsYEn9ldKMpwvl
+effects:
+  - name: Nullify Effect
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.SXcsYEn9ldKMpwvl
+    transfer: false
+    _id: CsmbHiLlYTNMrxKw
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.grants.advantage.save.cha
+          value: 1
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.grants.advantage.save.int
+          value: 1
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.grants.advantage.save.wis
+          value: 2
+          priority: 20
+          type: custom
+        - key: system.traits.dr.value
+          value: force
+          priority: 20
+          type: custom
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You gain advantage on Intelligence, Wisdom, and Charisma saving throws
+      until the start of your next turn. You also gain resistance to Psychic and
+      Force damage until the start of your next turn.</p><p><strong>At Higher
+      Levels:</strong> When you cast this spell using a spell slot of 4th level
+      or higher, you can roll an additional d20 as part of your advantage roll.
+      If you cast this at the 5th level or higher, it grants immunity to Psychic
+      and Force damage for the duration.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnStartSource
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!SXcsYEn9ldKMpwvl.CsmbHiLlYTNMrxKw'
+folder: null
+flags:
+  scene-packer:
+    hash: 46c325ca91b6180d9fa0632d4bd7c7c3cf3d09e2
+    sourceId: Item.SXcsYEn9ldKMpwvl
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1058128278
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.SXcsYEn9ldKMpwvl
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749603
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 1300000
+_key: '!items!SXcsYEn9ldKMpwvl'

@@ -1,0 +1,196 @@
+_id: 2xXLXsAdFbzxMOLo
+name: Candle Cactus
+type: consumable
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    revision: 1
+    rules: '2024'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--2"><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="1"> <span
+      class="entry-title-inner">Location.</span></span> <p>Rocky
+      badlands</p><div class="rd__spc-inline-post"></div></div><div
+      class="rd__b  rd__b--3"><span class="rd__h rd__h--3" data-title-index="2">
+      <span class="entry-title-inner">Preparation.</span></span> <p>Needles
+      extracted and dried</p><div class="rd__spc-inline-post"></div></div><div
+      class="rd__b  rd__b--3"><span class="rd__h rd__h--3" data-title-index="3">
+      <span class="entry-title-inner">Description:</span></span> <p>This
+      uncommon cactus is primarily found in the rocky badlands. A tall
+      yellow-green cactus with many arms, it has long been used by nobles and
+      merchants of the Wastes.</p><div
+      class="rd__spc-inline-post"></div></div><div class="rd__b  rd__b--3"><span
+      class="rd__h rd__h--3" data-title-index="4"> <span
+      class="entry-title-inner">Effect:</span></span> <p>Its long, waxy needles
+      have a built-in wick (actually a very burnable fiber), which allows it to
+      burn long and cleanly. Many nobles use it in lieu of the more fatty tallow
+      candles, as it gives off a lemony scent, which sweetens the air as it
+      burns. It is also lighter than normal candles, making it the choice of
+      travelers everywhere.</p><div
+      class="rd__spc-inline-post"></div></div></div>
+    chat: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 90
+    denomination: ct
+  identified: true
+  rarity: uncommon
+  type:
+    value: ''
+    subtype: ''
+  properties:
+    - mgc
+  attunement: ''
+  uses:
+    max: ''
+    recovery: []
+    autoDestroy: false
+    spent: 0
+  damage:
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  unidentified:
+    description: ''
+  container: null
+  magicalBonus: null
+  attuned: false
+  equipped: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: candle-cactus
+img: assets/homebrew/img/candlecatus.webp
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  plutonium:
+    page: items.html
+    source: AthasHerbs
+    hash: candle%20cactus_athasherbs
+    propDroppable: item
+    isStandardDragDrop: true
+  scene-packer:
+    hash: ca138092eb37b648d9c39daf6b97f295c32e1ec5
+  tidy5e-sheet:
+    section: Harvested Items
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: qMFp8C51hRSu6j7x
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.2xXLXsAdFbzxMOLo
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114880386
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!2xXLXsAdFbzxMOLo'

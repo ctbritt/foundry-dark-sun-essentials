@@ -1,0 +1,250 @@
+name: Tortoise Blade, Obsidian
+type: weapon
+img: icons/equipment/shield/buckler-wooden-boss-brown.webp
+effects: []
+flags:
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  betterRolls5e:
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+    quickOther:
+      context: ''
+      value: true
+      altValue: true
+    quickDesc:
+      value: false
+      altValue: false
+    quickAttack:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickFlavor:
+      value: true
+      altValue: true
+    quickCharges:
+      value:
+        quantity: false
+      altValue:
+        quantity: false
+  scene-packer:
+    hash: 6c0f38293904034f5eb46ee96c7c6e2b7f856e94
+    sourceId: Compendium.world.dark-sun-weapons.Item.z0XcHBDF1F4Y2kWq
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: "<p>A short, sharp blade attached to the shell of a desert tortoise.</p>\n<p>Breakage: 75%</p>\n<p><strong>Immune disarm.</strong>\_This weapon can't be disarmed from the wielder.</p>\n<p><strong>Special.</strong> It straps to the forearm and provides protection like a shield but with +1 to armor class. A magical bonus to this weapon (such as a +1 version) increases the bonus to AC accordingly. It cannot be combined with a regular shield (the better bonus applies), but if a pair are worn, you gain an additional +1 bonus to AC.</p>"
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 4
+    units: lb
+  price:
+    value: 150
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: uncommon
+  identified: true
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - lgt
+    - spc
+    - ZNdI9nczTmuNOraS
+  proficient: 0
+  unidentified:
+    description: ''
+  type:
+    value: martialM
+    baseItem: ''
+  container: null
+  cover: null
+  crewed: false
+  magicalBonus: null
+  attuned: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: tortoise-blade-obsidian
+  ammunition: {}
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.Omwr4gF7LhQTFAst
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078821239
+  modifiedTime: 1765664438666
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+folder: yLICocLeSTgRD5mO
+_id: Omwr4gF7LhQTFAst
+sort: 5100000
+_key: '!items!Omwr4gF7LhQTFAst'

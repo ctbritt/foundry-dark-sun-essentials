@@ -1,0 +1,180 @@
+_id: TjKe3le0XefRkEPM
+name: Summon Astral Entity
+type: spell
+system:
+  source:
+    custom: ''
+    book: XUA25P
+    page: '10'
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: "<div class=\"rd__b  rd__b--3\"><p>You call forth the spirit of a psionic entity. It manifests in an unoccupied space that you can see within range and uses the @creature[Psionic Spirit|XUA2025Psion] stat block. When you cast the spell, choose Crystal Entity, Ectoplasmic Entity, or Ghostly Entity. The creature resembles an astral entity of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 @variantrule[Hit Points|XPHB] or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your @variantrule[Initiative|XPHB] count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the @action[Dodge|XPHB] action and uses its movement to avoid danger.</p><table class=\"rd__b-special rd__b-data  rd__b-data--stats\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th class=\"rd__data-embed-header ve-text-left\" colspan=\"6\" data-rd-data-embed-header=\"true\">\n\t\t\t\t\t<div class=\"w-100 split-v-center\">\n\t\t\t\t\t\t<div class=\"ve-flex-v-center w-100 min-w-0\">\n\t\t\t\t\t\t\t<span class=\"rd__data-embed-name \">Psionic Spirit</span>\n\t\t\t\t\t\t\t<span class=\"rd__data-embed-name-expanded ve-text-right pr-2 w-100 ve-hidden\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<span class=\"rd__data-embed-toggle\">[+]</span>\n\t\t\t\t\t</div>\n\t\t\t\t</th>\n\t\t\t</tr>\n\t\t</thead><tbody class=\"ve-hidden\" data-rd-embedded-data-render-target=\"true\"><tr>\n\t\t\t<td colspan=\"6\" data-rd-tag=\"creature\" data-rd-uid=\"Psionic Spirit|XUA2025Psion\" data-rd-page=\"bestiary.html\" data-rd-source=\"XUA2025Psion\" data-rd-hash=\"psionic%20spirit_xua2025psion\" data-rd-name=\"Psionic Spirit\" data-rd-display-name=\"Psionic Spirit\" data-rd-style data-rd-entry-data=\"{}\">\n\t\t\t\t<i>Loading @creature[Psionic Spirit|XUA2025Psion]...</i>\n\t\t\t\t\n\t\t\t</td>\n\t\t</tr></tbody></table></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Using a Higher-Level Spell Slot\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Using a Higher-Level Spell Slot.</span></span> Use the spell slot's level for the spell's level in the stat block.</p></div></div>"
+    chat: ''
+  level: 3
+  school: con
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+    - psi
+  materials:
+    value: a gem or crystal worth 300+ GP
+    consumed: false
+    cost: 300
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ''
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '90'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    D2zTnjKUbfXxEUBb:
+      _id: D2zTnjKUbfXxEUBb
+      type: summon
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      sort: 0
+      bonuses: {}
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      profiles: []
+      summon:
+        prompt: true
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      friendlySummon: false
+  identifier: summon-astral-entity
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/unholy/silhouette-evil-horned-giant.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XUA2025Psion
+    hash: summon%20astral%20entity_xua2025psion
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+      - Sorcerer
+      - Warlock
+      - Wizard
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -527360489
+effects: []
+folder: mvNUawDBqd1DJYG3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411018787
+  modifiedTime: 1784910749604
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!TjKe3le0XefRkEPM'

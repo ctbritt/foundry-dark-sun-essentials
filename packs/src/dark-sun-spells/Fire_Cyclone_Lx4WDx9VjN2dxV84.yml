@@ -1,0 +1,237 @@
+name: Fire Cyclone
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>Targeting a point you can see, you cause a cyclone made of whipping
+      flames with a radius of 5 feet and height of 30 feet to form.</p><p>When a
+      creature starts its turn inside the cyclone's radius or enters it for the
+      first time during a turn, it must make a Strength saving throw. On a
+      failed saving throw, it takes 3d6 fire damage and, if it is entirely
+      inside the cyclone's area, it's also flung 15 feet upwards and lands 15
+      feet in a randomly determined horizontal direction. On a successful save,
+      the creature takes half as much damage and is not flung. When a creature
+      is not entirely inside the cyclone's radius but within 30 feet of its
+      center at the start of its turn, it still feels the intense draw of the
+      raging cyclone, and must spend 2 feet (or 3 feet if it is flying) of
+      movement for every 1 foot it moves away from the cyclone.</p><p>If a
+      creature starts its turn outside of the cyclone's radius but within 10
+      feet of its center, it must make a Strength saving throw or be pulled 5
+      feet toward the center of it.</p><p><strong>At Higher Levels.</strong>
+      When you cast this spell using a spell slot of 4th level or higher, the
+      damage increases by 1d6 and the height of the cyclone as well as the
+      distance a creature is thrown upward increases by 5 feet for each level
+      above 3rd.<br /></p>
+    chat: ''
+  materials:
+    value: a pinch of ashes from a forest fire
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  level: 3
+  school: con
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  range:
+    units: ft
+    value: '60'
+    special: ''
+  activities:
+    yVxoM0VWqm6BAC4o:
+      type: save
+      _id: yVxoM0VWqm6BAC4o
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 6
+            bonus: ''
+            types:
+              - fire
+            scaling:
+              mode: whole
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: fire-cyclone
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  duration:
+    units: minute
+    value: '1'
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      count: ''
+      type: cylinder
+      size: '5'
+      height: '30'
+    affects:
+      choice: false
+      count: ''
+      type: space
+      special: ''
+folder: null
+_id: Lx4WDx9VjN2dxV84
+effects: []
+flags:
+  scene-packer:
+    hash: 33fcfaa3bfa0609226a5da6c4d402a53cfe11ea2
+    sourceId: Item.Lx4WDx9VjN2dxV84
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 577951571
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.Lx4WDx9VjN2dxV84
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749585
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 3300000
+_key: '!items!Lx4WDx9VjN2dxV84'

@@ -1,0 +1,195 @@
+type: spell
+system:
+  activities:
+    summonPhantSteed:
+      type: summon
+      _id: summonPhantSteed
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+      bonuses:
+        ac: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        proficiency: false
+        saves: false
+      profiles:
+        - _id: ddbSumPhaSte2014
+          name: Phantom Steed
+          uuid: Compendium.shareddata.ddb-summons.Actor.ddbSumPhaSte2014
+          count: '1'
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        mode: ''
+        prompt: true
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb"><p>A Large quasi-real, kank-like creature appears on the
+      ground in an unoccupied space of your choice within range. You decide the
+      creature's appearance, but it is equipped with a saddle, bit, and bridle.
+      Any of the equipment created by the spell vanishes in a puff of smoke if
+      it is carried more than 10 feet away from the steed.</p><p>For the
+      duration, you or a creature you choose can ride the steed. The creature
+      uses the statistics for a riding horse, except it has a speed of 100 feet
+      and can travel 10 miles in an hour, or 13 miles at a fast pace. When the
+      spell ends, the steed gradually fades, giving the rider 1 minute to
+      dismount. The spell ends if you use an action to dismiss it or if the
+      steed takes any damage.</p></div>
+    chat: ''
+  identifier: phantom-steed
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2014'
+    revision: 1
+  activation:
+    type: minute
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  level: 3
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+    - ritual
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  school: ill
+  target:
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+effects: []
+name: Phantom Steed (Dark Sun)
+flags:
+  ddbimporter:
+    id: 2370
+    definitionId: 2203
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: false
+    originalName: Phantom Steed
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: null
+        sourceType: 1
+    tags:
+      - Movement
+    version: 6.4.20
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: true
+    effectsApplied: true
+    disposition:
+      match: true
+  midi-qol:
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1096618462
+img: icons/environment/people/charge.webp
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: 1755101621871
+  modifiedTime: 1784910749584
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: LAnublDPM12mz1Ek
+sort: 4350000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!LAnublDPM12mz1Ek'

@@ -1,0 +1,152 @@
+_id: yS4jpUyGs3qOik9I
+name: Giant Ancestry
+type: feat
+system:
+  description:
+    value: >-
+      <p class="font-claude-response-body break-words whitespace-normal
+      leading-[1.7]">Due to you giant ancestry, you can increase your Strength
+      score up to 22 instead of the normal maximum of 20. Additionally, you have
+      advantage when making Strength checks to break an object. Your creature
+      type is considered to be a giant.</p>
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: Half-Giant
+  properties: []
+  identifier: giant-build
+  activities: {}
+  advancement: []
+  enchant: {}
+  prerequisites:
+    repeatable: false
+flags:
+  ddbimporter:
+    id: 8302237
+    type: race
+    entityTypeId: 1960452172
+    dndbeyond:
+      requiredLevel: null
+      displayOrder: 8
+      featureType: 1
+      entityRaceId: 1010320
+      entityType: racial-trait
+    importId: SeFx0J0CIoRHaTxw
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects:
+  - name: Giant Ancestry
+    transfer: true
+    img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+    _id: oUFuNWlCa9ely03L
+    type: base
+    system:
+      changes:
+        - key: system.abilities.str.max
+          value: 22
+          priority: 20
+          type: override
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p class="font-claude-response-body break-words whitespace-normal
+      leading-[1.7]">Due to you giant ancestry, you can increase your Strength
+      score up to 22 instead of the normal maximum of 20. Additionally, you have
+      advantage when making Strength checks to break an object. Your creature
+      type is considered to be a giant.</p>
+    origin: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.yS4jpUyGs3qOik9I
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.3
+      createdTime: 1765549462058
+      modifiedTime: 1765549494291
+      lastModifiedBy: wgCeShTrqHJFBbDr
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!yS4jpUyGs3qOik9I.oUFuNWlCa9ely03L'
+img: icons/creatures/magical/construct-iron-stomping-yellow.webp
+folder: y19zoPMPixfBAlRp
+sort: 900000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.GFyWYoGemA3LDseq
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1754411518020
+  modifiedTime: 1781134997476
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!yS4jpUyGs3qOik9I'

@@ -1,0 +1,322 @@
+folder: yC0K8YmShGWAXUaE
+name: Mind Blast
+type: feat
+img: icons/magic/sonic/explosion-shock-sound-wave.webp
+system:
+  activities:
+    EGatEvP50puL8hga:
+      type: save
+      _id: EGatEvP50puL8hga
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 2OzWtiR32jlbuILg
+          onSave: false
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cone
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: '1'
+      damage:
+        parts: []
+        critical:
+          allow: false
+        onSave: none
+      save:
+        ability:
+          - int
+        dc:
+          calculation: con
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+  description:
+    value: >-
+      <p>As an actIon, you can unleash a psychic wave in a 15-foot cone. Each
+      creature in that area must make an [[/save int dc=@abilities.con.dc
+      format=long]] or take [[/damage 2d8 type=psychic average=true]] and be
+      [condition]stunned[/condition] untIl the end of your next turn.</p>
+    chat: ''
+  identifier: mind-blast
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Mind Blast
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.world.dark-sun-classes.Item.2ihTrPCwIPPAscqt
+    transfer: false
+    _id: 9p5DzNoawxC5Dz8E
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>As an actIon, you can unleash a psychic wave in a 15-foot cone. Each
+      creature in that area must make an [[/save int dc=@abilities.con.dc
+      format=long]] or take [[/damage 2d8 type=psychic average=true]] and be
+      [condition]stunned[/condition] untIl the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses:
+      - stunned
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnEndSource
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!fkquh0b5IcJUFK6C.9p5DzNoawxC5Dz8E'
+  - name: Mind Blast
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.world.dark-sun-classes.Item.2ihTrPCwIPPAscqt
+    transfer: false
+    _id: 2OzWtiR32jlbuILg
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>As an actIon, you can unleash a psychic wave in a 15-foot cone. Each
+      creature in that area must make an [[/save int dc=@abilities.con.dc
+      format=long]] or take [[/damage 2d8 type=psychic average=true]] and be
+      [condition]stunned[/condition] untIl the end of your next turn.</p>
+    tint: '#ffffff'
+    statuses:
+      - stunned
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - turnEndSource
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!fkquh0b5IcJUFK6C.2OzWtiR32jlbuILg'
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: 1139ec4d9a31bf5b144d11aba64c15d007098635
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.fkquh0b5IcJUFK6C
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1746114603845
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: fkquh0b5IcJUFK6C
+sort: 0
+_key: '!items!fkquh0b5IcJUFK6C'

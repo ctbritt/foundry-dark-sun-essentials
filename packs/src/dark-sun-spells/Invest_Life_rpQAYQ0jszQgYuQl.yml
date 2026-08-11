@@ -1,0 +1,266 @@
+_id: rpQAYQ0jszQgYuQl
+type: spell
+system:
+  description:
+    value: "<div class=\"ddb\"><p class=\"Core-Styles_Core-Body\">You sacrifice some of your health to mend another creature’s injuries. You take  [[/damage 4d8 + @mod type= necrotic average=true]] damage, which can’t be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take.</p><p class=\"Core-Styles_Core-Body\"><span class=\"Serif-Character-Style_Inline-Subhead-Serif\"><strong>At Higher Levels.</strong>\_</span>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p></div>"
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2014'
+    book: Dark Sun
+    page: ''
+    license: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: creature
+      count: '1'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '30'
+    units: ft
+    special: ''
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  ability: ''
+  level: 3
+  school: nec
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: atwill
+    prepared: true
+  properties:
+    - somatic
+    - psionic
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: heal
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: >-
+          [4d8 - necrotic] Self Only, [healing] one creature of your choice that
+          you can see within range regains a number of hit points equal to twice
+          the necrotic damage you take
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      healing:
+        number: null
+        denomination: null
+        bonus: ''
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '0'
+        scaling:
+          mode: ''
+          number: null
+          formula: ''
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: life-transference
+  sourceClass: cleric
+effects: []
+name: Invest Life
+flags:
+  core: {}
+  midi-qol:
+    effectActivation: false
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    reactionCondition: ''
+    otherCondition: ''
+    '-=onUseMacroName': null
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    confirmTargets: default
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    last:
+      dnd5eactivity000:
+        damageType:
+          '0': healing
+    riders:
+      activity: []
+      effect: []
+  ddbimporter:
+    id: 138183
+    definitionId: 14880
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: classSpell
+      class: Wizard
+      level: 13
+      characterClassId: 117335918
+      spellLevel: 3
+      ability: int
+      mod: 4
+      dc: 17
+      cantripBoost: false
+      overrideDC: false
+      id: 138183
+      entityTypeId: 435869154
+      healingBoost: 0
+      usesSpellSlot: true
+      forceMaterial: false
+      homebrew: false
+    originalName: Life Transference
+    sources:
+      - sourceId: 27
+        pageNumber: 160
+        sourceType: 1
+    tags:
+      - Healing
+    version: 6.0.59
+    is2014: false
+    is2024: true
+    addSpellEffects: true
+    legacy: false
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+    importId: piXwh6XxzndRKw44
+    chrisEffectsApplied: true
+    chrisPreEffectName: Life Transference
+  tidy5e-sheet:
+    parentClass: wizard
+    section: ''
+    actionSection: ''
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  scene-packer:
+    hash: ea71f7421cd38b007f4da2f8f3a6c6334786cf72
+    sourceId: Item.rpQAYQ0jszQgYuQl
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -336879414
+img: icons/magic/life/heart-glowing-red.webp
+_stats:
+  compendiumSource: Compendium.world.ddb-development-testing-ddb-spells.l8I9WeblnuNTFtKz
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.1.10
+  createdTime: 1744079085576
+  modifiedTime: 1784910749639
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 2000000
+_key: '!items!rpQAYQ0jszQgYuQl'

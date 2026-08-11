@@ -1,0 +1,364 @@
+name: Psionic Rage
+type: feat
+system:
+  description:
+    value: >-
+      <div class="rd__b  rd__b--1"><p><i>3rd-level Path of the Wilder
+      feature</i></p><p>Beginning at 3rd level, your rage taps into psionic
+      energy.</p><ul class="rd__list"><li class="rd__li ">You gain resistance to
+      psychic damage and advantage against psionic effects.</li><li
+      class="rd__li ">Once per turn when you hit a creature with a melee weapon
+      attack, you can deal extra psychic damage equal to your proficiency
+      bonus.</li></ul></div>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  requirements: ''
+  properties: []
+  prerequisites:
+    level: null
+    repeatable: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: '1'
+        units: minute
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      name: Rage
+      img: icons/creatures/abilities/mouth-teeth-human.webp
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+    NpNOo8t1oa89EBQg:
+      type: utility
+      _id: NpNOo8t1oa89EBQg
+      sort: 0
+      activation:
+        type: bonus
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: 'Rage: End'
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      name: 'Rage: End'
+      img: icons/creatures/abilities/mouth-teeth-human.webp
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: rage
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+img: icons/magic/movement/portal-vortex-orange.webp
+flags:
+  midi-qol:
+    forceCEOff: true
+    effectActivation: false
+    forceCEOn: false
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+    '-=onUseMacroName': null
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    confirmTargets: never
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  core: {}
+  dnd5e:
+    riders:
+      activity:
+        - NpNOo8t1oa89EBQg
+      effect: []
+    advancementOrigin: D7XxqTHCpDTJwHHQ.xXNGK04Dijwval5t
+  ddbimporter:
+    id: '70702'
+    entityTypeId: '222216831'
+    componentId: 95
+    componentTypeId: 258900837
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  scene-packer:
+    hash: e1becedc9c079b3e83db0ffe50f83ccd1491aa0f
+  crux:
+    trayVisibility: default
+effects:
+  - name: Psionic Rage
+    img: icons/magic/movement/portal-vortex-orange.webp
+    origin: Compendium.world.dark-sun-classes.Item.VTByx6zMq2JC2VpI
+    _id: ijH61i9W3ysRUuOf
+    type: base
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <div class="rd__b  rd__b--1"><p><em>3rd-level Path of the Wilder
+      feature</em></p><p>Beginning at 3rd level, your rage taps into psionic
+      energy.</p><ul class="rd__list"><li class="rd__li ">You gain resistance to
+      psychic damage and advantage against psionic effects.</li><li
+      class="rd__li ">Once per turn when you hit a creature with a melee weapon
+      attack, you can deal extra psychic damage equal to your proficiency
+      bonus.</li></ul></div>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!iOJUZuGiIcwL6JQI.ijH61i9W3ysRUuOf'
+_stats:
+  compendiumSource: Actor.57T1iaC28BNqvhSo.Item.hrB9f4C2WNG0iB2D
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1779357089605
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+folder: yC0K8YmShGWAXUaE
+_id: iOJUZuGiIcwL6JQI
+sort: 0
+_key: '!items!iOJUZuGiIcwL6JQI'

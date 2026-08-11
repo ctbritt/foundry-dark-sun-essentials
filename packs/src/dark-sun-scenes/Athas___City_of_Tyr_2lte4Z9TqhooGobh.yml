@@ -1,0 +1,7070 @@
+name: Athas - City of Tyr
+navigation: false
+navName: City of Tyr
+thumb: worlds/emerald-dreams/assets/scenes/hodwemJyYfYmQGxv-thumb.webp
+width: 9010
+height: 6310
+padding: 0.25
+initial:
+  x: 7391
+  'y': 4692
+  scale: 0.233
+grid:
+  type: 0
+  size: 100
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 30
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  darknessLevel: 0.2
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 0.5
+  cycle: true
+  base:
+    hue: 0.9166666666666666
+    intensity: 0.55
+    luminosity: 0.65
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens:
+  - name: Party Of Five
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/tokens/party_of_five.token.webp?1721770534521
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: null
+    bar2:
+      attribute: resources.legact
+    light:
+      alpha: 0.1
+      angle: 360
+      bright: 0
+      color: '#ffffff'
+      coloration: 1
+      dim: 0
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 1
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes:
+      basicSight:
+        range: 60
+        enabled: true
+      lightPerception:
+        range: null
+        enabled: true
+      seeAll:
+        range: null
+        enabled: true
+    flags:
+      wall-height:
+        tokenHeight: 6
+      token-z:
+        zIndex: 0
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: default
+      swarm:
+        isSwarm: false
+        swarmOverPlayers: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: ''
+      tagger: {}
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      core:
+        priority: null
+      perfect-vision:
+        sight:
+          range: null
+        light:
+          resolution: 1
+      aedifs-tactical-grid:
+        viewDistance: 2
+        viewShape: circle-soft
+        color: ''
+      elevation-drag-ruler:
+        selectedSpeed: auto
+        hasBonusDash: false
+        hasNimbleness: false
+        hasElementalForm: false
+        hasFreedomOfMovement: false
+        hasIncorporealMovement: false
+        hideSpeedButton: false
+        hideTerrainButton: false
+        ignoredEnvironments:
+          all:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          arctic:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          coast:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          desert:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          forest:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          grassland:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          jungle:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          mountain:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: true
+            climb: true
+          swamp:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          underdark:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          urban:
+            any: false
+            walk: false
+            swim: false
+            fly: false
+            burrow: false
+            climb: false
+          water:
+            any: false
+            walk: false
+            swim: true
+            fly: false
+            burrow: false
+            climb: false
+        movementMode: walk
+      combat-music-master:
+        resource: attributes.hp
+        priority: 10
+        musicList:
+          - - ''
+            - 100
+        turnOnly: false
+      monks-combat-details:
+        displayBarsCombat: null
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        RiderPositioningFlag: RowPlacement
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        GrapplePlacementFlag: RowBelow
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        canbeGrappledFlag: true
+        SelfApplyEffectsFlag: false
+        AutoMountBlackListFlag: ''
+        forMountEffectsFlag: ''
+        CanbePilotedFlag: false
+        UseRidingHeightFlag: true
+        AutoMountWhiteListFlag: ''
+        RidersScaleFlag: 1
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        PilotedbyDefaultFlag: false
+        CheckPilotedCollisionFlag: false
+        GrapplingEffectsFlag: ''
+        PathHistoryFlag:
+          - '0': 10350
+            '1': 6550
+            x: 10350
+            'y': 6550
+            width: 1
+            height: 1
+            rotation: 0
+            insceneWidth: 100
+            insceneHeight: 100
+          - '0': 9723
+            '1': 6001
+            x: 9723
+            'y': 6001
+            width: 1
+            height: 1
+            rotation: 0
+            insceneWidth: 100
+            insceneHeight: 100
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: 15
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottingMessageFlag: ''
+        RevealwhenSpottedFlag: false
+      tokencover:
+        maximumCoverGrant: 1
+      dnd5e:
+        tokenRing:
+          effects: 1
+      splatter:
+        bloodColor: ''
+      lightmask:
+        rotation: 180
+        shape: circle
+        sides: 3
+        points: 5
+        ellipseMinor: 1
+      hexplorer:
+        enabled: true
+        revealRadius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        texture: null
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: iS3z4EPvjpNbFwGQ
+    hidden: false
+    sort: 0
+    _id: LbnsJekYJBVFreqq
+    delta:
+      _id: m7cBkfVx6JFwdWBW
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!2lte4Z9TqhooGobh.LbnsJekYJBVFreqq.m7cBkfVx6JFwdWBW'
+    x: 9673
+    'y': 5951
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!2lte4Z9TqhooGobh.LbnsJekYJBVFreqq'
+lights:
+  - _id: BgmEyCHrfaAHYYfm
+    x: 8900
+    'y': 5800
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    config:
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      bright: 45
+      color: null
+      coloration: 1
+      dim: 90
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.BgmEyCHrfaAHYYfm'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9311
+    'y': 5734
+    _id: 6Retz0YBzv4qsqdk
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.6Retz0YBzv4qsqdk'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9765
+    'y': 6181
+    _id: vhA4R2RHwlfbyMvg
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.vhA4R2RHwlfbyMvg'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9597
+    'y': 6915
+    _id: afbyG29zs43Wrota
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.afbyG29zs43Wrota'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10275
+    'y': 6376
+    _id: KN8P2IWLBTLQy3p6
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.KN8P2IWLBTLQy3p6'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10180
+    'y': 6484
+    _id: 5DIK97ft2xB8zi70
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.5DIK97ft2xB8zi70'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9374
+    'y': 4671
+    _id: zyVNhAayREUxvfdS
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.zyVNhAayREUxvfdS'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9013
+    'y': 4648
+    _id: OHqD95pEYgkFx8Lh
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.OHqD95pEYgkFx8Lh'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9091
+    'y': 4984
+    _id: E2zxbcwwJhbLGjse
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.E2zxbcwwJhbLGjse'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9163
+    'y': 5414
+    _id: bQbOOEKhsJuFb96x
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.bQbOOEKhsJuFb96x'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10117
+    'y': 4317
+    _id: hjObGrGIiTQPLgns
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.hjObGrGIiTQPLgns'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9786
+    'y': 4643
+    _id: vOdAgkXvclnYx4WD
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.vOdAgkXvclnYx4WD'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9823
+    'y': 3894
+    _id: 4eFFoPWQpNwdEiwe
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.4eFFoPWQpNwdEiwe'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9313
+    'y': 4265
+    _id: MP9NeAitt0UdeKIE
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.MP9NeAitt0UdeKIE'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8835
+    'y': 4223
+    _id: Yl2fE0Gv0i2LKJCF
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Yl2fE0Gv0i2LKJCF'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8565
+    'y': 4337
+    _id: T5HLNj90Eu9nBE4Y
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.T5HLNj90Eu9nBE4Y'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8281
+    'y': 4113
+    _id: GSdm3ArZ3FPElkFD
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.GSdm3ArZ3FPElkFD'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8135
+    'y': 4250
+    _id: c2pztxS5yt7FntK5
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.c2pztxS5yt7FntK5'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8398
+    'y': 4838
+    _id: BpO6mFCuwUPQY7F1
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.BpO6mFCuwUPQY7F1'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8227
+    'y': 5308
+    _id: 2UpzjFqIB6tKz7qr
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.2UpzjFqIB6tKz7qr'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8604
+    'y': 6116
+    _id: 9IzM6sRwpScQbfKo
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.9IzM6sRwpScQbfKo'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8832
+    'y': 6274
+    _id: I7xU31RukNPcWLio
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.I7xU31RukNPcWLio'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9137
+    'y': 6382
+    _id: sAytq0q0SeUHmcAM
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.sAytq0q0SeUHmcAM'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9271
+    'y': 6570
+    _id: 8u82JuSa6ww0fOSb
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.8u82JuSa6ww0fOSb'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7911
+    'y': 5814
+    _id: FPt2Khw6NXdGdWL9
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.FPt2Khw6NXdGdWL9'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7768
+    'y': 6072
+    _id: iv3IH2zLHdO2ncYK
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.iv3IH2zLHdO2ncYK'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7660
+    'y': 6295
+    _id: 9BVg2eyCUy02aU3e
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.9BVg2eyCUy02aU3e'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7595
+    'y': 6670
+    _id: XKLqBJbb93G3eUmM
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.XKLqBJbb93G3eUmM'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7601
+    'y': 6951
+    _id: J72s48ZN3dTOjtve
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.J72s48ZN3dTOjtve'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7554
+    'y': 7201
+    _id: ioaTYRgjfzACmBUw
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.ioaTYRgjfzACmBUw'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8259
+    'y': 6443
+    _id: e0ccKcGatgZucvR5
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.e0ccKcGatgZucvR5'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8398
+    'y': 6778
+    _id: SMhISmQL8b3abE4C
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.SMhISmQL8b3abE4C'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8508
+    'y': 5730
+    _id: Inm704kX9aCgS2DK
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Inm704kX9aCgS2DK'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10244
+    'y': 4994
+    _id: 6ABWi9NlztfkYsCY
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.6ABWi9NlztfkYsCY'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10236
+    'y': 5643
+    _id: zJ6Sle17m92pvAPC
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.zJ6Sle17m92pvAPC'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9919
+    'y': 5595
+    _id: Px4eYrY5mXVDCb0E
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Px4eYrY5mXVDCb0E'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9593
+    'y': 5254
+    _id: OwQglldIXJtNGyT4
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.OwQglldIXJtNGyT4'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10301
+    'y': 5987
+    _id: G5rO0Q4CjxpNxGSJ
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.G5rO0Q4CjxpNxGSJ'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9680
+    'y': 5958
+    _id: cV2EatVq1pd8XaSX
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.cV2EatVq1pd8XaSX'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9260
+    'y': 6012
+    _id: leBd4CbGTMwQk6OB
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.leBd4CbGTMwQk6OB'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9581
+    'y': 6687
+    _id: TBSvK8lLmsanJFJH
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.TBSvK8lLmsanJFJH'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5180
+    'y': 4881
+    _id: W0YQZtMpVIu5P4BQ
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.W0YQZtMpVIu5P4BQ'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5682
+    'y': 5395
+    _id: aUCA7TKJr3k6UOsI
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.aUCA7TKJr3k6UOsI'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5425
+    'y': 5318
+    _id: xjihih6JBzErz6eV
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.xjihih6JBzErz6eV'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7212
+    'y': 5772
+    _id: Pu26OCfjwKmn59oy
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Pu26OCfjwKmn59oy'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7770
+    'y': 3899
+    _id: yoD77UJliQVQ0Z43
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.yoD77UJliQVQ0Z43'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7909
+    'y': 3600
+    _id: Gkbq2OzQUcVEvXS9
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Gkbq2OzQUcVEvXS9'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8305
+    'y': 3760
+    _id: XP769G6xMxMcZLCr
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.XP769G6xMxMcZLCr'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8771
+    'y': 3704
+    _id: xQihZqHGu1xsP7VQ
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.xQihZqHGu1xsP7VQ'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10204
+    'y': 3578
+    _id: eZwxtmBTJj0NJaPJ
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.eZwxtmBTJj0NJaPJ'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9292
+    'y': 3014
+    _id: CiTJR9tgvhRFqalH
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.CiTJR9tgvhRFqalH'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8665
+    'y': 2440
+    _id: FiA5cKPGenJ5m8Ax
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.FiA5cKPGenJ5m8Ax'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6686
+    'y': 3011
+    _id: KrUr6pX9fIVKqzMV
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.KrUr6pX9fIVKqzMV'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6799
+    'y': 3435
+    _id: taYAOG5qnWGHKesd
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.taYAOG5qnWGHKesd'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7282
+    'y': 3195
+    _id: llrVWBnVLzvEVoPy
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.llrVWBnVLzvEVoPy'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7333
+    'y': 2734
+    _id: Ae9jCJU40TqhKe9E
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Ae9jCJU40TqhKe9E'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7687
+    'y': 2923
+    _id: xR4O1Db9FWlucdPm
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.xR4O1Db9FWlucdPm'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7694
+    'y': 2304
+    _id: r3aFYWKitHo0343w
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.r3aFYWKitHo0343w'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7680
+    'y': 2597
+    _id: ixeFY4OFGW66Uccb
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.ixeFY4OFGW66Uccb'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8284
+    'y': 2413
+    _id: GVtpSe6AjWuVXM62
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.GVtpSe6AjWuVXM62'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7266
+    'y': 3758
+    _id: 3LFFNReh3V3FFtKC
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.3LFFNReh3V3FFtKC'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7318
+    'y': 3512
+    _id: Q8GxMjAKP3jzlBvE
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Q8GxMjAKP3jzlBvE'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6035
+    'y': 3133
+    _id: 5CAkPLehefrZ7ASw
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.5CAkPLehefrZ7ASw'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6344
+    'y': 3504
+    _id: qY6f5Dv8ErLApwME
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.qY6f5Dv8ErLApwME'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6376
+    'y': 2971
+    _id: z9QSkeYgt64RNABf
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.z9QSkeYgt64RNABf'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3373
+    'y': 4248
+    _id: pHBiDlLn0nes9XtD
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.pHBiDlLn0nes9XtD'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3566
+    'y': 4493
+    _id: F2pC6WmsxflSdVn2
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.F2pC6WmsxflSdVn2'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3821
+    'y': 4659
+    _id: WFAXNhj19lYTkMOG
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.WFAXNhj19lYTkMOG'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4142
+    'y': 4743
+    _id: r1TvoQ106pl9FjNg
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.r1TvoQ106pl9FjNg'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4447
+    'y': 4758
+    _id: K9Ez5jhJ23t3xPen
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.K9Ez5jhJ23t3xPen'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4690
+    'y': 4822
+    _id: tMtV9q2GdGJfQfMG
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.tMtV9q2GdGJfQfMG'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3777
+    'y': 4405
+    _id: iIKZK90B2FkoFcyy
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.iIKZK90B2FkoFcyy'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4230
+    'y': 4543
+    _id: aqkZhSCXYGticrsI
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.aqkZhSCXYGticrsI'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5105
+    'y': 2754
+    _id: cGyEyGCCjmyV2fhQ
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.cGyEyGCCjmyV2fhQ'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4404
+    'y': 2511
+    _id: WM5ilRvaJ6hKlsBz
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.WM5ilRvaJ6hKlsBz'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4366
+    'y': 2212
+    _id: o3exe8jz4N3axCjX
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.o3exe8jz4N3axCjX'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4788
+    'y': 2332
+    _id: GREqZUOfxheh5mcB
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.GREqZUOfxheh5mcB'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5178
+    'y': 2523
+    _id: V3kX1ULaiXihGHTX
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.V3kX1ULaiXihGHTX'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5421
+    'y': 2830
+    _id: HhSHc5XhjEIWxzt1
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.HhSHc5XhjEIWxzt1'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5538
+    'y': 3009
+    _id: gD5CrN670rGMYGwg
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.gD5CrN670rGMYGwg'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3279
+    'y': 2405
+    _id: FSgcn2Epx3n2jfez
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.FSgcn2Epx3n2jfez'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3167
+    'y': 2499
+    _id: wUs1w26drNx3TJbW
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.wUs1w26drNx3TJbW'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3592
+    'y': 2760
+    _id: z0lHEhQr1jNbH4nz
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.z0lHEhQr1jNbH4nz'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3378
+    'y': 2725
+    _id: tGtmHpb96zgoZ8FM
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.tGtmHpb96zgoZ8FM'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9443
+    'y': 7157
+    _id: rTYJQsZmwlvF7iaR
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.rTYJQsZmwlvF7iaR'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7962
+    'y': 7495
+    _id: axmhDPhmRaVRtvMn
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.axmhDPhmRaVRtvMn'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6930
+    'y': 7255
+    _id: 460dxzCn9lR6enGU
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.460dxzCn9lR6enGU'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6021
+    'y': 6587
+    _id: qEDE3yIZ92PDqJDt
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.qEDE3yIZ92PDqJDt'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5585
+    'y': 5883
+    _id: Mot0BKdy93mXty0X
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Mot0BKdy93mXty0X'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5440
+    'y': 5517
+    _id: nyBmFQW1VJ5gBRhg
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.nyBmFQW1VJ5gBRhg'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4451
+    'y': 5067
+    _id: gAwG1tpKItUaM3w3
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.gAwG1tpKItUaM3w3'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5009
+    'y': 5314
+    _id: Us5khBOoMgosotps
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Us5khBOoMgosotps'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3870
+    'y': 5003
+    _id: ZJcdnGeTXtkz35Gf
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.ZJcdnGeTXtkz35Gf'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3263
+    'y': 4626
+    _id: FE6hwNCSWZZPrujP
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.FE6hwNCSWZZPrujP'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 2867
+    'y': 3993
+    _id: rT1v9a0RlQ5XGaPl
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.rT1v9a0RlQ5XGaPl'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 2807
+    'y': 3379
+    _id: SvrQWuiEFLEzcdDN
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.SvrQWuiEFLEzcdDN'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 2943
+    'y': 2865
+    _id: DkMWOzYGqK7KDmFI
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.DkMWOzYGqK7KDmFI'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 3724
+    'y': 2110
+    _id: odEK4QWRxt7ZSW0U
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.odEK4QWRxt7ZSW0U'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 4468
+    'y': 1981
+    _id: GUNEJOj8BZnO9iwF
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.GUNEJOj8BZnO9iwF'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5155
+    'y': 2181
+    _id: 73Ar6mGkbAlcH3Dz
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.73Ar6mGkbAlcH3Dz'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5661
+    'y': 2751
+    _id: IcML5ezBj0Vws1Kn
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.IcML5ezBj0Vws1Kn'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5833
+    'y': 2813
+    _id: uYPvPgzw16UxBNnq
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.uYPvPgzw16UxBNnq'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 5918
+    'y': 2847
+    _id: 7kiSm8xkmEQhiDu2
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.7kiSm8xkmEQhiDu2'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6057
+    'y': 2914
+    _id: taGh5mXzqnfvY9f4
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.taGh5mXzqnfvY9f4'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 6420
+    'y': 2574
+    _id: KrP7ZcXbUeAJ6y4E
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.KrP7ZcXbUeAJ6y4E'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7047
+    'y': 2223
+    _id: RJMKvSiwi4LGvXVw
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.RJMKvSiwi4LGvXVw'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 7858
+    'y': 2022
+    _id: P5LcpSV6BqOySEqt
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.P5LcpSV6BqOySEqt'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8704
+    'y': 2090
+    _id: ib6j3LZnZJeP30ss
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.ib6j3LZnZJeP30ss'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 9558
+    'y': 2426
+    _id: OatAuUBITte7bpe2
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.OatAuUBITte7bpe2'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10310
+    'y': 3126
+    _id: lKSllHIIQvkYv6fA
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.lKSllHIIQvkYv6fA'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10754
+    'y': 4106
+    _id: VwvQvFtjuU5LVa2Z
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.VwvQvFtjuU5LVa2Z'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10850
+    'y': 4797
+    _id: NibQy6slRelrLeYs
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.NibQy6slRelrLeYs'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 10714
+    'y': 5575
+    _id: Yn4AmlWybHqQ1vDa
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Yn4AmlWybHqQ1vDa'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8811
+    'y': 7097
+    _id: BVeKc07F6EcItfsU
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.BVeKc07F6EcItfsU'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8080
+    'y': 6185
+    _id: 0DQIU6kvqQdMInYd
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.0DQIU6kvqQdMInYd'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8158
+    'y': 5811
+    _id: G57iwdtZZIdCyocG
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.G57iwdtZZIdCyocG'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8256
+    'y': 5103
+    _id: WWBHfJhiwo4r2uwM
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.WWBHfJhiwo4r2uwM'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8560
+    'y': 5307
+    _id: Lcr7HrkhKgwZ5twq
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.Lcr7HrkhKgwZ5twq'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8813
+    'y': 5152
+    _id: zWnn667iz51kZ6A7
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.zWnn667iz51kZ6A7'
+  - config:
+      dim: 90
+      bright: 45
+      negative: false
+      priority: 0
+      alpha: 0.15
+      angle: 360
+      color: null
+      coloration: 1
+      attenuation: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: flame
+        speed: 1
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0.5
+        max: 1
+    x: 8925
+    'y': 5421
+    _id: iN3xONaoetcKIsmg
+    elevation: 0
+    rotation: 0
+    walls: true
+    vision: false
+    hidden: false
+    flags:
+      wall-height:
+        advancedLighting: false
+      tagger:
+        tags:
+          - city-light
+    levels: []
+    locked: false
+    _key: '!scenes.lights!2lte4Z9TqhooGobh.iN3xONaoetcKIsmg'
+notes:
+  - entryId: nEFaU8OHWbhfdPof
+    pageId: egSNxFMzeEtIWyXe
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      plutonium:
+        journalPageHeaderAnchor: ''
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Messenger's Mount
+    x: 10000
+    'y': 6550
+    elevation: 0
+    sort: 0
+    global: true
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 0
+    _id: 5wvqHAGpGb2BKXYb
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.5wvqHAGpGb2BKXYb'
+  - entryId: YOu0PrTHzN9ahBJ6
+    pageId: 0e0qt6LeSqQgSvbd
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      plutonium:
+        journalPageHeaderAnchor: ''
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Grik's Weaponry
+    x: 9984
+    'y': 6347
+    elevation: 0
+    sort: 0
+    global: true
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 0
+    _id: pC49inMzu9OEbwZy
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.pC49inMzu9OEbwZy'
+  - entryId: FbpUtHCDxpUGqFUP
+    pageId: c6Qsh4j5HHx1NJDd
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      plutonium:
+        journalPageHeaderAnchor: ''
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Devyn's Desertwear
+    x: 9590
+    'y': 5772
+    elevation: 0
+    sort: 0
+    global: true
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 0
+    _id: dZPnsjGzahoiANLN
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.dZPnsjGzahoiANLN'
+  - entryId: ydnVRawKxS58yhdw
+    pageId: rx1szwpnETk1KNNO
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      plutonium:
+        journalPageHeaderAnchor: ''
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Rarvin's Wagonworks
+    x: 5850
+    'y': 5700
+    elevation: 0
+    sort: 0
+    global: true
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 0
+    _id: 1dsuaddMB5Xv0fJB
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.1dsuaddMB5Xv0fJB'
+  - entryId: V9EaPREADhicQlne
+    pageId: UwrDHonojSn6emBT
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      plutonium:
+        journalPageHeaderAnchor: ''
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Tarnished Cup
+    x: 5600
+    'y': 5100
+    elevation: 0
+    sort: 0
+    global: true
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 0
+    _id: vpEbVoURK2OXfs2H
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.vpEbVoURK2OXfs2H'
+  - entryId: 0Yjk7sjZO22pAqY8
+    pageId: 1PsIybj5UgImIebh
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Golden Inix
+    x: 9300
+    'y': 6150
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: vOjBjn8onD5cChyO
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.vOjBjn8onD5cChyO'
+  - entryId: XmGXBvvYmziUObpD
+    pageId: BJpSdRdVdVLMdBmX
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Karlen's Eye
+    x: 7200
+    'y': 3150
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: jemIUTcUNJZLas15
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.jemIUTcUNJZLas15'
+  - entryId: WULV5oQwtmNinHoE
+    pageId: Uvf9xBV7jVdxuWNR
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Wayward Trader
+    x: 7250
+    'y': 3450
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: b9Q38FUKYdY7t3q8
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.b9Q38FUKYdY7t3q8'
+  - entryId: kFjrAKmrlumA2390
+    pageId: BUgNtcXtnFY8gDyO
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Sculptor's Square
+    x: 6550
+    'y': 3100
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: G2hrqVN4FY3NRG3i
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.G2hrqVN4FY3NRG3i'
+  - entryId: azZCv5ZwxdX3RAiY
+    pageId: xOlwlqkh7b1eYTPq
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Stone and Mortar
+    x: 6850
+    'y': 3350
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: Lq6nqqzctqQO3pnh
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.Lq6nqqzctqQO3pnh'
+  - entryId: 1IlHdLuv1MyTDoSS
+    pageId: vX5SxIlBpix06lBK
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Rhey's Apothecary
+    x: 8600
+    'y': 6200
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: GQWivBXi6R6ruSUA
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.GQWivBXi6R6ruSUA'
+  - entryId: tMuSJDbuIzaM1zig
+    pageId: pbFGSbGsljUkbKj1
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Narissa's Colors and Scents
+    x: 8200
+    'y': 6400
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: KQrctUQ4PuIFtYAl
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.KQrctUQ4PuIFtYAl'
+  - entryId: nxu2bDtQk1TAtSs2
+    pageId: kXINe9BMZh81CWX1
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: true
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: false
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger: {}
+    text: Jade Jozhal
+    x: 10300
+    'y': 4800
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 72
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/village.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Modesto Condensed
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: dizT3FeTVvrELwpb
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.dizT3FeTVvrELwpb'
+  - entryId: K0guts4lEJS4Kfo9
+    pageId: 0nz5I80qilzUH68l
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Sweetwater Inn
+    x: 9800
+    'y': 5300
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 48
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/hanging-sign.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Packard Antique Bold
+    fontSize: 40
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: W8Xy3wcZ0sRFS1b8
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.W8Xy3wcZ0sRFS1b8'
+  - entryId: U5vrer1fP9b4vryi
+    pageId: f0bdY9yBON5i4Vtq
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Elven Market
+    x: 8650
+    'y': 4200
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: WJc6FxWVAAepZ7gi
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.WJc6FxWVAAepZ7gi'
+  - entryId: RsyEwG1fVK1qzpGD
+    pageId: Vghx9V3gAjIedoD6
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: The Warrens
+    x: 9800
+    'y': 3450
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: uHdJRa9hPAklVzqh
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.uHdJRa9hPAklVzqh'
+  - entryId: U4G3e61M04QNE0Gm
+    pageId: QvANag7GxcXg9Q8g
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: true
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: false
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: false
+      tagger:
+        tags: ''
+    text: Caravan District
+    x: 10050
+    'y': 5900
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 72
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/village.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Modesto Condensed
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: vcBIbe53SADlyHAP
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.vcBIbe53SADlyHAP'
+  - entryId: 7ncRNCK62KUwyj0x
+    pageId: fQuH6AcUSWFlbCoP
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: true
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: false
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: false
+      tagger:
+        tags: ''
+    text: Smith's Distrct
+    x: 5400
+    'y': 5150
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 72
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/village.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Modesto Condensed
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: avewmG7x3UxhJjVR
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.avewmG7x3UxhJjVR'
+  - entryId: a6jGA7qoAUJmxzQA
+    pageId: R7cHoasaBCDbSiNu
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: true
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: false
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: false
+      tagger:
+        tags: ''
+    text: Artisan District
+    x: 7150
+    'y': 2900
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 72
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/village.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Modesto Condensed
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: rBx9t1nQfi8peLoK
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.rBx9t1nQfi8peLoK'
+  - entryId: w7LEx4Uk0vBXwAe6
+    pageId: PCVpj2NkdOZ1z7ow
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger: {}
+    text: Brickyards
+    x: 7000
+    'y': 6050
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: FuWFp5AvHaKwqjco
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.FuWFp5AvHaKwqjco'
+  - entryId: n6yRl77jIWW5RAPW
+    pageId: f46wGCx9nE0iYcmr
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger: {}
+    text: Slave Pits
+    x: 6600
+    'y': 6400
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: kpRhv0ZNeLdE3rpv
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.kpRhv0ZNeLdE3rpv'
+  - entryId: SnwD3JBr706qg4Zk
+    pageId: gX2hLga33LLNaLiX
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger: {}
+    text: Iron Square
+    x: 8500
+    'y': 5050
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: qUfpSvIXRVV1sdMp
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.qUfpSvIXRVV1sdMp'
+  - entryId: MeSVn13K47zHsxr9
+    pageId: 9kLBIidbjszKWUX6
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Stadium of Tyr
+    x: 5700
+    'y': 4150
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: oTrG7STQSrZYL2EU
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.oTrG7STQSrZYL2EU'
+  - entryId: ey1WXlwPJOmCxalq
+    pageId: NpIDFgFWwtesO4ZF
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Ziggurat of Kalak
+    x: 7100
+    'y': 4750
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: JEHPKRPZidgQlqn9
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.JEHPKRPZidgQlqn9'
+  - entryId: E1cAh6BwV3LdC4G6
+    pageId: wzFNGdq6UGz1D7Rr
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Golden Tower
+    x: 4250
+    'y': 3600
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: bZ0E9hDPBrQzRXur
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.bZ0E9hDPBrQzRXur'
+  - entryId: ZwxGO0eXIsLgbDbT
+    pageId: 0YZtGURXBdgPktzx
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Templar District
+    x: 5000
+    'y': 2450
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: kvky7KXuz4xv04Ja
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.kvky7KXuz4xv04Ja'
+  - entryId: ZwxGO0eXIsLgbDbT
+    pageId: 0YZtGURXBdgPktzx
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Templar District
+    x: 3800
+    'y': 4700
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: BJVvfcbEuHtSJ2Rk
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.BJVvfcbEuHtSJ2Rk'
+  - entryId: kekrqAps8mP9kxXz
+    pageId: WOZjWbW7ixhPRBE3
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: King's Gardens
+    x: 3800
+    'y': 2350
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: Z1Bq40Fq0NHYG9hr
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.Z1Bq40Fq0NHYG9hr'
+  - entryId: kekrqAps8mP9kxXz
+    pageId: WOZjWbW7ixhPRBE3
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: King's Gardens
+    x: 3050
+    'y': 3600
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: zBEifkf3vTonthpw
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.zBEifkf3vTonthpw'
+  - entryId: Gzxn9ONSW53nbxe8
+    pageId: ADM7gEzXsc7P1bfT
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Golden City
+    x: 4000
+    'y': 3050
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: zjHk6Atra1g1q0ez
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.zjHk6Atra1g1q0ez'
+  - entryId: vSFyvGwOOWKte8Kj
+    pageId: vgUGhNQsVb8CVk3O
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: Grand Gate
+    x: 3200
+    'y': 2450
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: 2A609cLbkHokppkS
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.2A609cLbkHokppkS'
+  - entryId: PzkGe0Bgyun2NWfC
+    pageId: 0NnonijTcsR3AOLg
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: false
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: false
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: true
+      tagger:
+        tags: ''
+    text: High Bureaus
+    x: 3400
+    'y': 2650
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 60
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/city.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Tablelands
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: aJIEcXYAY65VId6K
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.aJIEcXYAY65VId6K'
+  - entryId: NeAh3ceszPRMlSJ3
+    pageId: n9Z0CfEmroJRl1bF
+    flags:
+      monks-enhanced-journal:
+        anchor: ''
+        chatbubble: false
+      pin-cushion:
+        gmNote: ''
+        pinIsTransparent: false
+        showOnlyToGM: true
+        hasBackground: false
+        ratio: 1
+        numberWsSuffixOnNameplate: 0
+        numberHsSuffixOnNameplate: 0
+        textAlwaysVisible: false
+        hideLabel: false
+        doNotShowJournalPreview: true
+        previewAsTextSnippet: false
+        tooltipCustomDescription: ''
+        tooltipShowDescription: true
+        tooltipShowTitle: false
+        tooltipPlacement: e
+        tooltipColor: ''
+        tooltipForceRemove: false
+        tooltipSmartPlacement: false
+        showImage: false
+        showImageExplicitSource: ''
+        pinIsRevealed: true
+        usePinIsRevealed: false
+      notelicker:
+        disableAutoIcon: false
+      tagger:
+        tags: ''
+    text: Merchant District
+    x: 9050
+    'y': 5150
+    elevation: 0
+    sort: 0
+    global: false
+    iconSize: 72
+    texture:
+      tint: '#ffffff'
+      src: icons/svg/village.svg
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0
+    fontFamily: Modesto Condensed
+    fontSize: 48
+    textColor: '#ffffff'
+    textAnchor: 1
+    _id: NSHz8FEneuPPcRhE
+    author: null
+    levels: []
+    locked: false
+    _key: '!scenes.notes!2lte4Z9TqhooGobh.NSHz8FEneuPPcRhE'
+sounds: []
+regions: []
+tiles: []
+walls: []
+playlist: tGVdyapGtlCfhz29
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+folder: GUII1WfSn4hGzGss
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+flags:
+  scene-packer:
+    hash: a353333731d4d597cc8c909fcf888b4be9b74492
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+    moonlight: true
+  token-attacher: {}
+  walledtemplates:
+    version: 0.8.0
+  zoom-pan-options:
+    minZoom: 0.01
+    maxZoom: 5
+  terrainmapper:
+    backgroundElevation: null
+  wall-height:
+    advancedVision: false
+  world-explorer:
+    enabled: false
+    color: '#000000'
+    image: ''
+    persistExploredAreas: false
+    position: behindDrawings
+    revealRadius: '0'
+    gridRevealRadius: '0'
+    opacityGM: 0.7
+    opacityPlayer: 1
+  hexplorer:
+    enabled: false
+  dimensional-weather:
+    weatherState:
+      terrain: scrubPlains
+      lastUpdate: 1749789622620
+      temperature: 4
+      wind: -5
+      precipitation: 3
+      humidity: 2
+      season: sunAscending
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.4.4
+  createdTime: 1753114042432
+  modifiedTime: 1782140173256
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+navOrder: 0
+_id: 2lte4Z9TqhooGobh
+active: false
+sort: 400000
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!2lte4Z9TqhooGobh'
+templates: []

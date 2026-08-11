@@ -1,0 +1,255 @@
+folder: ReXRK6J3hp5hQbzD
+name: Armor Optimization
+type: feat
+_id: FZ4WggQ7dIwo8RNE
+img: icons/equipment/chest/breastplate-gorget-steel.webp
+system:
+  activities:
+    dy4eVV11xvAkoEZe:
+      type: utility
+      _id: dy4eVV11xvAkoEZe
+      sort: 0
+      activation:
+        type: ''
+        value: null
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: zDjPWUaScsli9B5G
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      name: Optimize
+      img: ''
+      flags:
+        dnd5e:
+          riders:
+            activity: false
+      appliedEffects: []
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+  description:
+    value: >-
+      <p><em>Prerequisite: 1st level Feat, Dark Sun
+      Campaign</em></p><p><em>Repeatable: No</em></p><p>You have conditioned
+      yourself in such a way that it allows a you to use your armor to its best
+      advantage against a specific opponent that you are fighting during combat.
+      You gain a +1 bonus to AC against that opponent. At 8th level, the AC
+      bonus increases to +2 and again at 15th level the bonus increases to
+      +3.</p><p>You may use this ability a number of times equal to your
+      Proficiency Bonus.</p><p>You must be wearing some type of armor or
+      employing a shield in order to use armor optimization and must be able to
+      see your opponent.</p><p></p>
+    chat: ''
+  identifier: armor-optimization
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 1
+    repeatable: false
+  properties: []
+  requirements: Dark Sun Campaign
+  type:
+    value: feat
+    subtype: origin
+effects:
+  - name: Armor Optimization
+    img: icons/equipment/chest/breastplate-gorget-steel.webp
+    origin: Compendium.dark-sun-essentials.dark-sun-feats.Item.FZ4WggQ7dIwo8RNE
+    transfer: false
+    _id: zDjPWUaScsli9B5G
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.bonus
+          value: 'dae.eval(@details.level >= 15 ? 3 : lvl >= 8 ? 2 : 1)'
+          priority: 20
+          type: add
+    disabled: false
+    duration:
+      value: 10
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p><em>Prerequisite: 1st level Feat, Dark Sun
+      Campaign</em></p><p><em>Repeatable: No</em></p><p>You have conditioned
+      yourself in such a way that it allows a you to use your armor to its best
+      advantage against a specific opponent that you are fighting during combat.
+      You gain a +1 bonus to AC against that opponent. At 8th level, the AC
+      bonus increases to +2 and again at 15th level the bonus increases to
+      +3.</p><p>You may use this ability a number of times equal to your
+      Proficiency Bonus.</p><p>You must be wearing some type of armor or
+      employing a shield in order to use armor optimization and must be able to
+      see your opponent.</p><p></p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - combatEnd
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.9
+      createdTime: 1745337298591
+      modifiedTime: 1745337658300
+      lastModifiedBy: 6QG9R6JQRfToF3Mf
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!FZ4WggQ7dIwo8RNE.zDjPWUaScsli9B5G'
+sort: 100000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  midi-qol:
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  cat:
+    automation:
+      hash: -1059404644
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745337135411
+  modifiedTime: 1784910748565
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_key: '!items!FZ4WggQ7dIwo8RNE'

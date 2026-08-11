@@ -1,0 +1,121 @@
+folder: Ob8eTVGB5n6ERlyk
+name: Potion of Plantspeak
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Common Remedies
+      instruction: ''
+      currency:
+        name: gp
+        value: 25
+      required:
+        '1':
+          key:
+            id: ZZqVDTOWssrEhOEP
+            uuid: Compendium.shareddata.ddb-items.ZZqVDTOWssrEhOEP
+            img: icons/containers/bags/pouch-leather-green.webp
+            type: Item
+            name: Herbalism Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: 8U61IScvrNcit1ZJ
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.8U61IScvrNcit1ZJ
+            img: icons/consumables/plants/mint-dried-green.webp
+            type: Item
+            name: Cat's Tongue
+            quantity: 1
+            itemType: consumable
+        '2':
+          key:
+            id: sODZElZQJ8PiIvH1
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.sODZElZQJ8PiIvH1
+            img: icons/consumables/plants/fern-sword-green.webp
+            type: Item
+            name: Muroosa Twigs
+            quantity: 1
+            itemType: loot
+      output:
+        '1':
+          key:
+            id: Lkq3lXZgFavFt6He
+            uuid: Item.Lkq3lXZgFavFt6He
+            img: icons/consumables/potions/potion-bottle-corked-stopper-yellow.webp
+            type: Item
+            name: Potion of Plantspeak
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: nat
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: fb26fbc49e1a9f0ab533414a7ec838c5ff760dcd
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: potion-of-plantspeak
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.OWaDkUJAQ1Dt7LTk
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882207
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: OWaDkUJAQ1Dt7LTk
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!OWaDkUJAQ1Dt7LTk'

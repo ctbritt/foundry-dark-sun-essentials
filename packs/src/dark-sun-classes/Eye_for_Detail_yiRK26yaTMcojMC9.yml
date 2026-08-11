@@ -1,0 +1,122 @@
+_id: yiRK26yaTMcojMC9
+name: Eye for Detail
+type: feat
+effects: []
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Starting at 3rd level, you can use a bonus action to make a Wisdom
+      (Perception) check to spot a hidden creature or object or to make an
+      Intelligence (Investigation) check to uncover or decipher clues.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      You can use a bonus action to make a Perception check to spot a hidden
+      creature or object or to make an Investigation check to uncover or
+      decipher clues.
+
+      </div>
+  identifier: eye-for-detail
+  source:
+    book: XGtE
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 735
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Eye for Detail
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 200
+      featureType: 1
+      class: Rogue
+      classId: 111
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Inquisitive
+    subClassId: 111
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Eye for Detail
+        activityCount: 1
+        activityKeys:
+          - utilityEyFDclNe0
+        nameMap:
+          utilityEyFDclNe0:
+            - Eye for Detail
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Eye for Detail
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  custom-character-sheet-sections:
+    sectionName: ''
+  scene-packer:
+    hash: 7e6e6afb69be76cd0a19d781a891c11ac843b404
+    sourceId: Item.xX6wLvfZd4g3Q6DT
+  crux:
+    trayVisibility: default
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
+folder: q8k0E01OARsBkmBB
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781135000321
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!yiRK26yaTMcojMC9'

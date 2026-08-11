@@ -1,0 +1,87 @@
+_id: 6ywF2B5wSAejvjfj
+name: Mountain's Resilience
+type: feat
+system:
+  description:
+    value: >-
+      <p>At 1st level you are imbued with the strength and fortitude of the
+      earth. This grants several benefits:</p><ul><li>You gain proficiency with
+      martial weapons and heavy armor.</li><li>Your hit points maximum increases
+      by 1, and it increases by one every time you gain a level.</li><li>You
+      learn the @UUID[Item.M1pXLu9nqV0I3OK2]{Mold Earth} or
+      @UUID[Item.CIvEEUZp1AZJt8kk]{Magic Stone} cantrip, your choice. The
+      cantrip you selected counts as a cleric cantrip for you and doesn’t count
+      against the number of cleric cantrips you know.</li><li>When you use your
+      Turn Undead channel divinity, you can also effect non-earth
+      elementals.</li></ul><section class="secret"
+      id="secret-eIZSkwq5th2jY5fC"><p><strong>Foundry Note</strong></p><p>The HP
+      gain from Mountain's Resilience should be configured by adding 1 to the
+      "Per Level" bonus in HP configuration on your character sheet (accessible
+      using the cog next to your character's hit points).</p></section>
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  requirements: Earth Domain 1
+  identifier: mountains-resilience
+  activities: {}
+  advancement: []
+  enchant: {}
+  prerequisites:
+    repeatable: false
+flags:
+  ddbimporter:
+    id: 5966283
+    type: class
+    entityTypeId: 12168134
+    dndbeyond:
+      requiredLevel: 1
+      displayOrder: 200
+      featureType: 1
+      classId: 1276546
+      entityType: class-feature
+      class: 'Cleric : Earth Domain (Dark Sun)'
+    class: Cleric
+    subclass: Earth Domain (Dark Sun)
+    importId: sfnR2yq5UQBBWIUf
+  obsidian:
+    source:
+      type: class
+      text: Cleric
+  dnd5e:
+    advancementOrigin: ZJlZhiPpwi7nA413
+  core: {}
+  crux:
+    trayVisibility: default
+effects: []
+img: systems/dnd5e/icons/svg/items/feature.svg
+folder: JMwez8SOhGR1ar1t
+sort: 300000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.T3NcJqXlP2N4B3Gp
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134998474
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!6ywF2B5wSAejvjfj'

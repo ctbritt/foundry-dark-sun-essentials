@@ -1,0 +1,317 @@
+name: Psychic Reflexes
+type: feat
+img: icons/skills/movement/feet-winged-boots-brown.webp
+effects:
+  - _id: ksFos60cgn0TWTFP
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Item.eEmSsq7xE3i0EyBS
+    transfer: false
+    flags:
+      dae:
+        stackable: false
+        macroRepeat: none
+        specialDuration:
+          - 1Reaction
+        transfer: false
+      ActiveAuras:
+        isAura: false
+        radius: null
+        aura: None
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        hostile: false
+        onlyOnce: false
+    tint: '#ffffff'
+    name: 1/2 Damage
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    img: icons/skills/movement/feet-winged-boots-brown.webp
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.uncanny-dodge
+          value: 1
+          priority: 20
+          type: override
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!CKApmEE3StOUv8aW.ksFos60cgn0TWTFP'
+folder: yC0K8YmShGWAXUaE
+flags:
+  core: {}
+  betterRolls5e:
+    critRange:
+      type: String
+      value: null
+    critDamage:
+      type: String
+      value: ''
+    quickDesc:
+      type: Boolean
+      value: true
+      altValue: true
+    quickAttack:
+      type: Boolean
+      value: true
+      altValue: true
+    quickSave:
+      type: Boolean
+      value: true
+      altValue: true
+    quickDamage:
+      type: Array
+      value: []
+      altValue: []
+      context: []
+    quickProperties:
+      type: Boolean
+      value: true
+      altValue: true
+    quickCharges:
+      type: Boolean
+      value:
+        use: true
+        resource: true
+        charge: true
+      altValue:
+        use: true
+        resource: true
+        charge: true
+    quickTemplate:
+      type: Boolean
+      value: true
+      altValue: true
+    quickOther:
+      type: Boolean
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      type: Boolean
+      value: true
+      altValue: true
+    quickPrompt:
+      type: Boolean
+      value: false
+      altValue: false
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    reactionCondition: ''
+    effectCondition: ''
+    otherCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    dependents:
+      - uuid: Actor.nDUJNncT2UaTeVx4.ActiveEffect.JgmylE2GgGBllxtO
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  scene-packer:
+    sourceId: Compendium.midi-qol.midiqol-sample-items.Item.SMFTP5tQhwZyObph
+    hash: 81a95a50c181d526c45b7d2f9a0e732df5a29bc9
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: >-
+      <p>When an attacker that you can see hits you with an attack, you can use
+      your reaction to halve the attack's damage against you.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: ''
+    subtype: ''
+  requirements: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: reaction
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects:
+        - _id: ksFos60cgn0TWTFP
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      name: ''
+      sort: 0
+      useConditionText: reaction === "isDamaged" && hasAttack && target.canSee
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  identifier: uncanny-dodge-11441
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+_stats:
+  compendiumSource: Compendium.dnd5e.classfeatures.Mm64SKAHJWYecgXS
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1746114480413
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_id: CKApmEE3StOUv8aW
+sort: 0
+_key: '!items!CKApmEE3StOUv8aW'

@@ -1,0 +1,112 @@
+name: Telekinetic Weapons
+type: feat
+system:
+  description:
+    value: >-
+      <p><em><strong>Psionic Power</strong></em></p><p><strong>Casting
+      Time:</strong> 1 Action<br /><strong>Range:</strong> 30 feet<br
+      /><strong>Components:</strong> S<br /><strong>Duration:</strong>
+      Instantaneous</p><p>You telekinetically fling a weapon at a creature or
+      object. Choose a weapon within 15 feet that isn't being worn or carried,
+      or choose a weapon under your control. Make a ranged spell attack. On hit,
+      the target takes damage equal to the weapon's damage dice. The range of
+      the attack decreases to 15 feet if the weapon has the heavy or special
+      property, and increases to 60 feet if the weapon has the light
+      property.</p><p>You can use Psionic Mastery points on this power, and this
+      power counts as a Discipline Power of the Telekinetics Discipline (for
+      example, for the purpose of Empowered
+      Psionics).</p><h4><strong>Modifiers:</strong></h4><ul><li><strong>Multiple
+      (1+ psi points):</strong> For each additional psi point spent, you can
+      fling an additional weapon, making a separate attack and damage roll for
+      each weapon flung.</li><li><strong>Whirling (2+ psi points):</strong> You
+      can replace throwing a weapon with casting <em>cloud of daggers</em>. It
+      is cast at one level higher for each additional point spent after
+      2.</li></ul>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  type:
+    value: class
+    subtype: psionicPower
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  activities: {}
+  identifier: telekinetic-weapons
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  requirements: ''
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/icons/psionic-icons/psionic-icon-68.png
+effects: []
+folder: ONv3rHd9yl9Y4S0r
+flags:
+  scene-packer:
+    hash: fcc2d0bb86e6d50177d0c119c5abf4d49564ae23
+    sourceId: Item.55Ah0xS9e88RBNva
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 210049595
+_stats:
+  compendiumSource: Compendium.world.dark-sun-feats.Item.cxOgRrbnDog5guCG
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078850640
+  modifiedTime: 1784910748594
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: cxOgRrbnDog5guCG
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!cxOgRrbnDog5guCG'

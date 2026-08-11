@@ -1,0 +1,295 @@
+name: Antloid Mandible
+type: weapon
+system:
+  description:
+    value: <p>Can be used to craft bone daggers, shortswords and scimitars</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 2
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: uncommon
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: 20
+    long: 60
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: true
+        formula: 1d6[slashing] + @mod + 1
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties:
+    - lgt
+    - thr
+    - mgc
+  proficient: 0
+  unidentified:
+    description: Handaxe
+  type:
+    value: simpleM
+    baseItem: handaxe
+  container: null
+  attuned: false
+  magicalBonus: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '20'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: str
+        bonus: '1'
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - cold
+            custom:
+              enabled: true
+              formula: 3d6[cold]
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: antloid-mandible
+  ammunition: {}
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Handaxe
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: true
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 112130694
+    definitionId: 5240
+    originalName: Handaxe, +1
+    version: 3.1.17
+  betterRolls5e: {}
+  magicitems:
+    enabled: true
+    charges: '0'
+    chargeType: c1
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t2
+    rechargeUnit: r1
+    destroy: false
+    destroyCheck: d1
+    spells: {}
+    feats: {}
+    tables: {}
+    equipped: true
+    attuned: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    sorting: l
+  midi-qol:
+    fumbleThreshold: null
+    effectActivation: false
+  core: {}
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    rollOther: false
+    critOther: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  cf: {}
+  scene-packer:
+    sourceId: Item.dSNGINttcMSnGbds
+    hash: f35ce408e25d69672ac4351e1fd399eb64b3fb01
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/commodities/biological/stinger-insect-brown.webp
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078877337
+  modifiedTime: 1746114871797
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+folder: null
+_id: EOYrRsASZaj6S2nX
+sort: 150000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!EOYrRsASZaj6S2nX'

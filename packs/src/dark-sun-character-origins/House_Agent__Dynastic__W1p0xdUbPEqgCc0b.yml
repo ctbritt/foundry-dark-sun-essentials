@@ -1,0 +1,180 @@
+name: House Agent (Dynastic)
+type: background
+system:
+  description:
+    value: >-
+      <p><strong>Abilities</strong>: &amp;Reference[str], &amp;Reference[int],
+      &amp;Reference[cha]</p><div class="ddb"><p><strong>Skill
+      Proficiencies:</strong> &amp;Reference[per],
+      &amp;Reference[his]</p><p><strong>Tool Proficiency:</strong> One gaming
+      set.</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled0000]{Skilled}</p><p><strong>Equipment:</strong>
+      A pin, tattoo or signet with your house symbol, a set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesFine]{Clothes,
+      Fine}, a gaming set of your choice, and a belt
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 25 ceramic pieces.</p><p><strong>Suggested Characteristics:
+      </strong>House agents are diverse. Consider the house you serve and the
+      work you do when choosing
+      characteristics.</p><p>@Embed[Compendium.dark-sun-essentials.dark-sun-rolltables.RollTable.Lx3d9yAyBLOMPj9i
+      rollable]</p><p>@Embed[Compendium.dark-sun-essentials.dark-sun-rolltables.RollTable.Q4GDJ2mdor3vUmdS
+      rollable]</p><p>@Embed[Compendium.dark-sun-essentials.dark-sun-rolltables.RollTable.S9hw5eg8wqZp3qGE
+      rollable]</p><p>@Embed[Compendium.dark-sun-essentials.dark-sun-rolltables.RollTable.OnIz85OXM6D0Zd5N
+      rollable]</p></div>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  advancement:
+    - _id: h3S4U03Dji22edik
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: true
+        grants:
+          - skills:his
+          - skills:per
+        choices: []
+      value:
+        chosen:
+          - skills:inv
+          - skills:per
+      level: 0
+      title: Skills
+      hint: ''
+    - _id: PTcVFwNboEy6NnlF
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: true
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+      value:
+        chosen: []
+      level: 0
+      title: Languages
+      hint: ''
+    - _id: EOXt9BJGU2LbBIW1
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: true
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - tool:game:*
+      value:
+        chosen: []
+      level: 0
+      title: Tool Proficiencies
+      hint: ''
+    - _id: 0pQ2NCiMuem60FR0
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Feats
+      hint: ''
+    - _id: R7uJqXRbVCwPDq1G
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - con
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+  identifier: athas-house-agent
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: 0LEBzzwI9m6trIuM
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine
+      requiresProficiency: false
+      _id: bBqfKVOpjxGBA7UR
+      group: 0LEBzzwI9m6trIuM
+      sort: 200000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+      _id: Q8EOrE0HwFTNnQZ4
+      group: 0LEBzzwI9m6trIuM
+      sort: 300000
+    - type: tool
+      count: null
+      key: game
+      requiresProficiency: false
+      _id: aAPdxThke5FB2Fnw
+      group: 0LEBzzwI9m6trIuM
+      sort: 400000
+  wealth: '25'
+flags:
+  ddbimporter:
+    featId: 16846
+    version: 4.0.7
+    id: 16846
+    type: background
+    entityTypeId: null
+    dndbeyond: {}
+  obsidian:
+    source:
+      type: background
+  scene-packer:
+    sourceId: Item.
+    hash: b76d983bf05cfcc43c777260ae16e0a70c7fefdf
+  midi-qol:
+    onUseMacroName: ''
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+img: icons/skills/trades/academics-book-study-purple.webp
+effects: []
+folder: 3ceHqueQSXMSDgbA
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1745297608679
+  modifiedTime: 1766718011635
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: W1p0xdUbPEqgCc0b
+sort: 650000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+_key: '!items!W1p0xdUbPEqgCc0b'

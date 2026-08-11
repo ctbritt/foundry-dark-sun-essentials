@@ -1,0 +1,99 @@
+name: Inner Power
+type: feat
+system:
+  description:
+    value: >-
+      <p><em><strong>Prerequisite:</strong> At least 1 psi or ki
+      point</em></p><p>Your body is powered by the inner powers that course
+      through it. Your maximum psi or ki points (if you have both, your choice
+      of which) increases by one.</p><p>At the end of your turn after expending
+      one or more psi or ki points during your turn (not counting temporary or
+      free points, such as those from Psionic Mastery), you heal for a number of
+      hit points equal to the psi or ki points spent.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  type:
+    value: feat
+    subtype: general
+  properties: []
+  activities: {}
+  identifier: inner-power
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  requirements: ''
+img: modules/talent-psionics/assets/icons/power.svg
+effects: []
+folder: NDrmCdpp44f8CXP0
+flags:
+  scene-packer:
+    hash: 25552cb8b32332a4d7a11b3f17122b7a67881078
+    sourceId: Item.e9HvNc6DKZqcWNML
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -314161599
+_stats:
+  compendiumSource: Compendium.world.dark-sun-feats.Item.WnZQ8vUzVgdoVVue
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078847981
+  modifiedTime: 1784910748577
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: WnZQ8vUzVgdoVVue
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 100000
+_key: '!items!WnZQ8vUzVgdoVVue'

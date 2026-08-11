@@ -1,0 +1,143 @@
+name: Assassin Bug Poison
+type: loot
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>A recipe for crafting the Assassin Bug Poison, an injury poison that
+      causes numbness and stiffness in the victim's limbs. This poison is
+      derived from the venom glands of male assassin
+      bugs.</p><p><strong>Crafting Steps:</strong></p><ol><li>Extract venom from
+      male assassin bugs</li><li>Refine and concentrate the venom</li><li>Mix
+      with a stabilizing agent</li><li>Add a binding compound to ensure proper
+      absorption</li><li>Store in air-tight vials to maintain potency</li></ol>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 90
+    denomination: ct
+  rarity: uncommon
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: assassin-bug-poison
+flags:
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Athas Poisons
+      instruction: >-
+        <p>Carefully extract venom from male assassin bugs. Refine and
+        concentrate the venom, then mix with stabilizing and binding agents.
+        Store in air-tight vials. A poisoner's kit is required for this
+        process.</p>
+      required:
+        '2':
+          Compendium-shareddata-ddb-items-Item-VXsUFoyJO7jiGCZk:
+            id: VXsUFoyJO7jiGCZk
+            uuid: Compendium.shareddata.ddb-items.Item.VXsUFoyJO7jiGCZk
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Item-AssassinBugPoison:
+            id: AssassinBugPoison
+            uuid: Item.AssassinBugPoison
+            img: icons/consumables/potions/bottle-round-corked-green.webp
+            type: Item
+            name: Assassin Bug Poison
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: ct
+        value: 45
+      input:
+        '1':
+          Compendium-world-creature-loot-items-Item-FmjGCBU5c5ZaMnzA:
+            id: FmjGCBU5c5ZaMnzA
+            uuid: Compendium.world.creature-loot-items.Item.FmjGCBU5c5ZaMnzA
+            img: icons/consumables/potions/potion-tube-corked-bubbling-green.webp
+            type: Item
+            name: Assassin Bug Venom
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-fH0ZTrw8welBty7Y:
+            id: fH0ZTrw8welBty7Y
+            uuid: Compendium.shareddata.ddb-items.Item.fH0ZTrw8welBty7Y
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: container
+            flags:
+              beavers-crafting: {}
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 15
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 15
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 5c5f5d9d3dd9d629a972f75ea6c6f775f0e701c4
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: o1LYkykMt2p6J6ix
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.ihmTbFWnyPihXrJz
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883299
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: ihmTbFWnyPihXrJz
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!ihmTbFWnyPihXrJz'

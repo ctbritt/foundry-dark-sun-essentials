@@ -1,0 +1,109 @@
+name: Initiate (Elemental )
+type: feat
+system:
+  description:
+    value: >-
+      <p><em><strong>Prerequisite:</strong> 1st level Feat, Dark Sun
+      Campaign</em></p><p><em><strong>Repeatable:</strong> No</em></p><p>You
+      have learned the basics of a particular magical tradition. Choose one
+      Spell list: Wizard or Cleric. You gain the following benefits related to
+      that choice:</p><ul><li><strong>Two Cantrips:</strong> You learn two
+      cantrips of your choice from the Spell list.</li><li><strong>1st-Level
+      Spell:</strong> Choose one 1st-level Spell from the Spell list. You always
+      have that Spell prepared. You can cast it once without a Spell Slot, and
+      you regain the ability to cast it in that way when you finish a Long Rest.
+      You can also cast the Spell using any Spell Slots you have. Intelligence,
+      Wisdom, or Charisma is your spellcasting ability for these Spells (choose
+      when you select this Feat). Consult the Player’s Handbook for the rules on
+      spellcasting.</li></ul><p>Whenever you gain a new level, you can replace
+      one of the Spells you chose for this Feat with a different Spell of the
+      same level from the chosen Spell list.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: ''
+  type:
+    value: feat
+    subtype: origin
+  properties: []
+  activities: {}
+  identifier: initiate-arcane-or-elemental
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  requirements: ''
+img: icons/magic/symbols/rune-sigil-black-pink.webp
+effects: []
+folder: ReXRK6J3hp5hQbzD
+flags:
+  scene-packer:
+    hash: 02af4d0ab1c77a4c6ffcdac1ba720c5207c9b7ea
+    sourceId: Item.z59uDIuJ1Uo12apm
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  dnd5e:
+    riders:
+      activity: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -627314345
+_stats:
+  compendiumSource: Compendium.world.dark-sun-feats.Item.mlydsEYJepCYoik7
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078849220
+  modifiedTime: 1784910748609
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: mlydsEYJepCYoik7
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 600000
+_key: '!items!mlydsEYJepCYoik7'

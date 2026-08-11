@@ -1,0 +1,273 @@
+name: Stone's Endurance
+type: feat
+system:
+  description:
+    value: >-
+      <p>You can focus yourself to occasionally shrug off injury. When you take
+      damage, you can use your reaction to roll a d12. Add your Constitution
+      modifier to the number rolled, and reduce the damage by that total. After
+      you use this trait, you can't use it again until you finish a short or
+      long rest.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2014'
+    book: Dark Sun
+    page: ''
+    license: ''
+  uses:
+    max: '1'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  prerequisites:
+    level: null
+    items: []
+    repeatable: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: reaction
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects:
+        - _id: y4W9G2XYApqGOuS0
+          level: {}
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: self
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: reaction == "isDamaged"
+      effectConditionText: ''
+      useConditionReason: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDamageDialog: 'false'
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      otherActivityAsParentType: true
+  identifier: stones-endurance
+  enchant: {}
+  advancement: []
+  crewed: false
+flags:
+  midi-qol:
+    forceCEOff: true
+    rollAttackPerTarget: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: reaction === 'isDamaged'
+    otherCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    riders:
+      activity: []
+  ddbimporter:
+    type: race
+    entityRaceId: 1026392
+    version: 5.2.36
+    baseName: Stone's Endurance
+    spellListIds: []
+    definitionKey: racial-trait:8429487
+    baseRaceName: Goliath
+    baseRaceId: 1026392
+    subRaceShortName: null
+    fullRaceName: Goliath
+    isSubRace: true
+    groupIds: []
+    groupName: Goliath
+  crux:
+    trayVisibility: default
+img: icons/equipment/shield/heater-stone-orange.webp
+folder: y19zoPMPixfBAlRp
+effects:
+  - name: Stone's Endurance
+    origin: Compendium.world.cpr-race-features.Item.NiMRg1SvodUGoH4Q
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - 1Reaction
+      core:
+        overlay: false
+    img: icons/equipment/shield/heater-stone-orange.webp
+    _id: y4W9G2XYApqGOuS0
+    type: base
+    system:
+      changes:
+        - key: system.traits.dm.midi.all
+          value: '-[[1d12 + @abilities.con.mod]]'
+          priority: 20
+          type: add
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.3
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      modifiedTime: 1765549382809
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!iuvSlyeBj9Sl0qTe.y4W9G2XYApqGOuS0'
+_stats:
+  compendiumSource: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.iuvSlyeBj9Sl0qTe
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1744166011623
+  modifiedTime: 1781134996977
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: iuvSlyeBj9Sl0qTe
+sort: 0
+ownership:
+  default: 0
+_key: '!items!iuvSlyeBj9Sl0qTe'

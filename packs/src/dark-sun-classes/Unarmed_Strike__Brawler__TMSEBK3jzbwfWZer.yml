@@ -1,0 +1,246 @@
+name: Unarmed Strike (Brawler)
+type: weapon
+img: icons/skills/melee/unarmed-punch-fist.webp
+system:
+  description:
+    value: >-
+      <ul><li>You can roll a d4 in place of the normal damage of your unarmed
+      strike. This die improves as you gain barbarian levels, increasing at 6th
+      level (d6), 12th level (d8), and 18th level (d10).</li><li>When you use
+      the Attack action to make an unarmed strike or attempt a grapple, you can
+      make one unarmed strike as a bonus action.</li></ul>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: ''
+  attunement: ''
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: true
+        formula: '@scale.path-of-the-pitfighter.unarmed-strike-damage + @mod'
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  type:
+    value: simpleM
+    baseItem: ''
+  magicalBonus: null
+  properties: []
+  proficient: 1
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: str
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: unarmed-strike-tavern-brawler
+  ammunition: {}
+  mastery: ''
+  attuned: false
+  equipped: true
+effects: []
+folder: 6Sf0XPdJ0Lt8UzWG
+flags:
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    fumbleThreshold: null
+    removeAttackDamageButtons: default
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    reactionCondition: ''
+    otherCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    last:
+      dnd5eactivity000:
+        attackMode: oneHanded
+        damageType:
+          '0': bludgeoning
+  scene-packer:
+    hash: 6f1028e2842a4ff279f0292b42fc2e899f9454c2
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.TMSEBK3jzbwfWZer
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1779357089159
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_id: TMSEBK3jzbwfWZer
+sort: 0
+_key: '!items!TMSEBK3jzbwfWZer'

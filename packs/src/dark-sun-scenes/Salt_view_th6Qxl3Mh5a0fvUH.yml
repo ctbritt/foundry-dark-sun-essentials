@@ -1,0 +1,242 @@
+folder: 0LOfbrstEr0vdsHt
+name: Salt view
+navigation: false
+navName: ''
+thumb: worlds/emerald-dreams/assets/scenes/6ywBdEosWZr6o5eE-thumb.webp
+width: 1800
+height: 2200
+padding: 0.25
+initial:
+  x: null
+  'y': null
+  scale: null
+grid:
+  type: 1
+  size: 100
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens: []
+lights: []
+notes: []
+sounds: []
+tiles:
+  - x: 800
+    'y': 1250
+    width: 1300
+    height: 811
+    texture:
+      src: >-
+        https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/maps/Dark-Sun/All%20Hiorthor%20Maps/assets/asset_195.webp
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    _id: HUFUhVCVY0Uw5h8x
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: false
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      monks-active-tiles:
+        name: ''
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger:
+          - enter
+        allowpaused: false
+        usealpha: false
+        pointer: false
+        vision: true
+        pertoken: false
+        minrequired: null
+        cooldown: null
+        chance: 100
+        fileindex: 0
+        actions: []
+        files: []
+      tile-scroll:
+        enableScroll: false
+        scrollDirection: 0
+        enableRotate: false
+        scrollSpeed: 1
+        repeatx: 1
+        repeaty: 1
+        pivotx: 0.5
+        pivoty: 0.5
+        offsetx: 0
+        offsety: 0
+        parallax: 0
+      tagger: {}
+      betterroofs:
+        brMode: false
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      LocknKey:
+        OpenImageFlag: imported-adventures/assets/vMAhnXlODBz03jNI/asset_195.webp
+        ClosedImageFlag: imported-adventures/assets/vMAhnXlODBz03jNI/asset_195.webp
+        LockableFlag: false
+        LockedFlag: false
+        IDKeysFlag: ''
+        UseKeyDialogFlag: false
+        PasskeysFlag: ''
+        PasskeyChangeableFlag: false
+        IdentityKeyFlag: ''
+        LockjammedFlag: false
+        LockDCFlag: 15
+        SpecialLPFlag: ''
+        LockBreakDCFlag: 20
+        currentLPsuccessFlag: 0
+        requiredLPsuccessFlag: 1
+        LPAttemptsFlag: -1
+        LPAttemptsMaxFlag: -1
+        canbeCircumventedFreeFlag: true
+        SoundVariantFlag: stone
+      perceptive:
+        TilePerceptiveNameFlag: Tile
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: false
+        PPDCFlag: -1
+        PPPLFlag: 0
+        APDCFlag: null
+        APPLFlag: 0
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+      Rideable:
+        issetRideableFlag: false
+        TileRideableNameFlag: Tile
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: false
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        GrapplePlacementFlag: RowBelow
+        TokenFormFlag: TokenFormRectangle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        WorldMEffectOverrideFlag: false
+        MountingEffectsFlag: ''
+        CanbePilotedFlag: false
+        CheckPilotedCollisionFlag: true
+        PilotedbyDefaultFlag: false
+      region-attacher:
+        attachRegionToTile: false
+    sort: 100
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!th6Qxl3Mh5a0fvUH.HUFUhVCVY0Uw5h8x'
+walls: []
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+flags:
+  scene-packer:
+    hash: 9b28e2c02d7113d6cb80856dc77d20aea495a5fb
+  enhanced-terrain-layer:
+    opacity: ''
+    multiple: null
+    elevation: null
+    depth: null
+    environment: ''
+    drawcolor: ''
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+  walledtemplates:
+    version: 0.9.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.2
+  createdTime: 1756267551552
+  modifiedTime: 1756267551552
+  lastModifiedBy: wgCeShTrqHJFBbDr
+fog:
+  reset: 1680879695403
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  globalLight:
+    enabled: false
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0.6
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+regions: []
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+navOrder: 0
+_id: th6Qxl3Mh5a0fvUH
+active: false
+sort: 0
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!th6Qxl3Mh5a0fvUH'
+templates: []

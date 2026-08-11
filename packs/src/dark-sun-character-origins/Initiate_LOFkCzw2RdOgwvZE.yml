@@ -1,0 +1,231 @@
+folder: 3ceHqueQSXMSDgbA
+name: Initiate
+type: background
+_id: LOFkCzw2RdOgwvZE
+img: icons/magic/holy/meditation-chi-focus-blue.webp
+system:
+  description:
+    value: >-
+      <p><strong>Ability Scores</strong>: &amp;Reference[con],
+      &amp;Reference[int], &amp;Reference[wis]</p><p><strong>Skill
+      Proficiencies:</strong> &amp;Reference[his], plus one from among
+      &amp;Reference[arc], &amp;Reference[ins], &amp;Reference[nat], or
+      &amp;Reference[rel], as appropriate for your order.</p><p><strong>Tool
+      Proficiencies:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulCalligraph]{Calligrapher's
+      Supplies} or a second language of your
+      choice</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.gso4BrUPEMykqN06]{Initiate
+      (Psionic)} or
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.qYFandmqCBcRGUeV]{Initiate
+      (Arcane )}, or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftHealer00000]{Healer}
+      (select one)</p><p><strong>Equipment:</strong> A
+      @UUID[Compendium.shareddata.ddb-items.ZPIhdGStNr72d3oa]{Robes},
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagParchment00]{Parchment}
+      (10),
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulCalligraph]{Calligrapher's
+      Supplies} or
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagHealersKit0]{Healer's
+      Kit}, a
+      @UUID[Compendium.dnd-players-handbook.equipment.rvz6gQc3OcOMgIQz]{Crowbar},
+      an elemental symbol, and a belt pouch containing 3 ceramic
+      pieces</p><p>Suggested Characteristics: As a member of a cult, temple,
+      psionic academy, or arcane cabal you have been initiated into the esoteric
+      mysteries of your order. You possess extraordinary insight into these
+      mysteries and as such are held in fear or awe by the general populace. The
+      nature of your order determines how openly you are able to flaunt your
+      affiliation. While psionic orders and temples dedicated to locally
+      accepted religions are able to operate openly, members of underground
+      cults or sorcerous cabals can face execution if their allegiance is
+      uncovered.</p><p></p>
+    chat: ''
+  identifier: athas-initiate
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    custom: Dark Sun
+    page: ''
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: M1FcX3w8z4UrnmS6
+      group: ''
+      sort: 800000
+    - type: linked
+      count: 10
+      key: Compendium.dnd-players-handbook.equipment.Item.D0567EygDF0Akvux
+      requiresProficiency: false
+      _id: btwcmEdz4ithYJSJ
+      group: M1FcX3w8z4UrnmS6
+      sort: 700000
+    - type: linked
+      count: null
+      key: Compendium.dnd5e.items.Item.8GCEodUsTEEpBlO6
+      requiresProficiency: false
+      _id: 0wJhSZqpOkXGEVxk
+      group: M1FcX3w8z4UrnmS6
+      sort: 712500
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.QjcMSfmrMwjPoWKn
+      requiresProficiency: false
+      _id: 2f0DpE4LGjmcYt5i
+      group: M1FcX3w8z4UrnmS6
+      sort: 725000
+    - type: OR
+      requiresProficiency: false
+      _id: Pb58XwULhXXjoZ3Q
+      group: M1FcX3w8z4UrnmS6
+      sort: 737500
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0
+      requiresProficiency: false
+      _id: ryqquqPUpnMwqEfM
+      group: Pb58XwULhXXjoZ3Q
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph
+      requiresProficiency: false
+      _id: zC7TSWFWIYxT4kW3
+      group: Pb58XwULhXXjoZ3Q
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dark-sun-essentials.dark-sun-items.Item.pgOEE5P0AsGzNGcv
+      requiresProficiency: false
+      _id: mJpjLAadnB3GWKOZ
+      group: M1FcX3w8z4UrnmS6
+      sort: 750000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+      _id: OnVwiypvIpx1jM4I
+      group: M1FcX3w8z4UrnmS6
+      sort: 900000
+  advancement:
+    - _id: FT2O3HC1QlUt6q5d
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: FuJDDjNiflb9JGP7
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:arc
+              - skills:ins
+              - skills:nat
+              - skills:rel
+        grants:
+          - skills:his
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Skill Proficiency
+      hint: ''
+    - _id: 7njh8CGTl9PLJYA2
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+              - tool:art:calligrapher
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Tool Proficiencies
+      hint: ''
+    - _id: TYubLnaoOeKU0KKE
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Languages
+      hint: ''
+    - _id: Tqz47VPvLLuUXG34
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.gso4BrUPEMykqN06
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.qYFandmqCBcRGUeV
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftHealer00000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '3'
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  scene-packer:
+    hash: 28d1067ac5e74affe1343864f3df98f039a009a6
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-character-origins.Item.LOFkCzw2RdOgwvZE
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1744082185417
+  modifiedTime: 1766718024679
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+sort: 900000
+_key: '!items!LOFkCzw2RdOgwvZE'

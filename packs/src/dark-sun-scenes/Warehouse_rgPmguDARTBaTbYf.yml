@@ -1,0 +1,545 @@
+_id: rgPmguDARTBaTbYf
+name: Warehouse
+navigation: true
+navOrder: 8
+navName: ''
+thumb: modules/shareddata/assets/scenes/rgPmguDARTBaTbYf-thumb.webp
+width: 1750
+height: 1750
+padding: 0.25
+initial:
+  x: 1349
+  'y': 1132
+  scale: 0.3
+grid:
+  size: 70
+  type: 1
+  color: '#c0c0c0'
+  alpha: 0.5
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: false
+drawings:
+  - _id: NDUxMjE1YjExNDI5
+    flags: {}
+    author: Gyn3hbFo8wof84M9
+    x: 1156
+    'y': 716
+    rotation: 0
+    hidden: false
+    locked: true
+    bezierFactor: 0
+    fillType: 1
+    fillColor: '#666666'
+    fillAlpha: 1
+    strokeWidth: 5
+    strokeColor: '#434343'
+    strokeAlpha: 1
+    texture: null
+    fontFamily: Signika
+    fontSize: 45
+    textColor: '#ffffff'
+    textAlpha: 1
+    shape:
+      type: p
+      width: 395
+      height: 402
+      points:
+        - 0
+        - 0
+        - 395.8041958041958
+        - 0
+        - 395.8041958041958
+        - 402.7972027972028
+        - 0
+        - 402.7972027972028
+        - 0
+        - 0
+      radius: null
+    text: ''
+    interface: false
+    elevation: 10
+    sort: 0
+    levels: []
+    _key: '!scenes.drawings!rgPmguDARTBaTbYf.NDUxMjE1YjExNDI5'
+  - _id: KJUn2gfo5cpie7Jt
+    flags: {}
+    author: Gyn3hbFo8wof84M9
+    x: 848
+    'y': 1143
+    rotation: 0
+    hidden: false
+    locked: false
+    bezierFactor: 0
+    fillType: 1
+    fillColor: '#666666'
+    fillAlpha: 1
+    strokeWidth: 5
+    strokeColor: '#434343'
+    strokeAlpha: 1
+    texture: null
+    fontFamily: Signika
+    fontSize: 45
+    textColor: '#ffffff'
+    textAlpha: 1
+    shape:
+      type: p
+      width: 288
+      height: 271
+      points:
+        - 0
+        - 0
+        - 288.1118881118881
+        - 0
+        - 288.1118881118881
+        - 271.3286713286713
+        - 0
+        - 271.3286713286713
+        - 0
+        - 0
+      radius: null
+    text: ''
+    interface: false
+    elevation: 20
+    sort: 0
+    levels: []
+    _key: '!scenes.drawings!rgPmguDARTBaTbYf.KJUn2gfo5cpie7Jt'
+tokens:
+  - _id: MjEzZDBjMDhkZDNh
+    flags: {}
+    name: Khuul the Iceman
+    displayName: 0
+    width: 1
+    height: 1
+    x: 1750
+    'y': 980
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    hidden: false
+    actorId: null
+    actorLink: true
+    disposition: -1
+    displayBars: 40
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.hp
+    alpha: 1
+    light:
+      dim: 65
+      bright: 45
+      angle: 360
+      alpha: 1
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Black_flames/scene/tokenimage/MjEzZDBjMDhkZDNh/token_0.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 65
+      brightness: 0
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: MjEzZDBjMDhkZDNh
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!rgPmguDARTBaTbYf.MjEzZDBjMDhkZDNh.MjEzZDBjMDhkZDNh'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!rgPmguDARTBaTbYf.MjEzZDBjMDhkZDNh'
+  - _id: NmE3MmYwYWQxNmYw
+    flags: {}
+    name: Farruush Farrunner
+    displayName: 0
+    width: 1
+    height: 1
+    x: 1890
+    'y': 1120
+    elevation: 0
+    lockRotation: false
+    rotation: 0
+    hidden: false
+    actorId: null
+    actorLink: true
+    disposition: -1
+    displayBars: 40
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.hp
+    alpha: 1
+    light:
+      dim: 65
+      bright: 30
+      angle: 360
+      alpha: 1
+      animation:
+        speed: 5
+        intensity: 5
+        reverse: false
+        type: null
+      coloration: 1
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      darkness:
+        min: 0
+        max: 1
+      attenuation: 0.5
+      color: null
+      negative: false
+      priority: 0
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/dsr/adventures/Black_flames/scene/tokenimage/NmE3MmYwYWQxNmYw/token_1.png
+      tint: '#ffffff'
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    sight:
+      angle: 360
+      enabled: true
+      range: 65
+      brightness: 0
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    delta:
+      _id: NmE3MmYwYWQxNmYw
+      system: {}
+      flags: {}
+      items: []
+      effects: []
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!rgPmguDARTBaTbYf.NmE3MmYwYWQxNmYw.NmE3MmYwYWQxNmYw'
+    shape: 4
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _regions: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!rgPmguDARTBaTbYf.NmE3MmYwYWQxNmYw'
+lights: []
+notes: []
+sounds: []
+tiles:
+  - _id: N2MwMTgwNzUxOGQx
+    flags: {}
+    width: 1750
+    height: 1540
+    x: 490
+    'y': 490
+    rotation: 0
+    hidden: false
+    locked: true
+    alpha: 1
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    texture:
+      src: >-
+        worlds/dsr/adventures/Black_flames/scene/tileimage/N2MwMTgwNzUxOGQx/tile_0.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    sort: 0
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!rgPmguDARTBaTbYf.N2MwMTgwNzUxOGQx'
+  - _id: YzUxYjQ4NzVlYmU1
+    flags: {}
+    width: 140
+    height: 140
+    x: 1855
+    'y': 875
+    rotation: 0
+    hidden: false
+    locked: false
+    alpha: 1
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    texture:
+      src: >-
+        worlds/dsr/adventures/Black_flames/scene/tileimage/YzUxYjQ4NzVlYmU1/tile_0_1.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    sort: 0
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!rgPmguDARTBaTbYf.YzUxYjQ4NzVlYmU1'
+walls:
+  - _id: OWNjNGQ2NmQ5ZDcz
+    flags: {}
+    c:
+      - 490
+      - 490
+      - 2240
+      - 490
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!rgPmguDARTBaTbYf.OWNjNGQ2NmQ5ZDcz'
+  - _id: YTY3MjM4NTMxNGFj
+    flags: {}
+    c:
+      - 2240
+      - 490
+      - 2240
+      - 2240
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!rgPmguDARTBaTbYf.YTY3MjM4NTMxNGFj'
+  - _id: ZWY1M2ZlMmEzOTA5
+    flags: {}
+    c:
+      - 2240
+      - 2240
+      - 490
+      - 2240
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!rgPmguDARTBaTbYf.ZWY1M2ZlMmEzOTA5'
+  - _id: NmFkYjUwNWQ5NTBi
+    flags: {}
+    c:
+      - 490
+      - 2240
+      - 490
+      - 490
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!rgPmguDARTBaTbYf.NmFkYjUwNWQ5NTBi'
+playlist: null
+playlistSound: null
+journal: null
+weather: ''
+folder: unEGMDwmsxkVd64j
+flags:
+  importid: {}
+  scene-packer:
+    hash: afa64a6d061cb426c234ccd2e5d6022891791443
+  token-attacher: {}
+  weatherfx:
+    auto-apply: true
+journalEntryPage: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221437828
+  modifiedTime: 1755221437828
+  lastModifiedBy: Gyn3hbFo8wof84M9
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: false
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1631745227759
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+active: false
+sort: 0
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!rgPmguDARTBaTbYf'
+templates: []

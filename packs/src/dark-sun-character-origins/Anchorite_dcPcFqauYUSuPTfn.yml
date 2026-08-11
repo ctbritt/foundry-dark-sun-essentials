@@ -1,0 +1,173 @@
+folder: 3ceHqueQSXMSDgbA
+name: Anchorite
+type: background
+img: icons/environment/wilderness/cave-entrance-vulcano.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[wis], &amp;Reference[con],
+      &amp;Reference[int]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[med], &amp;Reference[rel]</p><p><strong>Tool
+      Proficiencies:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulHerbalismK]{Herbalism
+      Kit}</p><p><strong>Languages:</strong> one of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftHealer00000]{Healer} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftMagicInitiat]{Magic
+      Initiate (Cleric)}</p><p><strong>Equipment:</strong> A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesComm]{Clothes,
+      Common},
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagHealersKit0]{Healer's
+      Kit}, a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagBlanket00000]{Blanket},
+      and a belt
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 20 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> You have lived hidden away in seclusion and
+      contemplation - perhaps by your own choice or perhaps because you were
+      outcast from wider society. In your time apart from the clamor of
+      civilization, you found quiet and solitude. Whether that isolation has
+      resulted in enlightenment or madness is open for debate. As a hermit you
+      exist outside of the caste system, how the templars and other civil
+      authorities treat you is dependent in part on your behavior and in part on
+      your own power.</p>
+    chat: ''
+  identifier: athas-anchorite
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '285'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: jq3vayJ9KM0Y6SbA
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0
+      requiresProficiency: false
+      _id: AiDrcgoC3Z6ufPId
+      group: ''
+      sort: 200000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: NjvwCdvXeRGbqtYD
+      group: ''
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagBlanket00000
+      requiresProficiency: false
+      _id: njatDZmfpF2ndDhF
+      group: ''
+      sort: 400000
+    - _id: JqwZw02jsMW7szkH
+      group: ''
+      sort: 500000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: dmbN0D9kj86KDwZz
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - cha
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          wis: 2
+          con: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: fw9DqlvgCaIDzxKy
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants:
+          - skills:med
+          - skills:rel
+          - tool:herb
+        mode: default
+      value:
+        chosen:
+          - skills:med
+          - skills:rel
+          - tool:herb
+          - languages:standard:elvish
+      level: 0
+      title: Proficiencies
+      hint: >-
+        Your background grants you proficiency in Medicine, Religion, Herbalism
+        Kit, and one language of your choice
+    - _id: nUMhMnJJ72xpt2hH
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftHealer00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftMagicInitiat
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added:
+          '0':
+            anch5gkiww734hR9uz2b: Compendium.dnd-players-handbook.feats.Item.phbftHealer00000
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '20'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.dcPcFqauYUSuPTfn
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: dcPcFqauYUSuPTfn
+sort: 100000
+_key: '!items!dcPcFqauYUSuPTfn'

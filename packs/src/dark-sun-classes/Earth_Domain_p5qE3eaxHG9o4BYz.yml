@@ -1,0 +1,321 @@
+folder: xPV7xcWDDRomMFIp
+name: Earth Domain
+type: subclass
+img: icons/magic/earth/barrier-stone-explosion-debris.webp
+system:
+  description:
+    value: >-
+      <p>Closely tied to nature, earth priests understand the true nature of the
+      cycle of life. When something dies, its organic material is returned to
+      the soil to provide life for another, and in another form. Therefore, the
+      earth clerics. outlook on life is a utilitarian one. The death of a
+      comrade, though tragic, is simply one stage in nature’s endless chain of
+      creation and annihilation.</p><p>Because air, fire, and water all depend
+      on growing things for their enrichment, and because earth alone must
+      sustain itself, it is the earth clerics who must carry on the burden of
+      preventing the environmental holocaust looming over Athas, such as
+      teaching proper agricultural techniques and slaying defilers who would
+      turn usable elements to ash. For, if they do not preserve the land, will
+      not the death of Athas weigh upon their
+      shoulders?</p><p></p><div><h5><span
+      style="font-family:ScalySansRemake">Earth
+      Initiation</span></h5><blockquote
+      style="border:0px;font:inherit;vertical-align:baseline;margin:0.1cm 0px
+      0px;padding:0px;quotes:none;box-sizing:border-box;-webkit-print-color-adjust:exact;z-index:15;break-inside:avoid"><p><span
+      style="font-family:ScalySansRemake">When a mentor believes that a disciple
+      is ready, after meditation, the initiate is buried alive in a fertile land
+      at dawn and must commune with the spirits of the earth to sustain her.
+      When the sun goes down, the novice either emerges, unscathed and
+      empowered, or likely she dies and feeds the
+      earth.</span></p></blockquote><table><caption></caption><tbody><tr></tr></tbody></table></div><h3>Earth
+      Domain Spells</h3><table><thead><tr><th>Cleric
+      Level</th><th>Spells</th></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.shareddata.ddb-spells.p1FPsYK3wcmUVchQ]{Earth
+      Tremor},
+      @UUID[Compendium.dnd5e.spells.Item.B0pnIcc52O6G8hi8]{Longstrider}</td></tr><tr><td>3rd</td><td>@UUID[Compendium.shareddata.ddb-spells.tyghOA0NSDqlWTNx]{Earthbind},
+      @UUID[Compendium.shareddata.ddb-spells.bTIQ1gzdcWjsgpKx]{Dust
+      Devil}</td></tr><tr><td>5th</td><td>@UUID[Compendium.shareddata.ddb-spells.dMdEFOZR49WFAYDR]{Maximilian's
+      Earthen Grasp},
+      @UUID[Compendium.shareddata.ddb-spells.mclWsnNQKNpehjlu]{Wall of
+      Sand}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.ReMbjfeOKoSj3O79]{Stoneskin},
+      @UUID[Compendium.shareddata.ddb-spells.z4HNmfz5thgSHBUe]{Summon Elemental
+      (Earth
+      Only)}</td></tr><tr><td>9th</td><td>@UUID[Compendium.shareddata.ddb-spells.msVO4psKnseNOR0D]{Transmute
+      Rock}, @UUID[Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY]{Wall of
+      Stone}</td></tr></tbody></table><h3>Mountain’s Resilience</h3><p>At 1st
+      level you are imbued with the strength and fortitude of the earth. This
+      grants several benefits:</p><ul><li>You gain proficiency with martial
+      weapons and heavy armor.</li><li>Your hit points maximum increases by 1,
+      and it increases by one every time you gain a level.</li><li>You learn the
+      @UUID[Compendium.shareddata.ddb-spells.qxfOTSddADcoafV0]{Mold Earth} or
+      @UUID[Compendium.shareddata.ddb-spells.TEEMmbq8opGC3tje]{Magic Stone}
+      cantrip, your choice. The cantrip you selected counts as a cleric cantrip
+      for you and doesn’t count against the number of cleric cantrips you
+      know.</li><li>When you use your Turn Undead channel divinity, you can also
+      effect non-earth elementals.</li></ul><h3>Channel Divinity:
+      Unstoppable</h3><p>At 2nd level, the cleric may use their Channel Divinity
+      as a reaction when struck by any effect that causes them to become
+      paralyzed, prone, or restrained, or when affected by any force or ability
+      that would move them against their will. The cleric immediately shakes off
+      the effect as if it never happened.</p><h3>Stone Ward</h3><p>At 6th level,
+      you gain the ability to impart the sturdiness of the earth to those around
+      you. As a reaction when you or a creature you can see within 30 feet of
+      you suffers a critical hit, you can turn that hit into a normal hit. Any
+      effects triggered by a critical hit are canceled.</p><p>You can use this
+      feature a number of times equal to your Wisdom modifier (minimum of once).
+      You regain all expended uses when you finish a long rest.</p><h3>Divine
+      Strike</h3><p>At 8th level, you gain the ability to infuse your weapon
+      strikes with divine energy. Once on each of your turns when you hit a
+      creature with a weapon attack, you can cause the attack to deal an extra
+      1d8 damage of the same type dealt by the weapon to the target. When you
+      reach 14th level, the extra damage increases to 2d8.</p><h3>Avatar of the
+      Earth</h3><p>At 17th level, you gain resistance to bludgeoning, piercing,
+      and slashing damage from nonmagical attacks.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2014'
+    revision: 1
+  identifier: new-item
+  classIdentifier: ''
+  advancement:
+    - _id: 1NpXYwFmhQy5O46r
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - weapon:mar
+          - armor:hvy
+        choices: []
+      level: 1
+      title: ''
+      icon: null
+      value:
+        chosen: []
+    - _id: IwYwalQI7UHkL7Wf
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.6ywF2B5wSAejvjfj
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+    - _id: UokZP5nMasxelj19
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.NTvGxUG74nGU83l8
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: ''
+      icon: null
+    - _id: YYtvdRVL4qcopyHL
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.D9ucN0bvn5Qn1bNH
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: ''
+      icon: null
+    - _id: 2JedEejhzblD7dAK
+      type: ScaleValue
+      configuration:
+        identifier: divine-strike
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '8':
+            number: 1
+            faces: 8
+            modifiers: []
+          '14':
+            number: 2
+            faces: 8
+            modifiers: []
+      value: {}
+      title: Divine Strike Damage
+      icon: null
+    - _id: OFH5IlIzJIAp53Gy
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.kxbe5wEbfX9sKLoT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 8
+      title: ''
+      icon: null
+    - _id: HHoIW1e2U2va1gbZ
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.EO8zJ3GOEpC7nGqO
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 17
+      title: ''
+      icon: null
+    - _id: 0u2rC4WPLOlV5Oqt
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - dr:bludgeoning
+          - dr:piercing
+          - dr:slashing
+        choices: []
+      level: 17
+      title: ''
+      icon: null
+      value:
+        chosen: []
+    - _id: TlPZjAu3E9eDTh0L
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.qr51w0HU3JkBNXFn
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.B0pnIcc52O6G8hi8
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 1
+      title: ''
+      hint: ''
+    - _id: x8hmqO3GSLcb8kj3
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.0ln00cvb50at7AIj
+          - optional: false
+            uuid: Item.ZVcktC4cNKl2AGi2
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: BUskRlycT7X2d4PS
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.71Mq5BLEr9aNH3gx
+          - optional: false
+            uuid: Item.Wy0FAEVEDVkXmwiV
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: ''
+      hint: ''
+    - _id: vhN1lkltJG4GzsxW
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.ReMbjfeOKoSj3O79
+          - optional: false
+            uuid: Item.cgKD8tXwFD9zviME
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: ''
+      hint: ''
+    - _id: DGOb1I4p7kutrPrl
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.SV2zKio7Ku3aOtTB
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: ''
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134999578
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: p5qE3eaxHG9o4BYz
+sort: 0
+_key: '!items!p5qE3eaxHG9o4BYz'

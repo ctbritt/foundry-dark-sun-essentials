@@ -1,0 +1,256 @@
+_id: UxASKoNBp1OjoHaS
+name: Breath Weapon (Cone)
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you take the Attack action on your turn, you can replace one of
+      your attacks with an exhalation of burning energy in a 15-foot cone. Each
+      creature in that area must make a [[/save dex dc=@abilities.con.dc
+      format=long]]. On a failed save, the creature takes [[/damage 1d10
+      type=fire]]. On a successful save, it takes half as much damage. This
+      damage increases by 1d10 when you reach 5th level (2d10), 11th level
+      (3d10), and 17th level (4d10).</p><p>You can use your Breath Weapon a
+      number of times equal to your proficiency bonus, and you regain all
+      expended uses when you finish a long rest.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  cover: null
+  crewed: false
+  uses:
+    max: 1 * @prof
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: cone
+          size: '15'
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.breath-weapon-cone.breath-weapon-damage'
+            number: 1
+            denomination: 10
+            bonus: ''
+            types:
+              - fire
+        critical:
+          allow: false
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: con
+          formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+      name: ''
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+      flags:
+        region-attacher:
+          attachRegionToTemplate: false
+  identifier: breath-weapon-cone
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement:
+    - type: ScaleValue
+      _id: 4Dtv56VI6bmVT4Y7
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 10
+            modifiers: []
+          '5':
+            number: 2
+            faces: 10
+            modifiers: []
+          '11':
+            number: 3
+            faces: 10
+            modifiers: []
+          '17':
+            number: 4
+            faces: 10
+            modifiers: []
+      value: {}
+      title: Breath Weapon Damage
+      hint: ''
+flags:
+  ddbimporter:
+    id: '6506575'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 10224969
+    componentTypeId: 1960452172
+    originalName: Breath Weapon
+    type: race
+    importId: eNFJFB7P7Bj1fbte
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midi-qol:
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    confirmTargets: default
+    saveDamage: default
+    bonusSaveDamage: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    migratedUses: 2
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/magic/water/projectile-icecicle.webp
+folder: Sf7SoiqVBLhiBUf7
+sort: 100000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.5KSshWuRqMe6F2QW
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996935
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!UxASKoNBp1OjoHaS'

@@ -1,0 +1,131 @@
+folder: Ob8eTVGB5n6ERlyk
+name: Soothing Salve
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Common Remedies
+      instruction: >-
+        <p>A sticky, sour smelling salve that can be applied to wounds. When you
+        expend hit dice to recover hit points while using this salve, you
+        recover an additional 3 hit points for each hit die expended. This
+        effect lasts for 1 hour after applied.</p><p>Ingredients: Sourgrass,
+        Acid Dew</p><p></p>
+      currency:
+        name: gp
+        value: 25
+      required:
+        '1':
+          key:
+            id: ZZqVDTOWssrEhOEP
+            uuid: Compendium.shareddata.ddb-items.ZZqVDTOWssrEhOEP
+            img: icons/containers/bags/pouch-leather-green.webp
+            type: Item
+            name: Herbalism Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: 5SU6evgnA2ocp13r
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.5SU6evgnA2ocp13r
+            img: icons/consumables/plants/grass-curcled-bundle-green.webp
+            type: Item
+            name: Sourgrass
+            quantity: 1
+            itemType: loot
+        '2':
+          key:
+            id: vperyfe91D7Y0mWW
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.vperyfe91D7Y0mWW
+            img: icons/commodities/biological/tentacle-thorned-green.webp
+            type: Item
+            name: Acid Dew
+            quantity: 1
+            itemType: consumable
+      output:
+        '1':
+          key:
+            id: LSaZ4vXb5bdlL2en
+            uuid: Item.LSaZ4vXb5bdlL2en
+            img: icons/consumables/potions/potion-bottle-corked-white.webp
+            type: Item
+            name: Soothing Salve
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: nat
+              '2':
+                type: SkillTest
+                data:
+                  dc: 8
+                  skill: med
+            hits: 1
+      macro: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: ee725e6e7e6f7ac45eca7c0474c3417c7f4ecd75
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: common
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: soothing-salve
+effects: []
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.62fSmDZb4eBXVJRZ
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114880636
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: 62fSmDZb4eBXVJRZ
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!62fSmDZb4eBXVJRZ'

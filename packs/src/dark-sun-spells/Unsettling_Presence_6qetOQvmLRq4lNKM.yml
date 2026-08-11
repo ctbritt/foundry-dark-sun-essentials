@@ -1,0 +1,277 @@
+name: Unsettling Presence
+type: spell
+system:
+  source:
+    custom: ''
+    book: PsPr
+    page: '99'
+    license: ''
+    rules: '2014'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p></p><div data-roll-name-ancestor="Psi
+      Cost" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">Psi
+      Cost.</span></span> 3 psi points</p></div><div
+      data-roll-name-ancestor="Psychic Components" class="rd__b 
+      rd__b--3"><p><span class="rd__h rd__h--3" data-title-index="2"> <span
+      class="entry-title-inner">Psychic Components.</span></span>
+      Observable</p></div><p>You alter your telepathic field to emanate waves of
+      disquiet and repulsion. Until your concentration ends, any creature you
+      choose within 60 feet of you that can see you must spend 1 extra foot of
+      movement for every foot it moves towards you. A creature ignores this
+      effect if it cannot be &amp;Reference[condition=frightened].</p></div>
+    chat: ''
+  level: 2
+  school: ''
+  properties:
+    - concentration
+    - psionic
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+      stationary: false
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+  activation:
+    type: reaction
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  method: atwill
+  activities:
+    wONYpqx7AJH7FxGm:
+      _id: wONYpqx7AJH7FxGm
+      type: utility
+      name: Cast
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: ZXQzA28zFCPQJlB6
+          level:
+            min: null
+            max: null
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      sort: 0
+      flags:
+        sc-conditional-activities:
+          condition: null
+          warningMessage: null
+          disableWarningMessage: false
+          badgeLabel: null
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: '!target.traits.ci.value.has("frightened")'
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  identifier: unsettling-presence
+  prepared: 1
+img: icons/t4tZhO6zHsflmP5U_1784910488725.png
+flags:
+  plutonium:
+    page: spells.html
+    source: Psions Primer
+    hash: unsettling%20presence_psions%20primer
+    propDroppable: spell
+    spellClassNames:
+      - Empath
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e: {}
+  crux:
+    trayVisibility: default
+  scene-packer:
+    sourceId: Actor.tUXrNjeJLWOeIVFV.Item.t4tZhO6zHsflmP5U
+    hash: b9fa02dd70a197ec62b71c5fb5ce8e79865f24f6
+  cat:
+    automation:
+      hash: 1005711805
+effects:
+  - name: Unsettling Presence
+    img: icons/t4tZhO6zHsflmP5U_1784910488725.png
+    origin: Compendium.dark-sun-essentials.dark-sun-spells.Item.6qetOQvmLRq4lNKM
+    transfer: false
+    _id: ZXQzA28zFCPQJlB6
+    type: base
+    system:
+      changes: []
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.365'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1784910634124
+      modifiedTime: 1784910634124
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6qetOQvmLRq4lNKM.ZXQzA28zFCPQJlB6'
+folder: null
+_stats:
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1784910497256
+  modifiedTime: 1784910749533
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 4337500
+_id: 6qetOQvmLRq4lNKM
+_key: '!items!6qetOQvmLRq4lNKM'

@@ -1,0 +1,128 @@
+name: Create Tree Of Life
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>By means of this spell, a caster can enchant a living sapling to become
+      a magical Tree of Life.</p><p>The sapling must have already sprouted from
+      the ground, though the caster can transplant such a sapling before casting
+      the spell.</p><p>It will grow to its full size in only one week, but has
+      its full powers and capabilities immediately after the spell is
+      cast.</p><p>Any tree less than one year old will suffice; this spell
+      cannot be cast on an older tree.<br />The properties of a Tree of Life are
+      described at the end of this chapter.<br /></p>
+    chat: ''
+  materials:
+    value: >-
+      a piece of gold wire worth 1,000 cr which is wrapped around the sapling
+      that is to be made into the Tree of Life
+    consumed: true
+    cost: 1000
+    supply: 1
+  properties:
+    - vocal
+    - somatic
+    - material
+  level: 8
+  school: enc
+  duration:
+    units: perm
+  range:
+    units: touch
+    special: ''
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: create-tree-of-life
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  activation:
+    type: hour
+    value: 1
+    condition: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: ''
+  sourceClass: wizard
+folder: null
+_id: 56nPSbS0SbMkXPtG
+effects: []
+flags:
+  scene-packer:
+    hash: 27c30987500b7a709abd1b68b9aebf932e0f26f8
+    sourceId: Item.56nPSbS0SbMkXPtG
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 1561992732
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.56nPSbS0SbMkXPtG
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749547
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 2900000
+_key: '!items!56nPSbS0SbMkXPtG'

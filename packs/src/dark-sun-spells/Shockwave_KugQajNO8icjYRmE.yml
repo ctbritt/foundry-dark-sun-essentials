@@ -1,0 +1,293 @@
+name: Shockwave
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You unleash a burst of telekinetic force in all directions. Each
+      creature you choose within 30 feet of you is knocked 5 feet back and must
+      succeed on a Strength saving throw or take 8d6 bludgeoning damage and be
+      knocked prone. A creature that succeeds on its saving throw takes half as
+      much damage and isn't knocked prone.</p>
+    chat: ''
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - somatic
+    - psionic
+    - telekinesis
+    - bludgeoning
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: self
+    special: ''
+  level: 5
+  school: psi
+  target:
+    template:
+      type: emanationNoTemplate
+      units: ft
+      contiguous: false
+      count: ''
+      size: '30'
+    affects:
+      choice: false
+      count: ''
+      type: creature
+      special: ''
+  activities:
+    9VN6XtwOkJhoDXlz:
+      type: save
+      _id: 9VN6XtwOkJhoDXlz
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: HDj2vj7aHrz7AQqH
+          onSave: false
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 8
+            denomination: 6
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+        critical:
+          allow: false
+        onSave: half
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: shockwave
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  sourceClass: wizard
+  ability: ''
+_id: KugQajNO8icjYRmE
+effects:
+  - name: Shockwave
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.3LASycaYGB8szQ0Y
+    transfer: false
+    _id: HDj2vj7aHrz7AQqH
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You unleash a burst of telekinetic force in all directions. Each
+      creature you choose within 30 feet of you is knocked 5 feet back and must
+      succeed on a Strength saving throw or take 8d6 bludgeoning damage and be
+      knocked prone. A creature that succeeds on its saving throw takes half as
+      much damage and isn't knocked prone.</p>
+    tint: '#ffffff'
+    statuses:
+      - prone
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!KugQajNO8icjYRmE.HDj2vj7aHrz7AQqH'
+folder: null
+flags:
+  scene-packer:
+    hash: a29dfedb2519966829cfdfbe302f9933922c4df7
+    sourceId: Item.KugQajNO8icjYRmE
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 882206088
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.KugQajNO8icjYRmE
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749583
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 1000000
+_key: '!items!KugQajNO8icjYRmE'

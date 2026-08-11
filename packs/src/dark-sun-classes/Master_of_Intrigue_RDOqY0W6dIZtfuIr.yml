@@ -1,0 +1,115 @@
+_id: RDOqY0W6dIZtfuIr
+name: Master of Intrigue
+type: feat
+effects: []
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  advancement:
+    - type: Trait
+      _id: 9h296oUgxrim7ES4
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - languages:standard:*
+        grants:
+          - tool:disg
+          - tool:forg
+          - languages:merchant:cavilish
+        mode: default
+      level: 0
+      title: ''
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <div class="ddb"><p class="Core-Styles_Core-Body">When you choose this
+      archetype at 3rd level, you gain proficiency with the disguise kit, the
+      forgery kit, and one gaming set of your choice. You also You also learn to
+      read and write in Cavilish (Merchants script) and two languages of your
+      choice.</p><p class="Core-Styles_Core-Body">Additionally, you can
+      unerringly mimic the speech patterns and accent of a creature that you
+      hear speak for at least 1 minute, enabling you to pass yourself off as a
+      native speaker of a particular land, provided that you know the
+      language.</p></div>
+    chat: >-
+      <div class="ddb">
+
+      You gain proficiency with the disguise kit, the forgery kit, and one
+      gaming set of your choice. You also learn two languages of your choice,
+      and you can unerringly mimic the speech patterns and accent of a creature
+      that you hear speak for at least 1 minute.
+
+      </div>
+  identifier: athas-master-of-intrigue
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 502
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Master of Intrigue
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 100
+      featureType: 1
+      class: Rogue
+      classId: 79
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Rogue
+    classId: 12
+    subClass: Mastermind
+    subClassId: 79
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/equipment/head/mask-carved-scream-tan.webp
+folder: YuipdSH7HqRP0OzS
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766792580247
+  modifiedTime: 1781134999532
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!RDOqY0W6dIZtfuIr'

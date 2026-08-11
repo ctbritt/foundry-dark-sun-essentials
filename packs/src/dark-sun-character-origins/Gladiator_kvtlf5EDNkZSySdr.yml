@@ -1,0 +1,163 @@
+folder: 3ceHqueQSXMSDgbA
+name: Gladiator
+type: background
+_id: kvtlf5EDNkZSySdr
+img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities</strong>: &amp;Reference[str], &amp;Reference[con],
+      &amp;Reference[cha]</p><p><strong>Skill Proficiencies</strong>:
+      &amp;Reference[ath], &amp;Reference[prf]</p><p><strong>Tool
+      Proficiency</strong>: None</p><p><strong>Languages</strong>: One of your
+      choice</p><p><strong>Feat</strong>:
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.ehdHOEzDrcIqKQkC]{Arena
+      Trained},
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSavageAttac]{Savage
+      Attacker} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftTough000000]{Tough}
+      (select one)</p><p><strong>Equipment</strong>: An ornate
+      @UUID[Compendium.shareddata.ddb-items.VgCTibqMafX9SIAD]{Helm}, small
+      trophy from an opponent,
+      @UUID[Compendium.dnd-players-handbook.equipment.phbwepJavelin000]{Javelin}
+      (2),
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Clothes,
+      Traveler's}, belt pouch containing 10 ceramic
+      pieces.</p><p><strong>Suggested Characteristics</strong>: Your first few
+      appearances in the gladiatorial pits led you to appreciate every one of
+      the scars you carry from your instructors and sparring partners. Each scar
+      was a lesson that taught you how to best your opponents and curry favor
+      with the crowds your brawls entertained. Your time in the pits leti you
+      with a strong hand and a strong heart.</p><p></p>
+    chat: ''
+  identifier: athas-gladiator
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: linked
+      count: null
+      key: Compendium.shareddata.ddb-items.Item.VgCTibqMafX9SIAD
+      requiresProficiency: false
+      _id: 2h9BLaYt1bUO8DzI
+      group: IKrYXLOrcyVZhBRf
+      sort: 325000
+    - type: AND
+      requiresProficiency: false
+      _id: IKrYXLOrcyVZhBRf
+      group: ''
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav
+      requiresProficiency: false
+      _id: 0hXpbH5tJW6vUKFD
+      group: IKrYXLOrcyVZhBRf
+      sort: 300000
+    - type: linked
+      count: 2
+      key: Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000
+      requiresProficiency: false
+      _id: uHHJUoAgLYeDNclA
+      group: IKrYXLOrcyVZhBRf
+      sort: 350000
+  advancement:
+    - _id: 8B5fslgczAkGRyez
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - dex
+          - int
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: I3PI80klvNjQmeB9
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:ath
+          - skills:prf
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Skill Proficiencies
+      hint: ''
+    - _id: YFFGP0qDZTpfJaej
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: ZQlKjb86P2EPMZC1
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.ehdHOEzDrcIqKQkC
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSavageAttac
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftTough000000
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '10'
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745155098976
+  modifiedTime: 1745333500283
+  lastModifiedBy: 6QG9R6JQRfToF3Mf
+  exportSource: null
+_key: '!items!kvtlf5EDNkZSySdr'

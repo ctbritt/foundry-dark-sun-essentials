@@ -1,0 +1,231 @@
+_id: jB0t0sPGzaI9Afne
+name: Mace
+type: weapon
+img: icons/weapons/maces/mace-round-spiked-black.webp
+effects: []
+folder: rIxLkbsyNPx3rVKl
+sort: 700000
+flags:
+  srd5e:
+    page: items.html
+    source: PHB
+    hash: mace_phb
+    propDroppable: item
+  scene-packer:
+    hash: 5e4df5f55b479fdaa4ad859f63bc7fb57b5119a8
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: PHB
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 4
+    units: lb
+  price:
+    value: 5
+    denomination: ct
+  attunement: ''
+  equipped: true
+  rarity: ''
+  identified: true
+  cover: null
+  range:
+    value: null
+    long: 0
+    units: ft
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties: []
+  proficient: 1
+  unidentified:
+    description: ''
+    name: Unidentified Mace
+  type:
+    value: simpleM
+    baseItem: mace
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: '0'
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: '0'
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  identifier: unidentified-mace
+  container: null
+  attuned: false
+  ammunition: {}
+  crew:
+    value: []
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766719656465
+  modifiedTime: 1781135019948
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!jB0t0sPGzaI9Afne'

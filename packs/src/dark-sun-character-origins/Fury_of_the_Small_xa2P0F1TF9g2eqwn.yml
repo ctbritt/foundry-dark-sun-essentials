@@ -1,0 +1,262 @@
+name: Fury of the Small
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you damage a creature with an attack or a spell and the creature’s
+      size is larger than yours, you can cause the attack or spell to deal extra
+      damage to the creature. The extra damage equals your level. Once you use
+      this trait, you can’t use it again until you finish a short or <span
+      class="No-Break">long rest.</span></p>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  cover: null
+  crewed: false
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+  type:
+    value: race
+    subtype: ''
+  requirements: Halfing
+  identifier: fury-of-the-small
+  activities:
+    KbfxsxgrbvpPJPv4:
+      type: utility
+      _id: KbfxsxgrbvpPJPv4
+      sort: 0
+      activation:
+        type: special
+        value: null
+        override: false
+        condition: '["grg", "huge", "lg", "med"].includes(target.traits.size)'
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: enemy
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      name: ''
+  advancement: []
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+flags:
+  ddbimporter:
+    entityRaceId: 33
+    version: 3.7.17
+    baseName: Fury of the Small
+    spellListIds: []
+    definitionKey: racial-trait:242
+    race: Goblin
+    type: race
+  obsidian:
+    source:
+      type: race
+  scene-packer:
+    sourceId: Item.
+    hash: 6f2dfc37f847b60dbd2d0556a6b04061b215044d
+  midi-qol:
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+img: icons/commodities/bones/skull-bat-grey.webp
+effects:
+  - name: Fury of the Small
+    transfer: true
+    img: icons/commodities/bones/skull-bat-grey.webp
+    _id: 3ktBjC46IweDzpc7
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.optional.SmallFury.damage.all
+          value: '@details.level'
+          priority: 20
+          type: add
+        - key: flags.midi-qol.optional.SmallFury.label
+          value: Fury of the Small
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.SmallFury.count
+          value: ItemUses.Fury of the Small
+          priority: 20
+          type: override
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>When you damage a creature with an attack or a spell and the creature’s
+      size is larger than yours, you can cause the attack or spell to deal extra
+      damage to the creature. The extra damage equals your level. Once you use
+      this trait, you can’t use it again until you finish a short or <span
+      class="No-Break">long rest.</span></p>
+    origin: Compendium.world.dark-sun-character-origins.Item.xa2P0F1TF9g2eqwn
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!xa2P0F1TF9g2eqwn.3ktBjC46IweDzpc7'
+folder: b0rbED8637Olg5zh
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078786403
+  modifiedTime: 1746114687246
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: xa2P0F1TF9g2eqwn
+sort: 200000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!xa2P0F1TF9g2eqwn'

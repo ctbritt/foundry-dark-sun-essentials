@@ -1,0 +1,80 @@
+name: Arrows
+system:
+  description:
+    value: >-
+      <p><em><strong>Storage:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]{Quiver}</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV]{Ammunition}
+      is required by a weapon that has the Ammunition property. A weapon’s
+      description specifies the type of ammunition used by the weapon. The
+      Ammunition table lists the different types and the amount you get when you
+      buy them. The table also lists the item that is typically used to store
+      each type; storage must be bought separately.</p>
+    chat: ''
+  price:
+    value: 1
+    denomination: ct
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 20
+  weight:
+    value: 0.05
+    units: lb
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  uses:
+    max: ''
+    autoDestroy: false
+    spent: 0
+    recovery: []
+  damage:
+    base:
+      number: null
+      denomination: 0
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      bonus: ''
+    replace: false
+  type:
+    value: ammo
+    subtype: arrow
+  magicalBonus: null
+  properties: []
+  activities: {}
+  identifier: arrows
+type: consumable
+folder: wrgJ5qAZpozmUN0t
+img: icons/weapons/ammunition/arrows-broadhead-white.webp
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1765908963310
+  modifiedTime: 1781135022768
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: nh6rxgBN9PgAMHTS
+sort: 50000
+_key: '!items!nh6rxgBN9PgAMHTS'

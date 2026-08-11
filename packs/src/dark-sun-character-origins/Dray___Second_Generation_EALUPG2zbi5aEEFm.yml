@@ -1,0 +1,166 @@
+folder: zEMXci6c98Zq0mu5
+name: Dray - Second Generation
+type: race
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/images/dark-sun/Dray%20DarkSun%20Dragon%27s%20Wake.webp
+system:
+  description:
+    value: >-
+      <p><span style="font-family:Signika, sans-serif">Those descendant from the
+      second generation are lean, tall and powerfully built. Told since the day
+      they were born that they are the supreme mortal race on Athas. To them
+      Humans are unfortunate souls who need to be brought in and transformed,
+      whether they want to or not, and any non-humans are to be killed on
+      sight.</span></p><p><strong>Ability Score Increase.</strong></p><p>Your
+      Strength, Constitution, and Intelligence scores in<span
+      class="No-Break">crease by
+      1.</span></p><p><strong>Age.</strong></p><p>Dray have lifespans comparable
+      to humans. They enter adulthood in their late teens and usually live less
+      than a century.</p><p><strong>Alignment.</strong></p><p>Those of the first
+      generation tend towards chaos as they live hard, struggling lives in the
+      fiery caverns near Guistenal. Those of teh second generation by contrast
+      tend towards law because of the relative safety of the hidden city-state
+      and the leadership of Dregoth.</p><p><strong>Size.</strong></p><p>Dray are
+      taller and heavier than humans, standing well over 6 feet tall and
+      averaging almost 250 pounds. Your size is
+      Medium.</p><p><strong>Speed.</strong></p><p>Your base walking speed is 30
+      feet.</p><p><strong>@Compendium[dnd5e.rules.eVtpEGXjA2tamEIJ]{Darkvision}.</strong></p><p>You
+      have superior vision in dark and dim conditions. You can see in dim light
+      within 60 feet of you as if it were bright light, and in darkness as if it
+      were dim light. You can’t discern color in darkness, only shades of
+      gray.</p><p><strong>Claws. </strong>You have retractable claws in the tips
+      of your fingers. Extending or retracting the claws requires no action. The
+      claws are natural weapons, which you can use to make unarmed strikes. If
+      you hit with them, you deal slashing damage equal to 1d6 + your Strength
+      modifier, instead of the normal bludgeoning damage for an unarmed
+      strike.</p><p><strong>Fire Resistance. </strong>You have resistance to
+      fire damage.</p><p><strong>Breath Weapon. </strong>When you take the
+      Attack action on your turn, you can replace one of your attacks with an
+      exhalation of burning energy in a 15-foot cone. Each creature in that area
+      must make a Dexterity saving throw (DC = 8 + your Constitution modifier +
+      your proficiency bonus). On a failed save, the creature takes 1d10 fire
+      damage. On a successful save, it takes half as much damage. This damage
+      increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and
+      17th level (4d10).</p><p>You can use your Breath Weapon a number of times
+      equal to your proficiency bonus, and you regain all expended uses when you
+      finish a long rest.</p><p><strong>Exalting Breath Weapon. </strong>At 5th
+      level, you gain a second breath weapon. When you take the Attack action on
+      your turn, you can replace one of your attacks with an exhalation in a
+      15-foot cone. The save DC for this breath is 8 + your Constitution
+      modifier + your proficiency bonus. Whenever you use this trait, choose
+      one:</p><ul><li><p><strong>Enervating Breath.</strong> Each creature in
+      the cone must succeed on a Constitution saving throw or become
+      incapacitated until the start of your next
+      turn.</p></li></ul><ul><li><p><strong>Repulsion Breath.</strong> Each
+      creature in the cone must succeed on a Strength saving throw or be pushed
+      20 feet away from you and be knocked prone.</p></li></ul><p>Once you use
+      your Exalting Breath Weapon, you can’t do so again until you finish a long
+      rest.</p><p><strong>Languages. </strong>You can speak Common and
+      Guistenal. With DM permission, your character might be able to read and
+      write with an appropriate background.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  advancement:
+    - type: Size
+      _id: Mz3PoN7JT1krNHt3
+      configuration:
+        sizes:
+          - med
+      level: 0
+      value: {}
+    - type: Trait
+      configuration:
+        grants:
+          - languages:standard:common
+        mode: default
+        allowReplacements: false
+        choices: []
+      _id: QskX5FQqOK888jF7
+      level: 0
+      title: ''
+      icon: null
+      value: {}
+      hint: >-
+        You can speak Common and Guistenal (add manually). With DM permission,
+        your character might be able to read and write with an appropriate
+        background.
+    - _id: mtpCrKCsQZPaTrP6
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.rmTLRk0yzklwQvxs
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.UxASKoNBp1OjoHaS
+            optional: false
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.ruzCRvJy50tyudxU
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+    - _id: 7DjvRIsLSeDHcREW
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: >-
+              Compendium.dark-sun-essentials.dark-sun-character-origins.Item.EfQdCnBydGPetPu9
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: ''
+      icon: null
+  movement:
+    burrow: null
+    climb: null
+    fly: null
+    swim: null
+    walk: 30
+    units: null
+    hover: false
+  senses:
+    darkvision: 60
+    blindsight: null
+    tremorsense: null
+    truesight: null
+    units: null
+    special: ''
+  type:
+    value: humanoid
+    subtype: Dray
+    custom: ''
+  identifier: dray-second-generation
+effects: []
+sort: 0
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996212
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: EALUPG2zbi5aEEFm
+_key: '!items!EALUPG2zbi5aEEFm'

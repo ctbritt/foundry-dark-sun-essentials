@@ -1,0 +1,227 @@
+_id: V2KrkoyTSOrmtiGY
+name: enemies
+navigation: true
+navOrder: 15
+navName: ''
+thumb: modules/shareddata/assets/scenes/V2KrkoyTSOrmtiGY-thumb.webp
+width: 1750
+height: 1750
+padding: 0.25
+initial:
+  x: null
+  'y': null
+  scale: null
+grid:
+  size: 70
+  type: 1
+  color: '#c0c0c0'
+  alpha: 0.5
+  distance: 5
+  units: ft
+  style: solidLines
+  thickness: 1
+tokenVision: false
+drawings: []
+tokens: []
+lights: []
+notes: []
+sounds: []
+tiles:
+  - _id: MzczNjEyODFlMTFl
+    flags: {}
+    width: 1750
+    height: 1330
+    x: 489
+    'y': 489
+    rotation: 0
+    hidden: false
+    locked: true
+    alpha: 1
+    occlusion:
+      alpha: 0
+      modes: []
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    texture:
+      src: >-
+        worlds/dsr/adventures/Black_flames/scene/tileimage/MzczNjEyODFlMTFl/tile_0.png
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      alphaThreshold: 0.75
+    sort: 0
+    restrictions:
+      light: false
+      weather: false
+    elevation: 0
+    levels: []
+    _key: '!scenes.tiles!V2KrkoyTSOrmtiGY.MzczNjEyODFlMTFl'
+walls:
+  - _id: OTYwZWJhYjBjYjQz
+    flags: {}
+    c:
+      - 490
+      - 490
+      - 2240
+      - 490
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!V2KrkoyTSOrmtiGY.OTYwZWJhYjBjYjQz'
+  - _id: OGNhYzhhMTJiMGM2
+    flags: {}
+    c:
+      - 2240
+      - 490
+      - 2240
+      - 2240
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!V2KrkoyTSOrmtiGY.OGNhYzhhMTJiMGM2'
+  - _id: YzI5NmI5ZWI1MGIw
+    flags: {}
+    c:
+      - 2240
+      - 2240
+      - 490
+      - 2240
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!V2KrkoyTSOrmtiGY.YzI5NmI5ZWI1MGIw'
+  - _id: NTJjYTgxZGFlM2M2
+    flags: {}
+    c:
+      - 490
+      - 2240
+      - 490
+      - 490
+    move: 20
+    door: 0
+    ds: 0
+    sound: 20
+    dir: 0
+    light: 20
+    sight: 20
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    animation: null
+    levels: []
+    _key: '!scenes.walls!V2KrkoyTSOrmtiGY.NTJjYTgxZGFlM2M2'
+playlist: null
+playlistSound: null
+journal: null
+weather: ''
+folder: unEGMDwmsxkVd64j
+flags:
+  token-attacher: {}
+  importid: {}
+  scene-packer:
+    hash: 1b26dba1d592f2367e2d592eb66c0e4a7251b62d
+  weatherfx:
+    auto-apply: true
+journalEntryPage: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.1.0
+  createdTime: 1755221437828
+  modifiedTime: 1755221437828
+  lastModifiedBy: Gyn3hbFo8wof84M9
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: false
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  reset: 1631745227763
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+active: false
+sort: 0
+ownership:
+  default: 0
+  Gyn3hbFo8wof84M9: 3
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!V2KrkoyTSOrmtiGY'
+templates: []

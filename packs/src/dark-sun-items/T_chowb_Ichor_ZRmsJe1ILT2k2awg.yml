@@ -1,0 +1,145 @@
+name: T'chowb Ichor
+type: loot
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>A recipe for crafting the insidious T'chowb ichor, a contact poison
+      that drains the victim's Intelligence. This viscous poison is derived from
+      the lymph nodes and enlarged sweat glands found in the hands of the
+      t'chowb.</p><p><strong>Crafting Steps:</strong></p><ol><li>Extract lymph
+      and sweat gland secretions from a t'chowb</li><li>Refine and concentrate
+      the extracted fluids</li><li>Mix with a stabilizing
+      agent</li><li>Carefully distill the mixture to increase
+      potency</li><li>Add a bonding agent to ensure skin absorption</li></ol>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 250
+    denomination: pp
+  rarity: rare
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: tchowb-ichor
+flags:
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Athas Poisons
+      instruction: >-
+        <p>Carefully extract and refine the fluids from a t'chowb's hands. Mix
+        with stabilizing and bonding agents, then distill to increase potency.
+        Exercise extreme caution during preparation to avoid exposure. A
+        poisoner's kit is required for this process.</p>
+      required:
+        '2':
+          Compendium-shareddata-ddb-items-Item-VXsUFoyJO7jiGCZk:
+            id: VXsUFoyJO7jiGCZk
+            uuid: Compendium.shareddata.ddb-items.Item.VXsUFoyJO7jiGCZk
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Compendium-world-crafted-items-Item-TdUsegvUQvQIj6uZ:
+            id: TdUsegvUQvQIj6uZ
+            uuid: Compendium.world.crafted-items.Item.TdUsegvUQvQIj6uZ
+            img: >-
+              icons/consumables/potions/bottle-conical-corked-labeled-skull-poison-green.webp
+            type: Item
+            name: T'chowb Ichor
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: lb
+        value: 250
+      input:
+        '1':
+          Compendium-world-creature-loot-items-Item-lhu2UDnRyT4YzYkj:
+            id: lhu2UDnRyT4YzYkj
+            uuid: Compendium.world.creature-loot-items.Item.lhu2UDnRyT4YzYkj
+            img: icons/commodities/biological/organ-liver-red.webp
+            type: Item
+            name: T'chowb Gland Extract
+            quantity: 1
+            itemType: loot
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-fH0ZTrw8welBty7Y:
+            id: fH0ZTrw8welBty7Y
+            uuid: Compendium.shareddata.ddb-items.Item.fH0ZTrw8welBty7Y
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: container
+            flags:
+              beavers-crafting: {}
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 20
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 20
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 9c30c1b6e9c6a79b766d6015cd7f91ca7f797fc5
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_id: ZRmsJe1ILT2k2awg
+effects: []
+folder: o1LYkykMt2p6J6ix
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.ZRmsJe1ILT2k2awg
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114882684
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!ZRmsJe1ILT2k2awg'

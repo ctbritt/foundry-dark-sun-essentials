@@ -1,0 +1,151 @@
+folder: 3ceHqueQSXMSDgbA
+name: Dune Trader
+type: background
+_id: xRAJy1tA5l8AXj5G
+img: icons/environment/wilderness/terrain-rocks-brown.webp
+system:
+  description:
+    value: >-
+      <p><strong>Ability Scores</strong>: Constitution, Intelligence,
+      Charisma</p><p><strong>Skill Proficiencies</strong>: Persuasion,
+      Insight</p><p><strong>Tool Proficiencies</strong>:
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulNavigators]{Navigator's
+      Tools}, Vehicles (land) or Vehicles (silt) (pick
+      one)</p><p><strong>Languages</strong>: Two of your
+      choice</p><p><strong>Feat</strong>:
+      Skilled</p><p><strong>Equipment</strong>: A set of
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagClothesTrav]{Clothes,
+      Traveler's} and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{belt
+      pouch} containing 20 ceramic tokens.</p><p><strong>Suggested
+      Characteristics</strong>: Dune Traders are shrewd and opportunistic. They
+      are always on the lookout for the next profitable venture and are adept at
+      reading people and situations.</p><p>Dune traders can be members of the
+      elven market, vendors within the city-states or independent trade
+      entrepreneurs.</p>
+    chat: ''
+  identifier: dune-trader
+  source:
+    revision: 1
+    rules: '2024'
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+  startingEquipment:
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav
+      requiresProficiency: false
+      _id: MqPAhWZD2aWgMCdr
+      group: ''
+      sort: 100000
+    - _id: dRlXqx8btx1EhXE4
+      group: null
+      sort: 200000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: 8ntdVXy5G4INmvUo
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: Background Ability Score Improvement
+      hint: ''
+    - _id: pYhQn1Y01kxDLP30
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:ins
+          - skills:per
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: aLT2VCnWVwOu2UY1
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: Two of your choice
+    - _id: wexMdsb6ilqF7QB2
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - tool:vehicle:land
+              - tool:vehicle:silt
+        grants:
+          - tool:navg
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: T6rxQCsPs0WM1vck
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+  wealth: '20'
+effects: []
+sort: 1200000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+  core:
+    sheetClass: ''
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744168995202
+  modifiedTime: 1746114686472
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_key: '!items!xRAJy1tA5l8AXj5G'

@@ -1,0 +1,229 @@
+name: Rampager Acid Pouch
+type: equipment
+img: icons/commodities/biological/organ-liver-red.webp
+system:
+  description:
+    value: >-
+      <section class="secret" id="null"><p>Difficult to handle, deals 9 (2d8)
+      acid damage per round to any organic material in contact with it. Can be
+      mastercrafted (alchemist’s supplies) into a Drake's Bane Poison (if
+      ingested, a creature must make a [[/save con dc=22 formalt=long]], taking
+      [[/damage 14d8 + @mod type=acide average=true]] damage on a failed save,
+      or half as much on a success).</p></section>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  attunement: ''
+  equipped: false
+  rarity: uncommon
+  identified: true
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  armor:
+    value: null
+    dex: null
+    magicalBonus: null
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  speed:
+    value: null
+    conditions: ''
+  strength: 0
+  proficient: 1
+  unidentified:
+    description: ''
+  type:
+    value: trinket
+    baseItem: ''
+  container: null
+  attuned: false
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: special
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - acid
+            custom:
+              enabled: true
+              formula: 2d8[acid]
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: rampager-acid-pouch
+effects: []
+flags:
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+    default: ''
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  midi-qol:
+    effectActivation: false
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    effectCondition: ''
+  core: {}
+  cf: {}
+  scene-packer:
+    sourceId: Item.4SsxW2EE5SsbCISd
+    hash: 71162fa683a247ec6f9b743e3e0bb6f4ecd87e7e
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078893124
+  modifiedTime: 1746114871876
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+folder: null
+_id: JyXPRBBEjiE3aqXd
+sort: 102344
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!JyXPRBBEjiE3aqXd'

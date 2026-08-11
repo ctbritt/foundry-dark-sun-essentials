@@ -1,0 +1,155 @@
+name: Angel's Powder
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      currency:
+        name: gp
+        value: 100
+      instruction: >-
+        <p>A hyper fine, bright white powder with a faintly sweet aroma, this
+        powder is to be blown into the face of the target before dispersing
+        harmlessly into the air. The target has to make a DC 15 Charisma Saving
+        throw. On a failed save, the target experiences an altered version of
+        reality where it perceives everyone as trusted friends and becomes
+        extremely suggestible to non-aggressive forms of persuasion and
+        deception as well as to seduction for 1 hour. On a successful save, the
+        target experiences no effects.</p><p>Type: Inhaled</p><p>Ingredients:
+        Angel’s Trumpet, Dream Lily</p>
+      folder: Uncommon Poisons
+      required:
+        '1':
+          key:
+            quantity: 1
+            id: k5CAeSs515lTeOw9
+            uuid: Compendium.shareddata.ddb-items.k5CAeSs515lTeOw9
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            itemType: tool
+      input:
+        '1':
+          key:
+            quantity: 1
+            id: KvTE3mcif3xyes2V
+            uuid: Compendium.shareddata.ddb-items.KvTE3mcif3xyes2V
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            itemType: backpack
+        '2':
+          key:
+            quantity: 1
+            id: 2Q5eat8DBOS7E7Xf
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.2Q5eat8DBOS7E7Xf
+            img: icons/commodities/flowers/lily-grey-orange.webp
+            type: Item
+            name: Angel's Trumpet
+            itemType: consumable
+        '3':
+          key:
+            quantity: 1
+            id: jjxoFljmT5atbIT8
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-ingredients.jjxoFljmT5atbIT8
+            img: icons/commodities/flowers/lily-white.webp
+            type: Item
+            name: Dreamlily
+            itemType: consumable
+      output:
+        '1':
+          key:
+            quantity: 1
+            id: LACxgInxIOos3xaf
+            uuid: >-
+              Compendium.potion-crafting-and-gathering.potion-crafting-and-gathering-poisons.LACxgInxIOos3xaf
+            img: icons/commodities/materials/bowl-powder-grey.webp
+            type: Item
+            name: Angel's Powder
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 12
+                  uuid: ''
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 5999e2cd18065ae4bd51500bcc9fc0537a04ecbd
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  custom-character-sheet-sections:
+    sectionName: ''
+  LocknKey:
+    PickPocketDCFlag: '0'
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: uncommon
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: angels-powder
+effects: []
+folder: QYufUtCWt2VF1PrB
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.JCoqTuH7xhYyBREg
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114881717
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: JCoqTuH7xhYyBREg
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!JCoqTuH7xhYyBREg'

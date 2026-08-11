@@ -1,0 +1,203 @@
+name: Minor Illusion - Psionic Image (Wis)
+type: spell
+system:
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create a sound or an image of an
+      object within range that lasts for the duration. The illusion also ends if
+      you dismiss it as an action or cast this spell again.</p><div
+      class="rd__spc-inline-post"></div><p>If you create a sound, its volume can
+      range from a whisper to a scream. It can be your voice, someone else's
+      voice, a lion's roar, a beating of drums, or any other sound you choose.
+      The sound continues unabated throughout the duration, or you can make
+      discrete sounds at different times before the spell ends.</p><p>If you
+      create an image of an object—such as a chair, muddy footprints, or a small
+      chest—it must be no larger than a 5-foot cube. The image can't create
+      sound, light, smell, or any other sensory effect. Physical interaction
+      with the image reveals it to be an illusion, because things can pass
+      through it.</p><p>If a creature uses its action to examine the sound or
+      image, the creature can determine that it is an illusion with a successful
+      Intelligence (@skill[Investigation]) check against your spell save DC. If
+      a creature discerns the illusion for what it is, the illusion becomes
+      faint to the creature.</p></div>
+    chat: ''
+  source:
+    custom: ''
+    book: PHB
+    page: '260'
+    license: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: minute
+  target:
+    affects:
+      choice: false
+    template:
+      units: ft
+      type: cube
+      size: '5'
+      contiguous: false
+  range:
+    value: '30'
+    units: ft
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: wis
+  level: 0
+  school: ill
+  materials:
+    value: a bit of fleece
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: always
+    prepared: false
+  properties:
+    - somatic
+    - material
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: minor-illusion-psionic-image-wis
+img: icons/magic/perception/eye-winged-pink.webp
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  plutonium:
+    page: spells.html
+    source: PHB
+    hash: minor%20illusion_phb
+    propDroppable: spell
+  midiProperties:
+    magicdam: true
+    magiceffect: true
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  core: {}
+  midi-qol:
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: 7gMBz6rDIWy1Ltp2
+sort: 700000
+_stats:
+  compendiumSource: Item.gjaKv5nkc2O41ybS
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411530331
+  modifiedTime: 1781134996204
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: C5mgkscdxBkHQ45s
+_key: '!items!C5mgkscdxBkHQ45s'

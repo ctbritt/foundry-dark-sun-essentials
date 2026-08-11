@@ -1,0 +1,200 @@
+folder: 3ceHqueQSXMSDgbA
+name: Former Templar
+type: background
+_id: Ch9WnWsYJmAyuZdL
+img: icons/equipment/head/helm-barbute-horned-tan.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities: </strong>&amp;Reference[int], &amp;Reference[wis],
+      &amp;Reference[cha]</p><p class="p2"><span class="s2"><strong>Skill
+      Proficiencies: </strong></span>&amp;Reference[arc] and &amp;Reference[ins]
+      or <span class="s1">&amp;Reference[itm]</span></p><p class="p3"><span
+      class="s2"><strong>Tool</strong></span><span class="s3"><strong>
+      </strong></span><span
+      class="s2"><strong>Proficiencies:</strong></span><span class="s3"><strong>
+      </strong></span>One<span class="s4"> </span>type<span class="s5">
+      </span>of<span class="s5"> </span>artisan’s<span class="s5"> </span><span
+      class="s1">tools</span></p><p class="p4"><span
+      class="s2"><strong>Languages: </strong></span>One<span class="s6">
+      </span>of<span class="s6"> </span>your<span class="s7"> </span><span
+      class="s1">choice</span></p><p class="p5"><span
+      class="s8"><strong>Feat:</strong></span><span class="s9"><strong>
+      </strong></span><span
+      class="s1">@UUID[Compendium.dnd-players-handbook.feats.Item.phbftHealer00000]{Healer},
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled0000]{Skilled} or
+      Initiate
+      (@UUID[Compendium.dark-sun-essentials.dark-sun-feats.gso4BrUPEMykqN06]{Psionic} or
+      </span>@UUID[Compendium.dark-sun-essentials.dark-sun-feats.qYFandmqCBcRGUeV]{Arcane})
+      (select<span class="s1"> </span>one)</p><p class="p6"><span
+      class="s2"><strong>Equipment:</strong></span><span class="s10"><strong>
+      </strong></span>A<span class="s1"> </span>symbol<span class="s1">
+      </span>of<span class="s1"> </span>their<span class="s1"> </span>past<span
+      class="s1"> </span>life,<span class="s1"> </span>a<span class="s1">
+      </span>set<span class="s11"> of </span><span
+      class="s12">@UUID[Compendium.shareddata.ddb-items.ski4qdvVUyNWkTX2]{Clothes,
+      Common},</span><span class="s1"> </span><span class="s12">a</span><span
+      class="s1"> </span><span class="s12">set</span><span class="s11">
+      </span><span class="s12">of</span><span class="s1"> </span><span
+      class="s12">artisan’s</span><span class="s1"> </span><span
+      class="s12">tools</span><span class="s1"> </span><span
+      class="s12">of</span><span class="s1"> </span><span class="s12">your
+      </span>choice, and a belt pouch containing 20 ceramic <span
+      class="s1">pieces.</span></p><p class="p7"><strong>Suggested</strong><span
+      class="s1"><strong> </strong></span><strong>Characteristics:</strong><span
+      class="s12"><strong> </strong></span><span class="s13">Former</span><span
+      class="s14"> </span><span class="s13">Templars</span><span class="s14">
+      </span><span class="s15">are </span>insightful and often conflicted,
+      grappling with <span class="s16">their</span><span class="s12">
+      </span><span class="s16">past</span><span class="s17"> </span><span
+      class="s16">actions</span><span class="s17"> </span><span
+      class="s16">and</span><span class="s12"> </span><span
+      class="s16">seeking</span><span class="s17"> </span><span
+      class="s16">redemption</span><span class="s17"> </span><span
+      class="s16">or </span><span class="s1">revenge.</span><span class="s12">
+      </span><span class="s1">They</span><span class="s18"> </span><span
+      class="s1">possess</span><span class="s18"> </span><span
+      class="s1">a</span><span class="s18"> </span><span
+      class="s1">deep</span><span class="s12"> </span><span
+      class="s1">knowledge</span><span class="s18"> </span><span class="s1">of
+      </span>religious<span class="s19"> </span>and<span class="s19">
+      </span>arcane<span class="s19"> </span>lore.</p>
+    chat: ''
+  identifier: former-templar
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: tool
+      count: 1
+      key: art
+      requiresProficiency: false
+      _id: l1FpUj9vt9TqDUdh
+      group: ''
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.shareddata.ddb-items.Item.ski4qdvVUyNWkTX2
+      requiresProficiency: false
+      _id: NKIjBGvdFEHIiZFm
+      group: ''
+      sort: 600000
+  advancement:
+    - _id: Dhu69giIl1FsFq08
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - con
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: HtPGU1yI4Ac4001u
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:ins
+              - skills:itm
+        grants:
+          - skills:arc
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Skill Proficiencies
+      hint: ''
+    - _id: xKq0lFt80OGExw5z
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Languages
+      hint: ''
+    - _id: qoxaLzDupkasruNh
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - tool:art:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Tool Proficiencies
+      hint: ''
+    - _id: Pu8WGzGsmEfDdy3r
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftHealer00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.gso4BrUPEMykqN06
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.qYFandmqCBcRGUeV
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+      value:
+        added: {}
+        replaced: {}
+      title: Feat
+      hint: Healer, Skilled or Initiate (Psionic or Arcane) (select one)
+  wealth: '20'
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.3.9
+  createdTime: 1745154087518
+  modifiedTime: 1745341577614
+  lastModifiedBy: 6QG9R6JQRfToF3Mf
+  exportSource: null
+_key: '!items!Ch9WnWsYJmAyuZdL'

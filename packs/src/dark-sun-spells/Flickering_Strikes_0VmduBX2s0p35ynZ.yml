@@ -1,0 +1,202 @@
+name: Flickering Strikes
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You flourish a weapon you are proficient with used in the casting and
+      then vanish, instantly teleporting to and striking up to 5 targets within
+      range. Make a weapon attack against each target. On hit, a target takes
+      the weapon damage from the attack + 6d6 force damage. </p><p>You can then
+      teleport to an unoccupied space you can see within 5 feet of one of the
+      targets you hit or missed.</p>
+    chat: ''
+  materials:
+    value: a melee weapon you are proficient with worth at least 1 sp
+    consumed: false
+    cost: 1
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+    - psionic
+    - melee
+    - teleportation
+  activation:
+    condition: ''
+    type: action
+    value: 1
+  duration:
+    units: inst
+  range:
+    units: ft
+    value: '30'
+    special: radius
+  level: 5
+  school: con
+  target:
+    template:
+      type: ''
+      units: ft
+      contiguous: false
+      size: '30'
+      count: ''
+    affects:
+      type: ''
+      choice: false
+      count: ''
+      special: ''
+  activities:
+    MbGdniptuy7fi5ye:
+      type: utility
+      _id: MbGdniptuy7fi5ye
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: flickering-strikes
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: atwill
+    prepared: false
+_id: 0VmduBX2s0p35ynZ
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: e05a68a37021da93bf14e5fc38457b8c96670920
+    sourceId: Item.0VmduBX2s0p35ynZ
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1711473749
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.0VmduBX2s0p35ynZ
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749535
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 100000
+_key: '!items!0VmduBX2s0p35ynZ'

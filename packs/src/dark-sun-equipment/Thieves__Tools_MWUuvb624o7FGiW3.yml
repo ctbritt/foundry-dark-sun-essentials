@@ -1,0 +1,181 @@
+name: Thieves' Tools
+system:
+  description:
+    value: >-
+      <p class="phb-meta"><strong>Ability:</strong> Dexterity</p><p
+      class="phb-meta"><strong>Utilize:</strong> Pick a lock (DC 15), or disarm
+      a trap (DC 15)</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 25
+    denomination: ct
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: ''
+    baseItem: thief
+  ability: dex
+  chatFlavor: ''
+  proficient: null
+  properties: []
+  bonus: ''
+  activities:
+    4pIHxWxCdaF3Ieok:
+      type: check
+      activation:
+        type: action
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: false
+        override: false
+      check:
+        ability: dex
+        dc:
+          calculation: ''
+          formula: '15'
+        associated: []
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      _id: 4pIHxWxCdaF3Ieok
+      name: Pick a Lock/Disarm a Trap
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      damage:
+        onSave: half
+        parts: []
+        critical:
+          allow: false
+      friendlySave: default
+  identifier: thieves-tools
+type: tool
+folder: wrgJ5qAZpozmUN0t
+img: icons/tools/hand/lockpicks-steel-grey.webp
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1765908659262
+  modifiedTime: 1781135012558
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: MWUuvb624o7FGiW3
+sort: 100000
+_key: '!items!MWUuvb624o7FGiW3'

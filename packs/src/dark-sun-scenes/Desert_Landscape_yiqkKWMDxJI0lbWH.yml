@@ -1,0 +1,701 @@
+name: Desert Landscape
+navigation: false
+navName: ''
+thumb: modules/shareddata/assets/scenes/yiqkKWMDxJI0lbWH-thumb.webp
+width: 2912
+height: 1632
+padding: 0.25
+initial:
+  x: 2368
+  'y': 1246
+  scale: 1.146
+grid:
+  type: 0
+  size: 58
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 1
+  units: ft
+tokenVision: false
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 0
+environment:
+  darknessLevel: 0
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 0.5
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings: []
+tokens:
+  - name: Itilda (Copy)
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/itilda_copy_.avatar.webp?1724362046343
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 1
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+      tagger:
+        tags: ''
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      dnd5e: {}
+      lightmask:
+        shape: circle
+        sides: 3
+        points: 5
+        ellipseMinor: 1
+        relative: false
+        customWallIDs: ''
+        customEdges: []
+      multi-token-edit:
+        width: 1
+        height: 1
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 103
+          combatMoveData:
+            edRTuAZdePELRxZ4:
+              lastMoveDistance: 0
+              lastRound: 1
+      smarttarget:
+        gmtargetimg: >-
+          https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/tokens/spirit_of_the_land.avatar.webp?1732302821488
+      custom-dnd5e: {}
+      ATL:
+        originals: {}
+    ring:
+      enabled: true
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        texture: s3/tokens/player_characters/itilda_copy_.token.webp?1724362046343
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: null
+    hidden: false
+    sort: 0
+    _id: 8DHDzp0kU5ntqc4D
+    delta:
+      _id: tSKfGtpXC3bOuq4B
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!yiqkKWMDxJI0lbWH.8DHDzp0kU5ntqc4D.tSKfGtpXC3bOuq4B'
+    x: 1532
+    'y': 929
+    elevation: 102.02421871494595
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!yiqkKWMDxJI0lbWH.8DHDzp0kU5ntqc4D'
+lights: []
+notes: []
+sounds: []
+regions:
+  - _id: EXRAsSMnuvGSTtlU
+    name: Circle Template
+    color: '#a01f07'
+    shapes:
+      - type: circle
+        x: 1200
+        'y': 1043
+        radius: 5916
+        gridBased: false
+        hole: false
+    elevation:
+      bottom: 116.89655172413792
+      top: null
+      topInclusive: false
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    behaviors: []
+    visibility: 2
+    highlightMode: coverage
+    displayMeasurements: true
+    hidden: false
+    locked: false
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    flags:
+      dnd5e:
+        origin: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.Meo3tJJV3eBAuAc3.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+      midi-qol:
+        actorUuid: Scene.Jk0vABn2E2m84Ua0.Token.Meo3tJJV3eBAuAc3.Actor.e1y2IpxwlBFRdggb
+        tokenId: Meo3tJJV3eBAuAc3
+        workflowId: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.Meo3tJJV3eBAuAc3.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+        itemUuid: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.Meo3tJJV3eBAuAc3.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      levels: {}
+      tokenmagic:
+        templateData:
+          opacity: 1
+          tint: null
+        filters: null
+        options: null
+      region-attacher:
+        creationComplete: true
+      core:
+        MeasuredTemplate: true
+    _shapeConstraints: null
+    _key: '!scenes.regions!yiqkKWMDxJI0lbWH.EXRAsSMnuvGSTtlU'
+  - _id: vynEBpHOj1u0hpYn
+    name: Circle Template
+    color: '#a01f07'
+    shapes:
+      - type: circle
+        x: 1284
+        'y': 1058
+        radius: 5916
+        gridBased: false
+        hole: false
+    elevation:
+      bottom: 118.44827586206895
+      top: null
+      topInclusive: false
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    behaviors: []
+    visibility: 2
+    highlightMode: coverage
+    displayMeasurements: true
+    hidden: false
+    locked: false
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    flags:
+      dnd5e:
+        origin: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.bnSRjGGtvo0gnIxG.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+      midi-qol:
+        actorUuid: Scene.Jk0vABn2E2m84Ua0.Token.bnSRjGGtvo0gnIxG.Actor.e1y2IpxwlBFRdggb
+        tokenId: bnSRjGGtvo0gnIxG
+        workflowId: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.bnSRjGGtvo0gnIxG.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+        itemUuid: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.bnSRjGGtvo0gnIxG.Actor.e1y2IpxwlBFRdggb.Item.Dm1ixie53JO2k2Wd
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      levels: {}
+      tokenmagic:
+        templateData:
+          opacity: 1
+          tint: null
+        filters: null
+        options: null
+      region-attacher:
+        creationComplete: true
+      core:
+        MeasuredTemplate: true
+    _shapeConstraints: null
+    _key: '!scenes.regions!yiqkKWMDxJI0lbWH.vynEBpHOj1u0hpYn'
+  - _id: Loe7hbNW7JG82KWK
+    name: Circle Template
+    color: '#a01f07'
+    shapes:
+      - type: circle
+        x: 1384
+        'y': 965
+        radius: 5916
+        gridBased: false
+        hole: false
+    elevation:
+      bottom: 108.82758620689656
+      top: null
+      topInclusive: false
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    behaviors: []
+    visibility: 2
+    highlightMode: coverage
+    displayMeasurements: true
+    hidden: false
+    locked: false
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    flags:
+      dnd5e:
+        origin: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.18gzT1PmnkI3po5G
+      midi-qol:
+        actorUuid: Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb
+        tokenId: 6osNzHTFlRVXg5ZA
+        workflowId: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.18gzT1PmnkI3po5G
+        itemUuid: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.18gzT1PmnkI3po5G
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      levels: {}
+      tokenmagic:
+        templateData:
+          opacity: 1
+          tint: null
+        filters: null
+        options: null
+      region-attacher:
+        creationComplete: true
+      core:
+        MeasuredTemplate: true
+    _shapeConstraints: null
+    _key: '!scenes.regions!yiqkKWMDxJI0lbWH.Loe7hbNW7JG82KWK'
+  - _id: ZFdwItTg48ExAoJJ
+    name: Circle Template
+    color: '#a01f07'
+    shapes:
+      - type: circle
+        x: 1384
+        'y': 965
+        radius: 3596
+        gridBased: false
+        hole: false
+    elevation:
+      bottom: 108.82758620689656
+      top: null
+      topInclusive: false
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    behaviors: []
+    visibility: 2
+    highlightMode: coverage
+    displayMeasurements: true
+    hidden: false
+    locked: false
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    flags:
+      dnd5e:
+        origin: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+      midi-qol:
+        actorUuid: Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb
+        tokenId: 6osNzHTFlRVXg5ZA
+        workflowId: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+        itemUuid: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.6osNzHTFlRVXg5ZA.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      levels: {}
+      tokenmagic:
+        templateData:
+          opacity: 1
+          tint: null
+        filters: null
+        options: null
+      region-attacher:
+        creationComplete: true
+      core:
+        MeasuredTemplate: true
+    _shapeConstraints: null
+    _key: '!scenes.regions!yiqkKWMDxJI0lbWH.ZFdwItTg48ExAoJJ'
+  - _id: HnCST5H3JxYHYpsB
+    name: Circle Template
+    color: '#a01f07'
+    shapes:
+      - type: circle
+        x: 1386
+        'y': 967
+        radius: 3596
+        gridBased: false
+        hole: false
+    elevation:
+      bottom: 109.03448275862068
+      top: null
+      topInclusive: false
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    behaviors: []
+    visibility: 2
+    highlightMode: coverage
+    displayMeasurements: true
+    hidden: false
+    locked: false
+    ownership:
+      default: 0
+      jM4h8qpyxwTpfNli: 3
+    flags:
+      dnd5e:
+        origin: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.fpdAZSCEirHc8dUc.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+      midi-qol:
+        actorUuid: Scene.Jk0vABn2E2m84Ua0.Token.fpdAZSCEirHc8dUc.Actor.e1y2IpxwlBFRdggb
+        tokenId: fpdAZSCEirHc8dUc
+        workflowId: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.fpdAZSCEirHc8dUc.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+        itemUuid: >-
+          Scene.Jk0vABn2E2m84Ua0.Token.fpdAZSCEirHc8dUc.Actor.e1y2IpxwlBFRdggb.Item.nY1x3NcVs7U2cyoi
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+      levels: {}
+      tokenmagic:
+        templateData:
+          opacity: 1
+          tint: null
+        filters: null
+        options: null
+      region-attacher:
+        creationComplete: true
+      core:
+        MeasuredTemplate: true
+    _shapeConstraints: null
+    _key: '!scenes.regions!yiqkKWMDxJI0lbWH.HnCST5H3JxYHYpsB'
+tiles: []
+walls: []
+playlist: cNqa04HTIXl6bbDy
+playlistSound: null
+journal: null
+journalEntryPage: null
+weather: ''
+folder: 2oVJ25yAn0EL41eX
+flags:
+  scene-packer:
+    hash: beb9b4044208e832b338569148c5dcbfedf6e256
+  smalltime:
+    darkness-link: false
+    player-vis: '1'
+    moonlight: false
+  zoom-pan-options:
+    minZoom: null
+    maxZoom: null
+  terrainmapper:
+    backgroundElevation: null
+  wall-height:
+    advancedVision: false
+  token-attacher: {}
+  walledtemplates:
+    version: 0.8.0
+  tokencover:
+    version: 0.9.6
+  monks-common-display:
+    screen: gm
+  simple-vistas:
+    isVista: true
+    foregroundWidth: 50
+    horizonTop: 0.53
+    maxTop: 0.58
+    parallax: 0.2
+  multi-token-edit:
+    scenescape:
+      speed: 4.3
+      scaleDistance: 15
+      blackBars: false
+      pixelPerfect: true
+      markers:
+        - x: 2073
+          'y': 0
+          size: 30
+          height: 290
+          realHeight: 500
+          virtual: true
+          elevation: 0
+        - x: 2073
+          'y': 1462
+          size: 30
+          height: 290
+          realHeight: 500
+          elevation: 151.24137931034483
+        - x: 2826.35
+          'y': 1471.7
+          size: 100
+          height: 966.7
+          realHeight: 1666.6666666666667
+          elevation: 158.7416379310345
+        - x: 1928
+          'y': 1545
+          size: 6
+          height: 58
+          realHeight: 100
+          elevation: 166.24189655172415
+        - x: 1627.5
+          'y': 1683
+          size: 3
+          height: 29
+          realHeight: 50
+          elevation: 180.51775862068968
+        - x: 1627.5
+          'y': 2560
+          size: 3
+          height: 29
+          realHeight: 50
+          virtual: true
+          elevation: 271.24189655172415
+_stats:
+  compendiumSource: Compendium.world.dark-sun-scenes.Scene.yiqkKWMDxJI0lbWH
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744079048933
+  modifiedTime: 1782140173495
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: yiqkKWMDxJI0lbWH
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+active: false
+navOrder: 0
+sort: 1100000
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!yiqkKWMDxJI0lbWH'
+templates: []

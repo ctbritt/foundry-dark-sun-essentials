@@ -1,0 +1,215 @@
+_id: Qm2Njfcfp3JgV8sw
+name: Claw
+type: feat
+system:
+  description:
+    value: "<p>If you hit with your claw, you deal slashing damage equal to [[/damage average]]</p><details><summary>More Details</summary><p></p><p>If you hit with one of your claws,\_you deal\_slashing\_damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p><p></p></details>"
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: str
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: 1d6[slashing] + @mod
+            number: 1
+            denomination: 6
+            bonus: '@mod'
+            types:
+              - slashing
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+      name: ''
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+  identifier: claw
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+flags:
+  ddbimporter:
+    id: '4971960'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 8222565
+    componentTypeId: 1960452172
+    originalName: Claw
+    type: race
+    importId: vgHAadkjDrtMrPlZ
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midi-qol:
+    fumbleThreshold: null
+    removeAttackDamageButtons: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/commodities/claws/claw-insect-grey-purple.webp
+folder: Fo5YgVIDRMoKVBSu
+sort: 300000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.vMUiSZV4WNS6lQZV.Item.8VbkIxfPLVN3R19r
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996240
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!Qm2Njfcfp3JgV8sw'

@@ -7,7 +7,31 @@ properties for weapons and armour, and silt vehicles.
 Every change is a toggle. Turn them all off and the world behaves exactly like
 stock dnd5e.
 
+It also ships the Athasian content those rules exist to support: ten compendium
+packs of origins, classes, creatures, equipment, feats, items, tables, scenes
+and spells.
+
 **Foundry:** v13 and v14 · **System:** dnd5e 5.3.x
+
+## Compendiums
+
+| Pack | Holds |
+|---|---|
+| Dark Sun Character Origins | Athasian species and backgrounds |
+| Dark Sun Classes | Athasian classes and subclasses |
+| Dark Sun Creature Catalog | Actors |
+| Dark Sun Equipment | Weapons, armour and gear |
+| Dark Sun Feats | Feats |
+| Dark Sun Harvest Items | Components taken from creatures |
+| Dark Sun Items | Everything else carryable |
+| Dark Sun Rolltables | Harvest and encounter tables |
+| Dark Sun Scenes | Maps |
+| Dark Sun Spells | Spells, including psionic powers |
+
+These moved here from the `shareddata` module in 1.4.0. Document IDs did not
+change, but a compendium's address includes the module that owns it, so worlds
+built against the old location need repointing — see
+[`tools/repoint-moved-packs.mjs`](tools/repoint-moved-packs.mjs).
 
 ## What it does
 

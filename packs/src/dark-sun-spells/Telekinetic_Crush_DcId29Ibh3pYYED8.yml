@@ -1,0 +1,199 @@
+_id: DcId29Ibh3pYYED8
+name: Telekinetic Crush
+type: spell
+system:
+  source:
+    custom: ''
+    book: XUA25P
+    page: '11'
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>You create a field of crushing telekinetic
+      force in a 30-foot @variantrule[Cube [Area of Effect]|XPHB|Cube] within
+      range. Each creature in the area makes a Strength saving throw. On a
+      failed save, a target takes [[/damage 5d6 type=force]] damage and has the
+      &amp;Reference[condition=Prone] condition. On a successful save, a target
+      takes half as much damage only.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="Using a Higher-Level Spell
+      Slot" class="rd__b  rd__b--3"><p><span class="rd__h rd__h--3"
+      data-title-index="1"> <span class="entry-title-inner">Using a Higher-Level
+      Spell Slot.</span></span> The damage increases by [[/r 1d6]] for each
+      spell slot level above 3.</p></div></div>
+    chat: ''
+  level: 3
+  school: trs
+  properties:
+    - vocal
+    - psi
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '30'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+  range:
+    value: '120'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    6znFKPBQ0zR4aYRK:
+      _id: 6znFKPBQ0zR4aYRK
+      type: save
+      name: ''
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+      damage:
+        onSave: half
+        parts:
+          - types:
+              - force
+            number: 5
+            denomination: 6
+            bonus: ''
+            scaling:
+              mode: ''
+              number: 1
+            custom:
+              enabled: false
+        critical:
+          allow: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+  identifier: telekinetic-crush
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/movement/abstract-ribbons-red-orange.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: XUA2025Psion
+    hash: telekinetic%20crush_xua2025psion
+    propDroppable: spell
+    spellClassNames:
+      - Psion
+      - Sorcerer
+      - Warlock
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1217096426
+effects: []
+folder: mvNUawDBqd1DJYG3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411018787
+  modifiedTime: 1784910749566
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!DcId29Ibh3pYYED8'

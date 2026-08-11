@@ -1,0 +1,306 @@
+_id: BugI2gOHa4JLlTIt
+name: Panache
+type: feat
+effects: []
+system:
+  activities:
+    utilityPanacheII:
+      type: utility
+      _id: utilityPanacheII
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionReason: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature’s Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.</p>\n<p class=\"Core-Styles_Core-Body\">If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can’t make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.</p>\n<p class=\"Core-Styles_Core-Body\">If you succeed on the check and the creature isn’t hostile to you, it is charmed\_by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</p>\n</div>"
+    chat: >-
+      <div class="ddb">
+
+      As an action, you can make a Persuasion check contested by a creature’s
+      Insight check. 
+
+
+      On success, a hostile creature has disadvantage on attack rolls against
+      targets and can't make opportunity attacks against targets other than you
+      for 1 minute, or until one of your allies engages it or it gets more than
+      60 ft. from you. If it isn't hostile, it is charmed by you for 1 minute.
+
+      </div>
+  identifier: panache
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 9
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 509
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Panache
+    dndbeyond:
+      requiredLevel: 9
+      displayOrder: 300
+      featureType: 1
+      class: Rogue
+      classId: 80
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Swashbuckler
+    subClassId: 80
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Panache
+        activityCount: 1
+        activityKeys:
+          - utilityPanaclNe0
+        nameMap:
+          utilityPanaclNe0:
+            - Panache
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Panache
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: class
+      text: Rogue
+  midi-qol:
+    removeAttackDamageButtons: default
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    rollAttackPerTarget: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    onUseMacroName: '[postActiveEffects]ItemMacro'
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    advancementOrigin: OZrhgWEuEJBmWmTh.0VVxsSz348T4rpkt
+    riders:
+      activity: []
+      effect: []
+  scene-packer:
+    hash: 32a85f150d5488ffe336c5550ae20f21c5627843
+    sourceId: Actor.YopcjPYPiqeet8yK.Item.zq5lb7XYRhoYkb2B
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  dae:
+    macro:
+      name: Panache
+      img: icons/magic/air/wind-vortex-swirl-purple.webp
+      type: script
+      scope: global
+      command: |-
+        const { DialogApp, Crosshairs, Summons, Teleport } = chrisPremades;
+        const {
+          actorUtils,
+          animationUtils,
+          combatUtils,
+          compendiumUtils,
+          constants,
+          crosshairUtils,
+          dialogUtils,
+          effectUtils,
+          errors,
+          genericUtils,
+          itemUtils,
+          rollUtils,
+          socketUtils,
+          templateUtils,
+          tokenUtils,
+          workflowUtils,
+          spellUtils,
+        } = chrisPremades.utils;
+
+        const targetToken = workflow.targets.first();
+
+          await rollUtils.contestedRoll({
+            sourceToken: workflow.token,
+            targetToken,
+            sourceRollType: "skill",
+            targetRollType: "skill",
+            sourceAbilities: ["per"],
+            targetAbilities: ["ins"],
+          });
+      author: jM4h8qpyxwTpfNli
+      ownership:
+        default: 3
+      _id: null
+      folder: null
+      sort: 0
+      flags: {}
+      _stats:
+        coreVersion: '12.331'
+        systemId: dnd5e
+        systemVersion: 4.1.2
+        createdTime: null
+        modifiedTime: null
+        lastModifiedBy: null
+        compendiumSource: null
+        duplicateSource: null
+  crux:
+    trayVisibility: default
+img: icons/magic/air/wind-vortex-swirl-purple.webp
+folder: IEz35CZVpyYPq51b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998487
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!BugI2gOHa4JLlTIt'

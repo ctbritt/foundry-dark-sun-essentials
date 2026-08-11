@@ -1,0 +1,259 @@
+name: Sling (Large)
+type: weapon
+system:
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Proficiency with a sling allows you to add your proficiency bonus to
+      the attack roll for any attack you make with it.</p>
+
+      </div>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 1
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: ''
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: 30
+    long: 120
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: true
+        formula: 2d4[bludgeoning] + @mod
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  properties:
+    - amm
+  proficient: null
+  unidentified:
+    description: Sling
+  type:
+    value: simpleR
+    baseItem: sling
+  container: null
+  attuned: false
+  magicalBonus: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '30'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: sling-large
+  ammunition: {}
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Sling
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+      ability: dex
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 1782728300
+    definitionId: 18
+    originalName: Sling
+    version: 5.2.29
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Sling
+  scene-packer:
+    sourceId: Item.wvQfsaa02N68yvmt
+    hash: 4205bfc273d31dc201e51d79d746211ee42cdc34
+  midi-qol:
+    onUseMacroName: ''
+  midiProperties:
+    confirmTargets: default
+  magicitems:
+    enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/weapons/slings/slingshot-wood.webp
+folder: uHyCERW1GdSFYBhU
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.CvgPuTVthhB45eh8
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114768081
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: CvgPuTVthhB45eh8
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!CvgPuTVthhB45eh8'

@@ -1,0 +1,177 @@
+_id: g9hrlQqsOYGrbZ2T
+name: Levitate
+type: feat
+system:
+  description:
+    value: >-
+      As an action, you can vertically move your body (clothing and equipment
+      don't count) plus up to [[10*level]] pounds up to 10 feet in the air. At
+      the end of your next turn, you gently float to the ground. Movement while
+      aloft is the same as the levitate spell. You can use this feature +
+      [[@prof]] times. You regain all uses when you finish a long rest.
+    chat: ''
+  source:
+    revision: 1
+    rules: '2014'
+  cover: null
+  crewed: false
+  uses:
+    max: 1 * @prof
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  type:
+    value: feat
+    subtype: ''
+  requirements: ''
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+  identifier: levitate
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+flags:
+  ddbimporter:
+    id: '6121887'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 1139298
+    componentTypeId: 1088085227
+    originalName: Levitate
+    type: feat
+    importId: MG9icx5x4Rfx39WG
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: feat
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    migratedUses: 2
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/svg/item-bag.svg
+folder: 7gMBz6rDIWy1Ltp2
+sort: 1506250
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.cpnAl7OHFz2PpNqc.Item.Q1oEtIq3ZrkEkzqJ
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411530331
+  modifiedTime: 1781134996962
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!g9hrlQqsOYGrbZ2T'

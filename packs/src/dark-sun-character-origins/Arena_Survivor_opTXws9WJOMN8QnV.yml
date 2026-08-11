@@ -1,0 +1,187 @@
+name: Arena Survivor
+type: background
+effects: []
+system:
+  description:
+    value: >-
+      <h1>Arena Survivor</h1><p><strong>Ability Scores: </strong><span
+      style="font-family:Roboto">Strength, Dexterity,
+      Constitution</span></p><p><strong>Skill Proficiencies</strong>: Athletics,
+      Intimidation</p><p><strong>Tool Proficiencies:</strong> One type of gaming
+      set</p><p><strong>Language:</strong> One of your
+      choice</p><p><strong>Feat</strong>:
+      @UUID[Compendium.dnd-players-handbook.feats.phbftTough000000]{Tough}</p><p><strong>Equipment</strong>:
+      A @UUID[Compendium.dark-sun-essentials.dark-sun-items.YEAYKyFdxpAgMJIz]{A Token
+      from a Fellow Combatant} (a tooth, a ring, etc.), a set of
+      @UUID[Compendium.shareddata.ddb-items.ski4qdvVUyNWkTX2]{Clothes, Common},
+      a gaming set of your choice, and a belt pouch containing 10 ceramic
+      pieces.</p><p><strong>Suggested Characteristics:</strong> Arena Survivors
+      have a mix of pride and trauma from their time in the fighting pits. They
+      are fierce, resilient, and otien bear physical or emotional scars from
+      their experiences.</p><p></p>
+    chat: ''
+  identifier: arena-survivor
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  startingEquipment:
+    - type: linked
+      count: null
+      key: Compendium.dark-sun-essentials.dark-sun-items.Item.YEAYKyFdxpAgMJIz
+      requiresProficiency: false
+      _id: 3SO9JklrzEy4WNui
+      group: BCBY8MTBYJdnTO7g
+      sort: 475000
+    - type: AND
+      requiresProficiency: false
+      _id: BCBY8MTBYJdnTO7g
+      group: ''
+      sort: 500000
+    - type: linked
+      count: null
+      key: Compendium.dnd5e.items.Item.8RXjiddJ6VGyE7vB
+      requiresProficiency: false
+      _id: Ikesc3nTLMFhWzRI
+      group: BCBY8MTBYJdnTO7g
+      sort: 400000
+    - type: tool
+      count: null
+      key: game
+      requiresProficiency: false
+      _id: ljBdXlBWXGo99k1L
+      group: BCBY8MTBYJdnTO7g
+      sort: 450000
+  advancement:
+    - _id: bPRTltVTWiHwt0qd
+      type: Trait
+      configuration:
+        allowReplacements: true
+        choices: []
+        grants:
+          - skills:ath
+          - skills:itm
+        mode: default
+      value:
+        chosen:
+          - skills:per
+          - skills:med
+      level: 0
+      title: Skill Proficiencies
+      hint: ''
+    - _id: A8zEKroZTrHJVhWc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftTough000000
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Feat
+    - _id: pKsg4ZJfa8IDojre
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - tool:game:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: 4Q33GznwHN75Yxbz
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: BfykhidHtRVNlAyN
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - int
+          - wis
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: Background Ability Score Improvement
+      hint: >-
+        Your background allows you to increase your Strength, Dexterity, and
+        Constitution scores; increase one of them by 2 and a different one by 1,
+        or increase all three by 1. None of these increases can raise a score
+        above 20.
+  wealth: '10'
+flags:
+  ddbimporter:
+    id: 439648
+    type: background
+    entityTypeId: 1669830167
+    is2014: false
+    is2024: true
+    originalName: 'Background: Arena Survivor'
+    dndbeyond: {}
+    advancementLink:
+      - _id: A8zEKroZTrHJVhWc
+        features: {}
+        A8zEKroZTrHJVhWc: {}
+    importId: jh7vhA1qbtMxTkY4
+  midi-qol:
+    onUseMacroName: ''
+    onUseMacroParts:
+      items: []
+  dnd5e:
+    advancementOrigin: 2L4JkPT3BvNsLubM
+    riders:
+      activity: []
+  scene-packer:
+    hash: e08c638e5420c92b024d89f38ce1f05768f5d78c
+    sourceId: Compendium.world.dark-sun-backgrounds.Item.k0Akio538BzJCyq9
+  crux:
+    trayVisibility: default
+img: icons/skills/trades/academics-book-study-purple.webp
+folder: 3ceHqueQSXMSDgbA
+_stats:
+  compendiumSource: Compendium.world.dark-sun-character-origins.Item.opTXws9WJOMN8QnV
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1744082185417
+  modifiedTime: 1766717422900
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: opTXws9WJOMN8QnV
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+  6QG9R6JQRfToF3Mf: 3
+sort: 1000000
+_key: '!items!opTXws9WJOMN8QnV'

@@ -1,0 +1,212 @@
+_id: E8fn9IANvZPwe0QQ
+name: Master Duelist
+type: feat
+effects: []
+system:
+  activities:
+    utilityMaDuclNe0:
+      name: Master Duelist
+      type: utility
+      _id: utilityMaDuclNe0
+      sort: 0
+      activation:
+        type: special
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets:
+          - type: itemUses
+            target: ''
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description: {}
+      duration:
+        units: inst
+        special: ''
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        prompt: true
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        override: false
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    max: '1'
+    recovery:
+      - period: sr
+        type: recoverAll
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Beginning at 17th level, your mastery of the blade lets you turn
+      failure into success in combat. If you miss with an attack roll, you can
+      roll it again with advantage. Once you do so, you can’t use this feature
+      again until you finish a short or long rest.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      Once per short rest, if you miss with an attack roll, you can roll it
+      again with advantage.
+
+      </div>
+  identifier: master-duelist
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 17
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 511
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Master Duelist
+    dndbeyond:
+      requiredLevel: 17
+      displayOrder: 500
+      featureType: 1
+      class: Rogue
+      classId: 80
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Swashbuckler
+    subClassId: 80
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Master Duelist
+        activityCount: 1
+        activityKeys:
+          - utilityMaDuclNe0
+        nameMap:
+          utilityMaDuclNe0:
+            - Master Duelist
+  crux:
+    trayVisibility: default
+img: icons/weapons/swords/swords-sharp-worn.webp
+folder: IEz35CZVpyYPq51b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998495
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!E8fn9IANvZPwe0QQ'

@@ -1,0 +1,89 @@
+_id: yyVO1YQHRUyTAmO6
+name: Natural Weapons
+type: feat
+system:
+  description:
+    value: "Your maw and claws can be used to make unarmed strikes. Your claws deal slashing damage equal to 1d6 + [[@abilities.str.mod]]; Your bite deals piercing damage equal to 1d4 + [[@abilities.str.mod]]. At 5th level, when you hit with your bite, the target must make a constitution saving throw (DC + [[8+ @abilities.con.mod+ @prof]] or becomes @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} for 1 minute, repeating the save at the end of each of it's turns. If they succeed, they are immune to this effect for 24 hours.\n  <details>\n    <summary>\n      More Details\n    </summary>\n    <p>\n      </p><p>Your maw and claws can be used to\_make unarmed strikes.\_If you hit with one of your claws,\_you deal\_slashing\_damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>\n<p>Starting at 5th level,\_any target you hit with your bite must\_make a constitution saving throw.\_The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature\_becomes @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} for 1 minute on a failed save, and doesn't become @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} on a successful one.\_The @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If they succeed, they are immune to this effect for 24 hours.</p>\n    <p></p>\n  </details>"
+    chat: ''
+  source:
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  identifier: natural-weapons
+  activities: {}
+  advancement: []
+  enchant: {}
+  prerequisites:
+    repeatable: false
+flags:
+  ddbimporter:
+    id: 8222565
+    type: race
+    entityTypeId: 1960452172
+    dndbeyond:
+      requiredLevel: null
+      displayOrder: 9
+      featureType: 1
+      entityRaceId: 1000158
+      entityType: racial-trait
+    importId: vgHAadkjDrtMrPlZ
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/magic/fire/barrier-wall-flame-ring-yellow.webp
+folder: Fo5YgVIDRMoKVBSu
+sort: 600000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.vMUiSZV4WNS6lQZV.Item.2chWL2bI27wkK3Ug
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134997479
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!yyVO1YQHRUyTAmO6'

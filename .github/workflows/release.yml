@@ -91,6 +91,10 @@ jobs:
       # download, not part of the installed module).
       - name: Package
         run: |
+          # packs/src is the YAML the packs are compiled from — 82 MB of it
+          # since the compendia moved here in 1.4.0. Foundry reads the built
+          # LevelDB directories beside it and never looks at the sources, so
+          # shipping them would triple the download for nothing.
           zip -r module.zip \
             module.json \
             scripts/ \
@@ -101,8 +105,9 @@ jobs:
             packs/ \
             README.md \
             CHANGELOG.md \
-            LICENSE
-          unzip -l module.zip
+            LICENSE \
+            -x 'packs/src/*'
+          unzip -l module.zip | tail -5
 
       - name: Attach the manifest and package to the release
         id: attach

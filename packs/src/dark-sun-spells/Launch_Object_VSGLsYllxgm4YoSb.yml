@@ -1,0 +1,208 @@
+_id: VSGLsYllxgm4YoSb
+name: Launch Object
+type: spell
+system:
+  source:
+    custom: Dark Sun
+    book: Dark Sun
+    page: ''
+    license: ''
+    rules: '2024'
+    revision: 1
+  description:
+    value: >-
+      <div class="rd__b  rd__b--3"><p>Choose one object weighing 1 to 5 pounds
+      within range that isn't being worn or carried. The object flies in a
+      straight line up to 90 feet in a direction you choose before falling to
+      the ground, stopping early if it impacts against a solid surface. If the
+      object would strike a creature, that creature must make a Dexterity saving
+      throw. On a failed save, the object strikes the target and stops moving.
+      When the object strikes something, the object and what it strikes each
+      take [[/damage 3d8 type=bludgeoning]] damage.</p></div><div class="rd__b 
+      rd__b--3"><p></p><div data-roll-name-ancestor="At Higher Levels"
+      class="rd__b  rd__b--3"><p><span class="entry-title-inner">At Higher
+      Levels.</span> When you cast this spell using a spell slot of 2nd level or
+      higher, the maximum weight of objects that you can target with this spell
+      increases by 5 pounds, and the damage increases by [[/r 1d8]], for each
+      slot level above 1st.</p></div></div>
+    chat: ''
+  level: 1
+  school: trs
+  properties:
+    - somatic
+    - psi
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  target:
+    template:
+      count: ''
+      contiguous: false
+      type: line
+      size: '90'
+      width: ''
+      height: ''
+      units: ft
+    affects:
+      count: '1'
+      type: object
+      choice: false
+      special: ''
+  range:
+    value: '60'
+    units: ft
+    special: ''
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    MQXLmMkVSPywQg3T:
+      _id: MQXLmMkVSPywQg3T
+      type: save
+      name: ''
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      damage:
+        onSave: none
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: whole
+        critical:
+          allow: false
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+      img: ''
+      appliedEffects: []
+  identifier: launch-object
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/magic/movement/abstract-ribbons-red-orange.webp
+flags:
+  plutonium:
+    page: spells.html
+    source: ktp
+    hash: launch%20object_ktp
+    propDroppable: spell
+    spellClassNames:
+      - Inventor
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  cat:
+    automation:
+      hash: -1555055851
+effects: []
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754413705656
+  modifiedTime: 1784910749607
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 1500000
+_key: '!items!VSGLsYllxgm4YoSb'

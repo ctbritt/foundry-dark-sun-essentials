@@ -1,5 +1,37 @@
 # Changelog
 
+## 1.4.0 — 2026-08-11
+
+### Added
+- **Ten compendium packs, moved here from `shareddata`.** Character origins,
+  classes, the creature catalog, equipment, feats, harvest items, items,
+  rolltables, scenes and spells. They were always Dark Sun content sitting in a
+  general-purpose sharing module; this puts them with the rules that make them
+  work.
+
+  Pack names are unchanged, and so are every document's ID, so the only part of
+  a compendium address that moves is the module: `shareddata.dark-sun-spells`
+  becomes `dark-sun-essentials.dark-sun-spells`. The 4,140 cross-references
+  inside the moved packs were rewritten to match. References to packs that
+  stayed behind — `dark-sun-journals` and every `ddb-*` — were left alone.
+
+  **Existing worlds need migrating.** Anything that pointed at these packs by
+  their old address still does. See `tools/repoint-moved-packs.mjs`.
+
+### Fixed
+- **Fourteen duplicate embedded effects in the creature catalog.** Ten actors
+  carried `guidance10000000` and `resistance100000` twice on the same item —
+  the padding in whatever generated those IDs collided index 1 with index 10.
+  LevelDB kept one of each pair and the duplicates were invisible in play, but
+  they made the pack impossible to rebuild from source. The copies were
+  byte-identical, so removing them changes nothing a player would see.
+
+  Worth knowing: the effect that *should* have held the second ID was
+  overwritten before this module ever saw the data, so a Guidance and a
+  Resistance option are simply missing from those ten stat blocks. Restoring
+  them means deciding what they were, which is a content question, not a
+  packaging one.
+
 ## 1.3.0 — 2026-08-06
 
 ### Added

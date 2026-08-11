@@ -1,0 +1,191 @@
+name: Nibenese Katana
+type: weapon
+img: icons/weapons/swords/sword-katana-purple.webp
+system:
+  activities:
+    ET2EhxmL3T11uGUG:
+      _id: ET2EhxmL3T11uGUG
+      type: attack
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical: {}
+        flat: false
+        type: {}
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  uses:
+    spent: 0
+    recovery: []
+  description:
+    value: >-
+      <p>[[/attack format=extended]], [[/damage format=extended]]. The attack
+      counts as magical.</p>
+    chat: ''
+  identifier: new-item
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 3
+    units: lb
+  price:
+    value: 50
+    denomination: ct
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  ammunition: {}
+  armor: {}
+  damage:
+    base:
+      types:
+        - slashing
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      number: 2
+      denomination: 8
+    versatile:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      denomination: 12
+  properties:
+    - fin
+    - mgc
+    - obs
+    - ver
+  proficient: null
+  range:
+    reach: 5
+    units: ft
+  type:
+    value: martialM
+    baseItem: longsword
+  mastery: vex
+  crew:
+    value: []
+effects: []
+folder: yLICocLeSTgRD5mO
+flags:
+  scene-packer:
+    hash: bf2afbb80218cecce1eac64f21477e4e3cee6ddb
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  archivist-sync:
+    archivistId: b5ee5a27a6fc485c9e35efd5a919878a
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.3
+  createdTime: 1765664438223
+  modifiedTime: 1765664438666
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: b2vncz1a8HoOzWGk
+sort: 200000
+_key: '!items!b2vncz1a8HoOzWGk'

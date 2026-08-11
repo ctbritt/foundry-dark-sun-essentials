@@ -1,0 +1,185 @@
+name: Entertainer
+system:
+  description:
+    value: >-
+      <p><strong>Ability Scores:</strong> Strength, Dexterity,
+      Charisma</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.Item.phbftMusician000]{Musician}</p><p><strong>Skill
+      Proficiencies:</strong> Acrobatics and Performance</p><p><strong>Tool
+      Proficiency:</strong> <em>Choose one kind of</em> <em>Musical
+      Instrument</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em>
+      (A) Musical Instrument (same as above), 2
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costumes},
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{Mirror},
+      @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000]{Perfume},
+      @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes},
+      11 GP; or (B) 50 GP</p><p>You spent much of your youth following roving
+      fairs and carnivals, performing odd jobs for musicians and acrobats in
+      exchange for lessons. You may have learned how to walk a tightrope, how to
+      play a lute in a distinct style, or how to recite poetry with impeccable
+      diction. To this day, you thrive on applause and long for the stage.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  startingEquipment:
+    - type: tool
+      count: null
+      key: music
+      requiresProficiency: false
+      _id: qSSBmKLhp274T8JQ
+      group: ''
+      sort: 200000
+    - type: linked
+      count: 2
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000
+      requiresProficiency: false
+      _id: xyt8JsFj0io3PP2O
+      group: ''
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000
+      requiresProficiency: false
+      _id: YuSi4wW2WJ0vUqhR
+      group: ''
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav
+      requiresProficiency: false
+      _id: io9lv2yCmLQc0hWr
+      group: ''
+      sort: 450000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000
+      requiresProficiency: false
+      _id: 788YajzZBc4BxTr8
+      group: ''
+      sort: 500000
+  identifier: athas-entertainer
+  advancement:
+    - _id: lgsZzKxjrlSEme2f
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - con
+          - int
+          - wis
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: Background Ability Score Improvement
+      hint: >-
+        Your background allows you to increase your Strength, Dexterity, and
+        Charisma scores; increase one of them by 2 and a different one by 1, or
+        increase all three by 1. None of these increases can raise a score above
+        20.
+    - _id: wpHdxiqzPgeXut00
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - skills:acr
+          - skills:prf
+        choices:
+          - count: 1
+            pool:
+              - tool:music:*
+      value:
+        chosen: []
+      level: 0
+      title: Background Proficiencies
+      hint: >-
+        Your background grants you proficiency in Acrobatics and Performance. It
+        also grants you proficiency with one kind of Musical Instrument.
+    - _id: XOsAbJyhH8CmAnPd
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.feats.Item.phbftMusician000
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Background Feat
+      hint: Your background grants you the Musician feat.
+    - _id: wqcge7ikUlDGgUHq
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - tool:music:*
+      value:
+        chosen: []
+      level: 0
+      title: Instrument Training
+      hint: >-
+        Granted by Origin Feat: Musician. You gain proficiency with three
+        Musical Instruments of your choice.
+      icon: icons/tools/instruments/lute-gold-brown.webp
+    - _id: pLGiyOjTP7nwuwTl
+      type: Trait
+      configuration:
+        mode: default
+        allowReplacements: false
+        grants:
+          - languages:standard:common
+        choices:
+          - count: 2
+            pool:
+              - languages:standard:*
+      value:
+        chosen: []
+      level: 0
+      title: Choose Languages
+      hint: >-
+        Your character knows at least three languages: Common plus two languages
+        you roll or choose from the Standard Languages table.
+  wealth: '50'
+type: background
+img: modules/dnd-players-handbook/assets/icons/backgrounds/entertainer.webp
+effects: []
+folder: 3ceHqueQSXMSDgbA
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744173991707
+  modifiedTime: 1746114685736
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: whaYWOA8EQ6eDxxJ
+sort: 800000
+ownership:
+  default: 0
+  6QG9R6JQRfToF3Mf: 3
+_key: '!items!whaYWOA8EQ6eDxxJ'

@@ -1,0 +1,145 @@
+folder: 3ceHqueQSXMSDgbA
+name: Nibenese Noble
+type: background
+img: >-
+  modules/dnd-heroes-faerun/assets/journal-art/lords-alliance-noble-residence.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[cha], &amp;Reference[int],
+      &amp;Reference[wis]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[his], &amp;Reference[per]</p><p><strong>Tool
+      Proficiencies:</strong> One gaming set or musical
+      instrument</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Literacy:</strong> You can read and write any
+      language you can speak</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftSkilled00000]{Skilled} or
+      @UUID[Compendium.dnd-players-handbook.feats.phbftInspiringLead]{Inspiring
+      Leader}</p><p><strong>Equipment:</strong> Fine clothes, signet
+      ring/brooch, scroll of pedigree, skin of cactus wine, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 150 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> A scion of one of Nibenay's great noble
+      families, known across the Tablelands for being eccentric, spoiled, venal,
+      and above all else, rich.</p>
+    chat: ''
+  identifier: athas-nibenese-noble
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '288'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: 6ALXJg6sRTO8p8cy
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: hbIy39WaaYB6xZFQ
+      group: ''
+      sort: 200000
+    - _id: f1BSx1bJv1KxwWNs
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: lYxi8vlLiEaDG8ra
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - dex
+          - con
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          cha: 2
+          int: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: NiPGYAPoJrgHr2bK
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:game:*
+              - tool:music:*
+        grants:
+          - skills:his
+          - skills:per
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: amdlr4eml3qzU8VH
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftSkilled00000
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftInspiringLead
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '150'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.Dsy8BjhZBRxtnuwY
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: Dsy8BjhZBRxtnuwY
+sort: 271875
+_key: '!items!Dsy8BjhZBRxtnuwY'

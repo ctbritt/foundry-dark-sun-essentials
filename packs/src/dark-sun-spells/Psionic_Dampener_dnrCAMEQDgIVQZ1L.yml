@@ -1,0 +1,264 @@
+_id: dnrCAMEQDgIVQZ1L
+type: spell
+system:
+  activities:
+    savePsioniDampen:
+      type: save
+      _id: savePsioniDampen
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        critical:
+          allow: false
+        parts: []
+        onSave: half
+      save:
+        ability:
+          - int
+        dc:
+          formula: ''
+          calculation: spellcasting
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p class="p1"><span class="s17">This</span> <span class="s17">spell</span>
+      <span class="s17">allows</span> <span class="s17">a</span> <span
+      class="s17">caster</span> <span class="s17">to</span> <span
+      class="s17">nullify</span> <span class="s17">the</span> <span
+      class="s17">psionic </span>abilities of one creature it can see within
+      range. <span class="s17">The</span> <span class="s17">target</span> <span
+      class="s17">must</span> <span class="s17">succeed</span> <span
+      class="s17">on</span> <span class="s17">an</span> <span
+      class="s17">Intelligence </span>saving throw or be unable to use any of
+      the following abilities for the duration of the spell:</p>
+
+      <ul class="ul1">
+
+      <li class="li4"><span class="s17">Psionic</span> <span
+      class="s14">talents</span></li>
+
+      <li class="li4"><span class="s14">Psionic</span> <span
+      class="s14">disciplines</span></li>
+
+      <li class="li4"><span class="s17">Spellcasting</span> <span
+      class="s17">ability</span> <span class="s17">with</span> <span
+      class="s17">the</span> <span class="s17">psionics</span> <span
+      class="s17">tag</span></li>
+
+      <li class="li4"><span class="s17">Innate</span> <span
+      class="s17">Spellcasting</span> <span class="s17">ability</span> <span
+      class="s17">with</span> <span class="s17">the</span> <span
+      class="s14">psionics</span></li>
+
+      <li class="li4">Any <span class="s17">other</span> <span
+      class="s17">abilities</span> <span class="s17">that</span> <span
+      class="s17">the DM</span> <span class="s17">rules</span> <span
+      class="s17">are psionic</span> <span class="s17">in</span> <span
+      class="s17">nature</span></li>
+
+      </ul>
+
+      <p class="p7"><span class="s3">At</span> <span class="s3">the</span> <span
+      class="s3">end</span> <span class="s3">of</span> <span
+      class="s3">each</span> <span class="s3">of</span> <span
+      class="s3">its</span> <span class="s3">turns,</span> <span
+      class="s3">the</span> <span class="s3">target</span> <span class="s3">can
+      </span>make another Intelligence saving throw. On a success, the spell
+      ends on the target.</p>
+
+      </div>
+    chat: ''
+  identifier: psionic-dampener
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: minute
+  level: 4
+  materials:
+    value: any small object within a blown glass sphere
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  range:
+    value: '60'
+    units: ft
+  school: div
+  target:
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+effects: []
+name: Psionic Dampener
+flags:
+  ddbimporter:
+    id: 22730759
+    definitionId: 2768301
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: true
+    originalName: Psionic Dampener
+    sources: []
+    tags:
+      - Control
+      - Psionic
+    version: 6.6.34
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: false
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+  midi-qol:
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1713750308
+img: >-
+  https://s3.us-east-1.amazonaws.com/rime-of-the-frostmaiden/ddb-images/cache/spell/school/divination.webp
+folder: lWuJPXJMTvtH54oY
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766653986569
+  modifiedTime: 1784910749620
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+_key: '!items!dnrCAMEQDgIVQZ1L'

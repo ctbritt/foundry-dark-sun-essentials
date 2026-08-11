@@ -1,0 +1,156 @@
+name: Savage Attacks
+type: feat
+system:
+  description:
+    value: >-
+      <p>When you score a critical hit with a melee attack, you can roll one of
+      the weapon's damage dice one additional time and add it to the extra
+      damage of the critical hit.</p><p></p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2014'
+    book: Dark Sun
+    page: ''
+    license: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: Halfing
+  properties: []
+  prerequisites:
+    level: null
+    repeatable: false
+  activities: {}
+  identifier: savage-attacks
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+flags:
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects:
+  - name: Savage Attacks
+    origin: Compendium.dark-sun-essentials.dark-sun-character-origins.Item.cO6nr4xcogtQKVGd
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: Enemy
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    img: icons/skills/melee/strike-axe-blood-red.webp
+    _id: pwRggLgnQxTBhAU1
+    type: base
+    system:
+      changes:
+        - key: flags.dnd5e.meleeCriticalDamageDice
+          value: 1
+          priority: 20
+          type: add
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: 1754429797411
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      exportSource: null
+    start:
+      combat: null
+      round: 249
+      time: 27247853611
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!cO6nr4xcogtQKVGd.pwRggLgnQxTBhAU1'
+img: icons/skills/melee/strike-axe-blood-red.webp
+folder: b0rbED8637Olg5zh
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1744078786403
+  modifiedTime: 1779357087393
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: cO6nr4xcogtQKVGd
+sort: 150000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!cO6nr4xcogtQKVGd'

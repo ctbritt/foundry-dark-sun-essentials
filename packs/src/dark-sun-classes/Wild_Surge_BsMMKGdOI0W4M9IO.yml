@@ -1,0 +1,110 @@
+name: Wild Surge
+type: feat
+effects: []
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  description:
+    value: "<div class=\"ddb\">\n<div class=\"ddb\">\n<p>Starting at 6th level, your psionic power can surge unpredictably during your rage. When you rage, roll a d6. The result determines the psionic effect below. You can use this feature once per rage and cannot change the effect while raging.</p>\n<p><span style=\"font-weight:bold;letter-spacing:0px\">Wild\_Surge Effects</span></p>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d6</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Mind Blast: As an action, unleash a psychic wave in a 15-foot cone. Each creature in that area must make an Intelligence saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or take 2d8 psychic damage and be stunned until the end of your next turn.</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>\n<p>Telekinetic Push: As a bonus action, push one creature you can see within 30 feet. The target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be pushed 20 feet away from you.</p>\n</td>\n</tr>\n<tr>\n<td>3</td>\n<td>\n<p>Psychic Armor: As a reaction, give yourself a bonus to AC equal to your Constitution modifier until the start of your next turn.</p>\n</td>\n</tr>\n<tr>\n<td>4</td>\n<td>\n<p>Psychic Reflexes: As a reaction when hit by an attack, halve the attack’s damage against you.</p>\n</td>\n</tr>\n<tr>\n<td>5</td>\n<td>\n<p>Mind Over Matter: As a bonus action, gain temporary hit points equal to 1d10 + your barbarian level.</p>\n</td>\n</tr>\n<tr>\n<td>6</td>\n<td>\n<p>Mind Spike: As a bonus action, choose one creature you can see within 60 feet. That creature takes psychic damage equal to 1d8 + your proficiency bonus and has disadvantage on its next attack roll.</p>\n</td>\n</tr>\n</tbody>\n</table><div id=\"table-link\">@UUID[Compendium.shareddata.ddb-tables.RollTable.yacx7xXN0zW8TihK]{Open RollTable Wild Surge: Wild\_Surge Effects}</div>\n</div>\n</div>\n</div>"
+    chat: >-
+      <div class="ddb">
+
+      <div class="ddb">
+
+      Starting at 6th level, your psionic power can surge unpredictably during
+      your rage. When you rage, roll a d6. The result determines the psionic
+      effect below. You can use this feature once per rage and cannot change the
+      effect while raging.
+
+      </div>
+
+      </div>
+  identifier: wild-surge
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  advancement: []
+  cover: null
+  crewed: false
+  enchant: {}
+  prerequisites:
+    level: 6
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    id: 10949705
+    type: class
+    entityTypeId: 12168134
+    is2014: false
+    is2024: true
+    originalName: Wild Surge
+    dndbeyond:
+      requiredLevel: 6
+      displayOrder: 200
+      featureType: 1
+      class: Barbarian
+      classId: 2330921
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Barbarian
+    classId: 2190875
+    subClass: Path of the Wilder
+    subClassId: 2330921
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    importId: jh7vhA1qbtMxTkY4
+  midi-qol:
+    effectActivation: false
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+    onUseMacroParts:
+      items: []
+  dnd5e:
+    advancementOrigin: Ub0ZP1UXTexjE2wl
+    riders:
+      activity: []
+  scene-packer:
+    hash: 01b0f0bcd61dd22e8992874c50133f4c041780cd
+    sourceId: Actor.5yRlgTbsSZTLwOWK.Item.jdK65g0sdBIHIYVy
+  crux:
+    trayVisibility: default
+img: icons/magic/fire/projectile-wave-arrow.webp
+folder: yC0K8YmShGWAXUaE
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.BsMMKGdOI0W4M9IO
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078801275
+  modifiedTime: 1746114477823
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_id: BsMMKGdOI0W4M9IO
+sort: 0
+_key: '!items!BsMMKGdOI0W4M9IO'

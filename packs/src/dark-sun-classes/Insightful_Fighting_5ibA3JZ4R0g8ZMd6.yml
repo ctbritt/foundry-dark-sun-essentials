@@ -1,0 +1,256 @@
+_id: 5ibA3JZ4R0g8ZMd6
+name: Insightful Fighting
+type: feat
+effects: []
+system:
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: bonus
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: '1'
+          type: creature
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      useConditionReason: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDamageDialog: 'false'
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p class="Core-Styles_Core-Body">At 3rd level, you gain the ability to
+      decipher an opponent’s tactics and develop a counter to them. As a bonus
+      action, you can make a Wisdom (Insight) check against a creature you can
+      see that isn’t incapacitated, contested by the target’s Charisma
+      (Deception) check. If you succeed, you can use your Sneak Attack against
+      that target even if you don’t have advantage on the attack roll, but not
+      if you have disadvantage on it.</p>
+
+      <p class="Core-Styles_Core-Body">This benefit lasts for 1 minute or until
+      you successfully use this feature against a different target.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      As a bonus action, you can make an Insight check against a creature you
+      can see that isn’t incapacitated, contested by the target’s Deception
+      check. If you succeed, you can use your Sneak Attack against that target
+      even if you don’t have advantage on the attack roll, but not if you have
+      disadvantage on it for 1 minute or until you use this feature against a
+      different target.
+
+      </div>
+  identifier: insightful-fighting
+  source:
+    book: XGtE
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 736
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Insightful Fighting
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 300
+      featureType: 1
+      class: Rogue
+      classId: 111
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse:
+        - level: null
+          uses: 1
+    class: Rogue
+    classId: 12
+    subClass: Inquisitive
+    subClassId: 111
+    defaultAdditionalActivities:
+      enabled: true
+      data:
+        featureName: Insightful Fighting
+        activityCount: 1
+        activityKeys:
+          - utilityInFiclNe0
+        nameMap:
+          utilityInFiclNe0:
+            - Insightful Fighting
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Insightful Fighting
+  midi-qol:
+    effectActivation: false
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    confirmTargets: default
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+img: icons/skills/melee/weapons-crossed-swords-teal.webp
+folder: q8k0E01OARsBkmBB
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998473
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!5ibA3JZ4R0g8ZMd6'

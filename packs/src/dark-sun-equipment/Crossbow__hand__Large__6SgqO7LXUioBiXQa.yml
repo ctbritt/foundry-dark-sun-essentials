@@ -1,0 +1,261 @@
+name: Crossbow, hand (Large)
+type: weapon
+system:
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>Proficiency with a hand crossbow allows you to add your proficiency
+      bonus to the attack roll for any attack you make with it.</p>
+
+      </div>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+  quantity: 1
+  weight:
+    value: 6
+    units: lb
+  price:
+    value: 75
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: common
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: 30
+    long: 120
+    units: ft
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: true
+        formula: 2d6[piercing] + @mod
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+  armor:
+    value: null
+  hp:
+    value: null
+    max: null
+    dt: null
+    conditions: ''
+  properties:
+    - amm
+    - lgt
+    - lod
+  proficient: null
+  unidentified:
+    description: Crossbow, hand
+  type:
+    value: martialR
+    baseItem: handcrossbow
+  container: null
+  attuned: false
+  magicalBonus: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '30'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        otherActivityCompatible: true
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityId: ''
+      otherActivityUuid: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  identifier: crossbow-hand-large
+  ammunition: {}
+flags:
+  ddbimporter:
+    dndbeyond:
+      type: Crossbow, hand
+      damage:
+        parts: []
+      classFeatures: []
+      restrictions: []
+      filterType: Weapon
+      isConsumable: false
+      isContainer: false
+      isCustomItem: false
+      isHomebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Damage
+        - Combat
+      sources:
+        - sourceId: 1
+          pageNumber: null
+          sourceType: 2
+        - sourceId: 2
+          pageNumber: null
+          sourceType: 1
+      ability: dex
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 1782728300
+    definitionId: 1
+    originalName: Crossbow, hand
+    version: 5.2.29
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Crossbow, hand
+  scene-packer:
+    sourceId: Item.9EEpjFDTMsI6aO2F
+    hash: a13826bbfb8a723da680782dba9c998a72a43bc0
+  midi-qol:
+    onUseMacroName: ''
+  midiProperties:
+    confirmTargets: default
+  magicitems:
+    enabled: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/weapons/crossbows/handcrossbow-green.webp
+folder: fKjsxHiP7ALYIWl0
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.6SgqO7LXUioBiXQa
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078825554
+  modifiedTime: 1746114730583
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: 6SgqO7LXUioBiXQa
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!6SgqO7LXUioBiXQa'

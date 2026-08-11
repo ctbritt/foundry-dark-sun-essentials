@@ -1,0 +1,212 @@
+name: Circle of the Land (Athas)
+type: subclass
+folder: J5Wo2q4FIPHwhxIi
+img: modules/dnd-players-handbook/assets/icons/classes/land.webp
+system:
+  description:
+    value: >-
+      <h3><strong>CIRCLE OF THE LAND</strong></h3><p class="p1">The landscape of
+      Athas is much different than that of other worlds so Circle of the Land
+      druids have a few new land types and associated bonus spells to choose
+      from. The list below should be used in place of the one provided in the
+      Player's Handbook.</p><p class="p5"><em>* Spell Source: Elemental Evil
+      Player's Guide</em></p><p><strong>SANDY DESERT</strong></p><p
+      class="p2">Includes dust basin and sandy waste
+      terrains.</p><table><thead><tr><th>Druid
+      Level</th><th>Spells</th></tr></thead><tbody><tr><td class="td3"><p
+      class="p5">3rd</p></td><td class="td4"><p
+      class="p4">@UUID[Compendium.dnd-players-handbook.spells.phbsplBlur000000]{Blur},
+      @UUID[Compendium.shareddata.ddb-spells.zqT70gnUn336UVd5]{Dust
+      Devil}*</p></td></tr><tr><td class="td1"><p
+      class="p5">5th</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.phbsplCreateFood]{Create
+      Food and Water},
+      @UUID[Compendium.shareddata.ddb-spells.wk6iM4812zYcdKny]{Wall of
+      Sand}*</p></td></tr><tr><td class="td5"><p class="p5">7th</p></td><td
+      class="td6"><p
+      class="p4">@UUID[Compendium.dnd-players-handbook.spells.phbsplGiantInsec]{Giant
+      Insect},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplHallucinat]{Hallucinatory
+      Terrain}</p></td></tr><tr><td class="td1"><p class="p5">9th</p></td><td
+      class="td2"><p
+      class="p4">@UUID[Compendium.shareddata.ddb-spells.5XLrbo2DMvcOK6AK]{Control
+      Winds},
+      @UUID[Compendium.dnd-players-handbook.spells.phbsplCommunewit]{Commune
+      with Nature}</p></td></tr></tbody></table>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  identifier: athas-land
+  classIdentifier: druid
+  advancement:
+    - _id: amRVULpFLpOQ2gPC
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.classes.Item.phbdrdLandsAid00
+            optional: false
+          - uuid: Item.krlyHFpxfBzScVao
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Subclass Features
+    - _id: 9l1ICcnaGx27bdOp
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.classes.Item.phbdrdNaturalRec
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: Subclass Features
+    - _id: tQpnSPCulIWNV3ZV
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.classes.Item.phbdrdNaturesWar
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 10
+      title: Subclass Features
+    - _id: tdzTZSOWJgyhnk5X
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.classes.Item.phbdrdNaturesSan
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Subclass Features
+    - _id: 3QzkY4MkeL5QLWfM
+      type: ScaleValue
+      configuration:
+        identifier: lands-aid
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '3':
+            number: 2
+            faces: 6
+            modifiers: []
+          '10':
+            number: 3
+            faces: 6
+            modifiers: []
+          '14':
+            number: 4
+            faces: 6
+            modifiers: []
+      value: {}
+      title: Lands Aid Damage
+      hint: ''
+    - _id: Jl8WDghiuQe8mHQj
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplBlur000000
+          - optional: false
+            uuid: Compendium.shareddata.ddb-spells.Item.zqT70gnUn336UVd5
+        optional: false
+        spell:
+          ability: []
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: Circle Spells
+      hint: Blur and Dust Devil
+    - _id: q9Z3HO813617Eu3n
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCreateFood
+            optional: false
+          - uuid: Compendium.shareddata.ddb-spells.Item.wk6iM4812zYcdKny
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: ''
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: Circle Spells
+      hint: Create Food and Water, and Wall of Sand
+    - _id: 1vzuwXXHZmCNfmWY
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplGiantInsec
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplHallucinat
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 7
+      title: Circle Spells
+      hint: Giant Insect and Hallucinatory Terrain
+    - _id: KIBSgiugIKsN7Lon
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.shareddata.ddb-spells.Item.5XLrbo2DMvcOK6AK
+            optional: false
+          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCommunewit
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 9
+      title: Circle Spells
+      hint: ''
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+  scene-packer:
+    hash: f88e05870c7df227034ebe1f0b1ed7b8712e3acf
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-classes.Item.DoEwBCcdNjmHizxh
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078802486
+  modifiedTime: 1746114490070
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_id: DoEwBCcdNjmHizxh
+sort: 0
+_key: '!items!DoEwBCcdNjmHizxh'

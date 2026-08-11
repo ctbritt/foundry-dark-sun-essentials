@@ -1,0 +1,156 @@
+folder: o1LYkykMt2p6J6ix
+name: Drake's Bane Acid
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Athas Poisons
+      instruction: >-
+        <p>The poison of the soldier antloid causes the instant rupturing of any
+        flesh it contacts, resulting in severe, burn-like wounds that are
+        difficult to heal and often leave horrible scars. Despite the difference
+        in delivery methods, the poison from the archer and infantry antloid
+        soldier are identical; a skilled poison crafter may create either an
+        injury or contact poison using the harvested poison glands from either
+        type of antloid.</p>
+      required:
+        '2':
+          Compendium-shareddata-ddb-items-Item-VXsUFoyJO7jiGCZk:
+            id: VXsUFoyJO7jiGCZk
+            uuid: Compendium.shareddata.ddb-items.Item.VXsUFoyJO7jiGCZk
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      input:
+        '1':
+          Compendium-world-creature-loot-items-Item-wuqDK0gPAJLSbg9e:
+            id: wuqDK0gPAJLSbg9e
+            uuid: Compendium.world.creature-loot-items.Item.wuqDK0gPAJLSbg9e
+            img: icons/commodities/biological/organ-liver-red.webp
+            type: Item
+            name: Earth Drake Acid Pouch
+            quantity: 1
+            itemType: equipment
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-fH0ZTrw8welBty7Y:
+            id: fH0ZTrw8welBty7Y
+            uuid: Compendium.shareddata.ddb-items.Item.fH0ZTrw8welBty7Y
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: container
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Compendium-world-crafted-items-Item-uAA0V6xmWz8kuttj:
+            id: uAA0V6xmWz8kuttj
+            uuid: Compendium.world.crafted-items.Item.uAA0V6xmWz8kuttj
+            img: >-
+              icons/consumables/potions/bottle-conical-corked-labeled-skull-poison-green.webp
+            type: Item
+            name: Drake's Bane Acid
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: ct
+        value: 2500
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 18
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 18
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 23cd9be7f5f54bc99ac4773880134da6309e982c
+  LocknKey:
+    PickPocketDCFlag: '0'
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>The poison of the soldier antloid causes the instant rupturing of any
+      flesh it contacts, resulting in severe, burn-like wounds that are
+      difficult to heal and often leave horrible scars. Despite the difference
+      in delivery methods, the poison from the archer and infantry antloid
+      soldier are identical; a skilled poison crafter may create either an
+      injury or contact poison using the harvested poison glands from either
+      type of antloid.</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 1800
+    denomination: ct
+  rarity: uncommon
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: drakes-bane-acid
+effects: []
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.xGCZJM2fAktGEHp6
+  duplicateSource: Item.VRT5iaLDZU6XaImq
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114884033
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: xGCZJM2fAktGEHp6
+sort: 0
+_key: '!items!xGCZJM2fAktGEHp6'

@@ -1,0 +1,207 @@
+_id: CgagqQb8p5bKfC4a
+name: Bite
+type: feat
+system:
+  description:
+    value: "<p>Your bite deals [[/damage average]]. At 5th level, when you hit with your bite, the target must make a constitution saving throw (DC + [[8+ @abilities.con.mod+ @prof]] or becomes @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} for 1 minute, repeating the save at the end of each of it's turns. If they succeed, they are immune to this effect for 24 hours.</p><details><summary>More Details</summary><p></p><p>If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p><p>Starting at 5th level,\_any target you hit with your bite must\_make a constitution saving throw.\_The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature\_becomes poisoned\_for 1 minute on a failed save, and doesn't become poisoned\_on a successful one.\_The @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If they succeed, they are immune to this effect for 24 hours.</p><p></p></details>"
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  cover: null
+  crewed: false
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        value: '5'
+        units: ft
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts:
+          - number: null
+            denomination: null
+            bonus: ''
+            types:
+              - piercing
+            custom:
+              enabled: true
+              formula: 1d4[piercing] + @mod
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+        critical:
+          allow: false
+      save:
+        ability:
+          - con
+        dc:
+          calculation: str
+          formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      friendlySave: default
+  identifier: bite
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+flags:
+  ddbimporter:
+    id: '4971899'
+    entityTypeId: '222216831'
+    action: true
+    componentId: 8222565
+    componentTypeId: 1960452172
+    originalName: Bite
+    type: race
+    importId: vgHAadkjDrtMrPlZ
+  infusions:
+    infused: false
+  obsidian:
+    source:
+      type: race
+  core: {}
+  midiProperties:
+    confirmTargets: default
+    saveDamage: default
+    bonusSaveDamage: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  midi-qol:
+    removeAttackDamageButtons: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/commodities/leather/fur-pink.webp
+folder: Fo5YgVIDRMoKVBSu
+sort: 200000
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+_stats:
+  compendiumSource: Actor.vMUiSZV4WNS6lQZV.Item.GgJIbJMz30uqEp9n
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1754411518020
+  modifiedTime: 1781134996208
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!CgagqQb8p5bKfC4a'

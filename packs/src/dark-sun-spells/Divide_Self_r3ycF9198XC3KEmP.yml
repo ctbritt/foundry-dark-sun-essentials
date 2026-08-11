@@ -1,0 +1,309 @@
+name: Divide Self
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>You you create an exact duplicate of yourself in an empty space you can
+      see within 30 feet of you.</p><p>When you cast this spell at the start of
+      each of your turns for the duration, you can determine which of the
+      duplicates is you. It has all of your stats, abilities, and equipment
+      (including magic items). It acts on your initiative, and has its own
+      actions, though it shares its concentration on this spell, and if either
+      of you lose concentration, the spell ends.</p><p>Your current hit points
+      are divided between you and the duplicate (you can divide them however you
+      want) and shares all other resources and abilities with you (including
+      limited use magic items), with any usage by either you or the duplicate
+      depleting the resource for both of you. Your duplicate can take any action
+      you can take, but it can deal a maximum of 15 damage on its turn (any
+      additional damage dealt deals no further damage, when dealing area of
+      effect damage, damage is split between all targets equally up to the
+      maximum).</p><p>If either you or the duplicate is reduced to zero, the
+      spell ends and you become the copy that was not reduced to zero hit
+      points. When the spell ends, if both you and the duplicate are still
+      present, decide which is you, and the other vanishes. Anything that was
+      copied during the spell has the copied version
+      vanish.</p><p><em><strong>At Higher Levels:</strong></em> When you cast
+      this spell using a spell slot of 6th level or higher, the starting hit
+      points of you and the duplicate both increase by 15 (but neither you or
+      the duplicate can be given more maximum hit points) and the maximum damage
+      the duplicate can do during its turn increases by 10 for each slot level
+      above 5th.</p><aside class="notable"><p></p><h3>Split, not
+      Copied.</h3><p>When you switch which of the copies you are, no status
+      effects or resources are exchanged - you become the duplicate and the old
+      you becomes the duplicate for the purposes of the
+      spell.)</p><p></p></aside>
+    chat: ''
+  materials:
+    value: psi
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - somatic
+    - concentration
+    - psionic
+  activation:
+    condition: ''
+    type: bonus
+    value: 1
+  duration:
+    units: minute
+    value: '1'
+  range:
+    units: ft
+    special: ''
+    value: '30'
+  activities:
+    CuAcp11eATxrBv8H:
+      type: utility
+      _id: CuAcp11eATxrBv8H
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: none
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: divide-self
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  level: 5
+  preparation:
+    mode: atwill
+    prepared: false
+  school: psi
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: ''
+      type: self
+      special: ''
+folder: null
+_id: r3ycF9198XC3KEmP
+effects:
+  - name: Divide Self
+    img: modules/5e-spellblock-importer/img/spell.png
+    origin: Item.r3ycF9198XC3KEmP
+    _id: xLu7cvXwWb9oxpX8
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You you create an exact duplicate of yourself in an empty space you can
+      see within 30 feet of you.</p><p>When you cast this spell at the start of
+      each of your turns for the duration, you can determine which of the
+      duplicates is you. It has all of your stats, abilities, and equipment
+      (including magic items). It acts on your initiative, and has its own
+      actions, though it shares its concentration on this spell, and if either
+      of you lose concentration, the spell ends.</p><p>Your current hit points
+      are divided between you and the duplicate (you can divide them however you
+      want) and shares all other resources and abilities with you (including
+      limited use magic items), with any usage by either you or the duplicate
+      depleting the resource for both of you. Your duplicate can take any action
+      you can take, but it can deal a maximum of 15 damage on its turn (any
+      additional damage dealt deals no further damage, when dealing area of
+      effect damage, damage is split between all targets equally up to the
+      maximum).</p><p>If either you or the duplicate is reduced to zero, the
+      spell ends and you become the copy that was not reduced to zero hit
+      points. When the spell ends, if both you and the duplicate are still
+      present, decide which is you, and the other vanishes. Anything that was
+      copied during the spell has the copied version
+      vanish.</p><p><em><strong>At Higher Levels:</strong></em> When you cast
+      this spell using a spell slot of 6th level or higher, the starting hit
+      points of you and the duplicate both increase by 15 (but neither you or
+      the duplicate can be given more maximum hit points) and the maximum damage
+      the duplicate can do during its turn increases by 10 for each slot level
+      above 5th</p>
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!r3ycF9198XC3KEmP.xLu7cvXwWb9oxpX8'
+flags:
+  scene-packer:
+    hash: 1e94101338fc9b9f8e73951e19b952bb8fdf1a8e
+    sourceId: Item.r3ycF9198XC3KEmP
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -940260789
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.r3ycF9198XC3KEmP
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749635
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 1800000
+_key: '!items!r3ycF9198XC3KEmP'

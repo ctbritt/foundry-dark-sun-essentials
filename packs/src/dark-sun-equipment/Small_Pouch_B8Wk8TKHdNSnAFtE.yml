@@ -1,0 +1,106 @@
+name: Small Pouch
+type: container
+effects: []
+system:
+  description:
+    value: |-
+      <div class="ddb">
+      <p>A Pouch holds up to 6 pounds within one-fifth of a cubic foot.</p>
+      </div>
+    chat: ''
+  identifier: pouch
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 1
+    units: lb
+  price:
+    value: 5
+    denomination: cb
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  currency:
+    gp: 0
+    sp: 0
+    cp: 0
+    ct: 0
+    cb: 0
+    lb: 0
+    pp: 0
+    ep: 10
+  properties: []
+  capacity:
+    weight:
+      value: 6
+      units: lb
+    count: null
+    volume:
+      value: null
+      units: cubicFoot
+flags:
+  ddbimporter:
+    originalName: Pouch
+    version: 6.0.55
+    dndbeyond:
+      type: Adventuring Gear
+      isConsumable: false
+      isContainer: true
+      isCustomItem: false
+      homebrew: false
+      isMonkWeapon: false
+      isPack: false
+      levelInfusionGranted: null
+      tags:
+        - Container
+      sources:
+        - sourceId: 145
+          pageNumber: null
+          sourceType: 1
+        - sourceId: 148
+          pageNumber: null
+          sourceType: 2
+    is2014: false
+    is2024: true
+    legacy: false
+    id: 0
+    entityTypeId: 0
+    definitionEntityTypeId: 2103445194
+    definitionId: 403
+  scene-packer:
+    sourceId: Item.xoKO6eL8ADV6ZVtK
+    hash: dd3422f251678d1101a452db4f4110a9da6c6392
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/containers/bags/pouch-simple-leather-tan.webp
+folder: wrgJ5qAZpozmUN0t
+_stats:
+  compendiumSource: Compendium.world.dark-sun-equipment.Item.B8Wk8TKHdNSnAFtE
+  duplicateSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1744078818127
+  modifiedTime: 1766719492045
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: B8Wk8TKHdNSnAFtE
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!B8Wk8TKHdNSnAFtE'

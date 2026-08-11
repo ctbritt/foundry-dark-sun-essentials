@@ -1,0 +1,172 @@
+_id: GyjBupMmKDs653jy
+name: Divine Strike
+type: feat
+system:
+  source:
+    custom: ''
+    book: PHB
+    page: '62'
+    license: ''
+    revision: 1
+    rules: '2014'
+  description:
+    value: >-
+      <div class="rd__b  rd__b--1"><p>At 8th level, you gain the ability to
+      infuse your weapon strikes with divine energy. Once on each of your turns
+      when you hit a creature with a weapon attack, you can cause the attack to
+      deal an extra [[/r 1d8]] thunder damage to the target. When you reach 14th
+      level, the extra damage increases to [[/r 2d8]].</p></div>
+    chat: ''
+  requirements: Cleric 8 (Tempest)
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  type:
+    value: class
+    subtype: ''
+  properties: []
+  cover: null
+  crewed: false
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: damage
+      activation:
+        type: ''
+        value: null
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: inst
+        special: ''
+        override: false
+      effects: []
+      range:
+        units: self
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: ''
+          size: ''
+          width: ''
+          height: ''
+          units: ''
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        critical:
+          allow: false
+          bonus: ''
+        parts:
+          - number: 1
+            denomination: 8
+            bonus: ''
+            types:
+              - thunder
+            custom:
+              enabled: false
+              formula: ''
+            scaling:
+              mode: whole
+              number: null
+              formula: ''
+      sort: 0
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+  identifier: divine-strike
+  enchant: {}
+  prerequisites:
+    level: null
+    repeatable: false
+  advancement: []
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+img: icons/skills/melee/weapons-crossed-swords-yellow-teal.webp
+flags:
+  plutonium:
+    page: subclassFeature
+    source: PHB
+    hash: divine%20strike_cleric_phb_tempest_phb_8_phb
+    propDroppable: subclassFeature
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: k0waAkenBUjTU20q
+sort: 875000
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781134998499
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_key: '!items!GyjBupMmKDs653jy'

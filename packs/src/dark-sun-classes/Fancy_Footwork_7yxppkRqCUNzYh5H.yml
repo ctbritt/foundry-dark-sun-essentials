@@ -1,0 +1,230 @@
+_id: 7yxppkRqCUNzYh5H
+name: Fancy Footwork
+type: feat
+effects:
+  - origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.7yxppkRqCUNzYh5H
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    name: Fancy Footwork
+    _id: MKnb2Fy2BWJPLI5r
+    description: ''
+    transfer: true
+    statuses: []
+    flags:
+      times-up: {}
+      dae:
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: endEveryTurn
+        specialDuration: []
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+        statuses: []
+      effectmacro: {}
+      core:
+        overlay: false
+    tint: '#ffffff'
+    img: icons/equipment/feet/shoes-simple-leaf-green.webp
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.onUseMacroName
+          value: function.game.gps.fancyFootwork, preWaitForAttackRoll
+          priority: 20
+          type: custom
+        - key: macro.itemMacro
+          value: function.game.gps.fancyFootwork
+          priority: 20
+          type: custom
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!7yxppkRqCUNzYh5H.MKnb2Fy2BWJPLI5r'
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p>When you choose this archetype at 3rd level, you learn how to land a
+      strike and then slip away without reprisal. During your turn, if you make
+      a melee attack against a creature, that creature can’t make opportunity
+      attacks against you for the rest of your turn.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      During your turn, if you make a melee attack against a creature, that
+      creature can’t make opportunity attacks against you for the rest of your
+      turn.
+
+      </div>
+  identifier: fancy-footwork
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 507
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Fancy Footwork
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 100
+      featureType: 1
+      class: Rogue
+      classId: 80
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Rogue
+    classId: 12
+    subClass: Swashbuckler
+    subClassId: 80
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Fancy Footwork
+  obsidian:
+    source:
+      type: class
+      text: Swashbuckler
+  scene-packer:
+    sourceId: Item.qLwMgdWjEgCzJdqc
+    hash: 6879e24827eef2cfd8fc813c0daf9fb83a612d5f
+  midi-qol:
+    onUseMacroName: ''
+    rollAttackPerTarget: default
+    effectActivation: false
+    itemCondition: ''
+    effectCondition: ''
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+  dae:
+    macro:
+      name: Fancy Footwork
+      img: icons/equipment/feet/shoes-simple-leaf-green.webp
+      type: script
+      scope: global
+      command: ''
+      author: roRDywD19pu2VxlC
+      ownership:
+        default: 3
+      _id: null
+      folder: null
+      sort: 0
+      flags: {}
+      _stats:
+        systemId: dnd5e
+        systemVersion: 4.1.2
+        coreVersion: '12.331'
+        createdTime: null
+        modifiedTime: null
+        lastModifiedBy: null
+        compendiumSource: null
+        duplicateSource: null
+  LocknKey:
+    IDKeysFlag: ''
+    RemoveKeyonUseFlag: false
+    LPFormulaFlag: ''
+    LPFormulaOverrideFlag: false
+    LBFormulaFlag: ''
+    LBFormulaOverrideFlag: false
+    ReplacementItemFlag: ''
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/equipment/feet/shoes-simple-leaf-green.webp
+folder: IEz35CZVpyYPq51b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998481
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!7yxppkRqCUNzYh5H'

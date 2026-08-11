@@ -1,0 +1,190 @@
+_id: 1UUxz5881hd9xIbE
+name: Rakish Audacity
+type: feat
+effects:
+  - name: Rakish Audacity
+    origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.1UUxz5881hd9xIbE
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    flags:
+      dnd5e: {}
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    img: icons/skills/melee/sword-stuck-glowing-pink.webp
+    _id: EHC2UovejvdLXl6I
+    type: base
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: '@abilities.cha.mod'
+          priority: 20
+          type: add
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 235
+      time: 1404
+      turn: 8
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!1UUxz5881hd9xIbE.EHC2UovejvdLXl6I'
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+  advancement: []
+  description:
+    value: >-
+      <div class="ddb">
+
+      <p class="Core-Styles_Core-Body">Starting at 3rd level, your confidence
+      propels you into battle. You can give yourself a bonus to your initiative
+      rolls equal to your Charisma modifier.</p>
+
+      <p class="Core-Styles_Core-Body">You also gain an additional way to use
+      your Sneak Attack; you don’t need advantage on the attack roll to use your
+      Sneak Attack against a creature if you are within 5 feet of it, no other
+      creatures are within 5 feet of you, and you don’t have disadvantage on the
+      attack roll. All the other rules for Sneak Attack still apply to you.</p>
+
+      </div>
+    chat: >-
+      <div class="ddb">
+
+      You add your CHA modifier (+ [[@abilities.cha.mod]]) to your initiative
+      rolls. You don’t need advantage on the attack roll to use your Sneak
+      Attack against a creature if you are within 5 ft. of it, no other
+      creatures are within 5 ft. of you, and you don’t have disadvantage on the
+      attack roll.
+
+      </div>
+  identifier: rakish-audacity
+  source:
+    book: SCAG
+    page: ''
+    license: ''
+    custom: ''
+    rules: '2014'
+    revision: 1
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 3
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+flags:
+  ddbimporter:
+    isChoiceFeature: false
+    id: 508
+    type: class
+    entityTypeId: 12168134
+    is2014: true
+    is2024: false
+    legacy: false
+    originalName: Rakish Audacity
+    dndbeyond:
+      requiredLevel: 3
+      displayOrder: 200
+      featureType: 1
+      class: Rogue
+      classId: 80
+      entityType: class-feature
+      levelScale: null
+      levelScales: []
+      limitedUse: []
+    class: Rogue
+    classId: 12
+    subClass: Swashbuckler
+    subClassId: 80
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+    chrisEffectsApplied: true
+    chrisPreEffectName: Rakish Audacity
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  dae:
+    alwaysActive: false
+    activeEquipped: false
+  midi-qol:
+    forceCEOff: true
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+img: icons/skills/melee/sword-stuck-glowing-pink.webp
+folder: IEz35CZVpyYPq51b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781134998459
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+sort: 0
+_key: '!items!1UUxz5881hd9xIbE'

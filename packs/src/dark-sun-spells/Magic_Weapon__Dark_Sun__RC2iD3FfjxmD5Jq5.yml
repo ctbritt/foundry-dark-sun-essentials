@@ -1,0 +1,386 @@
+type: spell
+system:
+  activities:
+    enchantMagicWeap:
+      type: enchant
+      _id: enchantMagicWeap
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: rkklPAckRjSS4PHh
+          level:
+            min: null
+            max: 3
+          riders:
+            activity: []
+            effect: []
+            item: []
+        - _id: bz9V2aXXaOf1YTIl
+          level:
+            min: 4
+            max: 5
+          riders:
+            activity: []
+            effect: []
+            item: []
+        - _id: zPNrIwcBH34WGxEu
+          level:
+            min: 6
+            max: null
+          riders:
+            activity: []
+            effect: []
+            item: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      enchant: {}
+      restrictions:
+        allowMagical: false
+        categories: []
+        properties: []
+        type: weapon
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb"><p>You touch a nonmagical weapon. Until the spell ends,
+      that weapon becomes a magic weapon with a +1 bonus to attack rolls and
+      damage rolls. This spell also makes non-metal weapons count as
+      metal</p><p><em><strong>At Higher Levels.</strong></em> When you cast this
+      spell using a spell slot of 4th level or higher, the bonus increases to
+      +2. When you use a spell slot of 6th level or higher, the bonus increases
+      to +3.</p></div>
+    chat: ''
+  identifier: magic-weapon
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2014'
+    revision: 1
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+  duration:
+    value: '1'
+    units: hour
+  level: 2
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: touch
+    special: ''
+  school: trs
+  target:
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: ''
+      size: ''
+      width: ''
+      height: ''
+      units: ft
+effects:
+  - img: icons/skills/melee/strike-blade-hooked-green-purple.webp
+    name: Magic Weapon +1
+    statuses: []
+    duration:
+      value: 3600
+      units: seconds
+      expiry: turnStart
+      expired: false
+    tint: '#ffffff'
+    transfer: false
+    disabled: false
+    flags:
+      dae:
+        transfer: false
+        stackable: noneNameOnly
+        specialDuration: []
+      ddbimporter:
+        disabled: false
+        effectIdLevel:
+          min: null
+          max: 3
+      midi-qol:
+        forceCEOff: true
+      core: {}
+      dnd5e:
+        persistSourceMigration: true
+    description: >-
+      This weapon has become a +1 magic weapon, granting a bonus to attack and
+      damage rolls.
+    _id: rkklPAckRjSS4PHh
+    origin: null
+    type: enchantment
+    system:
+      changes:
+        - key: name
+          value: '{} (Magic Weapon +1)'
+          priority: 20
+          type: override
+        - key: system.magicalBonus
+          value: 1
+          priority: 20
+          type: override
+        - key: system.properties
+          value: mgc
+          priority: 20
+          type: add
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!RC2iD3FfjxmD5Jq5.rkklPAckRjSS4PHh'
+  - img: icons/skills/melee/strike-blade-hooked-green-purple.webp
+    name: Magic Weapon +2
+    statuses: []
+    duration:
+      value: 3600
+      units: seconds
+      expiry: turnStart
+      expired: false
+    tint: '#ffffff'
+    transfer: false
+    disabled: false
+    flags:
+      dae:
+        transfer: false
+        stackable: noneNameOnly
+        specialDuration: []
+      ddbimporter:
+        disabled: false
+        effectIdLevel:
+          min: 4
+          max: 5
+      midi-qol:
+        forceCEOff: true
+      core: {}
+      dnd5e:
+        persistSourceMigration: true
+    description: >-
+      This weapon has become a +2 magic weapon, granting a bonus to attack and
+      damage rolls.
+    _id: bz9V2aXXaOf1YTIl
+    origin: null
+    type: enchantment
+    system:
+      changes:
+        - key: name
+          value: '{} (Magic Weapon +2)'
+          priority: 20
+          type: override
+        - key: system.magicalBonus
+          value: 2
+          priority: 20
+          type: override
+        - key: system.properties
+          value: mgc
+          priority: 20
+          type: add
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!RC2iD3FfjxmD5Jq5.bz9V2aXXaOf1YTIl'
+  - img: icons/skills/melee/strike-blade-hooked-green-purple.webp
+    name: Magic Weapon +3
+    statuses: []
+    duration:
+      value: 3600
+      units: seconds
+      expiry: turnStart
+      expired: false
+    tint: '#ffffff'
+    transfer: false
+    disabled: false
+    flags:
+      dae:
+        transfer: false
+        stackable: noneNameOnly
+        specialDuration: []
+      ddbimporter:
+        disabled: false
+        effectIdLevel:
+          min: 6
+          max: null
+      midi-qol:
+        forceCEOff: true
+      core: {}
+      dnd5e:
+        persistSourceMigration: true
+    description: >-
+      This weapon has become a +3 magic weapon, granting a bonus to attack and
+      damage rolls.
+    _id: zPNrIwcBH34WGxEu
+    origin: null
+    type: enchantment
+    system:
+      changes:
+        - key: name
+          value: '{} (Magic Weapon +3)'
+          priority: 20
+          type: override
+        - key: system.magicalBonus
+          value: 3
+          priority: 20
+          type: override
+        - key: system.properties
+          value: mgc
+          priority: 20
+          type: add
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!RC2iD3FfjxmD5Jq5.zPNrIwcBH34WGxEu'
+name: Magic Weapon (Dark Sun)
+flags:
+  ddbimporter:
+    id: 138452
+    definitionId: 2178
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: false
+    originalName: Magic Weapon
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 257
+        sourceType: 1
+    tags:
+      - Buff
+    version: 6.4.20
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: true
+    effectsApplied: true
+  midi-qol:
+    removeAttackDamageButtons: default
+    forceCEOff: true
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  walledtemplates:
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    wallsBlock: unwalled
+    wallRestriction: light
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+    snapCenter: false
+    snapCorner: false
+    snapSideMidpoint: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: -1889486348
+img: icons/skills/melee/strike-blade-hooked-green-purple.webp
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1755101575754
+  modifiedTime: 1784910749598
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: RC2iD3FfjxmD5Jq5
+sort: 2650000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!RC2iD3FfjxmD5Jq5'

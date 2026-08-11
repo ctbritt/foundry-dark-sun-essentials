@@ -1,0 +1,2072 @@
+name: Aarakocra Warrior
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: DarkSunCreatureCatalog
+    hash: aarakocra%20warrior_darksuncreaturecatalog
+  token-variants:
+    randomizerSettings:
+      tokenCreate: true
+      tokenCopyPaste: true
+      tokenToPortrait: false
+      diffImages: false
+      syncImages: false
+      nonRepeat: true
+      tokenName: false
+      actorName: false
+      keywords: false
+      shared: false
+      wildcard: true
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1769905006543
+  modifiedTime: 1769905006543
+  lastModifiedBy: wgCeShTrqHJFBbDr
+img: https://i.imgur.com/C9ckpEq.jpg?1754943506253
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  abilities:
+    str:
+      value: 10
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 16
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 12
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 11
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 12
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 11
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 2
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: default
+      flat: null
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      fly: '50'
+      walk: '20'
+      units: ft
+      hover: false
+      ignoredDifficultTerrain: []
+    attunement:
+      max: 3
+    senses:
+      darkvision: 0
+      blindsight: 0
+      tremorsense: 0
+      truesight: 0
+      units: ft
+      special: ''
+    spellcasting: ''
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      value: 44
+      max: 44
+      temp: 0
+      tempmax: 0
+      formula: 8d8 + 7
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+    price:
+      value: null
+      denomination: gp
+  details:
+    biography:
+      value: >-
+        <p><a
+        href="https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view"
+        target="_blank" rel="noopener noreferrer">Monster Manual - Dark Sun 5th
+        Edition by Stanislav Zabielin</a> by <a
+        href="https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/"
+        target="_blank" rel="noopener noreferrer">auquid</a> and <a
+        href="https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0"
+        target="_blank" rel="noopener noreferrer">Athas Arena Forum by Nathan
+        Hasle</a></p><p>The vulture-folk wheel high in the still sky</p><p>Above
+        the rocky badlands and scrub plains, watching for movement and other
+        signs of prey below. Most Athasians revile the aarakocras for Their
+        willingness to extort, rob, and even eat travelers in the wastes. To
+        survive and prosper, these desert scavengers band together in insular
+        tribes, each staking out-and fiercely defending-its
+        territory.</p><p>Lore</p><p>Aarakocras are hunters and scavengers that
+        eat just about any meat they find. They loot whatever they can from
+        victims claimed by the wastes. Most residents of Athas try to avoid
+        aarakocras, considering them to be sordid opportunists, but the
+        vulture-folk have few sworn enemies. The aarakocras keep to the skies,
+        and their homes are built high on cliffs or mesa tops. From there,
+        scouts search the nearby desert for food and intruders. Their sharp eyes
+        miss little in the barren wilds, and a tribe brooks no intrusion on its
+        territory without receiving tribute in compensation. Lost travelers who
+        pay the requested amount might receive guidance to a landmark or a safer
+        part of the wilderness. If rebuffed, the aarakocras won't hesitate to
+        kidnap members of a trespassing party and hold them for ransom. To avoid
+        harassment, merchant houses sometimes make deals with powerful aarakocra
+        tribes; weaker tribes, reluctant to draw the ire of their stronger kin,
+        leave those merchants alone. Despite their reputation as distasteful
+        scavengers, aarakocras are deeply spiritual. They revere the sky and the
+        sun as primal entities. Those members of a tribe that wield primal power
+        use spirits and elementals to aid their kin in mundane tasks as well as
+        in battle. Aarakocras are rarely found in the company of other
+        humanoids, although they sometimes work with kenku tribes. They also
+        follow raiders or dangerous monsters from the air, picking off survivors
+        of the predators' attacks. Aarakocras train flying beasts as pets, and
+        they use rituals to bring air elementals and spirits into the world.
+        Slavers steal aarakocra young and eggs, selling the creatures to nobles
+        and merchant houses as slaves. These nobles and merchants, in turn, put
+        the vulture folk to work as soldiers and scouts.</p><p>Info</p><p>The
+        warriors of an aarakocra tribe descend from the air in numbers, flapping
+        in close enough to thrust their spears into their foes. The unnerving
+        battle shrieks of the warriors echo eerily in the canyons of the
+        badlands and resound far across the desert plains.</p>
+      public: ''
+    alignment: Neutral
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      value: humanoid
+      subtype: Aarakocra
+    habitat:
+      value:
+        - type: desert
+      custom: ''
+    cr: 1
+    treasure:
+      value: []
+  resources:
+    legact:
+      max: 0
+      spent: 0
+    legres:
+      max: 0
+      spent: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    revision: 1
+    rules: '2014'
+    custom: ''
+    book: DarkSunCreatureCatalog
+    page: ''
+    license: ''
+  traits:
+    size: med
+    di:
+      value: []
+      custom: ''
+      bypasses: []
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value: []
+      custom: ''
+    languages:
+      value:
+        - common
+        - auran
+      custom: ''
+      communication: {}
+    important: false
+prototypeToken:
+  name: Aarakocra Warrior
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: tokens/Dark%20Sun/RedSunCharacters22024/Aarakocra*.png
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 0
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    perceptive:
+      canbeSpottedFlag: false
+      RevealwhenSpottedFlag: false
+      PPDCFlag: -1
+      PPPLFlag: 0
+      APDCFlag: null
+      APPLFlag: 0
+      SpottingRangeFlag: -1
+      SpottingMessageFlag: ''
+      resetSpottedbyMoveFlag: true
+      MATTTriggerTileFlag: ''
+      MATTTriggerConditionsFlag:
+        NewlySpotted: never
+    Rideable:
+      issetRideableFlag: true
+      MountonEnterFlag: false
+      AutoMountBlackListFlag: ''
+      AutoMountWhiteListFlag: ''
+      MaxRiderFlag: null
+      CustomRidingheightFlag: null
+      UseRidingHeightFlag: false
+      RidersScaleFlag: 1
+      RiderPositioningFlag: RowPlacement
+      RiderOffsetFlag:
+        - 0
+        - 0
+      RiderRotOffsetFlag: 0
+      GrapplePlacementFlag: RowBelow
+      TokenFormFlag: TokenFormCircle
+      InsideMovementFlag: false
+      SpawnRidersFlag: ''
+      WorldMEffectOverrideFlag: false
+      MountingEffectsFlag: ''
+      SelfApplyEffectsFlag: false
+      forMountEffectsFlag: ''
+      canbeGrappledFlag: true
+      GrapplingEffectsFlag: ''
+      CanbePilotedFlag: false
+      CheckPilotedCollisionFlag: false
+      PilotedbyDefaultFlag: false
+  randomImg: true
+  appendNumber: false
+  prependAdjective: false
+  depth: 1
+items:
+  - _id: 0LlArE5f16GSvp10
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>The Aarakocra makes two attacks. Two
+          with his talons or his spear; or two with his Javelins.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        xN6MiPRhCKlE1Igm:
+          _id: xN6MiPRhCKlE1Igm
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            otherActivityAsParentType: true
+            skipConcentrationCheck: false
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          otherActivityAsParentType: true
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+        items: []
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          multiattack_aarakocra%20warrior_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.0LlArE5f16GSvp10'
+  - _id: hLZHZ9kX07DfMa1Z
+    name: Talon
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p><i>Melee Weapon Attack:</i> +5 to hit,
+          reach 5 ft., one target. <i>Hit:</i> 5 (1d4 + 3) damage.</p></div>
+        chat: ''
+      range:
+        value: 5
+        long: null
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: natural
+        baseItem: ''
+      properties: []
+      activities:
+        HCLmR0HhsrTtnbX6:
+          _id: HCLmR0HhsrTtnbX6
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: false
+            type:
+              value: melee
+              classification: ''
+            ability: dex
+            bonus: ''
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - slashing
+                number: 1
+                denomination: 4
+                bonus: '@mod'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            otherActivityAsParentType: true
+            skipConcentrationCheck: false
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          otherActivityAsParentType: true
+      identifier: talon
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      attunement: ''
+      attuned: false
+      equipped: true
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      crew:
+        value: []
+    img: icons/commodities/claws/claw-bird-pink.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: DarkSunCreatureCatalog
+        hash: >-
+          talon_aarakocra%20warrior_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.hLZHZ9kX07DfMa1Z'
+  - _id: PdNDQ9fojxpdpl3b
+    name: Summoning Air Elementals
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>Five aarakocra within 30 feet of each
+          other can magically summon an air elemental. Each of the five must use
+          its action and movement on three consecutive turns to perform an
+          aerial dance and must maintain concentration while doing so (as if
+          concentrating on a spell). When all five have finished their third
+          turn of the dance, the elemental appears in an unoccupied space within
+          60 feet of them. It is friendly toward them and obeys their spoken
+          commands. It remains for 1 hour, until it or all its summoners die, or
+          until any of its summoners dismisses it as a bonus action. A summoner
+          can't perform the dance again until it finishes a short rest. When the
+          elemental returns to the Elemental Plane of Air, any aarakocra within
+          5 feet of it can return with it.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties:
+        - concentration
+      advancement: []
+      activities:
+        8C1agIijhGVfOl0c:
+          type: summon
+          _id: 8C1agIijhGVfOl0c
+          sort: 0
+          activation:
+            type: action
+            override: false
+            condition: ''
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description:
+            chatFlavor: ''
+          duration:
+            units: turn
+            concentration: true
+            override: false
+            value: '3'
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+            special: ''
+          target:
+            template:
+              contiguous: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+            identifier: ''
+          bonuses:
+            ac: ''
+            hd: ''
+            hp: ''
+            attackDamage: ''
+            saveDamage: ''
+            healing: ''
+          creatureSizes: []
+          creatureTypes: []
+          match:
+            attacks: false
+            disposition: false
+            proficiency: false
+            saves: false
+            ability: ''
+          profiles:
+            - count: ''
+              name: ''
+              _id: GS60LhFF4R6w5zpj
+              uuid: Compendium.dnd-monster-manual.actors.Actor.mmAirElemental00
+              level:
+                min: null
+                max: null
+              types: []
+          summon:
+            prompt: true
+            mode: ''
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          friendlySummon: true
+          name: ''
+      identifier: summoning-air-elementals
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+        items: []
+    img: icons/magic/air/wind-tornado-wall-blue.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          summoning%20air%20elementals_aarakocra%20warrior_darksuncreaturecatalog_darksuncreaturecatalog
+      dnd5e:
+        riders:
+          activity: []
+      walledtemplates:
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        wallsBlock: unwalled
+        wallRestriction: light
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+        snapCenter: false
+        snapCorner: false
+        snapSideMidpoint: false
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.PdNDQ9fojxpdpl3b'
+  - _id: fVMHrODRfxprVTbS
+    name: Dive Attack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: DarkSunCreatureCatalog
+        page: ''
+        license: ''
+        rules: '2014'
+        revision: 1
+      description:
+        value: >-
+          <div class="rd__b  rd__b--3"><p>If the aarakocra is flying and dives
+          at least 30 feet straight toward a target and then hits it with a
+          melee weapon attack, the attack deals an extra 3 (1d6) damage to the
+          target.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: []
+      activities:
+        1grs1YmYgYdr5VJj:
+          _id: 1grs1YmYgYdr5VJj
+          type: damage
+          name: ''
+          activation:
+            type: ''
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          damage:
+            critical:
+              allow: false
+            parts:
+              - types: []
+                number: 1
+                denomination: 6
+                bonus: ''
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+          sort: 0
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            otherActivityAsParentType: true
+            skipConcentrationCheck: false
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+      identifier: dive-attack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        repeatable: false
+        items: []
+    img: icons/magic/fire/projectile-wave-arrow.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: DarkSunCreatureCatalog
+        hash: >-
+          dive%20attack_aarakocra%20warrior_darksuncreaturecatalog_darksuncreaturecatalog
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.fVMHrODRfxprVTbS'
+  - name: Spear
+    system:
+      description:
+        value: ''
+        chat: ''
+      price:
+        value: 1
+        denomination: gp
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 3
+        units: lb
+      rarity: ''
+      attunement: ''
+      cover: null
+      range:
+        value: 20
+        long: 60
+        units: ft
+        reach: null
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      damage:
+        versatile:
+          number: null
+          denomination: 0
+          bonus: ''
+          types: []
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: null
+            formula: ''
+        base:
+          number: 1
+          denomination: 6
+          types:
+            - piercing
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+          bonus: '@mod'
+      armor:
+        value: null
+      hp:
+        value: null
+        max: null
+        dt: null
+        conditions: ''
+      type:
+        value: simpleM
+        baseItem: spear
+      magicalBonus: null
+      properties:
+        - thr
+        - ver
+      proficient: null
+      activities:
+        HiR3FA2Uc0oOAHU9:
+          type: attack
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: inst
+            special: ''
+            override: false
+          effects: []
+          range:
+            value: '20'
+            units: ft
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: ''
+              choice: false
+              special: ''
+            prompt: false
+            override: false
+          attack:
+            ability: ''
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: ''
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts: []
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          sort: 0
+          _id: HiR3FA2Uc0oOAHU9
+          name: ''
+          flags: {}
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+            identifier: ''
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      ammunition: {}
+      mastery: sap
+      identifier: spear
+      crew:
+        value: []
+      attuned: false
+      equipped: true
+    _id: lYH4tqd2q0tB4tsM
+    type: weapon
+    folder: FL1Jee9DzStc7vM3
+    img: modules/dnd-players-handbook/assets/icons/items/spear.webp
+    effects: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      createdTime: 1779357067573
+      modifiedTime: 1779357067603
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.lYH4tqd2q0tB4tsM'
+  - name: Javelin
+    system:
+      description:
+        value: ''
+        chat: ''
+      price:
+        value: 5
+        denomination: cb
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 2
+        units: lb
+      rarity: ''
+      attunement: ''
+      cover: null
+      range:
+        value: 30
+        long: 120
+        units: ft
+        reach: null
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      damage:
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: true
+            formula: ''
+          scaling:
+            mode: ''
+            number: null
+            formula: ''
+        base:
+          number: 1
+          denomination: 6
+          types:
+            - piercing
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+          bonus: '@mod'
+      armor:
+        value: null
+      hp:
+        value: null
+        max: null
+        dt: null
+        conditions: ''
+      type:
+        value: simpleM
+        baseItem: javelin
+      magicalBonus: null
+      properties:
+        - thr
+      proficient: null
+      activities:
+        r1hUkUrLD8kqx8X0:
+          type: attack
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+          duration:
+            concentration: false
+            value: ''
+            units: inst
+            special: ''
+            override: false
+          effects: []
+          range:
+            value: '30'
+            units: ft
+            special: ''
+            override: false
+          target:
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ft
+            affects:
+              count: ''
+              type: ''
+              choice: false
+              special: ''
+            prompt: false
+            override: false
+          attack:
+            ability: ''
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: melee
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts: []
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          sort: 0
+          _id: r1hUkUrLD8kqx8X0
+          name: ''
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: ''
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          otherActivityUuid: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+      ammunition: {}
+      mastery: slow
+      identifier: javelin
+      crew:
+        value: []
+      attuned: false
+      equipped: true
+    _id: IUTlps4S8BVAbp3C
+    type: weapon
+    folder: FL1Jee9DzStc7vM3
+    img: modules/dnd-players-handbook/assets/icons/items/javelin.webp
+    effects: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+          effect: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      createdTime: 1779357067613
+      modifiedTime: 1779357067632
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.IUTlps4S8BVAbp3C'
+  - name: Summon Elemental
+    system:
+      description:
+        value: >-
+          <p>You call forth an Elemental spirit. It manifests in an unoccupied
+          space that you can see within range and uses the
+          <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS]{Elemental
+          Spirit}</strong> stat block. When you cast the spell, choose an
+          element: Air, Earth, Fire, or Water. The creature resembles a bipedal
+          form wreathed in the chosen element, which determines certain details
+          in its stat block. The creature disappears when it drops to 0 Hit
+          Points or when the spell ends.</p><p>The creature is an ally to you
+          and your allies. In combat, the creature shares your Initiative count,
+          but it takes its turn immediately after yours. It obeys your verbal
+          commands (no action required by you). If you don’t issue any, it takes
+          the &amp;Reference[Dodge] action and uses its movement to avoid
+          danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use
+          the spell slot’s level for the spell’s level in the stat
+          block.</p><section class="fvtt advice"
+          style="margin:0.5rem;padding:0.5rem"><article><p>In addition to the
+          noted usage of the spell's level in the spirit's Traits and Actions,
+          the following attributes are also
+          affected.</p><table><caption>Elemental
+          Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the
+          spell’s level</td></tr><tr><td><strong>HP</strong></td><td>50 + 10 for
+          each spell level above
+          4</td></tr><tr><td><strong>Speed</strong></td><td>40 ft.; Burrow 40
+          ft. (Earth only); Fly 40 ft. (hover; Air only); Swim 40 ft. (Water
+          only)</td></tr><tr><td><strong>PB</strong></td><td>equals your
+          Proficiency Bonus</td></tr></tbody></table></article></section>
+        chat: ''
+      source:
+        custom: ''
+        rules: '2024'
+        revision: 1
+      activation:
+        type: action
+        condition: ''
+        value: 1
+      duration:
+        value: '1'
+        units: hour
+      target:
+        affects:
+          type: ''
+          count: ''
+          choice: false
+        template:
+          units: ft
+          contiguous: false
+          type: ''
+      range:
+        value: '90'
+        units: ft
+        special: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      level: 4
+      school: con
+      properties:
+        - vocal
+        - somatic
+        - material
+        - concentration
+      materials:
+        value: air, a pebble, ash, and water inside a gold-inlaid vial worth 400+ GP
+        consumed: false
+        cost: 0
+        supply: 0
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: utility
+          activation:
+            type: action
+            value: null
+            override: true
+            condition: ''
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: false
+          description:
+            chatFlavor: ''
+          duration:
+            units: hour
+            concentration: true
+            override: true
+            value: '1'
+          effects: []
+          range:
+            override: false
+            units: self
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          uses:
+            spent: 0
+            max: '1'
+            recovery:
+              - period: sr
+                type: recoverAll
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          useConditionText: ''
+          effectConditionText: ''
+          name: 'Summon Elemental: Air'
+          useConditionReason: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            forceDamageDialog: ''
+            otherActivityAsParentType: true
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            autoCEEffects: default
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            skipConcentrationCheck: false
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          otherActivityId: none
+          flags: {}
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+          otherActivityAsParentType: true
+      identifier: summon-elemental
+      method: atwill
+      prepared: 1
+      ability: ''
+      sourceClass: ''
+    _id: nocAG2bRszsvYVMX
+    type: spell
+    img: icons/magic/symbols/elements-air-earth-fire-water.webp
+    effects: []
+    folder: qi3IbnEwap7mRw4b
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          activity: []
+      core: {}
+      midi-qol:
+        effectActivation: false
+        rollAttackPerTarget: default
+        itemCondition: ''
+        reactionCondition: ''
+        otherCondition: ''
+        effectCondition: ''
+        AoETargetType: any
+        AoETargetTypeIncludeSelf: true
+        autoTarget: default
+        removeAttackDamageButtons: default
+      midiProperties:
+        nodam: false
+        fulldam: false
+        halfdam: false
+        autoFailFriendly: false
+        autoSaveFriendly: false
+        rollOther: false
+        critOther: false
+        offHandWeapon: false
+        magicdam: false
+        magiceffect: false
+        concentration: false
+        toggleEffect: false
+        ignoreTotalCover: false
+        confirmTargets: never
+        noConcentrationCheck: false
+        idr: false
+        idi: false
+        idv: false
+        ida: false
+      walledtemplates:
+        hideBorder: globalDefault
+        hideHighlighting: globalDefault
+        showOnHover: globalDefault
+        wallsBlock: unwalled
+        wallRestriction: light
+        noAutotarget: false
+        addTokenSize: false
+        attachToken: na
+        snapCenter: false
+        snapCorner: false
+        snapSideMidpoint: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: wgCeShTrqHJFBbDr
+      createdTime: 1779357067642
+      modifiedTime: 1779357067662
+    ownership:
+      default: 0
+    _key: '!actors.items!9FkJcs0Qlj3D74Pm.nocAG2bRszsvYVMX'
+effects: []
+folder: 46ElBPYGc8u97wgJ
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: 9FkJcs0Qlj3D74Pm
+sort: 0
+_key: '!actors!9FkJcs0Qlj3D74Pm'

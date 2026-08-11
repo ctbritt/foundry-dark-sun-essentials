@@ -1,0 +1,2183 @@
+system:
+  abilities:
+    str:
+      value: 10
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 16
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 22
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 18
+      proficient: 1
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 16
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: ''
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  details:
+    cr: 16
+    biography:
+      value: >-
+        <h1>Innate Psionics</h1>Agis is a 16th‑level psionic manifester (spell
+        save DC 20, +12 to hit with psionic attacks). His “powers” count as
+        spells for dispel/counter purposes, but he uses no material components.
+        He does not suffer from the Defiling vs. Preserving dichotomy—his
+        discipline is purely mental.<br />At‑Will (Talents). Mind Thrust
+        (psychic 2d10, Int save or disadvantage on next attack), Telekinetic
+        Push/Pull (5 ft. move, Str save), Detect Thoughts, Mage Hand
+        (invisible), Minor Illusion, Psionic Shield (see Reactive Aegis).<br
+        />1/Turn Augment (no slot): He can add +1d10 psychic damage to a psionic
+        attack or impose disadvantage on one target’s next saving throw vs. his
+        powers (declare on hit or failed save).<br />Power Slots (recharge on
+        long rest):<br />1st (4): Psionic Shielding Pulse (as shield), Compel
+        Surrender (as command).<br />2nd (3): Mind Spike, Hold Person,
+        Levitate.<br />3rd (3): Counterspell, Dispel Magic, Hypnotic Pattern.<br
+        />4th (3): Resilient Sphere, Banishment.<br />5th (2): Telekinesis,
+        Synaptic Static.<br />6th (1): Mass Suggestion.<br />7th (1):
+        Forcecage.<br />8th (1): Mind Blank (always active on himself; slot
+        already expended).<h1>Passive Features</h1>Precognitive Insight (3/Day).
+        After seeing a d20 roll (before outcome), Agis can add or subtract 1d10
+        to that roll (ally or enemy).<br />Psionic Aegis. While Agis isn’t
+        incapacitated, he gains a spectral force field. The first time each
+        round he takes damage, reduce it by 10 (after resistance). If the attack
+        was melee, the attacker takes 5 psychic damage.<br />Dual Concentration.
+        Agis can maintain concentration on up to two psionic powers at once.
+        Each time he takes damage he makes a separate Constitution save for each
+        effect (DC 10 or half damage). If he fails one, he chooses which effect
+        ends.<br />Legendary Resistance (3/Day).<br />Magic/Psionic Resistance.
+        Advantage on saving throws vs. spells and psionic effects.<h1>Scaling
+        Suggestions</h1>Desired CR Adjustments<br />15 Reduce HP to 180; remove
+        one use of Precognitive Insight; Telekinetic Crush deals 5d8 and
+        restrains only one target.<br />17 Increase HP to 235; Psionic Aegis
+        reduction to 12; add an extra 6th-level slot (e.g., Mass Suggestion
+        twice).<br />18 Add a 9th-level slot for Psychic Scream (1/day),
+        legendary action cost 3.<br />If you’d like, I can format this as a
+        Foundry VTT actor JSON next (let me know your preferred system/module
+        specifics), or create a matching portrait token. Want that?
+      public: ''
+    alignment: Lawful Good
+    type:
+      subtype: Human
+      value: humanoid
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    habitat:
+      value: []
+      custom: ''
+    treasure:
+      value: []
+  resources:
+    legact:
+      value: 3
+      max: 3
+    legres:
+      value: 0
+      max: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  attributes:
+    ac:
+      calc: flat
+      flat: 19
+    hp:
+      value: 205
+      max: 205
+      formula: 27d8 + 81
+      temp: 0
+      tempmax: 0
+    senses:
+      truesight: 30
+      special: ''
+      darkvision: null
+      blindsight: null
+      tremorsense: null
+      units: null
+    movement:
+      walk: 30
+      burrow: null
+      climb: null
+      fly: null
+      swim: null
+      units: null
+      hover: false
+    init:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    attunement:
+      max: 3
+    spellcasting: ''
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty:
+      value: null
+    hd:
+      spent: 0
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    spell:
+      level: 0
+  traits:
+    ci:
+      value:
+        - charmed
+        - frightened
+      custom: ''
+    di:
+      value: []
+      bypasses: []
+      custom: ''
+    dr:
+      value:
+        - psychic
+        - bludgeoning
+        - piercing
+        - slashing
+      bypasses:
+        - mgc
+      custom: ''
+    languages:
+      value:
+        - common
+        - elvish
+        - dwarvish
+      custom: ''
+      communication:
+        telepathy:
+          value: 120
+          units: ft
+    size: med
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    important: true
+  currency:
+    pp: 0
+    gp: 0
+    sp: 0
+    cp: 0
+    ct: 0
+    cb: 0
+    lb: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 1
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+      override: null
+  source:
+    revision: 1
+    rules: '2024'
+items:
+  - name: Multiattack
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Agis uses Mind Lance twice or Mind Lance once and a Telekinetic
+          Crush if available.</p>
+        chat: ''
+      activities:
+        S39v4xQBa8RpCcgb:
+          _id: S39v4xQBa8RpCcgb
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/magic/death/skull-trio-badge-purple.webp
+    _id: XYUZpOTUbVOzg5a6
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.XYUZpOTUbVOzg5a6'
+  - name: Mind Lance
+    type: weapon
+    system:
+      description:
+        value: >-
+          <p>Ranged Psionic Attack: [[/attack]] to hit, range 120 ft., one
+          creature. Hit: [[/damage average]] damage and the target makes a DC 20
+          Int save; on a fail it has disadvantage on the next attack roll or
+          saving throw before the end of its next turn (Agis’s choice).</p>
+        chat: ''
+      identified: true
+      equipped: true
+      attunement: required
+      proficient: 1
+      quantity: 1
+      type:
+        value: natural
+        baseItem: ''
+      activities:
+        sY74SoXzvb9DUQX1:
+          _id: sY74SoXzvb9DUQX1
+          type: attack
+          activation:
+            type: action
+            value: 1
+            override: false
+          attack:
+            ability: dex
+            type:
+              value: ranged
+            flat: true
+            bonus: '12'
+            critical:
+              threshold: null
+          damage:
+            parts: []
+            critical: {}
+            includeBase: true
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+      range:
+        value: 120
+        long: null
+        units: ft
+        reach: null
+      damage:
+        base:
+          number: 4
+          denomination: 8
+          types:
+            - psychic
+          bonus: '@mod +4'
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          number: null
+          denomination: null
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+      attuned: true
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      unidentified:
+        description: ''
+      container: null
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: gp
+      rarity: ''
+      cover: null
+      crewed: false
+      ammunition: {}
+      armor:
+        value: null
+      magicalBonus: null
+      properties: []
+    _id: LmM6hNKUA828tmaU
+    img: systems/dnd5e/icons/svg/items/weapon.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.LmM6hNKUA828tmaU'
+  - name: Telekinetic Crush
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Agis targets up to two creatures he can see within 60 ft. Each must
+          make a DC 20 Strength save or take 31 ([[/r 7d8]]) force damage and be
+          &amp;Reference[Restrained apply=false] (telekinetic grip) until the
+          end of Agis’s next turn. On success: half damage, not
+          &amp;Reference[Restrained apply=false]. While
+          &amp;Reference[Restrained apply=false] this way, a creature can use
+          its action to attempt a DC 20 Strength (Athletics) or Dexterity
+          (Acrobatics) check to end the effect early.</p>
+        chat: ''
+      activities:
+        eQdO88JVkO1KnmVG:
+          _id: eQdO88JVkO1KnmVG
+          type: save
+          activation:
+            type: action
+            value: 1
+            override: false
+          damage:
+            onSave: none
+            parts:
+              - number: 7
+                denomination: 8
+                types:
+                  - force
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+          save:
+            ability:
+              - str
+            dc:
+              formula: '20'
+              calculation: initial
+          effects:
+            - _id: sZYREyvwTFzU3GF0
+              onSave: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+      uses:
+        max: '1'
+        recovery:
+          - period: recharge
+            formula: '5'
+            type: recoverAll
+        spent: 0
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    effects:
+      - _id: sZYREyvwTFzU3GF0
+        name: 'Telekinetic Crush: Restrained'
+        img: systems/dnd5e/icons/svg/statuses/restrained.svg
+        transfer: false
+        type: base
+        statuses:
+          - restrained
+        system:
+          changes: []
+        disabled: false
+        duration:
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
+        description: ''
+        origin: null
+        tint: '#ffffff'
+        sort: 0
+        flags: {}
+        _stats:
+          compendiumSource: null
+          duplicateSource: null
+          exportSource: null
+          coreVersion: '14.362'
+          systemId: dnd5e
+          systemVersion: 5.0.4
+          lastModifiedBy: null
+          createdTime: null
+          modifiedTime: null
+        showIcon: 2
+        start: null
+        folder: null
+        _key: >-
+          !actors.items.effects!qF65Q7yRkEY7Szeq.oP7tEXRGPhlCtIxT.sZYREyvwTFzU3GF0
+    _id: oP7tEXRGPhlCtIxT
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    folder: null
+    sort: 0
+    flags:
+      walledtemplates:
+        wallsBlock: globalDefault
+        wallRestriction: globalDefault
+        snapCenter: true
+        snapCorner: true
+        snapSideMidpoint: true
+      dnd5e:
+        riders:
+          activity: []
+      midi-qol:
+        rollAttackPerTarget: default
+        removeAttackDamageButtons: default
+        itemCondition: ''
+        reactionCondition: ''
+        otherCondition: ''
+        effectCondition: ''
+      midiProperties:
+        autoFailFriendly: false
+        autoSaveFriendly: false
+        magicdam: false
+        magiceffect: false
+        noConcentrationCheck: false
+        toggleEffect: false
+        ignoreTotalCover: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.oP7tEXRGPhlCtIxT'
+  - name: Mass Mind Thrust
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Each enemy of Agis’s choice in a 30‑ft. cone must make a DC 20
+          Intelligence save or take 27 ([[/r 6d8]]) psychic damage and suffer
+          disadvantage on all attack rolls until the end of Agis’s next turn.
+          Successful save: half damage, no disadvantage.</p>
+        chat: ''
+      activities:
+        uh6dyGhmnfNlkity:
+          _id: uh6dyGhmnfNlkity
+          type: save
+          activation:
+            type: action
+            value: 1
+            override: false
+          damage:
+            onSave: half
+            parts:
+              - number: 6
+                denomination: 8
+                types:
+                  - psychic
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+          save:
+            ability:
+              - int
+            dc:
+              formula: '20'
+              calculation: initial
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+      uses:
+        max: '1'
+        recovery:
+          - period: recharge
+            formula: '4'
+            type: recoverAll
+        spent: 0
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: xJWDkQFwcM3Tb0MM
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.xJWDkQFwcM3Tb0MM'
+  - name: Legendary Actions
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Agis can take 3 legendary actions, choosing from the options below.
+          Only one legendary action at a time; regains spent actions at the
+          start of his turn.</p>
+        chat: ''
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: icons/magic/light/hand-sparks-glow-yellow.webp
+    _id: WkjcDBMIUtoJbjoi
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.WkjcDBMIUtoJbjoi'
+  - name: Talent
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Use an at‑will talent (Mind Thrust single target, Telekinetic
+          Push/Pull, or Detect Thoughts probe).</p>
+        chat: ''
+      activities:
+        pnw3DOE1CmcX7TWd:
+          _id: pnw3DOE1CmcX7TWd
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    img: modules/plutonium/media/icon/laurels.svg
+    _id: ga45aGPkLVlMpBFX
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.ga45aGPkLVlMpBFX'
+  - name: Shift Positions
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Teleport up to 20 ft. and one ally within 30 ft. can move up to
+          half its speed without provoking.</p>
+        chat: ''
+      activities:
+        gqoLNTsOcRIIlkVK:
+          _id: gqoLNTsOcRIIlkVK
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: NAfs5WGDGqyVAEAt
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.NAfs5WGDGqyVAEAt'
+  - name: Mental Anchor
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Force a creature within 60 ft. to make a DC 20 Wis save or have its
+          speed reduced to 0 and it cannot teleport until the start of Agis’s
+          next turn.</p>
+        chat: ''
+      activities:
+        gEl2ASjIfRVKRQIv:
+          _id: gEl2ASjIfRVKRQIv
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: LXIVvf848AHJgjey
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.LXIVvf848AHJgjey'
+  - name: Staggering Pulse
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>One creature within 60 ft. must make a DC 20 Con save or take 18
+          ([[/r 4d8]]) psychic damage and lose a reaction and either its action
+          or bonus action (its choice) on its next turn. Lair / Environmental
+          Tweaks (Optional)
+
+          If fighting in his estate or a psionic focus chamber: once per round
+          on initiative count 20 (losing ties) Agis can trigger one effect:</p>
+        chat: ''
+      activities:
+        IQsfzeLQA4OHMtgr:
+          _id: IQsfzeLQA4OHMtgr
+          type: save
+          activation:
+            override: true
+            type: legendary
+            value: 1
+          damage:
+            onSave: none
+            parts:
+              - number: 4
+                denomination: 8
+                types:
+                  - psychic
+                custom:
+                  enabled: false
+                scaling:
+                  number: 1
+          save:
+            ability:
+              - con
+            dc:
+              formula: '20'
+              calculation: initial
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: EKItMFauk3zfob5O
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.EKItMFauk3zfob5O'
+  - name: Telekinetic Slam
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Up to two enemies are moved 15 ft. (Str save DC 20) and take 10
+          ([[/r 3d6]]) bludgeoning if slammed into a surface.</p>
+        chat: ''
+      activities:
+        vCNNayNXtwoy296Y:
+          _id: vCNNayNXtwoy296Y
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: Btpi8ZXNW9qrxETb
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.Btpi8ZXNW9qrxETb'
+  - name: Cerebral Clarity
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Ends one &amp;Reference[Charmed
+          apply=false]/&amp;Reference[Frightened
+          apply=false]/&amp;Reference[Stunned apply=false] effect on himself or
+          an ally he can see. Gravitic Distortion: 20‑ft. radius difficult
+          terrain (hovering unaffected) until next round; entering creatures
+          take 5 force.
+
+          Tactics &amp; Personality
+
+          Opens with Forcecage or Hypnotic Pattern + Synaptic Static (dual
+          &amp;Reference[Concentration]) to segment the field.
+
+          Maintains distance, using Telekinetic Crush to pin frontline threats
+          then layering disadvantage via Mass Mind Thrust.
+
+          Uses Precognitive Insight aggressively to turn key party saves into
+          failures (e.g., vs. Telekinetic Crush or Hypnotic Pattern).
+
+          Prioritizes shutting down casters with Forcecage, Counter Thrust, and
+          Mental Anchor legendary actions.
+
+          Withdraws with Force Step if pressured, repositioning behind allies or
+          terrain.</p>
+        chat: ''
+      activities:
+        pK1tAaSahfJ8a8OW:
+          _id: pK1tAaSahfJ8a8OW
+          type: utility
+          activation:
+            type: legendary
+            value: 1
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: DD6T2gOkK93ts7nK
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.DD6T2gOkK93ts7nK'
+  - name: Force Step
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>Agis teleports up to 30 ft. to an unoccupied space he can see (must
+          not be inside solid matter).</p>
+        chat: ''
+      activities:
+        UYhJoD5PfSTc0ZgB:
+          _id: UYhJoD5PfSTc0ZgB
+          type: utility
+          activation:
+            type: bonus
+            value: null
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: qKrz01dyBOrziiqk
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.qKrz01dyBOrziiqk'
+  - name: Bolster Ally
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>One creature within 60 ft. gains 15 temporary hit points and
+          advantage on its next saving throw before the start of Agis’s next
+          turn.</p>
+        chat: ''
+      activities:
+        FDD0ADhH92Wa2Hf0:
+          _id: FDD0ADhH92Wa2Hf0
+          type: utility
+          activation:
+            type: bonus
+            value: null
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        max: '3'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: BzJdyLLIiCUXWDXu
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.BzJdyLLIiCUXWDXu'
+  - name: Psychic Reversal
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>When a creature Agis can see within 60 ft. forces him to make a
+          save, he imposes disadvantage on that effect’s attack or save (choose
+          after seeing the roll but before outcome). If the triggering effect
+          fails (attack misses or Agis succeeds on the save), the originator
+          takes 12 ([[/r 3d8]]) psychic damage.</p>
+        chat: ''
+      activities:
+        695sXw23DbZTkZv2:
+          _id: 695sXw23DbZTkZv2
+          type: utility
+          activation:
+            type: reaction
+            value: null
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        max: '2'
+        recovery:
+          - period: day
+            type: recoverAll
+        spent: 0
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: VG27ZZTo8l0BtHTj
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.VG27ZZTo8l0BtHTj'
+  - name: Counter Thrust
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>When a creature within 30 ft. casts a spell or manifests a psionic
+          power, Agis can attempt to disrupt it (as counterspell) using a
+          3rd‑level slot; for higher-level effects he makes an Intelligence
+          check (+12).</p>
+        chat: ''
+      activities:
+        79IhqJWBkFdtSrY0:
+          _id: 79IhqJWBkFdtSrY0
+          type: utility
+          activation:
+            type: reaction
+            value: null
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: 0Bj8DkclhG3waw6k
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.0Bj8DkclhG3waw6k'
+  - name: Reactive Aegis
+    type: feat
+    system:
+      description:
+        value: >-
+          <p>When hit by an attack, Agis can conjure a psionic shimmer; he gains
+          +5 AC against that attack (as shield but psionic). Uses a 1st‑level
+          power slot.</p>
+        chat: ''
+      activities:
+        vINwRYLweI7enOWk:
+          _id: vINwRYLweI7enOWk
+          type: utility
+          activation:
+            type: reaction
+            value: null
+            override: false
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+      uses:
+        spent: 0
+        recovery: []
+      identifier: ''
+      source:
+        revision: 1
+        rules: '2024'
+      advancement: []
+      cover: null
+      crewed: false
+      enchant: {}
+      prerequisites:
+        level: null
+        repeatable: false
+      properties: []
+      requirements: ''
+      type:
+        value: ''
+        subtype: ''
+    _id: cD1Mub9QiV4rtWQe
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.0.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    ownership:
+      default: 0
+    _key: '!actors.items!qF65Q7yRkEY7Szeq.cD1Mub9QiV4rtWQe'
+prototypeToken:
+  detectionModes:
+    seeAll:
+      enabled: true
+      range: 30
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  name: Agis of Asticles, Noble Psion of Ty
+  displayName: 20
+  actorLink: true
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: tokens/agis_of_asticles.token.dark-sun-creature-catalog.webp?1754943552533
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.legact
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 1
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags:
+    theripper-premium-hub:
+      autoRotate: 0
+    wall-height:
+      tokenHeight: 0
+    token-z:
+      zIndex: 0
+    tagger: {}
+    monks-enhanced-journal:
+      chatbubble: ''
+    monks-tokenbar:
+      include: default
+    token-variants:
+      randomImgDefault: ''
+      disableHUDButton: false
+    aedifs-tactical-grid:
+      viewDistance: null
+      viewShape: ''
+      color: ''
+    elevation-drag-ruler:
+      selectedSpeed: auto
+      hasBonusDash: false
+      hideSpeedButton: false
+    perceptive:
+      canbeSpottedFlag: false
+      RevealwhenSpottedFlag: false
+      PPDCFlag: -1
+      PPPLFlag: 0
+      APDCFlag: null
+      APPLFlag: 0
+      SpottingRangeFlag: -1
+      SpottingMessageFlag: ''
+      resetSpottedbyMoveFlag: true
+      MATTTriggerTileFlag: ''
+      MATTTriggerConditionsFlag:
+        NewlySpotted: never
+    Rideable:
+      issetRideableFlag: false
+      MountonEnterFlag: false
+      AutoMountBlackListFlag: ''
+      AutoMountWhiteListFlag: ''
+      MaxRiderFlag: null
+      CustomRidingheightFlag: null
+      UseRidingHeightFlag: false
+      RidersScaleFlag: 1
+      RiderPositioningFlag: RowPlacement
+      RiderOffsetFlag:
+        - 0
+        - 0
+      RiderRotOffsetFlag: 0
+      GrapplePlacementFlag: RowBelow
+      TokenFormFlag: TokenFormCircle
+      InsideMovementFlag: false
+      SpawnRidersFlag: ''
+      WorldMEffectOverrideFlag: false
+      MountingEffectsFlag: ''
+      SelfApplyEffectsFlag: false
+      forMountEffectsFlag: ''
+      canbeGrappledFlag: true
+      GrapplingEffectsFlag: ''
+      CanbePilotedFlag: false
+      CheckPilotedCollisionFlag: false
+      PilotedbyDefaultFlag: false
+  randomImg: false
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  depth: 1
+folder: 46ElBPYGc8u97wgJ
+name: Agis of Asticles
+type: npc
+_id: qF65Q7yRkEY7Szeq
+img: tokens/agis_of_asticles_noble_psion_of_tyr.Avatar.webp?1754943552533
+effects: []
+flags:
+  scene-packer:
+    hash: dec56faa58be462373501b722798a2248329031f
+  dnd5e: {}
+  perceptive:
+    LightLevelFlag: 2
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754288106499
+  modifiedTime: 1755395824754
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 11400000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!actors!qF65Q7yRkEY7Szeq'

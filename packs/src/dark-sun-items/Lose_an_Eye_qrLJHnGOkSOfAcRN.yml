@@ -1,0 +1,177 @@
+folder: H81XnrwqgxVIfZBb
+name: Lose an Eye
+type: feat
+_id: qrLJHnGOkSOfAcRN
+img: icons/creatures/eyes/human-single-blue.webp
+system:
+  description:
+    value: >-
+      <p>You have disadvantage on Wisdom (Perception) checks that rely on sight
+      and on ranged attack rolls. Magic such as the
+      @UUID[Compendium.shareddata.ddb-spells.Item.JUr5Ut4PP6kmMfBR]{regenerate}
+      spell can restore the lost eye. If you have no eyes left after sustaining
+      this injury, you’re blinded.</p>
+    chat: ''
+  source:
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: ''
+    subtype: ''
+  prerequisites:
+    level: null
+    repeatable: false
+  properties: []
+  requirements: ''
+  identifier: lose-an-eye
+  activities: {}
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: Lose an Eye
+    transfer: true
+    img: icons/creatures/eyes/human-single-blue.webp
+    _id: nZWGn45KDVb9ves5
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.disadvantage.skill.prc
+          value: 1
+          priority: 20
+          type: override
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You have disadvantage on Wisdom (Perception) checks that rely on sight
+      and on ranged attack rolls. Magic such as the
+      @UUID[Compendium.shareddata.ddb-spells.Item.JUr5Ut4PP6kmMfBR]{regenerate}
+      spell can restore the lost eye. If you have no eyes left after sustaining
+      this injury, you’re blinded.</p>
+    origin: Item.qrLJHnGOkSOfAcRN
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      ActiveAuras:
+        isAura: false
+        aura: None
+        nameOverride: ''
+        radius: ''
+        alignment: ''
+        type: ''
+        customCheck: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+        wallsBlock: system
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!qrLJHnGOkSOfAcRN.nZWGn45KDVb9ves5'
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: 7b82405435529219c2b2969d38e0a4b1dafb2cd9
+  magicitems:
+    enabled: false
+    default: ''
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  midi-qol:
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    autoTarget: default
+    removeAttackDamageButtons: default
+    reactionCondition: ''
+    otherCondition: ''
+  dnd5e:
+    riders:
+      activity: []
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.qrLJHnGOkSOfAcRN
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883616
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+sort: 0
+_key: '!items!qrLJHnGOkSOfAcRN'

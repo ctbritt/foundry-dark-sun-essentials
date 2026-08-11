@@ -1,0 +1,328 @@
+name: Adult Drake Skull
+type: weapon
+img: icons/commodities/bones/skull-lizard-brown.webp
+system:
+  description:
+    value: >-
+      <section class="secret" id="null"><p>If a creature with at least 15
+      Strength lifts the skull above their head as an action, each creature
+      within 120 feet of the skull must make a [[/save wis dc=16 format=long]]
+      or become  &amp;Reference[frightened ]for 1 minute. A creature can repeat
+      the saving throw at the end of each of its turns, ending the effect on
+      itself on a success. If a creature's saving throw is successful or the
+      effect ends for it, the creature is immune to this effect for the next 24
+      hours. The skull can be mastercrafted (smith’s tools and woodcarver’s
+      tools) into one of the following items: </p><ul><li><p>wall
+      trophy</p></li><li><p>warhorse
+      barding</p></li><li><p>helmet</p></li><li><p>shield</p></li><li><p>or a
+      ship’s figurehead. </p></li></ul></section><p>The skull from the Drake you
+      killed</p>
+    chat: ''
+  source:
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 20
+    units: lb
+  price:
+    value: 0
+    denomination: ct
+  attunement: ''
+  equipped: false
+  rarity: uncommon
+  identified: true
+  cover: null
+  crewed: false
+  range:
+    value: null
+    long: null
+    units: ''
+    reach: null
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  damage:
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: null
+        formula: ''
+    base:
+      number: null
+      denomination: null
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+  armor:
+    value: 10
+  hp:
+    value: 0
+    max: 0
+    dt: null
+    conditions: ''
+  properties: []
+  proficient: 1
+  unidentified:
+    description: ''
+  type:
+    value: natural
+    baseItem: ''
+  container: null
+  attuned: false
+  magicalBonus: null
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: save
+      activation:
+        type: action
+        value: 1
+        condition: ''
+        override: false
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        concentration: false
+        value: ''
+        units: ''
+        special: ''
+        override: false
+      effects:
+        - _id: 8j54GAu9WHySWDav
+          onSave: false
+      range:
+        units: ''
+        special: ''
+        override: false
+      target:
+        template:
+          count: ''
+          contiguous: false
+          type: radius
+          size: '120'
+          width: ''
+          height: ''
+          units: ft
+        affects:
+          count: ''
+          type: ''
+          choice: false
+          special: ''
+        prompt: true
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      damage:
+        onSave: half
+        parts: []
+        critical:
+          allow: false
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: ''
+          formula: '16'
+      sort: 0
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        identifier: ''
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoTargetType: any
+        autoTargetAction: default
+        otherActivityCompatible: true
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+      otherActivityId: ''
+  identifier: adult-drake-skull
+  ammunition: {}
+effects:
+  - origin: Item.Pnq7JGbpudRs7MDm
+    duration:
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
+    disabled: false
+    _id: 8j54GAu9WHySWDav
+    tint: '#ffffff'
+    transfer: false
+    flags:
+      times-up: {}
+      dae:
+        selfTarget: false
+        selfTargetAlways: false
+        stackable: none
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        statusId: ''
+      ActiveAuras:
+        isAura: false
+        aura: None
+        radius: null
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        displayTemp: false
+        hostile: false
+        onlyOnce: false
+    name: Adult Brass Dragon Skull
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    img: icons/commodities/bones/skull-lizard-brown.webp
+    type: base
+    system:
+      changes:
+        - key: StatusEffect
+          value: 'Convenient Effect: Frightened'
+          priority: 20
+          type: custom
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!962JPF7Jrn06OaMT.8j54GAu9WHySWDav'
+flags:
+  magicitems:
+    enabled: false
+    equipped: false
+    attuned: false
+    charges: '0'
+    chargeType: c1
+    destroy: false
+    destroyFlavorText: 'reaches 0 charges: it crumbles into ashes and is destroyed.'
+    rechargeable: false
+    recharge: '0'
+    rechargeType: t1
+    rechargeUnit: r1
+    sorting: l
+    default: ''
+  rest-recovery:
+    data:
+      recovery:
+        enabled: false
+  midi-qol:
+    effectActivation: false
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    rollAttackPerTarget: default
+    itemCondition: ''
+    effectCondition: ''
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    rollOther: false
+    critOther: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    offHandWeapon: false
+    confirmTargets: default
+    noConcentrationCheck: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  cf: {}
+  core: {}
+  scene-packer:
+    sourceId: Item.1L0xVkd7ngzstzRO
+    hash: 3abc3c39d51b86b11a33859ee1c732029b906e46
+  hide-item-value:
+    appraised: ''
+    showPrice: false
+  custom-character-sheet-sections:
+    sectionName: ''
+  region-attacher:
+    attachRegionToTemplate: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '14.362'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078874437
+  modifiedTime: 1746114871725
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+folder: null
+_id: 962JPF7Jrn06OaMT
+sort: 100000
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+_key: '!items!962JPF7Jrn06OaMT'

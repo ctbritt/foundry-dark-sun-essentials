@@ -1,0 +1,130 @@
+name: Serpent Venom
+type: loot
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      currency:
+        name: gp
+        value: 500
+      folder: Rare Poisons
+      instruction: >-
+        <p>This poison must be harvested from a dead or
+        @toggleEffect[Incapacitated] giant poisonous snake. A creature subjected
+        to this poison must succeed on a DC 11 Constitution saving throw, taking
+        10 (3d6) poison damage on a failed save, or half as much damage on a
+        successful one.</p><p><strong>Injury.</strong> Injury poison can be
+        applied to weapons, ammunition, trap components, and other objects that
+        deal piercing or slashing damage and remains potent until delivered
+        through a wound or washed off. A creature that takes piercing or
+        slashing damage from an object coated with the poison is exposed to its
+        effects.</p>
+      required:
+        '1':
+          key:
+            id: k5CAeSs515lTeOw9
+            uuid: Compendium.shareddata.ddb-items.k5CAeSs515lTeOw9
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+      input:
+        '1':
+          key:
+            id: KvTE3mcif3xyes2V
+            uuid: Compendium.shareddata.ddb-items.KvTE3mcif3xyes2V
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: backpack
+        '2':
+          key:
+            id: 2ovcD5IhXXTOa3nx
+            uuid: Item.2ovcD5IhXXTOa3nx
+            img: icons/creatures/reptiles/snake-fangs-bite-green.webp
+            type: Item
+            name: Venom Sack
+            quantity: 1
+            itemType: consumable
+      output:
+        '1':
+          key:
+            id: CGC6EZVhjwidK8WT
+            uuid: Compendium.shareddata.ddb-items.CGC6EZVhjwidK8WT
+            img: icons/consumables/potions/potion-tube-corked-blue.webp
+            type: Item
+            name: Serpent Venom (Injury)
+            quantity: 1
+            itemType: consumable
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: ToolTest
+                data:
+                  dc: 15
+                  uuid: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 39ae65c4cc919daf9c24b2a1f7ee2c51f018fe07
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: ''
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: gp
+  rarity: rare
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: serpent-venom
+effects: []
+folder: QYufUtCWt2VF1PrB
+_stats:
+  compendiumSource: Compendium.world.custom-recipes.Item.wVGAAJyzM33EZnTe
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883998
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: wVGAAJyzM33EZnTe
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!wVGAAJyzM33EZnTe'

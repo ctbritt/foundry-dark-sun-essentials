@@ -1,0 +1,146 @@
+name: Brave
+type: feat
+img: icons/skills/melee/unarmed-punch-fist.webp
+system:
+  description:
+    value: >-
+      <p>You have Advantage on saving throws you make to avoid or end the
+      &amp;Reference[Frightened] condition.</p>
+    chat: ''
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    revision: 1
+    rules: '2024'
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: race
+    subtype: ''
+  requirements: ''
+  properties: []
+  prerequisites:
+    level: null
+    repeatable: false
+  activities: {}
+  identifier: brave
+  enchant: {}
+  advancement: []
+  cover: null
+  crewed: false
+effects:
+  - name: Brave
+    origin: Compendium.world.cpr-race-features.Item.FcHoncVk7qdOB5e0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    disabled: false
+    flags:
+      dnd5e: {}
+      dae:
+        disableCondition: ''
+        disableIncapacitated: false
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: yHDtlg3pQPab4h6h
+    type: base
+    system:
+      changes:
+        - key: flags.chris-premades.CR.frightened
+          value: 1
+          priority: 20
+          type: override
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 4.3.8
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    start:
+      combat: null
+      round: 249
+      time: 1488
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!I6ve4mIMOVU6KsE8.yHDtlg3pQPab4h6h'
+folder: b0rbED8637Olg5zh
+flags:
+  midi-qol:
+    removeAttackDamageButtons: default
+    rollAttackPerTarget: default
+    effectActivation: false
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+    AoETargetType: any
+    AoETargetTypeIncludeSelf: true
+    autoTarget: default
+    '-=onUseMacroName': null
+  midiProperties:
+    confirmTargets: default
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+    advancementOrigin: RtKrg0ziPerIBy6A.RkQpYKtxTlbzXp7d
+    sourceId: Compendium.dnd-players-handbook.origins.Item.phbsptBrave00000
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-character-origins.Item.I6ve4mIMOVU6KsE8
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078786403
+  modifiedTime: 1781134996222
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+_id: I6ve4mIMOVU6KsE8
+ownership:
+  default: 0
+sort: 0
+_key: '!items!I6ve4mIMOVU6KsE8'

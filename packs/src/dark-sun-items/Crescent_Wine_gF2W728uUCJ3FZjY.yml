@@ -1,0 +1,151 @@
+name: Crescent Wine
+type: loot
+img: icons/sundries/scrolls/scroll-worn-tan.webp
+system:
+  description:
+    value: >-
+      <p>A recipe for crafting the infamous Crescent Wine poison, derived from
+      the venom of a small, vermin-eating snake found in the Crescent Forest.
+      This alcohol-soluble poison is most commonly mixed into wine, where its
+      effects are easily masked.</p><p><strong>Crafting
+      Steps:</strong></p><ol><li>Extract venom from the Crescent Forest
+      snake</li><li>Prepare a suitable wine base</li><li>Carefully mix the venom
+      with the wine in precise ratios</li><li>Add flavorings to mask any
+      remaining bitterness</li><li>Store the mixture properly to preserve
+      potency</li><li>Test the poison for desired strength and effects</li></ol>
+    chat: ''
+  source:
+    custom: Dark Sun
+    rules: '2024'
+    revision: 1
+    book: Dark Sun
+    page: ''
+    license: ''
+  quantity: 1
+  price:
+    value: 85
+    denomination: ct
+  rarity: rare
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  weight:
+    value: 0
+    units: lb
+  properties: []
+  type:
+    value: gear
+    subtype: ''
+  identifier: crescent-wine
+flags:
+  beavers-crafting:
+    subtype: Recipe
+    recipe:
+      folder: Athas Poisons
+      instruction: >-
+        <p>Carefully extract venom from the Crescent Forest snake and mix it
+        with a prepared wine base. Add flavorings to mask any remaining
+        bitterness. Exercise extreme caution during preparation to avoid
+        exposure. A poisoner's kit is required for this process.</p>
+      required:
+        '2':
+          Compendium-shareddata-ddb-items-Item-VXsUFoyJO7jiGCZk:
+            id: VXsUFoyJO7jiGCZk
+            uuid: Compendium.shareddata.ddb-items.Item.VXsUFoyJO7jiGCZk
+            img: icons/tools/laboratory/bowl-liquid-black.webp
+            type: Item
+            name: Poisoner's Kit
+            quantity: 1
+            itemType: tool
+            flags:
+              beavers-crafting: {}
+      output:
+        '1':
+          Item-QIuacWtZV9wxkQ5u:
+            id: QIuacWtZV9wxkQ5u
+            uuid: Item.QIuacWtZV9wxkQ5u
+            img: icons/consumables/potions/flask-corked-blue.webp
+            type: Item
+            name: Crescent Wine
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+      currency:
+        name: ct
+        value: 85
+      input:
+        '1':
+          Compendium-shareddata-ddb-override-Item-2ovcD5IhXXTOa3nx:
+            id: 2ovcD5IhXXTOa3nx
+            uuid: Compendium.shareddata.ddb-override.Item.2ovcD5IhXXTOa3nx
+            img: icons/creatures/reptiles/snake-fangs-bite-green.webp
+            type: Item
+            name: Venom Sack
+            quantity: 1
+            itemType: consumable
+            flags:
+              beavers-crafting: {}
+          Compendium-shareddata-ddb-items-Item-fH0ZTrw8welBty7Y:
+            id: fH0ZTrw8welBty7Y
+            uuid: Compendium.shareddata.ddb-items.Item.fH0ZTrw8welBty7Y
+            img: icons/equipment/neck/amulet-carved-stone-bottle.webp
+            type: Item
+            name: Vial
+            quantity: 1
+            itemType: container
+            flags:
+              beavers-crafting: {}
+      beaversTests:
+        fails: 1
+        consume: true
+        ands:
+          '1':
+            ors:
+              '1':
+                type: SkillTest
+                data:
+                  dc: 20
+                  skill: nat
+              '2':
+                type: ToolTest
+                data:
+                  name: Killed a skeleton
+                  tool: Compendium.dnd5e.items.il2GNi8C0DvGLL9P
+                  dc: 20
+            hits: 1
+      macro: ''
+  scene-packer:
+    hash: 18496ab532baf9916451baef7267f7134ffb8f21
+    sourceId: Item.ZPWT8gim0NgW6mCU
+  core:
+    sheetClass: dnd5e.ItemSheet5e
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+folder: o1LYkykMt2p6J6ix
+_stats:
+  compendiumSource: Compendium.world.dark-sun-items.Item.gF2W728uUCJ3FZjY
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744078956217
+  modifiedTime: 1746114883084
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource:
+    worldId: Rime-of-the-Frost-Maiden
+    uuid: null
+    coreVersion: '12.331'
+    systemId: dnd5e
+    systemVersion: 3.3.1
+_id: gF2W728uUCJ3FZjY
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 0
+_key: '!items!gF2W728uUCJ3FZjY'

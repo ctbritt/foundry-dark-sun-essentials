@@ -1,0 +1,145 @@
+folder: 3ceHqueQSXMSDgbA
+name: Fakir
+type: background
+img: icons/magic/nature/stealth-hide-eyes-green.webp
+system:
+  description:
+    value: >-
+      <p><strong>Abilities:</strong> &amp;Reference[wis], &amp;Reference[dex],
+      &amp;Reference[con]</p><p><strong>Skill Proficiencies:</strong>
+      &amp;Reference[acr], &amp;Reference[sur]</p><p><strong>Tool
+      Proficiencies:</strong> Herbalism kit, one musical
+      instrument</p><p><strong>Languages:</strong> One of your
+      choice</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftMusician00000]{Musician}
+      or
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX]{Survivor}</p><p><strong>Equipment:</strong>
+      Tattered robes, a musical instrument, a small rug, and a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbagPouch000000]{Pouch}
+      containing 10 ceramic pieces.</p><p><strong>Suggested
+      Characteristics:</strong> An ascetic who lives on the street, having taken
+      vows of poverty and worship. You survive through charity and street
+      performance.</p>
+    chat: ''
+  identifier: athas-fakir
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: '287'
+    custom: Dark Sun
+    license: ''
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: PsWwFIEWahGuvJmp
+      group: ''
+      sort: 100000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagClothesComm
+      requiresProficiency: false
+      _id: unFqnDzBT2khC4fT
+      group: ''
+      sort: 200000
+    - _id: uOTKxQDidsEAdimv
+      group: ''
+      sort: 300000
+      type: linked
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+  advancement:
+    - _id: VLzDjhVKMfErynRf
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - int
+          - cha
+        points: 3
+        recommendation: null
+      value:
+        type: asi
+        assignments:
+          wis: 2
+          dex: 1
+      level: 0
+      title: ''
+      hint: ''
+    - _id: YGI8wDCePXVNeXeN
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:*
+          - count: 1
+            pool:
+              - tool:herb
+          - count: 1
+            pool:
+              - tool:music:*
+        grants:
+          - skills:acr
+          - skills:sur
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: Proficiencies
+      hint: ''
+    - _id: 4i1nsB9c3mqZzrNJ
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftMusician00000
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.aV962nxyB1ssGpHX
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+          list: []
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+  wealth: '10'
+effects: []
+flags:
+  crux:
+    trayVisibility: default
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Item.YWD4yyI3HD18EaIe
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1766717449074
+  modifiedTime: 1766717449074
+  lastModifiedBy: wgCeShTrqHJFBbDr
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_id: YWD4yyI3HD18EaIe
+sort: 287500
+_key: '!items!YWD4yyI3HD18EaIe'

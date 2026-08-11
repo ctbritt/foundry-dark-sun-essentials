@@ -1,0 +1,169 @@
+type: spell
+system:
+  activities:
+    utilityCreOrDeWa:
+      type: utility
+      _id: utilityCreOrDeWa
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        spellSlot: true
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      roll:
+        prompt: false
+        visible: false
+  uses:
+    spent: null
+    max: ''
+    recovery: []
+  description:
+    value: >-
+      <div class="ddb"><p>You either create or destroy
+      water.</p><p><strong>Create Water.</strong> You create up to half a gallon
+      of clean water within range in an open container. Alternatively, the water
+      falls as rain in a 2-foot cube within range, extinguishing exposed flames
+      in the area.</p><p><strong>Destroy Water.</strong> You destroy up to 10
+      gallons of water in an open container within range. Alternatively, you
+      destroy fog in a 30-foot cube within range.</p><p><strong>At Higher
+      Levels.</strong> When you cast this spell using a spell slot of 2nd level
+      or higher, you create or destroy an additional half-gallon of water, or
+      the size of the cube increases by 2 feet, for each slot level above
+      1st.</p></div>
+    chat: ''
+  identifier: create-or-destroy-water
+  source:
+    book: Dark Sun
+    page: ''
+    license: ''
+    custom: Dark Sun
+    rules: '2014'
+    revision: 1
+  activation:
+    type: action
+    value: 1
+    condition: ''
+  duration:
+    value: '0'
+    units: inst
+  level: 1
+  materials:
+    value: a drop of water if creating water or a few grains of sand if destroying it
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  properties:
+    - vocal
+    - somatic
+    - material
+  range:
+    value: '30'
+    units: ft
+  school: trs
+  target:
+    affects:
+      count: ''
+      type: ''
+      choice: false
+      special: ''
+    template:
+      count: ''
+      contiguous: false
+      type: cube
+      size: '30'
+      width: ''
+      height: ''
+      units: ft
+effects: []
+name: Create or Destroy Water (Dark Sun)
+flags:
+  ddbimporter:
+    id: 136463
+    definitionId: 2053
+    entityTypeId: 435869154
+    dndbeyond:
+      lookup: generic
+      lookupName: generic
+      level: null
+      castAtLevel: null
+      homebrew: false
+    originalName: Create or Destroy Water
+    sources:
+      - sourceId: 1
+        pageNumber: null
+        sourceType: 2
+      - sourceId: 2
+        pageNumber: 229
+        sourceType: 1
+    tags:
+      - Creation
+    version: 6.4.20
+    is2014: true
+    is2024: false
+    addSpellEffects: true
+    legacy: true
+    defaultAdditionalActivities:
+      enabled: true
+      data: {}
+    effectsApplied: true
+  midi-qol:
+    removeAttackDamageButtons: default
+  midiProperties:
+    confirmTargets: default
+    magicdam: true
+    magiceffect: true
+  spell-class-filter-for-5e: {}
+  tidy5e-sheet: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 517887796
+img: icons/magic/water/pseudopod-swirl-blue.webp
+folder: null
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1755101529390
+  modifiedTime: 1784910749572
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: JZRYbiKan9AIIZgA
+sort: 625000
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!JZRYbiKan9AIIZgA'

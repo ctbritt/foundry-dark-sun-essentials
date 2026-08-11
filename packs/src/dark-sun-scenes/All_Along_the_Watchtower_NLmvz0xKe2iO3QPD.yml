@@ -1,0 +1,7691 @@
+folder: beNZN68lHIM2Vtxg
+name: All Along the Watchtower
+_id: NLmvz0xKe2iO3QPD
+navigation: false
+navName: ''
+thumb: worlds/Rime-of-the-Frost-Maiden/assets/scenes/NLmvz0xKe2iO3QPD-thumb.webp
+width: 4237
+height: 2375
+padding: 0.25
+initial:
+  x: 4831
+  'y': 1857
+  scale: 1.884
+grid:
+  type: 1
+  size: 50
+  style: solidLines
+  thickness: 1
+  color: '#000000'
+  alpha: 0.2
+  distance: 5
+  units: ft
+tokenVision: true
+fog:
+  colors:
+    explored: null
+    unexplored: null
+  mode: 1
+environment:
+  darknessLevel: 0.5
+  darknessLock: false
+  globalLight:
+    enabled: true
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    luminosity: 0
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    darkness:
+      min: 0
+      max: 0.5
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+drawings:
+  - author: cvMfFhYzS8WVOYAy
+    x: 1750
+    'y': 1650
+    rotation: 0
+    bezierFactor: 0
+    fillType: 0
+    fillColor: '#a01f07'
+    fillAlpha: 0.5
+    strokeWidth: 1
+    strokeColor: '#ffffff'
+    strokeAlpha: 0.6
+    texture: null
+    text: Levels Stair 0-10
+    fontFamily: Signika
+    fontSize: 8
+    textColor: '#ffffff'
+    textAlpha: 1
+    hidden: true
+    locked: false
+    flags:
+      tagger:
+        data:
+          preprocessed: false
+    shape:
+      type: r
+      width: 100
+      height: 100
+      points: []
+      radius: null
+    elevation: 0
+    interface: true
+    sort: 0
+    _id: WDFlpNZj22lTj781
+    levels: []
+    _key: '!scenes.drawings!NLmvz0xKe2iO3QPD.WDFlpNZj22lTj781'
+tokens:
+  - displayName: 20
+    sight:
+      color: null
+      enabled: true
+      range: 60
+      visionMode: darkvision
+      saturation: -1
+      angle: 360
+      attenuation: 0
+      brightness: 0
+      contrast: 0
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+        LightLevelFlag: 1
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-z:
+        zIndex: 0
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      tokencover:
+        maximumCoverGrant: 1
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      dnd5e:
+        tokenRing:
+          effects: 1
+      ATL:
+        originals: {}
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 20
+          combatMoveData: {}
+      elevatedvision:
+        tokenHeight: 6
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    detectionModes: {}
+    disposition: 0
+    name: Rokar
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/rokar.token.webp?1730051363816
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    rotation: 0
+    actorLink: true
+    lockRotation: false
+    alpha: 1
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: '#a01f07'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1
+        texture: s3/tokens/rokar.token.webp?1730051363816
+    actorId: Pw8uBrHPZThK1gox
+    hidden: false
+    sort: 1
+    _id: dK6qfSXZSGmZr7gz
+    delta:
+      _id: XwSoJhSeEtJczICd
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.dK6qfSXZSGmZr7gz.XwSoJhSeEtJczICd'
+    x: 2250
+    'y': 1800
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.dK6qfSXZSGmZr7gz'
+  - name: Kaine
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/_captain_kaine_strongjaw.token.webp?1721772058363
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 60
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+        movement: null
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 10
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 30
+              lastRound: 3
+              numDiagonal: 0
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      ATL:
+        originals: {}
+      ActiveAuras: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#ff3700'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 1950
+    'y': 2050
+    hidden: false
+    elevation: 0
+    _id: kVYmjgzMsODcoxfq
+    delta:
+      _id: 1skP5izgARMAN6fD
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.kVYmjgzMsODcoxfq.1skP5izgARMAN6fD'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.kVYmjgzMsODcoxfq'
+  - name: Cadice
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/cadice_b_rnier.token.webp?1721772389744
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+        movement: null
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 30
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 60
+              lastRound: 1
+      ATL:
+        originals: {}
+      ActiveAuras: {}
+      smarttarget:
+        gmtargetimg: s3/tokens/player_characters/tiuk.token.webp?1721777054491
+      sequencer:
+        effects: []
+      tokenmagic: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#6330b0'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2400
+    'y': 1800
+    hidden: false
+    elevation: 0
+    _id: dcAJZv9CxeXrRu4R
+    delta:
+      _id: WLQSUcOOYgVO555W
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.dcAJZv9CxeXrRu4R.WLQSUcOOYgVO555W'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.dcAJZv9CxeXrRu4R'
+  - name: Itilda
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/itilda_the_mutilator_of_manhood.token.webp?1721773665329
+      scaleX: 1.2
+      scaleY: 1.2
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.25
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.75
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0.15
+      shadows: 0.2
+      animation:
+        type: lantern
+        speed: 4
+        intensity: 4
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: '#ffb433'
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 60
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0.1
+      saturation: -1
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+        movement: null
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: 12
+        APDCFlag: 12
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+        PPDiceFlag: 6
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      dnd5e:
+        tokenRing:
+          effects: 1
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 20
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 35
+              lastRound: 1
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      ATL:
+        originals: {}
+      sequencer:
+        effects: []
+      ActiveAuras: {}
+      levels: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#04f6f2'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1.2
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2350
+    'y': 1850
+    hidden: false
+    elevation: 0
+    _id: 5fFNHmn3iR20gxS6
+    delta:
+      _id: bm4R13UJkVBOV1hD
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.5fFNHmn3iR20gxS6.bm4R13UJkVBOV1hD'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.5fFNHmn3iR20gxS6'
+  - name: Rickvon
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: 3
+      monks-tokenbar:
+        include: default
+        movement: null
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      core: {}
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      tokencover:
+        maximumCoverGrant: 1
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 5
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 15
+              lastRound: 1
+      smarttarget:
+        gmtargetimg: >-
+          s3/tokens/player_characters/rickvon_stonebarrel_copy_.token.webp?1723576775151
+      ActiveAuras: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#cc8028'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        texture: null
+        scale: 1
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2250
+    'y': 1850
+    hidden: false
+    elevation: 0
+    _id: 4lBDb4h8R3h5XIBp
+    delta:
+      _id: 1ldOim4ZXDE67rZD
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.4lBDb4h8R3h5XIBp.1ldOim4ZXDE67rZD'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.4lBDb4h8R3h5XIBp'
+  - name: Tiuk
+    displayName: 20
+    actorLink: true
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/player_characters/tiuk.token.webp?1721777054491
+      scaleX: 1.2
+      scaleY: 1.2
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    sight:
+      enabled: true
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    flags:
+      wall-height:
+        tokenHeight: null
+      monks-tokenbar:
+        include: default
+        movement: null
+      tagger: {}
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+        LootFormulaFlag: ''
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: true
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+        LightLevelFlag: 1
+      monks-enhanced-journal:
+        chatbubble: ''
+      dnd5e:
+        tokenRing:
+          effects: 1
+      token-z:
+        zIndex: 0
+      swarm:
+        isSwarm: false
+        swarmSize: 20
+        swarmSpeed: 1
+        animation: circular
+      token-variants:
+        randomImgDefault: ''
+        disableHUDButton: false
+        name: null
+      splatter:
+        bloodColor: ''
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 5
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 25
+              lastRound: 3
+      levels: {}
+      ActiveAuras: {}
+      smarttarget:
+        gmtargetimg: s3/tokens/player_characters/tiuk.token.webp?1721777054491
+      ATL:
+        originals: {}
+    ring:
+      enabled: true
+      colors:
+        ring: '#b128cc'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1.2
+        texture: null
+    occludable:
+      radius: 0
+    actorId: null
+    x: 2400
+    'y': 1850
+    hidden: false
+    elevation: 0
+    _id: hoDJpt28TZ33VtSa
+    delta:
+      _id: eisaLqSJMaMFaWwm
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.hoDJpt28TZ33VtSa.eisaLqSJMaMFaWwm'
+    sort: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.hoDJpt28TZ33VtSa'
+  - name: Hadozee Crew
+    displayName: 0
+    actorLink: false
+    width: 1
+    height: 1
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/crew_member.Avatar.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: -1
+    displayBars: 0
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    light:
+      negative: false
+      priority: 0
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      color: null
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+    sight:
+      enabled: false
+      range: 0
+      angle: 360
+      visionMode: darkvision
+      color: null
+      attenuation: 0
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes: {}
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: '#a01f07'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    flags:
+      token-variants:
+        name: null
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 25
+          combatMoveData: {}
+    actorId: null
+    hidden: false
+    sort: 1
+    _id: TxIsRlaNAOekOCgQ
+    delta:
+      _id: pEVselu9xYvEZo1j
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.TxIsRlaNAOekOCgQ.pEVselu9xYvEZo1j'
+    x: 2050
+    'y': 1800
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.TxIsRlaNAOekOCgQ'
+  - displayName: 20
+    sight:
+      color: null
+      enabled: true
+      range: 120
+      visionMode: darkvision
+      saturation: -1
+      angle: 360
+      attenuation: 0
+      brightness: 0
+      contrast: 0
+    flags:
+      wall-height:
+        tokenHeight: 6
+      monks-tokenbar:
+        include: default
+      tagger:
+        tags: ''
+      aedifs-tactical-grid:
+        viewDistance: null
+        viewShape: circle-soft
+        color: ''
+      LocknKey:
+        LPFormulaFlag: ''
+        LPFormulaOverrideFlag: false
+        LBFormulaFlag: ''
+        LBFormulaOverrideFlag: false
+        PickPocketFormulaFlag: ''
+        PickPocketFormulaOverrideFlag: false
+        PickPocketDCFlag: -1
+        MATTTriggerTileFlag: ''
+        MATTTriggerConditionsFlag:
+          LockuseKey: never
+          LockusePasskey: never
+          LockusePick: never
+          LockuseBreak: never
+          LockuseFree: never
+          UsePickPocket: never
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: true
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        GrapplePlacementFlag: Following
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        MountingEffectsFlag: ''
+        WorldMEffectOverrideFlag: false
+        SelfApplyEffectsFlag: false
+        forMountEffectsFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: true
+        PilotedbyDefaultFlag: true
+        RiderOffsetFlag:
+          - 0
+          - 0
+        RiderRotOffsetFlag: 0
+        CheckPilotedCollisionFlag: false
+      perceptive:
+        PerceptiveStealthingFlag: false
+        canbeSpottedFlag: false
+        RevealwhenSpottedFlag: true
+        PPDCFlag: -1
+        APDCFlag: null
+        SpottingRangeFlag: -1
+        SpottingMessageFlag: ''
+        resetSpottedbyMoveFlag: true
+        StealthEffectsFlag: ''
+        OverrideWorldSEffectsFlag: false
+        MATTTriggerConditionsFlag:
+          NewlySpotted: never
+        SpottedbyFlag: []
+      monks-enhanced-journal:
+        chatbubble: ''
+      token-variants:
+        name: null
+      ATL:
+        originals: {}
+      elevationruler:
+        movementHistory:
+          lastMoveDistance: 20
+          combatMoveData:
+            dYVpilT5xVcDojqM:
+              lastMoveDistance: 20
+              lastRound: 1
+      smarttarget:
+        gmtargetimg: s3/tokens/rampager.token.webp?1730003457162
+      ActiveAuras: {}
+      sequencer:
+        effects: []
+      custom-dnd5e:
+        tint: '#ffffff'
+        rotation: 0
+      item-piles:
+        data:
+          enabled: true
+          type: pile
+          distance: 1
+          macro: ''
+          deleteWhenEmpty: true
+          canStackItems: 'yes'
+          canInspectItems: true
+          displayItemTypes: false
+          description: ''
+          overrideItemFilters: false
+          overrideCurrencies: false
+          overrideSecondaryCurrencies: false
+          requiredItemProperties: []
+          displayOne: true
+          showItemName: true
+          overrideSingleItemScale: true
+          singleItemScale: 0.75
+          shareItemsEnabled: false
+          shareCurrenciesEnabled: true
+          takeAllEnabled: false
+          splitAllEnabled: true
+          activePlayers: false
+          closed: false
+          locked: false
+          closedImage: ''
+          closedImages: []
+          emptyImage: ''
+          emptyImages: []
+          openedImage: ''
+          openedImages: []
+          lockedImage: ''
+          lockedImages: []
+          closeSound: ''
+          closeSounds: []
+          openSound: ''
+          openSounds: []
+          lockedSound: ''
+          lockedSounds: []
+          unlockedSound: ''
+          unlockedSounds: []
+          merchantImage: ''
+          infiniteQuantity: false
+          infiniteCurrencies: true
+          purchaseOnly: false
+          hideNewItems: false
+          hideItemsWithZeroCost: false
+          keepZeroQuantity: false
+          onlyAcceptBasePrice: true
+          displayQuantity: 'yes'
+          buyPriceModifier: 1
+          sellPriceModifier: 0.5
+          itemTypePriceModifiers: []
+          actorPriceModifiers: []
+          tablesForPopulate: []
+          merchantColumns: []
+          hideTokenWhenClosed: false
+          openTimes:
+            enabled: false
+            status: open
+            open:
+              hour: 9
+              minute: 0
+            close:
+              hour: 18
+              minute: 0
+          closedDays: []
+          closedHolidays: []
+          refreshItemsOnOpen: false
+          refreshItemsDays: []
+          refreshItemsHolidays: []
+          logMerchantActivity: false
+          cols: 10
+          rows: 5
+          restrictVaultAccess: false
+          vaultExpansion: false
+          baseExpansionCols: 0
+          baseExpansionRows: 0
+          vaultAccess: []
+          logVaultActions: false
+          vaultLogType: user_actor
+        version: 2.8.2
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: null
+    detectionModes: {}
+    disposition: -1
+    name: Hopeful Rampager
+    texture:
+      src: >-
+        https://rime-of-the-frostmaiden.s3.amazonaws.com/tokens/rampager.token.webp?1730003457162
+      scaleX: 1
+      scaleY: 1
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      tint: '#ff0000'
+      alphaThreshold: 0.75
+    width: 2
+    height: 2
+    rotation: 180
+    actorLink: false
+    lockRotation: false
+    alpha: 1
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      negative: false
+      priority: 0
+      color: null
+    occludable:
+      radius: 0
+    ring:
+      enabled: true
+      colors:
+        ring: '#a01f07'
+        background: '#faebd7'
+      effects: 1
+      subject:
+        scale: 1
+        texture: s3/tokens/rampager.token.webp?1730003457162
+    actorId: null
+    hidden: false
+    sort: 2
+    _id: e8xSmsW5PxqI54xN
+    delta:
+      _id: iz03xKrf7YDFp05k
+      system:
+        attributes:
+          hp:
+            value: 0
+            max: 273
+      items:
+        - _id: wOHWSRB16YoU765Y
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.wOHWSRB16YoU765Y
+        - _id: eU20glzrZoEqQRoX
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.eU20glzrZoEqQRoX
+        - _id: 9d59W36i602U1XQt
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.9d59W36i602U1XQt
+        - _id: NdGsG15eCwNc4z4E
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.NdGsG15eCwNc4z4E
+        - _id: DTIDBQYGRI0j9l05
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.DTIDBQYGRI0j9l05
+        - _id: U7ikJbEUCmEVYN66
+          _tombstone: true
+          effects: []
+          _key: >-
+            !scenes.tokens.delta.items!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.U7ikJbEUCmEVYN66
+      effects:
+        - name: Dead
+          img: icons/svg/skull.svg
+          _id: dnd5edead0000000
+          statuses:
+            - dead
+          type: base
+          system:
+            changes:
+              - key: flags.midi-qol.fail.ability.save.dex
+                value: 1
+                priority: 20
+                type: custom
+              - key: flags.midi-qol.fail.ability.save.str
+                value: 1
+                priority: 20
+                type: custom
+              - key: flags.midi-qol.grants.advantage.attack.all
+                value: 1
+                priority: 20
+                type: custom
+              - key: flags.midi-qol.grants.critical.range
+                value: 5
+                priority: 20
+                type: override
+          disabled: false
+          duration:
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
+          description: ''
+          tint: '#ffffff'
+          transfer: false
+          sort: 0
+          flags:
+            chris-premades:
+              effectInterface:
+                status: dead
+              conditions: []
+            core:
+              overlay: true
+            dae:
+              stackable: noneName
+              specialDuration: []
+          origin: null
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            coreVersion: '14.362'
+            systemId: dnd5e
+            systemVersion: 4.3.8
+            createdTime: null
+            modifiedTime: null
+            lastModifiedBy: null
+            exportSource: null
+          showIcon: 2
+          start:
+            combat: null
+            round: 3
+            time: 46734669
+            turn: 4
+            combatant: null
+            initiative: null
+          folder: null
+          _key: >-
+            !scenes.tokens.delta.effects!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k.dnd5edead0000000
+      flags:
+        gambits-premades:
+          attachedRegions:
+            - Scene.NLmvz0xKe2iO3QPD.Region.3fb2BZLmPdX3qjtY
+        dnd5e-scriptlets: {}
+        midi-qol:
+          actions:
+            action: false
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN.iz03xKrf7YDFp05k'
+    x: 2300
+    'y': 1750
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    depth: 2
+    level: defaultLevel0000
+    _key: '!scenes.tokens!NLmvz0xKe2iO3QPD.e8xSmsW5PxqI54xN'
+lights: []
+notes: []
+sounds: []
+regions:
+  - name: 40ft
+    color: '#cc28bd'
+    shapes:
+      - points:
+          - 1100
+          - 1038
+          - 1150
+          - 1000
+          - 1213
+          - 1013
+          - 1300
+          - 1075
+          - 1288
+          - 1200
+          - 1271
+          - 1207
+          - 1100
+          - 1052
+        type: polygon
+        hole: false
+        origin: null
+      - points:
+          - 1188
+          - 1238
+          - 1138
+          - 1200
+          - 1100
+          - 1150
+          - 1100
+          - 1052
+          - 1271
+          - 1207
+        type: polygon
+        hole: false
+        origin: null
+    _id: iLc1rqPCr3nffQrW
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 40
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.iLc1rqPCr3nffQrW'
+  - name: 45ft
+    color: '#cc283c'
+    shapes:
+      - points:
+          - 2113
+          - 613
+          - 2150
+          - 663
+          - 2125
+          - 675
+          - 2050
+          - 750
+          - 1950
+          - 788
+          - 1925
+          - 738
+          - 1888
+          - 688
+          - 1900
+          - 625
+          - 1938
+          - 600
+          - 2100
+          - 600
+        type: polygon
+        hole: false
+        origin: null
+    _id: g2wkR5eDOgYrcoIi
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 45
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.g2wkR5eDOgYrcoIi'
+  - name: 55ft
+    color: '#2861cc'
+    shapes:
+      - points:
+          - 1963
+          - 1038
+          - 1963
+          - 850
+          - 2050
+          - 838
+          - 2175
+          - 738
+          - 2300
+          - 763
+          - 2400
+          - 888
+          - 2300
+          - 1075
+          - 2013
+          - 1125
+        type: polygon
+        hole: false
+        origin: null
+    _id: nvQOhNZhBxf8Z11t
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 55
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.nvQOhNZhBxf8Z11t'
+  - name: 35ft
+    _id: tu6D7KEu0B1GYjtc
+    color: '#cc28a4'
+    shapes:
+      - points:
+          - 2775
+          - 813
+          - 2788
+          - 913
+          - 2875
+          - 900
+          - 2975
+          - 1038
+          - 2825
+          - 1138
+          - 2625
+          - 1125
+          - 2613
+          - 1063
+          - 2713
+          - 788
+        type: polygon
+        hole: false
+        origin: null
+      - points:
+          - 2650
+          - 1175
+          - 2675
+          - 1238
+          - 2538
+          - 1500
+          - 2450
+          - 1500
+          - 2413
+          - 1425
+          - 2425
+          - 1363
+          - 2400
+          - 1325
+          - 2450
+          - 1238
+          - 2488
+          - 1163
+          - 2575
+          - 1150
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 35
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.tu6D7KEu0B1GYjtc'
+  - name: 50ft
+    _id: gzT3gzSq1i8RP37S
+    color: '#2839cc'
+    shapes:
+      - points:
+          - 1400
+          - 1850
+          - 1425
+          - 1963
+          - 1363
+          - 2063
+          - 1188
+          - 2138
+          - 1100
+          - 2100
+          - 1100
+          - 1950
+          - 1363
+          - 1813
+        type: polygon
+        hole: false
+        origin: null
+      - points:
+          - 4338
+          - 1350
+          - 4075
+          - 1425
+          - 4000
+          - 1275
+          - 4025
+          - 1200
+          - 4050
+          - 1150
+          - 3988
+          - 1088
+          - 3900
+          - 1038
+          - 3925
+          - 925
+          - 4063
+          - 825
+          - 4150
+          - 838
+          - 4213
+          - 875
+          - 4300
+          - 850
+          - 4375
+          - 900
+          - 4363
+          - 1025
+          - 4325
+          - 1138
+          - 4400
+          - 1213
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 50
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.gzT3gzSq1i8RP37S'
+  - name: 65ft
+    _id: M4R2KsAZb4803eVM
+    color: '#a728cc'
+    shapes:
+      - points:
+          - 1675
+          - 2575
+          - 1388
+          - 2675
+          - 1263
+          - 2650
+          - 1175
+          - 2600
+          - 1163
+          - 2513
+          - 1125
+          - 2475
+          - 1100
+          - 2463
+          - 1100
+          - 2300
+          - 1175
+          - 2338
+          - 1263
+          - 2325
+          - 1338
+          - 2238
+          - 1388
+          - 2163
+          - 1500
+          - 2188
+          - 1700
+          - 2463
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 65
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.M4R2KsAZb4803eVM'
+  - name: 30ft
+    _id: cqgK4e4woGaJqcgy
+    color: '#28cc2d'
+    shapes:
+      - points:
+          - 2463
+          - 2663
+          - 2375
+          - 2625
+          - 2338
+          - 2600
+          - 2350
+          - 2488
+          - 2350
+          - 2450
+          - 2375
+          - 2363
+          - 2425
+          - 2313
+          - 2500
+          - 2325
+          - 2538
+          - 2375
+          - 2600
+          - 2488
+          - 2588
+          - 2625
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 30
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.cqgK4e4woGaJqcgy'
+  - name: 20ft
+    _id: wNaJydNDtyKYPRgU
+    color: '#28cc73'
+    shapes:
+      - points:
+          - 3025
+          - 2175
+          - 2950
+          - 2138
+          - 2913
+          - 2075
+          - 2925
+          - 1975
+          - 3000
+          - 1925
+          - 3088
+          - 1963
+          - 3150
+          - 1963
+          - 3188
+          - 2038
+          - 3125
+          - 2138
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 20
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.wNaJydNDtyKYPRgU'
+  - name: 10ft
+    _id: gFHN1a2KvPxFUig8
+    color: '#79cc28'
+    shapes:
+      - points:
+          - 4038
+          - 1850
+          - 4100
+          - 1825
+          - 4125
+          - 1875
+          - 4113
+          - 1913
+          - 4063
+          - 1925
+          - 4025
+          - 1900
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 10
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.gFHN1a2KvPxFUig8'
+  - name: 25ft
+    _id: lTd9dXJcgoNrgSob
+    color: '#28cc97'
+    shapes:
+      - points:
+          - 5063
+          - 2850
+          - 4913
+          - 2775
+          - 4788
+          - 2688
+          - 4725
+          - 2563
+          - 4688
+          - 2463
+          - 4725
+          - 2350
+          - 4863
+          - 2288
+          - 4925
+          - 2325
+          - 5025
+          - 2413
+          - 5013
+          - 2525
+          - 5100
+          - 2563
+          - 5175
+          - 2513
+          - 5200
+          - 2663
+          - 5125
+          - 2750
+        type: polygon
+        hole: false
+        origin: null
+      - points:
+          - 5337
+          - 1875
+          - 5238
+          - 1863
+          - 5138
+          - 1775
+          - 5138
+          - 1688
+          - 5337
+          - 1576
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 25
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.lTd9dXJcgoNrgSob'
+  - name: 15ft
+    _id: cFCmU6d4QwYVOosw
+    color: '#cc2865'
+    shapes:
+      - points:
+          - 3750
+          - 2750
+          - 3763
+          - 2700
+          - 3825
+          - 2663
+          - 3900
+          - 2688
+          - 3938
+          - 2725
+          - 3950
+          - 2800
+          - 3875
+          - 2838
+          - 3750
+          - 2813
+        type: polygon
+        hole: false
+        origin: null
+    elevation:
+      bottom: null
+      top: null
+      topInclusive: false
+    behaviors: []
+    visibility: 0
+    locked: false
+    flags:
+      terrainmapper:
+        undefined: true
+        elevationAlgorithm: plateau
+        plateauElevation: 15
+        rampFloor: null
+        rampDirection: null
+        rampStepSize: null
+        splitPolygons: false
+      tagger: {}
+      easy-regions:
+        src: ''
+        tint: null
+        size: 40
+    levels: []
+    restriction:
+      enabled: false
+      type: move
+      priority: 0
+    attachment:
+      token: null
+    highlightMode: shapes
+    displayMeasurements: false
+    hidden: false
+    ownership:
+      default: 0
+    _shapeConstraints: null
+    _key: '!scenes.regions!NLmvz0xKe2iO3QPD.cFCmU6d4QwYVOosw'
+tiles:
+  - width: 600
+    height: 600
+    x: 1850
+    'y': 1650
+    rotation: 90
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: 2
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-14-turret-connector.webp
+      tagger:
+        data:
+          preprocessed: false
+      tokenmagic: {}
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-14-turret-connector.webp
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    elevation: 0
+    sort: 1
+    _id: QMsnT2ayLbv7VLZ9
+    restrictions:
+      light: false
+      weather: false
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.QMsnT2ayLbv7VLZ9'
+  - width: 600
+    height: 600
+    x: 1550
+    'y': 1350
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-wall-round-turret-tower-floor.webp
+      betterroofs:
+        brMode: 2
+      tagger:
+        data:
+          preprocessed: false
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-wall-round-turret-tower-floor.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    elevation: 10
+    sort: 2
+    _id: 4dYe12g6QYREVMHx
+    restrictions:
+      light: false
+      weather: false
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.4dYe12g6QYREVMHx'
+  - width: 200
+    height: 200
+    x: 1700
+    'y': 1600
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: 2
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-decor-stair-stone-up.webp
+      tagger:
+        data:
+          preprocessed: false
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-decor-stair-stone-up.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    elevation: 10
+    sort: 3
+    _id: G4izORGpq7DoAKc2
+    restrictions:
+      light: false
+      weather: false
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.G4izORGpq7DoAKc2'
+  - width: 600
+    height: 600
+    x: 1550
+    'y': 1350
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: 2
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-wall-round-turret-03-tower.webp
+      tagger:
+        data:
+          preprocessed: false
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-wall-round-turret-03-tower.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    elevation: 10
+    sort: 4
+    _id: lidChCvoxMSiq6WP
+    restrictions:
+      light: false
+      weather: false
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.lidChCvoxMSiq6WP'
+  - width: 200
+    height: 200
+    x: 1700
+    'y': 1600
+    rotation: 0
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      betterroofs:
+        brMode: 2
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-decor-stair-stone-down.webp
+      tagger:
+        data:
+          preprocessed: false
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-decor-stair-stone-down.webp
+      anchorX: 0
+      anchorY: 0
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      tint: '#ffffff'
+      alphaThreshold: 0.75
+    elevation: 10
+    sort: 5
+    _id: qIUEapO2OxaYsm8b
+    restrictions:
+      light: false
+      weather: false
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.qIUEapO2OxaYsm8b'
+  - width: 700
+    height: 700
+    x: 1850
+    'y': 1650
+    rotation: 270
+    alpha: 1
+    hidden: false
+    locked: true
+    occlusion:
+      alpha: 0.25
+      modes:
+        - 1
+    video:
+      loop: true
+      autoplay: true
+      volume: 0
+    flags:
+      tagger:
+        tags: ''
+        data:
+          preprocessed: false
+      betterroofs:
+        brMode: 1
+        manualPoly: ''
+        occlusionLinkId: ''
+        occlusionLinkSource: false
+      monks-active-tiles:
+        active: true
+        record: false
+        restriction: all
+        controlled: all
+        trigger: enter
+        usealpha: false
+        pointer: false
+        pertoken: false
+        minrequired: 0
+        chance: 100
+        actions: []
+      levels-3d-preview:
+        model3d: ''
+        imageTexture: ''
+        color: '#ffffff'
+        enableAnim: true
+        animIndex: 0
+        animSpeed: 1
+        yScale: 1
+        fillType: stretch
+        tileScale: 1
+        randomRotation: false
+      multiface-tiles:
+        originalImage: >-
+          modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-roof-03-round.webp
+      terrainmapper:
+        isFloor: false
+        trimAlphaBorder: true
+        testHoles: false
+        alphaThreshold: 0.75
+    texture:
+      src: >-
+        modules/baileywiki-city-district-04-ruins-and-slums/tiles/ruins/ruins-roof-03-round.webp
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: fill
+      scaleX: 1
+      scaleY: 1
+      alphaThreshold: 0.75
+    elevation: 20
+    sort: 6
+    restrictions:
+      light: true
+      weather: true
+    _id: 2ELvzgKhzJoLk3jc
+    levels: []
+    _key: '!scenes.tiles!NLmvz0xKe2iO3QPD.2ELvzgKhzJoLk3jc'
+walls:
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1963
+      - 850
+      - 2050
+      - 838
+    _id: faXaj0jojHj8JwmV
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.faXaj0jojHj8JwmV'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2050
+      - 838
+      - 2175
+      - 738
+    _id: KPGh3cc9QfxkPUKo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.KPGh3cc9QfxkPUKo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2175
+      - 738
+      - 2300
+      - 763
+    _id: nooBfNlq9Lo7k5el
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.nooBfNlq9Lo7k5el'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2300
+      - 763
+      - 2400
+      - 888
+    _id: oDZ9E8orutgzIOvt
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.oDZ9E8orutgzIOvt'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2400
+      - 888
+      - 2300
+      - 1075
+    _id: a2ZtUp49YQD5T9pv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.a2ZtUp49YQD5T9pv'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2300
+      - 1075
+      - 2013
+      - 1125
+    _id: xXVJWzFEuMoEMmhe
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.xXVJWzFEuMoEMmhe'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2013
+      - 1125
+      - 1963
+      - 1038
+    _id: PfA9w5OZ30YrYc96
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.PfA9w5OZ30YrYc96'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1963
+      - 1038
+      - 1963
+      - 913
+    _id: SuXnWnVPHLvfJyRt
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.SuXnWnVPHLvfJyRt'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1963
+      - 913
+      - 1963
+      - 850
+    _id: GV9FfRgfhdBz0UTB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 55
+      elevatedvision:
+        elevation:
+          top: 55
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.GV9FfRgfhdBz0UTB'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2713
+      - 788
+      - 2613
+      - 1063
+    _id: WYEtXKmQeDrKiAjT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.WYEtXKmQeDrKiAjT'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2613
+      - 1063
+      - 2625
+      - 1125
+    _id: 64b6ORc7Bc0nZLQL
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.64b6ORc7Bc0nZLQL'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2625
+      - 1125
+      - 2825
+      - 1138
+    _id: ZzzOjteGHIPiZqvo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.ZzzOjteGHIPiZqvo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2825
+      - 1138
+      - 2975
+      - 1038
+    _id: Dv2M5OWFprQ7xqzb
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Dv2M5OWFprQ7xqzb'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2975
+      - 1038
+      - 2875
+      - 900
+    _id: VD6whLAaOvarDj5A
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.VD6whLAaOvarDj5A'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2875
+      - 900
+      - 2788
+      - 913
+    _id: 6TY8TfY3K2yD7vaz
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.6TY8TfY3K2yD7vaz'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2788
+      - 913
+      - 2775
+      - 813
+    _id: McyTpVvsQvo6ZQNm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.McyTpVvsQvo6ZQNm'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2775
+      - 813
+      - 2713
+      - 788
+    _id: yuYFy9hi2YE7iUGD
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.yuYFy9hi2YE7iUGD'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2488
+      - 1163
+      - 2575
+      - 1150
+    _id: aUe8XGUfcoIk6HFB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.aUe8XGUfcoIk6HFB'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2575
+      - 1150
+      - 2650
+      - 1175
+    _id: LDrPEaVqrGJ3viae
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.LDrPEaVqrGJ3viae'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2650
+      - 1175
+      - 2675
+      - 1238
+    _id: YyD37AzEscyyefKk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.YyD37AzEscyyefKk'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2675
+      - 1238
+      - 2538
+      - 1500
+    _id: G257BXdOrUPOayOm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.G257BXdOrUPOayOm'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2538
+      - 1500
+      - 2450
+      - 1500
+    _id: 1HBDeX5Wxizsz3KW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.1HBDeX5Wxizsz3KW'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2450
+      - 1500
+      - 2413
+      - 1425
+    _id: xED8zbsXkJ7OGSJI
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.xED8zbsXkJ7OGSJI'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2413
+      - 1425
+      - 2425
+      - 1363
+    _id: 7ShlZAkLU37sI50q
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.7ShlZAkLU37sI50q'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2425
+      - 1363
+      - 2400
+      - 1325
+    _id: 5394PXgHcVG7jv4I
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.5394PXgHcVG7jv4I'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2400
+      - 1325
+      - 2450
+      - 1238
+    _id: K6SyhDuGwpiohTKj
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.K6SyhDuGwpiohTKj'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2450
+      - 1238
+      - 2488
+      - 1163
+    _id: 6mKBNolSfuXWGMoe
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 35
+      elevatedvision:
+        elevation:
+          top: 35
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.6mKBNolSfuXWGMoe'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4063
+      - 825
+      - 3925
+      - 925
+    _id: blDymkFQffPE8oqm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.blDymkFQffPE8oqm'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3925
+      - 925
+      - 3900
+      - 1038
+    _id: bo6BFXSf3yrtGscb
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bo6BFXSf3yrtGscb'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3900
+      - 1038
+      - 3988
+      - 1088
+    _id: pS3byEqgx8AGSNcP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.pS3byEqgx8AGSNcP'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3988
+      - 1088
+      - 4038
+      - 1138
+    _id: KIjqRhKSJa4nzm3S
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.KIjqRhKSJa4nzm3S'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4038
+      - 1138
+      - 4050
+      - 1150
+    _id: jHmKOcP84gSqBZtf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jHmKOcP84gSqBZtf'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4050
+      - 1150
+      - 4025
+      - 1200
+    _id: 8CvfXDPSOaKPnrjZ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.8CvfXDPSOaKPnrjZ'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4025
+      - 1200
+      - 4000
+      - 1275
+    _id: r8YxUdTZv5urrIn5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.r8YxUdTZv5urrIn5'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4000
+      - 1275
+      - 4075
+      - 1425
+    _id: SuHEZD5n4aY3byoR
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.SuHEZD5n4aY3byoR'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4075
+      - 1425
+      - 4338
+      - 1350
+    _id: RX6Ua4scKE95SsNi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.RX6Ua4scKE95SsNi'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4338
+      - 1350
+      - 4400
+      - 1213
+    _id: eH3HKIvcgpwcASxP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.eH3HKIvcgpwcASxP'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4400
+      - 1213
+      - 4325
+      - 1138
+    _id: bi8PXjgDJfip7w8U
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bi8PXjgDJfip7w8U'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4325
+      - 1138
+      - 4363
+      - 1025
+    _id: pETDl38JPbNtP4R1
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.pETDl38JPbNtP4R1'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4363
+      - 1025
+      - 4375
+      - 900
+    _id: rQG8hXaRaiu2a3qk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.rQG8hXaRaiu2a3qk'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4375
+      - 900
+      - 4300
+      - 850
+    _id: O8xDYhpg958jbeQA
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.O8xDYhpg958jbeQA'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4300
+      - 850
+      - 4213
+      - 875
+    _id: bPeySmq5Mw8AWMhI
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bPeySmq5Mw8AWMhI'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4213
+      - 875
+      - 4150
+      - 838
+    _id: 7dxzdFZXq41g5Qbo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.7dxzdFZXq41g5Qbo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4150
+      - 838
+      - 4063
+      - 825
+    _id: JcXg7BzN4oM8FAfs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.JcXg7BzN4oM8FAfs'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5338
+      - 1575
+      - 5138
+      - 1688
+    _id: X4vUqKmTGbBqNIn1
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.X4vUqKmTGbBqNIn1'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5138
+      - 1688
+      - 5138
+      - 1775
+    _id: hyj59YenzGizjixr
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.hyj59YenzGizjixr'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5138
+      - 1775
+      - 5238
+      - 1863
+    _id: 4SHQcH2iUTyOrhA2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.4SHQcH2iUTyOrhA2'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5238
+      - 1863
+      - 5338
+      - 1875
+    _id: E5gNZ7VaBnqvRjyJ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.E5gNZ7VaBnqvRjyJ'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5338
+      - 1875
+      - 5338
+      - 1575
+    _id: KcumlDlG2ijBDIWk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.KcumlDlG2ijBDIWk'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4863
+      - 2288
+      - 4725
+      - 2350
+    _id: XFsj91YVA7fd3kEd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.XFsj91YVA7fd3kEd'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4725
+      - 2350
+      - 4688
+      - 2463
+    _id: 2AaCF2oMTdtUUFvr
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.2AaCF2oMTdtUUFvr'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4688
+      - 2463
+      - 4725
+      - 2563
+    _id: UkLj5GDerD0nVdny
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.UkLj5GDerD0nVdny'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4725
+      - 2563
+      - 4788
+      - 2688
+    _id: gu1EAvzxOAm0xikv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.gu1EAvzxOAm0xikv'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4788
+      - 2688
+      - 4913
+      - 2775
+    _id: RNAruUc2K14C6WVF
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.RNAruUc2K14C6WVF'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4913
+      - 2775
+      - 5063
+      - 2850
+    _id: d0Aw6JC9JEXQuDKE
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.d0Aw6JC9JEXQuDKE'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5063
+      - 2850
+      - 5125
+      - 2750
+    _id: CC3w94yv1OF6QfB4
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.CC3w94yv1OF6QfB4'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5125
+      - 2750
+      - 5200
+      - 2663
+    _id: GKWtjRkt4QdscWqi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.GKWtjRkt4QdscWqi'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5200
+      - 2663
+      - 5175
+      - 2513
+    _id: PahE2KNq2ZNdcZL9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.PahE2KNq2ZNdcZL9'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5175
+      - 2513
+      - 5100
+      - 2563
+    _id: V5Fizapa01DcEmRl
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.V5Fizapa01DcEmRl'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5100
+      - 2563
+      - 5013
+      - 2525
+    _id: ruIh4rFcUC0X2zbo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.ruIh4rFcUC0X2zbo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5013
+      - 2525
+      - 5025
+      - 2413
+    _id: jGIfnWoIXAZY1D3r
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jGIfnWoIXAZY1D3r'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 5025
+      - 2413
+      - 4925
+      - 2325
+    _id: sIEJBI7Gi1rdYb36
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.sIEJBI7Gi1rdYb36'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4925
+      - 2325
+      - 4863
+      - 2288
+    _id: Qm3ev1qYWNWduVRd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 25
+      elevatedvision:
+        elevation:
+          top: 25
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Qm3ev1qYWNWduVRd'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4100
+      - 1825
+      - 4038
+      - 1850
+    _id: gpfQB8dI0dX7CyeL
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.gpfQB8dI0dX7CyeL'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4038
+      - 1850
+      - 4025
+      - 1900
+    _id: FJbogemYr6u0r4vQ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.FJbogemYr6u0r4vQ'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4025
+      - 1900
+      - 4063
+      - 1925
+    _id: UdqXvXiShwAuabrv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.UdqXvXiShwAuabrv'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4063
+      - 1925
+      - 4113
+      - 1913
+    _id: ltMtg4HsbD0sCvvm
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.ltMtg4HsbD0sCvvm'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4113
+      - 1913
+      - 4125
+      - 1875
+    _id: uAPFnDPYeHrOWuyk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.uAPFnDPYeHrOWuyk'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 4125
+      - 1875
+      - 4100
+      - 1825
+    _id: LTBTKZ2TYTk7yowc
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 10
+      elevatedvision:
+        elevation:
+          top: 10
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.LTBTKZ2TYTk7yowc'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3000
+      - 1925
+      - 3088
+      - 1963
+    _id: 9PIMPVaLTdeHqrJi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.9PIMPVaLTdeHqrJi'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3088
+      - 1963
+      - 3150
+      - 1963
+    _id: cNUxKjMhMM4Jl8c3
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.cNUxKjMhMM4Jl8c3'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3150
+      - 1963
+      - 3188
+      - 2038
+    _id: ryaLqoynnOCjBahc
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.ryaLqoynnOCjBahc'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3188
+      - 2038
+      - 3125
+      - 2138
+    _id: Gp0WZgFql2W9xa4h
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Gp0WZgFql2W9xa4h'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3125
+      - 2138
+      - 3025
+      - 2175
+    _id: 9a1C5t2XBFvnS2zW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.9a1C5t2XBFvnS2zW'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3025
+      - 2175
+      - 2950
+      - 2138
+    _id: 7ogoXO13hFeFz6ZF
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.7ogoXO13hFeFz6ZF'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2950
+      - 2138
+      - 2913
+      - 2075
+    _id: 1buaJJOFiuXzWVLx
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.1buaJJOFiuXzWVLx'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2913
+      - 2075
+      - 2925
+      - 1975
+    _id: e884Lfes5N6CWC6A
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.e884Lfes5N6CWC6A'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2925
+      - 1975
+      - 3000
+      - 1925
+    _id: djfDs1lkfuc3ydai
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 20
+      elevatedvision:
+        elevation:
+          top: 20
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.djfDs1lkfuc3ydai'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2425
+      - 2313
+      - 2500
+      - 2325
+    _id: 0QsQlIXd8ykWL71l
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.0QsQlIXd8ykWL71l'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2500
+      - 2325
+      - 2538
+      - 2375
+    _id: 86RgjabCzpflKvc9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.86RgjabCzpflKvc9'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2538
+      - 2375
+      - 2600
+      - 2488
+    _id: iNRSv6vUYzFzTbDf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.iNRSv6vUYzFzTbDf'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2600
+      - 2488
+      - 2588
+      - 2625
+    _id: me9R7VVx4HaLAUu9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.me9R7VVx4HaLAUu9'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2588
+      - 2625
+      - 2463
+      - 2663
+    _id: 2kblVCVU84AlffUT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.2kblVCVU84AlffUT'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2463
+      - 2663
+      - 2375
+      - 2625
+    _id: 0XOfJaA4Tl5pR5c6
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.0XOfJaA4Tl5pR5c6'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2375
+      - 2625
+      - 2338
+      - 2600
+    _id: oSjSQ4jlyuHq2qJd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.oSjSQ4jlyuHq2qJd'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2338
+      - 2600
+      - 2350
+      - 2488
+    _id: 0RATPvM8X1bdQaiW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.0RATPvM8X1bdQaiW'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2350
+      - 2488
+      - 2350
+      - 2450
+    _id: jrMVlocKFtDal1EZ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jrMVlocKFtDal1EZ'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2350
+      - 2450
+      - 2375
+      - 2363
+    _id: LHnQ4o5Edd7QVjc9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.LHnQ4o5Edd7QVjc9'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2375
+      - 2363
+      - 2425
+      - 2313
+    _id: HDiiYo6nUZocC7fP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 30
+      elevatedvision:
+        elevation:
+          top: 30
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.HDiiYo6nUZocC7fP'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1500
+      - 2188
+      - 1700
+      - 2463
+    _id: HSwoK08zdL8Dufc3
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.HSwoK08zdL8Dufc3'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1700
+      - 2463
+      - 1675
+      - 2575
+    _id: GUaTo13KXacdtc4z
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.GUaTo13KXacdtc4z'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1675
+      - 2575
+      - 1388
+      - 2675
+    _id: luhxKc2xztDBgEIJ
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.luhxKc2xztDBgEIJ'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1388
+      - 2675
+      - 1263
+      - 2650
+    _id: jkVwFDOskLyePbce
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jkVwFDOskLyePbce'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1263
+      - 2650
+      - 1175
+      - 2600
+    _id: 51rQmFjxSL717ld1
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.51rQmFjxSL717ld1'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1175
+      - 2600
+      - 1163
+      - 2513
+    _id: sXd1VMlH7ZUu0BhE
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.sXd1VMlH7ZUu0BhE'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1163
+      - 2513
+      - 1125
+      - 2475
+    _id: Ef1TQC2ZE3v9ofgw
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Ef1TQC2ZE3v9ofgw'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1125
+      - 2475
+      - 1100
+      - 2463
+    _id: 3F13YVLbaQ6keptf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.3F13YVLbaQ6keptf'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 2463
+      - 1100
+      - 2300
+    _id: KcDkRoVL4mO3zzub
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.KcDkRoVL4mO3zzub'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 2300
+      - 1175
+      - 2338
+    _id: iCt56XgYBtcwleLv
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.iCt56XgYBtcwleLv'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1175
+      - 2338
+      - 1263
+      - 2325
+    _id: BTwtX3Fw9YQX0cCh
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.BTwtX3Fw9YQX0cCh'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1263
+      - 2325
+      - 1338
+      - 2238
+    _id: EBFysZvdoaYeCddb
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.EBFysZvdoaYeCddb'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1338
+      - 2238
+      - 1388
+      - 2163
+    _id: qAytBfwdOlsK5O2C
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.qAytBfwdOlsK5O2C'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1388
+      - 2163
+      - 1500
+      - 2188
+    _id: q03A1NluWmIo7ZxI
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 65
+      elevatedvision:
+        elevation:
+          top: 65
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.q03A1NluWmIo7ZxI'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 1950
+      - 1363
+      - 1813
+    _id: IkwijiDPsdFhJdmz
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.IkwijiDPsdFhJdmz'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1363
+      - 1813
+      - 1400
+      - 1850
+    _id: Q7hDRNp0pz3xTC2g
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Q7hDRNp0pz3xTC2g'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1400
+      - 1850
+      - 1425
+      - 1963
+    _id: Cl1BN7J04GIf0FX0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Cl1BN7J04GIf0FX0'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1425
+      - 1963
+      - 1363
+      - 2063
+    _id: bJCJhJlxy0nlxTlY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bJCJhJlxy0nlxTlY'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1363
+      - 2063
+      - 1188
+      - 2138
+    _id: pp1qHGzBft9ml7by
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.pp1qHGzBft9ml7by'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1188
+      - 2138
+      - 1100
+      - 2100
+    _id: 6gprN0QLD3pGRG4I
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.6gprN0QLD3pGRG4I'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 2100
+      - 1100
+      - 1950
+    _id: K09toD839a2tZVhc
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 50
+      elevatedvision:
+        elevation:
+          top: 50
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.K09toD839a2tZVhc'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1150
+      - 1000
+      - 1213
+      - 1013
+    _id: rWudbgaIGYgvwCv8
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.rWudbgaIGYgvwCv8'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1213
+      - 1013
+      - 1300
+      - 1075
+    _id: FWmhyB8Go3oYSpwW
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.FWmhyB8Go3oYSpwW'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1300
+      - 1075
+      - 1288
+      - 1200
+    _id: SlRzT91spRd8vMiF
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.SlRzT91spRd8vMiF'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1288
+      - 1200
+      - 1188
+      - 1238
+    _id: SJgtRRfIcHeXSsX0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.SJgtRRfIcHeXSsX0'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1188
+      - 1238
+      - 1138
+      - 1200
+    _id: rXEQJX545yBTTClb
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.rXEQJX545yBTTClb'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1138
+      - 1200
+      - 1100
+      - 1150
+    _id: QqsBtLyFABtZaEip
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.QqsBtLyFABtZaEip'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 1150
+      - 1100
+      - 1038
+    _id: nj5JBfz2IHjMq1xf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.nj5JBfz2IHjMq1xf'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1100
+      - 1038
+      - 1150
+      - 1000
+    _id: VkWRWw1XiKSaOddX
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 40
+      elevatedvision:
+        elevation:
+          top: 40
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.VkWRWw1XiKSaOddX'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1938
+      - 600
+      - 1900
+      - 625
+    _id: Q7OqYxccHmbZjhB5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Q7OqYxccHmbZjhB5'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1900
+      - 625
+      - 1888
+      - 688
+    _id: qM5pb8wFDJYGgj7y
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.qM5pb8wFDJYGgj7y'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1888
+      - 688
+      - 1925
+      - 738
+    _id: fGAcs1vNzq8lgPRw
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.fGAcs1vNzq8lgPRw'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1925
+      - 738
+      - 1950
+      - 788
+    _id: JZPuCbRNk4QYWZqE
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.JZPuCbRNk4QYWZqE'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1950
+      - 788
+      - 2050
+      - 750
+    _id: vN4dFxOhVY6KqaWK
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.vN4dFxOhVY6KqaWK'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2050
+      - 750
+      - 2125
+      - 675
+    _id: aLW7sRy2tqE6omrp
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.aLW7sRy2tqE6omrp'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2125
+      - 675
+      - 2150
+      - 663
+    _id: WqIdMqtuHO8iG2gG
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.WqIdMqtuHO8iG2gG'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2150
+      - 663
+      - 2113
+      - 613
+    _id: Zmfezs8ua6w79iO0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.Zmfezs8ua6w79iO0'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2113
+      - 613
+      - 2100
+      - 600
+    _id: v6UhLmRN08CjUfWS
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.v6UhLmRN08CjUfWS'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 2100
+      - 600
+      - 1938
+      - 600
+    _id: bG5Wl5bdUfGOxCIj
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 45
+      elevatedvision:
+        elevation:
+          top: 45
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bG5Wl5bdUfGOxCIj'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3825
+      - 2663
+      - 3900
+      - 2688
+    _id: QT1iFJsYnBRBxiWo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.QT1iFJsYnBRBxiWo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3900
+      - 2688
+      - 3938
+      - 2725
+    _id: iCI09duRAjAc0fkd
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.iCI09duRAjAc0fkd'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3938
+      - 2725
+      - 3950
+      - 2800
+    _id: PkgbRQx9q37MkwtG
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.PkgbRQx9q37MkwtG'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3950
+      - 2800
+      - 3875
+      - 2838
+    _id: s1s3tonK6cgzlz35
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.s1s3tonK6cgzlz35'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3875
+      - 2838
+      - 3750
+      - 2813
+    _id: qRbTQkEjiKUG8NN3
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.qRbTQkEjiKUG8NN3'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3750
+      - 2813
+      - 3750
+      - 2750
+    _id: qYHCAiP8OCgJKube
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.qYHCAiP8OCgJKube'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3750
+      - 2750
+      - 3763
+      - 2700
+    _id: bJuZbHv3R3q6QtUg
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.bJuZbHv3R3q6QtUg'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 3763
+      - 2700
+      - 3825
+      - 2663
+    _id: in5X0pLYNppUnKzs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      wall-height:
+        top: 15
+      elevatedvision:
+        elevation:
+          top: 15
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.in5X0pLYNppUnKzs'
+  - c:
+      - 2062
+      - 1737
+      - 2062
+      - 1575
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: P2qGKX1SDIgYYUTn
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.P2qGKX1SDIgYYUTn'
+  - c:
+      - 2062
+      - 1575
+      - 1987
+      - 1462
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: fB43G7WjHo3NyFHN
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.fB43G7WjHo3NyFHN'
+  - c:
+      - 1987
+      - 1462
+      - 1825
+      - 1412
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: yX8yQsCdy125mNIY
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.yX8yQsCdy125mNIY'
+  - c:
+      - 1825
+      - 1412
+      - 1712
+      - 1450
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: MTGDcqi8DdxyBrAr
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.MTGDcqi8DdxyBrAr'
+  - c:
+      - 1712
+      - 1450
+      - 1625
+      - 1600
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: jDij1eUWFhZt5Njv
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jDij1eUWFhZt5Njv'
+  - c:
+      - 1625
+      - 1600
+      - 1650
+      - 1762
+    light: 20
+    move: 20
+    sight: 20
+    sound: 0
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 4
+      betterroofs:
+        externalWall: false
+      levels-3d-preview:
+        wallTexture: ''
+        wallSidesTexture: ''
+        wallTint: '#ffffff'
+        wallSidesTint: '#ffffff'
+        stretchTex: false
+        wallOpacity: 1
+        wallDepth: 30
+        roughness: 1
+        metalness: 1
+        alwaysVisible: false
+        joinWall: false
+      monks-active-tiles:
+        entity: ''
+        open: false
+        close: false
+        lock: false
+        secret: false
+      tagger:
+        tags: ''
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 4
+          bottom: 0
+    _id: jrIl1TlZYGoDgL5j
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.jrIl1TlZYGoDgL5j'
+  - c:
+      - 1650
+      - 1762
+      - 1750
+      - 1875
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: hJwGF1y1gaKyw4hx
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.hJwGF1y1gaKyw4hx'
+  - c:
+      - 1750
+      - 1875
+      - 1937
+      - 1875
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 0
+        top: 9
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 9
+          bottom: 0
+    _id: gLJ8jiIfdNKXRR04
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.gLJ8jiIfdNKXRR04'
+  - c:
+      - 1975
+      - 1437
+      - 2075
+      - 1587
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: fMmQeLI4UEvg6ZT4
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.fMmQeLI4UEvg6ZT4'
+  - c:
+      - 2075
+      - 1587
+      - 2050
+      - 1750
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: T1UI9heeOvjvDqTP
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.T1UI9heeOvjvDqTP'
+  - c:
+      - 2050
+      - 1750
+      - 1925
+      - 1862
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: lSiUBW7drMKXjoef
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.lSiUBW7drMKXjoef'
+  - c:
+      - 1925
+      - 1862
+      - 1737
+      - 1850
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: 2vAbAL6OWozCBLa3
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.2vAbAL6OWozCBLa3'
+  - c:
+      - 1737
+      - 1850
+      - 1637
+      - 1762
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: cRvE1fN2qiFI37nO
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.cRvE1fN2qiFI37nO'
+  - c:
+      - 1612
+      - 1650
+      - 1650
+      - 1512
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: X0YV7katN1Wn39N8
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.X0YV7katN1Wn39N8'
+  - c:
+      - 1650
+      - 1512
+      - 1775
+      - 1412
+    light: 20
+    move: 20
+    sight: 20
+    sound: 20
+    dir: 0
+    door: 0
+    ds: 0
+    flags:
+      wall-height:
+        bottom: 10
+        top: 19
+      tagger:
+        data:
+          preprocessed: false
+      perceptive:
+        LockPeekingWallIDsFlag: []
+        DoormovingWallIDFlag: ''
+      elevatedvision:
+        elevation:
+          top: 19
+          bottom: 10
+    _id: WlK4xwZTordR9KOC
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    doorSound: stoneBasic
+    animation: null
+    levels: []
+    _key: '!scenes.walls!NLmvz0xKe2iO3QPD.WlK4xwZTordR9KOC'
+playlist: nand7nzssvcsh7J9
+playlistSound: null
+journal: R2TSWefo05Y3vZuk
+journalEntryPage: null
+weather: ''
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+flags:
+  scene-packer:
+    hash: 94786bd62b8818448df2f1c087ca0f1fab3df479
+  smalltime:
+    darkness-link: true
+    player-vis: '2'
+    moonlight: true
+  zoom-pan-options:
+    minZoom: null
+    maxZoom: null
+  terrainmapper:
+    backgroundElevation: null
+  wall-height:
+    advancedVision: true
+  token-attacher: {}
+  walledtemplates:
+    version: 0.8.0
+  tokencover:
+    version: 0.9.6
+  sequencer:
+    effects: []
+_stats:
+  compendiumSource: Compendium.world.dark-sun-scenes.Scene.NLmvz0xKe2iO3QPD
+  duplicateSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 4.3.8
+  createdTime: 1744079048933
+  modifiedTime: 1782140173389
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+active: false
+navOrder: 0
+sort: 0
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
+_key: '!scenes!NLmvz0xKe2iO3QPD'
+templates: []

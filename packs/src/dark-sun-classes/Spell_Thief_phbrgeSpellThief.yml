@@ -1,0 +1,216 @@
+_id: phbrgeSpellThief
+name: Spell Thief
+type: feat
+folder: JWrHBfC3SxUB5k4L
+img: icons/magic/unholy/strike-body-life-soul-purple.webp
+system:
+  description:
+    value: >-
+      <p>You gain the ability to magically steal the knowledge of how to cast a
+      spell from another spellcaster.</p><p>Immediately after a creature casts a
+      spell that targets you or includes you in its area of effect, you can take
+      a Reaction to force the creature to make an Intelligence saving throw. The
+      DC equals your spell save DC. On a failed save, you negate the spell’s
+      effect against you, and you steal the knowledge of the spell if it is at
+      least level 1 and of a level you can cast (it doesn’t need to be a Wizard
+      spell). For the next 8 hours, you have the spell prepared. The creature
+      can’t cast it until the 8 hours have passed.</p><p>Once you steal a spell
+      with this feature, you can’t use this feature again until you finish a
+      Long Rest.</p>
+    chat: ''
+  source:
+    custom: ''
+    rules: '2024'
+    revision: 1
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 17
+    items: []
+    repeatable: false
+  properties: []
+  requirements: ''
+  activities:
+    7I3f9ys0j2gdTnMs:
+      type: save
+      name: Spell Thief
+      _id: 7I3f9ys0j2gdTnMs
+      activation:
+        type: reaction
+        value: null
+        override: false
+        condition: >-
+          Immediately after a creature casts a spell that targets you or
+          includes you in its area of effect
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: srTPApnqiiSmPf8g
+          level: {}
+          onSave: false
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      damage:
+        parts: []
+        onSave: half
+        critical:
+          allow: false
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+      img: systems/dnd5e/icons/svg/statuses/grappled.svg
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        autoCEEffects: default
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+  enchant: {}
+  identifier: spell-thief
+  advancement: []
+  crewed: false
+effects:
+  - name: Stolen Spell
+    img: systems/dnd5e/icons/svg/statuses/grappled.svg
+    origin: Compendium.dark-sun-essentials.dark-sun-classes.Item.phbrgeSpellThief
+    transfer: false
+    _id: srTPApnqiiSmPf8g
+    type: base
+    system:
+      changes: []
+    disabled: false
+    duration:
+      value: 28800
+      units: seconds
+      expiry: turnStart
+      expired: false
+    description: >-
+      <p>This creature has had a spell stolen from it and cannot cast it for 8
+      hours.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.362'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!phbrgeSpellThief.srTPApnqiiSmPf8g'
+flags:
+  dnd5e: {}
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1768765316161
+  modifiedTime: 1781135000303
+  lastModifiedBy: wgCeShTrqHJFBbDr
+sort: 0
+ownership:
+  default: 0
+  wgCeShTrqHJFBbDr: 3
+_key: '!items!phbrgeSpellThief'

@@ -1,0 +1,311 @@
+name: Fire Domain
+type: subclass
+system:
+  identifier: fire-domain
+  classIdentifier: cleric
+  description:
+    value: >-
+      <p>Fire is the feared domain of destructive power, rarely seen as
+      nurturing and life-giving. Most fire clerics are impulsive and destructive
+      like their element, and seen as madmen who randomly destroy precious
+      organic material. Yet, fire wipes away the old so the land can grow back
+      stronger. They sometimes jest “to destroy the world is to destroy the
+      defilers,” and no one is quite sure if they are truly joking.</p><p>Fire
+      clerics are expected to preserve Athas so it can be destroyed again and
+      grow back stronger. They encourage the growth of forests, cities, and
+      fields. This pact leads them to directly oppose all defilers and sorcerer
+      kings, but their ways are too eccentric to form lasting alliances with
+      druids, who share the same goal.</p><p></p><h5><span
+      style="font-family:ScalySansRemake">Fire Initiation</span></h5><blockquote
+      style="border:0px;font:inherit;vertical-align:baseline;margin:0.1cm 0px
+      0px;padding:0px;quotes:none;box-sizing:border-box;-webkit-print-color-adjust:exact;z-index:15;break-inside:avoid"><p><span
+      style="font-family:ScalySansRemake">When a mentor feels her student is
+      ready, she takes her to a clearing and burns her in a massive bonfire at
+      nightfall. If accepted, the novice remains in the inferno through the
+      night as it burns and infuses her through the flames. Her hair, if any,
+      turns fiery red and her eyes coal black, known as “the badge of flame.” If
+      not accepted, she is violently expelled an in explosion of fire, usually
+      fatal.</span></p></blockquote><p></p><h3>Fire Domain
+      Spells</h3><table><thead><tr><th>Cleric
+      Level</th><th>Spells</th></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{Burning
+      Hands}, @UUID[Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU]{Faerie
+      Fire}</td></tr><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.FjYE214HTERCRZNm]{Flaming
+      Sphere}, @UUID[Compendium.dnd5e.spells.Item.7u2obDvuvtZBkTfq]{Scorching
+      Ray}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.BP3GCwa66IAw1yTG]{Daylight},
+      @UUID[Compendium.shareddata.ddb-spells.EhSZPZRJS5bZsv3s]{Fireball}</td></tr><tr><td>7th</td><td>@UUID[Compendium.shareddata.ddb-spells.z4HNmfz5thgSHBUe]{Summon
+      Elemental (Fire Only)},
+      @UUID[Compendium.dnd5e.spells.Item.X3DrXgxjwI2dvkD6]{Wall of
+      Fire}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame
+      Strike},
+      @UUID[Compendium.dnd5e.spells.Item.fVbCxFRaORalHB20]{Scrying}</td></tr></tbody></table><h3>Fire’s
+      Fury</h3><p>At 1st level you are imbued with the power and ferocity of the
+      flame. This grants several benefits:</p><ul><li>You gain the
+      @UUID[Compendium.dnd5e.spells.Item.eCPQuQkIabFKTl9u]{Produce Flame} or
+      @UUID[Compendium.shareddata.ddb-spells.RuSh2B0GO9O5sge0]{Control Flames}
+      cantrip, your choice. The cantrip you selected counts as a cleric cantrip
+      for you and doesn’t count against the number of cleric cantrips you
+      know.</li><li>When you use your Turn Undead channel divinity, you can also
+      effect non-fire elementals.</li></ul><h3>Warding Flare</h3><p>Also at 1st
+      level, you can interpose divine light between yourself and an attacking
+      enemy. When a creature that you can see within 30 feet of yourself makes
+      an attack roll, you can take a Reaction to impose Disadvantage on the
+      attack roll, causing light to flare before it hits or misses. An attacker
+      that can’t be @condition[blinded] is immune to this feature.</p><p>You can
+      use this feature a number of times equal to your Wisdom modifier (a
+      minimum of once). You regain all expended uses when you finish a long
+      rest.</p><h3>Channel Divinity: Radiance of the Dawn</h3><p>Starting at 2nd
+      level, you can use your Channel Divinity to harness sunlight, banishing
+      darkness and dealing radiant damage to your foes.</p><p>As an action, you
+      present your holy symbol, and any magical darkness within 30 feet of you
+      is dispelled. Additionally, each hostile creature within 30 feet of you
+      must make a Constitution saving throw. A creature takes radiant damage
+      equal to 2d10 + your cleric level on a failed saving throw, and half as
+      much damage on a successful one. A creature that has total cover from you
+      is not affected.</p><h3>Improved Flare</h3><p>Starting at 6th level, you
+      regain all expended uses of your Warding Flare when you finish a Short or
+      Long Rest.</p><p>In addition, whenever you use Warding Flare, you can give
+      the target of the triggering attack a number of Temporary Hit Points equal
+      to 2d6 plus your Wisdom modifier.</p><h3>Potent
+      Spellcasting</h3><p>Starting at 8th level, you add your Wisdom modifier to
+      the damage you deal with any cleric cantrip.</p><h3>Corona of
+      Light</h3><p>Starting at 17th level, you can use your action to activate
+      an aura of sunlight that lasts for 1 minute or until you dismiss it using
+      another action. You emit bright light in a 60-foot radius and dim light 30
+      feet beyond that. Your enemies in the Bright Light have Disadvantage on
+      saving throws against your Radiance of the Dawn and any spell that deals
+      Fire or Radiant damage.</p><p>You can use this feature a number of times
+      equal to your Wisdom modifier (minimum of once), and you regain all
+      expended uses when you finish a Long Rest.</p>
+    chat: ''
+  source:
+    custom: ''
+    book: ''
+    page: ''
+    license: ''
+    rules: '2014'
+    revision: 1
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+  advancement:
+    - _id: KFMLVOD5wsRdfVBc
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.HGsmwXH3Fbl2pHtT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+    - _id: pLryRpiWtSUCAsj6
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.QX71GSeP6zZMWyfq
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 2
+      title: ''
+      icon: null
+    - _id: 6X6SGS9Kc6TNrpb7
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.3Hs2y56D2M2A106h
+            optional: false
+          - uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.ccB9IQzrAvtqfgHR
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 6
+      title: ''
+      icon: null
+    - _id: FkHxWsyICfV3nhf0
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Item.ZETRtFv9dpZsdSNo
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 8
+      title: ''
+      icon: null
+    - _id: MKrOQUWsKTyLGz2t
+      type: ItemGrant
+      configuration:
+        items:
+          - uuid: Compendium.enkidus-5e-dark-sun.dark-sun-5e.Item.imdHVz2Qw8lg0Pue
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 17
+      title: ''
+      icon: null
+    - _id: ohRwTN1fmz43EEEP
+      type: ItemChoice
+      configuration:
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        allowDrops: true
+        type: spell
+        pool:
+          - uuid: Compendium.dnd5e.spells.Item.Bnn9Nzajixvow9xi
+          - uuid: Item.yOdOI1wMXq2CsbPT
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        restriction:
+          level: ''
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+    - _id: hVoIU1eRTBdalMuD
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 1
+      title: ''
+      hint: ''
+    - _id: vH7orcHyxhuNkOmR
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.FjYE214HTERCRZNm
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.7u2obDvuvtZBkTfq
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 3
+      title: ''
+      hint: ''
+    - _id: Sa6hGhKrBKuuUpyk
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.BP3GCwa66IAw1yTG
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 5
+      title: ''
+      hint: ''
+    - _id: iE6EwSGdGkRI947S
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Item.69G6GUWPxS5KtXsF
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.X3DrXgxjwI2dvkD6
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 7
+      title: ''
+      hint: ''
+    - _id: g7JUVZwXedTw0FE8
+      type: ItemGrant
+      configuration:
+        items:
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4
+          - optional: false
+            uuid: Compendium.dnd5e.spells.Item.fVbCxFRaORalHB20
+        optional: false
+        spell:
+          ability:
+            - wis
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      level: 9
+      title: ''
+      hint: ''
+ownership:
+  default: 0
+  WxtXDD3syXVOEPki: 3
+  wgCeShTrqHJFBbDr: 3
+flags:
+  core: {}
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+effects: []
+img: icons/weapons/swords/sword-broad-serrated-blue.webp
+folder: xPV7xcWDDRomMFIp
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.364'
+  systemId: dnd5e
+  systemVersion: 5.0.4
+  createdTime: 1754411485207
+  modifiedTime: 1781135000317
+  lastModifiedBy: wgCeShTrqHJFBbDr
+_id: xRqsd7nvMS4aulhJ
+sort: 0
+_key: '!items!xRqsd7nvMS4aulhJ'

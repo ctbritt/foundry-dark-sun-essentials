@@ -1,0 +1,217 @@
+name: Lightning Tendril
+type: spell
+img: modules/5e-spellblock-importer/img/spell.png
+system:
+  description:
+    value: >-
+      <p>Crackling beams of blue energy leap from your hands. For the duration
+      of the spell, as an action, you can direct them toward a creature within
+      range, dealing 1d12 lightning damage to that creature.</p><p><strong>At
+      Higher Levels.</strong> When you cast this spell using a 3rd- or 4th-level
+      spell slot, the damage increases to 2d12 and the range increases to 30
+      feet. When you cast it using a 5th- or 6th-level spell slot, the damage
+      increases to 3d12 and the range increases to 60 feet. When you cast it
+      using a spell slot of 7th level or higher, the damage increases to 4d12
+      and the range increases to 120 feet.<br /></p>
+    chat: ''
+  materials:
+    value: a twig from a tree that has been struck by lightning
+    consumed: false
+    cost: 0
+    supply: 0
+  properties:
+    - vocal
+    - somatic
+    - material
+    - concentration
+  level: 1
+  school: evo
+  activation:
+    condition: ''
+    type: bonus
+    value: 1
+  duration:
+    units: minute
+    value: '1'
+  range:
+    units: ft
+    value: '20'
+    special: ''
+  activities:
+    xkBAuNbAO9T2lDOs:
+      type: damage
+      _id: xkBAuNbAO9T2lDOs
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 12
+            bonus: ''
+            types:
+              - lightning
+            scaling:
+              mode: half
+              number: 1
+              formula: ''
+      useConditionText: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        forceDialog: false
+        confirmTargets: default
+        automationOnly: false
+        otherActivityCompatible: true
+        identifier: ''
+        autoTargetType: any
+        autoTargetAction: default
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+      name: ''
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      useConditionReason: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  identifier: lightning-tendril
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  preparation:
+    mode: prepared
+    prepared: false
+  target:
+    template:
+      contiguous: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: ''
+      type: creature
+      special: ''
+folder: null
+_id: lnaUCbPoknw2vj6f
+effects: []
+flags:
+  scene-packer:
+    hash: d229c7bed32f8f18ed8341e32d670765d70e3210
+    sourceId: Item.lnaUCbPoknw2vj6f
+  walledtemplates:
+    wallsBlock: globalDefault
+    wallRestriction: globalDefault
+    snapCenter: true
+    snapCorner: true
+    snapSideMidpoint: true
+    hideBorder: globalDefault
+    hideHighlighting: globalDefault
+    showOnHover: globalDefault
+    noAutotarget: false
+    addTokenSize: false
+    attachToken: na
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+  midi-qol:
+    AoETargetType: any
+    autoTarget: default
+    rollAttackPerTarget: default
+    removeAttackDamageButtons: default
+    itemCondition: ''
+    reactionCondition: ''
+    otherCondition: ''
+    effectCondition: ''
+  midiProperties:
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    magicdam: false
+    magiceffect: false
+    noConcentrationCheck: false
+    toggleEffect: false
+    ignoreTotalCover: false
+    idr: false
+    idi: false
+    idv: false
+    ida: false
+  crux:
+    trayVisibility: default
+  cat:
+    automation:
+      hash: 936473393
+_stats:
+  compendiumSource: Compendium.world.dark-sun-spells.Item.lnaUCbPoknw2vj6f
+  duplicateSource: null
+  coreVersion: '14.365'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744079085576
+  modifiedTime: 1784910749629
+  lastModifiedBy: wgCeShTrqHJFBbDr
+  exportSource: null
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+sort: 4300000
+_key: '!items!lnaUCbPoknw2vj6f'

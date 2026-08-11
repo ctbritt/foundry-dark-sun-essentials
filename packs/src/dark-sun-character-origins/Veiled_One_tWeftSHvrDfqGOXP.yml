@@ -1,0 +1,190 @@
+name: Veiled One
+type: background
+system:
+  description:
+    value: >-
+      <p><strong>Ability Scores: </strong>&amp;Reference[dex],
+      &amp;Reference[int], &amp;Reference[wis]</p><p><strong>Skill
+      Proficiencies:</strong> &amp;Reference[arc] and one skill from
+      &amp;Reference[dec], &amp;Reference[ste], or
+      &amp;Reference[slt]</p><p><strong>Tool Proficiencies:</strong>
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulDisguiseKi]{Disguise
+      Kit}</p><p><strong>Languages:</strong> Elvish or Sign
+      Language</p><p><strong>Feat:</strong>
+      @UUID[Compendium.dnd-players-handbook.feats.phbftAlert000000]{Alert} or
+      @UUID[Compendium.dark-sun-essentials.dark-sun-feats.qYFandmqCBcRGUeV]{Initiate
+      (Arcane )}(select one)</p><p><strong>Equipment:</strong> A set of dark,
+      hooded @UUID[Compendium.shareddata.ddb-items.ZPIhdGStNr72d3oa]{Robes}, a
+      @UUID[Compendium.dnd-players-handbook.equipment.phbtulDisguiseKi]{Disguise
+      Kit},
+      @UUID[Compendium.dark-sun-essentials.dark-sun-items.uozW4hj8VqN9KIxK]{Cyphered
+      Notes}, and a belt pouch containing 15 ceramic
+      pieces.</p><h4><strong>Suggested Characteristics:</strong></h4><p>Veiled
+      Ones are members or supporters of the Veiled Alliance, with a deep
+      understanding of arcane lore and a network of hidden contacts. They are
+      often driven by a desire to uncover forbidden knowledge or protect their
+      secrets. They vehemently fight against the foul sorcerer-monarchs and
+      their minions.</p>
+    chat: ''
+  source:
+    revision: 1
+    rules: '2024'
+    book: Dark Sun
+    page: ''
+    custom: Dark Sun
+    license: ''
+  identifier: veiled-one
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: XNkc6WCAHENrWbqE
+      group: ''
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.dark-sun-essentials.dark-sun-items.Item.uozW4hj8VqN9KIxK
+      requiresProficiency: false
+      _id: 3VkFohW1UW0KraPo
+      group: XNkc6WCAHENrWbqE
+      sort: 300000
+    - type: linked
+      count: null
+      key: Compendium.dnd5e.items.Item.8GCEodUsTEEpBlO6
+      requiresProficiency: false
+      _id: dp8XdI0kEAVSbc2D
+      group: XNkc6WCAHENrWbqE
+      sort: 325000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbtulDisguiseKi
+      requiresProficiency: false
+      _id: hcu7Cb7VvSV3JUqC
+      group: XNkc6WCAHENrWbqE
+      sort: 350000
+    - type: linked
+      count: null
+      key: Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000
+      requiresProficiency: false
+      _id: UTNE3HlrrdF8JrHC
+      group: XNkc6WCAHENrWbqE
+      sort: 500000
+  advancement:
+    - _id: FOA0mo1ILtAoyaRb
+      type: AbilityScoreImprovement
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+          - con
+          - cha
+        points: 3
+      value:
+        type: asi
+      level: 0
+      title: ''
+      hint: ''
+    - _id: DQ7ErWaGuZ8O6yLO
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:disg
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: juN066P8P8LGMCnB
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - languages:standard:sign
+              - languages:standard:elvish
+        grants: []
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+    - _id: gbDCWkU0ZYqC1OKb
+      type: ItemChoice
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.dnd-players-handbook.feats.Item.phbftAlert000000
+          - uuid: Compendium.dark-sun-essentials.dark-sun-feats.Item.qYFandmqCBcRGUeV
+        spell: null
+        type: feat
+        restriction:
+          type: feat
+          subtype: origin
+      value:
+        added: {}
+        replaced: {}
+      title: ''
+      hint: ''
+    - _id: 6lzxc5OtwT0tmjnH
+      type: Trait
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:slt
+              - skills:ste
+        grants:
+          - skills:arc
+        mode: default
+      value:
+        chosen: []
+      level: 0
+      title: ''
+      hint: ''
+  wealth: '15'
+img: icons/magic/perception/shadow-stealth-eyes-purple.webp
+effects: []
+folder: 3ceHqueQSXMSDgbA
+flags:
+  scene-packer:
+    hash: b01b06f2d2550d1fb7a3a791fceea64417a95d95
+    sourceId: Item.pqtXN6NzWB24i3ir
+  dnd5e:
+    riders:
+      activity: []
+  crux:
+    trayVisibility: default
+_stats:
+  compendiumSource: Compendium.world.dark-sun-character-origins.Item.tWeftSHvrDfqGOXP
+  duplicateSource: null
+  coreVersion: '13.346'
+  systemId: dnd5e
+  systemVersion: 4.4.0
+  createdTime: 1744082185417
+  modifiedTime: 1746114683497
+  lastModifiedBy: jM4h8qpyxwTpfNli
+  exportSource: null
+_id: tWeftSHvrDfqGOXP
+ownership:
+  default: 0
+  jM4h8qpyxwTpfNli: 3
+  6QG9R6JQRfToF3Mf: 3
+sort: 1100000
+_key: '!items!tWeftSHvrDfqGOXP'
