@@ -104,6 +104,27 @@ GM fires the macro
   └─ Apply → exhaustion updates, water item decrements
 ```
 
+> **Not shipped in 1.6.0: the water item decrement.** The last line of that
+> diagram describes two writes and only the first of them exists. Apply
+> commits exhaustion levels; nothing under `scripts/` writes item quantity,
+> and the gallons figure on the card is the party's current stock rather
+> than a running total.
+>
+> It was cut because decrementing is a harder problem than one line of a
+> diagram admits, and getting it wrong is destructive in a way an exhaustion
+> level is not. Water is spread across waterskins, casks and at least one
+> item recorded at a volume that cannot be right (`water-1tun` — see "Known
+> data defects"); a party drinks from a shared supply that the data models
+> as separate per-actor inventories; and the module would have to decide
+> whose skin empties first, what a part-full container is, and what happens
+> when the arithmetic does not divide evenly into whole items. An exhaustion
+> level applied in error is one number a GM retypes. A row of containers
+> silently emptied is not.
+>
+> The card reports the stock instead, so a GM can watch a crossing run out,
+> and the subtraction stays a table decision. If this is built later it wants
+> its own design pass rather than a line in this one.
+
 ## Computing a requirement
 
 Resolution order. First match wins.

@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.6.0 — 2026-08-14
+
+### Added
+- **Survival tracking.** A toggle that adds a macro resolving a day of desert
+  travel — water requirements, dehydration and exhaustion — for the whole
+  party, pack beasts included. Run it from **Resolve Survival Day** in the
+  Dark Sun Essentials: Macros compendium. The dialog collects pace, heat,
+  shelter and each member's intake; the arithmetic lives in
+  `scripts/core/survival.mjs`, pure and fully covered by `npm test`. The
+  result posts as a GM-only chat card and nothing is written to a sheet until
+  the GM presses Apply. Food, foraging, forced march, navigation and weather
+  ship as journal text in Dark Sun Journals rather than automation.
+
+  Apply writes exhaustion and nothing else. Water items are not decremented —
+  the gallons on the card are what the party is carrying now, not a running
+  total — and a card can be applied only once.
+
 ## 1.5.0 — 2026-08-11
 
 ### Added

@@ -117,6 +117,42 @@ automation can.
 Materials are not mutually exclusive. A bone-hafted obsidian blade is a real
 Athasian object.
 
+### Survival tracking
+
+A toggle that adds a macro resolving a day of desert travel: water
+requirements, dehydration and exhaustion for the whole party, pack beasts
+included.
+
+The entry point is **Resolve Survival Day** in **Compendiums → Dark Sun
+Essentials: Macros**. Running it opens a dialog asking about the day — travel
+pace, heat, whether the party marched shaded or camped sheltered, and how much
+each member drank — then posts a GM-only chat card showing what that day
+costs: water needed against water drunk, and the exhaustion or death each
+creature is facing.
+
+Nothing is written to a sheet at that point. The card is a proposal, not a
+result — it carries the whole computed plan along with it, and only pressing
+**Apply** on the card commits it. A GM can read the card, argue with a player
+about it, or close the tab without touching anyone's sheet.
+
+**Apply commits exhaustion, and nothing else.** It does not empty waterskins,
+decrement casks, or touch anyone's inventory. The gallons figure on the card
+is the water the party is carrying at the moment the card was posted — a stock
+reading, not a running total — so subtracting what was drunk stays the GM's
+job. A card can only be applied once; a spent one comes back with its button
+disabled however often the chat log is re-rendered.
+
+Pack beasts are not a special case. Anything resolved as a member of the party
+— mounts, kanks, whatever is hauling water — is read the same way a character
+is, with its own size-based water rate, so a crodlu and its rider are each
+accounted for individually rather than folded into one "party" number.
+
+Food, foraging, forced march, navigation and weather are covered in the
+*Survival and Travel* journal (Dark Sun Journals compendium) as rules text for
+the GM to adjudicate — this feature does not automate them. Only the water
+requirement and the exhaustion it costs are computed, and only the exhaustion
+is applied.
+
 ### Silt vehicles
 
 Adds Silt to the vehicle type list, for skimmers on the Sea of Silt.

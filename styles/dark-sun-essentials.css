@@ -37,3 +37,67 @@
   padding: 0.15rem 0;
   cursor: pointer;
 }
+
+/* Survival day: the dialog's per-member rows and the chat card's table. */
+
+.dark-sun-survival-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+}
+
+.dark-sun-survival-row .name {
+  flex: 1;
+}
+
+.dark-sun-survival-row input[type="number"] {
+  width: 5rem;
+  flex: 0 0 auto;
+}
+
+.dark-sun-survival-row label.armour {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.dark-sun-survival-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+
+.dark-sun-survival-card th,
+.dark-sun-survival-card td {
+  padding: 0.25rem 0.4rem;
+  text-align: left;
+}
+
+.dark-sun-survival-card th:nth-child(2),
+.dark-sun-survival-card th:nth-child(3),
+.dark-sun-survival-card td:nth-child(2),
+.dark-sun-survival-card td:nth-child(3) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* The working behind a requirement — "(2 base x2 heat)". Quieter and smaller
+   than the figure it explains: it is there to be checked when a number looks
+   wrong, not read every time. */
+.dark-sun-survival-card .dse-derivation {
+  font-size: 0.85em;
+  opacity: 0.75;
+  /* The Needed column is nowrap so a figure never breaks across lines. The
+     working may — a chat sidebar is narrow and this is the longer half. */
+  white-space: normal;
+}
+
+/* Marks DEATH on the card. This is the one thing a GM must see before
+   pressing Apply, so it gets a colour, not just bold — tuned to read as
+   danger on both Foundry's light and dark themes. */
+.dse-lethal {
+  color: var(--color-level-error, #d32f2f);
+}

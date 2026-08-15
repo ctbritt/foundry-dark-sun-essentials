@@ -1,10 +1,12 @@
 /**
  * Settings registration.
  *
- * Every toggle is world-scoped, GM-only, and requires a reload. That is not
- * caution for its own sake: dnd5e builds its data model schemas from CONFIG the
- * first time a document is accessed, so a currency added mid-session would
- * exist in the config table but not in any actor's schema.
+ * Every toggle is world-scoped and GM-only. All but one also require a reload,
+ * and that is not caution for its own sake: dnd5e builds its data model schemas
+ * from CONFIG the first time a document is accessed, so a currency added
+ * mid-session would exist in the config table but not in any actor's schema.
+ * Survival tracking is the exception — it writes no config, it gates a macro —
+ * so the reason does not apply to it and neither does the requirement.
  */
 
 import { MODULE_ID, SETTINGS } from "./core/constants.mjs";
@@ -24,7 +26,7 @@ export function setting(key) {
  * Register every toggle.
  *
  * They appear directly in the module's section of Foundry's settings list.
- * There is no separate configuration window: five checkboxes do not need one,
+ * There is no separate configuration window: seven checkboxes do not need one,
  * and the window was a second place for the same state to drift.
  *
  * Called from `init`, before config is applied.
@@ -87,6 +89,21 @@ export function registerSettings() {
     scope: "world",
     config: true,
     requiresReload: true,
+    type: Boolean,
+    default: false
+  });
+
+  // The only setting here that does not require a reload. Every other toggle
+  // does because dnd5e builds its data model schemas from CONFIG on first
+  // document access, so a mid-session change would exist in the config table
+  // and in no actor's schema. This one mutates no config — it gates a macro —
+  // so the reason does not apply and neither does the requirement.
+  game.settings.register(MODULE_ID, SETTINGS.survivalTracking, {
+    name: `${MODULE_ID}.settings.survivalTracking.name`,
+    hint: `${MODULE_ID}.settings.survivalTracking.hint`,
+    scope: "world",
+    config: true,
+    requiresReload: false,
     type: Boolean,
     default: false
   });

@@ -1,0 +1,470 @@
+name: Survival and Travel
+folder: null
+sort: 100000
+flags: {}
+_id: dseSurvivalJrnl1
+pages:
+  - name: The Exhaustion Track
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <p><em>Athas 5e — 2024 Player's Handbook baseline</em></p>
+        <p>On Athas the desert is an opponent. It does not roll initiative, but it spends your resources every hour you are exposed to it, and it wins by attrition against parties that treat crossing distance as travel time rather than as a problem to be solved.</p>
+        <p>Everything below runs on one track: <strong>exhaustion</strong>. Thirst, hunger, heat, and pushing too hard all feed the same ladder, and nothing in these rules asks you to track a second one.</p>
+        <h2>The Exhaustion Track</h2>
+        <p>Athasian survival uses the standard 2024 exhaustion rules without modification. Every source of attrition in this document adds levels to this one track.</p>
+        <table>
+        <thead>
+        <tr><th>Levels</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>1–5</td><td>−2 to all D20 Tests per level, and −5 feet of Speed per level</td></tr>
+        <tr><td>6</td><td>Death</td></tr>
+        </tbody>
+        </table>
+        <p>A long rest removes 1 level, subject to the conditions under <strong>Resting</strong> below — which on Athas are not automatic.</p>
+        <p>There is no separate thirst meter, heat meter, or Constitution damage. If a rule here would hurt you, it does so by moving you down this ladder.</p>
+    _id: dseSrvExhaust01A
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvExhaust01A'
+  - name: Heat and the Sun
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Heat and the Sun</h2>
+        <p>Athasian daylight climbs past 100 °F by midmorning and can reach 130 °F or worse by late afternoon. Night falls hard the other way — near freezing in open desert, below it in the mountains.</p>
+        <p>Heat is not damage. Heat is a multiplier on how fast you drink, and dehydration is what kills you. See <strong>Water</strong>.</p>
+        <p>The practical consequence: a party that travels at night and shelters through the worst of the day spends half the water of one that marches at noon. Over a week-long crossing that difference is the crossing.</p>
+    _id: dseSrvHeatSun02A
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 100000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvHeatSun02A'
+  - name: Water
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Water</h2>
+        <h3>Daily Need</h3>
+        <table>
+        <thead>
+        <tr><th>Creature</th><th>Water per day</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Small</td><td>½ gallon</td></tr>
+        <tr><td>Medium</td><td>1 gallon</td></tr>
+        <tr><td>Large</td><td>4 gallons</td></tr>
+        <tr><td>Thri-kreen (any size)</td><td><strong>1 gallon per week</strong></td></tr>
+        </tbody>
+        </table>
+        <p>This is the base rate for an active creature. Apply every modifier below that fits the day, multiplying them together and rounding up to the nearest quarter gallon.</p>
+        <table>
+        <thead>
+        <tr><th>Condition</th><th>Water need</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Travelled 1+ hour in heat above 100 °F</td><td>×2</td></tr>
+        <tr><td>Travelled 1+ hour in extreme heat above 130 °F</td><td>×4</td></tr>
+        <tr><td>Travelled by night instead of by day</td><td>×½</td></tr>
+        <tr><td>Under shade or shelter the whole day</td><td>×½</td></tr>
+        <tr><td>Inactive all day — resting, holed up</td><td>×½</td></tr>
+        <tr><td>Wearing metal armor without shade</td><td>×2</td></tr>
+        </tbody>
+        </table>
+        <p>A thri-kreen ignores the heat multipliers entirely.</p>
+        <blockquote><p><strong>Worked example.</strong> A human marching a full day in 110 °F heat needs 2 gallons. The same human crossing the same ground at night needs 1. Doing it at night with a sun cloak rigged over the day camp needs ½.</p></blockquote>
+        <h3>Dehydration</h3>
+        <p>At the end of any day a creature drank less than it needed:</p>
+        <table>
+        <thead>
+        <tr><th>Water drunk</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Half or more of the requirement</td><td>DC 15 Constitution save or 1 exhaustion level</td></tr>
+        <tr><td>Less than half</td><td>1 exhaustion level, no save — 2 if it already had any exhaustion</td></tr>
+        <tr><td>None at all</td><td>2 exhaustion levels</td></tr>
+        </tbody>
+        </table>
+        <h3>Carrying Water</h3>
+        <p>A waterskin holds <strong>½ gallon</strong> and weighs 4 lb full.</p>
+        <p>A Medium creature can carry <strong>12 waterskins at most — 6 gallons.</strong> A Small creature carries 6. This is a limit of bulk, not of weight: no amount of Strength lets you strap on more.</p>
+        <p>Six gallons is three days of daytime marching, or six of night marching. Anything longer than that needs casks on a pack beast, a wagon, or a known water source on the route. <strong>Parties do not cross open desert on foot.</strong></p>
+    _id: dseSrvWater003A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 200000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvWater003A0'
+  - name: Food
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Food</h2>
+        <h3>Daily Need</h3>
+        <p>1 lb per day for a Medium creature. Half rations count as half a day without food.</p>
+        <h3>Starvation</h3>
+        <p>A creature can go <strong>3 + its Constitution modifier</strong> days without food before it begins to starve. Each day past that limit is 1 exhaustion level.</p>
+        <p>Eating a full day's ration reduces the days-without-food count by 2. Until that count reaches zero, at least one level of exhaustion cannot be removed by any means except eating.</p>
+    _id: dseSrvFood0004A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 300000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvFood0004A0'
+  - name: Foraging and Finding Water
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Foraging and Finding Water</h2>
+        <p>One attempt per character per day, and <strong>only at a slow pace</strong>. A character who forages does not also cover normal distance, and cannot forage while marching at night.</p>
+        <p>Make a Wisdom (Survival) check against the land's abundance:</p>
+        <table>
+        <thead>
+        <tr><th>Land offers</th><th>DC</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Abundant food and water</td><td>10</td></tr>
+        <tr><td>Limited resources</td><td>15</td></tr>
+        <tr><td>Very little</td><td>20</td></tr>
+        </tbody>
+        </table>
+        <p>Much of Athas offers nothing, and no check is possible. The Dungeon Master sets abundance from the terrain.</p>
+        <p>On a success, find <strong>1d6 + Wisdom modifier</strong> pounds of food. Roll again separately for gallons of water.</p>
+        <p>Foraging is not a supply plan. It is a way to stretch one that already exists.</p>
+    _id: dseSrvForage05A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 400000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvForage05A0'
+  - name: Travel Pace
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Travel Pace</h2>
+        <p>A normal travel day is <strong>8 hours</strong>.</p>
+        <p>Each hour beyond the eighth requires a Constitution saving throw at the end of that hour. The DC is <strong>10, +1 for each hour past the eighth</strong>. On a failure, gain 1 exhaustion level.</p>
+        <p><strong>A creature suffering from dehydration cannot force march at all.</strong> The party loses the ability to make up lost time exactly when it most needs it.</p>
+        <h3>Travelling by Night</h3>
+        <p>Night marching halves water requirements, and is the single most effective thing a party can do to extend its range.</p>
+        <ul>
+        <li>Creatures without darkvision need a light source, or the party treats the route as difficult terrain.</li>
+        <li>No foraging while marching at night.</li>
+        <li>Navigation is made with disadvantage without darkvision or clear skies.</li>
+        </ul>
+    _id: dseSrvTravel06A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 500000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvTravel06A0'
+  - name: Navigation
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Navigation</h2>
+        <p>Roll Wisdom (Survival) when travelling without a road, path, or landmark to follow. The Dungeon Master sets the DC from terrain.</p>
+        <p>Modifiers that always apply:</p>
+        <table>
+        <thead>
+        <tr><th>Condition</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Overcast or heavy cloud</td><td>+2 DC</td></tr>
+        <tr><td>Fog, dust, or sandstorm</td><td>+5 DC</td></tr>
+        <tr><td>Night, without darkvision</td><td>Disadvantage</td></tr>
+        <tr><td>Character has a relevant background or ranger training</td><td>Advantage</td></tr>
+        </tbody>
+        </table>
+        <p>On a failure the party veers off course or loses time — the Dungeon Master determines which, and the party does not automatically know it has happened.</p>
+    _id: dseSrvNavig007A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 600000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvNavig007A0'
+  - name: Weather Hazards
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Weather Hazards</h2>
+        <h3>Sandstorm</h3>
+        <p>Visibility drops to a few feet. Travel is impossible or at a crawl; the party is treated as heavily obscured. Navigation is at +5 DC and no foraging is possible. Shelter is the only real answer.</p>
+        <h3>Extreme Heat</h3>
+        <p>A day above 130 °F. Water requirements are multiplied by 4 for anyone travelling. Sheltering through the worst hours is often cheaper than the distance gained.</p>
+        <h3>Cold Night</h3>
+        <p>Open desert after dark drops near freezing, and mountains below it. A creature without shelter, a fire, or cold-weather gear makes a DC 10 Constitution save at dawn or gains 1 exhaustion level.</p>
+        <h3>Strong Wind</h3>
+        <p>Ranged attacks are made with disadvantage, as are Wisdom (Perception) checks relying on hearing. Open flames are extinguished. Combined with loose sand, treat as a sandstorm.</p>
+    _id: dseSrvWeathr08A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 700000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvWeathr08A0'
+  - name: Pack Beasts and Containers
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Pack Beasts</h2>
+        <table>
+        <thead>
+        <tr><th>Beast</th><th>Water per day</th><th>Carries</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Kank</td><td>2 gallons</td><td>400 lb</td></tr>
+        <tr><td>Inix</td><td>8 gallons</td><td>2,000 lb</td></tr>
+        <tr><td>Mekillot</td><td>16 gallons</td><td>8,000 lb — 40,000 lb drawing a wagon</td></tr>
+        </tbody>
+        </table>
+        <p>Heat and night modifiers apply to beasts exactly as to characters.</p>
+        <p>Beasts carry casks rather than waterskins and are limited by weight alone.</p>
+        <p>A beast denied its full water for two or more consecutive days becomes unreliable — refusing to move, bolting, or worse, at the Dungeon Master's discretion. The risk grows each further day.</p>
+        <blockquote><p><strong>On the limits of a kank train.</strong> Kanks drink enough that adding more of them stops helping after about a week — two kanks and four kanks reach nearly the same distance. Genuinely long hauls need inix or mekillots. This is why merchant houses run the big beasts and adventurers do not.</p></blockquote>
+        <hr />
+        <h2>Containers</h2>
+        <table>
+        <thead>
+        <tr><th>Container</th><th>Holds</th><th>Weight full</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Waterskin</td><td>½ gallon</td><td>4 lb</td></tr>
+        <tr><td>Cask (beast- or wagon-borne)</td><td>10 gallons</td><td>85 lb</td></tr>
+        </tbody>
+        </table>
+        <p>Water weighs roughly 8⅓ lb per gallon.</p>
+    _id: dseSrvPackBs09A0
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 800000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvPackBs09A0'
+  - name: Resting
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: |-
+        <h2>Resting</h2>
+        <h3>Removing Exhaustion</h3>
+        <p>A long rest removes 1 exhaustion level <strong>only if</strong> the creature both:</p>
+        <ul>
+        <li>consumed at least half its food and half its water that day, <strong>and</strong></li>
+        <li>had shade or shelter for the rest.</li>
+        </ul>
+        <p>Without shelter, a long rest removes no exhaustion. This is why an oasis, a ruin, or a cave is worth going out of your way to reach.</p>
+        <h3>Healing Without Shelter</h3>
+        <p>A creature that takes a long rest without shade or shelter regains hit points only by spending Hit Dice. It does not regain all its hit points at the end of the rest.</p>
+        <p>With shelter, recovery follows the standard rules.</p>
+    _id: dseSrvResting10A
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    sort: 900000
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.4
+      lastModifiedBy: null
+    category: null
+    _key: '!journal.pages!dseSurvivalJrnl1.dseSrvResting10A'
+ownership:
+  default: 2
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.4
+  createdTime: 1786763164111
+  modifiedTime: 1786763164111
+  lastModifiedBy: null
+categories: []
+_key: '!journal!dseSurvivalJrnl1'
