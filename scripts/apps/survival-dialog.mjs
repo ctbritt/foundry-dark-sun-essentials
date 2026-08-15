@@ -129,6 +129,8 @@ function buildContent(actors, askArmour) {
  *
  * A blank intake stays null rather than becoming 0 — null means "drank their
  * fill", 0 means "drank nothing", and the two carry very different penalties.
+ * Number fields are therefore read off the DOM, not out of FormDataExtended;
+ * see the comment on the loop.
  *
  * @param {HTMLFormElement} form
  * @param {Actor[]} actors
@@ -144,9 +146,22 @@ function readForm(form, actors, askArmour) {
   // expanding it into a nested object (`data.drunk[actorId]`) instead of the
   // flat key this reads. Keep it a hyphen — do not "tidy" this back to a dot.
   for ( const actor of actors ) {
-    const raw = data[`drunk-${actor.id}`];
-    const blank = (raw === "" || raw === null || raw === undefined);
+    // Read straight off the element rather than out of FormDataExtended's
+    // coerced object. Whether a blank <input type="number"> arrives there as
+    // null, "" or 0 is framework behaviour nothing here has verified, and the
+    // difference is two exhaustion levels for every creature in the party: a
+    // blank field must mean "drank their fill", and 0 means "drank nothing",
+    // which is 2 levels with no save. Blank is also the ordinary case — the GM
+    // types nothing because everyone drank normally — so a coercion to 0 would
+    // propose killing the whole party on the commonest path through this
+    // dialog. `element.value` is always a string, and "" when blank.
+    const element = form.elements[`drunk-${actor.id}`];
+    const raw = element ? element.value : "";
+    const blank = String(raw).trim() === "";
     intake[actor.id] = blank ? null : Math.max(0, Number(raw) || 0);
+
+    // Checkboxes and radios keep coming from FormDataExtended: a checkbox has
+    // no blank state to get wrong.
     if ( askArmour ) armour[actor.id] = data[`metal-${actor.id}`] === true;
   }
 
