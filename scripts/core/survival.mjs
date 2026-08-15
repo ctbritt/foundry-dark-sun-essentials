@@ -289,3 +289,85 @@ export function containerCapGal(size) {
   const skins = CONTAINER_CAP_SKINS[size];
   return skins === undefined ? null : skins * WATERSKIN_GAL;
 }
+
+/* -------------------------------------------- */
+/*  The day                                      */
+/* -------------------------------------------- */
+
+/**
+ * Resolve one day for a whole party, without touching anything.
+ *
+ * The returned plan is the single artifact the rest of the feature moves
+ * around: the dialog builds its input, the chat card renders it, and Apply
+ * consumes it. Apply re-reads this object rather than recomputing, so what a
+ * GM approves is exactly what lands — a setting changed between preview and
+ * commit cannot alter the outcome behind their back.
+ *
+ * Nothing here rolls dice. A row whose `outcome.kind` is `"save"` is telling
+ * the caller a save is owed, not that it failed.
+ *
+ * @param {{members: Array<object>, conditions: object}} args
+ * @returns {{conditions: object, rows: Array<object>, totals: object}}
+ */
+export function buildDayPlan({ members, conditions }) {
+  const rows = (members ?? []).map(m => {
+    const requiredGal = dailyWaterGal(m, conditions);
+
+    // A null intake is the dialog's default: the member drank their fill.
+    // Distinguished from 0, which is a creature that drank nothing at all.
+    const drunkGal = (m.drunkGal === null || m.drunkGal === undefined)
+      ? requiredGal
+      : Math.max(0, Number(m.drunkGal) || 0);
+
+    const outcome = dehydrationOutcome({
+      requiredGal,
+      drunkGal,
+      currentExhaustion: m.currentExhaustion
+    });
+
+    const carried = totalWaterGal(m.items);
+    const cap = containerCapGal(m.size);
+
+    return {
+      id: m.id,
+      name: m.name,
+      requiredGal,
+      drunkGal,
+      outcome,
+      projected: clampExhaustion(m.currentExhaustion, outcome.levels),
+      capExceeded: cap !== null && carried > cap,
+
+      // What a long rest here would be worth. Reported, not automated —
+      // dnd5e owns resting. `drankHalf` is per member; food and shelter are
+      // party-level facts the GM asserts on the dialog.
+      rest: longRestVerdict({
+        ateHalf: Boolean(conditions.ateHalf),
+        drankHalf: requiredGal <= 0 || drunkGal >= (requiredGal / 2),
+        hadShelter: Boolean(conditions.sheltered)
+      }),
+
+      // Initialised explicitly. `applyPlan` reads this to decide whether a
+      // save was failed, and an undefined would read as "passed" — every DC
+      // 15 save in the game would silently resolve in the party's favour.
+      saveFailed: false
+    };
+  });
+
+  const requiredGal = rows.reduce((sum, r) => sum + r.requiredGal, 0);
+  const drunkGal = rows.reduce((sum, r) => sum + r.drunkGal, 0);
+  const supplyGal = (members ?? []).reduce((sum, m) => sum + totalWaterGal(m.items), 0);
+
+  return {
+    conditions,
+    rows,
+    totals: {
+      requiredGal,
+      drunkGal,
+      supplyGal,
+      // Floored: a party with two and a half days of water has two days it
+      // can count on. Rounding up here would be the module lying about the
+      // one number a GM plans the crossing around.
+      daysOfSupply: requiredGal > 0 ? Math.floor(supplyGal / requiredGal) : null
+    }
+  };
+}

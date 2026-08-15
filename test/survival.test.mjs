@@ -13,6 +13,7 @@ import {
   WATER_ITEM_GAL,
   WATER_MODIFIERS,
   baseWaterGal,
+  buildDayPlan,
   clampExhaustion,
   containerCapGal,
   dailyWaterGal,
@@ -359,4 +360,205 @@ test("carrying limits are bulk, not weight", () => {
 test("beasts are limited by weight, so they have no bulk cap", () => {
   assert.equal(containerCapGal("lg"), null);
   assert.equal(containerCapGal("huge"), null);
+});
+
+/** The party from the cheat sheet, minus the bookkeeping. */
+function member(name, overrides = {}) {
+  return {
+    id: name.toLowerCase(),
+    name,
+    size: "med",
+    species: null,
+    isThriKreen: false,
+    metalArmor: false,
+    currentExhaustion: 0,
+    drunkGal: null,        // null means "drank the full requirement"
+    items: [],
+    ...overrides
+  };
+}
+
+const DAY_MARCH = { pace: "day", heat: "hot", shaded: false };
+
+test("a plan has one row per member, in order", () => {
+  const plan = buildDayPlan({
+    members: [member("Itilda"), member("Kaine")],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows.length, 2);
+  assert.deepEqual(plan.rows.map(r => r.name), ["Itilda", "Kaine"]);
+});
+
+test("a null intake means the member drank exactly what they needed", () => {
+  const plan = buildDayPlan({ members: [member("Itilda")], conditions: DAY_MARCH });
+  const [row] = plan.rows;
+  assert.equal(row.requiredGal, 2);
+  assert.equal(row.drunkGal, 2);
+  assert.equal(row.outcome.kind, "none");
+  assert.equal(row.projected.applied, 0);
+});
+
+test("a short drink projects the exhaustion it would cause", () => {
+  const plan = buildDayPlan({
+    members: [member("Kaine", { drunkGal: 1, currentExhaustion: 0 })],
+    conditions: DAY_MARCH
+  });
+  const [row] = plan.rows;
+  assert.equal(row.requiredGal, 2);
+  assert.equal(row.outcome.kind, "save");
+  assert.equal(row.outcome.dc, 15);
+  assert.equal(row.projected.final, 1, "the level that lands if the save fails");
+});
+
+test("a member already at five is projected into death, and it is flagged", () => {
+  const plan = buildDayPlan({
+    members: [member("Rickvon", { drunkGal: 0, currentExhaustion: 5 })],
+    conditions: DAY_MARCH
+  });
+  const [row] = plan.rows;
+  assert.equal(row.projected.final, 6);
+  assert.equal(row.projected.lethal, true, "the card must be able to say death");
+  assert.equal(row.projected.applied, 1, "only one level had anywhere to go");
+});
+
+test("pack beasts appear as ordinary rows at their species rate", () => {
+  const plan = buildDayPlan({
+    members: [member("Kank #1", { size: "lg", species: "kank" })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].requiredGal, 4, "2 gal base, doubled by the heat");
+});
+
+test("a thri-kreen row survives the same day on a fraction", () => {
+  const plan = buildDayPlan({
+    members: [member("Shadow", { isThriKreen: true })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].requiredGal, 1 / 7);
+});
+
+/* -------------------------------------------- */
+/*  Totals                                       */
+/* -------------------------------------------- */
+
+test("totals sum requirement, intake and supply", () => {
+  const plan = buildDayPlan({
+    members: [
+      member("Itilda", { items: [{ identifier: "waterskin", type: "drink", quantity: 12, flagGal: null }] }),
+      member("Kank #1", {
+        size: "lg", species: "kank",
+        items: [{ identifier: "cask", type: "drink", quantity: 4, flagGal: null }]
+      })
+    ],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.totals.requiredGal, 6, "2 for the human, 4 for the kank");
+  assert.equal(plan.totals.drunkGal, 6);
+  assert.equal(plan.totals.supplyGal, 46, "6 gal of skins, 40 gal of casks");
+});
+
+test("days of supply is the honest floor, not a rounded-up promise", () => {
+  const plan = buildDayPlan({
+    members: [member("Itilda", {
+      items: [{ identifier: "water-gallon", type: "drink", quantity: 5, flagGal: null }]
+    })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.totals.requiredGal, 2);
+  assert.equal(plan.totals.supplyGal, 5);
+  assert.equal(plan.totals.daysOfSupply, 2, "2.5 days floors to 2 whole days");
+});
+
+test("days of supply is null when nothing needs water", () => {
+  const plan = buildDayPlan({ members: [], conditions: DAY_MARCH });
+  assert.equal(plan.totals.daysOfSupply, null);
+  assert.equal(plan.totals.requiredGal, 0);
+});
+
+/* -------------------------------------------- */
+/*  Container cap                                */
+/* -------------------------------------------- */
+
+test("a Medium carrying more than twelve skins is flagged", () => {
+  const plan = buildDayPlan({
+    members: [member("Kaine", {
+      items: [{ identifier: "waterskin", type: "drink", quantity: 20, flagGal: null }]
+    })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].capExceeded, true, "10 gal on a 6 gal frame");
+});
+
+test("a beast carrying casks is never flagged, being weight-limited", () => {
+  const plan = buildDayPlan({
+    members: [member("Kank #1", {
+      size: "lg", species: "kank",
+      items: [{ identifier: "cask", type: "drink", quantity: 30, flagGal: null }]
+    })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].capExceeded, false);
+});
+
+test("the conditions travel with the plan so the card cannot misreport them", () => {
+  const plan = buildDayPlan({ members: [member("Itilda")], conditions: DAY_MARCH });
+  assert.deepEqual(plan.conditions, DAY_MARCH);
+});
+
+/* -------------------------------------------- */
+/*  Saves are owed, never rolled                 */
+/* -------------------------------------------- */
+
+// applyPlan reads row.saveFailed. If buildDayPlan did not initialise it, an
+// undefined would read as "passed" and every DC 15 save in the game would
+// silently resolve in the party's favour.
+test("a row owing a save starts with the save unfailed, not undefined", () => {
+  const plan = buildDayPlan({
+    members: [member("Kaine", { drunkGal: 1 })],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].outcome.kind, "save");
+  assert.equal(plan.rows[0].saveFailed, false, "explicitly false, never undefined");
+});
+
+test("rows that owe no save still carry the field", () => {
+  const plan = buildDayPlan({ members: [member("Itilda")], conditions: DAY_MARCH });
+  assert.equal(plan.rows[0].saveFailed, false);
+});
+
+/* -------------------------------------------- */
+/*  Long rest, per member                        */
+/* -------------------------------------------- */
+
+const CAMPED = { pace: "day", heat: "hot", shaded: false, sheltered: true, ateHalf: true };
+
+test("a fed, watered, sheltered member recovers a level tonight", () => {
+  const plan = buildDayPlan({ members: [member("Itilda")], conditions: CAMPED });
+  assert.equal(plan.rows[0].rest.removesExhaustion, true);
+});
+
+test("a member who drank less than half recovers nothing, even in shelter", () => {
+  const plan = buildDayPlan({
+    members: [member("Kaine", { drunkGal: 0.5 })],
+    conditions: CAMPED
+  });
+  assert.equal(plan.rows[0].rest.removesExhaustion, false, "2 gal needed, 0.5 drunk");
+});
+
+test("without shelter nobody recovers and hit points come from Hit Dice", () => {
+  const plan = buildDayPlan({
+    members: [member("Itilda")],
+    conditions: { ...CAMPED, sheltered: false }
+  });
+  assert.equal(plan.rows[0].rest.removesExhaustion, false);
+  assert.equal(plan.rows[0].rest.fullHpRecovery, false);
+});
+
+test("shade is not shelter", () => {
+  const plan = buildDayPlan({
+    members: [member("Itilda")],
+    conditions: { ...CAMPED, shaded: true, sheltered: false }
+  });
+  assert.equal(plan.rows[0].rest.fullHpRecovery, false,
+    "a sun cloak over the day camp is not a cave");
 });
