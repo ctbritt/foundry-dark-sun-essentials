@@ -1,0 +1,125 @@
+/**
+ * Athasian survival: water requirements, dehydration, and rest.
+ *
+ * No Foundry globals. Every function here is pure so the arithmetic can be
+ * tested without booting a world — this is the part of the module that can
+ * kill a player's character if it is wrong.
+ *
+ * The rules are Athas 5e slice 1 (`01-survival.md`), adjudicated against the
+ * 2024 Player's Handbook. Constants below are hand-copied from that document's
+ * tables; `test/survival.test.mjs` asserts them back against it as literals so
+ * the two cannot drift silently.
+ */
+
+/**
+ * Base water per day by dnd5e size key.
+ *
+ * The ruleset gives only Small, Medium and Large. dnd5e has six sizes, so
+ * `tiny`, `huge` and `grg` continue the ruleset's doubling — they are this
+ * module's extrapolation, not shipped rules. Nothing important rides on them:
+ * the Huge creature a party actually travels with is a mekillot, and a
+ * mekillot is priced by `SPECIES_WATER_GAL` below.
+ * @type {Readonly<Record<string, number>>}
+ */
+export const SIZE_WATER_GAL = Object.freeze({
+  tiny: 0.25,
+  sm: 0.5,
+  med: 1,
+  lg: 4,
+  huge: 16,
+  grg: 64
+});
+
+/**
+ * Water per day for named pack beasts.
+ *
+ * These override the size table and the override matters: a kank is Large, so
+ * the size table would price it at 4 gal/day when the ruleset says 2. Getting
+ * this backwards doubles every kank's thirst and roughly halves a crossing's
+ * range. It was a real defect in the vault's falsification model before slice
+ * 1 caught it.
+ * @type {Readonly<Record<string, number>>}
+ */
+export const SPECIES_WATER_GAL = Object.freeze({
+  kank: 2,
+  inix: 8,
+  mekillot: 16
+});
+
+/** A thri-kreen's whole weekly requirement. */
+export const THRI_KREEN_WEEKLY_GAL = 1;
+
+/**
+ * Multipliers on the base requirement, applied together.
+ * @type {Readonly<Record<string, number>>}
+ */
+export const WATER_MODIFIERS = Object.freeze({
+  hot: 2,
+  extreme: 4,
+  night: 0.5,
+  shaded: 0.5,
+  inactive: 0.5,
+  metalArmor: 2
+});
+
+/* -------------------------------------------- */
+
+/**
+ * Round up to the nearest quarter gallon.
+ *
+ * Always up: the desert does not give change.
+ * @param {number} gal
+ * @returns {number}
+ */
+export function roundQuarterGal(gal) {
+  return Math.ceil(gal * 4) / 4;
+}
+
+/**
+ * A creature's requirement before any of the day's modifiers.
+ *
+ * Resolution order is thri-kreen, then named species, then size. First match
+ * wins, and the order is the point — see `SPECIES_WATER_GAL`.
+ * @param {{size: string, species: string|null, isThriKreen: boolean}} creature
+ * @returns {number} Gallons per day.
+ */
+export function baseWaterGal(creature) {
+  if ( creature.isThriKreen ) return THRI_KREEN_WEEKLY_GAL / 7;
+
+  const species = creature.species?.toLowerCase?.();
+  if ( species && (species in SPECIES_WATER_GAL) ) return SPECIES_WATER_GAL[species];
+
+  return SIZE_WATER_GAL[creature.size] ?? SIZE_WATER_GAL.med;
+}
+
+/**
+ * A creature's water requirement for one day, modifiers applied and rounded.
+ *
+ * Thri-kreen ignore heat entirely, and are exempt from the quarter-gallon
+ * rounding: 1/7 rounds up to 0.25, which would charge them 1.75 gallons a week
+ * against a rule that says one. They still gain from night travel and shade.
+ * @param {{size: string, species: string|null, isThriKreen: boolean, metalArmor: boolean}} creature
+ * @param {{pace: "day"|"night"|"inactive", heat: "none"|"hot"|"extreme", shaded: boolean}} conditions
+ * @returns {number} Gallons.
+ */
+export function dailyWaterGal(creature, conditions) {
+  const base = baseWaterGal(creature);
+  const travelled = conditions.pace !== "inactive";
+
+  let mult = 1;
+
+  // The ruleset's wording is "Travelled 1+ hour in heat above 100F". A
+  // creature that stayed in camp did not trigger it, however hot the day was.
+  if ( travelled && !creature.isThriKreen ) {
+    if ( conditions.heat === "hot" ) mult *= WATER_MODIFIERS.hot;
+    else if ( conditions.heat === "extreme" ) mult *= WATER_MODIFIERS.extreme;
+  }
+
+  if ( conditions.pace === "night" ) mult *= WATER_MODIFIERS.night;
+  if ( conditions.pace === "inactive" ) mult *= WATER_MODIFIERS.inactive;
+  if ( conditions.shaded ) mult *= WATER_MODIFIERS.shaded;
+  if ( creature.metalArmor && !conditions.shaded ) mult *= WATER_MODIFIERS.metalArmor;
+
+  const need = base * mult;
+  return creature.isThriKreen ? need : roundQuarterGal(need);
+}

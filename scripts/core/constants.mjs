@@ -11,7 +11,8 @@ export const SETTINGS = {
   psionicSchool: "psionicSchool",
   psionicProperty: "psionicProperty",
   materialProperties: "materialProperties",
-  siltVehicles: "siltVehicles"
+  siltVehicles: "siltVehicles",
+  survivalTracking: "survivalTracking"
 };
 
 /** Currency keys this module adds. */
