@@ -109,7 +109,7 @@ test("the dynamically-built survival keys all exist", () => {
     "resultFine", "resultSave", "resultLevels", "resultDeath",
     "saveFailed", "savesPending", "restYes", "restNo", "restNoHp",
     "assumedMedium", "capExceeded", "supplyUnknown", "supply",
-    "supplyNoDays", "applied"
+    "supplyNoDays", "applied", "appliedPartial", "alreadyApplied", "applyBlocked"
   ];
 
   const missing = survival

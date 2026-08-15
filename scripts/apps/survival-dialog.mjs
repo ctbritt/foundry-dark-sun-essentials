@@ -252,7 +252,39 @@ export async function postPlanCard(plan) {
 /* -------------------------------------------- */
 
 /**
+ * Cards whose Apply is running right now.
+ *
+ * The persisted flag is the real guard, but setting it is asynchronous and two
+ * synchronous handler invocations in the same tick would both read it as unset
+ * before either write landed. This closes that window; the flag closes every
+ * other one.
+ * @type {Set<string>}
+ */
+const applying = new Set();
+
+/**
+ * Has this card already been spent?
+ *
+ * Read by the chat render hook as well as by Apply itself, so a card restored
+ * from the log comes back visibly spent rather than armed.
+ *
+ * @param {ChatMessage} message
+ * @returns {boolean}
+ */
+export function isSurvivalApplied(message) {
+  return message?.getFlag?.(MODULE_ID, "survivalApplied") === true;
+}
+
+/**
  * Apply a card's plan, taking the failed-save ticks from the card itself.
+ *
+ * A day can be applied once. That used to be enforced with `button.disabled`
+ * alone, which is DOM state and nothing else: the HTML stored on the message
+ * carries no disabled attribute, so a reload, a scroll back through the log, a
+ * message update or a reconnect all restore a live button and re-bind the
+ * listener. Pressing it applied the whole day a second time — and because the
+ * failed-save checkboxes came back unticked too, the second run silently
+ * resolved every DC 15 save in the party's favour.
  *
  * @param {ChatMessage} message
  * @param {HTMLElement} button
@@ -263,24 +295,51 @@ export async function onApplySurvival(message, button) {
     return;
   }
 
-  const plan = message.getFlag(MODULE_ID, "survivalPlan");
-  if ( !plan ) return;
-
-  const card = button.closest(".dark-sun-survival-card");
-  for ( const row of plan.rows ) {
-    const tick = card?.querySelector(`[data-dse-save="${row.id}"]`);
-    row.saveFailed = tick?.checked === true;
+  if ( isSurvivalApplied(message) ) {
+    if ( button ) button.disabled = true;
+    ui.notifications?.warn(game.i18n.localize(`${MODULE_ID}.survival.alreadyApplied`));
+    return;
   }
 
-  // Disabled before the writes, not after: a double-click during a slow
-  // update would otherwise apply the day twice.
-  button.disabled = true;
+  if ( applying.has(message.id) ) return;
+  applying.add(message.id);
 
-  const { applied, failed } = await applyPlan(plan);
-  ui.notifications?.info(game.i18n.format(`${MODULE_ID}.survival.applied`, { count: applied }));
-  if ( failed.length ) {
-    ui.notifications?.error(game.i18n.format(`${MODULE_ID}.notify.migrationPartial`, {
-      count: failed.length
-    }), { permanent: true });
+  try {
+    const plan = message.getFlag(MODULE_ID, "survivalPlan");
+    if ( !plan ) return;
+
+    // Read off the DOM before anything awaits, so a re-render mid-apply
+    // cannot swap the ticks out from under the plan.
+    const card = button?.closest(".dark-sun-survival-card");
+    for ( const row of plan.rows ) {
+      const tick = card?.querySelector(`[data-dse-save="${row.id}"]`);
+      row.saveFailed = tick?.checked === true;
+    }
+
+    if ( button ) button.disabled = true;
+
+    // Marked spent before a single sheet is written, and awaited. If the mark
+    // cannot be stored then nothing else should happen either: an unguarded
+    // card is how a party gets a day of the desert applied to it twice.
+    try {
+      await message.setFlag(MODULE_ID, "survivalApplied", true);
+    } catch ( error ) {
+      log("error", `Could not mark the survival card as applied: ${error.message}`);
+      ui.notifications?.error(game.i18n.localize(`${MODULE_ID}.survival.applyBlocked`),
+        { permanent: true });
+      if ( button ) button.disabled = false;
+      return;
+    }
+
+    const { applied, failed } = await applyPlan(plan);
+    ui.notifications?.info(game.i18n.format(`${MODULE_ID}.survival.applied`, { count: applied }));
+    if ( failed.length ) {
+      ui.notifications?.error(game.i18n.format(`${MODULE_ID}.survival.appliedPartial`, {
+        applied,
+        failed: failed.length
+      }), { permanent: true });
+    }
+  } finally {
+    applying.delete(message.id);
   }
 }
