@@ -137,3 +137,53 @@ export function planForActors(actors, conditions, intake = {}) {
   plan.warnings = members.filter(m => m.assumedMedium).map(m => m.name);
   return plan;
 }
+
+/* -------------------------------------------- */
+/*  Applying                                     */
+/* -------------------------------------------- */
+
+/**
+ * Commit a plan the GM has approved.
+ *
+ * Reads the stored plan rather than recomputing, so what lands is what was on
+ * the card. Rows whose outcome was a save are applied only if the caller has
+ * already marked them failed — `row.saveFailed` — because this module does not
+ * roll for a player.
+ *
+ * Failures are collected rather than thrown: one actor a GM lacks permission
+ * to update should not abandon the other six mid-write.
+ *
+ * @param {object} plan
+ * @returns {Promise<{applied: number, failed: string[]}>}
+ */
+export async function applyPlan(plan) {
+  const failed = [];
+  let applied = 0;
+
+  for ( const row of plan.rows ) {
+    const owed = row.outcome.kind === "save" ? (row.saveFailed ? row.outcome.levels : 0)
+      : row.outcome.levels;
+    if ( !owed ) continue;
+
+    const actor = game.actors?.get(row.id);
+    if ( !actor ) {
+      failed.push(row.name);
+      continue;
+    }
+
+    // Recompute the clamp against the actor's exhaustion as it stands now,
+    // not as it stood when the card was posted. A GM who healed someone
+    // between preview and Apply should not have that undone.
+    const { final } = clampExhaustion(actor.system?.attributes?.exhaustion ?? 0, owed);
+
+    try {
+      await actor.update({ "system.attributes.exhaustion": final });
+      applied += 1;
+    } catch ( error ) {
+      log("error", `Could not apply exhaustion to ${row.name}: ${error.message}`);
+      failed.push(row.name);
+    }
+  }
+
+  return { applied, failed };
+}
