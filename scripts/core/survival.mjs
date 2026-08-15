@@ -198,3 +198,94 @@ export function longRestVerdict({ ateHalf, drankHalf, hadShelter }) {
     fullHpRecovery: Boolean(hadShelter)
   };
 }
+
+/* -------------------------------------------- */
+/*  Supplies                                     */
+/* -------------------------------------------- */
+
+/** A waterskin's volume. Weighs 4 lb full. */
+export const WATERSKIN_GAL = 0.5;
+
+/** A beast- or wagon-borne cask. Weighs 85 lb full. */
+export const CASK_GAL = 10;
+
+/**
+ * Gallons per unit for water items, keyed by dnd5e `system.identifier`.
+ *
+ * Identifiers rather than names: a name is localised, renamed by GMs, and
+ * differs between the module's packs and dnd5e's.
+ *
+ * `water-1tun` is deliberately absent. The item exists in `dark-sun-items` but
+ * is recorded at 1 lb, which cannot be a tun of anything, so its real volume
+ * is unknown. Guessing 250 gallons would hand a party a quarter-tonne of water
+ * it does not have. It counts as nothing until a GM flags it.
+ * @type {Readonly<Record<string, number>>}
+ */
+export const WATER_ITEM_GAL = Object.freeze({
+  "waterskin": WATERSKIN_GAL,          // dnd5e core
+  "water-gallon": 1,                   // dark-sun-items
+  "water-tun-250-gallons": 250,        // dark-sun-items
+  "cask": CASK_GAL
+});
+
+/**
+ * Waterskins a creature can physically carry, by size.
+ *
+ * A limit of bulk, not of weight: no amount of Strength adds a thirteenth
+ * skin. Sizes absent from this table are limited by weight alone — a kank
+ * carries casks, and what stops it is its 400 lb capacity.
+ * @type {Readonly<Record<string, number>>}
+ */
+export const CONTAINER_CAP_SKINS = Object.freeze({
+  sm: 6,
+  med: 12
+});
+
+/**
+ * Coerce the quantity field, which arrives from world data of any vintage.
+ * @param {unknown} value
+ * @returns {number}
+ */
+function readQuantity(value) {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? n : 0;
+}
+
+/**
+ * How much water one item stack holds.
+ *
+ * An explicit `flagGal` always wins: it is how a world declares its own
+ * containers without waiting for this table to learn about them.
+ *
+ * @param {{identifier: string|null, type: string|null, quantity: number, flagGal: number|null}} item
+ * @returns {number} Gallons.
+ */
+export function waterGalForItem(item) {
+  const quantity = readQuantity(item?.quantity);
+  if ( !quantity ) return 0;
+
+  const flagged = Number(item?.flagGal);
+  if ( Number.isFinite(flagged) && flagged > 0 ) return flagged * quantity;
+
+  const perUnit = WATER_ITEM_GAL[item?.identifier];
+  return perUnit ? perUnit * quantity : 0;
+}
+
+/**
+ * Total water across an inventory.
+ * @param {Array<object>} items
+ * @returns {number} Gallons.
+ */
+export function totalWaterGal(items) {
+  return (items ?? []).reduce((sum, item) => sum + waterGalForItem(item), 0);
+}
+
+/**
+ * The most water a creature of this size can carry on its person.
+ * @param {string} size
+ * @returns {number|null} Gallons, or null when the creature is weight-limited.
+ */
+export function containerCapGal(size) {
+  const skins = CONTAINER_CAP_SKINS[size];
+  return skins === undefined ? null : skins * WATERSKIN_GAL;
+}

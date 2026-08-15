@@ -2,18 +2,25 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import {
+  CASK_GAL,
+  CONTAINER_CAP_SKINS,
+  DEHYDRATION_SAVE_DC,
+  MAX_EXHAUSTION,
   SIZE_WATER_GAL,
   SPECIES_WATER_GAL,
   THRI_KREEN_WEEKLY_GAL,
+  WATERSKIN_GAL,
+  WATER_ITEM_GAL,
   WATER_MODIFIERS,
   baseWaterGal,
-  dailyWaterGal,
-  roundQuarterGal,
-  DEHYDRATION_SAVE_DC,
-  MAX_EXHAUSTION,
   clampExhaustion,
+  containerCapGal,
+  dailyWaterGal,
   dehydrationOutcome,
-  longRestVerdict
+  longRestVerdict,
+  roundQuarterGal,
+  totalWaterGal,
+  waterGalForItem
 } from "../scripts/core/survival.mjs";
 
 /** A Medium human in no armour, the baseline every test varies from. */
@@ -264,4 +271,92 @@ test("a long rest removes a level only with food, water and shelter", () => {
 test("hit point recovery depends on shelter alone", () => {
   assert.equal(longRestVerdict({ ateHalf: false, drankHalf: false, hadShelter: true }).fullHpRecovery, true);
   assert.equal(longRestVerdict({ ateHalf: true, drankHalf: true, hadShelter: false }).fullHpRecovery, false);
+});
+
+/** Build a plain item the way `scripts/survival.mjs` will. */
+function item(identifier, quantity = 1, { type = "drink", flagGal = null } = {}) {
+  return { identifier, type, quantity, flagGal };
+}
+
+/* -------------------------------------------- */
+/*  Identifying water                            */
+/* -------------------------------------------- */
+
+test("known water items carry their ruleset volume", () => {
+  assert.equal(WATER_ITEM_GAL.waterskin, 0.5);
+  assert.equal(WATER_ITEM_GAL["water-gallon"], 1);
+  assert.equal(WATER_ITEM_GAL["water-tun-250-gallons"], 250);
+});
+
+// 01-survival.md, "Containers". D-006.
+test("container volumes match the ruleset", () => {
+  assert.equal(WATERSKIN_GAL, 0.5);
+  assert.equal(CASK_GAL, 10);
+});
+
+test("a stack multiplies by quantity", () => {
+  assert.equal(waterGalForItem(item("waterskin", 12)), 6, "the Medium carrying limit");
+  assert.equal(waterGalForItem(item("water-gallon", 4)), 4);
+});
+
+test("an item flag overrides the identifier table", () => {
+  assert.equal(waterGalForItem(item("waterskin", 2, { flagGal: 3 })), 6,
+    "a world's own container wins over the built-in guess");
+});
+
+test("a flag works on an item the table has never heard of", () => {
+  assert.equal(waterGalForItem(item("bloodgourd", 2, { flagGal: 0.25 })), 0.5);
+});
+
+test("non-water items hold no water", () => {
+  assert.equal(waterGalForItem(item("rations-15-days", 3, { type: "food" })), 0);
+  assert.equal(waterGalForItem(item("obsidian-dagger", 1, { type: null })), 0);
+  assert.equal(waterGalForItem(item(null, 1, { type: null })), 0);
+});
+
+// `water-1tun` is recorded in dark-sun-items at weight 1 lb, which cannot be
+// 250 gallons of anything. Left out of the table deliberately rather than
+// guessed at. See spec, "Known data defects".
+test("the ambiguous water-1tun item is not guessed at", () => {
+  assert.equal(WATER_ITEM_GAL["water-1tun"], undefined);
+  assert.equal(waterGalForItem(item("water-1tun", 1)), 0,
+    "counts as nothing until a GM flags it, rather than silently inventing supply");
+});
+
+test("junk quantities coerce rather than poison the total", () => {
+  assert.equal(waterGalForItem(item("water-gallon", "3")), 3);
+  assert.equal(waterGalForItem(item("water-gallon", null)), 0);
+  assert.equal(waterGalForItem(item("water-gallon", -2)), 0, "negatives cannot create water");
+  assert.equal(waterGalForItem(item("water-gallon", NaN)), 0);
+});
+
+test("totalWaterGal sums a mixed inventory", () => {
+  const inventory = [
+    item("waterskin", 12),
+    item("water-gallon", 2),
+    item("rations-15-days", 5, { type: "food" }),
+    item("water-1tun", 1)
+  ];
+  assert.equal(totalWaterGal(inventory), 8, "6 from skins, 2 from gallons, nothing else");
+});
+
+test("an empty inventory is zero, not an error", () => {
+  assert.equal(totalWaterGal([]), 0);
+});
+
+/* -------------------------------------------- */
+/*  Container caps                               */
+/* -------------------------------------------- */
+
+// 01-survival.md, "Carrying Water". D-006 — a limit of bulk, not weight.
+test("carrying limits are bulk, not weight", () => {
+  assert.equal(CONTAINER_CAP_SKINS.med, 12);
+  assert.equal(CONTAINER_CAP_SKINS.sm, 6);
+  assert.equal(containerCapGal("med"), 6, "12 skins at half a gallon");
+  assert.equal(containerCapGal("sm"), 3);
+});
+
+test("beasts are limited by weight, so they have no bulk cap", () => {
+  assert.equal(containerCapGal("lg"), null);
+  assert.equal(containerCapGal("huge"), null);
 });
