@@ -65,5 +65,10 @@ world programmatically; nobody has tried using it for module testing yet.
   pre-flight check, not proof.
 - Anything touching Foundry hooks, dnd5e config mutation, the settings UI, item
   properties, or vehicles needs a real load on the Pi before it's called done.
+- Survival tracking splits the same way: `core/survival.mjs` is pure and fully
+  covered by `npm test`; `scripts/survival.mjs`, the dialog and the chat card
+  are not covered at all and need a real load on the Pi. The chat card's Apply
+  button is the fragile part — `renderChatMessage` became
+  `renderChatMessageHTML` in v13 and both are bound defensively.
 - Report local test results and remote verification separately. If a change was
   only tested locally, say so.
