@@ -122,12 +122,17 @@ export function actorToMember(actor) {
  * @param {Actor[]} actors
  * @param {object} conditions
  * @param {Record<string, number|null>} [intake]  Actor id → gallons drunk.
+ * @param {Record<string, boolean>} [armour]  Actor id → wearing metal armour,
+ *   as answered by the GM when the module could not read it off the actor.
  * @returns {object}
  */
-export function planForActors(actors, conditions, intake = {}) {
+export function planForActors(actors, conditions, intake = {}, armour = {}) {
   const members = actors.map(actor => {
     const member = actorToMember(actor);
     if ( actor.id in intake ) member.drunkGal = intake[actor.id];
+    // The GM's answer wins when the module had to ask. When material
+    // properties are on it never asks, and `armour` arrives empty.
+    if ( actor.id in armour ) member.metalArmor = armour[actor.id];
     return member;
   });
 

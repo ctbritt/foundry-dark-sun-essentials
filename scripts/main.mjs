@@ -13,6 +13,7 @@ import { registerSettings } from "./settings.mjs";
 import { applyConfig } from "./config-apply.mjs";
 import { applyMigration, runMigration, scanWorld, summarise } from "./migration.mjs";
 import { openMigrationDialog } from "./apps/migration-dialog.mjs";
+import { openSurvivalDialog } from "./apps/survival-dialog.mjs";
 
 Hooks.once("init", () => {
   log("info", `Initialising for Foundry v${foundryGeneration()}, dnd5e ${systemVersion()}.`);
@@ -25,7 +26,10 @@ Hooks.once("init", () => {
   // a GM converts balances without removing the standard coins:
   //   game.modules.get("dark-sun-essentials").api.openMigrationDialog()
   const module = game.modules.get(MODULE_ID);
-  if ( module ) module.api = { scanWorld, summarise, applyMigration, runMigration, openMigrationDialog };
+  if ( module ) module.api = {
+    scanWorld, summarise, applyMigration, runMigration, openMigrationDialog,
+    openSurvivalDialog
+  };
 });
 
 Hooks.once("ready", () => {
