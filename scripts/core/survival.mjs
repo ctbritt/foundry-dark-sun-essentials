@@ -123,3 +123,78 @@ export function dailyWaterGal(creature, conditions) {
   const need = base * mult;
   return creature.isThriKreen ? need : roundQuarterGal(need);
 }
+
+/* -------------------------------------------- */
+/*  Dehydration                                  */
+/* -------------------------------------------- */
+
+/** Exhaustion level 6 is death under the 2024 rules. */
+export const MAX_EXHAUSTION = 6;
+
+/** The save a creature gets when it drank at least half of what it needed. */
+export const DEHYDRATION_SAVE_DC = 15;
+
+/**
+ * What a day of short rations does to a creature.
+ *
+ * `kind` is `"save"` when the creature gets a Constitution save to avoid the
+ * level, and `"levels"` when it does not. In both cases `levels` is what lands
+ * on a failure — the caller rolls, this function does not.
+ *
+ * @param {{requiredGal: number, drunkGal: number, currentExhaustion: number}} args
+ * @returns {{kind: "none"|"save"|"levels", dc: number|null, levels: number}}
+ */
+export function dehydrationOutcome({ requiredGal, drunkGal, currentExhaustion }) {
+  if ( requiredGal <= 0 || drunkGal >= requiredGal ) return { kind: "none", dc: null, levels: 0 };
+
+  // Checked before the half comparison: zero is also "less than half", and
+  // taking that branch would hand a creature that drank nothing the lighter
+  // of the two penalties.
+  if ( drunkGal <= 0 ) return { kind: "levels", dc: null, levels: 2 };
+
+  if ( drunkGal >= (requiredGal / 2) ) {
+    return { kind: "save", dc: DEHYDRATION_SAVE_DC, levels: 1 };
+  }
+
+  return { kind: "levels", dc: null, levels: currentExhaustion > 0 ? 2 : 1 };
+}
+
+/**
+ * Add exhaustion without going past death.
+ *
+ * `applied` is what actually landed, which is not always what was asked for —
+ * the chat card reports the difference so a GM can see that a character was
+ * already at the ceiling.
+ *
+ * @param {number} current
+ * @param {number} add
+ * @returns {{final: number, applied: number, lethal: boolean}}
+ */
+export function clampExhaustion(current, add) {
+  const from = Math.max(0, Math.min(MAX_EXHAUSTION, Number(current) || 0));
+  const final = Math.min(MAX_EXHAUSTION, from + Math.max(0, Number(add) || 0));
+  return { final, applied: final - from, lethal: final >= MAX_EXHAUSTION };
+}
+
+/* -------------------------------------------- */
+/*  Resting                                      */
+/* -------------------------------------------- */
+
+/**
+ * What a long rest is worth in this place.
+ *
+ * Removing a level needs all three of food, water and shelter. Hit point
+ * recovery needs only shelter — without it a creature regains hit points by
+ * spending Hit Dice and nothing more.
+ *
+ * This reports; it does not automate the rest. dnd5e owns resting.
+ *
+ * @param {{ateHalf: boolean, drankHalf: boolean, hadShelter: boolean}} args
+ * @returns {{removesExhaustion: boolean, fullHpRecovery: boolean}}
+ */
+export function longRestVerdict({ ateHalf, drankHalf, hadShelter }) {
+  return {
+    removesExhaustion: Boolean(ateHalf && drankHalf && hadShelter),
+    fullHpRecovery: Boolean(hadShelter)
+  };
+}

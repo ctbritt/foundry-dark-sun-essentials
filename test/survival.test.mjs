@@ -8,7 +8,12 @@ import {
   WATER_MODIFIERS,
   baseWaterGal,
   dailyWaterGal,
-  roundQuarterGal
+  roundQuarterGal,
+  DEHYDRATION_SAVE_DC,
+  MAX_EXHAUSTION,
+  clampExhaustion,
+  dehydrationOutcome,
+  longRestVerdict
 } from "../scripts/core/survival.mjs";
 
 /** A Medium human in no armour, the baseline every test varies from. */
@@ -147,4 +152,116 @@ test("a thri-kreen is exempt from quarter-gallon rounding", () => {
 test("a thri-kreen still benefits from night travel and shade", () => {
   assert.equal(dailyWaterGal(KREEN, { pace: "night", heat: "none", shaded: true }),
     (THRI_KREEN_WEEKLY_GAL / 7) * 0.25);
+});
+
+/* -------------------------------------------- */
+/*  Dehydration                                  */
+/* -------------------------------------------- */
+
+// 01-survival.md, "Dehydration". D-005.
+test("drinking the full requirement costs nothing", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 2, currentExhaustion: 0 });
+  assert.equal(out.kind, "none");
+  assert.equal(out.levels, 0);
+});
+
+test("drinking more than needed is still nothing", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 5, currentExhaustion: 0 });
+  assert.equal(out.kind, "none");
+});
+
+test("half or more calls for a DC 15 Constitution save", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 1, currentExhaustion: 0 });
+  assert.equal(out.kind, "save");
+  assert.equal(out.dc, DEHYDRATION_SAVE_DC);
+  assert.equal(out.dc, 15);
+  assert.equal(out.levels, 1, "one level, on a failed save");
+});
+
+test("less than half is one level with no save", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 0.5, currentExhaustion: 0 });
+  assert.equal(out.kind, "levels");
+  assert.equal(out.dc, null);
+  assert.equal(out.levels, 1);
+});
+
+test("less than half is two levels if already exhausted at all", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 0.5, currentExhaustion: 1 });
+  assert.equal(out.levels, 2, "the spiral is the point");
+});
+
+test("no water at all is two levels regardless of prior exhaustion", () => {
+  assert.equal(dehydrationOutcome({ requiredGal: 2, drunkGal: 0, currentExhaustion: 0 }).levels, 2);
+  assert.equal(dehydrationOutcome({ requiredGal: 2, drunkGal: 0, currentExhaustion: 3 }).levels, 2);
+});
+
+// Ordering guard: zero is also "less than half", so the none-at-all branch
+// has to be checked first or a parched creature gets the lighter penalty.
+test("zero intake takes the none-at-all branch, not the less-than-half branch", () => {
+  const out = dehydrationOutcome({ requiredGal: 2, drunkGal: 0, currentExhaustion: 0 });
+  assert.equal(out.levels, 2, "not 1");
+});
+
+test("a creature that needs no water cannot be dehydrated", () => {
+  const out = dehydrationOutcome({ requiredGal: 0, drunkGal: 0, currentExhaustion: 0 });
+  assert.equal(out.kind, "none");
+});
+
+/* -------------------------------------------- */
+/*  Exhaustion clamping                          */
+/* -------------------------------------------- */
+
+test("exhaustion stops at six", () => {
+  assert.equal(MAX_EXHAUSTION, 6);
+  const out = clampExhaustion(5, 2);
+  assert.equal(out.final, 6);
+  assert.equal(out.applied, 1, "only one level actually landed");
+  assert.equal(out.lethal, true);
+});
+
+test("reaching exactly six is lethal", () => {
+  assert.equal(clampExhaustion(4, 2).lethal, true);
+});
+
+test("staying below six is not lethal", () => {
+  const out = clampExhaustion(2, 2);
+  assert.equal(out.final, 4);
+  assert.equal(out.applied, 2);
+  assert.equal(out.lethal, false);
+});
+
+test("a creature already at six cannot be pushed further", () => {
+  const out = clampExhaustion(6, 2);
+  assert.equal(out.final, 6);
+  assert.equal(out.applied, 0);
+});
+
+/* -------------------------------------------- */
+/*  Long rest                                    */
+/* -------------------------------------------- */
+
+// 01-survival.md, "Resting". D-008. All eight combinations, because the
+// three-way AND is exactly the kind of thing that gets refactored into a
+// two-way one.
+test("a long rest removes a level only with food, water and shelter", () => {
+  const cases = [
+    [true,  true,  true,  true ],
+    [true,  true,  false, false],
+    [true,  false, true,  false],
+    [false, true,  true,  false],
+    [true,  false, false, false],
+    [false, true,  false, false],
+    [false, false, true,  false],
+    [false, false, false, false]
+  ];
+  for ( const [ateHalf, drankHalf, hadShelter, expected] of cases ) {
+    const out = longRestVerdict({ ateHalf, drankHalf, hadShelter });
+    assert.equal(out.removesExhaustion, expected,
+      `ate=${ateHalf} drank=${drankHalf} shelter=${hadShelter}`);
+  }
+});
+
+test("hit point recovery depends on shelter alone", () => {
+  assert.equal(longRestVerdict({ ateHalf: false, drankHalf: false, hadShelter: true }).fullHpRecovery, true);
+  assert.equal(longRestVerdict({ ateHalf: true, drankHalf: true, hadShelter: false }).fullHpRecovery, false);
 });
