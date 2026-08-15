@@ -132,9 +132,15 @@ creature is facing.
 
 Nothing is written to a sheet at that point. The card is a proposal, not a
 result — it carries the whole computed plan along with it, and only pressing
-**Apply** on the card commits exhaustion levels and water consumption to
-actors. A GM can read the card, argue with a player about it, or close the
-tab without touching anyone's sheet.
+**Apply** on the card commits it. A GM can read the card, argue with a player
+about it, or close the tab without touching anyone's sheet.
+
+**Apply commits exhaustion, and nothing else.** It does not empty waterskins,
+decrement casks, or touch anyone's inventory. The gallons figure on the card
+is the water the party is carrying at the moment the card was posted — a stock
+reading, not a running total — so subtracting what was drunk stays the GM's
+job. A card can only be applied once; a spent one comes back with its button
+disabled however often the chat log is re-rendered.
 
 Pack beasts are not a special case. Anything resolved as a member of the party
 — mounts, kanks, whatever is hauling water — is read the same way a character
@@ -143,8 +149,9 @@ accounted for individually rather than folded into one "party" number.
 
 Food, foraging, forced march, navigation and weather are covered in the
 *Survival and Travel* journal (Dark Sun Journals compendium) as rules text for
-the GM to adjudicate — this feature does not automate them. Only water intake
-and its consequences are computed and applied.
+the GM to adjudicate — this feature does not automate them. Only the water
+requirement and the exhaustion it costs are computed, and only the exhaustion
+is applied.
 
 ### Silt vehicles
 

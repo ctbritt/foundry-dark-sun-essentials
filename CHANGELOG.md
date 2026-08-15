@@ -13,6 +13,10 @@
   the GM presses Apply. Food, foraging, forced march, navigation and weather
   ship as journal text in Dark Sun Journals rather than automation.
 
+  Apply writes exhaustion and nothing else. Water items are not decremented —
+  the gallons on the card are what the party is carrying now, not a running
+  total — and a card can be applied only once.
+
 ## 1.5.0 — 2026-08-11
 
 ### Added
