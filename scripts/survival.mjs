@@ -11,7 +11,7 @@
 import { MODULE_ID, SETTINGS } from "./core/constants.mjs";
 import { log } from "./compat.mjs";
 import { setting } from "./settings.mjs";
-import { buildDayPlan, clampExhaustion } from "./core/survival.mjs";
+import { buildDayPlan, clampExhaustion, identifySpecies } from "./core/survival.mjs";
 
 /**
  * The creatures this day applies to.
@@ -82,9 +82,16 @@ export function readItems(actor) {
 /**
  * Map one Actor onto a plain member object.
  *
- * `species` is taken from the race item's identifier, which is what pack
- * beasts in the creature catalog carry. `assumedMedium` rides along so the
- * chat card can say out loud that it guessed.
+ * Species identification is delegated to `core/survival.mjs`'s
+ * `identifySpecies`, tried against the race item's identifier, the race
+ * item's name, and finally the actor's own name, in that order — the race
+ * item is trusted over the actor's name so a PC named "Kanko" cannot be
+ * mistaken for livestock when they have a real race item. Every pack beast
+ * this module ships has `race: null` and is identifiable only by name
+ * ("Kank, Drone", "Mekillot Dirk"), which is why the actor's name is tried
+ * at all; a naive read of `race.identifier` alone matches nothing for any
+ * of them. `assumedMedium` rides along so the chat card can say out loud
+ * that it guessed the size.
  *
  * @param {Actor} actor
  * @returns {object}
@@ -92,8 +99,9 @@ export function readItems(actor) {
 export function actorToMember(actor) {
   const size = actor.system?.traits?.size ?? null;
   const race = actor.system?.details?.race;
-  const species = (typeof race === "string" ? race : race?.identifier ?? race?.name)
-    ?.toLowerCase?.() ?? null;
+  const raceIdentifier = typeof race === "string" ? race : race?.identifier ?? null;
+  const raceName = typeof race === "string" ? null : race?.name ?? null;
+  const { species, isThriKreen } = identifySpecies([raceIdentifier, raceName, actor.name]);
 
   return {
     id: actor.id,
@@ -101,7 +109,7 @@ export function actorToMember(actor) {
     size: size ?? "med",
     assumedMedium: !size,
     species,
-    isThriKreen: species === "thri-kreen" || species === "thrikreen",
+    isThriKreen,
     metalArmor: hasMetalArmor(actor),
     currentExhaustion: actor.system?.attributes?.exhaustion ?? 0,
     drunkGal: null,

@@ -63,6 +63,66 @@ export const WATER_MODIFIERS = Object.freeze({
 });
 
 /* -------------------------------------------- */
+/*  Species identification                       */
+/* -------------------------------------------- */
+
+/**
+ * Lowercase and strip everything but letters and digits.
+ *
+ * The strings this module has to compare disagree wildly on spacing,
+ * punctuation and case — "Kank, Drone", "athas-thri-kreen",
+ * "Thri-Kreen (Dark Sun)". Reducing all of them to bare alphanumerics makes
+ * simple substring containment a reliable way to compare them.
+ *
+ * @param {unknown} text
+ * @returns {string} "" for null, undefined, or any non-string.
+ */
+export function normaliseSpeciesText(text) {
+  if ( typeof text !== "string" ) return "";
+  return text.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Identify a species, and whether it is a thri-kreen, from a list of
+ * candidate strings.
+ *
+ * This exists because the adapter's naive `race.identifier` read guesses
+ * wrong against this module's own shipped data: every pack-beast statblock
+ * in the creature catalog has `race: null` and is identifiable only by
+ * name ("Kank, Drone", "Mekillot Dirk"), and the shipped thri-kreen origin
+ * item's identifier is `athas-thri-kreen`, which contains neither
+ * "thri-kreen" nor "thrikreen" as those were being compared naively. Both
+ * defects were silent: a kank was charged double, a thri-kreen sevenfold.
+ *
+ * Thri-kreen are checked across every candidate before the species table is
+ * consulted at all — a wrong thri-kreen miss is the more expensive defect
+ * (7x vs 2x), so it must not lose to an earlier, weaker species-table match.
+ * Once past that check, candidates are tried against `SPECIES_WATER_GAL` in
+ * order and the first one that contains a table key wins — callers are
+ * expected to pass their most-trusted candidate (e.g. a race item's
+ * identifier) first, so a player character's own name cannot be mistaken
+ * for livestock when a real race item is available.
+ *
+ * @param {Array<string|null|undefined>} candidates
+ * @returns {{species: string|null, isThriKreen: boolean}}
+ */
+export function identifySpecies(candidates) {
+  const normalised = (candidates ?? []).map(normaliseSpeciesText);
+
+  if ( normalised.some(c => c.includes("thrikreen")) ) {
+    return { species: null, isThriKreen: true };
+  }
+
+  for ( const candidate of normalised ) {
+    if ( !candidate ) continue;
+    const match = Object.keys(SPECIES_WATER_GAL).find(key => candidate.includes(key));
+    if ( match ) return { species: match, isThriKreen: false };
+  }
+
+  return { species: null, isThriKreen: false };
+}
+
+/* -------------------------------------------- */
 
 /**
  * Round up to the nearest quarter gallon.

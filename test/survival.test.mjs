@@ -18,7 +18,9 @@ import {
   containerCapGal,
   dailyWaterGal,
   dehydrationOutcome,
+  identifySpecies,
   longRestVerdict,
+  normaliseSpeciesText,
   roundQuarterGal,
   totalWaterGal,
   waterGalForItem
@@ -86,6 +88,79 @@ test("a mekillot drinks its species rate, not its Huge size rate", () => {
 test("an unknown Large beast falls back to the size rate", () => {
   const beast = { size: "lg", species: "erdlu", isThriKreen: false, metalArmor: false };
   assert.equal(baseWaterGal(beast), 4);
+});
+
+/* -------------------------------------------- */
+/*  Species identification                       */
+/* -------------------------------------------- */
+
+// Names as they actually appear in packs/src/dark-sun-creature-catalog/,
+// where every statblock has `race: null` and is identifiable only by name.
+test("shipped kank statblock names all identify as kank", () => {
+  for ( const name of ["Kank, Drone", "Kank, Soldier", "Kank (version 2)", "Kank"] ) {
+    assert.equal(identifySpecies([null, null, name]).species, "kank", name);
+  }
+});
+
+test("shipped inix statblock names all identify as inix", () => {
+  for ( const name of ["Inix Adult", "Inix Juvenile", "Inix"] ) {
+    assert.equal(identifySpecies([null, null, name]).species, "inix", name);
+  }
+});
+
+test("shipped mekillot statblock names identify as mekillot", () => {
+  for ( const name of ["Mekillot Dirk", "Mekillot"] ) {
+    assert.equal(identifySpecies([null, null, name]).species, "mekillot", name);
+  }
+});
+
+// D-002 regression: the shipped origin item's identifier is
+// `athas-thri-kreen`, which contains neither "thri-kreen" nor "thrikreen"
+// under a naive equality check — a thri-kreen was charged 1 gal/day instead
+// of 1 gal/week, sevenfold, silently.
+test("the shipped thri-kreen identifier is athas-thri-kreen, not thri-kreen", () => {
+  const result = identifySpecies(["athas-thri-kreen", null, null]);
+  assert.equal(result.isThriKreen, true);
+  assert.equal(result.species, null);
+});
+
+test("both shipped thri-kreen origin item names identify as thri-kreen", () => {
+  assert.equal(identifySpecies([null, "Thri-Kreen", null]).isThriKreen, true);
+  assert.equal(identifySpecies([null, "Thri-kreen (Dark Sun)", null]).isThriKreen, true);
+});
+
+test("all-null candidates identify as nothing", () => {
+  assert.deepEqual(identifySpecies([null, null, null]), { species: null, isThriKreen: false });
+});
+
+test("an unrelated name identifies as nothing", () => {
+  assert.deepEqual(identifySpecies([null, null, "Erdlu"]), { species: null, isThriKreen: false });
+});
+
+test("race information beats actor name", () => {
+  const result = identifySpecies(["athas-thri-kreen", null, "Kank"]);
+  assert.equal(result.isThriKreen, true, "not mistaken for a kank because the name says Kank");
+  assert.equal(result.species, null);
+});
+
+test("normaliseSpeciesText strips punctuation, spacing and case", () => {
+  assert.equal(normaliseSpeciesText("Kank, Drone"), "kankdrone");
+  assert.equal(normaliseSpeciesText("Thri-kreen (Dark Sun)"), "thrikreendarksun");
+  assert.equal(normaliseSpeciesText(null), "");
+  assert.equal(normaliseSpeciesText(undefined), "");
+  assert.equal(normaliseSpeciesText(42), "");
+});
+
+// The end-to-end consequence: a mismatch here is not an abstract string bug,
+// it is the price a kank is charged. A regression in identifySpecies should
+// show up as this number changing, not just as a failing string assertion.
+test("a Large creature identified as a kank is charged 2 gal/day; unidentified, 4", () => {
+  const identified = identifySpecies([null, null, "Kank, Drone"]);
+  const known = { size: "lg", ...identified, metalArmor: false };
+  assert.equal(baseWaterGal(known), 2, "the species rate, not the size rate");
+
+  const unidentified = { size: "lg", species: null, isThriKreen: false, metalArmor: false };
+  assert.equal(baseWaterGal(unidentified), 4, "silently double, if species identification regresses");
 });
 
 /* -------------------------------------------- */
