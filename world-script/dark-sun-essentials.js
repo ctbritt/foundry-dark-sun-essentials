@@ -51,7 +51,19 @@
     materialProperties: true,
 
     /** Silt as a vehicle type, for skimmers on the Sea of Silt. */
-    siltVehicles: true
+    siltVehicles: true,
+
+    /**
+     * Bookkeeping only — this build has no effect.
+     *
+     * The module's survival tracking ships as a macro in a compendium pack;
+     * this single-file world script has no macro-delivery mechanism to carry
+     * it, and mutates no CONFIG table for it to gate. The flag exists so
+     * `test/manifest.test.mjs` can keep asserting this file names every
+     * feature the module's settings declare, not because flipping it does
+     * anything.
+     */
+    survivalTracking: false
   };
 
   /** Background art for the silt vehicle sheet. "water", "land", "air", "space". */

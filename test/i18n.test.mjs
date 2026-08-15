@@ -96,10 +96,33 @@ test("the dynamically-built migration and notify keys all exist", () => {
   assert.deepEqual(missing, []);
 });
 
+test("the dynamically-built survival keys all exist", () => {
+  // The dialog and the chat card assemble these at runtime, so the static
+  // scan cannot see them. They are the copy a GM reads while deciding
+  // whether to apply a day that may kill a character.
+  const survival = [
+    "dialogTitle", "pace", "paceDay", "paceNight", "paceInactive",
+    "heat", "heatNone", "heatHot", "heatExtreme",
+    "shaded", "shadedHint", "sheltered", "shelteredHint", "ateHalf",
+    "metalArmor", "drunk", "resolve", "cancel", "apply",
+    "cardTitle", "colMember", "colNeeded", "colDrunk", "colResult",
+    "resultFine", "resultSave", "resultLevels", "resultDeath",
+    "saveFailed", "savesPending", "restYes", "restNo", "restNoHp",
+    "assumedMedium", "capExceeded", "supplyUnknown", "supply",
+    "supplyNoDays", "applied"
+  ];
+
+  const missing = survival
+    .map(k => `${MODULE_ID}.survival.${k}`)
+    .filter(key => !(key in lang));
+
+  assert.deepEqual(missing, []);
+});
+
 test("no localization key is defined but unused", () => {
   const used = new Set(staticKeys().keys());
   // Runtime-assembled families the static scan cannot resolve.
-  const dynamic = /^dark-sun-essentials\.(migration|notify)\./;
+  const dynamic = /^dark-sun-essentials\.(migration|notify|survival)\./;
   const orphans = Object.keys(lang).filter(key => !used.has(key) && !dynamic.test(key));
   assert.deepEqual(orphans, [], `Unused keys:\n  ${orphans.join("\n  ")}`);
 });

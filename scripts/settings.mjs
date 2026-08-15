@@ -91,6 +91,21 @@ export function registerSettings() {
     default: false
   });
 
+  // The only setting here that does not require a reload. Every other toggle
+  // does because dnd5e builds its data model schemas from CONFIG on first
+  // document access, so a mid-session change would exist in the config table
+  // and in no actor's schema. This one mutates no config — it gates a macro —
+  // so the reason does not apply and neither does the requirement.
+  game.settings.register(MODULE_ID, SETTINGS.survivalTracking, {
+    name: `${MODULE_ID}.settings.survivalTracking.name`,
+    hint: `${MODULE_ID}.settings.survivalTracking.hint`,
+    scope: "world",
+    config: true,
+    requiresReload: false,
+    type: Boolean,
+    default: false
+  });
+
   log("debug", "Settings registered.");
 }
 
