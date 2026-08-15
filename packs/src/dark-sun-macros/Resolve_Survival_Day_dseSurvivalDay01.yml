@@ -1,0 +1,24 @@
+_id: dseSurvivalDay01
+name: Resolve Survival Day
+type: script
+scope: global
+author: null
+img: icons/containers/barrels/barrel-oak-steel-tan.webp
+command: |
+  // Dark Sun Essentials — resolve one day of Athasian travel.
+  //
+  // Asks what kind of day it was, works out what every creature in the party
+  // needed to drink, and shows you what happens to anyone who came up short.
+  // Nothing is written to a sheet until you press Apply.
+  const module = game.modules.get("dark-sun-essentials");
+  if ( !module?.active ) {
+    ui.notifications.error("Dark Sun Essentials is not active in this world.");
+  } else {
+    await module.api.openSurvivalDialog();
+  }
+folder: null
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+_key: '!macros!dseSurvivalDay01'
