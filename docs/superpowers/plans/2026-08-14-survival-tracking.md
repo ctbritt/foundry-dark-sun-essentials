@@ -21,6 +21,7 @@
 - **Run `npm run build:packs` before any Pi deploy** — `packs/` is gitignored and a fresh checkout has none.
 - **Rules source of truth is `01-survival.md`** in the vault at `Dark Sun/1. CORE/ATHAS-5E/`. Constants are hand-copied literals; the tests assert them against the ruleset's tables as written.
 - **Target version for this work is 1.6.0.**
+- **One import block per module specifier.** Tasks 2, 3 and 4 each append tests needing more names from `../scripts/core/survival.mjs`. Merge them into the single existing `import { … } from "../scripts/core/survival.mjs";` at the top of the test file rather than adding a second, third and fourth import from the same path.
 
 ---
 
@@ -1300,7 +1301,48 @@ In `lang/en.json`, add after the `siltVehicles` hint:
   "dark-sun-essentials.notify.noParty": "No party found. Set a primary party in the Actors sidebar, or select the tokens you want to resolve.",
 ```
 
-Every key here is used by Tasks 6–9. `test/i18n.test.mjs` also fails on keys defined but never referenced, so **if that test reports unused keys at the end of Task 9, delete the unused ones rather than inventing a use for them.**
+- [ ] **Step 1b: Teach the i18n test about this key family**
+
+`test/i18n.test.mjs:99` asserts that no key is defined but unused, and it builds its "used" set by scanning source for literal key text. Line 60 deliberately skips any match followed by a second interpolation — so every key written as `` `${MODULE_ID}.survival.${key}` `` is invisible to it. The exemption on line 102 covers only `migration.` and `notify.`.
+
+Without this step, adding the keys above turns `npm test` red here and keeps it red through Task 9, destroying the signal every later task depends on.
+
+Add `survival` to the dynamic-family regex:
+
+```js
+  const dynamic = /^dark-sun-essentials\.(migration|notify|survival)\./;
+```
+
+Then add an enumeration test, mirroring the existing "dynamically-built migration and notify keys" test directly above it:
+
+```js
+test("the dynamically-built survival keys all exist", () => {
+  // The dialog and the chat card assemble these at runtime, so the static
+  // scan cannot see them. They are the copy a GM reads while deciding
+  // whether to apply a day that may kill a character.
+  const survival = [
+    "dialogTitle", "pace", "paceDay", "paceNight", "paceInactive",
+    "heat", "heatNone", "heatHot", "heatExtreme",
+    "shaded", "shadedHint", "sheltered", "shelteredHint", "ateHalf",
+    "metalArmor", "drunk", "resolve", "cancel", "apply",
+    "cardTitle", "colMember", "colNeeded", "colDrunk", "colResult",
+    "resultFine", "resultSave", "resultLevels", "resultDeath",
+    "saveFailed", "savesPending", "restYes", "restNo", "restNoHp",
+    "assumedMedium", "capExceeded", "supplyUnknown", "supply",
+    "supplyNoDays", "applied"
+  ];
+
+  const missing = survival
+    .map(k => `${MODULE_ID}.survival.${k}`)
+    .filter(key => !(key in lang));
+
+  assert.deepEqual(missing, []);
+});
+```
+
+The three new `notify.survival*` keys need no such entry: the `notify.` family is already exempt from the orphan check, and the existing enumeration test only asserts that the keys it lists are present.
+
+**Keep this list and `lang/en.json` in step with each other.** If Tasks 8 and 9 end up not using a key, delete it from both places rather than leaving it listed.
 
 - [ ] **Step 2: Register the setting**
 
@@ -1326,12 +1368,12 @@ In `scripts/settings.mjs`, add after the `siltVehicles` registration and before 
 - [ ] **Step 3: Run the suite**
 
 Run: `npm test`
-Expected: PASS. `test/i18n.test.mjs` may report the new `survival.*` keys as unreferenced — if it fails for that reason, note it and proceed; Tasks 6–9 add the references. If it fails for any other reason, stop and fix.
+Expected: **PASS, every file.** With Step 1b done there is no expected failure here. If `test/i18n.test.mjs` reports unused keys, the key is missing from the enumeration list in Step 1b or misspelled in one of the two places — fix it, do not proceed with a red suite.
 
 - [ ] **Step 4: Commit**
 
 ```bash
-git add scripts/settings.mjs lang/en.json
+git add scripts/settings.mjs lang/en.json test/i18n.test.mjs
 git commit -m "Give survival tracking a switch and its words
 
 The one toggle in this file that does not require a reload, with the
@@ -2027,7 +2069,7 @@ v14; which one actually fires is a question only the Pi can answer."
 ### Task 10: The macro
 
 **Files:**
-- Create: `packs/src/dark-sun-macros/Resolve_Survival_Day_dseSurvivalDay1.yml`
+- Create: `packs/src/dark-sun-macros/Resolve_Survival_Day_dseSurvivalDay01.yml`
 
 **Interfaces:**
 - Consumes: `module.api.openSurvivalDialog` from Task 8
@@ -2037,7 +2079,7 @@ v14; which one actually fires is a question only the Pi can answer."
 Create the file, matching `Convert to Athasian Coinage` exactly in shape:
 
 ```yaml
-_id: dseSurvivalDay1
+_id: dseSurvivalDay01
 name: Resolve Survival Day
 type: script
 scope: global
@@ -2060,7 +2102,7 @@ sort: 100000
 ownership:
   default: 0
 flags: {}
-_key: '!macros!dseSurvivalDay1'
+_key: '!macros!dseSurvivalDay01'
 ```
 
 Verify `icons/consumables/drinks/water-jug-clay-tan.webp` exists in the Foundry core icon set on the Pi; if it does not, substitute one that does rather than shipping a broken image.
@@ -2078,7 +2120,7 @@ Expected: PASS
 - [ ] **Step 4: Commit**
 
 ```bash
-git add packs/src/dark-sun-macros/Resolve_Survival_Day_dseSurvivalDay1.yml
+git add packs/src/dark-sun-macros/Resolve_Survival_Day_dseSurvivalDay01.yml
 git commit -m "Ship the survival day as a macro, not a button
 
 Same shim as the coinage conversion: all logic stays in the module, so a
