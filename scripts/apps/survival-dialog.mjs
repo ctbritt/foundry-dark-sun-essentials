@@ -11,6 +11,7 @@ import { MODULE_ID, SETTINGS } from "../core/constants.mjs";
 import { setting } from "../settings.mjs";
 import { log } from "../compat.mjs";
 import { applyPlan, planForActors, resolveParty } from "../survival.mjs";
+import { WATER_MODIFIERS } from "../core/survival.mjs";
 
 const { DialogV2 } = foundry.applications.api;
 
@@ -182,8 +183,75 @@ function readForm(form, actors, askArmour) {
 /*  The card                                     */
 /* -------------------------------------------- */
 
-/** Two decimals, but only when they earn their place. A thri-kreen needs them. */
-const gal = n => (Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/0$/, ""));
+/**
+ * Two decimals, but only when they earn their place. A thri-kreen needs them.
+ *
+ * Rounded up, never down. A thri-kreen needs 1/7 of a gallon and this used to
+ * print "0.14", which is less than 0.142857 — a GM reconciling the card by
+ * typing the figure shown would land just under the requirement, which is not
+ * "drank their fill", which is a spurious DC 15 save every single day, for the
+ * one species the ruleset bent a rounding rule to protect. The exact float
+ * stays in the arithmetic; only the display is rounded, and only upward, so
+ * the number shown is never less than the number owed.
+ */
+const gal = n => {
+  const value = Number(n) || 0;
+  if ( Number.isInteger(value) ) return String(value);
+
+  const shown = (Math.ceil(value * 100) / 100).toFixed(2);
+  // Strip the whole trailing-zero tail, not just one zero: "5.00" is "5", and
+  // the old single-`0` strip left it as "5.0". Guarded on the decimal point
+  // existing so this can never eat the zeros off a round number.
+  return shown.includes(".") ? shown.replace(/\.?0+$/, "") : shown;
+};
+
+/**
+ * The dialog's name for each multiplier `waterBreakdown` can apply.
+ *
+ * The factor itself is read from `WATER_MODIFIERS` rather than written into
+ * the copy, so a change to the ruleset table cannot leave the card printing a
+ * number the arithmetic no longer uses.
+ * @type {Readonly<Record<string, string>>}
+ */
+const MODIFIER_LABEL = Object.freeze({
+  hot: "modHot",
+  extreme: "modExtreme",
+  night: "modNight",
+  inactive: "modInactive",
+  shaded: "modShaded",
+  metalArmor: "modMetalArmor"
+});
+
+/**
+ * Show how a requirement was arrived at.
+ *
+ * This is the mitigation the species-detection risk was accepted on. Detection
+ * matches by substring and can be wrong; the answer was that the card previews
+ * every computed requirement — but a bare number previews nothing. A kank
+ * mispriced at 4 instead of 2 looks like the number 4, and looks right. Shown
+ * as "2 base ×2 heat", the wrong base is the first thing a GM reads.
+ *
+ * Returns "" when no modifier applied, because then the requirement is the
+ * base and repeating it says nothing. Also "" for a card posted before rows
+ * carried a derivation at all.
+ *
+ * @param {object} row
+ * @param {(key: string, data?: object) => string} t
+ * @returns {string}
+ */
+function derivationText(row, t) {
+  const modifiers = row.derivation?.modifiers ?? [];
+  if ( !modifiers.length ) return "";
+
+  const parts = modifiers
+    .filter(name => name in MODIFIER_LABEL)
+    .map(name => `×${gal(WATER_MODIFIERS[name])} ${t(MODIFIER_LABEL[name])}`);
+
+  return t("derivation", {
+    base: gal(row.derivation.baseGal),
+    modifiers: parts.join(" ")
+  });
+}
 
 /**
  * Post the plan for the GM to approve.
@@ -215,9 +283,12 @@ export async function postPlanCard(plan) {
       ? `<label><input type="checkbox" data-dse-save="${row.id}"> ${t("saveFailed")}</label>`
       : "";
 
+    const derivation = derivationText(row, t);
+
     return `<tr>
       <td>${esc(row.name)}</td>
-      <td>${gal(row.requiredGal)}</td>
+      <td>${gal(row.requiredGal)}${derivation
+        ? ` <span class="dse-derivation">${derivation}</span>` : ""}</td>
       <td>${gal(row.drunkGal)}</td>
       <td>${result} ${tick}</td>
     </tr>`;
@@ -236,10 +307,19 @@ export async function postPlanCard(plan) {
     }));
   }
 
-  // Rest is reported per member, but says the same thing for everyone unless
-  // someone drank short. Report the exceptions rather than a wall of rows.
-  if ( plan.rows.length && plan.rows.every(r => r.rest.removesExhaustion) ) notes.push(t("restYes"));
-  else if ( plan.rows.length ) notes.push(t("restNo"));
+  // Rest is a per-member verdict — food and shelter are party-level, but
+  // whether a member drank half of what they needed is not. The card used to
+  // collapse it with every(), so one member drinking short announced "a long
+  // rest tonight removes no exhaustion" over the whole party, which is a lie
+  // about five other characters. Name the exceptions instead.
+  const restless = plan.rows.filter(r => !r.rest.removesExhaustion);
+  if ( !plan.rows.length ) { /* nothing to say about nobody */ }
+  else if ( !restless.length ) notes.push(t("restYes"));
+  else if ( restless.length === plan.rows.length ) notes.push(t("restNo"));
+  else notes.push(t("restNoFor", { names: restless.map(r => esc(r.name)).join(", ") }));
+
+  // Hit point recovery turns on shelter alone, which is party-level, so this
+  // one really is all or nobody.
   if ( plan.rows.some(r => !r.rest.fullHpRecovery) ) notes.push(t("restNoHp"));
 
   for ( const name of plan.warnings ?? [] ) notes.push(t("assumedMedium", { name: esc(name) }));

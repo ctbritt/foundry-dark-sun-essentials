@@ -84,6 +84,17 @@
   white-space: nowrap;
 }
 
+/* The working behind a requirement — "(2 base x2 heat)". Quieter and smaller
+   than the figure it explains: it is there to be checked when a number looks
+   wrong, not read every time. */
+.dark-sun-survival-card .dse-derivation {
+  font-size: 0.85em;
+  opacity: 0.75;
+  /* The Needed column is nowrap so a figure never breaks across lines. The
+     working may — a chat sidebar is narrow and this is the longer half. */
+  white-space: normal;
+}
+
 /* Marks DEATH on the card. This is the one thing a GM must see before
    pressing Apply, so it gets a colour, not just bold — tuned to read as
    danger on both Foundry's light and dark themes. */

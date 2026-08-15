@@ -107,7 +107,9 @@ test("the dynamically-built survival keys all exist", () => {
     "metalArmor", "drunk", "resolve", "cancel", "apply",
     "cardTitle", "colMember", "colNeeded", "colDrunk", "colResult",
     "resultFine", "resultSave", "resultLevels", "resultDeath",
-    "saveFailed", "savesPending", "restYes", "restNo", "restNoHp",
+    "saveFailed", "savesPending", "restYes", "restNo", "restNoFor", "restNoHp",
+    "derivation", "modHot", "modExtreme", "modNight", "modInactive",
+    "modShaded", "modMetalArmor",
     "assumedMedium", "capExceeded", "supplyUnknown", "supply",
     "supplyNoDays", "applied", "appliedPartial", "alreadyApplied", "applyBlocked"
   ];
