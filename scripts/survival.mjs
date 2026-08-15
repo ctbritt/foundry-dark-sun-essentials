@@ -67,13 +67,15 @@ export function hasMetalArmor(actor) {
 
 /**
  * Flatten an actor's inventory into the shape `core/survival.mjs` reads.
+ *
+ * Identifier, quantity and the override flag, and nothing else: water is
+ * recognised by identifier alone, so an item's dnd5e type was never consulted.
  * @param {Actor} actor
- * @returns {Array<{identifier: string|null, type: string|null, quantity: number, flagGal: number|null}>}
+ * @returns {Array<{identifier: string|null, quantity: number, flagGal: number|null}>}
  */
 export function readItems(actor) {
   return (actor.items ?? []).map(item => ({
     identifier: item.system?.identifier ?? null,
-    type: item.system?.type?.value ?? null,
     quantity: item.system?.quantity ?? 0,
     flagGal: item.getFlag?.(MODULE_ID, "survival.waterGal") ?? null
   }));
@@ -105,6 +107,14 @@ export function actorToMember(actor) {
 
   return {
     id: actor.id,
+
+    // The address `applyPlan` actually writes through. An unlinked token's
+    // actor is synthetic and has no entry in `game.actors`, so an id alone
+    // either resolves to nothing or — worse — to the sidebar actor the token
+    // was stamped from, writing exhaustion to the prototype while the creature
+    // on the canvas walks away unharmed. Every pack beast this module ships is
+    // used that way. `id` stays because the card keys its checkboxes on it.
+    uuid: actor.uuid ?? null,
     name: actor.name,
     size: size ?? "med",
     assumedMedium: !size,
@@ -148,6 +158,37 @@ export function planForActors(actors, conditions, intake = {}, armour = {}) {
 /* -------------------------------------------- */
 
 /**
+ * Find the actor a plan row addresses.
+ *
+ * The uuid is tried first and the id is only a fallback, because an id
+ * resolves through `game.actors` and an unlinked token's actor is not in
+ * there. Getting this order wrong is not a lookup failure, it is a write to
+ * the wrong document: `game.actors.get()` on a token actor's id finds the
+ * sidebar actor it was stamped from, so the exhaustion lands on the prototype
+ * and the creature standing in the desert is untouched.
+ *
+ * @param {{uuid: string|null, id: string}} row
+ * @returns {Actor|null}
+ */
+function resolveActor(row) {
+  // v13 namespaced it; the bare global is deprecated but still present.
+  const lookup = foundry.utils?.fromUuidSync ?? globalThis.fromUuidSync;
+
+  if ( row.uuid && lookup ) {
+    try {
+      // A compendium uuid resolves to a plain object with no update(); anything
+      // that is not a live document is no use here and falls through to the id.
+      const found = lookup(row.uuid);
+      if ( typeof found?.update === "function" ) return found;
+    } catch ( error ) {
+      log("debug", `Could not resolve ${row.uuid}: ${error.message}`);
+    }
+  }
+
+  return game.actors?.get(row.id) ?? null;
+}
+
+/**
  * Commit a plan the GM has approved.
  *
  * Reads the stored plan rather than recomputing, so what lands is what was on
@@ -170,7 +211,10 @@ export async function applyPlan(plan) {
       : row.outcome.levels;
     if ( !owed ) continue;
 
-    const actor = game.actors?.get(row.id);
+    // uuid first: it is the only address that reaches an unlinked token's
+    // synthetic actor. The id fallback is for plans posted before uuids were
+    // recorded, and for a world actor whose uuid has gone stale.
+    const actor = resolveActor(row);
     if ( !actor ) {
       failed.push(row.name);
       continue;
