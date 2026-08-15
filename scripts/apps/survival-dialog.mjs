@@ -96,10 +96,10 @@ function buildContent(actors, askArmour) {
 
   const rows = actors.map(actor => `<div class="dark-sun-survival-row">
     <span class="name">${esc(actor.name)}</span>
-    <input type="number" name="drunk.${actor.id}" min="0" step="0.25"
+    <input type="number" name="drunk-${actor.id}" min="0" step="0.25"
            placeholder="${t("drunk")}">
     ${askArmour ? `<label class="armour">
-      <input type="checkbox" name="metal.${actor.id}">
+      <input type="checkbox" name="metal-${actor.id}">
       <span>${t("metalArmor")}</span>
     </label>` : ""}
   </div>`).join("");
@@ -140,11 +140,14 @@ function readForm(form, actors, askArmour) {
   const intake = {};
   const armour = {};
 
+  // Hyphenated, not dotted: a dotted field name risks FormDataExtended
+  // expanding it into a nested object (`data.drunk[actorId]`) instead of the
+  // flat key this reads. Keep it a hyphen — do not "tidy" this back to a dot.
   for ( const actor of actors ) {
-    const raw = data[`drunk.${actor.id}`];
+    const raw = data[`drunk-${actor.id}`];
     const blank = (raw === "" || raw === null || raw === undefined);
     intake[actor.id] = blank ? null : Math.max(0, Number(raw) || 0);
-    if ( askArmour ) armour[actor.id] = data[`metal.${actor.id}`] === true;
+    if ( askArmour ) armour[actor.id] = data[`metal-${actor.id}`] === true;
   }
 
   return {
