@@ -13,7 +13,7 @@ import { registerSettings } from "./settings.mjs";
 import { applyConfig } from "./config-apply.mjs";
 import { applyMigration, runMigration, scanWorld, summarise } from "./migration.mjs";
 import { openMigrationDialog } from "./apps/migration-dialog.mjs";
-import { openSurvivalDialog } from "./apps/survival-dialog.mjs";
+import { onApplySurvival, openSurvivalDialog } from "./apps/survival-dialog.mjs";
 
 Hooks.once("init", () => {
   log("info", `Initialising for Foundry v${foundryGeneration()}, dnd5e ${systemVersion()}.`);
@@ -33,6 +33,17 @@ Hooks.once("init", () => {
 });
 
 Hooks.once("ready", () => {
+  // v13 renamed the hook and changed the payload from jQuery to a bare
+  // element. Both are bound so one build works on v13 and v14; which one
+  // actually fires is a question only a real load can answer.
+  const bindCard = (message, element) => {
+    const html = element instanceof HTMLElement ? element : element?.[0];
+    const button = html?.querySelector?.('[data-action="dse-apply-survival"]');
+    if ( button ) button.addEventListener("click", () => onApplySurvival(message, button));
+  };
+  Hooks.on("renderChatMessageHTML", bindCard);
+  Hooks.on("renderChatMessage", bindCard);
+
   if ( !game.user?.isGM ) return;
 
   // dnd5e 6.0 is unreleased at time of writing and is documented as a large

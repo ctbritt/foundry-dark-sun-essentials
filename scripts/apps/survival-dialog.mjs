@@ -10,7 +10,7 @@
 import { MODULE_ID, SETTINGS } from "../core/constants.mjs";
 import { setting } from "../settings.mjs";
 import { log } from "../compat.mjs";
-import { planForActors, resolveParty } from "../survival.mjs";
+import { applyPlan, planForActors, resolveParty } from "../survival.mjs";
 
 const { DialogV2 } = foundry.applications.api;
 
@@ -161,4 +161,126 @@ function readForm(form, actors, askArmour) {
     intake,
     armour
   };
+}
+
+/* -------------------------------------------- */
+/*  The card                                     */
+/* -------------------------------------------- */
+
+/** Two decimals, but only when they earn their place. A thri-kreen needs them. */
+const gal = n => (Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/0$/, ""));
+
+/**
+ * Post the plan for the GM to approve.
+ *
+ * The whole plan rides along in a message flag, and Apply reads it back rather
+ * than recomputing — so what lands is what was on the card even if a setting
+ * changed in between.
+ *
+ * @param {object} plan
+ * @returns {Promise<ChatMessage>}
+ */
+export async function postPlanCard(plan) {
+  const t = (key, data) => (data
+    ? game.i18n.format(`${MODULE_ID}.survival.${key}`, data)
+    : game.i18n.localize(`${MODULE_ID}.survival.${key}`));
+
+  const rows = plan.rows.map(row => {
+    // Death is shown instead of the save prompt, never behind it. Exhaustion
+    // 6 is lethal under the 2024 rules and a GM should not have to read a DC
+    // to notice they are about to kill someone.
+    let result;
+    if ( row.projected.lethal ) result = `<strong class="dse-lethal">${t("resultDeath")}</strong>`;
+    else if ( row.outcome.kind === "save" ) result = t("resultSave", row.outcome);
+    else if ( row.outcome.kind === "levels" ) result = t("resultLevels", row.outcome);
+    else result = t("resultFine");
+
+    // Only rows that owe a save get a checkbox. Everything else is decided.
+    const tick = row.outcome.kind === "save"
+      ? `<label><input type="checkbox" data-dse-save="${row.id}"> ${t("saveFailed")}</label>`
+      : "";
+
+    return `<tr>
+      <td>${esc(row.name)}</td>
+      <td>${gal(row.requiredGal)}</td>
+      <td>${gal(row.drunkGal)}</td>
+      <td>${result} ${tick}</td>
+    </tr>`;
+  }).join("");
+
+  const notes = [];
+  if ( plan.rows.some(r => r.outcome.kind === "save") ) notes.push(t("savesPending"));
+
+  if ( !plan.totals.supplyGal ) notes.push(t("supplyUnknown"));
+  else if ( plan.totals.daysOfSupply === null ) {
+    notes.push(t("supplyNoDays", { gallons: gal(plan.totals.supplyGal) }));
+  } else {
+    notes.push(t("supply", {
+      gallons: gal(plan.totals.supplyGal),
+      days: plan.totals.daysOfSupply
+    }));
+  }
+
+  // Rest is reported per member, but says the same thing for everyone unless
+  // someone drank short. Report the exceptions rather than a wall of rows.
+  if ( plan.rows.length && plan.rows.every(r => r.rest.removesExhaustion) ) notes.push(t("restYes"));
+  else if ( plan.rows.length ) notes.push(t("restNo"));
+  if ( plan.rows.some(r => !r.rest.fullHpRecovery) ) notes.push(t("restNoHp"));
+
+  for ( const name of plan.warnings ?? [] ) notes.push(t("assumedMedium", { name: esc(name) }));
+  for ( const row of plan.rows.filter(r => r.capExceeded) ) {
+    notes.push(t("capExceeded", { name: esc(row.name) }));
+  }
+
+  const content = `<div class="dark-sun-survival-card">
+    <h3>${t("cardTitle")}</h3>
+    <table><thead><tr>
+      <th>${t("colMember")}</th><th>${t("colNeeded")}</th>
+      <th>${t("colDrunk")}</th><th>${t("colResult")}</th>
+    </tr></thead><tbody>${rows}</tbody></table>
+    ${notes.map(n => `<p class="notes">${n}</p>`).join("")}
+    <button type="button" data-action="dse-apply-survival">${t("apply")}</button>
+  </div>`;
+
+  return ChatMessage.create({
+    content,
+    whisper: ChatMessage.getWhisperRecipients("GM").map(u => u.id),
+    flags: { [MODULE_ID]: { survivalPlan: plan } }
+  });
+}
+
+/* -------------------------------------------- */
+
+/**
+ * Apply a card's plan, taking the failed-save ticks from the card itself.
+ *
+ * @param {ChatMessage} message
+ * @param {HTMLElement} button
+ */
+export async function onApplySurvival(message, button) {
+  if ( !game.user?.isGM ) {
+    ui.notifications?.error(game.i18n.localize(`${MODULE_ID}.notify.survivalGmOnly`));
+    return;
+  }
+
+  const plan = message.getFlag(MODULE_ID, "survivalPlan");
+  if ( !plan ) return;
+
+  const card = button.closest(".dark-sun-survival-card");
+  for ( const row of plan.rows ) {
+    const tick = card?.querySelector(`[data-dse-save="${row.id}"]`);
+    row.saveFailed = tick?.checked === true;
+  }
+
+  // Disabled before the writes, not after: a double-click during a slow
+  // update would otherwise apply the day twice.
+  button.disabled = true;
+
+  const { applied, failed } = await applyPlan(plan);
+  ui.notifications?.info(game.i18n.format(`${MODULE_ID}.survival.applied`, { count: applied }));
+  if ( failed.length ) {
+    ui.notifications?.error(game.i18n.format(`${MODULE_ID}.notify.migrationPartial`, {
+      count: failed.length
+    }), { permanent: true });
+  }
 }
