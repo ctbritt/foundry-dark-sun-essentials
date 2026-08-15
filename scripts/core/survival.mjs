@@ -153,35 +153,69 @@ export function baseWaterGal(creature) {
 }
 
 /**
- * A creature's water requirement for one day, modifiers applied and rounded.
+ * A creature's requirement for one day, with the working shown.
+ *
+ * The `modifiers` list is why this exists: species detection matches on
+ * substrings, so a wrong match is possible, and the agreed mitigation was that
+ * the chat card previews every computed requirement. A bare number does not
+ * preview anything — a kank mispriced at 4 instead of 2 looks like the number
+ * 4. Returning the base rate and the multipliers that were applied lets the
+ * card render "4 (2 base ×2 heat)", where a wrong base is obvious on sight.
+ *
+ * Names in `modifiers` are keys of `WATER_MODIFIERS`, so a caller can look the
+ * factor up rather than being told it twice.
  *
  * Thri-kreen ignore heat entirely, and are exempt from the quarter-gallon
  * rounding: 1/7 rounds up to 0.25, which would charge them 1.75 gallons a week
  * against a rule that says one. They still gain from night travel and shade.
+ *
  * @param {{size: string, species: string|null, isThriKreen: boolean, metalArmor: boolean}} creature
- * @param {{pace: "day"|"night"|"inactive", heat: "none"|"hot"|"extreme", shaded: boolean}} conditions
- * @returns {number} Gallons.
+ * @param {{pace: "day"|"night"|"inactive", heat: "none"|"hot"|"extreme", shaded: boolean, sheltered: boolean}} conditions
+ * @returns {{requiredGal: number, baseGal: number, modifiers: string[]}}
  */
-export function dailyWaterGal(creature, conditions) {
+export function waterBreakdown(creature, conditions) {
   const base = baseWaterGal(creature);
   const travelled = conditions.pace !== "inactive";
+  const modifiers = [];
 
   let mult = 1;
 
   // The ruleset's wording is "Travelled 1+ hour in heat above 100F". A
   // creature that stayed in camp did not trigger it, however hot the day was.
   if ( travelled && !creature.isThriKreen ) {
-    if ( conditions.heat === "hot" ) mult *= WATER_MODIFIERS.hot;
-    else if ( conditions.heat === "extreme" ) mult *= WATER_MODIFIERS.extreme;
+    if ( conditions.heat === "hot" ) modifiers.push("hot");
+    else if ( conditions.heat === "extreme" ) modifiers.push("extreme");
   }
 
-  if ( conditions.pace === "night" ) mult *= WATER_MODIFIERS.night;
-  if ( conditions.pace === "inactive" ) mult *= WATER_MODIFIERS.inactive;
-  if ( conditions.shaded ) mult *= WATER_MODIFIERS.shaded;
-  if ( creature.metalArmor && !conditions.shaded ) mult *= WATER_MODIFIERS.metalArmor;
+  if ( conditions.pace === "night" ) modifiers.push("night");
+  if ( conditions.pace === "inactive" ) modifiers.push("inactive");
+
+  // The ruleset's row reads "Under shade OR shelter the whole day — x1/2".
+  // Shelter is asked for separately on the dialog because a long rest needs it
+  // and shade does not, but for water the two are the same modifier: a party
+  // holed up in a cave is out of the sun by definition.
+  const covered = conditions.shaded || conditions.sheltered;
+  if ( covered ) modifiers.push("shaded");
+  if ( creature.metalArmor && !covered ) modifiers.push("metalArmor");
+
+  for ( const name of modifiers ) mult *= WATER_MODIFIERS[name];
 
   const need = base * mult;
-  return creature.isThriKreen ? need : roundQuarterGal(need);
+  return {
+    requiredGal: creature.isThriKreen ? need : roundQuarterGal(need),
+    baseGal: base,
+    modifiers
+  };
+}
+
+/**
+ * A creature's water requirement for one day, modifiers applied and rounded.
+ * @param {{size: string, species: string|null, isThriKreen: boolean, metalArmor: boolean}} creature
+ * @param {{pace: "day"|"night"|"inactive", heat: "none"|"hot"|"extreme", shaded: boolean, sheltered: boolean}} conditions
+ * @returns {number} Gallons.
+ */
+export function dailyWaterGal(creature, conditions) {
+  return waterBreakdown(creature, conditions).requiredGal;
 }
 
 /* -------------------------------------------- */
@@ -317,7 +351,7 @@ function readQuantity(value) {
  * An explicit `flagGal` always wins: it is how a world declares its own
  * containers without waiting for this table to learn about them.
  *
- * @param {{identifier: string|null, type: string|null, quantity: number, flagGal: number|null}} item
+ * @param {{identifier: string|null, quantity: number, flagGal: number|null}} item
  * @returns {number} Gallons.
  */
 export function waterGalForItem(item) {
@@ -371,7 +405,7 @@ export function containerCapGal(size) {
  */
 export function buildDayPlan({ members, conditions }) {
   const rows = (members ?? []).map(m => {
-    const requiredGal = dailyWaterGal(m, conditions);
+    const { requiredGal, baseGal, modifiers } = waterBreakdown(m, conditions);
 
     // A null intake is the dialog's default: the member drank their fill.
     // Distinguished from 0, which is a creature that drank nothing at all.
@@ -390,9 +424,19 @@ export function buildDayPlan({ members, conditions }) {
 
     return {
       id: m.id,
+
+      // Carried alongside `id` because `id` cannot address an unlinked token's
+      // synthetic actor, and every pack beast this module ships lands on a
+      // scene as one. `applyPlan` resolves this first. `id` stays because the
+      // card's failed-save checkboxes are keyed on it.
+      uuid: m.uuid ?? null,
       name: m.name,
       requiredGal,
       drunkGal,
+
+      // The working behind `requiredGal`, for the card to render. See
+      // `waterBreakdown`.
+      derivation: { baseGal, modifiers },
       outcome,
       projected: clampExhaustion(m.currentExhaustion, outcome.levels),
       capExceeded: cap !== null && carried > cap,

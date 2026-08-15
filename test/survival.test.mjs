@@ -23,6 +23,7 @@ import {
   normaliseSpeciesText,
   roundQuarterGal,
   totalWaterGal,
+  waterBreakdown,
   waterGalForItem
 } from "../scripts/core/survival.mjs";
 
@@ -209,6 +210,76 @@ test("metal armour doubles the requirement, but only without shade", () => {
 });
 
 /* -------------------------------------------- */
+/*  Shelter is shade, for water                  */
+/* -------------------------------------------- */
+
+// 01-survival.md's modifier row reads "Under shade OR shelter the whole day".
+// The dialog asks the two questions separately because a long rest needs
+// shelter and shade will not do, but for water they are one modifier. A party
+// holed up in a cave was being charged twice what the ruleset says.
+test("shelter halves water even when nothing is marked shaded", () => {
+  assert.equal(dailyWaterGal(HUMAN, { pace: "day", heat: "hot", shaded: false, sheltered: true }), 1,
+    "2 gal for a hot day march, halved by the cave");
+});
+
+test("shelter suppresses the metal armour penalty exactly as shade does", () => {
+  const armoured = { ...HUMAN, metalArmor: true };
+  assert.equal(dailyWaterGal(armoured, { pace: "day", heat: "hot", shaded: false, sheltered: true }), 1,
+    "the same 1 gal shade produces, not 2");
+});
+
+test("shade and shelter together halve once, not twice", () => {
+  assert.equal(dailyWaterGal(HUMAN, { pace: "day", heat: "hot", shaded: true, sheltered: true }), 1);
+  assert.deepEqual(
+    waterBreakdown(HUMAN, { pace: "day", heat: "hot", shaded: true, sheltered: true }).modifiers,
+    ["hot", "shaded"], "one shade modifier, however many boxes are ticked");
+});
+
+/* -------------------------------------------- */
+/*  Showing the working                          */
+/* -------------------------------------------- */
+
+// The card renders this so a mis-identified species is visible as a wrong
+// base rate rather than as an unremarkable number. See I3.
+const HOT_MARCH = { pace: "day", heat: "hot", shaded: false };
+
+test("a Medium human's hot day march derives from a 1 gal base", () => {
+  const out = waterBreakdown(HUMAN, HOT_MARCH);
+  assert.equal(out.requiredGal, 2);
+  assert.equal(out.baseGal, 1);
+  assert.deepEqual(out.modifiers, ["hot"]);
+});
+
+test("a kank's same day derives from a 2 gal base, not the 4 its size would give", () => {
+  const kank = { size: "lg", species: "kank", isThriKreen: false, metalArmor: false };
+  const out = waterBreakdown(kank, HOT_MARCH);
+  assert.equal(out.requiredGal, 4);
+  assert.equal(out.baseGal, 2, "a 4 here is the mispricing the card exists to expose");
+  assert.deepEqual(out.modifiers, ["hot"]);
+});
+
+test("a thri-kreen derives from a seventh of a gallon and takes no modifiers", () => {
+  const kreen = { size: "med", species: null, isThriKreen: true, metalArmor: false };
+  const out = waterBreakdown(kreen, HOT_MARCH);
+  assert.equal(out.baseGal, 1 / 7);
+  assert.equal(out.requiredGal, 1 / 7);
+  assert.deepEqual(out.modifiers, [], "heat does not touch a thri-kreen");
+});
+
+test("every modifier name is a key of the published multiplier table", () => {
+  // The card looks each name up in WATER_MODIFIERS to print its factor. A
+  // name that is not a key there renders as "×undefined".
+  const armoured = { ...HUMAN, metalArmor: true };
+  const seen = new Set([
+    ...waterBreakdown(armoured, { pace: "day", heat: "hot", shaded: false }).modifiers,
+    ...waterBreakdown(armoured, { pace: "night", heat: "extreme", shaded: true }).modifiers,
+    ...waterBreakdown(armoured, { pace: "inactive", heat: "none", shaded: false }).modifiers
+  ]);
+  assert.deepEqual([...seen].filter(n => !(n in WATER_MODIFIERS)), []);
+  assert.ok(seen.size >= 5, `expected most of the table exercised, saw ${[...seen]}`);
+});
+
+/* -------------------------------------------- */
 /*  Thri-kreen                                   */
 /* -------------------------------------------- */
 
@@ -350,8 +421,8 @@ test("hit point recovery depends on shelter alone", () => {
 });
 
 /** Build a plain item the way `scripts/survival.mjs` will. */
-function item(identifier, quantity = 1, { type = "drink", flagGal = null } = {}) {
-  return { identifier, type, quantity, flagGal };
+function item(identifier, quantity = 1, { flagGal = null } = {}) {
+  return { identifier, quantity, flagGal };
 }
 
 /* -------------------------------------------- */
@@ -384,10 +455,13 @@ test("a flag works on an item the table has never heard of", () => {
   assert.equal(waterGalForItem(item("bloodgourd", 2, { flagGal: 0.25 })), 0.5);
 });
 
-test("non-water items hold no water", () => {
-  assert.equal(waterGalForItem(item("rations-15-days", 3, { type: "food" })), 0);
-  assert.equal(waterGalForItem(item("obsidian-dagger", 1, { type: null })), 0);
-  assert.equal(waterGalForItem(item(null, 1, { type: null })), 0);
+// Identification is by identifier alone — an item's dnd5e type is never
+// consulted, so what this asserts is that an unrecognised or absent
+// identifier contributes nothing, not that "food" is excluded as food.
+test("an identifier the water table does not know contributes nothing", () => {
+  assert.equal(waterGalForItem(item("rations-15-days", 3)), 0);
+  assert.equal(waterGalForItem(item("obsidian-dagger", 1)), 0);
+  assert.equal(waterGalForItem(item(null, 1)), 0);
 });
 
 // `water-1tun` is recorded in dark-sun-items at weight 1 lb, which cannot be
@@ -410,7 +484,7 @@ test("totalWaterGal sums a mixed inventory", () => {
   const inventory = [
     item("waterskin", 12),
     item("water-gallon", 2),
-    item("rations-15-days", 5, { type: "food" }),
+    item("rations-15-days", 5),
     item("water-1tun", 1)
   ];
   assert.equal(totalWaterGal(inventory), 8, "6 from skins, 2 from gallons, nothing else");
@@ -441,6 +515,7 @@ test("beasts are limited by weight, so they have no bulk cap", () => {
 function member(name, overrides = {}) {
   return {
     id: name.toLowerCase(),
+    uuid: `Actor.${name.toLowerCase()}`,
     name,
     size: "med",
     species: null,
@@ -462,6 +537,38 @@ test("a plan has one row per member, in order", () => {
   });
   assert.equal(plan.rows.length, 2);
   assert.deepEqual(plan.rows.map(r => r.name), ["Itilda", "Kaine"]);
+});
+
+// C3: `applyPlan` resolves the actor by uuid, because `game.actors.get(id)`
+// cannot reach an unlinked token's synthetic actor — and every pack beast this
+// module ships is one. If the uuid does not survive the trip from member to
+// row, exhaustion lands on the sidebar prototype instead, silently.
+test("a member's uuid reaches its row", () => {
+  const plan = buildDayPlan({
+    members: [
+      member("Itilda", { uuid: "Scene.abc.Token.def.Actor.ghi" }),
+      member("Kaine")
+    ],
+    conditions: DAY_MARCH
+  });
+  assert.equal(plan.rows[0].uuid, "Scene.abc.Token.def.Actor.ghi");
+  assert.equal(plan.rows[1].uuid, "Actor.kaine");
+});
+
+test("a member with no uuid gets an explicit null, never undefined", () => {
+  const anonymous = member("Nomad");
+  delete anonymous.uuid;
+  const plan = buildDayPlan({ members: [anonymous], conditions: DAY_MARCH });
+  assert.equal(plan.rows[0].uuid, null, "so applyPlan falls back to the id rather than throwing");
+  assert.equal(plan.rows[0].id, "nomad");
+});
+
+test("a row carries the working behind its requirement", () => {
+  const plan = buildDayPlan({
+    members: [member("Kank #1", { size: "lg", species: "kank" })],
+    conditions: DAY_MARCH
+  });
+  assert.deepEqual(plan.rows[0].derivation, { baseGal: 2, modifiers: ["hot"] });
 });
 
 test("a null intake means the member drank exactly what they needed", () => {
@@ -519,10 +626,10 @@ test("a thri-kreen row survives the same day on a fraction", () => {
 test("totals sum requirement, intake and supply", () => {
   const plan = buildDayPlan({
     members: [
-      member("Itilda", { items: [{ identifier: "waterskin", type: "drink", quantity: 12, flagGal: null }] }),
+      member("Itilda", { items: [{ identifier: "waterskin", quantity: 12, flagGal: null }] }),
       member("Kank #1", {
         size: "lg", species: "kank",
-        items: [{ identifier: "cask", type: "drink", quantity: 4, flagGal: null }]
+        items: [{ identifier: "cask", quantity: 4, flagGal: null }]
       })
     ],
     conditions: DAY_MARCH
@@ -535,7 +642,7 @@ test("totals sum requirement, intake and supply", () => {
 test("days of supply is the honest floor, not a rounded-up promise", () => {
   const plan = buildDayPlan({
     members: [member("Itilda", {
-      items: [{ identifier: "water-gallon", type: "drink", quantity: 5, flagGal: null }]
+      items: [{ identifier: "water-gallon", quantity: 5, flagGal: null }]
     })],
     conditions: DAY_MARCH
   });
@@ -557,7 +664,7 @@ test("days of supply is null when nothing needs water", () => {
 test("a Medium carrying more than twelve skins is flagged", () => {
   const plan = buildDayPlan({
     members: [member("Kaine", {
-      items: [{ identifier: "waterskin", type: "drink", quantity: 20, flagGal: null }]
+      items: [{ identifier: "waterskin", quantity: 20, flagGal: null }]
     })],
     conditions: DAY_MARCH
   });
@@ -568,7 +675,7 @@ test("a beast carrying casks is never flagged, being weight-limited", () => {
   const plan = buildDayPlan({
     members: [member("Kank #1", {
       size: "lg", species: "kank",
-      items: [{ identifier: "cask", type: "drink", quantity: 30, flagGal: null }]
+      items: [{ identifier: "cask", quantity: 30, flagGal: null }]
     })],
     conditions: DAY_MARCH
   });
@@ -614,10 +721,12 @@ test("a fed, watered, sheltered member recovers a level tonight", () => {
 
 test("a member who drank less than half recovers nothing, even in shelter", () => {
   const plan = buildDayPlan({
-    members: [member("Kaine", { drunkGal: 0.5 })],
+    members: [member("Kaine", { drunkGal: 0.25 })],
     conditions: CAMPED
   });
-  assert.equal(plan.rows[0].rest.removesExhaustion, false, "2 gal needed, 0.5 drunk");
+  // 2 gal for a hot day march, halved to 1 by the shelter, so half is 0.5.
+  assert.equal(plan.rows[0].requiredGal, 1);
+  assert.equal(plan.rows[0].rest.removesExhaustion, false, "1 gal needed, 0.25 drunk");
 });
 
 test("without shelter nobody recovers and hit points come from Hit Dice", () => {
