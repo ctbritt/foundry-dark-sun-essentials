@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.6.1 — 2026-09-04
+
+### Fixed
+- **dnd5e 6.0 compatibility.** Verified against dnd5e 6.0.0 on Foundry 14.367;
+  every feature applies and the "untested system" warning no longer fires for
+  6.x. One real regression was found and fixed: dnd5e 6.0 hangs subtype-only
+  property sets off the per-type `validProperties` Sets (for example
+  `validProperties.consumable.ammo` holds `ret`, so only ammunition offers the
+  Returning property). `mergeValidProperties` rebuilt those Sets from scratch
+  and dropped the sub-Sets, which silently removed Returning from every
+  ammunition item once the Psionic property was enabled. The sub-Sets are now
+  carried across.
+
 ## 1.6.0 — 2026-08-14
 
 ### Added

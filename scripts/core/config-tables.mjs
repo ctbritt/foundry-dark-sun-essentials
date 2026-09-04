@@ -56,7 +56,31 @@ export function mergeItemProperties(existing, additions) {
 export function mergeValidProperties(existing, keys, types) {
   const next = { ...existing };
   for ( const type of types ) {
-    next[type] = new Set([ ...(existing?.[type] ?? []), ...keys ]);
+    const current = existing?.[type];
+    const merged = new Set([ ...(current ?? []), ...keys ]);
+    copySubtypeSets(current, merged);
+    next[type] = merged;
   }
   return next;
+}
+
+/**
+ * Carry subtype-specific property sets across to a rebuilt Set.
+ *
+ * dnd5e 6.0 hangs extra Sets off the per-type Set as plain properties, keyed by
+ * item subtype — `validProperties.consumable.ammo` is a Set holding `ret`, so
+ * only ammunition offers the Returning property. A fresh `new Set([...])` has
+ * no such properties, and the system reads them straight off the Set object,
+ * so rebuilding without copying silently removed Returning from every arrow
+ * in the world. The sub-Sets are copied rather than shared so the system's own
+ * objects stay untouched, matching the rest of this file.
+ *
+ * @param {Set<string>|undefined} from  The system's Set, possibly carrying subtype Sets.
+ * @param {Set<string>} to              The rebuilt Set to decorate.
+ */
+function copySubtypeSets(from, to) {
+  if ( !(from instanceof Set) ) return;
+  for ( const [subtype, subset] of Object.entries(from) ) {
+    to[subtype] = subset instanceof Set ? new Set(subset) : subset;
+  }
 }

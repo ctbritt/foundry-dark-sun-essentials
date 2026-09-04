@@ -2,9 +2,9 @@
  * Version detection and extension-point verification.
  *
  * The philosophy here is that a missing extension point should be reported by
- * name and then skipped, never written to on faith. dnd5e 6.0 is unreleased at
- * time of writing and is documented as an ambitious release; when it lands,
- * this file is where it should break, loudly and legibly.
+ * name and then skipped, never written to on faith. When a future dnd5e
+ * release moves one of these tables, this file is where it should break,
+ * loudly and legibly.
  */
 
 import { MODULE_ID, REQUIRED_CONFIG_PATHS } from "./core/constants.mjs";

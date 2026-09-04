@@ -15,6 +15,9 @@ import { applyMigration, runMigration, scanWorld, summarise } from "./migration.
 import { openMigrationDialog } from "./apps/migration-dialog.mjs";
 import { isSurvivalApplied, onApplySurvival, openSurvivalDialog } from "./apps/survival-dialog.mjs";
 
+/** The newest dnd5e major this build has been verified against. */
+const TESTED_SYSTEM_MAJOR = 6;
+
 Hooks.once("init", () => {
   log("info", `Initialising for Foundry v${foundryGeneration()}, dnd5e ${systemVersion()}.`);
 
@@ -62,10 +65,10 @@ Hooks.once("ready", () => {
 
   if ( !game.user?.isGM ) return;
 
-  // dnd5e 6.0 is unreleased at time of writing and is documented as a large
-  // change. Say so once rather than letting a silent failure look like a bug.
+  // Tested against dnd5e 5.3.x and 6.0.x. Anything newer gets a one-time
+  // warning rather than letting a silent failure look like a bug.
   const major = Number.parseInt(systemVersion(), 10);
-  if ( major > 5 ) {
+  if ( major > TESTED_SYSTEM_MAJOR ) {
     log("warn", `dnd5e ${systemVersion()} is newer than this module was tested against (5.3.x).`);
     ui.notifications?.warn(game.i18n.format(`${MODULE_ID}.notify.untestedSystem`, {
       system: systemVersion()
